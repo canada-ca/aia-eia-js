@@ -35,7 +35,7 @@ ______________________
 
 # Évaluation de l'incidence algorithmique
 
-Ce projet accueillera un prototype de la prochaine itération de l'étude d'impact algorithmique (EIA) développé en JavaScript. 
+Ce projet accueillera un prototype de la prochaine itération de l'étude d'impact algorithmique (EIA) développé en JavaScript.
 
 Il se composera de deux capacités principales :
 
