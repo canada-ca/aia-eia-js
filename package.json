@@ -1,7 +1,11 @@
 {
-  "name": "aia-js-demo",
+  "name": "aia-eia-js",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/canada-ca/aia-eia"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
