@@ -1,0 +1,134 @@
+{
+  "title": "Artificial Intelligence Algorithmic Assessment",
+  "pages": [
+    {
+      "name": "page1",
+      "questions": [
+        {
+          "name": "respondent",
+          "type": "text",
+          "title": "Name of respondent"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "title": "Job title"
+        },
+        {
+          "name": "department",
+          "type": "text",
+          "title": "Department"
+        },
+        {
+          "name": "branch",
+          "type": "text",
+          "title": "Branch"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "title": "Project Title"
+        },
+        {
+          "type": "file",
+          "title": "Please provide an attachment of the project description",
+          "name": "attachment",
+          "storeDataAsText": false
+        }
+      ]
+    },
+    {
+      "name": "page2",
+      "elements":[
+        {
+          "type": "panel",
+          "title": "BUSINESS DRIVER / POSITIVE IMPACT",
+          "questions": [
+            {
+              "type": "checkbox",
+              "name": "motivation",
+              "title": "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)",
+              "isRequired":true,
+              "hasNone": false,
+              "choices":[
+                "Existing backlog of work or cases",
+                "Improve overall quality of decisions",
+                "Lower transaction costs of an existing program",
+                "The system is performing tasks that humans cound not accomplish in a reasonable period of time ",
+                "Use innovative approaches",
+                "Other (please specify)"
+              ]
+            },
+            {
+              "type": "text",
+              "name": "motivationOther",
+              "requiredIf": "{motivation} contains 'Other (please specify)'",
+              "visibleIf": "{motivation} contains 'Other (please specify)'"
+            }
+          ]
+        }
+
+      ]
+    },    {
+      "name": "page3",
+      "elements":[
+        {
+          "type": "panel",
+          "title": "ABOUT THE SYSTEM",
+          "questions": [
+            {
+              "type": "checkbox",
+              "name": "motivation",
+              "title": "Please check which of the following capabilities apply to your system.",
+              "isRequired":true,
+              "hasNone": false,
+              "choices":[
+                "**Image and object recognition**: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.",
+                "**Text and speech analysis**: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging ",
+                "**Risk assessment**: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions",
+                "**Content generation**: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
+                "**Process optimization & workflow automation**: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows"
+              ]
+            }
+          ]
+        }
+
+      ]
+    },
+    {
+      "name": "page4",
+      "questions": [
+        {
+          "type": "radiogroup",
+          "name": "discretion",
+          "choices": [
+            { "text": "Yes (4 pts)", "value": 4 },
+            { "text": "No (0 Pts)", "value": 0 }
+          ],
+          "isRequired": true,
+          "title": "Does the recommendation or decision made by the system include elements of discretion?"
+        },
+        {
+          "name": "discretion-desc",
+          "type": "text",
+          "requiredIf": "{discretion} contains 'Yes'",
+          "enabledIf": "{discretion} contains 'Yes'",
+          "title": "Describe what is discretionary about the decision"
+        },
+        {
+          "type": "dropdown",
+          "name": "reversible",
+          "title": "Are the impacts resulting from the decision reversible?",
+          "isRequired": true,
+          "colCount": 0,
+          "choices": [
+            { "text": "Reversible (1 pt)", "value": 1 },
+            { "text": "Likely Reversible (2 pt)", "value": 2 },
+            { "text": "Difficult to Reverse (3 pt)", "value": 3 },
+            { "text": "Irreversible (4 pt)", "value": 4 }
+          ]
+        }
+      ]
+    }
+  ]
+}
