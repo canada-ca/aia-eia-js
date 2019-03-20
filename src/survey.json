@@ -449,6 +449,132 @@
               ]
             }
           ]
+        },
+        {
+          "type": "panel",
+          "title": "PROCEDURAL FAIRNESS",
+          "elements": [
+            {
+              "type": "radiogroup",
+              "name": "audit-trail",
+              "choices": [
+                { "text": "Yes", "value": -2 },
+                { "text": "No", "value": 0 }
+              ],
+              "isRequired": true,
+              "title": "Does the system provide an audit trail that records recommendations or decisions?"
+            },
+            {
+              "type": "radiogroup",
+              "name": "change-log",
+              "choices": [
+                { "text": "Yes", "value": -2 },
+                { "text": "No", "value": 0 }
+              ],
+              "isRequired": true,
+              "title": "Do  you maintain a log detailing  all of the changes made to the model and the system ?"
+            },
+            {
+              "type": "radiogroup",
+              "name": "clear-audit",
+              "choices": [
+                { "text": "Yes", "value": -1 },
+                { "text": "No", "value": 0 }
+              ],
+              "isRequired": true,
+              "title": "Does the audit trail clearly set out all decision points made by the system?"
+            },
+            {
+              "type": "radiogroup",
+              "name": "audit-decision-maker",
+              "choices": [
+                { "text": "Yes", "value": -1 },
+                { "text": "No", "value": 0 }
+              ],
+              "isRequired": true,
+              "title": "Does the audit trail show who an authorized decision-maker is?"
+            },
+            {
+              "type": "radiogroup",
+              "name": "produce-reasons",
+              "choices": [
+                { "text": "Yes", "value": -2 },
+                { "text": "No", "value": 0 }
+              ],
+              "isRequired": true,
+              "title": "Does the system produce reasons for its decisions or recommendations when required?"
+            },
+            {
+              "type": "radiogroup",
+              "name": "access-management",
+              "choices": [
+                { "text": "Yes", "value": -1 },
+                { "text": "No", "value": 0 }
+              ],
+              "isRequired": true,
+              "title": "Is there a process in place to grant, monitor, and revoke access permission to the system?"
+            },
+            {
+              "type": "radiogroup",
+              "name": "feedback-capture",
+              "choices": [
+                { "text": "Yes", "value": -1 },
+                { "text": "No", "value": 0 }
+              ],
+              "isRequired": true,
+              "title": "Is there a mechanism to capture feedback by users of the system?"
+            },
+            {
+              "type": "radiogroup",
+              "name": "challenge-process",
+              "choices": [
+                { "text": "Yes", "value": -2 },
+                { "text": "No", "value": 0 }
+              ],
+              "isRequired": true,
+              "title": "Is there a recourse process planned or established for clients that wish to challenge the decision?"
+            },
+            {
+              "type": "radiogroup",
+              "name": "enable-override",
+              "choices": [
+                { "text": "Yes", "value": -2 },
+                { "text": "No", "value": 0 }
+              ],
+              "isRequired": true,
+              "title": "Does the system enable human override of system decisions?"
+            },
+            {
+              "type": "radiogroup",
+              "name": "log-overrides",
+              "choices": [
+                { "text": "Yes", "value": -1 },
+                { "text": "No", "value": 0 }
+              ],
+              "isRequired": true,
+              "title": "Is there a process in place to log the instances when overrides were performed?"
+            },
+            {
+              "type": "radiogroup",
+              "name": "audit-change-control",
+              "choices": [
+                { "text": "Yes", "value": -2 },
+                { "text": "No", "value": 0 }
+              ],
+              "isRequired": true,
+              "title": "Does the audit trail include change control processes to record modifications to the system's operation or performance?"
+            },
+            {
+              "type": "radiogroup",
+              "name": "case-gcearb",
+              "choices": [
+                { "text": "Yes", "value": -1 },
+                { "text": "No", "value": 0 }
+              ],
+              "isRequired": true,
+              "title": "Have you prepared a concept case to the Government of Canada Enterprise Architecture Review Baord?"
+            }
+          ]
         }
       ]
     }
