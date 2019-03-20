@@ -39,7 +39,7 @@
     },
     {
       "name": "page2",
-      "elements":[
+      "elements": [
         {
           "type": "panel",
           "title": "BUSINESS DRIVER / POSITIVE IMPACT",
@@ -48,9 +48,9 @@
               "type": "checkbox",
               "name": "motivation",
               "title": "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)",
-              "isRequired":true,
+              "isRequired": true,
               "hasNone": false,
-              "choices":[
+              "choices": [
                 "Existing backlog of work or cases",
                 "Improve overall quality of decisions",
                 "Lower transaction costs of an existing program",
@@ -67,11 +67,11 @@
             }
           ]
         }
-
       ]
-    },    {
+    },
+    {
       "name": "page3",
-      "elements":[
+      "elements": [
         {
           "type": "panel",
           "title": "ABOUT THE SYSTEM",
@@ -80,9 +80,9 @@
               "type": "checkbox",
               "name": "motivation",
               "title": "Please check which of the following capabilities apply to your system.",
-              "isRequired":true,
+              "isRequired": true,
               "hasNone": false,
-              "choices":[
+              "choices": [
                 "**Image and object recognition**: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.",
                 "**Text and speech analysis**: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging ",
                 "**Risk assessment**: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions",
@@ -92,7 +92,6 @@
             }
           ]
         }
-
       ]
     },
     {
@@ -102,8 +101,8 @@
           "type": "radiogroup",
           "name": "discretion",
           "choices": [
-            { "text": "Yes (4 pts)", "value": 4 },
-            { "text": "No (0 Pts)", "value": 0 }
+            { "text": "Yes", "value": 4 },
+            { "text": "No", "value": 0 }
           ],
           "isRequired": true,
           "title": "Does the recommendation or decision made by the system include elements of discretion?"
@@ -122,10 +121,333 @@
           "isRequired": true,
           "colCount": 0,
           "choices": [
-            { "text": "Reversible (1 pt)", "value": 1 },
-            { "text": "Likely Reversible (2 pt)", "value": 2 },
-            { "text": "Difficult to Reverse (3 pt)", "value": 3 },
-            { "text": "Irreversible (4 pt)", "value": 4 }
+            { "text": "Reversible", "value": 1 },
+            { "text": "Likely Reversible", "value": 2 },
+            { "text": "Difficult to Reverse", "value": 3 },
+            { "text": "Irreversible", "value": 4 }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "impact",
+          "title": "How long will impacts from the decision last?",
+          "isRequired": true,
+          "colCount": 0,
+          "choices": [
+            { "text": "Impacts are most likely to be brief", "value": 1 },
+            {
+              "text": "Some impacts may last a matter of months, but some lingering impacts may last longer",
+              "value": 2
+            },
+            {
+              "text": "Impacts can last over a year, with some longer",
+              "value": 3
+            },
+            { "text": "Most impacts are perpetual", "value": 4 }
+          ]
+        },
+        {
+          "name": "impact-desc",
+          "type": "text",
+          "isRequired": "true",
+          "title": "Please describe why the impacts resulting from the decision are _{impact}_. "
+        },
+        {
+          "type": "dropdown",
+          "name": "rights-freedoms",
+          "title": "the impacts that the decision will have on _the rights or freedoms_ of individuals or communities, will likely be:",
+          "isRequired": true,
+          "colCount": 0,
+          "choices": [
+            { "text": "little to no impact", "value": 1 },
+            { "text": "moderate impact", "value": 2 },
+            { "text": "high impact", "value": 3 },
+            { "text": "very high impact", "value": 4 }
+          ]
+        },
+        {
+          "name": "rights-freedoms-desc",
+          "type": "text",
+          "isRequired": "true",
+          "title": "Please describe why the impacts resulting from the decision are _{rights-freedoms}_. "
+        },
+        {
+          "type": "dropdown",
+          "name": "health-wellbeing",
+          "title": "the impacts that the decision will have on _the health and wellbeing_ of individuals or communities, will likely be:",
+          "isRequired": true,
+          "colCount": 0,
+          "choices": [
+            { "text": "little to no impact", "value": 1 },
+            { "text": "moderate impact", "value": 2 },
+            { "text": "high impact", "value": 3 },
+            { "text": "very high impact", "value": 4 }
+          ]
+        },
+        {
+          "name": "health-wellbeing-desc",
+          "type": "text",
+          "isRequired": "true",
+          "title": "Please describe why the impacts resulting from the decision are _{health-wellbeing}_. "
+        },
+        {
+          "type": "dropdown",
+          "name": "economic-interests",
+          "title": "the impacts that the decision will have on _economic-interests_ of individuals or communities, will likely be:",
+          "isRequired": true,
+          "colCount": 0,
+          "choices": [
+            { "text": "little to no impact", "value": 1 },
+            { "text": "moderate impact", "value": 2 },
+            { "text": "high impact", "value": 3 },
+            { "text": "very high impact", "value": 4 }
+          ]
+        },
+        {
+          "name": "economic-interests-desc",
+          "type": "text",
+          "isRequired": "true",
+          "title": "Please describe why the impacts resulting from the decision are _{economic-interests}_. "
+        },
+        {
+          "type": "dropdown",
+          "name": "environmental-sustainability",
+          "title": "the impacts that the decision will have on the _ongoing sustainability of an environmental ecosystem_, will likely be:",
+          "isRequired": true,
+          "colCount": 0,
+          "choices": [
+            { "text": "little to no impact", "value": 1 },
+            { "text": "moderate impact", "value": 2 },
+            { "text": "high impact", "value": 3 },
+            { "text": "very high impact", "value": 4 }
+          ]
+        },
+        {
+          "name": "rights-freedoms-desc",
+          "type": "text",
+          "isRequired": "true",
+          "title": "Please describe why the impacts resulting from the decision are _{environmental-sustainability}_. "
+        }
+      ]
+    },
+    {
+      "name": "page5",
+      "elements": [
+        {
+          "type": "panel",
+          "title": "ABOUT THE DATA",
+          "elements": [
+            {
+              "type": "panel",
+              "title": "A. Data Source",
+              "elements": [
+                {
+                  "type": "radiogroup",
+                  "name": "pii-input",
+                  "choices": [
+                    { "text": "Yes", "value": 4 },
+                    { "text": "No", "value": 0 }
+                  ],
+                  "isRequired": true,
+                  "title": "Will the Automated Decision System use personal information as input data?"
+                },
+                {
+                  "type": "dropdown",
+                  "name": "data-classification",
+                  "title": "What is the highest security classification of the input data used by the system? (Select one)",
+                  "isRequired": true,
+                  "colCount": 0,
+                  "choices": [
+                    { "text": "None", "value": 0 },
+                    { "text": "Protected A", "value": 1 },
+                    { "text": "Classified/Confidential", "value": 2 },
+                    { "text": "Protected B/Protected C", "value": 3 },
+                    { "text": "Secret/Top Secret", "value": 4 }
+                  ]
+                },
+                {
+                  "type": "dropdown",
+                  "name": "data-control",
+                  "title": "Who controls the data?",
+                  "isRequired": true,
+                  "colCount": 0,
+                  "choices": [
+                    { "text": "Federal government", "value": 1 },
+                    {
+                      "text": "Other Canadian Government (prov/municipal)",
+                      "value": 3
+                    },
+                    { "text": "Private Sector / NGO", "value": 4 },
+                    { "text": "Open Data Source", "value": 0 }
+                  ]
+                },
+                {
+                  "type": "radiogroup",
+                  "name": "multi-sources",
+                  "choices": [
+                    { "text": "Yes", "value": 4 },
+                    { "text": "No", "value": 0 }
+                  ],
+                  "isRequired": true,
+                  "title": "Will the system data use from multiple different sources?"
+                },
+                {
+                  "type": "radiogroup",
+                  "name": "",
+                  "choices": [
+                    { "text": "Yes", "value": 4 },
+                    { "text": "No", "value": 0 }
+                  ],
+                  "isRequired": true,
+                  "title": "Will the system require input data from an Internet- or telephony-connected device? (e.g. a sensor)"
+                },
+                {
+                  "type": "radiogroup",
+                  "name": "interface",
+                  "choices": [
+                    { "text": "Yes", "value": 4 },
+                    { "text": "No", "value": 0 }
+                  ],
+                  "isRequired": true,
+                  "title": "Will  the system interface with other IT systems?"
+                },
+                {
+                  "type": "dropdown",
+                  "name": "training-data-collector",
+                  "title": "Who collected the data used for training the system? ",
+                  "isRequired": true,
+                  "colCount": 0,
+                  "choices": [
+                    { "text": "Your institution", "value": 1 },
+                    { "text": "Another federal institution", "value": 2 },
+                    { "text": "Another level of government", "value": 3 },
+                    {
+                      "text": "A foreign government or non-government third party",
+                      "value": 4
+                    }
+                  ]
+                },
+                {
+                  "type": "dropdown",
+                  "name": "input-data-collector",
+                  "title": "Who collected the data used for training the system? ",
+                  "isRequired": true,
+                  "colCount": 0,
+                  "choices": [
+                    { "text": "Your institution", "value": 1 },
+                    { "text": "Another federal institution", "value": 2 },
+                    { "text": "Another level of government", "value": 3 },
+                    {
+                      "text": "A foreign government or non-government third party",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "B. Type of Data",
+          "elements": [
+            {
+              "type": "radiogroup",
+              "name": "unstructured-data",
+              "choices": [
+                { "text": "Yes", "value": 4 },
+                { "text": "No", "value": 0 }
+              ],
+              "isRequired": true,
+              "title": "Will the system require the analysis of unstructured data to render a recommendation or a decision?"
+            },
+            {
+              "type": "checkbox",
+              "name": "unstructured-data-type",
+              "choices": [
+                { "text": "Audio and text files", "value": 2 },
+                { "text": "Images and Videos", "value": 4 }
+              ],
+              "requiredIf": "{unstructured-data} contains 'Yes'",
+              "title": "What types of unstructured data (Check all that apply)?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page6",
+      "elements": [
+        {
+          "type": "panel",
+          "title": "DE-RISKING AND MITIGATION MEASURES",
+          "elements": [
+            {
+              "type": "panel",
+              "title": "DATA QUALITY",
+              "elements": [
+                {
+                  "type": "radiogroup",
+                  "name": "bias-documentation",
+                  "choices": [
+                    { "text": "Yes", "value": -2 },
+                    { "text": "No", "value": 0 }
+                  ],
+                  "isRequired": true,
+                  "title": "Have you documented processes in place to test datasets against biases and other unexpected outcomes? This could include experience in applying frameworks, methods, guidelines or other assessment tools."
+                },
+                {
+                  "type": "radiogroup",
+                  "name": "data-quality-documentation",
+                  "choices": [
+                    { "text": "Yes", "value": -2 },
+                    { "text": "No", "value": 0 }
+                  ],
+                  "isRequired": true,
+                  "title": "Is there a process currently in place to document how data quality issues were resolved during the design process?"
+                },
+                {
+                  "type": "radiogroup",
+                  "name": "gbaplus",
+                  "choices": [
+                    { "text": "Yes", "value": -1 },
+                    { "text": "No", "value": 0 }
+                  ],
+                  "isRequired": true,
+                  "title": "Have you undertaken a Gender Based Analysis Plus of the data?"
+                },
+                {
+                  "type": "radiogroup",
+                  "name": "account-assign",
+                  "choices": [
+                    { "text": "Yes", "value": -2 },
+                    { "text": "No", "value": 0 }
+                  ],
+                  "isRequired": true,
+                  "title": "Have you assigned accountability in your institution for the design, development, maintenance, and improvement of the system?"
+                },
+                {
+                  "type": "radiogroup",
+                  "name": "outdated-unreliable-mitigation",
+                  "choices": [
+                    { "text": "Yes", "value": -2 },
+                    { "text": "No", "value": 0 }
+                  ],
+                  "isRequired": true,
+                  "title": "Have you documented processes to manage the risk that outdated or unreliable data is used to make an automated decision?"
+                },
+                {
+                  "type": "radiogroup",
+                  "name": "open-gov",
+                  "choices": [
+                    { "text": "Yes", "value": -2 },
+                    { "text": "No", "value": 0 }
+                  ],
+                  "isRequired": true,
+                  "title": "Will the data be posted on Open Gov?"
+                }
+              ]
+            }
           ]
         }
       ]
