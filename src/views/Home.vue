@@ -35,7 +35,9 @@ export default class Home extends Vue {
     this.Survey.onValueChanged.add(result => {
       this.$store.commit("updateResult", result);
     });
+
     const converter = new showdown.Converter();
+
     this.Survey.onTextMarkdown.add(function(survey, options) {
       //convert the mardown text to html
       var str = converter.makeHtml(options.text);
