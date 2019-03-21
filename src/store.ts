@@ -40,7 +40,6 @@ function calculateFinalScore(survey: SurveyModel): number {
 
 const store: StoreOptions<RootState> = {
   state: {
-    score: 1,
     result: undefined
   },
   mutations: {
@@ -50,16 +49,16 @@ const store: StoreOptions<RootState> = {
   },
   getters: {
     calcscore: state => {
-      if (state.result === undefined) {
-        return 0;
-      }
+      if (state.result === undefined) return 0;
       return calculateFinalScore(state.result);
     },
     toolData: state => {
-      if (state.result === undefined) {
-        return {};
-      }
+      if (state.result === undefined) return {};
       return state.result.data;
+    },
+    plainData: state => {
+      if (state.result === undefined) return {};
+      return state.result.getPlainData();
     }
   }
 };

@@ -1,0 +1,303 @@
+[
+  {
+    "name": "respondent",
+    "title": "Name of respondent",
+    "value": "jkladfjkla",
+    "displayValue": "jkladfjkla",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+    "name": "title",
+    "title": "Project Title",
+    "value": "kljgafg",
+    "displayValue": "kljgafg",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "motivation",
+    "title": "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)",
+    "value": [
+      "Improve overall quality of decisions",
+      "Lower transaction costs of an existing program",
+      "Use innovative approaches",
+      "**Content generation**: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
+      "**Image and object recognition**: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object."
+    ],
+    "displayValue": "Improve overall quality of decisions, Lower transaction costs of an existing program, Use innovative approaches, **Content generation**: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts, **Image and object recognition**: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.",
+    "isNode": true,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    },
+    "data": [
+      {
+        "name": "0",
+        "title": "",
+        "value": "Improve overall quality of decisions",
+        "displayValue": "Improve overall quality of decisions",
+        "getString": {
+          "_custom": {
+            "type": "function",
+            "display": "<span>ƒ</span> getString(val)"
+          }
+        },
+        "isNode": false
+      },
+      {
+        "name": "1",
+        "title": "",
+        "value": "Lower transaction costs of an existing program",
+        "displayValue": "Lower transaction costs of an existing program",
+        "getString": {
+          "_custom": {
+            "type": "function",
+            "display": "<span>ƒ</span> getString(val)"
+          }
+        },
+        "isNode": false
+      },
+      {
+        "name": "2",
+        "title": "",
+        "value": "Use innovative approaches",
+        "displayValue": "Use innovative approaches",
+        "getString": {
+          "_custom": {
+            "type": "function",
+            "display": "<span>ƒ</span> getString(val)"
+          }
+        },
+        "isNode": false
+      },
+      {
+        "name": "3",
+        "title": "",
+        "value": "**Content generation**: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
+        "displayValue": "**Content generation**: Analyzing large data sets to categorize",
+        "getString": {
+          "_custom": {
+            "type": "function",
+            "display": "<span>ƒ</span> getString(val)"
+          }
+        },
+        "isNode": false
+      },
+      {
+        "name": "4",
+        "title": "",
+        "value": "**Image and object recognition**: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.",
+        "displayValue": "process",
+        "getString": {
+          "_custom": {
+            "type": "function",
+            "display": "<span>ƒ</span> getString(val)"
+          }
+        },
+        "isNode": false
+      }
+    ]
+  },
+  {
+    "name": "motivationOther",
+    "title": "motivationOther",
+    "value": "__vue_devtool_undefined__",
+    "displayValue": "",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "motivation",
+    "title": "Please check which of the following capabilities apply to your system.",
+    "value": [
+      "Improve overall quality of decisions",
+      "Lower transaction costs of an existing program",
+      "Use innovative approaches",
+      "**Content generation**: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
+      "**Image and object recognition**: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object."
+    ],
+    "displayValue": "Improve overall quality of decisions, Lower transaction costs of an existing program, Use innovative approaches, <strong>Content generation</strong>: Analyzing large data sets to categorize, process, triage,&nbsp;personalize, and serve specific content for specific contexts, <strong>Image and object recognition</strong>: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.",
+    "isNode": true,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    },
+    "data": [
+      {
+        "name": "0",
+        "title": "",
+        "value": "Improve overall quality of decisions",
+        "displayValue": "Improve overall quality of decisions",
+        "getString": {
+          "_custom": {
+            "type": "function",
+            "display": "<span>ƒ</span> getString(val)"
+          }
+        },
+        "isNode": false
+      },
+      {
+        "name": "1",
+        "title": "",
+        "value": "Lower transaction costs of an existing program",
+        "displayValue": "Lower transaction costs of an existing program",
+        "getString": {
+          "_custom": {
+            "type": "function",
+            "display": "<span>ƒ</span> getString(val)"
+          }
+        },
+        "isNode": false
+      },
+      {
+        "name": "2",
+        "title": "",
+        "value": "Use innovative approaches",
+        "displayValue": "Use innovative approaches",
+        "getString": {
+          "_custom": {
+            "type": "function",
+            "display": "<span>ƒ</span> getString(val)"
+          }
+        },
+        "isNode": false
+      },
+      {
+        "name": "3",
+        "title": "",
+        "value": "**Content generation**: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
+        "displayValue": "<strong>Content generation</strong>: Analyzing large data sets to categorize",
+        "getString": {
+          "_custom": {
+            "type": "function",
+            "display": "<span>ƒ</span> getString(val)"
+          }
+        },
+        "isNode": false
+      },
+      {
+        "name": "4",
+        "title": "",
+        "value": "**Image and object recognition**: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.",
+        "displayValue": "process",
+        "getString": {
+          "_custom": {
+            "type": "function",
+            "display": "<span>ƒ</span> getString(val)"
+          }
+        },
+        "isNode": false
+      }
+    ]
+  },
+  {
+    "name": "reversible",
+    "title": "Are the impacts resulting from the decision reversible?",
+    "value": 3,
+    "displayValue": "Difficult to Reverse",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "impact",
+    "title": "How long will impacts from the decision last?",
+    "value": 2,
+    "displayValue": "Some impacts may last a matter of months, but some lingering impacts may last longer",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "impact-desc",
+    "title": "Please describe why the impacts resulting from the decision are _Some impacts may last a matter of months, but some lingering impacts may last longer_. ",
+    "value": "xzfg",
+    "displayValue": "xzfg",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "environmental-sustainability",
+    "title": "the impacts that the decision will have on the _ongoing sustainability of an environmental ecosystem_, will likely be:",
+    "value": 3,
+    "displayValue": "high impact",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "rights-freedoms-desc",
+    "title": "Please describe why the impacts resulting from the decision are _high impact_. ",
+    "value": "asdfasdf",
+    "displayValue": "asdfasdf",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "audit-trail",
+    "title": "Does the system provide an audit trail that records recommendations or decisions?",
+    "value": -2,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "case-gcearb",
+    "title": "Have you prepared a concept case to the Government of Canada Enterprise Architecture Review Baord?",
+    "value": 0,
+    "displayValue": "No",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  }
+]
