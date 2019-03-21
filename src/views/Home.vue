@@ -26,8 +26,6 @@ export default class Home extends Vue {
   created() {
     this.Survey.onComplete.add(result => {
       this.$store.commit("updateResult", result);
-      console.log(result);
-      console.log(this.$store.getters.results);
     });
 
     this.Survey.onComplete.add(result => {

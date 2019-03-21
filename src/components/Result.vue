@@ -7,7 +7,7 @@
       <MultiChoiceResult :data=data />
     </div>
     <div v-else>
-      <valueResult :data=data />
+      <ValueResult :data=data />
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@ import MultiChoiceResult from "@/components/MultiChoiceResult.vue";
     TextResult,
     ValueResult, 
     MultiChoiceResult
-  }
+  },
 })
 export default class Result extends Vue {
   @Prop() data : any;

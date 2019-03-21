@@ -1,6 +1,9 @@
 <template>
   <div>
-    <strong>{{ data.title }}</strong> {{ data.displayValue }}
+    <div class="col-md-12">
+      <strong>{{ data.title }}</strong><br/>
+      {{ data.displayValue }} 
+    </div>
   </div>
 </template>
 

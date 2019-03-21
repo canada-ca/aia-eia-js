@@ -1,12 +1,15 @@
 <template>
   <div>
-    <div> <strong>{{ data.title }}</strong> </div>
-      <div>
-        <div v-for="(str,index) in data.value"
-            :key="index">
-            {{ str }}
-          </div>
+    <div class="col-md-12"> <strong>{{ data.title }}</strong>
+    <br/>
+    <ul>
+
+      <div v-for="(str,index) in data.value"
+        :key="index">
+        <li>{{ str }}</li>
       </div>
+    </ul>
+    </div>
   </div>
 </template>
 
