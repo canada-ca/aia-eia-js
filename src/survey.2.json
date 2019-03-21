@@ -52,7 +52,17 @@
             "Use innovative approaches",
             "Other (please specify)"
           ]
-        }
+        },
+                   {
+              "type": "checkbox",
+              "name": "unstructured-data-type",
+              "choices": [
+                { "text": "Audio and text files", "value": 2 },
+                { "text": "Images and Videos", "value": 4 }
+              ],
+              "requiredIf": "{unstructured-data} contains 'Yes'",
+              "title": "What types of unstructured data (Check all that apply)?"
+            }
 
       ]
     }

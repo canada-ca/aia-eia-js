@@ -2,8 +2,8 @@
   {
     "name": "respondent",
     "title": "Name of respondent",
-    "value": "jkladfjkla",
-    "displayValue": "jkladfjkla",
+    "value": "asdfasdf",
+    "displayValue": "asdfasdf",
     "isNode": false,
     "getString": {
       "_custom": {
@@ -12,10 +12,63 @@
       }
     }
   },
+  {
     "name": "title",
+    "title": "Job title",
+    "value": "asdfasdf",
+    "displayValue": "asdfasdf",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "department",
+    "title": "Department",
+    "value": "asdfasdf",
+    "displayValue": "asdfasdf",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "branch",
+    "title": "Branch",
+    "value": "asdfasdf",
+    "displayValue": "asdfasdf",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "project-title",
     "title": "Project Title",
-    "value": "kljgafg",
-    "displayValue": "kljgafg",
+    "value": "asdfasdf",
+    "displayValue": "asdfasdf",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "desc-attachment",
+    "title": "Please provide an attachment of the project description",
+    "value": "asdfasdfasdfgadfgsadfgadfg",
+    "displayValue": "asdfasdfasdfgadfgsadfgadfg",
     "isNode": false,
     "getString": {
       "_custom": {
@@ -27,14 +80,8 @@
   {
     "name": "motivation",
     "title": "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)",
-    "value": [
-      "Improve overall quality of decisions",
-      "Lower transaction costs of an existing program",
-      "Use innovative approaches",
-      "**Content generation**: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
-      "**Image and object recognition**: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object."
-    ],
-    "displayValue": "Improve overall quality of decisions, Lower transaction costs of an existing program, Use innovative approaches, **Content generation**: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts, **Image and object recognition**: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.",
+    "value": ["Improve overall quality of decisions"],
+    "displayValue": "Improve overall quality of decisions",
     "isNode": true,
     "getString": {
       "_custom": {
@@ -48,58 +95,6 @@
         "title": "",
         "value": "Improve overall quality of decisions",
         "displayValue": "Improve overall quality of decisions",
-        "getString": {
-          "_custom": {
-            "type": "function",
-            "display": "<span>ƒ</span> getString(val)"
-          }
-        },
-        "isNode": false
-      },
-      {
-        "name": "1",
-        "title": "",
-        "value": "Lower transaction costs of an existing program",
-        "displayValue": "Lower transaction costs of an existing program",
-        "getString": {
-          "_custom": {
-            "type": "function",
-            "display": "<span>ƒ</span> getString(val)"
-          }
-        },
-        "isNode": false
-      },
-      {
-        "name": "2",
-        "title": "",
-        "value": "Use innovative approaches",
-        "displayValue": "Use innovative approaches",
-        "getString": {
-          "_custom": {
-            "type": "function",
-            "display": "<span>ƒ</span> getString(val)"
-          }
-        },
-        "isNode": false
-      },
-      {
-        "name": "3",
-        "title": "",
-        "value": "**Content generation**: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
-        "displayValue": "**Content generation**: Analyzing large data sets to categorize",
-        "getString": {
-          "_custom": {
-            "type": "function",
-            "display": "<span>ƒ</span> getString(val)"
-          }
-        },
-        "isNode": false
-      },
-      {
-        "name": "4",
-        "title": "",
-        "value": "**Image and object recognition**: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.",
-        "displayValue": "process",
         "getString": {
           "_custom": {
             "type": "function",
@@ -124,16 +119,12 @@
     }
   },
   {
-    "name": "motivation",
+    "name": "capabilities",
     "title": "Please check which of the following capabilities apply to your system.",
     "value": [
-      "Improve overall quality of decisions",
-      "Lower transaction costs of an existing program",
-      "Use innovative approaches",
-      "**Content generation**: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
-      "**Image and object recognition**: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object."
+      "**Risk assessment**: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions"
     ],
-    "displayValue": "Improve overall quality of decisions, Lower transaction costs of an existing program, Use innovative approaches, <strong>Content generation</strong>: Analyzing large data sets to categorize, process, triage,&nbsp;personalize, and serve specific content for specific contexts, <strong>Image and object recognition</strong>: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.",
+    "displayValue": "<strong>Risk assessment</strong>: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions",
     "isNode": true,
     "getString": {
       "_custom": {
@@ -145,60 +136,8 @@
       {
         "name": "0",
         "title": "",
-        "value": "Improve overall quality of decisions",
-        "displayValue": "Improve overall quality of decisions",
-        "getString": {
-          "_custom": {
-            "type": "function",
-            "display": "<span>ƒ</span> getString(val)"
-          }
-        },
-        "isNode": false
-      },
-      {
-        "name": "1",
-        "title": "",
-        "value": "Lower transaction costs of an existing program",
-        "displayValue": "Lower transaction costs of an existing program",
-        "getString": {
-          "_custom": {
-            "type": "function",
-            "display": "<span>ƒ</span> getString(val)"
-          }
-        },
-        "isNode": false
-      },
-      {
-        "name": "2",
-        "title": "",
-        "value": "Use innovative approaches",
-        "displayValue": "Use innovative approaches",
-        "getString": {
-          "_custom": {
-            "type": "function",
-            "display": "<span>ƒ</span> getString(val)"
-          }
-        },
-        "isNode": false
-      },
-      {
-        "name": "3",
-        "title": "",
-        "value": "**Content generation**: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
-        "displayValue": "<strong>Content generation</strong>: Analyzing large data sets to categorize",
-        "getString": {
-          "_custom": {
-            "type": "function",
-            "display": "<span>ƒ</span> getString(val)"
-          }
-        },
-        "isNode": false
-      },
-      {
-        "name": "4",
-        "title": "",
-        "value": "**Image and object recognition**: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.",
-        "displayValue": "process",
+        "value": "**Risk assessment**: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions",
+        "displayValue": "<strong>Risk assessment</strong>: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions",
         "getString": {
           "_custom": {
             "type": "function",
@@ -210,10 +149,36 @@
     ]
   },
   {
+    "name": "discretion",
+    "title": "Does the recommendation or decision made by the system include elements of discretion?",
+    "value": 4,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "discretion-desc",
+    "title": "Describe what is discretionary about the decision",
+    "value": "asdfasdf",
+    "displayValue": "asdfasdf",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
     "name": "reversible",
     "title": "Are the impacts resulting from the decision reversible?",
-    "value": 3,
-    "displayValue": "Difficult to Reverse",
+    "value": 4,
+    "displayValue": "Irreversible",
     "isNode": false,
     "getString": {
       "_custom": {
@@ -238,32 +203,6 @@
   {
     "name": "impact-desc",
     "title": "Please describe why the impacts resulting from the decision are _Some impacts may last a matter of months, but some lingering impacts may last longer_. ",
-    "value": "xzfg",
-    "displayValue": "xzfg",
-    "isNode": false,
-    "getString": {
-      "_custom": {
-        "type": "function",
-        "display": "<span>ƒ</span> getString(val)"
-      }
-    }
-  },
-  {
-    "name": "environmental-sustainability",
-    "title": "the impacts that the decision will have on the _ongoing sustainability of an environmental ecosystem_, will likely be:",
-    "value": 3,
-    "displayValue": "high impact",
-    "isNode": false,
-    "getString": {
-      "_custom": {
-        "type": "function",
-        "display": "<span>ƒ</span> getString(val)"
-      }
-    }
-  },
-  {
-    "name": "rights-freedoms-desc",
-    "title": "Please describe why the impacts resulting from the decision are _high impact_. ",
     "value": "asdfasdf",
     "displayValue": "asdfasdf",
     "isNode": false,
@@ -275,8 +214,478 @@
     }
   },
   {
+    "name": "rights-freedoms",
+    "title": "the impacts that the decision will have on _the rights or freedoms_ of individuals or communities, will likely be:",
+    "value": 2,
+    "displayValue": "moderate impact",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "rights-freedoms-desc",
+    "title": "Please describe why the impacts resulting from the decision are _moderate impact_. ",
+    "value": "asdfasdf",
+    "displayValue": "asdfasdf",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "health-wellbeing",
+    "title": "the impacts that the decision will have on _the health and wellbeing_ of individuals or communities, will likely be:",
+    "value": 2,
+    "displayValue": "moderate impact",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "health-wellbeing-desc",
+    "title": "Please describe why the impacts resulting from the decision are _moderate impact_. ",
+    "value": "asdf",
+    "displayValue": "asdf",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "economic-interests",
+    "title": "the impacts that the decision will have on _economic-interests_ of individuals or communities, will likely be:",
+    "value": 2,
+    "displayValue": "moderate impact",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "economic-interests-desc",
+    "title": "Please describe why the impacts resulting from the decision are _moderate impact_. ",
+    "value": "asdfasdf",
+    "displayValue": "asdfasdf",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "environmental-sustainability",
+    "title": "the impacts that the decision will have on the _ongoing sustainability of an environmental ecosystem_, will likely be:",
+    "value": 1,
+    "displayValue": "little to no impact",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "rights-freedoms-desc",
+    "title": "Please describe why the impacts resulting from the decision are _little to no impact_. ",
+    "value": "asdfasdf",
+    "displayValue": "asdfasdf",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "pii-input",
+    "title": "Will the Automated Decision System use personal information as input data?",
+    "value": 4,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "data-classification",
+    "title": "What is the highest security classification of the input data used by the system? (Select one)",
+    "value": 2,
+    "displayValue": "Classified/Confidential",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "data-control",
+    "title": "Who controls the data?",
+    "value": 3,
+    "displayValue": "Other Canadian Government (prov/municipal)",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "multi-sources",
+    "title": "Will the system data use from multiple different sources?",
+    "value": 0,
+    "displayValue": "No",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "",
+    "title": "Will the system require input data from an Internet- or telephony-connected device? (e.g. a sensor)",
+    "value": 4,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "interface",
+    "title": "Will  the system interface with other IT systems?",
+    "value": 0,
+    "displayValue": "No",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "training-data-collector",
+    "title": "Who collected the data used for training the system? ",
+    "value": 2,
+    "displayValue": "Another federal institution",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "input-data-collector",
+    "title": "Who collected the data used for training the system? ",
+    "value": 2,
+    "displayValue": "Another federal institution",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "unstructured-data",
+    "title": "Will the system require the analysis of unstructured data to render a recommendation or a decision?",
+    "value": 4,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "unstructured-data-type",
+    "title": "What types of unstructured data (Check all that apply)?",
+    "value": [4, 2],
+    "displayValue": "Images and Videos, Audio and text files",
+    "isNode": true,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    },
+    "data": [
+      {
+        "name": "0",
+        "title": "",
+        "value": 4,
+        "displayValue": "Images and Videos",
+        "getString": {
+          "_custom": {
+            "type": "function",
+            "display": "<span>ƒ</span> getString(val)"
+          }
+        },
+        "isNode": false
+      },
+      {
+        "name": "1",
+        "title": "",
+        "value": 2,
+        "displayValue": "Audio and text files",
+        "getString": {
+          "_custom": {
+            "type": "function",
+            "display": "<span>ƒ</span> getString(val)"
+          }
+        },
+        "isNode": false
+      }
+    ]
+  },
+  {
+    "name": "bias-documentation",
+    "title": "Have you documented processes in place to test datasets against biases and other unexpected outcomes? This could include experience in applying frameworks, methods, guidelines or other assessment tools.",
+    "value": -2,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "data-quality-documentation",
+    "title": "Is there a process currently in place to document how data quality issues were resolved during the design process?",
+    "value": 0,
+    "displayValue": "No",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "gbaplus",
+    "title": "Have you undertaken a Gender Based Analysis Plus of the data?",
+    "value": 0,
+    "displayValue": "No",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "account-assign",
+    "title": "Have you assigned accountability in your institution for the design, development, maintenance, and improvement of the system?",
+    "value": -2,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "outdated-unreliable-mitigation",
+    "title": "Have you documented processes to manage the risk that outdated or unreliable data is used to make an automated decision?",
+    "value": -2,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "open-gov",
+    "title": "Will the data be posted on Open Gov?",
+    "value": 0,
+    "displayValue": "No",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
     "name": "audit-trail",
     "title": "Does the system provide an audit trail that records recommendations or decisions?",
+    "value": -2,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "change-log",
+    "title": "Do  you maintain a log detailing  all of the changes made to the model and the system ?",
+    "value": 0,
+    "displayValue": "No",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "clear-audit",
+    "title": "Does the audit trail clearly set out all decision points made by the system?",
+    "value": 0,
+    "displayValue": "No",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "audit-decision-maker",
+    "title": "Does the audit trail show who an authorized decision-maker is?",
+    "value": -1,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "produce-reasons",
+    "title": "Does the system produce reasons for its decisions or recommendations when required?",
+    "value": -2,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "access-management",
+    "title": "Is there a process in place to grant, monitor, and revoke access permission to the system?",
+    "value": -1,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "feedback-capture",
+    "title": "Is there a mechanism to capture feedback by users of the system?",
+    "value": 0,
+    "displayValue": "No",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "challenge-process",
+    "title": "Is there a recourse process planned or established for clients that wish to challenge the decision?",
+    "value": -2,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "enable-override",
+    "title": "Does the system enable human override of system decisions?",
+    "value": -2,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "log-overrides",
+    "title": "Is there a process in place to log the instances when overrides were performed?",
+    "value": -1,
+    "displayValue": "Yes",
+    "isNode": false,
+    "getString": {
+      "_custom": {
+        "type": "function",
+        "display": "<span>ƒ</span> getString(val)"
+      }
+    }
+  },
+  {
+    "name": "audit-change-control",
+    "title": "Does the audit trail include change control processes to record modifications to the system's operation or performance?",
     "value": -2,
     "displayValue": "Yes",
     "isNode": false,

@@ -5,15 +5,36 @@ import { IQuestion, SurveyModel, PageModel, Survey } from "survey-vue";
 
 Vue.use(Vuex);
 
+function addItemsInArray(val: any[]) {
+  let total = 0;
+  val.forEach(item => {
+    if (typeof item === "number") {
+      total = total + item;
+    }
+  });
+  return total;
+}
 function hasScore(question: IQuestion): boolean {
   if (
     question.getType() === "radiogroup" ||
+    question.getType() === "checkbox" ||
     question.getType() === "dropdown"
   ) {
     return true;
   }
-
   return false;
+}
+
+function getValue(val: any) {
+  if (val === undefined) {
+    return 0;
+  }
+
+  if (Array.isArray(val)) {
+    return addItemsInArray(val);
+  }
+
+  return val;
 }
 
 function calculateFinalScore(survey: SurveyModel): number {
@@ -29,10 +50,7 @@ function calculateFinalScore(survey: SurveyModel): number {
   let total = 0;
 
   valueNames.forEach(name => {
-    if (survey.data[name] === undefined) {
-      return total;
-    }
-    total = total + survey.data[name];
+    total = total + getValue(survey.data[name]);
   });
 
   return total;
@@ -58,7 +76,10 @@ const store: StoreOptions<RootState> = {
     },
     plainData: state => {
       if (state.result === undefined) return {};
-      return state.result.getPlainData();
+      if (state.result.data === undefined) return {};
+      return state.result.getPlainData({
+        includeEmpty: false
+      });
     }
   }
 };
