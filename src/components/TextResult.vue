@@ -1,11 +1,6 @@
 <template>
   <div>
-    <div v-if="data.value == data.displayValue">
-      <TextResult :data=data />
-    </div>
-    <div v-else>
-      <strong>{{ data.title }}</strong> {{ data.displayValue }} Modifier: <strong>{{ data.value }}</strong>
-    </div>
+    <strong>{{ data.title }}</strong> {{ data.displayValue }}
   </div>
 </template>
 

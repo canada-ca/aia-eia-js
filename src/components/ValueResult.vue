@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <strong>{{ data.title }}</strong> {{ data.displayValue }} Modifier: <strong>{{ data.value }}</strong>
+    <strong>{{ data.title }}</strong> {{ data.displayValue }} <strong>Modifier:</strong> {{ data.value }}
   </div>
 </template>
 
