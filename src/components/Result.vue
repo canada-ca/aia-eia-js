@@ -1,13 +1,13 @@
 <template>
   <div>
     <div v-if="data.value == data.displayValue">
-      <TextResult :data=data />
+      <TextResult :data="data" />
     </div>
     <div v-else-if="Array.isArray(data.value)">
-      <MultiChoiceResult :data=data />
+      <MultiChoiceResult :data="data" />
     </div>
     <div v-else>
-      <ValueResult :data=data />
+      <ValueResult :data="data" />
     </div>
   </div>
 </template>
@@ -19,13 +19,13 @@ import ValueResult from "@/components/ValueResult.vue";
 import MultiChoiceResult from "@/components/MultiChoiceResult.vue";
 
 @Component({
-  components:{ 
+  components: {
     TextResult,
-    ValueResult, 
+    ValueResult,
     MultiChoiceResult
-  },
+  }
 })
 export default class Result extends Vue {
-  @Prop() data : any;
+  @Prop() data: any;
 }
 </script>

@@ -2,17 +2,18 @@
   <div>
     <h1>Algorithmic Impact Assessment Results</h1>
     <Score />
-    <p>
-      <div class="container-fluid">
-        <div class="row" v-for="result in myResults"
-            :key="result.name" >
-          <Result :data=result></Result>
-        </div>
-        <div class="row">
-          <div class="col-md-push-10 col-md-2"><strong>Final Score:</strong> {{score}}</div>
+    <p></p>
+    <div class="container-fluid">
+      <div class="row" v-for="result in myResults" :key="result.name">
+        <Result :data="result"></Result>
+      </div>
+      <div class="row">
+        <div class="col-md-push-10 col-md-2">
+          <strong>Final Score:</strong> {{ score }}
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script lang="ts">
