@@ -1,7 +1,6 @@
 <template>
   <section :class="alertclass">
-    <h2>Current Score</h2>
-    <p>{{ score }}</p>
+    <h2>Current Score {{ score }}</h2>
   </section>
 </template>
 

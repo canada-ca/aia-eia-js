@@ -1,0 +1,70 @@
+{
+  "title": "Artificial Intelligence Algorithmic Assessment",
+  "pages": [
+    {
+      "name": "page1",
+      "questions": [
+        {
+          "name": "respondent",
+          "type": "text",
+          "title": "Name of respondent"
+        },
+        {
+          "type": "radiogroup",
+          "name": "case-gcearb",
+          "choices": [
+            { "text": "Yes", "value": -1 },
+            { "text": "No", "value": 0 }
+          ],
+          "isRequired": true,
+          "title": "Have you prepared a concept case to the Government of Canada Enterprise Architecture Review Baord?"
+        },
+        {
+          "type": "dropdown",
+          "name": "environmental-sustainability",
+          "title": "the impacts that the decision will have on the _ongoing sustainability of an environmental ecosystem_, will likely be:",
+          "isRequired": true,
+          "colCount": 0,
+          "choices": [
+            { "text": "little to no impact", "value": 1 },
+            { "text": "moderate impact", "value": 2 },
+            { "text": "high impact", "value": 3 },
+            { "text": "very high impact", "value": 4 }
+          ]
+        },
+        {
+          "name": "rights-freedoms-desc",
+          "type": "text",
+          "isRequired": "true",
+          "title": "Please describe why the impacts resulting from the decision are _{environmental-sustainability}_. "
+        },
+        {
+          "type": "checkbox",
+          "name": "motivation",
+          "title": "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)",
+          "isRequired": true,
+          "hasNone": false,
+          "choices": [
+            "Existing backlog of work or cases",
+            "Improve overall quality of decisions",
+            "Lower transaction costs of an existing program",
+            "The system is performing tasks that humans cound not accomplish in a reasonable period of time ",
+            "Use innovative approaches",
+            "Other (please specify)"
+          ]
+        },
+                   {
+              "type": "checkbox",
+              "name": "unstructured-data-type",
+              "choices": [
+                { "text": "Audio and text files", "value": 2 },
+                { "text": "Images and Videos", "value": 4 }
+              ],
+              "requiredIf": "{unstructured-data} contains 'Yes'",
+              "title": "What types of unstructured data (Check all that apply)?"
+            }
+
+      ]
+    }
+  ]
+}

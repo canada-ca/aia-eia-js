@@ -3,7 +3,7 @@
   "pages": [
     {
       "name": "page1",
-      "questions": [
+      "elements": [
         {
           "name": "respondent",
           "type": "text",
@@ -25,15 +25,14 @@
           "title": "Branch"
         },
         {
-          "name": "title",
+          "name": "project-title",
           "type": "text",
           "title": "Project Title"
         },
         {
-          "type": "file",
+          "type": "comment",
           "title": "Please provide an attachment of the project description",
-          "name": "attachment",
-          "storeDataAsText": false
+          "name": "desc-attachment"
         }
       ]
     },
@@ -43,7 +42,7 @@
         {
           "type": "panel",
           "title": "BUSINESS DRIVER / POSITIVE IMPACT",
-          "questions": [
+          "elements": [
             {
               "type": "checkbox",
               "name": "motivation",
@@ -78,7 +77,7 @@
           "questions": [
             {
               "type": "checkbox",
-              "name": "motivation",
+              "name": "capabilities",
               "title": "Please check which of the following capabilities apply to your system.",
               "isRequired": true,
               "hasNone": false,
@@ -223,7 +222,7 @@
           ]
         },
         {
-          "name": "rights-freedoms-desc",
+          "name": "environmental-sustainability-desc",
           "type": "text",
           "isRequired": "true",
           "title": "Please describe why the impacts resulting from the decision are _{environmental-sustainability}_. "
