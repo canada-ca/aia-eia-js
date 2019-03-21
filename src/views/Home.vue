@@ -12,7 +12,7 @@ import { Model } from "survey-vue";
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import Score from "@/components/Score.vue";
 import { RootState } from "../types";
-import surveyJSON from "../survey.2.json";
+import surveyJSON from "../survey.json";
 import showdown from "showdown";
 
 @Component({
