@@ -1,0 +1,507 @@
+[
+    {
+        "Department_number-Ministère_numéro": "001",
+        "Department-name_English-Ministère_nom_anglais": "Agriculture and Agri-Food (Department of)",
+        "Department_name_French-Ministère_nom_français": "Agriculture et de l'Agroalimentaire (Ministère de l')"
+    },
+    {
+        "Department_number-Ministère_numéro": "002",
+        "Department-name_English-Ministère_nom_anglais": "Office of the Auditor General",
+        "Department_name_French-Ministère_nom_français": "Bureau du vérificateur général"
+    },
+    {
+        "Department_number-Ministère_numéro": "004",
+        "Department-name_English-Ministère_nom_anglais": "Public Service Commission",
+        "Department_name_French-Ministère_nom_français": "Commission de la fonction publique"
+    },
+    {
+        "Department_number-Ministère_numéro": "005",
+        "Department-name_English-Ministère_nom_anglais": "Foreign Affairs, Trade and Development (Department of)",
+        "Department_name_French-Ministère_nom_français": "Affaires étrangères, du Commerce et du Développement (Ministère des)"
+    },
+    {
+        "Department_number-Ministère_numéro": "006",
+        "Department-name_English-Ministère_nom_anglais": "Finance (Department of)",
+        "Department_name_French-Ministère_nom_français": "Finances (Ministère des)"
+    },
+    {
+        "Department_number-Ministère_numéro": "007",
+        "Department-name_English-Ministère_nom_anglais": "Environment (Department of the)",
+        "Department_name_French-Ministère_nom_français": "Environnement (Ministère de l')"
+    },
+    {
+        "Department_number-Ministère_numéro": "008",
+        "Department-name_English-Ministère_nom_anglais": "Office of the Governor General's Secretary",
+        "Department_name_French-Ministère_nom_français": "Bureau du secrétaire du gouverneur général"
+    },
+    {
+        "Department_number-Ministère_numéro": "009",
+        "Department-name_English-Ministère_nom_anglais": "Senate",
+        "Department_name_French-Ministère_nom_français": "Sénat"
+    },
+    {
+        "Department_number-Ministère_numéro": "011",
+        "Department-name_English-Ministère_nom_anglais": "Office of the Superintendent of Financial Institutions",
+        "Department_name_French-Ministère_nom_français": "Bureau du surintendant des institutions financières"
+    },
+    {
+        "Department_number-Ministère_numéro": "012",
+        "Department-name_English-Ministère_nom_anglais": "Economic Development Agency of Canada for the Regions of Quebec",
+        "Department_name_French-Ministère_nom_français": "Agence de développement économique du Canada pour les régions du Québec"
+    },
+    {
+        "Department_number-Ministère_numéro": "013",
+        "Department-name_English-Ministère_nom_anglais": "Justice (Department of)",
+        "Department_name_French-Ministère_nom_français": "Justice (Ministère de la)"
+    },
+    {
+        "Department_number-Ministère_numéro": "014",
+        "Department-name_English-Ministère_nom_anglais": "Employment and Social Development (Department of)",
+        "Department_name_French-Ministère_nom_français": "Emploi et du Développement social (Ministère de l')"
+    },
+    {
+        "Department_number-Ministère_numéro": "015",
+        "Department-name_English-Ministère_nom_anglais": "Office of the Chief Electoral Officer",
+        "Department_name_French-Ministère_nom_français": "Bureau du directeur général des élections"
+    },
+    {
+        "Department_number-Ministère_numéro": "016",
+        "Department-name_English-Ministère_nom_anglais": "Canadian Radio-television and Telecommunications Commission",
+        "Department_name_French-Ministère_nom_français": "Conseil de la radiodiffusion et des télécommunications canadiennes"
+    },
+    {
+        "Department_number-Ministère_numéro": "017",
+        "Department-name_English-Ministère_nom_anglais": "Library of Parliament",
+        "Department_name_French-Ministère_nom_français": "Bibliothèque du Parlement"
+    },
+    {
+        "Department_number-Ministère_numéro": "018",
+        "Department-name_English-Ministère_nom_anglais": "National Defence (Department of)",
+        "Department_name_French-Ministère_nom_français": "Défense nationale (Ministère de la)"
+    },
+    {
+        "Department_number-Ministère_numéro": "019",
+        "Department-name_English-Ministère_nom_anglais": "Office of the Director of Public Prosecutions",
+        "Department_name_French-Ministère_nom_français": "Bureau du directeur des poursuites pénales"
+    },
+    {
+        "Department_number-Ministère_numéro": "021",
+        "Department-name_English-Ministère_nom_anglais": "Veterans Affairs (Department of)",
+        "Department_name_French-Ministère_nom_français": "Anciens Combattants (Ministère des)"
+    },
+    {
+        "Department_number-Ministère_numéro": "022",
+        "Department-name_English-Ministère_nom_anglais": "Health (Department of)",
+        "Department_name_French-Ministère_nom_français": "Santé (Ministère de la)"
+    },
+    {
+        "Department_number-Ministère_numéro": "023",
+        "Department-name_English-Ministère_nom_anglais": "Atlantic Canada Opportunities Agency",
+        "Department_name_French-Ministère_nom_français": "Agence de promotion économique du Canada atlantique"
+    },
+    {
+        "Department_number-Ministère_numéro": "024",
+        "Department-name_English-Ministère_nom_anglais": "International Joint Commission (Canadian Section)",
+        "Department_name_French-Ministère_nom_français": "Commission mixte internationale (section canadienne)"
+    },
+    {
+        "Department_number-Ministère_numéro": "025",
+        "Department-name_English-Ministère_nom_anglais": "Privy Council Office",
+        "Department_name_French-Ministère_nom_français": "Bureau du Conseil privé"
+    },
+    {
+        "Department_number-Ministère_numéro": "027",
+        "Department-name_English-Ministère_nom_anglais": "Natural Sciences and Engineering Research Council",
+        "Department_name_French-Ministère_nom_français": "Conseil de recherches en sciences naturelles et en génie"
+    },
+    {
+        "Department_number-Ministère_numéro": "030",
+        "Department-name_English-Ministère_nom_anglais": "Royal Canadian Mounted Police",
+        "Department_name_French-Ministère_nom_français": "Gendarmerie royale du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": "032",
+        "Department-name_English-Ministère_nom_anglais": "Immigration and Refugee Board",
+        "Department_name_French-Ministère_nom_français": "Commission de l'immigration et du statut de réfugié"
+    },
+    {
+        "Department_number-Ministère_numéro": "033",
+        "Department-name_English-Ministère_nom_anglais": "Industry (Department of)",
+        "Department_name_French-Ministère_nom_français": "Industrie (Ministère de l')"
+    },
+    {
+        "Department_number-Ministère_numéro": "034",
+        "Department-name_English-Ministère_nom_anglais": "Transport (Department of)",
+        "Department_name_French-Ministère_nom_français": "Transports (Ministère des)"
+    },
+    {
+        "Department_number-Ministère_numéro": "035",
+        "Department-name_English-Ministère_nom_anglais": "National Research Council of Canada",
+        "Department_name_French-Ministère_nom_français": "Conseil national de recherches du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": "037",
+        "Department-name_English-Ministère_nom_anglais": "Telefilm Canada",
+        "Department_name_French-Ministère_nom_français": "Téléfilm Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": "038",
+        "Department-name_English-Ministère_nom_anglais": "Canada Border Services Agency - (Administered Activities)",
+        "Department_name_French-Ministère_nom_français": "Agence des services frontaliers du Canada - (activités administrées)"
+    },
+    {
+        "Department_number-Ministère_numéro": "039",
+        "Department-name_English-Ministère_nom_anglais": "National Film Board",
+        "Department_name_French-Ministère_nom_français": "Office national du film"
+    },
+    {
+        "Department_number-Ministère_numéro": "040",
+        "Department-name_English-Ministère_nom_anglais": "Canadian Transportation Agency",
+        "Department_name_French-Ministère_nom_français": "Office des transports du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": "041",
+        "Department-name_English-Ministère_nom_anglais": "Natural Resources (Department of)",
+        "Department_name_French-Ministère_nom_français": "Ressources naturelles (Ministère des)"
+    },
+    {
+        "Department_number-Ministère_numéro": "042",
+        "Department-name_English-Ministère_nom_anglais": "Indian Affairs and Northern Development (Department of)",
+        "Department_name_French-Ministère_nom_français": "Affaires indiennes et du Nord canadien (Ministère des)"
+    },
+    {
+        "Department_number-Ministère_numéro": "043",
+        "Department-name_English-Ministère_nom_anglais": "Canadian Intergovernmental Conference Secretariat",
+        "Department_name_French-Ministère_nom_français": "Secrétariat des conférences intergouvernementales canadiennes"
+    },
+    {
+        "Department_number-Ministère_numéro": "044",
+        "Department-name_English-Ministère_nom_anglais": "Western Economic Diversification (Department of)",
+        "Department_name_French-Ministère_nom_français": "Diversification de l'économie de l'Ouest canadien (Ministère de la)"
+    },
+    {
+        "Department_number-Ministère_numéro": "046",
+        "Department-name_English-Ministère_nom_anglais": "Office of the Public Sector Integrity Commissioner",
+        "Department_name_French-Ministère_nom_français": "Commissariat à l'intégrité du secteur public"
+    },
+    {
+        "Department_number-Ministère_numéro": "047",
+        "Department-name_English-Ministère_nom_anglais": "Canadian Nuclear Safety Commission",
+        "Department_name_French-Ministère_nom_français": "Commission canadienne de sûreté nucléaire"
+    },
+    {
+        "Department_number-Ministère_numéro": "050",
+        "Department-name_English-Ministère_nom_anglais": "Citizenship and Immigration (Department of)",
+        "Department_name_French-Ministère_nom_français": "Citoyenneté et de l'Immigration (Ministère de la)"
+    },
+    {
+        "Department_number-Ministère_numéro": "051",
+        "Department-name_English-Ministère_nom_anglais": "Office of the Commissioner for Federal Judicial Affairs",
+        "Department_name_French-Ministère_nom_français": "Bureau du commissaire à la magistrature fédérale"
+    },
+    {
+        "Department_number-Ministère_numéro": "052",
+        "Department-name_English-Ministère_nom_anglais": "Canada School of Public Service",
+        "Department_name_French-Ministère_nom_français": "École de la fonction publique du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": "053",
+        "Department-name_English-Ministère_nom_anglais": "Correctional Service of Canada",
+        "Department_name_French-Ministère_nom_français": "Service correctionnel du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": "054",
+        "Department-name_English-Ministère_nom_anglais": "Statistics Canada",
+        "Department_name_French-Ministère_nom_français": "Statistique Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": "055",
+        "Department-name_English-Ministère_nom_anglais": "Office of the Communications Security Establishment Commissioner",
+        "Department_name_French-Ministère_nom_français": "Bureau du commissaire du Centre de la sécurité des télécommunications"
+    },
+    {
+        "Department_number-Ministère_numéro": "056",
+        "Department-name_English-Ministère_nom_anglais": "Treasury Board Secretariat",
+        "Department_name_French-Ministère_nom_français": "Secrétariat du Conseil du Trésor"
+    },
+    {
+        "Department_number-Ministère_numéro": "057",
+        "Department-name_English-Ministère_nom_anglais": "Parole Board of Canada",
+        "Department_name_French-Ministère_nom_français": "Commission des libérations conditionnelles du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": "061",
+        "Department-name_English-Ministère_nom_anglais": "Canadian Institutes of Health Research",
+        "Department_name_French-Ministère_nom_français": "Instituts de recherche en santé du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": "062",
+        "Department-name_English-Ministère_nom_anglais": "Federal Economic Development Agency for Southern Ontario",
+        "Department_name_French-Ministère_nom_français": "Agence fédérale de développement économique pour le Sud de l'Ontario"
+    },
+    {
+        "Department_number-Ministère_numéro": "063",
+        "Department-name_English-Ministère_nom_anglais": "Social Sciences and Humanities Research Council",
+        "Department_name_French-Ministère_nom_français": "Conseil de recherches en sciences humaines"
+    },
+    {
+        "Department_number-Ministère_numéro": "066",
+        "Department-name_English-Ministère_nom_anglais": "Northern Pipeline Agency",
+        "Department_name_French-Ministère_nom_français": "Administration du pipe-line du Nord"
+    },
+    {
+        "Department_number-Ministère_numéro": "067",
+        "Department-name_English-Ministère_nom_anglais": "House of Commons",
+        "Department_name_French-Ministère_nom_français": "Chambre des communes"
+    },
+    {
+        "Department_number-Ministère_numéro": "074",
+        "Department-name_English-Ministère_nom_anglais": "National Energy Board",
+        "Department_name_French-Ministère_nom_français": "Office national de l'énergie"
+    },
+    {
+        "Department_number-Ministère_numéro": "075",
+        "Department-name_English-Ministère_nom_anglais": "Canadian Human Rights Commission",
+        "Department_name_French-Ministère_nom_français": "Commission canadienne des droits de la personne"
+    },
+    {
+        "Department_number-Ministère_numéro": "076",
+        "Department-name_English-Ministère_nom_anglais": "Office of the Commissioner of Official Languages",
+        "Department_name_French-Ministère_nom_français": "Commissariat aux langues officielles"
+    },
+    {
+        "Department_number-Ministère_numéro": "078",
+        "Department-name_English-Ministère_nom_anglais": "Canadian Northern Economic Development Agency",
+        "Department_name_French-Ministère_nom_français": "Agence canadienne de développement économique du Nord"
+    },
+    {
+        "Department_number-Ministère_numéro": "079",
+        "Department-name_English-Ministère_nom_anglais": "Payroll System General Ledger",
+        "Department_name_French-Ministère_nom_français": "Grand livre général du système de la paye"
+    },
+    {
+        "Department_number-Ministère_numéro": "080",
+        "Department-name_English-Ministère_nom_anglais": "Registrar of the Supreme Court of Canada",
+        "Department_name_French-Ministère_nom_français": "Registraire de la Cour suprême du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": "083",
+        "Department-name_English-Ministère_nom_anglais": "Office of the Co-ordinator, Status of Women",
+        "Department_name_French-Ministère_nom_français": "Bureau de la coordonnatrice de la situation de la femme"
+    },
+    {
+        "Department_number-Ministère_numéro": "085",
+        "Department-name_English-Ministère_nom_anglais": "Canada Border Services Agency",
+        "Department_name_French-Ministère_nom_français": "Agence des services frontaliers du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": "086",
+        "Department-name_English-Ministère_nom_anglais": "Fisheries and Oceans (Department of)",
+        "Department_name_French-Ministère_nom_français": "Pêches et des Océans (Ministère des)"
+    },
+    {
+        "Department_number-Ministère_numéro": "087",
+        "Department-name_English-Ministère_nom_anglais": "Public Service Superannuation",
+        "Department_name_French-Ministère_nom_français": "Pension de retraite de la fonction publique"
+    },
+    {
+        "Department_number-Ministère_numéro": "088",
+        "Department-name_English-Ministère_nom_anglais": "Public Safety and Emergency Preparedness (Department of)",
+        "Department_name_French-Ministère_nom_français": "Sécurité publique et de la Protection civile (Ministère de la)"
+    },
+    {
+        "Department_number-Ministère_numéro": "091",
+        "Department-name_English-Ministère_nom_anglais": "Canada Mortgage and Housing Corporation (Crown Corporation)",
+        "Department_name_French-Ministère_nom_français": "Société canadienne d'hypothèques et de logement (Société d'État)"
+    },
+    {
+        "Department_number-Ministère_numéro": "095",
+        "Department-name_English-Ministère_nom_anglais": "Canadian Security Intelligence Service",
+        "Department_name_French-Ministère_nom_français": "Service canadien du renseignement de sécurité"
+    },
+    {
+        "Department_number-Ministère_numéro": "096",
+        "Department-name_English-Ministère_nom_anglais": "Offices of the Information and Privacy Commissioners of Canada",
+        "Department_name_French-Ministère_nom_français": "Commissariats à l'information et à la protection de la vie privée au Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": "097",
+        "Department-name_English-Ministère_nom_anglais": "Receiver General",
+        "Department_name_French-Ministère_nom_français": "Receveur général"
+    },
+    {
+        "Department_number-Ministère_numéro": 100,
+        "Department-name_English-Ministère_nom_anglais": "Canadian Centre for Occupational Health and Safety",
+        "Department_name_French-Ministère_nom_français": "Centre canadien d'hygiène et de sécurité au travail"
+    },
+    {
+        "Department_number-Ministère_numéro": 101,
+        "Department-name_English-Ministère_nom_anglais": "Canadian Transportation Accident Investigation and Safety Board",
+        "Department_name_French-Ministère_nom_français": "Bureau canadien d'enquête sur les accidents de transport et de la sécurité des transports"
+    },
+    {
+        "Department_number-Ministère_numéro": 102,
+        "Department-name_English-Ministère_nom_anglais": "The National Battlefields Commission",
+        "Department_name_French-Ministère_nom_français": "Commission des champs de bataille nationaux"
+    },
+    {
+        "Department_number-Ministère_numéro": 103,
+        "Department-name_English-Ministère_nom_anglais": "Security Intelligence Review Committee",
+        "Department_name_French-Ministère_nom_français": "Comité de surveillance des activités de renseignement de sécurité"
+    },
+    {
+        "Department_number-Ministère_numéro": 109,
+        "Department-name_English-Ministère_nom_anglais": "Patented Medicine Prices Review Board",
+        "Department_name_French-Ministère_nom_français": "Conseil d'examen du prix des médicaments brevetés"
+    },
+    {
+        "Department_number-Ministère_numéro": 116,
+        "Department-name_English-Ministère_nom_anglais": "Copyright Board",
+        "Department_name_French-Ministère_nom_français": "Commission du droit d'auteur"
+    },
+    {
+        "Department_number-Ministère_numéro": 119,
+        "Department-name_English-Ministère_nom_anglais": "Canadian Space Agency",
+        "Department_name_French-Ministère_nom_français": "Agence spatiale canadienne"
+    },
+    {
+        "Department_number-Ministère_numéro": 122,
+        "Department-name_English-Ministère_nom_anglais": "Canada Revenue Agency - (Administered Activities)",
+        "Department_name_French-Ministère_nom_français": "Agence du revenu du Canada - (activités administrées)"
+    },
+    {
+        "Department_number-Ministère_numéro": 123,
+        "Department-name_English-Ministère_nom_anglais": "Export Development Canada (Crown Corporation)",
+        "Department_name_French-Ministère_nom_français": "Exportation et développement Canada (Société d'État)"
+    },
+    {
+        "Department_number-Ministère_numéro": 124,
+        "Department-name_English-Ministère_nom_anglais": "Parks Canada Agency",
+        "Department_name_French-Ministère_nom_français": "Agence Parcs Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": 127,
+        "Department-name_English-Ministère_nom_anglais": "Public Works and Government Services (Department of)",
+        "Department_name_French-Ministère_nom_français": "Travaux publics et des Services gouvernementaux (Ministère des)"
+    },
+    {
+        "Department_number-Ministère_numéro": 130,
+        "Department-name_English-Ministère_nom_anglais": "Canada Revenue Agency",
+        "Department_name_French-Ministère_nom_français": "Agence du revenu du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": 133,
+        "Department-name_English-Ministère_nom_anglais": "Canadian Grain Commission",
+        "Department_name_French-Ministère_nom_français": "Commission canadienne des grains"
+    },
+    {
+        "Department_number-Ministère_numéro": 134,
+        "Department-name_English-Ministère_nom_anglais": "Canadian Dairy Commission",
+        "Department_name_French-Ministère_nom_français": "Commission canadienne du lait"
+    },
+    {
+        "Department_number-Ministère_numéro": 135,
+        "Department-name_English-Ministère_nom_anglais": "Canadian Heritage (Department of)",
+        "Department_name_French-Ministère_nom_français": "Patrimoine canadien (Ministère du)"
+    },
+    {
+        "Department_number-Ministère_numéro": 136,
+        "Department-name_English-Ministère_nom_anglais": "Canadian Food Inspection Agency",
+        "Department_name_French-Ministère_nom_français": "Agence canadienne d'inspection des aliments"
+    },
+    {
+        "Department_number-Ministère_numéro": 137,
+        "Department-name_English-Ministère_nom_anglais": "Military Police Complaints Commission",
+        "Department_name_French-Ministère_nom_français": "Commission d'examen des plaintes concernant la police militaire"
+    },
+    {
+        "Department_number-Ministère_numéro": 138,
+        "Department-name_English-Ministère_nom_anglais": "Military Grievances External Review Committee",
+        "Department_name_French-Ministère_nom_français": "Comité externe d'examen des griefs militaires"
+    },
+    {
+        "Department_number-Ministère_numéro": 139,
+        "Department-name_English-Ministère_nom_anglais": "Financial Transactions and Reports Analysis Centre of Canada",
+        "Department_name_French-Ministère_nom_français": "Centre d'analyse des opérations et déclarations financières du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": 141,
+        "Department-name_English-Ministère_nom_anglais": "Financial Consumer Agency of Canada",
+        "Department_name_French-Ministère_nom_français": "Agence de la consommation en matière financière du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": 142,
+        "Department-name_English-Ministère_nom_anglais": "Office of Infrastructure of Canada",
+        "Department_name_French-Ministère_nom_français": "Bureau de l'infrastructure du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": 144,
+        "Department-name_English-Ministère_nom_anglais": "Courts Administration Service",
+        "Department_name_French-Ministère_nom_français": "Service administratif des tribunaux judiciaires"
+    },
+    {
+        "Department_number-Ministère_numéro": 145,
+        "Department-name_English-Ministère_nom_anglais": "Library and Archives of Canada",
+        "Department_name_French-Ministère_nom_français": "Bibliothèque et Archives du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": 147,
+        "Department-name_English-Ministère_nom_anglais": "Office of the Conflict of Interest and Ethics Commissioner",
+        "Department_name_French-Ministère_nom_français": "Commissariat aux conflits d'intérêts et à l'éthique"
+    },
+    {
+        "Department_number-Ministère_numéro": 148,
+        "Department-name_English-Ministère_nom_anglais": "Public Health Agency of Canada",
+        "Department_name_French-Ministère_nom_français": "Agence de la santé publique du Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": 151,
+        "Department-name_English-Ministère_nom_anglais": "Office of the Senate Ethics Officer",
+        "Department_name_French-Ministère_nom_français": "Bureau du conseiller sénatorial en éthique"
+    },
+    {
+        "Department_number-Ministère_numéro": 154,
+        "Department-name_English-Ministère_nom_anglais": "Office of the Commissioner of Lobbying",
+        "Department_name_French-Ministère_nom_français": "Commissariat au lobbying"
+    },
+    {
+        "Department_number-Ministère_numéro": 163,
+        "Department-name_English-Ministère_nom_anglais": "Shared Services Canada",
+        "Department_name_French-Ministère_nom_français": "Services partagés Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": 165,
+        "Department-name_English-Ministère_nom_anglais": "Communications Security Establishment",
+        "Department_name_French-Ministère_nom_français": "Centre de la sécurité des télécommunications"
+    },
+    {
+        "Department_number-Ministère_numéro": 170,
+        "Department-name_English-Ministère_nom_anglais": "Administrative Tribunals Support Service of Canada",
+        "Department_name_French-Ministère_nom_français": "Service canadien d'appui aux tribunaux administratifs"
+    },
+    {
+        "Department_number-Ministère_numéro": 171,
+        "Department-name_English-Ministère_nom_anglais": "Canadian High Arctic Research Station",
+        "Department_name_French-Ministère_nom_français": "Station canadienne de recherche dans l'Extrême-Arctique"
+    },
+    {
+        "Department_number-Ministère_numéro": 176,
+        "Department-name_English-Ministère_nom_anglais": "Parliamentary Protective Service",
+        "Department_name_French-Ministère_nom_français": "Service de protection parlementaire"
+    },
+    {
+        "Department_number-Ministère_numéro": 180,
+        "Department-name_English-Ministère_nom_anglais": "Invest in Canada Hub",
+        "Department_name_French-Ministère_nom_français": "Investir au Canada"
+    },
+    {
+        "Department_number-Ministère_numéro": 183,
+        "Department-name_English-Ministère_nom_anglais": "Office of the Parliamentary Budget Officer",
+        "Department_name_French-Ministère_nom_français": "Bureau du directeur parlementaire du budget"
+    },
+    {
+        "Department_number-Ministère_numéro": 192,
+        "Department-name_English-Ministère_nom_anglais": "Secretariat of the National Security and Intelligence Committee of Parliamentarians",
+        "Department_name_French-Ministère_nom_français": "Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement"
+    }
+]
