@@ -17,7 +17,7 @@ import { Model } from "survey-vue";
     alertclass: function() {
       const score = this.$store.getters.calcscore;
       if (score <= 18) return "alert alert-success";
-      if (score >= 19 && score <= 36) return "alert alert-warning";
+      if (score >= 19 && score < 36) return "alert alert-warning";
       if (score >= 36) return "alert alert-danger";
     }
   }
