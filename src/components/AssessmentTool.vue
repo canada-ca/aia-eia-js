@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Assessment Tool</h2>
+    <!--<h2>Assessment Tool</h2>-->
     <div id="surveyContainer">
       <survey v-bind:survey="survey"></survey>
     </div>
