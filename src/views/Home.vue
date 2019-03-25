@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <h1>Algorithmic Impact Assessment</h1>
-    <Score />
+    <h1>Algorithmic Impact Assessment v0.3</h1>
     <AssessmentTool :survey="Survey" />
+    <Score />
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import { Model } from "survey-vue";
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import Score from "@/components/Score.vue";
 import { RootState } from "../types";
-import surveyJSON from "../survey.json";
+import surveyJSON from "../survey-enfr.json";
 import showdown from "showdown";
 
 @Component({
