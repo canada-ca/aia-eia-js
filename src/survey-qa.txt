@@ -1,0 +1,965 @@
+{
+    "title": {
+        "default": "Algorithmic Impact Assessment v0.3",
+        "fr": "Évaluation de l'Impact Algorithmique v0.3"
+    },
+    "pages": [
+        {
+            "name": "project-details",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel1",
+                    "elements": [
+                        {
+                            "type": "text",
+                            "name": "question3",
+                            "title": {
+                                "default": "Name of Respondent",
+                                "fr": "Nom de la personne sondée"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "name": "question1",
+                            "title": {
+                                "default": "Job Title",
+                                "fr": "Titre du poste"
+                            }
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question6",
+                            "title": {
+                                "default": "Department",
+                                "fr": "Ministère"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "name": "question2",
+                            "title": {
+                                "default": "Branch",
+                                "fr": "Direction"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "name": "question4",
+                            "title": {
+                                "default": "Project Title",
+                                "fr": "Titre du projet"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question5",
+                            "title": {
+                                "default": "Please provide a project description:",
+                                "fr": "Veuillez fournir une description du projet :"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "title": {
+                "default": "Project Details",
+                "fr": "Détails du projet"
+            }
+        },
+        {
+            "name": "business-drivers",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel2",
+                    "elements": [
+                        {
+                            "type": "checkbox",
+                            "name": "question7",
+                            "title": {
+                                "default": "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)",
+                                "fr": "Qu'est-ce qui motive votre équipe à introduire l'automatisation dans ce processus décisionnel? (Cochez toutes les réponses qui s'appliquent.)"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1",
+                                    "text": {
+                                        "default": "Existing backlog of work or cases",
+                                        "fr": "Arriéré de travail ou de cas existant"
+                                    }
+                                },
+                                {
+                                    "value": "item2",
+                                    "text": {
+                                        "default": "Improve overall quality of decisions",
+                                        "fr": "Amélioration de la qualité générale des décisions"
+                                    }
+                                },
+                                {
+                                    "value": "item3",
+                                    "text": {
+                                        "default": "Lower transaction costs of an existing program",
+                                        "fr": "Réduction des coûts de transaction d'un programme existant"
+                                    }
+                                },
+                                {
+                                    "value": "item4",
+                                    "text": {
+                                        "default": "The system is performing tasks that humans cound not accomplish in a reasonable period of time",
+                                        "fr": "Le système exécute des taĉhes que les humans ne sont pas en mesure d'accomplir dans us délai raisonnable"
+                                    }
+                                },
+                                {
+                                    "value": "item5",
+                                    "text": {
+                                        "default": "Use innovative approaches",
+                                        "fr": "Utilisation d'approches novatrices"
+                                    }
+                                },
+                                {
+                                    "value": "item6",
+                                    "text": {
+                                        "default": "Other (please specify)",
+                                        "fr": "Autre (veuillez préciser)"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question52",
+                            "visibleIf": "{question7} = [\"item6\"]",
+                            "title": "Please describe"
+                        }
+                    ]
+                }
+            ],
+            "title": {
+                "default": "Business Driver / Positive Impact",
+                "fr": "Facteur opérationnel / Incidence positive"
+            }
+        },
+        {
+            "name": "system",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel3",
+                    "elements": [
+                        {
+                            "type": "checkbox",
+                            "name": "question9",
+                            "title": {
+                                "default": "Please check which of the following capabilities apply to your system.",
+                                "fr": "Veuillez indiquer laquelle des capacités suivantes s'applique à votre système."
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1",
+                                    "text": {
+                                        "default": "Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.",
+                                        "fr": "Reconnaissance d'images et d'objets: Analyser de volumineux jeux de donnée pour automatiser la reconnaissance, la classification et le context associés à une image ou à un objet."
+                                    }
+                                },
+                                {
+                                    "value": "item2",
+                                    "text": {
+                                        "default": "Text and speech analysis: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging",
+                                        "fr": "Analyse du texte et de la parole: Analyser de vastes jeux de données pour reconnaître, traiter et étiqueter le texte, la parole, la voix et faire des recommendations en fonction du marquage."
+                                    }
+                                },
+                                {
+                                    "value": "item3",
+                                    "text": {
+                                        "default": "Risk assessment: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions",
+                                        "fr": "Évaluation des risques: Analyser de volumineux jeux de données pour déterminer les tendances et recommander des mesures et, dans certains cas, déclencher la prise de mesures précises. "
+                                    }
+                                },
+                                {
+                                    "value": "item4",
+                                    "text": {
+                                        "default": "Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
+                                        "fr": "Génération de contenu: Analyser de vastes jeux de données pour créer des catégories, traiter, trier, personnaliser et servir un contenu spécifique destiné à des contextes particuliers."
+                                    }
+                                },
+                                {
+                                    "value": "item5",
+                                    "text": {
+                                        "default": "Process optimization & workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows",
+                                        "fr": "Optimisation des processus et automatisation des flux de travail: Analyser de vastes jeux de connées pour déterminer et corriger les anomalies, les modèles de grappes, prévoir les résultats ou les façons d'optimiser; et d'automatiser des flux de travail spécifique."
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "title": {
+                "default": "About The System",
+                "fr": "À propos du système"
+            }
+        },
+        {
+            "name": "decision-sector",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel4",
+                    "elements": [
+                        {
+                            "type": "checkbox",
+                            "name": "question10",
+                            "title": {
+                                "default": "Does the decision pertain to any of the categories below (*check all that apply):",
+                                "fr": "La décision s'applique-t-elle à l'une ou l'autre des catégories ci-dessous (*Cochez toutes les réponses qui s'appliquent) :"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1",
+                                    "text": {
+                                        "default": "Health related services",
+                                        "fr": "Services liés à la santé"
+                                    }
+                                },
+                                {
+                                    "value": "item2",
+                                    "text": {
+                                        "default": "Economic interests (grants and contributions, tax benefits, debt collection)",
+                                        "fr": "Intérêts économiques (subventions et contributions, avantages fiscaux, recouvrement de dettes)"
+                                    }
+                                },
+                                {
+                                    "value": "item3",
+                                    "text": {
+                                        "default": "Social assistance (ei, disability claims, etc)",
+                                        "fr": "Aide sociales (assurance-emploi, demandes de prestations d'invalidité, etc.)"
+                                    }
+                                },
+                                {
+                                    "value": "item4",
+                                    "text": {
+                                        "default": "Access and mobility ( security clearences, border crossings)",
+                                        "fr": "Accès et mobilité (habitations de sécurité, passages frontaliers)"
+                                    }
+                                },
+                                {
+                                    "value": "item5",
+                                    "text": {
+                                        "default": "Licensing and issuance of permits",
+                                        "fr": "Accréditation et délivrance de permis"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "title": {
+                "default": "About The Decision",
+                "fr": "À propos de la décision"
+            }
+        },
+        {
+            "name": "impact",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel5",
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "question11",
+                            "title": {
+                                "default": "Does the recommendation or decision made by the system include elements of discretion?",
+                                "fr": "La recommandation ou la décision prise par le système comprend-elle des éléments d’appréciation?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question12",
+                            "visibleIf": "{question11} = 4",
+                            "title": {
+                                "default": "Describe what is discretionary about the decision",
+                                "fr": "Décrire en quoi la décision est discrétionnaire"
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question8",
+                            "title": {
+                                "default": "Is the system used by a different part of the organization than the ones who developed it?",
+                                "fr": "Le système est-il utilisé par une partie de l’organisation différente de celle à laquelle appartiennent ceux qui l’ont développé?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question20",
+                            "title": {
+                                "default": "Are the impacts resulting from the decision reversible?",
+                                "fr": "Les incidences découlant de la décision sont-elles réversibles?"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question21",
+                            "title": {
+                                "default": "How long will impacts from the decision last?",
+                                "fr": "Combien de temps les incidences de la décision dureront-elles?"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question13",
+                            "title": {
+                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
+                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée\nci-dessus). "
+                            }
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question22",
+                            "title": {
+                                "default": "The impacts that the decision will have on the rights or freedoms of individuals or communities, will likely be:",
+                                "fr": "Les incidences de la décision sur les droits ou libertés des personnes ou des collectivités seront probablement les suivantes :"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question15",
+                            "title": {
+                                "default": "Please describe why the impacts resulting from the decision are (as per selected option above).",
+                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                            }
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question14",
+                            "title": {
+                                "default": "The impacts that the decision will have on the health and well-being of individuals or communities, will likely be:",
+                                "fr": "Les incidences de la décision sur la santé et le bien-être des personnes ou des collectivités seront probablement les suivantes :"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question17",
+                            "title": {
+                                "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
+                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                            }
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question16",
+                            "title": {
+                                "default": "The impacts that the decision will have on the economic interests of individuals or communities, will likely be:",
+                                "fr": "Les incidences de la décision sur les intérêts économiques des personnes ou des collectivités seront probablement les suivantes :"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question19",
+                            "title": {
+                                "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
+                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                            }
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question18",
+                            "title": {
+                                "default": "The impacts that the decision will have on the ongoing sustainability of an environmental ecosystem, will likely be:",
+                                "fr": "Les incidences de la décision sur la pérennité d’un écosystème environnemental seront probablement les suivantes :"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question23",
+                            "title": {
+                                "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
+                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                            }
+                        }
+                    ]
+                }
+            ],
+            "title": {
+                "default": "Impact Assessment",
+                "fr": "Évaluation de l'incidence"
+            }
+        },
+        {
+            "name": "data",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "data-source",
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "question24",
+                            "title": {
+                                "default": "Will the Automated Decision System use personal information as input data?",
+                                "fr": "Le système de décision automatisé\nutilisera-t-il des renseignements personnels comme données d’entrée?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question25",
+                            "title": {
+                                "default": "What is the highest security classification of the input data used by the system? (Select one)",
+                                "fr": "Quelle est la classification de sécurité la\nplus élevée des données d’entrée utilisées par le système? (N’en choisir qu’une\nseule)"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question26",
+                            "title": {
+                                "default": "Who controls the data?",
+                                "fr": "Qui contrôle les données?"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question27",
+                            "title": {
+                                "default": "Will the system data use from multiple different sources?",
+                                "fr": "Les données utilisées par le système\nproviendront-elles de plusieurs sources différentes?"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question28",
+                            "title": {
+                                "default": "Will the system require input data from an Internet- or telephony-connected device? (e.g. a sensor)",
+                                "fr": "Le système aura-t-il besoin de données d’entrée\nprovenant d’un appareil connecté à Internet ou à la téléphonie? (P. ex., un\nCapteur)"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question29",
+                            "title": {
+                                "default": "Will the system interface with other IT systems?",
+                                "fr": "Le système interagira-t-il avec d’autres\nsystèmes des TI?"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question30",
+                            "title": {
+                                "default": "Who collected the data used for training the system?",
+                                "fr": "Qui a recueilli les données utilisées pour\npréparer le système? "
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question31",
+                            "title": {
+                                "default": "Who collected the input data used by the system?",
+                                "fr": "Qui a recueilli les données d’entrée utilisées par le système?"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        }
+                    ],
+                    "title": {
+                        "default": "A. Data Source",
+                        "fr": "A. Source des données"
+                    }
+                },
+                {
+                    "type": "panel",
+                    "name": "data-type",
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "question32",
+                            "title": {
+                                "default": "Will the system require the analysis of unstructured data to render a recommendation or a decision?",
+                                "fr": "Le système exigera-t-il l’analyse de données\nnon structurées pour faire une recommandation ou prendre une décision?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "checkbox",
+                            "name": "question33",
+                            "visibleIf": "{question32} = \"4\"",
+                            "title": {
+                                "default": "What types of unstructured data? (Check all that apply)",
+                                "fr": "De quel type de données non structurées\ns’agit-il (Cochez toutes les réponses qui s’appliquent)?"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        }
+                    ],
+                    "title": {
+                        "default": "B. Type of Data",
+                        "fr": "B. Type de données"
+                    }
+                }
+            ],
+            "title": {
+                "default": "About The Data",
+                "fr": "À propos des données"
+            }
+        },
+        {
+            "name": "risk-mitigation",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "data-quality",
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "question34",
+                            "title": {
+                                "default": "Have you documented processes in place to test datasets against biases and other unexpected outcomes? This could include experience in applying frameworks, methods, guidelines or other assessment tools.",
+                                "fr": "Avez-vous documenté les processus en place pour tester les jeux de données en fonction de biais et d’autres résultats inattendus? Par exemple, ceci pourrait inclure une expérience dans l’application de cadres, de méthodes, de lignes directrices ou d’outils d’évaluation."
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question35",
+                            "title": {
+                                "default": "Is there a process currently in place to document how data quality issues were resolved during the design process?",
+                                "fr": "Existe-t-il actuellement un processus permettant de documenter la façon dont les problèmes de qualité des données ont été résolus pendant le processus de conception?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question36",
+                            "title": {
+                                "default": "Have you undertaken a Gender Based Analysis Plus of the data?",
+                                "fr": "Avez-vous procédé à une analyse comparative entre les sexes plus des données?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question37",
+                            "title": {
+                                "default": "Have you assigned accountability in your institution for the design, development, maintenance, and improvement of the system?",
+                                "fr": "Dans votre établissement, existe-t-il des responsables de la conception, du développement, de la maintenance et de l’amélioration du système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question38",
+                            "title": {
+                                "default": "Have you documented processes to manage the risk that outdated or unreliable data is used to make an automated decision?",
+                                "fr": "Avez-vous documenté des processus permettant de gérer le risque que des données obsolètes ou non fiables soient utilisées pour une prise de décision automatisée?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question39",
+                            "title": {
+                                "default": "Will the data be posted on the Open Government Portal?",
+                                "fr": "Les données seront-elles affichées sur le portail Gouvernement ouvert?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        }
+                    ],
+                    "title": {
+                        "default": "Data Quality",
+                        "fr": "Qualité Des Données"
+                    }
+                },
+                {
+                    "type": "panel",
+                    "name": "procedural-fairness",
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "question40",
+                            "title": {
+                                "default": "Does the system provide an audit trail that records recommendations or decisions?",
+                                "fr": "Le système fournit-il une piste de vérification qui enregistre les recommandations ou les décisions?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question41",
+                            "title": {
+                                "default": "Do you maintain a log detailing all of the changes made to the model and the system?",
+                                "fr": "Tenez-vous un registre détaillant toutes les modifications apportées au modèle et au système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question42",
+                            "title": {
+                                "default": "Does the audit trail clearly set out all decision points made by the system?",
+                                "fr": "La piste de vérification énonce-t-elle clairement tous les points de décision pris par le système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question43",
+                            "title": {
+                                "default": "Does the audit trail show who an authorized decision-maker is?",
+                                "fr": "La piste de vérification indique-t-elle qui est un décideur autorisé?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question44",
+                            "title": {
+                                "default": "Does the system produce reasons for its decisions or recommendations when required?",
+                                "fr": "Le système justifie-t-il ses décisions ou ses recommandations, au besoin?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question45",
+                            "title": {
+                                "default": "Is there a process in place to grant, monitor, and revoke access permission to the system?",
+                                "fr": "Existe-t-il un processus en place permettant d’accorder, de surveiller et de révoquer l’autorisation d’accès au système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question46",
+                            "title": {
+                                "default": "Is there a mechanism to capture feedback by users of the system?",
+                                "fr": "Existe-t-il un mécanisme permettant de recueillir les commentaires des utilisateurs du système?"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question47",
+                            "title": {
+                                "default": "Is there a recourse process planned or established for clients that wish to challenge the decision?",
+                                "fr": "Un processus de recours est-il prévu ou établi pour les clients qui souhaitent contester la décision?"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question48",
+                            "title": {
+                                "default": "Does the system enable human override of system decisions?",
+                                "fr": "Le système permet-il aux humains de passer outre les décisions du système?"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question49",
+                            "title": {
+                                "default": "Is there a process in place to log the instances when overrides were performed?",
+                                "fr": "Y a-t-il un processus en place pour consigner les cas où des dérogations ont été effectuées?"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question50",
+                            "title": {
+                                "default": "Does the audit trail include change control processes to record modifications to the system's operation or performance?",
+                                "fr": "La piste de vérification comprend-elle des processus de contrôle des changements pour consigner les modifications apportées au fonctionnement ou au rendement du système?"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question51",
+                            "title": {
+                                "default": "Have you prepared a concept case to the Government of Canada Enterprise Architecture Review Baord?",
+                                "fr": "Avez-vous préparé un dossier conceptuel pour le Conseil d’examen de l’architecture intégrée du gouvernement du Canada?"
+                            },
+                            "choices": [
+                                "item1",
+                                "item2",
+                                "item3"
+                            ]
+                        }
+                    ],
+                    "title": {
+                        "default": "Procedural Fairness",
+                        "fr": "Équité Procédurale"
+                    }
+                }
+            ],
+            "title": {
+                "default": "De-Risking And Mitigation Measures",
+                "fr": "Élimination des risques et mesure d'atténuation"
+            }
+        }
+    ],
+    "showProgressBar": "top"
+}
