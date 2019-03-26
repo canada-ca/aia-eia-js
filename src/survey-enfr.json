@@ -839,7 +839,10 @@
                             "type": "comment",
                             "name": "question52",
                             "visibleIf": "{question7} = [\"item6\"]",
-                            "title": "Please describe"
+                            "title": {
+                                "default": "Please describe",
+                                "fr": "S'il vous plait décrire"
+                            }
                         }
                     ]
                 }
@@ -1041,9 +1044,34 @@
                                 "fr": "Les incidences découlant de la décision sont-elles réversibles?"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Reversible",
+                                        "fr": "Réversible"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Likely reversible",
+                                        "fr": "Probablement réversible"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "Difficult to reverse",
+                                        "fr": "Difficile à inverser"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Irreversible",
+                                        "fr": "Irréversible"
+                                    }
+                                }
                             ]
                         },
                         {
@@ -1054,9 +1082,34 @@
                                 "fr": "Combien de temps les incidences de la décision dureront-elles?"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Impacts are most likely to be brief",
+                                        "fr": "Les incidences risquent fort probablement d’être brèves"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Some impacts may last a matter of months, but some lingering impacts may last longer",
+                                        "fr": "Certaines incidences peuvent durer quelques mois ou plus longtemps."
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "Impacts can last over a year, with some longer",
+                                        "fr": "Les incidences peuvent durer plus d’un an et plus."
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Most impacts are perpetual",
+                                        "fr": "La plupart des incidences sont sans limite dans le temps."
+                                    }
+                                }
                             ]
                         },
                         {
@@ -1075,9 +1128,34 @@
                                 "fr": "Les incidences de la décision sur les droits ou libertés des personnes ou des collectivités seront probablement les suivantes :"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Little to no impact",
+                                        "fr": "Incidence faible ou nulle"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Moderate impact",
+                                        "fr": "Incidence modérée"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "High impact",
+                                        "fr": "Incidence élevée"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Very high impact",
+                                        "fr": "Incidence très élevée"
+                                    }
+                                }
                             ]
                         },
                         {
@@ -1096,9 +1174,34 @@
                                 "fr": "Les incidences de la décision sur la santé et le bien-être des personnes ou des collectivités seront probablement les suivantes :"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Little to no impact",
+                                        "fr": "Incidence faible ou nulle"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Moderate impact",
+                                        "fr": "Incidence modérée"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "High impact",
+                                        "fr": "Incidence élevée"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Very high impact",
+                                        "fr": "Incidence très élevée"
+                                    }
+                                }
                             ]
                         },
                         {
@@ -1117,9 +1220,34 @@
                                 "fr": "Les incidences de la décision sur les intérêts économiques des personnes ou des collectivités seront probablement les suivantes :"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Little to no impact",
+                                        "fr": "Incidence faible ou nulle"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Moderate impact",
+                                        "fr": "Incidence modérée"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "High impact",
+                                        "fr": "Incidence élevée"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Very high impact",
+                                        "fr": "Incidence très élevée"
+                                    }
+                                }
                             ]
                         },
                         {
@@ -1138,9 +1266,34 @@
                                 "fr": "Les incidences de la décision sur la pérennité d’un écosystème environnemental seront probablement les suivantes :"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Little to no impact",
+                                        "fr": "Incidence faible ou nulle"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Moderate impact",
+                                        "fr": "Incidence modérée"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "High impact",
+                                        "fr": "Incidence élevée"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Very high impact",
+                                        "fr": "Incidence très élevée"
+                                    }
+                                }
                             ]
                         },
                         {
@@ -1175,14 +1328,14 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1",
+                                    "value": 4,
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": "item2",
+                                    "value": 0,
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -1198,9 +1351,41 @@
                                 "fr": "Quelle est la classification de sécurité la\nplus élevée des données d’entrée utilisées par le système? (N’en choisir qu’une\nseule)"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "None",
+                                        "fr": "Aucun"
+                                    }
+                                },
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Protected A",
+                                        "fr": "Protégé A"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Classified / Confidential",
+                                        "fr": "Classifié/confidentiel"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "Protected B / Protected C",
+                                        "fr": "Protégé B/Protégé C"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Secret / Top Secret",
+                                        "fr": "Secret/Très Secret"
+                                    }
+                                }
                             ]
                         },
                         {
@@ -1211,9 +1396,34 @@
                                 "fr": "Qui contrôle les données?"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "Open Data Source",
+                                        "fr": "Source de données ouvertes"
+                                    }
+                                },
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Federal government",
+                                        "fr": "Gouvernement fédéral"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Other Canadian Government (prov/municipal)",
+                                        "fr": "Autre gouvernement canadien (provincial/municipal)"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "Private Sector / NGO",
+                                        "fr": "Secteur privé / ONG"
+                                    }
+                                }
                             ]
                         },
                         {
@@ -1224,9 +1434,20 @@
                                 "fr": "Les données utilisées par le système\nproviendront-elles de plusieurs sources différentes?"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
                             ]
                         },
                         {
@@ -1237,9 +1458,20 @@
                                 "fr": "Le système aura-t-il besoin de données d’entrée\nprovenant d’un appareil connecté à Internet ou à la téléphonie? (P. ex., un\nCapteur)"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
                             ]
                         },
                         {
@@ -1250,9 +1482,20 @@
                                 "fr": "Le système interagira-t-il avec d’autres\nsystèmes des TI?"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
                             ]
                         },
                         {
@@ -1263,9 +1506,34 @@
                                 "fr": "Qui a recueilli les données utilisées pour\npréparer le système? "
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Your institution",
+                                        "fr": "Votre institution"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Another federal institution",
+                                        "fr": "Une autre institution fédérale"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "Another level of government",
+                                        "fr": "Autre niveau de gouvernement"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "A foreign government or non-government third party",
+                                        "fr": "Un gouvernement étranger ou un tiers non gouvernemental"
+                                    }
+                                }
                             ]
                         },
                         {
@@ -1276,9 +1544,34 @@
                                 "fr": "Qui a recueilli les données d’entrée utilisées par le système?"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Your institution",
+                                        "fr": "Votre institution"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Another federal institution",
+                                        "fr": "Une autre institution fédérale"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "Another level of government",
+                                        "fr": "Autre niveau de gouvernement"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "A foreign government or non-government third party",
+                                        "fr": "Un gouvernement étranger ou un tiers non gouvernemental"
+                                    }
+                                }
                             ]
                         }
                     ],
@@ -1324,9 +1617,20 @@
                                 "fr": "De quel type de données non structurées\ns’agit-il (Cochez toutes les réponses qui s’appliquent)?"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Audio and text files",
+                                        "fr": "Fichiers audio et textuels"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Images and videos",
+                                        "fr": "Images et vidéos"
+                                    }
+                                }
                             ]
                         }
                     ],
@@ -1375,7 +1679,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": 1,
                                     "text": "Yes"
                                 },
                                 {
@@ -1393,7 +1697,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": 1,
                                     "text": "Yes"
                                 },
                                 {
@@ -1520,7 +1824,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": 1,
                                     "text": "Yes"
                                 },
                                 {
@@ -1538,7 +1842,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": 1,
                                     "text": "Yes"
                                 },
                                 {
@@ -1574,7 +1878,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": 1,
                                     "text": "Yes"
                                 },
                                 {
@@ -1591,9 +1895,14 @@
                                 "fr": "Existe-t-il un mécanisme permettant de recueillir les commentaires des utilisateurs du système?"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 1,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
                             ]
                         },
                         {
@@ -1604,9 +1913,14 @@
                                 "fr": "Un processus de recours est-il prévu ou établi pour les clients qui souhaitent contester la décision?"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
                             ]
                         },
                         {
@@ -1617,9 +1931,14 @@
                                 "fr": "Le système permet-il aux humains de passer outre les décisions du système?"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
                             ]
                         },
                         {
@@ -1630,9 +1949,14 @@
                                 "fr": "Y a-t-il un processus en place pour consigner les cas où des dérogations ont été effectuées?"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 1,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
                             ]
                         },
                         {
@@ -1643,9 +1967,14 @@
                                 "fr": "La piste de vérification comprend-elle des processus de contrôle des changements pour consigner les modifications apportées au fonctionnement ou au rendement du système?"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
                             ]
                         },
                         {
@@ -1656,9 +1985,14 @@
                                 "fr": "Avez-vous préparé un dossier conceptuel pour le Conseil d’examen de l’architecture intégrée du gouvernement du Canada?"
                             },
                             "choices": [
-                                "item1",
-                                "item2",
-                                "item3"
+                                {
+                                    "value": 1,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
                             ]
                         }
                     ],
