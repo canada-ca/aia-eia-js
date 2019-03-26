@@ -1,0 +1,2012 @@
+{
+    "title": {
+        "default": "Algorithmic Impact Assessment v0.3",
+        "fr": "Évaluation de l'Impact Algorithmique v0.3"
+    },
+    "pages": [
+        {
+            "name": "project-details",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel-project",
+                    "elements": [
+                        {
+                            "type": "text",
+                            "name": "respondent",
+                            "title": {
+                                "default": "Name of Respondent",
+                                "fr": "Nom de la personne sondée"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "name": "title",
+                            "title": {
+                                "default": "Job Title",
+                                "fr": "Titre du poste"
+                            }
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "department",
+                            "title": {
+                                "default": "Department",
+                                "fr": "Ministère"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item170",
+                                    "text": {
+                                        "default": "Administrative Tribunals Support Service of Canada",
+                                        "fr": "Service canadien d'appui aux tribunaux administratifs"
+                                    }
+                                },
+                                {
+                                    "value": "item001",
+                                    "text": {
+                                        "default": "Agriculture and Agri-Food (Department of)",
+                                        "fr": "Agriculture et de l'Agroalimentaire (Minist\u00e8re de l')"
+                                    }
+                                },
+                                {
+                                    "value": "item023",
+                                    "text": {
+                                        "default": "Atlantic Canada Opportunities Agency",
+                                        "fr": "Agence de promotion \u00e9conomique du Canada atlantique"
+                                    }
+                                },
+                                {
+                                    "value": "item085",
+                                    "text": {
+                                        "default": "Canada Border Services Agency",
+                                        "fr": "Agence des services frontaliers du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item038",
+                                    "text": {
+                                        "default": "Canada Border Services Agency - (Administered Activities)",
+                                        "fr": "Agence des services frontaliers du Canada - (activit\u00e9s administr\u00e9es)"
+                                    }
+                                },
+                                {
+                                    "value": "item091",
+                                    "text": {
+                                        "default": "Canada Mortgage and Housing Corporation (Crown Corporation)",
+                                        "fr": "Soci\u00e9t\u00e9 canadienne d'hypoth\u00e8ques et de logement (Soci\u00e9t\u00e9 d'\u00c9tat)"
+                                    }
+                                },
+                                {
+                                    "value": "item130",
+                                    "text": {
+                                        "default": "Canada Revenue Agency",
+                                        "fr": "Agence du revenu du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item122",
+                                    "text": {
+                                        "default": "Canada Revenue Agency - (Administered Activities)",
+                                        "fr": "Agence du revenu du Canada - (activit\u00e9s administr\u00e9es)"
+                                    }
+                                },
+                                {
+                                    "value": "item052",
+                                    "text": {
+                                        "default": "Canada School of Public Service",
+                                        "fr": "\u00c9cole de la fonction publique du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item100",
+                                    "text": {
+                                        "default": "Canadian Centre for Occupational Health and Safety",
+                                        "fr": "Centre canadien d'hygi\u00e8ne et de s\u00e9curit\u00e9 au travail"
+                                    }
+                                },
+                                {
+                                    "value": "item134",
+                                    "text": {
+                                        "default": "Canadian Dairy Commission",
+                                        "fr": "Commission canadienne du lait"
+                                    }
+                                },
+                                {
+                                    "value": "item136",
+                                    "text": {
+                                        "default": "Canadian Food Inspection Agency",
+                                        "fr": "Agence canadienne d'inspection des aliments"
+                                    }
+                                },
+                                {
+                                    "value": "item133",
+                                    "text": {
+                                        "default": "Canadian Grain Commission",
+                                        "fr": "Commission canadienne des grains"
+                                    }
+                                },
+                                {
+                                    "value": "item135",
+                                    "text": {
+                                        "default": "Canadian Heritage (Department of)",
+                                        "fr": "Patrimoine canadien (Minist\u00e8re du)"
+                                    }
+                                },
+                                {
+                                    "value": "item171",
+                                    "text": {
+                                        "default": "Canadian High Arctic Research Station",
+                                        "fr": "Station canadienne de recherche dans l'Extr\u00eame-Arctique"
+                                    }
+                                },
+                                {
+                                    "value": "item075",
+                                    "text": {
+                                        "default": "Canadian Human Rights Commission",
+                                        "fr": "Commission canadienne des droits de la personne"
+                                    }
+                                },
+                                {
+                                    "value": "item061",
+                                    "text": {
+                                        "default": "Canadian Institutes of Health Research",
+                                        "fr": "Instituts de recherche en sant\u00e9 du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item043",
+                                    "text": {
+                                        "default": "Canadian Intergovernmental Conference Secretariat",
+                                        "fr": "Secr\u00e9tariat des conf\u00e9rences intergouvernementales canadiennes"
+                                    }
+                                },
+                                {
+                                    "value": "item078",
+                                    "text": {
+                                        "default": "Canadian Northern Economic Development Agency",
+                                        "fr": "Agence canadienne de d\u00e9veloppement \u00e9conomique du Nord"
+                                    }
+                                },
+                                {
+                                    "value": "item047",
+                                    "text": {
+                                        "default": "Canadian Nuclear Safety Commission",
+                                        "fr": "Commission canadienne de s\u00fbret\u00e9 nucl\u00e9aire"
+                                    }
+                                },
+                                {
+                                    "value": "item016",
+                                    "text": {
+                                        "default": "Canadian Radio-television and Telecommunications Commission",
+                                        "fr": "Conseil de la radiodiffusion et des t\u00e9l\u00e9communications canadiennes"
+                                    }
+                                },
+                                {
+                                    "value": "item095",
+                                    "text": {
+                                        "default": "Canadian Security Intelligence Service",
+                                        "fr": "Service canadien du renseignement de s\u00e9curit\u00e9"
+                                    }
+                                },
+                                {
+                                    "value": "item119",
+                                    "text": {
+                                        "default": "Canadian Space Agency",
+                                        "fr": "Agence spatiale canadienne"
+                                    }
+                                },
+                                {
+                                    "value": "item101",
+                                    "text": {
+                                        "default": "Canadian Transportation Accident Investigation and Safety Board",
+                                        "fr": "Bureau canadien d'enqu\u00eate sur les accidents de transport et de la s\u00e9curit\u00e9 des transports"
+                                    }
+                                },
+                                {
+                                    "value": "item040",
+                                    "text": {
+                                        "default": "Canadian Transportation Agency",
+                                        "fr": "Office des transports du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item050",
+                                    "text": {
+                                        "default": "Citizenship and Immigration (Department of)",
+                                        "fr": "Citoyennet\u00e9 et de l'Immigration (Minist\u00e8re de la)"
+                                    }
+                                },
+                                {
+                                    "value": "item165",
+                                    "text": {
+                                        "default": "Communications Security Establishment",
+                                        "fr": "Centre de la s\u00e9curit\u00e9 des t\u00e9l\u00e9communications"
+                                    }
+                                },
+                                {
+                                    "value": "item116",
+                                    "text": {
+                                        "default": "Copyright Board",
+                                        "fr": "Commission du droit d'auteur"
+                                    }
+                                },
+                                {
+                                    "value": "item053",
+                                    "text": {
+                                        "default": "Correctional Service of Canada",
+                                        "fr": "Service correctionnel du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item144",
+                                    "text": {
+                                        "default": "Courts Administration Service",
+                                        "fr": "Service administratif des tribunaux judiciaires"
+                                    }
+                                },
+                                {
+                                    "value": "item012",
+                                    "text": {
+                                        "default": "Economic Development Agency of Canada for the Regions of Quebec",
+                                        "fr": "Agence de d\u00e9veloppement \u00e9conomique du Canada pour les r\u00e9gions du Qu\u00e9bec"
+                                    }
+                                },
+                                {
+                                    "value": "item014",
+                                    "text": {
+                                        "default": "Employment and Social Development (Department of)",
+                                        "fr": "Emploi et du D\u00e9veloppement social (Minist\u00e8re de l')"
+                                    }
+                                },
+                                {
+                                    "value": "item007",
+                                    "text": {
+                                        "default": "Environment (Department of the)",
+                                        "fr": "Environnement (Minist\u00e8re de l')"
+                                    }
+                                },
+                                {
+                                    "value": "item123",
+                                    "text": {
+                                        "default": "Export Development Canada (Crown Corporation)",
+                                        "fr": "Exportation et d\u00e9veloppement Canada (Soci\u00e9t\u00e9 d'\u00c9tat)"
+                                    }
+                                },
+                                {
+                                    "value": "item062",
+                                    "text": {
+                                        "default": "Federal Economic Development Agency for Southern Ontario",
+                                        "fr": "Agence f\u00e9d\u00e9rale de d\u00e9veloppement \u00e9conomique pour le Sud de l'Ontario"
+                                    }
+                                },
+                                {
+                                    "value": "item006",
+                                    "text": {
+                                        "default": "Finance (Department of)",
+                                        "fr": "Finances (Minist\u00e8re des)"
+                                    }
+                                },
+                                {
+                                    "value": "item141",
+                                    "text": {
+                                        "default": "Financial Consumer Agency of Canada",
+                                        "fr": "Agence de la consommation en mati\u00e8re financi\u00e8re du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item139",
+                                    "text": {
+                                        "default": "Financial Transactions and Reports Analysis Centre of Canada",
+                                        "fr": "Centre d'analyse des op\u00e9rations et d\u00e9clarations financi\u00e8res du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item086",
+                                    "text": {
+                                        "default": "Fisheries and Oceans (Department of)",
+                                        "fr": "P\u00eaches et des Oc\u00e9ans (Minist\u00e8re des)"
+                                    }
+                                },
+                                {
+                                    "value": "item005",
+                                    "text": {
+                                        "default": "Foreign Affairs, Trade and Development (Department of)",
+                                        "fr": "Affaires \u00e9trang\u00e8res, du Commerce et du D\u00e9veloppement (Minist\u00e8re des)"
+                                    }
+                                },
+                                {
+                                    "value": "item022",
+                                    "text": {
+                                        "default": "Health (Department of)",
+                                        "fr": "Sant\u00e9 (Minist\u00e8re de la)"
+                                    }
+                                },
+                                {
+                                    "value": "item067",
+                                    "text": {
+                                        "default": "House of Commons",
+                                        "fr": "Chambre des communes"
+                                    }
+                                },
+                                {
+                                    "value": "item032",
+                                    "text": {
+                                        "default": "Immigration and Refugee Board",
+                                        "fr": "Commission de l'immigration et du statut de r\u00e9fugi\u00e9"
+                                    }
+                                },
+                                {
+                                    "value": "item042",
+                                    "text": {
+                                        "default": "Indian Affairs and Northern Development (Department of)",
+                                        "fr": "Affaires indiennes et du Nord canadien (Minist\u00e8re des)"
+                                    }
+                                },
+                                {
+                                    "value": "item033",
+                                    "text": {
+                                        "default": "Industry (Department of)",
+                                        "fr": "Industrie (Minist\u00e8re de l')"
+                                    }
+                                },
+                                {
+                                    "value": "item024",
+                                    "text": {
+                                        "default": "International Joint Commission (Canadian Section)",
+                                        "fr": "Commission mixte internationale (section canadienne)"
+                                    }
+                                },
+                                {
+                                    "value": "item180",
+                                    "text": {
+                                        "default": "Invest in Canada Hub",
+                                        "fr": "Investir au Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item013",
+                                    "text": {
+                                        "default": "Justice (Department of)",
+                                        "fr": "Justice (Minist\u00e8re de la)"
+                                    }
+                                },
+                                {
+                                    "value": "item145",
+                                    "text": {
+                                        "default": "Library and Archives of Canada",
+                                        "fr": "Biblioth\u00e8que et Archives du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item017",
+                                    "text": {
+                                        "default": "Library of Parliament",
+                                        "fr": "Biblioth\u00e8que du Parlement"
+                                    }
+                                },
+                                {
+                                    "value": "item138",
+                                    "text": {
+                                        "default": "Military Grievances External Review Committee",
+                                        "fr": "Comit\u00e9 externe d'examen des griefs militaires"
+                                    }
+                                },
+                                {
+                                    "value": "item137",
+                                    "text": {
+                                        "default": "Military Police Complaints Commission",
+                                        "fr": "Commission d'examen des plaintes concernant la police militaire"
+                                    }
+                                },
+                                {
+                                    "value": "item018",
+                                    "text": {
+                                        "default": "National Defence (Department of)",
+                                        "fr": "D\u00e9fense nationale (Minist\u00e8re de la)"
+                                    }
+                                },
+                                {
+                                    "value": "item074",
+                                    "text": {
+                                        "default": "National Energy Board",
+                                        "fr": "Office national de l'\u00e9nergie"
+                                    }
+                                },
+                                {
+                                    "value": "item039",
+                                    "text": {
+                                        "default": "National Film Board",
+                                        "fr": "Office national du film"
+                                    }
+                                },
+                                {
+                                    "value": "item035",
+                                    "text": {
+                                        "default": "National Research Council of Canada",
+                                        "fr": "Conseil national de recherches du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item041",
+                                    "text": {
+                                        "default": "Natural Resources (Department of)",
+                                        "fr": "Ressources naturelles (Minist\u00e8re des)"
+                                    }
+                                },
+                                {
+                                    "value": "item027",
+                                    "text": {
+                                        "default": "Natural Sciences and Engineering Research Council",
+                                        "fr": "Conseil de recherches en sciences naturelles et en g\u00e9nie"
+                                    }
+                                },
+                                {
+                                    "value": "item066",
+                                    "text": {
+                                        "default": "Northern Pipeline Agency",
+                                        "fr": "Administration du pipe-line du Nord"
+                                    }
+                                },
+                                {
+                                    "value": "item142",
+                                    "text": {
+                                        "default": "Office of Infrastructure of Canada",
+                                        "fr": "Bureau de l'infrastructure du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item002",
+                                    "text": {
+                                        "default": "Office of the Auditor General",
+                                        "fr": "Bureau du v\u00e9rificateur g\u00e9n\u00e9ral"
+                                    }
+                                },
+                                {
+                                    "value": "item015",
+                                    "text": {
+                                        "default": "Office of the Chief Electoral Officer",
+                                        "fr": "Bureau du directeur g\u00e9n\u00e9ral des \u00e9lections"
+                                    }
+                                },
+                                {
+                                    "value": "item083",
+                                    "text": {
+                                        "default": "Office of the Co-ordinator, Status of Women",
+                                        "fr": "Bureau de la coordonnatrice de la situation de la femme"
+                                    }
+                                },
+                                {
+                                    "value": "item051",
+                                    "text": {
+                                        "default": "Office of the Commissioner for Federal Judicial Affairs",
+                                        "fr": "Bureau du commissaire \u00e0 la magistrature f\u00e9d\u00e9rale"
+                                    }
+                                },
+                                {
+                                    "value": "item154",
+                                    "text": {
+                                        "default": "Office of the Commissioner of Lobbying",
+                                        "fr": "Commissariat au lobbying"
+                                    }
+                                },
+                                {
+                                    "value": "item076",
+                                    "text": {
+                                        "default": "Office of the Commissioner of Official Languages",
+                                        "fr": "Commissariat aux langues officielles"
+                                    }
+                                },
+                                {
+                                    "value": "item055",
+                                    "text": {
+                                        "default": "Office of the Communications Security Establishment Commissioner",
+                                        "fr": "Bureau du commissaire du Centre de la s\u00e9curit\u00e9 des t\u00e9l\u00e9communications"
+                                    }
+                                },
+                                {
+                                    "value": "item147",
+                                    "text": {
+                                        "default": "Office of the Conflict of Interest and Ethics Commissioner",
+                                        "fr": "Commissariat aux conflits d'int\u00e9r\u00eats et \u00e0 l'\u00e9thique"
+                                    }
+                                },
+                                {
+                                    "value": "item019",
+                                    "text": {
+                                        "default": "Office of the Director of Public Prosecutions",
+                                        "fr": "Bureau du directeur des poursuites p\u00e9nales"
+                                    }
+                                },
+                                {
+                                    "value": "item008",
+                                    "text": {
+                                        "default": "Office of the Governor General's Secretary",
+                                        "fr": "Bureau du secr\u00e9taire du gouverneur g\u00e9n\u00e9ral"
+                                    }
+                                },
+                                {
+                                    "value": "item183",
+                                    "text": {
+                                        "default": "Office of the Parliamentary Budget Officer",
+                                        "fr": "Bureau du directeur parlementaire du budget"
+                                    }
+                                },
+                                {
+                                    "value": "item046",
+                                    "text": {
+                                        "default": "Office of the Public Sector Integrity Commissioner",
+                                        "fr": "Commissariat \u00e0 l'int\u00e9grit\u00e9 du secteur public"
+                                    }
+                                },
+                                {
+                                    "value": "item151",
+                                    "text": {
+                                        "default": "Office of the Senate Ethics Officer",
+                                        "fr": "Bureau du conseiller s\u00e9natorial en \u00e9thique"
+                                    }
+                                },
+                                {
+                                    "value": "item011",
+                                    "text": {
+                                        "default": "Office of the Superintendent of Financial Institutions",
+                                        "fr": "Bureau du surintendant des institutions financi\u00e8res"
+                                    }
+                                },
+                                {
+                                    "value": "item096",
+                                    "text": {
+                                        "default": "Offices of the Information and Privacy Commissioners of Canada",
+                                        "fr": "Commissariats \u00e0 l'information et \u00e0 la protection de la vie priv\u00e9e au Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item124",
+                                    "text": {
+                                        "default": "Parks Canada Agency",
+                                        "fr": "Agence Parcs Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item176",
+                                    "text": {
+                                        "default": "Parliamentary Protective Service",
+                                        "fr": "Service de protection parlementaire"
+                                    }
+                                },
+                                {
+                                    "value": "item057",
+                                    "text": {
+                                        "default": "Parole Board of Canada",
+                                        "fr": "Commission des lib\u00e9rations conditionnelles du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item109",
+                                    "text": {
+                                        "default": "Patented Medicine Prices Review Board",
+                                        "fr": "Conseil d'examen du prix des m\u00e9dicaments brevet\u00e9s"
+                                    }
+                                },
+                                {
+                                    "value": "item079",
+                                    "text": {
+                                        "default": "Payroll System General Ledger",
+                                        "fr": "Grand livre g\u00e9n\u00e9ral du syst\u00e8me de la paye"
+                                    }
+                                },
+                                {
+                                    "value": "item025",
+                                    "text": {
+                                        "default": "Privy Council Office",
+                                        "fr": "Bureau du Conseil priv\u00e9"
+                                    }
+                                },
+                                {
+                                    "value": "item148",
+                                    "text": {
+                                        "default": "Public Health Agency of Canada",
+                                        "fr": "Agence de la sant\u00e9 publique du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item088",
+                                    "text": {
+                                        "default": "Public Safety and Emergency Preparedness (Department of)",
+                                        "fr": "S\u00e9curit\u00e9 publique et de la Protection civile (Minist\u00e8re de la)"
+                                    }
+                                },
+                                {
+                                    "value": "item004",
+                                    "text": {
+                                        "default": "Public Service Commission",
+                                        "fr": "Commission de la fonction publique"
+                                    }
+                                },
+                                {
+                                    "value": "item087",
+                                    "text": {
+                                        "default": "Public Service Superannuation",
+                                        "fr": "Pension de retraite de la fonction publique"
+                                    }
+                                },
+                                {
+                                    "value": "item127",
+                                    "text": {
+                                        "default": "Public Works and Government Services (Department of)",
+                                        "fr": "Travaux publics et des Services gouvernementaux (Minist\u00e8re des)"
+                                    }
+                                },
+                                {
+                                    "value": "item097",
+                                    "text": {
+                                        "default": "Receiver General",
+                                        "fr": "Receveur g\u00e9n\u00e9ral"
+                                    }
+                                },
+                                {
+                                    "value": "item080",
+                                    "text": {
+                                        "default": "Registrar of the Supreme Court of Canada",
+                                        "fr": "Registraire de la Cour supr\u00eame du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item030",
+                                    "text": {
+                                        "default": "Royal Canadian Mounted Police",
+                                        "fr": "Gendarmerie royale du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item192",
+                                    "text": {
+                                        "default": "Secretariat of the National Security and Intelligence Committee of Parliamentarians",
+                                        "fr": "Secr\u00e9tariat du Comit\u00e9 des parlementaires sur la s\u00e9curit\u00e9 nationale et le renseignement"
+                                    }
+                                },
+                                {
+                                    "value": "item103",
+                                    "text": {
+                                        "default": "Security Intelligence Review Committee",
+                                        "fr": "Comit\u00e9 de surveillance des activit\u00e9s de renseignement de s\u00e9curit\u00e9"
+                                    }
+                                },
+                                {
+                                    "value": "item009",
+                                    "text": {
+                                        "default": "Senate",
+                                        "fr": "S\u00e9nat"
+                                    }
+                                },
+                                {
+                                    "value": "item163",
+                                    "text": {
+                                        "default": "Shared Services Canada",
+                                        "fr": "Services partag\u00e9s Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item063",
+                                    "text": {
+                                        "default": "Social Sciences and Humanities Research Council",
+                                        "fr": "Conseil de recherches en sciences humaines"
+                                    }
+                                },
+                                {
+                                    "value": "item054",
+                                    "text": {
+                                        "default": "Statistics Canada",
+                                        "fr": "Statistique Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item037",
+                                    "text": {
+                                        "default": "Telefilm Canada",
+                                        "fr": "T\u00e9l\u00e9film Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item102",
+                                    "text": {
+                                        "default": "The National Battlefields Commission",
+                                        "fr": "Commission des champs de bataille nationaux"
+                                    }
+                                },
+                                {
+                                    "value": "item034",
+                                    "text": {
+                                        "default": "Transport (Department of)",
+                                        "fr": "Transports (Minist\u00e8re des)"
+                                    }
+                                },
+                                {
+                                    "value": "item056",
+                                    "text": {
+                                        "default": "Treasury Board Secretariat",
+                                        "fr": "Secr\u00e9tariat du Conseil du Tr\u00e9sor"
+                                    }
+                                },
+                                {
+                                    "value": "item021",
+                                    "text": {
+                                        "default": "Veterans Affairs (Department of)",
+                                        "fr": "Anciens Combattants (Minist\u00e8re des)"
+                                    }
+                                },
+                                {
+                                    "value": "item044",
+                                    "text": {
+                                        "default": "Western Economic Diversification (Department of)",
+                                        "fr": "Diversification de l'\u00e9conomie de l'Ouest canadien (Minist\u00e8re de la)"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "name": "branch",
+                            "title": {
+                                "default": "Branch",
+                                "fr": "Direction"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "name": "project-title",
+                            "title": {
+                                "default": "Project Title",
+                                "fr": "Titre du projet"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "description",
+                            "title": {
+                                "default": "Please provide a project description:",
+                                "fr": "Veuillez fournir une description du projet :"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "title": {
+                "default": "Project Details",
+                "fr": "Détails du projet"
+            }
+        },
+        {
+            "name": "business-drivers",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel-business",
+                    "elements": [
+                        {
+                            "type": "checkbox",
+                            "name": "question7",
+                            "title": {
+                                "default": "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)",
+                                "fr": "Qu'est-ce qui motive votre équipe à introduire l'automatisation dans ce processus décisionnel? (Cochez toutes les réponses qui s'appliquent.)"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1",
+                                    "text": {
+                                        "default": "Existing backlog of work or cases",
+                                        "fr": "Arriéré de travail ou de cas existant"
+                                    }
+                                },
+                                {
+                                    "value": "item2",
+                                    "text": {
+                                        "default": "Improve overall quality of decisions",
+                                        "fr": "Amélioration de la qualité générale des décisions"
+                                    }
+                                },
+                                {
+                                    "value": "item3",
+                                    "text": {
+                                        "default": "Lower transaction costs of an existing program",
+                                        "fr": "Réduction des coûts de transaction d'un programme existant"
+                                    }
+                                },
+                                {
+                                    "value": "item4",
+                                    "text": {
+                                        "default": "The system is performing tasks that humans cound not accomplish in a reasonable period of time",
+                                        "fr": "Le système exécute des taĉhes que les humans ne sont pas en mesure d'accomplir dans us délai raisonnable"
+                                    }
+                                },
+                                {
+                                    "value": "item5",
+                                    "text": {
+                                        "default": "Use innovative approaches",
+                                        "fr": "Utilisation d'approches novatrices"
+                                    }
+                                },
+                                {
+                                    "value": "item6",
+                                    "text": {
+                                        "default": "Other (please specify)",
+                                        "fr": "Autre (veuillez préciser)"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question52",
+                            "visibleIf": "{question7} = [\"item6\"]",
+                            "title": {
+                                "default": "Please describe",
+                                "fr": "S'il vous plait décrire"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "title": {
+                "default": "Business Driver / Positive Impact",
+                "fr": "Facteur opérationnel / Incidence positive"
+            }
+        },
+        {
+            "name": "system",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel-system",
+                    "elements": [
+                        {
+                            "type": "checkbox",
+                            "name": "question9",
+                            "title": {
+                                "default": "Please check which of the following capabilities apply to your system.",
+                                "fr": "Veuillez indiquer laquelle des capacités suivantes s'applique à votre système."
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1",
+                                    "text": {
+                                        "default": "Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.",
+                                        "fr": "Reconnaissance d'images et d'objets: Analyser de volumineux jeux de donnée pour automatiser la reconnaissance, la classification et le context associés à une image ou à un objet."
+                                    }
+                                },
+                                {
+                                    "value": "item2",
+                                    "text": {
+                                        "default": "Text and speech analysis: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging",
+                                        "fr": "Analyse du texte et de la parole: Analyser de vastes jeux de données pour reconnaître, traiter et étiqueter le texte, la parole, la voix et faire des recommendations en fonction du marquage."
+                                    }
+                                },
+                                {
+                                    "value": "item3",
+                                    "text": {
+                                        "default": "Risk assessment: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions",
+                                        "fr": "Évaluation des risques: Analyser de volumineux jeux de données pour déterminer les tendances et recommander des mesures et, dans certains cas, déclencher la prise de mesures précises. "
+                                    }
+                                },
+                                {
+                                    "value": "item4",
+                                    "text": {
+                                        "default": "Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
+                                        "fr": "Génération de contenu: Analyser de vastes jeux de données pour créer des catégories, traiter, trier, personnaliser et servir un contenu spécifique destiné à des contextes particuliers."
+                                    }
+                                },
+                                {
+                                    "value": "item5",
+                                    "text": {
+                                        "default": "Process optimization & workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows",
+                                        "fr": "Optimisation des processus et automatisation des flux de travail: Analyser de vastes jeux de connées pour déterminer et corriger les anomalies, les modèles de grappes, prévoir les résultats ou les façons d'optimiser; et d'automatiser des flux de travail spécifique."
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "title": {
+                "default": "About The System",
+                "fr": "À propos du système"
+            }
+        },
+        {
+            "name": "decision-sector",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel-decision",
+                    "elements": [
+                        {
+                            "type": "checkbox",
+                            "name": "question10",
+                            "title": {
+                                "default": "Does the decision pertain to any of the categories below (*check all that apply):",
+                                "fr": "La décision s'applique-t-elle à l'une ou l'autre des catégories ci-dessous (*Cochez toutes les réponses qui s'appliquent) :"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1",
+                                    "text": {
+                                        "default": "Health related services",
+                                        "fr": "Services liés à la santé"
+                                    }
+                                },
+                                {
+                                    "value": "item2",
+                                    "text": {
+                                        "default": "Economic interests (grants and contributions, tax benefits, debt collection)",
+                                        "fr": "Intérêts économiques (subventions et contributions, avantages fiscaux, recouvrement de dettes)"
+                                    }
+                                },
+                                {
+                                    "value": "item3",
+                                    "text": {
+                                        "default": "Social assistance (ei, disability claims, etc)",
+                                        "fr": "Aide sociales (assurance-emploi, demandes de prestations d'invalidité, etc.)"
+                                    }
+                                },
+                                {
+                                    "value": "item4",
+                                    "text": {
+                                        "default": "Access and mobility ( security clearences, border crossings)",
+                                        "fr": "Accès et mobilité (habitations de sécurité, passages frontaliers)"
+                                    }
+                                },
+                                {
+                                    "value": "item5",
+                                    "text": {
+                                        "default": "Licensing and issuance of permits",
+                                        "fr": "Accréditation et délivrance de permis"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "title": {
+                "default": "About The Decision",
+                "fr": "À propos de la décision"
+            }
+        },
+        {
+            "name": "impact",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel-impact",
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "question11",
+                            "title": {
+                                "default": "Does the recommendation or decision made by the system include elements of discretion?",
+                                "fr": "La recommandation ou la décision prise par le système comprend-elle des éléments d’appréciation?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question12",
+                            "visibleIf": "{question11} = 4",
+                            "title": {
+                                "default": "Describe what is discretionary about the decision",
+                                "fr": "Décrire en quoi la décision est discrétionnaire"
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question8",
+                            "title": {
+                                "default": "Is the system used by a different part of the organization than the ones who developed it?",
+                                "fr": "Le système est-il utilisé par une partie de l’organisation différente de celle à laquelle appartiennent ceux qui l’ont développé?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question20",
+                            "title": {
+                                "default": "Are the impacts resulting from the decision reversible?",
+                                "fr": "Les incidences découlant de la décision sont-elles réversibles?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Reversible",
+                                        "fr": "Réversible"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Likely reversible",
+                                        "fr": "Probablement réversible"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "Difficult to reverse",
+                                        "fr": "Difficile à inverser"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Irreversible",
+                                        "fr": "Irréversible"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question21",
+                            "title": {
+                                "default": "How long will impacts from the decision last?",
+                                "fr": "Combien de temps les incidences de la décision dureront-elles?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Impacts are most likely to be brief",
+                                        "fr": "Les incidences risquent fort probablement d’être brèves"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Some impacts may last a matter of months, but some lingering impacts may last longer",
+                                        "fr": "Certaines incidences peuvent durer quelques mois ou plus longtemps."
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "Impacts can last over a year, with some longer",
+                                        "fr": "Les incidences peuvent durer plus d’un an et plus."
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Most impacts are perpetual",
+                                        "fr": "La plupart des incidences sont sans limite dans le temps."
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question13",
+                            "title": {
+                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
+                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée\nci-dessus). "
+                            }
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question22",
+                            "title": {
+                                "default": "The impacts that the decision will have on the rights or freedoms of individuals or communities, will likely be:",
+                                "fr": "Les incidences de la décision sur les droits ou libertés des personnes ou des collectivités seront probablement les suivantes :"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Little to no impact",
+                                        "fr": "Incidence faible ou nulle"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Moderate impact",
+                                        "fr": "Incidence modérée"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "High impact",
+                                        "fr": "Incidence élevée"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Very high impact",
+                                        "fr": "Incidence très élevée"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question15",
+                            "title": {
+                                "default": "Please describe why the impacts resulting from the decision are (as per selected option above).",
+                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                            }
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question14",
+                            "title": {
+                                "default": "The impacts that the decision will have on the health and well-being of individuals or communities, will likely be:",
+                                "fr": "Les incidences de la décision sur la santé et le bien-être des personnes ou des collectivités seront probablement les suivantes :"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Little to no impact",
+                                        "fr": "Incidence faible ou nulle"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Moderate impact",
+                                        "fr": "Incidence modérée"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "High impact",
+                                        "fr": "Incidence élevée"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Very high impact",
+                                        "fr": "Incidence très élevée"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question17",
+                            "title": {
+                                "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
+                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                            }
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question16",
+                            "title": {
+                                "default": "The impacts that the decision will have on the economic interests of individuals or communities, will likely be:",
+                                "fr": "Les incidences de la décision sur les intérêts économiques des personnes ou des collectivités seront probablement les suivantes :"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Little to no impact",
+                                        "fr": "Incidence faible ou nulle"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Moderate impact",
+                                        "fr": "Incidence modérée"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "High impact",
+                                        "fr": "Incidence élevée"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Very high impact",
+                                        "fr": "Incidence très élevée"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question19",
+                            "title": {
+                                "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
+                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                            }
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question18",
+                            "title": {
+                                "default": "The impacts that the decision will have on the ongoing sustainability of an environmental ecosystem, will likely be:",
+                                "fr": "Les incidences de la décision sur la pérennité d’un écosystème environnemental seront probablement les suivantes :"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Little to no impact",
+                                        "fr": "Incidence faible ou nulle"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Moderate impact",
+                                        "fr": "Incidence modérée"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "High impact",
+                                        "fr": "Incidence élevée"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Very high impact",
+                                        "fr": "Incidence très élevée"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "question23",
+                            "title": {
+                                "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
+                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                            }
+                        }
+                    ]
+                }
+            ],
+            "title": {
+                "default": "Impact Assessment",
+                "fr": "Évaluation de l'incidence"
+            }
+        },
+        {
+            "name": "data",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "data-source",
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "question24",
+                            "title": {
+                                "default": "Will the Automated Decision System use personal information as input data?",
+                                "fr": "Le système de décision automatisé\nutilisera-t-il des renseignements personnels comme données d’entrée?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question25",
+                            "title": {
+                                "default": "What is the highest security classification of the input data used by the system? (Select one)",
+                                "fr": "Quelle est la classification de sécurité la\nplus élevée des données d’entrée utilisées par le système? (N’en choisir qu’une\nseule)"
+                            },
+                            "choices": [
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "None",
+                                        "fr": "Aucun"
+                                    }
+                                },
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Protected A",
+                                        "fr": "Protégé A"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Classified / Confidential",
+                                        "fr": "Classifié/confidentiel"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "Protected B / Protected C",
+                                        "fr": "Protégé B/Protégé C"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Secret / Top Secret",
+                                        "fr": "Secret/Très Secret"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question26",
+                            "title": {
+                                "default": "Who controls the data?",
+                                "fr": "Qui contrôle les données?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "Open Data Source",
+                                        "fr": "Source de données ouvertes"
+                                    }
+                                },
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Federal government",
+                                        "fr": "Gouvernement fédéral"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Other Canadian Government (prov/municipal)",
+                                        "fr": "Autre gouvernement canadien (provincial/municipal)"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "Private Sector / NGO",
+                                        "fr": "Secteur privé / ONG"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question27",
+                            "title": {
+                                "default": "Will the system data use from multiple different sources?",
+                                "fr": "Les données utilisées par le système\nproviendront-elles de plusieurs sources différentes?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question28",
+                            "title": {
+                                "default": "Will the system require input data from an Internet- or telephony-connected device? (e.g. a sensor)",
+                                "fr": "Le système aura-t-il besoin de données d’entrée\nprovenant d’un appareil connecté à Internet ou à la téléphonie? (P. ex., un\nCapteur)"
+                            },
+                            "choices": [
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question29",
+                            "title": {
+                                "default": "Will the system interface with other IT systems?",
+                                "fr": "Le système interagira-t-il avec d’autres\nsystèmes des TI?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question30",
+                            "title": {
+                                "default": "Who collected the data used for training the system?",
+                                "fr": "Qui a recueilli les données utilisées pour\npréparer le système? "
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Your institution",
+                                        "fr": "Votre institution"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Another federal institution",
+                                        "fr": "Une autre institution fédérale"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "Another level of government",
+                                        "fr": "Autre niveau de gouvernement"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "A foreign government or non-government third party",
+                                        "fr": "Un gouvernement étranger ou un tiers non gouvernemental"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "question31",
+                            "title": {
+                                "default": "Who collected the input data used by the system?",
+                                "fr": "Qui a recueilli les données d’entrée utilisées par le système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": {
+                                        "default": "Your institution",
+                                        "fr": "Votre institution"
+                                    }
+                                },
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Another federal institution",
+                                        "fr": "Une autre institution fédérale"
+                                    }
+                                },
+                                {
+                                    "value": 3,
+                                    "text": {
+                                        "default": "Another level of government",
+                                        "fr": "Autre niveau de gouvernement"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "A foreign government or non-government third party",
+                                        "fr": "Un gouvernement étranger ou un tiers non gouvernemental"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "title": {
+                        "default": "A. Data Source",
+                        "fr": "A. Source des données"
+                    }
+                },
+                {
+                    "type": "panel",
+                    "name": "data-type",
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "question32",
+                            "title": {
+                                "default": "Will the system require the analysis of unstructured data to render a recommendation or a decision?",
+                                "fr": "Le système exigera-t-il l’analyse de données\nnon structurées pour faire une recommandation ou prendre une décision?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": 0,
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "checkbox",
+                            "name": "question33",
+                            "visibleIf": "{question32} = \"4\"",
+                            "title": {
+                                "default": "What types of unstructured data? (Check all that apply)",
+                                "fr": "De quel type de données non structurées\ns’agit-il (Cochez toutes les réponses qui s’appliquent)?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": {
+                                        "default": "Audio and text files",
+                                        "fr": "Fichiers audio et textuels"
+                                    }
+                                },
+                                {
+                                    "value": 4,
+                                    "text": {
+                                        "default": "Images and videos",
+                                        "fr": "Images et vidéos"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "title": {
+                        "default": "B. Type of Data",
+                        "fr": "B. Type de données"
+                    }
+                }
+            ],
+            "title": {
+                "default": "About The Data",
+                "fr": "À propos des données"
+            }
+        },
+        {
+            "name": "risk-mitigation",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "data-quality",
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "question34",
+                            "title": {
+                                "default": "Have you documented processes in place to test datasets against biases and other unexpected outcomes? This could include experience in applying frameworks, methods, guidelines or other assessment tools.",
+                                "fr": "Avez-vous documenté les processus en place pour tester les jeux de données en fonction de biais et d’autres résultats inattendus? Par exemple, ceci pourrait inclure une expérience dans l’application de cadres, de méthodes, de lignes directrices ou d’outils d’évaluation."
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question35",
+                            "title": {
+                                "default": "Is there a process currently in place to document how data quality issues were resolved during the design process?",
+                                "fr": "Existe-t-il actuellement un processus permettant de documenter la façon dont les problèmes de qualité des données ont été résolus pendant le processus de conception?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question36",
+                            "title": {
+                                "default": "Have you undertaken a Gender Based Analysis Plus of the data?",
+                                "fr": "Avez-vous procédé à une analyse comparative entre les sexes plus des données?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question37",
+                            "title": {
+                                "default": "Have you assigned accountability in your institution for the design, development, maintenance, and improvement of the system?",
+                                "fr": "Dans votre établissement, existe-t-il des responsables de la conception, du développement, de la maintenance et de l’amélioration du système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question38",
+                            "title": {
+                                "default": "Have you documented processes to manage the risk that outdated or unreliable data is used to make an automated decision?",
+                                "fr": "Avez-vous documenté des processus permettant de gérer le risque que des données obsolètes ou non fiables soient utilisées pour une prise de décision automatisée?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question39",
+                            "title": {
+                                "default": "Will the data be posted on the Open Government Portal?",
+                                "fr": "Les données seront-elles affichées sur le portail Gouvernement ouvert?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        }
+                    ],
+                    "title": {
+                        "default": "Data Quality",
+                        "fr": "Qualité Des Données"
+                    }
+                }
+            ],
+            "title": {
+                "default": "De-Risking And Mitigation Measures",
+                "fr": "Élimination des risques et mesure d'atténuation"
+            }
+        },
+        {
+            "name": "risk-mitigation2",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "procedural-fairness",
+                    "elements": [
+                        {
+                            "type": "radiogroup",
+                            "name": "question40",
+                            "title": {
+                                "default": "Does the system provide an audit trail that records recommendations or decisions?",
+                                "fr": "Le système fournit-il une piste de vérification qui enregistre les recommandations ou les décisions?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question41",
+                            "title": {
+                                "default": "Do you maintain a log detailing all of the changes made to the model and the system?",
+                                "fr": "Tenez-vous un registre détaillant toutes les modifications apportées au modèle et au système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question42",
+                            "title": {
+                                "default": "Does the audit trail clearly set out all decision points made by the system?",
+                                "fr": "La piste de vérification énonce-t-elle clairement tous les points de décision pris par le système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question43",
+                            "title": {
+                                "default": "Does the audit trail show who an authorized decision-maker is?",
+                                "fr": "La piste de vérification indique-t-elle qui est un décideur autorisé?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question44",
+                            "title": {
+                                "default": "Does the system produce reasons for its decisions or recommendations when required?",
+                                "fr": "Le système justifie-t-il ses décisions ou ses recommandations, au besoin?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question45",
+                            "title": {
+                                "default": "Is there a process in place to grant, monitor, and revoke access permission to the system?",
+                                "fr": "Existe-t-il un processus en place permettant d’accorder, de surveiller et de révoquer l’autorisation d’accès au système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question46",
+                            "title": {
+                                "default": "Is there a mechanism to capture feedback by users of the system?",
+                                "fr": "Existe-t-il un mécanisme permettant de recueillir les commentaires des utilisateurs du système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question47",
+                            "title": {
+                                "default": "Is there a recourse process planned or established for clients that wish to challenge the decision?",
+                                "fr": "Un processus de recours est-il prévu ou établi pour les clients qui souhaitent contester la décision?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question48",
+                            "title": {
+                                "default": "Does the system enable human override of system decisions?",
+                                "fr": "Le système permet-il aux humains de passer outre les décisions du système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question49",
+                            "title": {
+                                "default": "Is there a process in place to log the instances when overrides were performed?",
+                                "fr": "Y a-t-il un processus en place pour consigner les cas où des dérogations ont été effectuées?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question50",
+                            "title": {
+                                "default": "Does the audit trail include change control processes to record modifications to the system's operation or performance?",
+                                "fr": "La piste de vérification comprend-elle des processus de contrôle des changements pour consigner les modifications apportées au fonctionnement ou au rendement du système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 2,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "question51",
+                            "title": {
+                                "default": "Have you prepared a concept case to the Government of Canada Enterprise Architecture Review Baord?",
+                                "fr": "Avez-vous préparé un dossier conceptuel pour le Conseil d’examen de l’architecture intégrée du gouvernement du Canada?"
+                            },
+                            "choices": [
+                                {
+                                    "value": 1,
+                                    "text": "Yes"
+                                },
+                                {
+                                    "value": 0,
+                                    "text": "No"
+                                }
+                            ]
+                        }
+                    ],
+                    "title": {
+                        "default": "Procedural Fairness",
+                        "fr": "Équité Procédurale"
+                    }
+                }
+            ],
+            "title": {
+                "default": "De-Risking And Mitigation Measures",
+                "fr": "Élimination des risques et mesure d'atténuation"
+            }
+        }
+    ],
+    "showProgressBar": "top"
+}
