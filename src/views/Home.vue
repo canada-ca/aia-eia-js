@@ -1,7 +1,12 @@
 <template>
   <div class="home">
     <h1>Algorithmic Impact Assessment v0.3</h1>
-    <p>Link to <a href="https://github.com/canada-ca/aia-eia-js">GitHub project repository</a></p>
+    <p>
+      Link to
+      <a href="https://github.com/canada-ca/aia-eia-js"
+        >GitHub project repository</a
+      >
+    </p>
     <AssessmentTool :survey="Survey" />
     <Score />
   </div>
