@@ -33,7 +33,10 @@ function getValue(val: any) {
   if (Array.isArray(val)) {
     return addItemsInArray(val);
   }
-
+  
+  if (typeof val !== 'number'){
+    return 0;
+  }
   return val;
 }
 
