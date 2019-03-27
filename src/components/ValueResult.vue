@@ -5,7 +5,7 @@
       <br />
       {{ data.displayValue }}
     </div>
-    <div class="col-md-2"><Modifier :data="data.value" /></div>
+    <div v-if="!data.name.endsWith('-NS')" class="col-md-2"><Modifier :data="data.value" /></div>
   </div>
 </template>
 

@@ -29,7 +29,7 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "department",
+                            "name": "department-NS",
                             "title": {
                                 "default": "Department",
                                 "fr": "Ministère"
