@@ -64,14 +64,28 @@ export default class Home extends Vue {
       if (title) {
         var questionRequiredHTML = "";
 
-        if (options.question.isRequired)
-        {
+        if (options.question.isRequired) {
           // Should do localization mechanism
           var requiredText = (sender.locale == 'fr' ? 'obligatoire' : 'required');
           questionRequiredHTML = ' <strong class="required">(' + requiredText + ')</strong>';
         }
 
         title.outerHTML = '<label for="'+ options.question.inputId + '" class="' + title.className + '"><span class="field-name">' + title.innerText + '</span>'+ questionRequiredHTML + '</label>';
+      }
+    });
+
+    this.Survey.onErrorCustomText.add(function(sender, options) {
+      // Delete the extra ! mark shown on error.
+      var questionDom = document.getElementById(options.error.errorOwner.id);
+      if (questionDom) {
+        var spanTags = questionDom.getElementsByTagName("span");
+        console.log(questionDom.innerHTML);
+        for(var idx = 0; idx < spanTags.length; idx++) {
+          var className = spanTags[idx].getAttribute('class');
+          if (className && className.indexOf("glyphicon-exclamation-sign") != -1) {
+            spanTags[idx].remove();
+          }
+        }
       }
     });
   }
