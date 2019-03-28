@@ -30,7 +30,7 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "department",
+                            "name": "department-NS",
                             "title": {
                                 "default": "Department",
                                 "fr": "Ministère"
@@ -839,7 +839,7 @@
                         {
                             "type": "comment",
                             "name": "question52",
-                            "visibleIf": "{question7} = [\"item6\"]",
+                            "visibleIf": "{question7} contains [\"item6\"]",
                             "title": {
                                 "default": "Please describe",
                                 "fr": "S'il vous plait décrire"
