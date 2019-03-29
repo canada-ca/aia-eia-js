@@ -27,7 +27,7 @@ import showdown from "showdown";
     Score
   }
 })
-export default class Home extends Vue {  
+export default class Home extends Vue {
   readonly Survey: Model = new Model(surveyJSON);
   created() {
     this.Survey.onComplete.add(result => {
@@ -57,20 +57,30 @@ export default class Home extends Vue {
     // Remove the default required '*'.
     this.Survey.requiredText = "";
 
-    // Fix all the question labels as they're using <H5> instead of <label> 
-    // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928 
-    this.Survey.onAfterRenderQuestion.add(function (sender, options) {
+    // Fix all the question labels as they're using <H5> instead of <label>
+    // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
+    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
       if (title) {
         var questionRequiredHTML = "";
 
         if (options.question.isRequired) {
           // Should do localization mechanism
-          var requiredText = (sender.locale == 'fr' ? 'obligatoire' : 'required');
-          questionRequiredHTML = ' <strong class="required">(' + requiredText + ')</strong>';
+          var requiredText = sender.locale == "fr" ? "obligatoire" : "required";
+          questionRequiredHTML =
+            ' <strong class="required">(' + requiredText + ")</strong>";
         }
 
-        title.outerHTML = '<label for="'+ options.question.inputId + '" class="' + title.className + '"><span class="field-name">' + title.innerText + '</span>'+ questionRequiredHTML + '</label>';
+        title.outerHTML =
+          '<label for="' +
+          options.question.inputId +
+          '" class="' +
+          title.className +
+          '"><span class="field-name">' +
+          title.innerText +
+          "</span>" +
+          questionRequiredHTML +
+          "</label>";
       }
     });
   }

@@ -19,8 +19,8 @@ function hasScore(question: IQuestion): boolean {
     question.getType() === "radiogroup" ||
     question.getType() === "checkbox" ||
     question.getType() === "dropdown"
-  ) {    
-    // Allows the exclusion of dropdown fields like department. 
+  ) {
+    // Allows the exclusion of dropdown fields like department.
     return !question.getValueName().endsWith("-NS");
   }
   return false;
