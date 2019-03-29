@@ -1,7 +1,13 @@
 import Vue from "vue";
 import Vuex, { StoreOptions } from "vuex";
 import { RootState } from "./types";
-import { IQuestion, QuestionSelectBase, SurveyModel, PageModel, Survey } from "survey-vue";
+import {
+  IQuestion,
+  QuestionSelectBase,
+  SurveyModel,
+  PageModel,
+  Survey
+} from "survey-vue";
 
 Vue.use(Vuex);
 
@@ -10,8 +16,7 @@ function addItemsInArray(val: any[]) {
   val.forEach(item => {
     if (typeof item === "number") {
       total = total + item;
-    }
-    else if (typeof item === "string") {
+    } else if (typeof item === "string") {
       total = total + parseEmbeddedValue(item);
     }
   });
@@ -23,14 +28,14 @@ function hasScore(question: IQuestion): boolean {
     question.getType() === "radiogroup" ||
     question.getType() === "checkbox" ||
     question.getType() === "dropdown"
-  ) {    
-    // Check the suffix for "-RS" or "-MS" for valid score questions. 
-    return  getScoreType(question.name, question.parent.name) > 1;
+  ) {
+    // Check the suffix for "-RS" or "-MS" for valid score questions.
+    return getScoreType(question.name, question.parent.name) > 1;
   }
   return false;
 }
 
-function parseEmbeddedValue(val:String):number {
+function parseEmbeddedValue(val: String): number {
   var lastHyphenIdx = val.lastIndexOf("-");
   if (lastHyphenIdx !== -1) {
     // Suffix after last "-" could be a number.
@@ -63,7 +68,7 @@ function getValue(val: any) {
 }
 
 function getScoreTypeHelper(name: String): Number {
-  // 1 - Not Scored, 2 - Raw Score, 3 - Mitigation Score 
+  // 1 - Not Scored, 2 - Raw Score, 3 - Mitigation Score
   if (name) {
     if (name.endsWith("-RS")) {
       return 2;
@@ -77,25 +82,24 @@ function getScoreTypeHelper(name: String): Number {
   return 0;
 }
 
-function getScoreType(questionName: String, panelName: String):Number {
+function getScoreType(questionName: String, panelName: String): Number {
   var result = getScoreTypeHelper(questionName);
 
   if (result > 0) {
     return result;
-  } 
+  }
 
   result = getScoreTypeHelper(panelName);
-  
+
   if (result == 0) {
     // Treat at no score.
     return 1;
-  } 
+  }
 
   return result;
 }
 
 function getMaxScoreForQuestion(question: QuestionSelectBase): number {
-
   var questionType = question.getType();
   var max = 0;
   var value = 0;
@@ -141,7 +145,9 @@ function calculateFinalScore(survey: SurveyModel): number[] {
       rawRiskScore += getValue(survey.data[name]);
     } else if (currentQuestionType === 3) {
       mitigationScore += getValue(survey.data[name]);
-      maxMitigationScore += getMaxScoreForQuestion(<QuestionSelectBase>currentQuestion);
+      maxMitigationScore += getMaxScoreForQuestion(<QuestionSelectBase>(
+        currentQuestion
+      ));
     }
   });
 
@@ -165,7 +171,7 @@ const store: StoreOptions<RootState> = {
   },
   getters: {
     calcscore: state => {
-      if (state.result === undefined) return [0,0,0];
+      if (state.result === undefined) return [0, 0, 0];
       return calculateFinalScore(state.result);
     },
     toolData: state => {
