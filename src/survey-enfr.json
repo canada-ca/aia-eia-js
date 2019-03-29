@@ -18,7 +18,7 @@
                                 "default": "Name of Respondent",
                                 "fr": "Nom de la personne sondée"
                             },
-                            "isRequired": true
+                            "isRequired": false
                         },
                         {
                             "type": "text",
