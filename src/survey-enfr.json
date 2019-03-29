@@ -9,7 +9,7 @@
             "elements": [
                 {
                     "type": "panel",
-                    "name": "panel-project",
+                    "name": "panel-project-NS",
                     "elements": [
                         {
                             "type": "text",
@@ -29,7 +29,7 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "department-NS",
+                            "name": "department",
                             "title": {
                                 "default": "Department",
                                 "fr": "Ministère"
@@ -781,7 +781,7 @@
             "elements": [
                 {
                     "type": "panel",
-                    "name": "panel-business",
+                    "name": "panel-business-NS",
                     "elements": [
                         {
                             "type": "checkbox",
@@ -792,42 +792,42 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Existing backlog of work or cases",
                                         "fr": "Arriéré de travail ou de cas existant"
                                     }
                                 },
                                 {
-                                    "value": "item2",
+                                    "value": "item2-1",
                                     "text": {
                                         "default": "Improve overall quality of decisions",
                                         "fr": "Amélioration de la qualité générale des décisions"
                                     }
                                 },
                                 {
-                                    "value": "item3",
+                                    "value": "item3-1",
                                     "text": {
                                         "default": "Lower transaction costs of an existing program",
                                         "fr": "Réduction des coûts de transaction d'un programme existant"
                                     }
                                 },
                                 {
-                                    "value": "item4",
+                                    "value": "item4-1",
                                     "text": {
                                         "default": "The system is performing tasks that humans cound not accomplish in a reasonable period of time",
                                         "fr": "Le système exécute des taĉhes que les humans ne sont pas en mesure d'accomplir dans us délai raisonnable"
                                     }
                                 },
                                 {
-                                    "value": "item5",
+                                    "value": "item5-1",
                                     "text": {
                                         "default": "Use innovative approaches",
                                         "fr": "Utilisation d'approches novatrices"
                                     }
                                 },
                                 {
-                                    "value": "item6",
+                                    "value": "item6-1",
                                     "text": {
                                         "default": "Other (please specify)",
                                         "fr": "Autre (veuillez préciser)"
@@ -857,7 +857,7 @@
             "elements": [
                 {
                     "type": "panel",
-                    "name": "panel-system",
+                    "name": "panel-system-NS",
                     "elements": [
                         {
                             "type": "checkbox",
@@ -917,7 +917,7 @@
             "elements": [
                 {
                     "type": "panel",
-                    "name": "panel-decision",
+                    "name": "panel-decision-RS",
                     "elements": [
                         {
                             "type": "checkbox",
@@ -928,35 +928,35 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Health related services",
                                         "fr": "Services liés à la santé"
                                     }
                                 },
                                 {
-                                    "value": "item2",
+                                    "value": "item2-1",
                                     "text": {
                                         "default": "Economic interests (grants and contributions, tax benefits, debt collection)",
                                         "fr": "Intérêts économiques (subventions et contributions, avantages fiscaux, recouvrement de dettes)"
                                     }
                                 },
                                 {
-                                    "value": "item3",
+                                    "value": "item3-1",
                                     "text": {
                                         "default": "Social assistance (ei, disability claims, etc)",
                                         "fr": "Aide sociales (assurance-emploi, demandes de prestations d'invalidité, etc.)"
                                     }
                                 },
                                 {
-                                    "value": "item4",
+                                    "value": "item4-1",
                                     "text": {
                                         "default": "Access and mobility ( security clearences, border crossings)",
                                         "fr": "Accès et mobilité (habitations de sécurité, passages frontaliers)"
                                     }
                                 },
                                 {
-                                    "value": "item5",
+                                    "value": "item5-1",
                                     "text": {
                                         "default": "Licensing and issuance of permits",
                                         "fr": "Accréditation et délivrance de permis"
@@ -977,7 +977,7 @@
             "elements": [
                 {
                     "type": "panel",
-                    "name": "panel-impact",
+                    "name": "panel-impact-RS",
                     "elements": [
                         {
                             "type": "radiogroup",
@@ -1317,7 +1317,7 @@
             "elements": [
                 {
                     "type": "panel",
-                    "name": "data-source",
+                    "name": "data-source-RS",
                     "elements": [
                         {
                             "type": "radiogroup",
@@ -1582,7 +1582,7 @@
                 },
                 {
                     "type": "panel",
-                    "name": "data-type",
+                    "name": "data-type-RS",
                     "elements": [
                         {
                             "type": "radiogroup",
@@ -1650,7 +1650,7 @@
             "elements": [
                 {
                     "type": "panel",
-                    "name": "data-quality",
+                    "name": "data-quality-MS",
                     "elements": [
                         {
                             "type": "radiogroup",
@@ -1777,7 +1777,7 @@
             "elements": [
                 {
                     "type": "panel",
-                    "name": "procedural-fairness",
+                    "name": "procedural-fairness-MS",
                     "elements": [
                         {
                             "type": "radiogroup",

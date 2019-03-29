@@ -1,6 +1,8 @@
 <template>
-  <section :class="alertclass">
-    <h2>Current Score {{ score }}</h2>
+  <section :class="alertclass">    
+    <p>Current Score {{ score[2] }}</p>
+    <p>Risk Score {{ score[0] }}</p>
+    <p>Mitigation Score {{ score[1] }}</p>
   </section>
 </template>
 
@@ -15,7 +17,7 @@ import { Model } from "survey-vue";
       return this.$store.getters.calcscore;
     },
     alertclass: function() {
-      const score = this.$store.getters.calcscore;
+      const score = this.$store.getters.calcscore[2];
       if (score <= 18) return "alert alert-success";
       if (score >= 19 && score < 36) return "alert alert-warning";
       if (score >= 36) return "alert alert-danger";

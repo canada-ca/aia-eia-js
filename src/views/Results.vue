@@ -9,7 +9,7 @@
       </div>
       <div class="row">
         <div class="col-md-push-10 col-md-2">
-          <strong>Final Score:</strong> {{ score }}
+          <strong>Final Score:</strong> {{ score[2] }}
         </div>
       </div>
     </div>
