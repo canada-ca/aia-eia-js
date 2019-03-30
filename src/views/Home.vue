@@ -20,6 +20,7 @@ import Score from "@/components/Score.vue";
 import { RootState } from "../types";
 import surveyJSON from "../survey-enfr.json";
 import showdown from "showdown";
+import i18n from '@/plugins/i18n';
 
 @Component({
   components: {
@@ -53,6 +54,9 @@ export default class Home extends Vue {
       //set html
       options.html = str;
     });
+
+    // Set locale
+    this.Survey.locale = i18n.locale;
 
     // Remove the default required '*'.
     this.Survey.requiredText = "";
