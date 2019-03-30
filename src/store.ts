@@ -184,7 +184,7 @@ const store: StoreOptions<RootState> = {
       return state.result.getPlainData({
         includeEmpty: false
       });
-    },    
+    },
     resultDataSections: state => {
       if (state.result === undefined) return {};
       if (state.result.data === undefined) return {};
@@ -192,30 +192,33 @@ const store: StoreOptions<RootState> = {
         includeEmpty: false
       });
 
-      var projectResults :any[] = [];
-      var riskResults :any[] = [];
-      var mitigationResults :any[] = [];
-      var mitigationResultsYes :any[] = [];
+      var projectResults: any[] = [];
+      var riskResults: any[] = [];
+      var mitigationResults: any[] = [];
+      var mitigationResultsYes: any[] = [];
 
-      surveyResults.forEach(function(result){
-        var question = state.result!.getQuestionByName(result.name)
+      surveyResults.forEach(function(result) {
+        var question = state.result!.getQuestionByName(result.name);
         var scoreType = getScoreType(question);
 
-        if (scoreType === 1 && question.parent.name === 'panel-project-NS')
-        {
+        if (scoreType === 1 && question.parent.name === "panel-project-NS") {
           projectResults.push(result);
         } else if (scoreType === 2) {
           riskResults.push(result);
         } else if (scoreType === 3) {
           mitigationResults.push(result);
-          if (result.value > 0)
-          {
+          if (result.value > 0) {
             mitigationResultsYes.push(result);
           }
         }
       });
 
-      return [projectResults, riskResults, mitigationResults, mitigationResultsYes];
+      return [
+        projectResults,
+        riskResults,
+        mitigationResults,
+        mitigationResultsYes
+      ];
     }
   }
 };

@@ -15,7 +15,7 @@
             <summary>Mitigation Mesures</summary>
             <div class="row" v-for="result in myResults[3]" :key="result.name">
               <Result :data="result"></Result>
-            </div>            
+            </div>
           </details>
         </li>
         <li>
@@ -25,25 +25,37 @@
               <li>
                 <details>
                   <summary>Project Details</summary>
-                    <div class="row" v-for="result in myResults[0]" :key="result.name">
-                      <Result :data="result"></Result>
-                    </div>
+                  <div
+                    class="row"
+                    v-for="result in myResults[0]"
+                    :key="result.name"
+                  >
+                    <Result :data="result"></Result>
+                  </div>
                 </details>
               </li>
               <li>
                 <details>
                   <summary>Risk Questions and Answers</summary>
-                    <div class="row" v-for="result in myResults[1]" :key="result.name">
-                      <Result :data="result"></Result>
-                    </div>
+                  <div
+                    class="row"
+                    v-for="result in myResults[1]"
+                    :key="result.name"
+                  >
+                    <Result :data="result"></Result>
+                  </div>
                 </details>
               </li>
               <li>
                 <details>
-                  <summary>Mitigation  Questions and Answers</summary>
-                    <div class="row" v-for="result in myResults[2]" :key="result.name">
-                      <Result :data="result"></Result>
-                    </div>
+                  <summary>Mitigation Questions and Answers</summary>
+                  <div
+                    class="row"
+                    v-for="result in myResults[2]"
+                    :key="result.name"
+                  >
+                    <Result :data="result"></Result>
+                  </div>
                 </details>
               </li>
             </ul>

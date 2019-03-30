@@ -20,7 +20,7 @@ import Score from "@/components/Score.vue";
 import { RootState } from "../types";
 import surveyJSON from "../survey-enfr.json";
 import showdown from "showdown";
-import i18n from '@/plugins/i18n';
+import i18n from "@/plugins/i18n";
 
 @Component({
   components: {
