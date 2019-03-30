@@ -888,7 +888,7 @@
                                 "value": "item5",
                                 "text": {
                                     "default": "Process optimization & workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows",
-                                    "fr": "Optimisation des processus et automatisation des flux de travail: Analyser de vastes jeux de connées pour déterminer et corriger les anomalies, les modèles de grappes, prévoir les résultats ou les façons d'optimiser; et d'automatiser des flux de travail spécifique."
+                                    "fr": "Optimisation des processus et automatisation des flux de travail:    Analyser de vastes jeux de connées pour déterminer et corriger les anomalies, les modèles de grappes, prévoir les résultats ou les façons d'optimiser; et d'automatiser des flux de travail spécifique."
                                 }
                             },
                             {
@@ -1127,7 +1127,7 @@
                         "name": "question13",
                         "title": {
                             "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
-                            "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée\nci-dessus). "
+                            "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus). "
                         }
                     },
                     {
@@ -1327,7 +1327,7 @@
                             "name": "question24",
                             "title": {
                                 "default": "Will the Automated Decision System use personal information as input data?",
-                                "fr": "Le système de décision automatisé\nutilisera-t-il des renseignements personnels comme données d’entrée?"
+                                "fr": "Le système de décision automatisé utilisera-t-il des renseignements personnels comme données d’entrée?"
                             },
                             "choices": [{
                                     "value": 4,
@@ -1350,7 +1350,7 @@
                             "name": "question25",
                             "title": {
                                 "default": "What is the highest security classification of the input data used by the system? (Select one)",
-                                "fr": "Quelle est la classification de sécurité la\nplus élevée des données d’entrée utilisées par le système? (N’en choisir qu’une\nseule)"
+                                "fr": "Quelle est la classification de sécurité la plus élevée des données d’entrée utilisées par le système? (N’en choisir qu’une seule)"
                             },
                             "choices": [{
                                     "value": 0,
@@ -1431,7 +1431,7 @@
                             "name": "question27",
                             "title": {
                                 "default": "Will the system data use from multiple different sources?",
-                                "fr": "Les données utilisées par le système\nproviendront-elles de plusieurs sources différentes?"
+                                "fr": "Les données utilisées par le système proviendront-elles de plusieurs sources différentes?"
                             },
                             "choices": [{
                                     "value": 4,
@@ -1454,7 +1454,7 @@
                             "name": "question28",
                             "title": {
                                 "default": "Will the system require input data from an Internet- or telephony-connected device? (e.g. a sensor)",
-                                "fr": "Le système aura-t-il besoin de données d’entrée\nprovenant d’un appareil connecté à Internet ou à la téléphonie? (P. ex., un\nCapteur)"
+                                "fr": "Le système aura-t-il besoin de données d’entrée provenant d’un appareil connecté à Internet ou à la téléphonie? (P. ex., un Capteur)"
                             },
                             "choices": [{
                                     "value": 4,
@@ -1477,7 +1477,7 @@
                             "name": "question29",
                             "title": {
                                 "default": "Will the system interface with other IT systems?",
-                                "fr": "Le système interagira-t-il avec d’autres\nsystèmes des TI?"
+                                "fr": "Le système interagira-t-il avec d’autres systèmes des TI?"
                             },
                             "choices": [{
                                     "value": 4,
@@ -1500,7 +1500,7 @@
                             "name": "question30",
                             "title": {
                                 "default": "Who collected the data used for training the system?",
-                                "fr": "Qui a recueilli les données utilisées pour\npréparer le système? "
+                                "fr": "Qui a recueilli les données utilisées pour préparer le système? "
                             },
                             "choices": [{
                                     "value": 1,
@@ -1583,17 +1583,17 @@
                             "name": "question32",
                             "title": {
                                 "default": "Will the system require the analysis of unstructured data to render a recommendation or a decision?",
-                                "fr": "Le système exigera-t-il l’analyse de données\nnon structurées pour faire une recommandation ou prendre une décision?"
+                                "fr": "Le système exigera-t-il l’analyse de données non structurées pour faire une recommandation ou prendre une décision?"
                             },
                             "choices": [{
-                                    "value": 4,
+                                    "value": "item1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -1604,20 +1604,20 @@
                         {
                             "type": "checkbox",
                             "name": "question33",
-                            "visibleIf": "{question32} = \"4\"",
+                            "visibleIf": "{question32} = \"item1\"",
                             "title": {
                                 "default": "What types of unstructured data? (Check all that apply)",
-                                "fr": "De quel type de données non structurées\ns’agit-il (Cochez toutes les réponses qui s’appliquent)?"
+                                "fr": "De quel type de données non structurées s’agit-il (Cochez toutes les réponses qui s’appliquent)?"
                             },
                             "choices": [{
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Audio and text files",
                                         "fr": "Fichiers audio et textuels"
                                     }
                                 },
                                 {
-                                    "value": 4,
+                                    "value": "item2-4",
                                     "text": {
                                         "default": "Images and videos",
                                         "fr": "Images et vidéos"
