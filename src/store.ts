@@ -30,7 +30,7 @@ function hasScore(question: IQuestion): boolean {
     question.getType() === "dropdown"
   ) {
     // Check the suffix for "-RS" or "-MS" for valid score questions.
-    return getScoreType(question.name, question.parent.name) > 1;
+    return getScoreType(question) > 1;
   }
   return false;
 }
@@ -82,14 +82,14 @@ function getScoreTypeHelper(name: String): Number {
   return 0;
 }
 
-function getScoreType(questionName: String, panelName: String): Number {
-  var result = getScoreTypeHelper(questionName);
+function getScoreType(question: IQuestion): Number {
+  var result = getScoreTypeHelper(question.name);
 
   if (result > 0) {
     return result;
   }
 
-  result = getScoreTypeHelper(panelName);
+  result = getScoreTypeHelper(question.parent.name);
 
   if (result == 0) {
     // Treat at no score.
@@ -139,7 +139,7 @@ function calculateFinalScore(survey: SurveyModel): number[] {
 
   valueNames.forEach(name => {
     var currentQuestion = survey.getQuestionByName(name);
-    var currentQuestionType = getScoreType(name, currentQuestion.parent.name);
+    var currentQuestionType = getScoreType(currentQuestion);
 
     if (currentQuestionType === 2) {
       rawRiskScore += getValue(survey.data[name]);
@@ -184,6 +184,41 @@ const store: StoreOptions<RootState> = {
       return state.result.getPlainData({
         includeEmpty: false
       });
+    },
+    resultDataSections: state => {
+      if (state.result === undefined) return {};
+      if (state.result.data === undefined) return {};
+      var surveyResults = state.result.getPlainData({
+        includeEmpty: false
+      });
+
+      var projectResults: any[] = [];
+      var riskResults: any[] = [];
+      var mitigationResults: any[] = [];
+      var mitigationResultsYes: any[] = [];
+
+      surveyResults.forEach(function(result) {
+        var question = state.result!.getQuestionByName(result.name);
+        var scoreType = getScoreType(question);
+
+        if (scoreType === 1 && question.parent.name === "panel-project-NS") {
+          projectResults.push(result);
+        } else if (scoreType === 2) {
+          riskResults.push(result);
+        } else if (scoreType === 3) {
+          mitigationResults.push(result);
+          if (result.value > 0) {
+            mitigationResultsYes.push(result);
+          }
+        }
+      });
+
+      return [
+        projectResults,
+        riskResults,
+        mitigationResults,
+        mitigationResultsYes
+      ];
     }
   }
 };
