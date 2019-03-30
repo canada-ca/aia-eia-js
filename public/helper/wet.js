@@ -1,4 +1,11 @@
 window.onload = function() {
+  reloadTemplate();
+};
+
+function reloadTemplate(){
+  var language = document.getElementsByTagName("html")[0].getAttribute('lang');
+  var switchLanguage = language.startsWith('en') ? 'fr' : 'en';
+
   var defTop = document.getElementById("def-top");
   defTop.outerHTML = wet.builder.appTop({
     appName: [
@@ -10,9 +17,9 @@ window.onload = function() {
     search: false,
     lngLinks: [
       {
-        lang: "fr",
-        href: "#",
-        text: "N/A"
+        lang: switchLanguage,
+        href: "?lang=" + switchLanguage,
+        text: (switchLanguage === 'en' ? 'English' : 'Français')
       }
     ],
     showPreContent: false,
@@ -21,12 +28,12 @@ window.onload = function() {
 
   var defPreFooter = document.getElementById("def-preFooter");
   defPreFooter.outerHTML = wet.builder.preFooter({
-    dateModified: "2018-02-15",
-    versionIdentifier: "0.0.1",
+    dateModified: "2019-03-29",
+    versionIdentifier: "0.0.4",
     showPostContent: false
   });
 
   var defFooter = document.getElementById("def-footer");
   defFooter.outerHTML = wet.builder.appFooter({
   });
-};
+}
