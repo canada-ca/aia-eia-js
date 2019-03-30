@@ -4,14 +4,52 @@
     <Score />
     <p></p>
     <div class="container-fluid">
-      <div class="row" v-for="result in myResults" :key="result.name">
-        <Result :data="result"></Result>
-      </div>
       <div class="row">
         <div class="col-md-push-10 col-md-2">
           <strong>Final Score:</strong> {{ score[2] }}
         </div>
       </div>
+      <ul class="list-unstyled">
+        <li>
+          <details>
+            <summary>Mitigation Mesures</summary>
+            <div class="row" v-for="result in myResults[3]" :key="result.name">
+              <Result :data="result"></Result>
+            </div>            
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Questions and answers</summary>
+            <ul class="list-unstyled">
+              <li>
+                <details>
+                  <summary>Project Details</summary>
+                    <div class="row" v-for="result in myResults[0]" :key="result.name">
+                      <Result :data="result"></Result>
+                    </div>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Risk Questions and Answers</summary>
+                    <div class="row" v-for="result in myResults[1]" :key="result.name">
+                      <Result :data="result"></Result>
+                    </div>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Mitigation  Questions and Answers</summary>
+                    <div class="row" v-for="result in myResults[2]" :key="result.name">
+                      <Result :data="result"></Result>
+                    </div>
+                </details>
+              </li>
+            </ul>
+          </details>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -34,6 +72,6 @@ import Result from "@/components/Result.vue";
   }
 })
 export default class Results extends Vue {
-  myResults = this.$store.getters.plainData;
+  myResults = this.$store.getters.resultDataSections;
 }
 </script>
