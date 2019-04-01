@@ -1,7 +1,8 @@
 <template>
   <section :class="alertclass">
+    <p>Risk Level {{ score[3]}}</p>
     <p>Current Score {{ score[2] }}</p>
-    <p>Risk Score {{ score[0] }}</p>
+    <p>Raw Risk Score {{ score[0] }}</p>
     <p>Mitigation Score {{ score[1] }}</p>
   </section>
 </template>

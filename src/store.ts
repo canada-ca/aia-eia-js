@@ -136,6 +136,7 @@ function calculateFinalScore(survey: SurveyModel): number[] {
   let total = 0;
   let percentage = 0.8;
   let deduction = 10;
+  let level = 0;
 
   valueNames.forEach(name => {
     var currentQuestion = survey.getQuestionByName(name);
@@ -157,7 +158,20 @@ function calculateFinalScore(survey: SurveyModel): number[] {
     total = rawRiskScore;
   }
 
-  return [rawRiskScore, mitigationScore, total];
+  if (total <= 18) {
+    level = 1;
+  }
+  else if (total > 18 && total <= 36) {
+    level = 2;
+  }
+  else if (total > 36 && total <= 54) {
+    level = 2;
+  }
+  else {
+    level = 4;
+  }
+
+  return [rawRiskScore, mitigationScore, total, level];
 }
 
 const store: StoreOptions<RootState> = {
@@ -197,7 +211,7 @@ const store: StoreOptions<RootState> = {
       var mitigationResults: any[] = [];
       var mitigationResultsYes: any[] = [];
 
-      surveyResults.forEach(function(result) {
+      surveyResults.forEach(function (result) {
         var question = state.result!.getQuestionByName(result.name);
         var scoreType = getScoreType(question);
 
