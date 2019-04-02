@@ -1,18 +1,18 @@
 <template>
   <div>
-    <h1>Algorithmic Impact Assessment Results</h1>
+    <h1>{{ $t("resultTitle") }}</h1>
     <Score />
     <p></p>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-push-10 col-md-2">
-          <strong>Final Score:</strong> {{ score[2] }}
+          <strong>{{ $t("resultScore") }}:</strong> {{ score[2] }}
         </div>
       </div>
       <ul class="list-unstyled">
         <li>
           <details>
-            <summary>Mitigation Mesures</summary>
+            <summary>{{ $t("resultSectionMeasure") }}</summary>
             <div class="row" v-for="result in myResults[3]" :key="result.name">
               <Result :data="result"></Result>
             </div>
@@ -20,11 +20,11 @@
         </li>
         <li>
           <details>
-            <summary>Questions and answers</summary>
+            <summary>{{ $t("resultSectionQA") }}</summary>
             <ul class="list-unstyled">
               <li>
                 <details>
-                  <summary>Project Details</summary>
+                  <summary>{{ $t("resultSectionPD") }}</summary>
                   <div
                     class="row"
                     v-for="result in myResults[0]"
@@ -36,7 +36,7 @@
               </li>
               <li>
                 <details>
-                  <summary>Risk Questions and Answers</summary>
+                  <summary>{{ $t("resultSectionRQA") }}</summary>
                   <div
                     class="row"
                     v-for="result in myResults[1]"
@@ -48,7 +48,7 @@
               </li>
               <li>
                 <details>
-                  <summary>Mitigation Questions and Answers</summary>
+                  <summary>{{ $t("resultSectionMQA") }}</summary>
                   <div
                     class="row"
                     v-for="result in myResults[2]"

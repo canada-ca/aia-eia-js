@@ -1,0 +1,16 @@
+{
+    "swtchLang" : "Français",
+    "htmlCode" : "en-CA",
+    "appTitle" : "Évaluation de l'Impact Algorithmique",
+    "riskLevel" : "Risk Level",
+    "currentScore" : "Current Score",
+    "rawRiskScore" : "Raw Risk Score",
+    "migrationScore" : "Migration Score",
+    "resultTitle" : "Algorithmic Impact Assessment Results",
+    "resultScore" : "Final Score",
+    "resultSectionMeasure" : "Mitigation Measures",
+    "resultSectionQA" : "Questions and Answers",
+    "resultSectionPD" : "Project Details",
+    "resultSectionRQA" : "Risk Questions and Answers",
+    "resultSectionMQA" : "Mitigation Questions and Answers"
+}

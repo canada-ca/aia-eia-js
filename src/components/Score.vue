@@ -1,9 +1,9 @@
 <template>
   <section :class="alertclass">
-    <p>Risk Level {{ score[3]}}</p>
-    <p>Current Score {{ score[2] }}</p>
-    <p>Raw Risk Score {{ score[0] }}</p>
-    <p>Mitigation Score {{ score[1] }}</p>
+    <p>{{ $t("riskLevel") }} {{ score[3] }}</p>
+    <p>{{ $t("currentScore") }} {{ score[2] }}</p>
+    <p>{{ $t("rawRiskScore") }} {{ score[0] }}</p>
+    <p>{{ $t("migrationScore") }} {{ score[1] }}</p>
   </section>
 </template>
 
