@@ -1,14 +1,11 @@
 <template>
   <div class="home">
-    <h1>Algorithmic Impact Assessment v0.3</h1>
+    <h1>{{ $t("appTitle") }}</h1>
     <p>
-      Link to
-      <a href="https://github.com/canada-ca/aia-eia-js"
-        >GitHub project repository</a
-      >
+      <a href="https://github.com/canada-ca/aia-eia-js">{{ $t("linkText")}}</a>
     </p>
-    <AssessmentTool :survey="Survey" />
-    <Score />
+    <AssessmentTool :survey="Survey"/>
+    <Score/>
   </div>
 </template>
 
