@@ -1,7 +1,8 @@
 {
     "swtchLang" : "Français",
     "htmlCode" : "en-CA",
-    "appTitle" : "Évaluation de l'Impact Algorithmique",
+    "appTitle" : "Algorithmic Impact Assessment",
+    "linkText": "Link to GitHub project repository",
     "riskLevel" : "Risk Level",
     "currentScore" : "Current Score",
     "rawRiskScore" : "Raw Risk Score",
