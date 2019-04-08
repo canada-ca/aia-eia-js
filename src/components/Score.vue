@@ -3,7 +3,7 @@
     <p>{{ $t("riskLevel") }} {{ score[3] }}</p>
     <p>{{ $t("currentScore") }} {{ score[2] }}</p>
     <p>{{ $t("rawRiskScore") }} {{ score[0] }}</p>
-    <p>{{ $t("migrationScore") }} {{ score[1] }}</p>
+    <p>{{ $t("mitigationScore") }} {{ score[1] }}</p>
   </section>
 </template>
 
