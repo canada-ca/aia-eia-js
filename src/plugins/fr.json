@@ -4,6 +4,7 @@
     "appTitle": "Évaluation de l'Incidence Algorithmique",
     "linkProjectText": "Lien vers le répertoire GitHub du projet",
     "linkDirective": "http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32592#appC",
+    "print": "Imprimer",
     "linkDirectiveText": "Lien vers les Exigences par niveau d’incidence",
     "riskLevel": "Niveau d'incidence",
     "currentScore": "Cote actuelle",

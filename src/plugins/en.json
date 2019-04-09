@@ -4,6 +4,7 @@
     "appTitle" : "Algorithmic Impact Assessment",
     "linkProjectText": "Link to GitHub project repository",
     "linkDirective": "http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592#appC",
+    "print": "Print",
     "linkDirectiveText": "Link to the Impact Level Requirements",
     "riskLevel" : "Impact Level",
     "currentScore" : "Current Score",
