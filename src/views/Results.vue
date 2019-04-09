@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <PrintButton />
+  <div ref="results">
+    <!--<PrintButton />-->
     <h1>{{ $t("resultTitle") }}</h1>
     <Score />
     <p>
@@ -78,13 +78,13 @@ import { Component, Vue, Prop } from "vue-property-decorator";
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import Score from "@/components/Score.vue";
 import Result from "@/components/Result.vue";
-import PrintButton from "@/plugins/PrintButton.vue";
+//import PrintButton from "@/plugins/PrintButton.vue";
 
 @Component({
   components: {
     Result,
-    Score,
-    PrintButton
+    Score
+    //PrintButton
   },
   computed: {
     score: function() {
