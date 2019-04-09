@@ -2,11 +2,17 @@
   <div>
     <h1>{{ $t("resultTitle") }}</h1>
     <Score />
+    <p>
+      <a href="http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32592#appC">{{
+        $t("linkDirectiveText")
+      }}</a>
+    </p>
     <p></p>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-push-10 col-md-2">
-          <strong>{{ $t("resultScore") }}:</strong> {{ score[2] }}
+          <strong>{{ $t("resultScore") }}:</strong>
+          {{ score[2] }}
         </div>
       </div>
       <ul class="list-unstyled">
