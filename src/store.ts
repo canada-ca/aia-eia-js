@@ -160,14 +160,11 @@ function calculateFinalScore(survey: SurveyModel): number[] {
 
   if (total <= 18) {
     level = 1;
-  }
-  else if (total > 18 && total <= 36) {
+  } else if (total > 18 && total <= 36) {
     level = 2;
-  }
-  else if (total > 36 && total <= 54) {
+  } else if (total > 36 && total <= 54) {
     level = 2;
-  }
-  else {
+  } else {
     level = 4;
   }
 
@@ -211,7 +208,7 @@ const store: StoreOptions<RootState> = {
       var mitigationResults: any[] = [];
       var mitigationResultsYes: any[] = [];
 
-      surveyResults.forEach(function (result) {
+      surveyResults.forEach(function(result) {
         var question = state.result!.getQuestionByName(result.name);
         var scoreType = getScoreType(question);
 

@@ -2041,6 +2041,5 @@
             }
         }
     ],
-    "showProgressBar": "top",
-    "showQuestionNumbers": "off"
+    "showProgressBar": "top"
 }
