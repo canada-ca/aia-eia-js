@@ -4,12 +4,7 @@
     <h1>{{ $t("resultTitle") }}</h1>
     <Score />
     <p>
-      <a
-        href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592#appC"
-        target="_blank"
-      >
-        {{ $t("linkDirectiveText") }}
-      </a>
+      <a :href="$t('linkDirective')">{{ $t("linkDirectiveText") }}</a>
     </p>
     <div class="container-fluid">
       <div class="row">
