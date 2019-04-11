@@ -11,7 +11,6 @@
         {{ $t("linkDirectiveText") }}
       </a>
     </p>
-    <p></p>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-push-10 col-md-2">
