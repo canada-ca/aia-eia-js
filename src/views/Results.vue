@@ -4,7 +4,7 @@
     <h1>{{ $t("resultTitle") }}</h1>
     <Score />
     <p>
-      <a :href="$t('linkDirective')">{{ $t("linkDirectiveText") }}</a>
+      <a :href="$t('linkDirective')" target="_blank">{{ $t("linkDirectiveText") }}</a>
     </p>
     <div class="container-fluid">
       <div class="row">
