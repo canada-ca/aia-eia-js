@@ -1,12 +1,15 @@
 <template>
-  <div ref="results">
+  <div class="results">
     <!--<PrintButton />-->
     <h1>{{ $t("resultTitle") }}</h1>
     <Score />
     <p>
-      <a href="http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32592#appC">{{
-        $t("linkDirectiveText")
-      }}</a>
+      <a
+        href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592#appC"
+        target="_blank"
+      >
+        {{ $t("linkDirectiveText") }}
+      </a>
     </p>
     <p></p>
     <div class="container-fluid">
@@ -78,13 +81,14 @@ import { Component, Vue, Prop } from "vue-property-decorator";
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import Score from "@/components/Score.vue";
 import Result from "@/components/Result.vue";
-//import PrintButton from "@/plugins/PrintButton.vue";
+import Obligations from "@/components/Obligations.vue";
+import i18n from "@/plugins/i18n";
 
 @Component({
   components: {
     Result,
-    Score
-    //PrintButton
+    Score,
+    Obligations
   },
   computed: {
     score: function() {
