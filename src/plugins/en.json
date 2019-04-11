@@ -16,5 +16,6 @@
     "resultSectionQA" : "Questions and Answers",
     "resultSectionPD" : "Project Details",
     "resultSectionRQA" : "Impact Questions and Answers",
-    "resultSectionMQA" : "Mitigation Questions and Answers"
+    "resultSectionMQA" : "Mitigation Questions and Answers",
+    "modifier" : "Points"
 }

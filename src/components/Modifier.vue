@@ -1,5 +1,7 @@
 <template>
-  <div><strong>Modifier:</strong> {{ str }}</div>
+  <div>
+    <strong>{{ $t("modifier") }}:</strong> {{ str }}
+  </div>
 </template>
 
 <script lang="ts">
