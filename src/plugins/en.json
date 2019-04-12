@@ -20,10 +20,18 @@
     "modifier": "Points",
     "requirements": [
         {
-            "section": [
+            "elements": [
                 {
                     "title": "Peer Review",
-                    "text": "None"
+                    "elements": [{
+                        "text": "None"
+                    }, {
+                        "text": "<strong>At least one of:</strong>\nQualified expert from a federal, provincial,territorial or municipal government institution\nQualified members of faculty of a post - secondary institution\nQualified researchers from a relevant non - governmental organization\nContracted third - party vendor with a related specialization\nPublishing specifications of the Automated Decision System in a peer - reviewed journal\nA data and automation advisory board specified by Treasury Board Secretariat"
+                    }, {
+                        "text": "<strong>At least one of:</strong>\nQualified expert from a federal, provincial,territorial or municipal government institution\nQualified members of faculty of a post - secondary institution\nQualified researchers from a relevant non - governmental organization\nContracted third - party vendor with a related specialization\nPublishing specifications of the Automated Decision System in a peer - reviewed journal\nA data and automation advisory board specified by Treasury Board Secretariat"
+                    }, {
+                        "text": "<strong>At least two of:</strong>\nQualified experts from the National Research Council of Canada,  Statistics Canada, or the Communications Security Establishment\nQualified members of faculty of a post-secondary institution\nQualified researchers from a relevant non- governmental organization\nContracted third-party vendor with a related specialization\nA data and automation advisory board specified by Treasury Board Secretariat\n<strong>OR:</strong>\nPublishing specifications of the Automated Decision System in a peer-reviewed journal"
+                    } ]
                 },
                 {
                     "title": "Notice",
