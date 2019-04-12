@@ -1,21 +1,63 @@
 {
-    "swtchLang" : "Français",
-    "htmlCode" : "en-CA",
-    "appTitle" : "Algorithmic Impact Assessment",
+    "swtchLang": "Français",
+    "htmlCode": "en-CA",
+    "appTitle": "Algorithmic Impact Assessment",
     "linkProjectText": "Link to GitHub project repository",
     "linkDirective": "http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592#appC",
     "print": "Print",
     "linkDirectiveText": "Link to the Impact Level Requirements",
-    "riskLevel" : "Impact Level",
-    "currentScore" : "Current Score",
-    "rawRiskScore" : "Raw Impact Score",
+    "riskLevel": "Impact Level",
+    "currentScore": "Current Score",
+    "rawRiskScore": "Raw Impact Score",
     "mitigationScore": "Mitigation Score",
-    "resultTitle" : "Algorithmic Impact Assessment Results",
-    "resultScore" : "Final Score",
-    "resultSectionMeasure" : "Mitigation Measures",
-    "resultSectionQA" : "Questions and Answers",
-    "resultSectionPD" : "Project Details",
-    "resultSectionRQA" : "Impact Questions and Answers",
-    "resultSectionMQA" : "Mitigation Questions and Answers",
-    "modifier" : "Points"
+    "resultTitle": "Algorithmic Impact Assessment Results",
+    "resultScore": "Final Score",
+    "resultSectionMeasure": "Mitigation Measures",
+    "resultSectionQA": "Questions and Answers",
+    "resultSectionPD": "Project Details",
+    "resultSectionRQA": "Impact Questions and Answers",
+    "resultSectionMQA": "Mitigation Questions and Answers",
+    "modifier": "Points",
+    "requirements": [
+        {
+            "section": [
+                {
+                    "title": "Peer Review",
+                    "text": "None"
+                },
+                {
+                    "title": "Notice",
+                    "text": "None"
+                },
+                {
+                    "title": "Human-in-the-loop for decisions",
+                    "text": "Decisions may be rendered without direct human involvement."
+                },
+                {
+                    "title": "Explanation Requirement",
+                    "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided for common decision results. This can include providing the explanation via a Frequently Asked Questions section on a website."
+                },
+                {
+                    "title": "Testing",
+                    "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.</br>Ensure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
+                },
+                {
+                    "title": "Monitoring",
+                    "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive"
+                },
+                {
+                    "title": "Training",
+                    "text": "None"
+                },
+                {
+                    "title": "Contingency Planning",
+                    "text": "None"
+                },
+                {
+                    "title": "Approval for the system to operate",
+                    "text": "None"
+                }
+            ]
+        }
+    ]
 }
