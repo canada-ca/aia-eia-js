@@ -1,20 +1,22 @@
 <template>
   <div class="requirements">
-    <ul class="list-unstyled">
-      <li>
-        <details>
-          <summary>{{ $t("requirements.title") }} {{score[3]}}</summary>
-        <div
-          class="row"
-          v-for="requirement in $t('requirements.elements')"
-          :key="requirement.title"
-        >
-          <h3>{{ requirement.title }}</h3>
-          <p>{{ requirement.elements[score[3] - 1].text }}</p>
-        </div>
-        </details>
-      </li>
-    </ul>
+    <div class="container-fluid">
+      <ul class="list-unstyled">
+        <li>
+          <details>
+            <summary>{{ $t("requirements.title") }} {{score[3]}}</summary>
+            <div
+              class="row"
+              v-for="requirement in $t('requirements.elements')"
+              :key="requirement.title"
+            >
+              <h3>{{ requirement.title }}</h3>
+              <p>{{ requirement.elements[score[3] - 1].text }}</p>
+            </div>
+          </details>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
