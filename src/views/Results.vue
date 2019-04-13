@@ -3,8 +3,11 @@
     <!--<PrintButton />-->
     <h1>{{ $t("resultTitle") }}</h1>
     <Score />
+    <Obligations />
     <p>
-      <a :href="$t('linkDirective')" target="_blank">{{ $t("linkDirectiveText") }}</a>
+      <a :href="$t('linkDirective')" target="_blank">{{
+        $t("linkDirectiveText")
+      }}</a>
     </p>
     <div class="container-fluid">
       <div class="row">
