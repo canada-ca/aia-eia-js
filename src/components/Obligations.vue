@@ -1,6 +1,18 @@
 <template>
   <section>
-    <p></p>
+    <h2>{{ $t("requirements.title") }}</h2>
+    <ul class="list-unstyled">
+      <li>
+        <div
+          class="row"
+          v-for="requirement in $t('requirements.elements')"
+          :key="requirement.title"
+        >
+          <h3>{{ requirement.title }}</h3>
+          <p>{{ requirement.elements[score[3]-1].text}}</p>
+        </div>
+      </li>
+    </ul>
   </section>
 </template>
 
@@ -13,8 +25,8 @@ import Component from "vue-class-component";
 
 @Component({
   computed: {
-    text: function() {
-      return NaN;
+    score: function() {
+      return this.$store.getters.calcscore;
     }
   }
 })
