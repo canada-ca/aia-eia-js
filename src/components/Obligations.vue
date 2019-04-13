@@ -15,6 +15,15 @@
             </div>
           </details>
         </li>
+        <li>
+          <p>
+            <a :href="$t('linkDirective')" target="_blank">
+              {{
+              $t("linkDirectiveText")
+              }}
+            </a>
+          </p>
+        </li>
       </ul>
     </div>
   </div>
