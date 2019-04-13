@@ -9,7 +9,7 @@
           :key="requirement.title"
         >
           <h3>{{ requirement.title }}</h3>
-          <p>{{ requirement.elements[score[3]-1].text}}</p>
+          <p>{{ requirement.elements[score[3] - 1].text }}</p>
         </div>
       </li>
     </ul>
