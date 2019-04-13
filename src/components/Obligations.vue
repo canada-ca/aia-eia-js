@@ -1,8 +1,9 @@
 <template>
-  <section>
-    <h2>{{ $t("requirements.title") }}</h2>
+  <div class="requirements">
     <ul class="list-unstyled">
       <li>
+        <details>
+          <summary>{{ $t("requirements.title") }} {{score[3]}}</summary>
         <div
           class="row"
           v-for="requirement in $t('requirements.elements')"
@@ -11,9 +12,10 @@
           <h3>{{ requirement.title }}</h3>
           <p>{{ requirement.elements[score[3] - 1].text }}</p>
         </div>
+        </details>
       </li>
     </ul>
-  </section>
+  </div>
 </template>
 
 <script lang="ts">
