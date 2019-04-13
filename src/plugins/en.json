@@ -19,7 +19,7 @@
     "resultSectionMQA": "Mitigation Questions and Answers",
     "modifier": "Points",
     "requirements": {
-        "title": "Requirements",
+        "title": "Requirements for Impact level:",
         "elements": [{
                 "title": "Peer Review",
                 "elements": [{

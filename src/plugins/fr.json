@@ -19,7 +19,7 @@
     "resultSectionMQA": "Questions et réponses liées aux mesures d'atténuation",
     "modifier": "Points",
     "requirements": {
-        "title": "Exigences",
+        "title": "Exigences pour le niveau d'incidence :",
         "elements": [{
                 "title": "Examen par les pairs",
                 "elements": [{
