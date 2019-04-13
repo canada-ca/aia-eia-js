@@ -18,119 +18,116 @@
     "resultSectionRQA": "Questions et réponses liées aux risques",
     "resultSectionMQA": "Questions et réponses liées aux mesures d'atténuation",
     "modifier": "Points",
-    "requirements": [
-        {
-            "title": "Exigences",
-            "elements": [
-                {
-                    "title": "Examen par les pairs",
-                    "elements": [{
-                        "text": "Aucune"
-                    }, {
-                        "text": "<strong>Au moins l’une des suivantes :</strong>\n\nExpert qualifié d’une institution gouvernementale fédérale, provinciale, territoriale ou municipale.\n\nMembres qualifiés d’une faculté d’un établissement postsecondaire.\n\nQualified researchers from a relevant non - governmental organization\n\nContracted third - party vendor with a related specialization\n\nPublishing specifications of the Automated Decision System in a peer - reviewed journal\n\nA data and automation advisory board specified by Treasury Board Secretariat"
-                    }, {
-                        "text": "<strong>At least one of:</strong>\n\nQualified expert from a federal, provincial,territorial or municipal government institution\n\nQualified members of faculty of a post - secondary institution\n\nQualified researchers from a relevant non - governmental organization\n\nContracted third - party vendor with a related specialization\n\nPublishing specifications of the Automated Decision System in a peer - reviewed journal\n\nA data and automation advisory board specified by Treasury Board Secretariat"
-                    }, {
-                        "text": "<strong>At least two of:</strong>\n\nQualified experts from the National Research Council of Canada,  Statistics Canada, or the Communications Security Establishment\n\nQualified members of faculty of a post-secondary institution\n\nQualified researchers from a relevant non- governmental organization\n\nContracted third-party vendor with a related specialization\n\nA data and automation advisory board specified by Treasury Board Secretariat\n\n<strong>OR:</strong>\n\nPublishing specifications of the Automated Decision System in a peer-reviewed journal"
-                    } ]
-                },
-                {
-                    "title": "Notice",
-                    "elements": [{
-                        "text": "Aucune"
-                    }, {
-                        "text": "Plain language notice posted on the program or service website."
-                    }, {
-                        "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\nHow it supports the administrative decision; and\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
-                    }, {
-                        "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\nHow it supports the administrative decision; and\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
-                    } ]
-                },
-                {
-                    "title": "Human-in-the-loop for decisions",
-                    "elements":[{
-                        "text": "Decisions may be rendered without direct human involvement."
-                    }, {
-                        "text": "Decisions may be rendered without direct human involvement."
-                    }, {
-                        "text": "Decisions cannot be made without having specific human intervention points during the decision-making process; and the final decision must be made by a human."
-                    }, {
-                        "text": "Decisions cannot be made without having specific human intervention points during the decision-making process; and the final decision must be made by a human."
-                    } ]
-                },
-                {
-                    "title": "Explanation Requirement",
-                    "elements":[{
-                        "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided for common decision results. This can include providing the explanation via a Frequently Asked Questions section on a website."
-                    }, {
-                        "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided upon request for any decision that resulted in the denial of a benefit, a service, or other regulatory action."
-                    }, {
-                        "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided with any decision that resulted in the denial of a benefit, a service, or other regulatory action."
-                    }, {
-                        "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided with any decision that resulted in the denial of a benefit, a service, or other regulatory action."
-                    } ]
-                },
-                {
-                    "title": "Testing",
-                    "elements":[{
-                        "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
-                    }, {
-                        "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
-                    }, {
-                        "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
-                    }, {
-                        "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
-                    } ]
-                },
-                {
-                    "title": "Monitoring",
-                    "elements":[{
-                        "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
-                    }, {
-                        "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
-                    }, {
-                        "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
-                    }, {
-                        "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
-                    } ]
-                },
-                {
-                    "title": "Training",
-                    "elements":[{
-                        "text": "Aucune"
-                    }, {
-                        "text": "Documentation on the design and functionality of the system."
-                    }, {
-                        "text": "Documentation on the design and functionality of the system.\n\nTraining courses must be completed."
-                    }, {
-                        "text": "Documentation on the design and functionality of the system.\n\nRe-occurring training courses.\n\nA means to verify that training has been completed."
-                    } ]
-                },
-                {
-                    "title": "Contingency Planning",
-                    "elements":[{
-                        "text": "Aucune"
-                    }, {
-                        "text": "Aucune"
-                    }, {
-                        "text": "Ensure that contingency plans and/or backup systems are available should the Automated Decision System be unavailable."
-                    }, {
-                        "text": "Ensure that contingency plans and/or backup systems are available should the Automated Decision System be unavailable."
-                    } ]
-                },
-                {
-                    "title": "Approval for the system to operate",
-                    "elements":[{
-                        "text": "Aucune"
-                    }, {
-                        "text": "Aucune"
-                    }, {
-                        "text": "Deputy Head"
-                    }, {
-                        "text": "Treasury Board"
-                    } ]
-                }
-            ]
-        }
-    ]
+    "requirements": {
+        "title": "Exigences",
+        "elements": [{
+                "title": "Examen par les pairs",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "<strong>Au moins l’une des suivantes :</strong>\n\nExpert qualifié d’une institution gouvernementale fédérale, provinciale, territoriale ou municipale.\n\nMembres qualifiés d’une faculté d’un établissement postsecondaire.\n\nQualified researchers from a relevant non - governmental organization\n\nContracted third - party vendor with a related specialization\n\nPublishing specifications of the Automated Decision System in a peer - reviewed journal\n\nA data and automation advisory board specified by Treasury Board Secretariat"
+                }, {
+                    "text": "<strong>At least one of:</strong>\n\nQualified expert from a federal, provincial,territorial or municipal government institution\n\nQualified members of faculty of a post - secondary institution\n\nQualified researchers from a relevant non - governmental organization\n\nContracted third - party vendor with a related specialization\n\nPublishing specifications of the Automated Decision System in a peer - reviewed journal\n\nA data and automation advisory board specified by Treasury Board Secretariat"
+                }, {
+                    "text": "<strong>At least two of:</strong>\n\nQualified experts from the National Research Council of Canada,  Statistics Canada, or the Communications Security Establishment\n\nQualified members of faculty of a post-secondary institution\n\nQualified researchers from a relevant non- governmental organization\n\nContracted third-party vendor with a related specialization\n\nA data and automation advisory board specified by Treasury Board Secretariat\n\n<strong>OR:</strong>\n\nPublishing specifications of the Automated Decision System in a peer-reviewed journal"
+                }]
+            },
+            {
+                "title": "Notice",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Plain language notice posted on the program or service website."
+                }, {
+                    "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\nHow it supports the administrative decision; and\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
+                }, {
+                    "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\nHow it supports the administrative decision; and\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
+                }]
+            },
+            {
+                "title": "Human-in-the-loop for decisions",
+                "elements": [{
+                    "text": "Decisions may be rendered without direct human involvement."
+                }, {
+                    "text": "Decisions may be rendered without direct human involvement."
+                }, {
+                    "text": "Decisions cannot be made without having specific human intervention points during the decision-making process; and the final decision must be made by a human."
+                }, {
+                    "text": "Decisions cannot be made without having specific human intervention points during the decision-making process; and the final decision must be made by a human."
+                }]
+            },
+            {
+                "title": "Explanation Requirement",
+                "elements": [{
+                    "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided for common decision results. This can include providing the explanation via a Frequently Asked Questions section on a website."
+                }, {
+                    "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided upon request for any decision that resulted in the denial of a benefit, a service, or other regulatory action."
+                }, {
+                    "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided with any decision that resulted in the denial of a benefit, a service, or other regulatory action."
+                }, {
+                    "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided with any decision that resulted in the denial of a benefit, a service, or other regulatory action."
+                }]
+            },
+            {
+                "title": "Testing",
+                "elements": [{
+                    "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
+                }, {
+                    "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
+                }, {
+                    "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
+                }, {
+                    "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
+                }]
+            },
+            {
+                "title": "Monitoring",
+                "elements": [{
+                    "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
+                }, {
+                    "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
+                }, {
+                    "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
+                }, {
+                    "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
+                }]
+            },
+            {
+                "title": "Training",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Documentation on the design and functionality of the system."
+                }, {
+                    "text": "Documentation on the design and functionality of the system.\n\nTraining courses must be completed."
+                }, {
+                    "text": "Documentation on the design and functionality of the system.\n\nRe-occurring training courses.\n\nA means to verify that training has been completed."
+                }]
+            },
+            {
+                "title": "Contingency Planning",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Aucune"
+                }, {
+                    "text": "Ensure that contingency plans and/or backup systems are available should the Automated Decision System be unavailable."
+                }, {
+                    "text": "Ensure that contingency plans and/or backup systems are available should the Automated Decision System be unavailable."
+                }]
+            },
+            {
+                "title": "Approval for the system to operate",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Aucune"
+                }, {
+                    "text": "Deputy Head"
+                }, {
+                    "text": "Treasury Board"
+                }]
+            }
+        ]
+    }
 }
