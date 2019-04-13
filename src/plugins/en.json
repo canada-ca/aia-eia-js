@@ -5,7 +5,7 @@
     "linkProjectText": "Link to GitHub project repository",
     "linkDirective": "http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592#appC",
     "print": "Print",
-    "linkDirectiveText": "Link to the Impact Level Requirements",
+    "linkDirectiveText": "Link to the Directive on Automated Decision-Making Impact Level Requirements",
     "riskLevel": "Impact Level",
     "currentScore": "Current Score",
     "rawRiskScore": "Raw Impact Score",
@@ -19,7 +19,7 @@
     "resultSectionMQA": "Mitigation Questions and Answers",
     "modifier": "Points",
     "requirements": {
-        "title": "Requirements for Impact level:",
+        "title": "Requirements Specific to Impact Level:",
         "elements": [{
                 "title": "Peer Review",
                 "elements": [{
