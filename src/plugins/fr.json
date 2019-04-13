@@ -25,107 +25,107 @@
                 "elements": [{
                     "text": "Aucune"
                 }, {
-                    "text": "<strong>Au moins l’une des suivantes :</strong>\n\nExpert qualifié d’une institution gouvernementale fédérale, provinciale, territoriale ou municipale.\n\nMembres qualifiés d’une faculté d’un établissement postsecondaire.\n\nQualified researchers from a relevant non - governmental organization\n\nContracted third - party vendor with a related specialization\n\nPublishing specifications of the Automated Decision System in a peer - reviewed journal\n\nA data and automation advisory board specified by Treasury Board Secretariat"
+                    "text": "Au moins l’ une des suivantes:\n\nExpert qualifié d’ une institution gouvernementale fédérale, provinciale, territoriale ou municipale.\n\nMembres qualifiés d’ une faculté d’ un établissement postsecondaire.\n\nChercheurs qualifiés d’ une organisation non gouvernementale pertinente.\n\nTiers fournisseur à forfait avec une spécialisation connexe.\n\nPublication des spécifications du système décisionnel automatisé dans une revue à comité de lecture.\n\nUn comité consultatif des données spécifié par le Secrétariat du Conseil du Trésor."
                 }, {
-                    "text": "<strong>At least one of:</strong>\n\nQualified expert from a federal, provincial,territorial or municipal government institution\n\nQualified members of faculty of a post - secondary institution\n\nQualified researchers from a relevant non - governmental organization\n\nContracted third - party vendor with a related specialization\n\nPublishing specifications of the Automated Decision System in a peer - reviewed journal\n\nA data and automation advisory board specified by Treasury Board Secretariat"
+                    "text": "Au moins deux des suivantes :\n\nExperts qualifiés du Conseil national de recherches du Canada, de Statistique Canada ou du Centre pour la sécurité des télécommunications.\n\nMembres qualifiés d’ une faculté d’ un établissement postsecondaire.\n\nChercheurs qualifiés d’ une organisation non gouvernementale pertinente.\n\nTiers fournisseur à forfait avec une spécialisation connexe.\n\nUn Comité consultatif des données spécifié par le Secrétariat du Conseil du Trésor\n\nOU:\n\nPublication des spécifications du système décisionnel automatisé dans une revue à comité de lecture."
                 }, {
-                    "text": "<strong>At least two of:</strong>\n\nQualified experts from the National Research Council of Canada,  Statistics Canada, or the Communications Security Establishment\n\nQualified members of faculty of a post-secondary institution\n\nQualified researchers from a relevant non- governmental organization\n\nContracted third-party vendor with a related specialization\n\nA data and automation advisory board specified by Treasury Board Secretariat\n\n<strong>OR:</strong>\n\nPublishing specifications of the Automated Decision System in a peer-reviewed journal"
+                    "text": "Au moins deux des suivantes :\n\nExperts qualifiés du Conseil national de recherches du Canada, de Statistique Canada ou du Centre pour la sécurité des télécommunications.\n\nMembres qualifiés d’ une faculté d’ un établissement postsecondaire.\n\nChercheurs qualifiés d’ une organisation non gouvernementale pertinente.\n\nTiers fournisseur à forfait avec une spécialisation connexe.\n\nUn Comité consultatif des données spécifié par le Secrétariat du Conseil du Trésor\n\nOU:\n\nPublication des spécifications du système décisionnel automatisé dans une revue à comité de lecture."
                 }]
             },
             {
-                "title": "Notice",
+                "title": "Avis",
                 "elements": [{
                     "text": "Aucune"
                 }, {
-                    "text": "Plain language notice posted on the program or service website."
+                    "text": "Avis en langage simple publié par l’entremise du site Web du programme ou du service."
                 }, {
-                    "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\nHow it supports the administrative decision; and\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
+                    "text": "Publier de la documentation sur les sites Web pertinents au sujet du système décisionnel automatisé, en langage simple, décrivant :\n\nle fonctionnement des composants;\n\nla façon dont il appuie la décision administrative;\n\nles résultats de tout examen ou audit;\n\net\n\nUne description des données de formation ou un lien vers les données de formation anonymisées si ces données sont accessibles au public."
                 }, {
-                    "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\nHow it supports the administrative decision; and\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
+                    "text": "Publier de la documentation sur les sites Web pertinents au sujet du système décisionnel automatisé, en langage simple, décrivant :\n\nle fonctionnement des composants;\n\nla façon dont il appuie la décision administrative;\n\nles résultats de tout examen ou audit;\n\net\n\nUne description des données de formation ou un lien vers les données de formation anonymisées si ces données sont accessibles au public."
                 }]
             },
             {
-                "title": "Human-in-the-loop for decisions",
+                "title": "Maillon humain de la prise de décisions",
                 "elements": [{
-                    "text": "Decisions may be rendered without direct human involvement."
+                    "text": "Des décisions peuvent être prises sans participation humaine directe."
                 }, {
-                    "text": "Decisions may be rendered without direct human involvement."
+                    "text": "Des décisions peuvent être prises sans participation humaine directe."
                 }, {
-                    "text": "Decisions cannot be made without having specific human intervention points during the decision-making process; and the final decision must be made by a human."
+                    "text": "Des décisions ne peuvent être prises sans qu’il y ait des points d’intervention humaine précis pendant le processus décisionnel."
                 }, {
-                    "text": "Decisions cannot be made without having specific human intervention points during the decision-making process; and the final decision must be made by a human."
+                    "text": "Des décisions ne peuvent être prises sans qu’il y ait des points d’intervention humaine précis pendant le processus décisionnel."
                 }]
             },
             {
-                "title": "Explanation Requirement",
+                "title": "Exigences en matière d’explication",
                 "elements": [{
-                    "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided for common decision results. This can include providing the explanation via a Frequently Asked Questions section on a website."
+                    "text": "En plus de toute exigence législative applicable, s’assurer qu’une explication statique des résultats communs des décisions soit fournie. Cela peut inclure une explication dans la section de la Foire aux questions d’un site Web."
                 }, {
-                    "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided upon request for any decision that resulted in the denial of a benefit, a service, or other regulatory action."
+                    "text": "En plus de toute exigence législative applicable, s’assurer qu’une explication significative est fournie sur demande avec toute décision qui conduit à un refus de prestation, de service ou autre mesure réglementaire."
                 }, {
-                    "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided with any decision that resulted in the denial of a benefit, a service, or other regulatory action."
+                    "text": "En plus de toute exigence législative applicable, s’assurer qu’une explication significative est fournie avec toute décision qui a conduit à un refus de prestation, de service ou autre mesure réglementaire."
                 }, {
-                    "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided with any decision that resulted in the denial of a benefit, a service, or other regulatory action."
+                    "text": "En plus de toute exigence législative applicable, s’assurer qu’une explication significative est fournie avec toute décision qui a conduit à un refus de prestation, de service ou autre mesure réglementaire."
                 }]
             },
             {
-                "title": "Testing",
+                "title": "Mise à l’essai",
                 "elements": [{
-                    "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
+                    "text": "Avant d’amorcer la production, élaborer les processus appropriés afin de veiller à ce que les données d’apprentissage soient évaluées pour la présence de biais imprévus dans les données et d’autres facteurs qui pourraient influencer injustement les résultats.\n\nVeiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l’ essai afin de veiller à ce qu’ elles soient toujours pertinentes, exactes et à jour."
                 }, {
-                    "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
+                    "text": "Avant d’amorcer la production, élaborer les processus appropriés afin de veiller à ce que les données d’apprentissage soient évaluées pour la présence de biais imprévus dans les données et d’autres facteurs qui pourraient influencer injustement les résultats.\n\nVeiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l’ essai afin de veiller à ce qu’ elles soient toujours pertinentes, exactes et à jour."
                 }, {
-                    "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
+                    "text": "Avant d’amorcer la production, élaborer les processus appropriés afin de veiller à ce que les données d’apprentissage soient évaluées pour la présence de biais imprévus dans les données et d’autres facteurs qui pourraient influencer injustement les résultats.\n\nVeiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l’ essai afin de veiller à ce qu’ elles soient toujours pertinentes, exactes et à jour."
                 }, {
-                    "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
+                    "text": "Avant d’amorcer la production, élaborer les processus appropriés afin de veiller à ce que les données d’apprentissage soient évaluées pour la présence de biais imprévus dans les données et d’autres facteurs qui pourraient influencer injustement les résultats.\n\nVeiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l’ essai afin de veiller à ce qu’ elles soient toujours pertinentes, exactes et à jour."
                 }]
             },
             {
-                "title": "Monitoring",
+                "title": "Surveillance",
                 "elements": [{
-                    "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
+                    "text": "Surveiller les résultats des systèmes décisionnels automatisés afin de protéger contre les résultats imprévus et d’assurer la conformité avec les dispositions législatives institutionnelles et relatives aux programmes, ainsi qu’avec la présente Directive."
                 }, {
-                    "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
+                    "text": "Surveiller les résultats des systèmes décisionnels automatisés afin de protéger contre les résultats imprévus et d’assurer la conformité avec les dispositions législatives institutionnelles et relatives aux programmes, ainsi qu’avec la présente Directive."
                 }, {
-                    "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
+                    "text": "Surveiller les résultats des systèmes décisionnels automatisés afin de protéger contre les résultats imprévus et d’assurer la conformité avec les dispositions législatives institutionnelles et relatives aux programmes, ainsi qu’avec la présente Directive."
                 }, {
-                    "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
+                    "text": "Surveiller les résultats des systèmes décisionnels automatisés afin de protéger contre les résultats imprévus et d’assurer la conformité avec les dispositions législatives institutionnelles et relatives aux programmes, ainsi qu’avec la présente Directive."
                 }]
             },
             {
-                "title": "Training",
-                "elements": [{
-                    "text": "Aucune"
-                }, {
-                    "text": "Documentation on the design and functionality of the system."
-                }, {
-                    "text": "Documentation on the design and functionality of the system.\n\nTraining courses must be completed."
-                }, {
-                    "text": "Documentation on the design and functionality of the system.\n\nRe-occurring training courses.\n\nA means to verify that training has been completed."
-                }]
-            },
-            {
-                "title": "Contingency Planning",
+                "title": "Formation",
                 "elements": [{
                     "text": "Aucune"
                 }, {
-                    "text": "Aucune"
+                    "text": "Documents sur la conception et la fonctionnalité du système."
                 }, {
-                    "text": "Ensure that contingency plans and/or backup systems are available should the Automated Decision System be unavailable."
+                    "text": "Documents sur la conception et la fonctionnalité du système.\n\nIl faut suivre des cours de formation."
                 }, {
-                    "text": "Ensure that contingency plans and/or backup systems are available should the Automated Decision System be unavailable."
+                    "text": "Documents sur la conception et la fonctionnalité du système.\n\nCours de formation récurrents.\n\nUn moyen de vérifier que la formation a été suivie."
                 }]
             },
             {
-                "title": "Approval for the system to operate",
+                "title": "Planification des mesures d’urgence",
                 "elements": [{
                     "text": "Aucune"
                 }, {
                     "text": "Aucune"
                 }, {
-                    "text": "Deputy Head"
+                    "text": "Veiller à ce que des plans d’urgence et/ou des systèmes de secours soient disponibles dans l’éventualité où le système décisionnel automatisé ne soit pas disponible."
                 }, {
-                    "text": "Treasury Board"
+                    "text": "Veiller à ce que des plans d’urgence et/ou des systèmes de secours soient disponibles dans l’éventualité où le système décisionnel automatisé ne soit pas disponible."
+                }]
+            },
+            {
+                "title": "Approbation de l’exploitation du système",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Aucune"
+                }, {
+                    "text": "Administrateur général"
+                }, {
+                    "text": "Conseil du Trésor"
                 }]
             }
         ]
