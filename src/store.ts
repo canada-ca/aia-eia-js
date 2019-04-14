@@ -163,7 +163,7 @@ function calculateFinalScore(survey: SurveyModel): number[] {
   } else if (total > 18 && total <= 36) {
     level = 2;
   } else if (total > 36 && total <= 54) {
-    level = 2;
+    level = 3;
   } else {
     level = 4;
   }

@@ -5,7 +5,7 @@
     "linkProjectText": "Lien vers le répertoire GitHub du projet",
     "linkDirective": "http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32592#appC",
     "print": "Imprimer",
-    "linkDirectiveText": "Lien vers les Exigences par niveau d’incidence",
+    "linkDirectiveText": "Lien vers les Exigences par niveau d’incidence de la Directive sur la prise de décision automatisée",
     "riskLevel": "Niveau d'incidence",
     "currentScore": "Cote actuelle",
     "rawRiskScore": "Cote d'incidence brute",
@@ -17,5 +17,117 @@
     "resultSectionPD": "Détails du projet",
     "resultSectionRQA": "Questions et réponses liées aux risques",
     "resultSectionMQA": "Questions et réponses liées aux mesures d'atténuation",
-    "modifier": "Points"
+    "modifier": "Points",
+    "requirements": {
+        "title": "Exigences spécifiques au niveau d'incidence :",
+        "elements": [{
+                "title": "Examen par les pairs",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Au moins l’ une des suivantes:\n\nExpert qualifié d’ une institution gouvernementale fédérale, provinciale, territoriale ou municipale.\n\nMembres qualifiés d’ une faculté d’ un établissement postsecondaire.\n\nChercheurs qualifiés d’ une organisation non gouvernementale pertinente.\n\nTiers fournisseur à forfait avec une spécialisation connexe.\n\nPublication des spécifications du système décisionnel automatisé dans une revue à comité de lecture.\n\nUn comité consultatif des données spécifié par le Secrétariat du Conseil du Trésor."
+                }, {
+                    "text": "Au moins deux des suivantes :\n\nExperts qualifiés du Conseil national de recherches du Canada, de Statistique Canada ou du Centre pour la sécurité des télécommunications.\n\nMembres qualifiés d’ une faculté d’ un établissement postsecondaire.\n\nChercheurs qualifiés d’ une organisation non gouvernementale pertinente.\n\nTiers fournisseur à forfait avec une spécialisation connexe.\n\nUn Comité consultatif des données spécifié par le Secrétariat du Conseil du Trésor\n\nOU:\n\nPublication des spécifications du système décisionnel automatisé dans une revue à comité de lecture."
+                }, {
+                    "text": "Au moins deux des suivantes :\n\nExperts qualifiés du Conseil national de recherches du Canada, de Statistique Canada ou du Centre pour la sécurité des télécommunications.\n\nMembres qualifiés d’ une faculté d’ un établissement postsecondaire.\n\nChercheurs qualifiés d’ une organisation non gouvernementale pertinente.\n\nTiers fournisseur à forfait avec une spécialisation connexe.\n\nUn Comité consultatif des données spécifié par le Secrétariat du Conseil du Trésor\n\nOU:\n\nPublication des spécifications du système décisionnel automatisé dans une revue à comité de lecture."
+                }]
+            },
+            {
+                "title": "Avis",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Avis en langage simple publié par l’entremise du site Web du programme ou du service."
+                }, {
+                    "text": "Publier de la documentation sur les sites Web pertinents au sujet du système décisionnel automatisé, en langage simple, décrivant :\n\nle fonctionnement des composants;\n\nla façon dont il appuie la décision administrative;\n\nles résultats de tout examen ou audit;\n\net\n\nUne description des données de formation ou un lien vers les données de formation anonymisées si ces données sont accessibles au public."
+                }, {
+                    "text": "Publier de la documentation sur les sites Web pertinents au sujet du système décisionnel automatisé, en langage simple, décrivant :\n\nle fonctionnement des composants;\n\nla façon dont il appuie la décision administrative;\n\nles résultats de tout examen ou audit;\n\net\n\nUne description des données de formation ou un lien vers les données de formation anonymisées si ces données sont accessibles au public."
+                }]
+            },
+            {
+                "title": "Maillon humain de la prise de décisions",
+                "elements": [{
+                    "text": "Des décisions peuvent être prises sans participation humaine directe."
+                }, {
+                    "text": "Des décisions peuvent être prises sans participation humaine directe."
+                }, {
+                    "text": "Des décisions ne peuvent être prises sans qu’il y ait des points d’intervention humaine précis pendant le processus décisionnel."
+                }, {
+                    "text": "Des décisions ne peuvent être prises sans qu’il y ait des points d’intervention humaine précis pendant le processus décisionnel."
+                }]
+            },
+            {
+                "title": "Exigences en matière d’explication",
+                "elements": [{
+                    "text": "En plus de toute exigence législative applicable, s’assurer qu’une explication statique des résultats communs des décisions soit fournie. Cela peut inclure une explication dans la section de la Foire aux questions d’un site Web."
+                }, {
+                    "text": "En plus de toute exigence législative applicable, s’assurer qu’une explication significative est fournie sur demande avec toute décision qui conduit à un refus de prestation, de service ou autre mesure réglementaire."
+                }, {
+                    "text": "En plus de toute exigence législative applicable, s’assurer qu’une explication significative est fournie avec toute décision qui a conduit à un refus de prestation, de service ou autre mesure réglementaire."
+                }, {
+                    "text": "En plus de toute exigence législative applicable, s’assurer qu’une explication significative est fournie avec toute décision qui a conduit à un refus de prestation, de service ou autre mesure réglementaire."
+                }]
+            },
+            {
+                "title": "Mise à l’essai",
+                "elements": [{
+                    "text": "Avant d’amorcer la production, élaborer les processus appropriés afin de veiller à ce que les données d’apprentissage soient évaluées pour la présence de biais imprévus dans les données et d’autres facteurs qui pourraient influencer injustement les résultats.\n\nVeiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l’ essai afin de veiller à ce qu’ elles soient toujours pertinentes, exactes et à jour."
+                }, {
+                    "text": "Avant d’amorcer la production, élaborer les processus appropriés afin de veiller à ce que les données d’apprentissage soient évaluées pour la présence de biais imprévus dans les données et d’autres facteurs qui pourraient influencer injustement les résultats.\n\nVeiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l’ essai afin de veiller à ce qu’ elles soient toujours pertinentes, exactes et à jour."
+                }, {
+                    "text": "Avant d’amorcer la production, élaborer les processus appropriés afin de veiller à ce que les données d’apprentissage soient évaluées pour la présence de biais imprévus dans les données et d’autres facteurs qui pourraient influencer injustement les résultats.\n\nVeiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l’ essai afin de veiller à ce qu’ elles soient toujours pertinentes, exactes et à jour."
+                }, {
+                    "text": "Avant d’amorcer la production, élaborer les processus appropriés afin de veiller à ce que les données d’apprentissage soient évaluées pour la présence de biais imprévus dans les données et d’autres facteurs qui pourraient influencer injustement les résultats.\n\nVeiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l’ essai afin de veiller à ce qu’ elles soient toujours pertinentes, exactes et à jour."
+                }]
+            },
+            {
+                "title": "Surveillance",
+                "elements": [{
+                    "text": "Surveiller les résultats des systèmes décisionnels automatisés afin de protéger contre les résultats imprévus et d’assurer la conformité avec les dispositions législatives institutionnelles et relatives aux programmes, ainsi qu’avec la présente Directive."
+                }, {
+                    "text": "Surveiller les résultats des systèmes décisionnels automatisés afin de protéger contre les résultats imprévus et d’assurer la conformité avec les dispositions législatives institutionnelles et relatives aux programmes, ainsi qu’avec la présente Directive."
+                }, {
+                    "text": "Surveiller les résultats des systèmes décisionnels automatisés afin de protéger contre les résultats imprévus et d’assurer la conformité avec les dispositions législatives institutionnelles et relatives aux programmes, ainsi qu’avec la présente Directive."
+                }, {
+                    "text": "Surveiller les résultats des systèmes décisionnels automatisés afin de protéger contre les résultats imprévus et d’assurer la conformité avec les dispositions législatives institutionnelles et relatives aux programmes, ainsi qu’avec la présente Directive."
+                }]
+            },
+            {
+                "title": "Formation",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Documents sur la conception et la fonctionnalité du système."
+                }, {
+                    "text": "Documents sur la conception et la fonctionnalité du système.\n\nIl faut suivre des cours de formation."
+                }, {
+                    "text": "Documents sur la conception et la fonctionnalité du système.\n\nCours de formation récurrents.\n\nUn moyen de vérifier que la formation a été suivie."
+                }]
+            },
+            {
+                "title": "Planification des mesures d’urgence",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Aucune"
+                }, {
+                    "text": "Veiller à ce que des plans d’urgence et/ou des systèmes de secours soient disponibles dans l’éventualité où le système décisionnel automatisé ne soit pas disponible."
+                }, {
+                    "text": "Veiller à ce que des plans d’urgence et/ou des systèmes de secours soient disponibles dans l’éventualité où le système décisionnel automatisé ne soit pas disponible."
+                }]
+            },
+            {
+                "title": "Approbation de l’exploitation du système",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Aucune"
+                }, {
+                    "text": "Administrateur général"
+                }, {
+                    "text": "Conseil du Trésor"
+                }]
+            }
+        ]
+    }
 }

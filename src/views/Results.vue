@@ -3,16 +3,10 @@
     <!--<PrintButton />-->
     <h1>{{ $t("resultTitle") }}</h1>
     <Score />
-    <p>
-      <a :href="$t('linkDirective')" target="_blank">{{ $t("linkDirectiveText") }}</a>
-    </p>
+    <Obligations />
+
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-push-10 col-md-2">
-          <strong>{{ $t("resultScore") }}:</strong>
-          {{ score[2] }}
-        </div>
-      </div>
+
       <ul class="list-unstyled">
         <li>
           <details>
