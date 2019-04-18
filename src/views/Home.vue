@@ -46,7 +46,7 @@ export default class Home extends Vue {
 
     this.Survey.onTextMarkdown.add(function(survey, options) {
       //convert the mardown text to html
-      var str = converter.makeHtml(options.text);
+      let str = converter.makeHtml(options.text);
       //remove root paragraphs <p></p>
       str = str.substring(3);
       str = str.substring(0, str.length - 4);
@@ -63,13 +63,13 @@ export default class Home extends Vue {
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
     this.Survey.onAfterRenderQuestion.add(function(sender, options) {
-      let title = options.htmlElement.getElementsByTagName("H5")[0];
+      const title = options.htmlElement.getElementsByTagName("H5")[0];
       if (title) {
-        var questionRequiredHTML = "";
+        let questionRequiredHTML = "";
 
         if (options.question.isRequired) {
           // Should do localization mechanism
-          var requiredText = sender.locale == "fr" ? "obligatoire" : "required";
+          const requiredText = sender.locale == "fr" ? "obligatoire" : "required";
           questionRequiredHTML =
             ' <strong class="required">(' + requiredText + ")</strong>";
         }
