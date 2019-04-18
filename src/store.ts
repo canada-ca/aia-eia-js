@@ -1,13 +1,14 @@
 import Vue from "vue";
 import Vuex, { StoreOptions } from "vuex";
 import { RootState } from "./types";
-import {
-  IQuestion,
-  QuestionSelectBase,
-  SurveyModel,
-  PageModel,
-  Survey
-} from "survey-vue";
+import { IQuestion, QuestionSelectBase, SurveyModel } from "survey-vue";
+
+enum ScoreType {
+  Not,
+  Raw,
+  Mitigation,
+  Unknown
+}
 
 Vue.use(Vuex);
 
@@ -30,17 +31,18 @@ function hasScore(question: IQuestion): boolean {
     question.getType() === "dropdown"
   ) {
     // Check the suffix for "-RS" or "-MS" for valid score questions.
-    return getScoreType(question) > 1;
+    const scoreType = getScoreType(question);
+    return scoreType === ScoreType.Raw || scoreType === ScoreType.Mitigation;
   }
   return false;
 }
 
 function parseEmbeddedValue(val: String): number {
-  var lastHyphenIdx = val.lastIndexOf("-");
+  const lastHyphenIdx = val.lastIndexOf("-");
   if (lastHyphenIdx !== -1) {
     // Suffix after last "-" could be a number.
-    var possibleValue = val.substr(lastHyphenIdx + 1);
-    var value = Number(possibleValue);
+    const possibleValue = val.substr(lastHyphenIdx + 1);
+    const value = Number(possibleValue);
     return isNaN(value) ? 0 : value;
   }
 
@@ -67,56 +69,68 @@ function getValue(val: any) {
   return val;
 }
 
-function getScoreTypeHelper(name: String): Number {
+function parseScoreType(name: String): ScoreType {
   // 1 - Not Scored, 2 - Raw Score, 3 - Mitigation Score
   if (name) {
     if (name.endsWith("-RS")) {
-      return 2;
+      return ScoreType.Raw;
     } else if (name.endsWith("-MS")) {
-      return 3;
+      return ScoreType.Mitigation;
     } else if (name.endsWith("-NS")) {
-      return 1;
+      return ScoreType.Not;
     }
   }
 
-  return 0;
+  return ScoreType.Unknown;
 }
 
-function getScoreType(question: IQuestion): Number {
-  var result = getScoreTypeHelper(question.name);
+function getScoreType(question: IQuestion): ScoreType {
+  let result = parseScoreType(question.name);
 
-  if (result > 0) {
+  if (result !== ScoreType.Unknown) {
     return result;
   }
 
-  result = getScoreTypeHelper(question.parent.name);
+  result = parseScoreType(question.parent.name);
 
-  if (result == 0) {
+  if (result == ScoreType.Unknown) {
     // Treat at no score.
-    return 1;
+    return ScoreType.Not;
   }
 
   return result;
 }
 
 function getMaxScoreForQuestion(question: QuestionSelectBase): number {
-  var questionType = question.getType();
-  var max = 0;
-  var value = 0;
-  if (questionType == "radiogroup" || questionType == "dropdown") {
-    question.choices.forEach(item => {
-      value = getValue(item.itemValue);
-      if (max < value) {
-        max = value;
-      }
-    });
-  } else if (questionType == "checkbox") {
+  const questionType = question.getType();
+
+  if (
+    questionType != "radiogroup" &&
+    questionType != "dropdown" &&
+    questionType != "checkbox"
+  ) {
+    return 0;
+  }
+
+  if (questionType == "checkbox") {
+    let max = 0;
+    let value = 0;
     question.choices.forEach(item => {
       value = getValue(item.itemValue);
       max += value;
     });
+    return max;
   }
+  //otherwise we have a radiogroup or a dropdown
 
+  let max = 0;
+  let value = 0;
+  question.choices.forEach(item => {
+    value = getValue(item.itemValue);
+    if (max < value) {
+      max = value;
+    }
+  });
   return max;
 }
 
@@ -133,18 +147,14 @@ function calculateFinalScore(survey: SurveyModel): number[] {
   let rawRiskScore = 0;
   let maxMitigationScore = 0;
   let mitigationScore = 0;
-  let total = 0;
-  let percentage = 0.8;
-  let deduction = 10;
-  let level = 0;
 
   valueNames.forEach(name => {
-    var currentQuestion = survey.getQuestionByName(name);
-    var currentQuestionType = getScoreType(currentQuestion);
+    const currentQuestion = survey.getQuestionByName(name);
+    const currentQuestionType = getScoreType(currentQuestion);
 
-    if (currentQuestionType === 2) {
+    if (currentQuestionType === ScoreType.Raw) {
       rawRiskScore += getValue(survey.data[name]);
-    } else if (currentQuestionType === 3) {
+    } else if (currentQuestionType === ScoreType.Mitigation) {
       mitigationScore += getValue(survey.data[name]);
       maxMitigationScore += getMaxScoreForQuestion(<QuestionSelectBase>(
         currentQuestion
@@ -152,12 +162,16 @@ function calculateFinalScore(survey: SurveyModel): number[] {
     }
   });
 
+  let total = 0;
+  const percentage = 0.8;
+  const deduction = 10;
   if (mitigationScore >= percentage * maxMitigationScore) {
     total = rawRiskScore - deduction;
   } else {
     total = rawRiskScore;
   }
 
+  let level = 0;
   if (total <= 18) {
     level = 1;
   } else if (total > 18 && total <= 36) {
@@ -199,24 +213,28 @@ const store: StoreOptions<RootState> = {
     resultDataSections: state => {
       if (state.result === undefined) return {};
       if (state.result.data === undefined) return {};
-      var surveyResults = state.result.getPlainData({
+
+      const surveyResults = state.result.getPlainData({
         includeEmpty: false
       });
 
-      var projectResults: any[] = [];
-      var riskResults: any[] = [];
-      var mitigationResults: any[] = [];
-      var mitigationResultsYes: any[] = [];
+      const projectResults: any[] = [];
+      const riskResults: any[] = [];
+      const mitigationResults: any[] = [];
+      const mitigationResultsYes: any[] = [];
 
       surveyResults.forEach(function(result) {
-        var question = state.result!.getQuestionByName(result.name);
-        var scoreType = getScoreType(question);
+        const question = state.result!.getQuestionByName(result.name);
+        const scoreType = getScoreType(question);
 
-        if (scoreType === 1 && question.parent.name === "panel-project-NS") {
+        if (
+          scoreType === ScoreType.Not &&
+          question.parent.name === "panel-project-NS"
+        ) {
           projectResults.push(result);
-        } else if (scoreType === 2) {
+        } else if (scoreType === ScoreType.Raw) {
           riskResults.push(result);
-        } else if (scoreType === 3) {
+        } else if (scoreType === ScoreType.Mitigation) {
           mitigationResults.push(result);
           if (result.value > 0) {
             mitigationResultsYes.push(result);
