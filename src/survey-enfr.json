@@ -932,7 +932,7 @@
             "name": "decision-sector",
             "elements": [
                 {
-                    "type": "panel",g
+                    "type": "panel",
                     "name": "panel-decision-RS",
                     "elements": [
                         {
