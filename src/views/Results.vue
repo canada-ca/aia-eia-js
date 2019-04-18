@@ -6,7 +6,6 @@
     <Obligations />
 
     <div class="container-fluid">
-
       <ul class="list-unstyled">
         <li>
           <details>

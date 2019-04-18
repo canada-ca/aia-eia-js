@@ -4,7 +4,7 @@
       <ul class="list-unstyled">
         <li>
           <details>
-            <summary>{{ $t("requirements.title") }} {{score[3]}}</summary>
+            <summary>{{ $t("requirements.title") }} {{ score[3] }}</summary>
             <div
               class="row"
               v-for="requirement in $t('requirements.elements')"
@@ -18,9 +18,7 @@
         <li>
           <p>
             <a :href="$t('linkDirective')" target="_blank">
-              {{
-              $t("linkDirectiveText")
-              }}
+              {{ $t("linkDirectiveText") }}
             </a>
           </p>
         </li>
