@@ -15,7 +15,7 @@
                             "type": "text",
                             "name": "respondent",
                             "title": {
-                                "default": "Name of Respondent",
+                                "default": "This is a test",
                                 "fr": "Nom de la personne sondée"
                             }
                         },
