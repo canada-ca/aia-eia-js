@@ -1,5 +1,5 @@
 <template>
-  <section :class="alertclass">
+  <section :class="alertclass" id="score">
     <p>{{ $t("riskLevel") }} {{ score[3] }}</p>
     <p>{{ $t("currentScore") }} {{ score[2] }}</p>
     <p>{{ $t("rawRiskScore") }} {{ score[0] }}</p>
