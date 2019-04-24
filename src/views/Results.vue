@@ -2,63 +2,69 @@
   <div class="results">
     <!--<PrintButton />-->
     <h1>{{ $t("resultTitle") }}</h1>
+
+    <p>{{ $t("onThisPage") }}</p>
+    <ul>
+      <li>
+        <a href="#score">{{ $t("riskLevel") }}</a>
+      </li>
+      <li>
+        <a href="#obligations">{{ $t("requirements.title") }}</a>
+      </li>
+      <li>
+        <a href="#mitigationMeasures">{{ $t("resultSectionMeasure") }}</a>
+      </li>
+      <li>
+        <a href="#qA">{{ $t("resultSectionQA") }}</a>
+        <ul>
+          <li>
+            <a href="#projectDetails">{{ $t("resultSectionPD") }}</a>
+          </li>
+          <li>
+            <a href="#riskQA">{{ $t("resultSectionRQA") }}</a>
+          </li>
+          <li>
+            <a href="#mitigationQA">{{ $t("resultSectionMQA") }}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
     <Score />
     <Obligations />
 
     <div class="container-fluid">
-      <ul class="list-unstyled">
-        <li>
-          <details>
-            <summary>{{ $t("resultSectionMeasure") }}</summary>
-            <div class="row" v-for="result in myResults[3]" :key="result.name">
-              <Result :data="result"></Result>
-            </div>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>{{ $t("resultSectionQA") }}</summary>
-            <ul class="list-unstyled">
-              <li>
-                <details>
-                  <summary>{{ $t("resultSectionPD") }}</summary>
-                  <div
-                    class="row"
-                    v-for="result in myResults[0]"
-                    :key="result.name"
-                  >
-                    <Result :data="result"></Result>
-                  </div>
-                </details>
-              </li>
-              <li>
-                <details>
-                  <summary>{{ $t("resultSectionRQA") }}</summary>
-                  <div
-                    class="row"
-                    v-for="result in myResults[1]"
-                    :key="result.name"
-                  >
-                    <Result :data="result"></Result>
-                  </div>
-                </details>
-              </li>
-              <li>
-                <details>
-                  <summary>{{ $t("resultSectionMQA") }}</summary>
-                  <div
-                    class="row"
-                    v-for="result in myResults[2]"
-                    :key="result.name"
-                  >
-                    <Result :data="result"></Result>
-                  </div>
-                </details>
-              </li>
-            </ul>
-          </details>
-        </li>
-      </ul>
+      <div class="row">
+        <h2 id="mitigationMeasures">{{ $t("resultSectionMeasure") }}</h2>
+      </div>
+      <div class="row" v-for="result in myResults[3]" :key="result.name">
+        <Result :data="result"></Result>
+      </div>
+
+      <div class="row">
+        <h2 id="qA">{{ $t("resultSectionQA") }}</h2>
+      </div>
+
+      <div class="row">
+        <h3 id="projectDetails">{{ $t("resultSectionPD") }}</h3>
+      </div>
+      <div class="row" v-for="result in myResults[0]" :key="result.name">
+        <Result :data="result"></Result>
+      </div>
+
+      <div class="row">
+        <h3 id="riskQA">{{ $t("resultSectionRQA") }}</h3>
+      </div>
+      <div class="row" v-for="result in myResults[1]" :key="result.name">
+        <Result :data="result"></Result>
+      </div>
+
+      <div class="row">
+        <h3 id="mitigationQA">{{ $t("resultSectionMQA") }}</h3>
+      </div>
+      <div class="row" v-for="result in myResults[2]" :key="result.name">
+        <Result :data="result"></Result>
+      </div>
     </div>
   </div>
 </template>
