@@ -5,6 +5,19 @@
     },
     "pages": [
         {
+            "name": "welcome",
+            "elements": [
+                {
+                    "type": "html",
+                    "name": "welcome1",
+                    "html": {
+                        "default": "This is a work in progress and changes are being made on a daily basis to the application. You can follow its development and even participate by joining us on GitHub at the link above.<h3>What is the Algorithmic Impact Assessment?</h3>The AIA is a questionnaire designed to help you assess and mitigate the risks associated with deploying an automated decision system. The AIA also helps identify the impact level of your automated decision system under the Directive on Automated Decision-Making. The questions are focused on your business processes, your data, and your system design decisions.<h3>How does it work?</h3>The questionnaire asks you around 60 questions related to your business process, data and system designed decisions. The results will demonstrate your impact level as well as a link where you can learn about what your requirements are under the Directive. The questionnaire takes at least 35 minutes to complete.<h3>Where can I find out why my system was rated a certain level?</h3>When you complete the questionnaire, a detailed results page will be displayed. You can print it or save it as PDF.<h3>Can I save my responses and complete the questionnaire later?</h3>Not at this time but we're working on this feature.<h3>Do you store my answers?</h3>No. We don't store your responses and data only remains within your browser's cache. Feel free to use this tool as many times as you need along the development of your system. </br></br>All data will be deleted if you:</br>- Close the page</br>- Refresh the page</br>- Navigate using the browser's navigation buttons</br>- Change the interface language",
+                        "fr": "Ceci est un travail en cours et de nombreux changements ont lieu chaque jour. Vous pouvez suivre le développement de l'application et même y participer en nous rejoignant sur le lien GitHub ici-haut.<h3>Qu'est-ce que l'évaluation d'impact algorithmique?</h3>L'EIA est un questionnaire conçu pour vous aider à évaluer et à atténuer les risques associés au déploiement d'un système de prise de décision automatisé. L'EIA permet également d'identifier le niveau d'impact de votre système de décision automatisé en vertu de la directive proposée sur la prise de décision automatisée. Les questions portent sur vos processus métier, vos données et vos décisions de conception de système.<h3>Comment ça marche?</h3>Ce questionnaire vous demande environ 60 questions liées à vos processus métier, à vos données et à vos décisions en matière de système. Les résultats démontreront votre niveau d'impact ainsi qu'un lien vous permettant de connaître vos exigences en vertu de la directive. Le questionnaire prend plus de 35 minutes à compléter.<h3>Où puis-je savoir pourquoi mon système a été évalué à un certain niveau?</h3>Lorsque vous aurez complété le questionnaire, une page de résultats détaillés vous sera présentée. Vous pouvez imprimer la page ou encore l'enregistrer en format PDF</br></br>Davantage de fonctionnalités seront ajoutées dans le futur afin de vous permettre de sauvegarder vos résultats.<h3>Puis-je sauvegarder mes réponses et remplir le questionnaire plus tard?</h3>Il n'est présentement pas possible de sauvegarder votre questionnaire en cours mais nous travaillons à développer cette fonctionnalité.<h3>Est-ce que vous sauvegarder mes réponses?</h3>Non, nous ne stockons pas vos réponses et les données saisies résident uniquement dans le cache de votre navigateur. N'hésitez pas à utiliser cet outil autant de fois que nécessaire pendant le développement de votre système.</br></br>Toutes les données saisies seront instantannément effacées si vous:</br>- Fermez la page</br>- Rafraichissez la page</br>- Naviguez en utilisant les boutons de navigation de votre navigateur</br>- Changez la langue de l'interface"
+                    }
+                }
+            ]
+        },
+        {
             "name": "project-details",
             "elements": [
                 {
@@ -2040,5 +2053,7 @@
             }
         }
     ],
-    "showProgressBar": "top"
+    "showProgressBar": "top",
+    "showQuestionNumbers": "off",
+    "firstPageIsStarted": true
 }
