@@ -777,7 +777,10 @@
                             },
                             {
                                 "value": "item2",
-                                "text": "Implementation"
+                                "text": {
+                                    "default": "Implementation",
+                                    "fr": "Implémentation"
+                                }
                             }
                         ]
                     },
