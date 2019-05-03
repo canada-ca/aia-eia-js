@@ -1675,11 +1675,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -1715,11 +1721,17 @@
                         },
                         "choices": [{
                                 "value": 1,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -1755,11 +1767,17 @@
                         },
                         "choices": [{
                                 "value": 1,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -1795,11 +1813,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -1812,11 +1836,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -1852,11 +1882,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     }
@@ -2093,11 +2129,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     }
@@ -2127,11 +2169,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2144,11 +2192,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2161,11 +2215,17 @@
                         },
                         "choices": [{
                                 "value": 1,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2178,11 +2238,17 @@
                         },
                         "choices": [{
                                 "value": 1,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2195,11 +2261,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2212,11 +2284,17 @@
                         },
                         "choices": [{
                                 "value": 1,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2229,11 +2307,17 @@
                         },
                         "choices": [{
                                 "value": 1,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2246,11 +2330,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2263,11 +2353,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2280,11 +2376,17 @@
                         },
                         "choices": [{
                                 "value": 1,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2297,11 +2399,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2314,11 +2422,17 @@
                         },
                         "choices": [{
                                 "value": 1,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     }
@@ -2348,11 +2462,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2365,11 +2485,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2382,11 +2508,17 @@
                         },
                         "choices": [{
                                 "value": 1,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2399,11 +2531,17 @@
                         },
                         "choices": [{
                                 "value": 1,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2416,11 +2554,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2433,11 +2577,17 @@
                         },
                         "choices": [{
                                 "value": 1,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2450,11 +2600,17 @@
                         },
                         "choices": [{
                                 "value": 1,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2467,11 +2623,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2484,11 +2646,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2501,11 +2669,17 @@
                         },
                         "choices": [{
                                 "value": 1,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2518,11 +2692,17 @@
                         },
                         "choices": [{
                                 "value": 2,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     },
@@ -2535,11 +2715,17 @@
                         },
                         "choices": [{
                                 "value": 1,
-                                "text": "Yes"
+                                "text": {
+                                    "default": "Yes",
+                                    "fr": "Oui"
+                                }
                             },
                             {
                                 "value": 0,
-                                "text": "No"
+                                "text": {
+                                    "default": "No",
+                                    "fr": "Non"
+                                }
                             }
                         ]
                     }
