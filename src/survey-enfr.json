@@ -2745,7 +2745,12 @@
             }
         }
     ],
+<<<<<<< HEAD
     "showQuestionNumbers": "off",
     "showProgressBar": "top",
     "firstPageIsStarted": true
 }
+=======
+    "showProgressBar": "top"
+}
+>>>>>>> 094901f57512f4fdfc28db77df282ed3f810f524
