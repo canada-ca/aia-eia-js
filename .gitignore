@@ -22,3 +22,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# Ignore sourcemap files
+*.map
+tests/**/*.spec.js
+src/**/*.js
