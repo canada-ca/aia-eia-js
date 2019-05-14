@@ -31,7 +31,7 @@
                                 "default": "Name of Respondent",
                                 "fr": "Nom de la personne sondée"
                             },
-                            "description": "The name of the respondant is the name of the respondant, the person that fills the question."
+                            "description": "The name of the respondant is the name of the person that answers the questions."
                         },
                         {
                             "type": "text",
