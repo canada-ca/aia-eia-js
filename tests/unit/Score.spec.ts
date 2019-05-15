@@ -1,31 +1,29 @@
-import Vuex from 'vuex'
-import {createLocalVue} from "@vue/test-utils";
+import Vuex from "vuex";
+import { createLocalVue } from "@vue/test-utils";
 
 function localVueInstance() {
-    const localVue = createLocalVue();
+  const localVue = createLocalVue();
 
-    localVue.use(Vuex);
+  localVue.use(Vuex);
 
-    return localVue
+  return localVue;
 }
 
-
 describe("store.ts", () => {
-    it("renders calcscore getter", () => {
-        let getters;
-        let store;
+  it("renders calcscore getter", () => {
+    let getters;
+    let store;
 
-        beforeEach(() => {
-            getters = {
-                score: () => 18,
-            };
+    beforeEach(() => {
+      getters = {
+        score: () => 18
+      };
 
-            store = new Vuex.Store({
-                getters
-            })
-        });
-
-
-        // expect(addItemsInArray([5])).toBe(5);
+      store = new Vuex.Store({
+        getters
+      });
     });
+
+    // expect(addItemsInArray([5])).toBe(5);
+  });
 });

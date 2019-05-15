@@ -2322,21 +2322,21 @@
                     "elements": [
                         {
                             "type": "radiogroup",
-                            "name": "rm-data-qual1",
+                            "name": "dataQualityDesign1",
                             "title": {
                                 "default": "Will you have documented processes in place to test datasets against biases and other unexpected outcomes? This could include experience in applying frameworks, methods, guidelines or other assessment tools.",
                                 "fr": "Disposerez-vous de processus documentés pour tester les jeux de données en fonction de biais et d’autres résultats inattendus? Par exemple, ceci pourrait inclure une expérience dans l’application de cadres, de méthodes, de lignes directrices ou d’outils d’évaluation."
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2346,27 +2346,28 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "mitigation-makePublic",
+                            "name": "dataQualityDesign2",
                             "title": {
-                                "default": "Will you be making this information publically available?",
+                                "default": "Will you be making this information publicly available?",
                                 "fr": "Allez-vous rendre cette information disponible publiquement?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": "item2",
+                                    "value": "item2-2",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
                                     }
                                 }
-                            ]
+                            ],
+                            "visibleIf": "{dataQualityDesign1} = \"item1-2\""
                         },
                         {
                             "type": "radiogroup",
@@ -2377,14 +2378,14 @@
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2396,19 +2397,19 @@
                             "type": "radiogroup",
                             "name": "question59",
                             "title": {
-                                "default": "Will you be making this information publically available?",
+                                "default": "Will you be making this information publicly available?",
                                 "fr": "Allez-vous rendre cette information disponible publiquement?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": "item2",
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2444,7 +2445,7 @@
                             "type": "radiogroup",
                             "name": "question60",
                             "title": {
-                                "default": "Will you be making this information publically available?",
+                                "default": "Will you be making this information publicly available?",
                                 "fr": "Allez-vous rendre cette information disponible publiquement?"
                             },
                             "choices": [
@@ -2516,7 +2517,7 @@
                             "type": "radiogroup",
                             "name": "question61",
                             "title": {
-                                "default": "Will you be making this information publically available?",
+                                "default": "Will you be making this information publicly available?",
                                 "fr": "Allez-vous rendre cette information disponible publiquement?"
                             },
                             "choices": [
