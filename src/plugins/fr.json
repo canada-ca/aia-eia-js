@@ -46,6 +46,8 @@
     "proceduralFairnessDesignMitigationQ15": "",
     "proceduralFairnessDesignMitigationQ16": "",
     "proceduralFairnessDesignMitigationQ17": "",
+    "privacyDesignMitigationQ1": "",
+    "privacyDesignMitigationQ2": "",
     "dataQualityImplemMitigationQ2": "",
     "dataQualityImplemMitigationQ3": "",
     "dataQualityImplemMitigationQ4": "",
@@ -71,7 +73,10 @@
     "proceduralFairnessImplemMitigationQ14": "",
     "proceduralFairnessImplemMitigationQ15": "",
     "proceduralFairnessImplemMitigationQ16": "",
-    "proceduralFairnessImplemMitigationQ17": "",    "requirements": {
+    "proceduralFairnessImplemMitigationQ17": "",    
+    "privacyImplemMitigationQ1": "",
+    "privacyImplemMitigationQ2": "",
+    "requirements": {
         "title": "Exigences spécifiques au niveau d'incidence :",
         "elements": [{
                 "title": "Examen par les pairs",
