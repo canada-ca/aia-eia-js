@@ -2475,14 +2475,14 @@
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"

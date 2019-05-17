@@ -9,13 +9,14 @@ describe("store.ts", () => {
     const result = new SurveyModel(surveyJSON);
 
     result.data = {
-      respondent: "name",
-      title: "position",
-      "department-NS": "item061",
-      branch: "test",
-      "project-title": "project",
-      description: "desc",
-      "sector-categories": ["item1-1", "item2-1", "item3-1"]
+      projectDetailsRespondent: "name",
+      projectDetailsJob: "position",
+      "projectDetailsDepartment-NS": "item061",
+      projectDetailsBranch: "test",
+      projectDetailsTitle: "project",
+      projectDetailsPhase: "item1",
+      projectDetailsDescription: "desc",
+      decisionSector1: ["item1-1", "item2-1", "item3-1"]
     };
 
     store.commit("updateResult", result);
@@ -46,13 +47,14 @@ describe("store.ts", () => {
     const result = new SurveyModel(surveyJSON);
 
     result.data = {
-      respondent: "name",
-      title: "position",
-      "department-NS": "item061",
-      branch: "test",
-      "project-title": "project",
-      description: "desc",
-      "sector-categories": ["item1-1", "item2-1", "item3-1"]
+      projectDetailsRespondent: "name",
+      projectDetailsJob: "position",
+      "projectDetailsDepartment-NS": "item061",
+      projectDetailsBranch: "test",
+      projectDetailsTitle: "project",
+      projectDetailsPhase: "item1",
+      projectDetailsDescription: "desc",
+      decisionSector1: ["item1-1", "item2-1", "item3-1"]
     };
 
     store.commit("updateResult", result);
@@ -68,22 +70,23 @@ describe("store.ts", () => {
     const result = new SurveyModel(surveyJSON);
 
     result.data = {
-      respondent: "name",
-      title: "position",
-      "department-NS": "item061",
-      branch: "test",
-      "project-title": "project",
-      description: "desc",
-      "sector-categories": ["item1-1", "item2-1", "item3-1"],
-      question8: "4",
-      question37: "2"
+      projectDetailsRespondent: "name",
+      projectDetailsJob: "position",
+      "projectDetailsDepartment-NS": "item061",
+      projectDetailsBranch: "test",
+      projectDetailsTitle: "project",
+      projectDetailsPhase: "item1",
+      projectDetailsDescription: "desc",
+      decisionSector1: ["item1-1", "item2-1", "item3-1"],
+      impact5: "item1-4",
+      dataQualityDesign7: "item1-2"
     };
 
     store.commit("updateResult", result);
 
     const resultDataSections = store.getters.resultDataSections;
 
-    expect(resultDataSections[0].length).toEqual(6);
+    expect(resultDataSections[0].length).toEqual(0);
     expect(resultDataSections[1].length).toEqual(2);
     expect(resultDataSections[2].length).toEqual(1);
   });
