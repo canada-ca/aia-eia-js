@@ -161,7 +161,7 @@ function calculateFinalScore(survey: SurveyModel): number[] {
 
   //maxMitigationScore is divided by 2 because of Design/Implementation fork
   if (mitigationScore >= percentage * (maxMitigationScore / 2)) {
-    total = (1 - deduction) * rawRiskScore;
+    total = Math.round((1 - deduction) * rawRiskScore);
   } else {
     total = rawRiskScore;
   }
