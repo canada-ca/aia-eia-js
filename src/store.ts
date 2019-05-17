@@ -131,12 +131,16 @@ function calculateFinalScore(survey: SurveyModel): number[] {
     });
 
   let rawRiskScore = 0;
+  let maxRawRiskScore = 0;
   let maxMitigationScore = 0;
   let mitigationScore = 0;
   let total = 0;
   let percentage = 0.8;
-  let deduction = 10;
+  let deduction = 0.15;
   let level = 0;
+  let threshold1 = 0.25;
+  let threshold2 = 0.5;
+  let threshold3 = 0.75;
 
   valueNames.forEach(name => {
     var currentQuestion = survey.getQuestionByName(name);
@@ -144,6 +148,9 @@ function calculateFinalScore(survey: SurveyModel): number[] {
 
     if (currentQuestionType === 2) {
       rawRiskScore += getValue(survey.data[name]);
+      maxRawRiskScore += getMaxScoreForQuestion(<QuestionSelectBase>(
+        currentQuestion
+      ));
     } else if (currentQuestionType === 3) {
       mitigationScore += getValue(survey.data[name]);
       maxMitigationScore += getMaxScoreForQuestion(<QuestionSelectBase>(
@@ -152,17 +159,24 @@ function calculateFinalScore(survey: SurveyModel): number[] {
     }
   });
 
-  if (mitigationScore >= percentage * maxMitigationScore) {
-    total = rawRiskScore - deduction;
+  //maxMitigationScore is divided by 2 because of Design/Implementation fork
+  if (mitigationScore >= percentage * (maxMitigationScore / 2)) {
+    total = Math.round((1 - deduction) * rawRiskScore);
   } else {
     total = rawRiskScore;
   }
 
-  if (total <= 18) {
+  if (total <= maxRawRiskScore * threshold1) {
     level = 1;
-  } else if (total > 18 && total <= 36) {
+  } else if (
+    total > maxRawRiskScore * threshold1 &&
+    total <= maxRawRiskScore * threshold2
+  ) {
     level = 2;
-  } else if (total > 36 && total <= 54) {
+  } else if (
+    total > maxRawRiskScore * threshold2 &&
+    total <= maxRawRiskScore * threshold3
+  ) {
     level = 3;
   } else {
     level = 4;

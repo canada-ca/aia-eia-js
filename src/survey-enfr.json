@@ -18,15 +18,15 @@
             ]
         },
         {
-            "name": "project-details",
+            "name": "projectDetails",
             "elements": [
                 {
                     "type": "panel",
-                    "name": "panel-project-NS",
+                    "name": "projectDetailsPanel-NS",
                     "elements": [
                         {
                             "type": "text",
-                            "name": "respondent",
+                            "name": "projectDetailsRespondent",
                             "title": {
                                 "default": "Name of Respondent",
                                 "fr": "Nom de la personne sondée"
@@ -35,7 +35,7 @@
                         },
                         {
                             "type": "text",
-                            "name": "title",
+                            "name": "projectDetailsJob",
                             "title": {
                                 "default": "Job Title",
                                 "fr": "Titre du poste"
@@ -43,7 +43,7 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "department-NS",
+                            "name": "projectDetailsDepartment-NS",
                             "title": {
                                 "default": "Department",
                                 "fr": "Ministère"
@@ -73,7 +73,7 @@
                                 {
                                     "value": "item085",
                                     "text": {
-                                        "default": "Canada Border Services Agency",
+                                        "default": "Canada Border ServiI was not hired to toces Agency",
                                         "fr": "Agence Parcs Canada"
                                     }
                                 },
@@ -760,7 +760,7 @@
                         },
                         {
                             "type": "text",
-                            "name": "branch",
+                            "name": "projectDetailsBranch",
                             "title": {
                                 "default": "Branch",
                                 "fr": "Direction"
@@ -768,7 +768,7 @@
                         },
                         {
                             "type": "text",
-                            "name": "project-title",
+                            "name": "projectDetailsTitle",
                             "title": {
                                 "default": "Project Title",
                                 "fr": "Titre du projet"
@@ -776,17 +776,17 @@
                         },
                         {
                             "type": "text",
-                            "name": "project-id",
+                            "name": "projectDetailsID",
                             "title": "Project ID from IT Plan"
                         },
                         {
                             "type": "text",
-                            "name": "departmental-program",
+                            "name": "projectDetailsProgram",
                             "title": "Departmental Program (from Department Results Framework)"
                         },
                         {
                             "type": "radiogroup",
-                            "name": "project-phase",
+                            "name": "projectDetailsPhase",
                             "title": "Project Phase",
                             "isRequired": true,
                             "choices": [
@@ -805,7 +805,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "description",
+                            "name": "projectDetailsDescription",
                             "title": {
                                 "default": "Please provide a project description:",
                                 "fr": "Veuillez fournir une description du projet :"
@@ -820,57 +820,57 @@
             }
         },
         {
-            "name": "business-drivers",
+            "name": "businessDrivers",
             "elements": [
                 {
                     "type": "panel",
-                    "name": "business-panel-NS",
+                    "name": "businessDriversPanel-NS",
                     "elements": [
                         {
                             "type": "checkbox",
-                            "name": "business1",
+                            "name": "businessDrivers1",
                             "title": {
                                 "default": "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)",
                                 "fr": "Qu'est-ce qui motive votre équipe à introduire l'automatisation dans ce processus décisionnel? (Cochez toutes les réponses qui s'appliquent.)"
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1",
                                     "text": {
                                         "default": "Existing backlog of work or cases",
                                         "fr": "Arriéré de travail ou de cas existant"
                                     }
                                 },
                                 {
-                                    "value": "item2-1",
+                                    "value": "item2",
                                     "text": {
                                         "default": "Improve overall quality of decisions",
                                         "fr": "Amélioration de la qualité générale des décisions"
                                     }
                                 },
                                 {
-                                    "value": "item3-1",
+                                    "value": "item3",
                                     "text": {
                                         "default": "Lower transaction costs of an existing program",
                                         "fr": "Réduction des coûts de transaction d'un programme existant"
                                     }
                                 },
                                 {
-                                    "value": "item4-1",
+                                    "value": "item4",
                                     "text": {
                                         "default": "The system is performing tasks that humans could not accomplish in a reasonable period of time",
                                         "fr": "Le système exécute des taĉhes que les humans ne sont pas en mesure d'accomplir dans un délai raisonnable"
                                     }
                                 },
                                 {
-                                    "value": "item5-1",
+                                    "value": "item5",
                                     "text": {
                                         "default": "Use innovative approaches",
                                         "fr": "Utilisation d'approches novatrices"
                                     }
                                 },
                                 {
-                                    "value": "item6-1",
+                                    "value": "item6",
                                     "text": {
                                         "default": "Other (please specify)",
                                         "fr": "Autre (veuillez préciser)"
@@ -881,7 +881,7 @@
                         {
                             "type": "comment",
                             "name": "motivation-other",
-                            "visibleIf": "{motivation} contains [\"item6-1\"]",
+                            "visibleIf": "{businessDrivers1} contains [\"item6-1\"]",
                             "title": {
                                 "default": "Please describe",
                                 "fr": "S'il vous plait décrire"
@@ -896,15 +896,15 @@
             }
         },
         {
-            "name": "risk-profile",
+            "name": "riskProfile",
             "elements": [
                 {
                     "type": "panel",
-                    "name": "risk-profile-panel-RS",
+                    "name": "riskProfilePanel-RS",
                     "elements": [
                         {
                             "type": "radiogroup",
-                            "name": "risk-profile1",
+                            "name": "riskProfile1",
                             "title": "Is the project within an area of intense public scrutiny (e.g. because of privacy concerns) and/or frequent litigation?",
                             "choices": [
                                 {
@@ -925,7 +925,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "risk-profile2",
+                            "name": "riskProfile2",
                             "title": "Are clients in this line of business particularly vulnerable?",
                             "choices": [
                                 {
@@ -946,7 +946,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "risk-profile3",
+                            "name": "riskProfile3",
                             "title": "Are stakes of the decisions very high?",
                             "choices": [
                                 {
@@ -967,7 +967,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "risk-profile4",
+                            "name": "riskProfile4",
                             "title": "Will this project have major impacts on staff, either in terms of their numbers or their roles?",
                             "choices": [
                                 {
@@ -995,15 +995,15 @@
             }
         },
         {
-            "name": "project-authority",
+            "name": "projectAuthority",
             "elements": [
                 {
                     "type": "panel",
-                    "name": "project-authority-panel-RS",
+                    "name": "projectAuthorityPanel-RS",
                     "elements": [
                         {
                             "type": "radiogroup",
-                            "name": "project-authority1",
+                            "name": "projectAuthority1",
                             "title": {
                                 "default": "Will you require new policy authority for this project?",
                                 "fr": "Aurez-vous besoin d'une nouvelle autorisation en termes de politiques pour ce projet ?"
@@ -1034,15 +1034,15 @@
             }
         },
         {
-            "name": "about-system",
+            "name": "aboutSystem",
             "elements": [
                 {
                     "type": "panel",
-                    "name": "panel-system-NS",
+                    "name": "aboutSystemPanel-NS",
                     "elements": [
                         {
                             "type": "checkbox",
-                            "name": "system1",
+                            "name": "aboutSystem1",
                             "title": {
                                 "default": "Please check which of the following capabilities apply to your system.",
                                 "fr": "Veuillez indiquer laquelle des capacités suivantes s'applique à votre système."
@@ -1094,8 +1094,8 @@
                         },
                         {
                             "type": "comment",
-                            "name": "capabilities-other",
-                            "visibleIf": "{capabilities} contains [\"item6-1\"]",
+                            "name": "aboutSystem2",
+                            "visibleIf": "{aboutSystem1} contains [\"item6-1\"]",
                             "title": {
                                 "default": "Please describe",
                                 "fr": "S'il vous plait décrire"
@@ -1110,15 +1110,15 @@
             }
         },
         {
-            "name": "about-algorithm",
+            "name": "aboutAlgorithm",
             "elements": [
                 {
                     "type": "panel",
-                    "name": "algorithm-panel-RS",
+                    "name": "aboutAlgorithmPanel-RS",
                     "elements": [
                         {
                             "type": "html",
-                            "name": "algorithm-intro",
+                            "name": "aboutAlgorithmIntro",
                             "html": {
                                 "default": "<h4>Will your algorithm have any of the following characteristics:</h4>",
                                 "fr": "<h4>Votre algorithme aura-t-il l'une des caractéristiques suivantes :</h4>"
@@ -1126,7 +1126,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "about-algorithm1",
+                            "name": "aboutAlgorithm1",
                             "title": {
                                 "default": "The algorithm used will be a (trade) secret",
                                 "fr": "L'algorithme utilisé sera un secret (commercial)"
@@ -1150,7 +1150,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "about-algorithm2",
+                            "name": "aboutAlgorithm2",
                             "title": {
                                 "default": "The algorithmic process will be difficult to interpret or to explain",
                                 "fr": "Le processus algorithmique sera difficile à interpréter ou à expliquer"
@@ -1181,15 +1181,15 @@
             }
         },
         {
-            "name": "decision-sector",
+            "name": "decisionSector",
             "elements": [
                 {
                     "type": "panel",
-                    "name": "panel-decision-RS",
+                    "name": "decisionSectorPanel-RS",
                     "elements": [
                         {
                             "type": "checkbox",
-                            "name": "sector-categories",
+                            "name": "decisionSector1",
                             "title": {
                                 "default": "Does the decision pertain to any of the categories below (check all that apply):",
                                 "fr": "La décision s'applique-t-elle à l'une ou l'autre des catégories ci-dessous (*Cochez toutes les réponses qui s'appliquent) :"
@@ -1241,8 +1241,8 @@
                         },
                         {
                             "type": "comment",
-                            "name": "sector-categories-other",
-                            "visibleIf": "{sector-categories} contains [\"item6-1\"]",
+                            "name": "decisionSector2",
+                            "visibleIf": "{decisionSector1} contains [\"item6-1\"]",
                             "title": {
                                 "default": "Please describe",
                                 "fr": "S'il vous plait décrire"
@@ -1261,11 +1261,11 @@
             "elements": [
                 {
                     "type": "panel",
-                    "name": "panel-impact-RS",
+                    "name": "impactPanel-RS",
                     "elements": [
                         {
                             "type": "radiogroup",
-                            "name": "question66",
+                            "name": "impact1",
                             "title": {
                                 "default": "Will the system only be used to assist a decision-maker?",
                                 "fr": "Le système automatisera-t-il ou remplacera-t-il les décisions humaines qui exigent du jugement ou de la discrétion?"
@@ -1289,7 +1289,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question67",
+                            "name": "impact2",
                             "title": {
                                 "default": "Will the system be replacing a decision that would otherwise be made by a human?",
                                 "fr": "Le système automatisera-t-il ou remplacera-t-il les décisions humaines qui exigent du jugement ou de la discrétion?"
@@ -1313,7 +1313,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "discretion",
+                            "name": "impact3",
                             "title": {
                                 "default": "Will the system be replacing human decisions that require judgement or discretion?",
                                 "fr": "Le système automatisera-t-il ou remplacera-t-il les décisions humaines qui exigent du jugement ou de la discrétion?"
@@ -1337,8 +1337,8 @@
                         },
                         {
                             "type": "comment",
-                            "name": "discretion-comment",
-                            "visibleIf": "{discretion} contains [\"item1-4\"]",
+                            "name": "impact4",
+                            "visibleIf": "{impact3} contains [\"item1-4\"]",
                             "title": {
                                 "default": "Please describe the decision(s) that will be automated",
                                 "fr": "Veuillez décrire la ou les décisions qui seront automatisées"
@@ -1346,21 +1346,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question8",
+                            "name": "impact5",
                             "title": {
                                 "default": "Is the system used by a different part of the organization than the ones who developed it?",
                                 "fr": "Le système est-il utilisé par une partie de l’organisation différente de celle à laquelle appartiennent ceux qui l’ont développé?"
                             },
                             "choices": [
                                 {
-                                    "value": 4,
+                                    "value": "item1-4",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -1370,35 +1370,35 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "question20",
+                            "name": "impact6",
                             "title": {
                                 "default": "Are the impacts resulting from the decision reversible?",
                                 "fr": "Les incidences découlant de la décision sont-elles réversibles?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Reversible",
                                         "fr": "Réversible"
                                     }
                                 },
                                 {
-                                    "value": 2,
+                                    "value": "item2-2",
                                     "text": {
                                         "default": "Likely reversible",
                                         "fr": "Probablement réversible"
                                     }
                                 },
                                 {
-                                    "value": 3,
+                                    "value": "item3-3",
                                     "text": {
                                         "default": "Difficult to reverse",
                                         "fr": "Difficile à inverser"
                                     }
                                 },
                                 {
-                                    "value": 4,
+                                    "value": "item4-4",
                                     "text": {
                                         "default": "Irreversible",
                                         "fr": "Irréversible"
@@ -1408,35 +1408,35 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "question21",
+                            "name": "impact7",
                             "title": {
                                 "default": "How long will impacts from the decision last?",
                                 "fr": "Combien de temps les incidences de la décision dureront-elles?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Impacts are most likely to be brief",
                                         "fr": "Les incidences risquent fort probablement d’être brèves"
                                     }
                                 },
                                 {
-                                    "value": 2,
+                                    "value": "item2-2",
                                     "text": {
                                         "default": "Some impacts may last a matter of months, but some lingering impacts may last longer",
                                         "fr": "Certaines incidences peuvent durer quelques mois ou plus longtemps."
                                     }
                                 },
                                 {
-                                    "value": 3,
+                                    "value": "item3-3",
                                     "text": {
                                         "default": "Impacts can last years",
                                         "fr": "Les incidences peuvent durer des années."
                                     }
                                 },
                                 {
-                                    "value": 4,
+                                    "value": "item4-4",
                                     "text": {
                                         "default": "Most impacts are perpetual",
                                         "fr": "La plupart des incidences sont sans limite dans le temps."
@@ -1446,7 +1446,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "question13",
+                            "name": "impact8",
                             "title": {
                                 "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus). "
@@ -1454,21 +1454,21 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "question22",
+                            "name": "impact9",
                             "title": {
                                 "default": "The impacts that the decision will have on the rights or freedoms of individuals will likely be:",
                                 "fr": "Les incidences de la décision sur les droits ou libertés des personnes seront probablement les suivantes :"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Little to no impact",
                                         "fr": "Incidence faible ou nulle"
                                     }
                                 },
                                 {
-                                    "value": 2,
+                                    "value": "item2-2",
                                     "text": {
                                         "default": "Moderate impact",
                                         "fr": "Incidence modérée"
@@ -1492,7 +1492,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "question15",
+                            "name": "impact10",
                             "title": {
                                 "default": "Please describe why the impacts resulting from the decision are (as per selected option above).",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
@@ -1500,35 +1500,35 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "question14",
+                            "name": "impact11",
                             "title": {
                                 "default": "The impacts that the decision will have on the health and well-being of individuals will likely be:",
                                 "fr": "Les incidences de la décision sur la santé et le bien-être des personnes seront probablement les suivantes :"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Little to no impact",
                                         "fr": "Incidence faible ou nulle"
                                     }
                                 },
                                 {
-                                    "value": 2,
+                                    "value": "item2-2",
                                     "text": {
                                         "default": "Moderate impact",
                                         "fr": "Incidence modérée"
                                     }
                                 },
                                 {
-                                    "value": 3,
+                                    "value": "item3-3",
                                     "text": {
                                         "default": "High impact",
                                         "fr": "Incidence élevée"
                                     }
                                 },
                                 {
-                                    "value": 4,
+                                    "value": "item4-4",
                                     "text": {
                                         "default": "Very high impact",
                                         "fr": "Incidence très élevée"
@@ -1538,7 +1538,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "question17",
+                            "name": "impact12",
                             "title": {
                                 "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
@@ -1546,35 +1546,35 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "question16",
+                            "name": "impact13",
                             "title": {
                                 "default": "The impacts that the decision will have on the economic interests of individuals will likely be:",
                                 "fr": "Les incidences de la décision sur les intérêts économiques des personnes seront probablement les suivantes :"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Little to no impact",
                                         "fr": "Incidence faible ou nulle"
                                     }
                                 },
                                 {
-                                    "value": 2,
+                                    "value": "item2-2",
                                     "text": {
                                         "default": "Moderate impact",
                                         "fr": "Incidence modérée"
                                     }
                                 },
                                 {
-                                    "value": 3,
+                                    "value": "item3-3",
                                     "text": {
                                         "default": "High impact",
                                         "fr": "Incidence élevée"
                                     }
                                 },
                                 {
-                                    "value": 4,
+                                    "value": "item4-4",
                                     "text": {
                                         "default": "Very high impact",
                                         "fr": "Incidence très élevée"
@@ -1584,7 +1584,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "question19",
+                            "name": "impact14",
                             "title": {
                                 "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
@@ -1592,35 +1592,35 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "question18",
+                            "name": "impact15",
                             "title": {
                                 "default": "The impacts that the decision will have on the ongoing sustainability of an environmental ecosystem, will likely be:",
                                 "fr": "Les incidences de la décision sur la pérennité d’un écosystème environnemental seront probablement les suivantes :"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Little to no impact",
                                         "fr": "Incidence faible ou nulle"
                                     }
                                 },
                                 {
-                                    "value": 2,
+                                    "value": "item2-2",
                                     "text": {
                                         "default": "Moderate impact",
                                         "fr": "Incidence modérée"
                                     }
                                 },
                                 {
-                                    "value": 3,
+                                    "value": "item3-3",
                                     "text": {
                                         "default": "High impact",
                                         "fr": "Incidence élevée"
                                     }
                                 },
                                 {
-                                    "value": 4,
+                                    "value": "item4-4",
                                     "text": {
                                         "default": "Very high impact",
                                         "fr": "Incidence très élevée"
@@ -1630,7 +1630,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "question23",
+                            "name": "impact16",
                             "title": {
                                 "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
@@ -1645,29 +1645,29 @@
             }
         },
         {
-            "name": "data",
+            "name": "aboutData",
             "elements": [
                 {
                     "type": "panel",
-                    "name": "data-source-RS",
+                    "name": "aboutDataSourcePanel-RS",
                     "elements": [
                         {
                             "type": "radiogroup",
-                            "name": "question24",
+                            "name": "aboutDataSource1",
                             "title": {
                                 "default": "Will the Automated Decision System use personal information as input data?",
                                 "fr": "Le système de décision automatisé utilisera-t-il des renseignements personnels comme données d’entrée?"
                             },
                             "choices": [
                                 {
-                                    "value": 4,
+                                    "value": "item1-4",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -1677,42 +1677,42 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "question25",
+                            "name": "aboutDataSource2",
                             "title": {
                                 "default": "What is the highest security classification of the input data used by the system? (Select one)",
                                 "fr": "Quelle est la classification de sécurité la plus élevée des données d’entrée utilisées par le système? (N’en choisir qu’une seule)"
                             },
                             "choices": [
                                 {
-                                    "value": 0,
+                                    "value": "item1-0",
                                     "text": {
                                         "default": "None",
                                         "fr": "Aucun"
                                     }
                                 },
                                 {
-                                    "value": 1,
+                                    "value": "item2-1",
                                     "text": {
                                         "default": "Protected A",
                                         "fr": "Protégé A"
                                     }
                                 },
                                 {
-                                    "value": 2,
+                                    "value": "item3-2",
                                     "text": {
                                         "default": "Classified / Confidential",
                                         "fr": "Classifié/confidentiel"
                                     }
                                 },
                                 {
-                                    "value": 3,
+                                    "value": "item4-3",
                                     "text": {
                                         "default": "Protected B / Protected C",
                                         "fr": "Protégé B/Protégé C"
                                     }
                                 },
                                 {
-                                    "value": 4,
+                                    "value": "item5-4",
                                     "text": {
                                         "default": "Secret / Top Secret",
                                         "fr": "Secret/Très Secret"
@@ -1722,35 +1722,35 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "question26",
+                            "name": "aboutDataSource3",
                             "title": {
                                 "default": "Who controls the data?",
                                 "fr": "Qui contrôle les données?"
                             },
                             "choices": [
                                 {
-                                    "value": 0,
+                                    "value": "item1-0",
                                     "text": {
                                         "default": "Open Data Source",
                                         "fr": "Source de données ouvertes"
                                     }
                                 },
                                 {
-                                    "value": 1,
+                                    "value": "item2-1",
                                     "text": {
                                         "default": "Federal government",
                                         "fr": "Gouvernement fédéral"
                                     }
                                 },
                                 {
-                                    "value": 2,
+                                    "value": "item3-2",
                                     "text": {
                                         "default": "Other Canadian Government (prov/municipal)",
                                         "fr": "Autre gouvernement canadien (provincial/municipal)"
                                     }
                                 },
                                 {
-                                    "value": 3,
+                                    "value": "item4-3",
                                     "text": {
                                         "default": "Private Sector / NGO",
                                         "fr": "Secteur privé / ONG"
@@ -1760,21 +1760,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question27",
+                            "name": "aboutDataSource4",
                             "title": {
                                 "default": "Will the system data use from multiple different sources?",
                                 "fr": "Les données utilisées par le système proviendront-elles de plusieurs sources différentes?"
                             },
                             "choices": [
                                 {
-                                    "value": 4,
+                                    "value": "item1-4",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -1784,21 +1784,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question28",
+                            "name": "aboutDataSource5",
                             "title": {
                                 "default": "Will the system require input data from an Internet- or telephony-connected device? (e.g. Internet of Things, sensor)",
                                 "fr": "Le système aura-t-il besoin de données d’entrée provenant d’un appareil connecté à Internet ou à la téléphonie? (P. ex., internet des objets, un Capteur)"
                             },
                             "choices": [
                                 {
-                                    "value": 4,
+                                    "value": "item1-4",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -1808,21 +1808,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question29",
+                            "name": "aboutDataSource6",
                             "title": {
                                 "default": "Will the system interface with other IT systems?",
                                 "fr": "Le système interagira-t-il avec d’autres systèmes des TI?"
                             },
                             "choices": [
                                 {
-                                    "value": 4,
+                                    "value": "item1-4",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -1832,35 +1832,35 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "question30",
+                            "name": "aboutDataSource7",
                             "title": {
                                 "default": "Who collected the data used for training the system?",
                                 "fr": "Qui a recueilli les données utilisées pour préparer le système? "
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Your institution",
                                         "fr": "Votre institution"
                                     }
                                 },
                                 {
-                                    "value": 2,
+                                    "value": "item2-2",
                                     "text": {
                                         "default": "Another federal institution",
                                         "fr": "Une autre institution fédérale"
                                     }
                                 },
                                 {
-                                    "value": 3,
+                                    "value": "item3-3",
                                     "text": {
                                         "default": "Another level of government",
                                         "fr": "Autre niveau de gouvernement"
                                     }
                                 },
                                 {
-                                    "value": 4,
+                                    "value": "item4-4",
                                     "text": {
                                         "default": "A foreign government or non-government third party",
                                         "fr": "Un gouvernement étranger ou un tiers non gouvernemental"
@@ -1870,35 +1870,35 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "question31",
+                            "name": "aboutDataSource8",
                             "title": {
                                 "default": "Who collected the input data used by the system?",
                                 "fr": "Qui a recueilli les données d’entrée utilisées par le système?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Your institution",
                                         "fr": "Votre institution"
                                     }
                                 },
                                 {
-                                    "value": 2,
+                                    "value": "item2-2",
                                     "text": {
                                         "default": "Another federal institution",
                                         "fr": "Une autre institution fédérale"
                                     }
                                 },
                                 {
-                                    "value": 3,
+                                    "value": "item3-3",
                                     "text": {
                                         "default": "Another level of government",
                                         "fr": "Autre niveau de gouvernement"
                                     }
                                 },
                                 {
-                                    "value": 4,
+                                    "value": "item4-4",
                                     "text": {
                                         "default": "A foreign government or non-government third party",
                                         "fr": "Un gouvernement étranger ou un tiers non gouvernemental"
@@ -1914,11 +1914,11 @@
                 },
                 {
                     "type": "panel",
-                    "name": "data-type-RS",
+                    "name": "aboutDataTypePanel-RS",
                     "elements": [
                         {
                             "type": "radiogroup",
-                            "name": "question32",
+                            "name": "aboutDataType1",
                             "title": {
                                 "default": "Will the system require the analysis of unstructured data to render a recommendation or a decision?",
                                 "fr": "Le système exigera-t-il l’analyse de données non structurées pour faire une recommandation ou prendre une décision?"
@@ -1942,8 +1942,8 @@
                         },
                         {
                             "type": "checkbox",
-                            "name": "question33",
-                            "visibleIf": "{question32} = \"item1\"",
+                            "name": "aboutDataType2",
+                            "visibleIf": "{aboutDataType1} = \"item1\"",
                             "title": {
                                 "default": "What types of unstructured data? (Check all that apply)",
                                 "fr": "De quel type de données non structurées s’agit-il (Cochez toutes les réponses qui s’appliquent)?"
@@ -1978,11 +1978,11 @@
             }
         },
         {
-            "name": "rm-consultation-design",
+            "name": "consultationDesign",
             "elements": [
                 {
                     "type": "panel",
-                    "name": "rm-consultation-design-MS",
+                    "name": "consultationDesignPanel-MS",
                     "elements": [
                         {
                             "type": "html",
@@ -1994,7 +1994,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "consultation-design1",
+                            "name": "consultationDesign1",
                             "title": {
                                 "default": "Internal Stakeholders (Strategic policy and planning, Data Governance, Program Policy, etc.)",
                                 "fr": "Intervenants internes (politique et planification stratégiques, gouvernance des données, politique du programme, etc.)"
@@ -2018,8 +2018,8 @@
                         },
                         {
                             "type": "checkbox",
-                            "name": "consultation-design2-NS",
-                            "visibleIf": "{consultation-design1} = \"item1-1\"",
+                            "name": "consultationDesign2-NS",
+                            "visibleIf": "{consultationDesign1} = \"item1-1\"",
                             "title": {
                                 "default": "Which Internal Stakeholders will you be engaging?",
                                 "fr": "Quels intervenants internes allez-vous consulter?"
@@ -2080,7 +2080,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "consultation-design3",
+                            "name": "consultationDesign3",
                             "title": {
                                 "default": "External Stakeholders (Civil Society, Academia, Industry, etc.)",
                                 "fr": "Intervenants externes (société civile, universités, industrie, etc.)"
@@ -2104,8 +2104,8 @@
                         },
                         {
                             "type": "checkbox",
-                            "name": "consultation-design4-NS",
-                            "visibleIf": "{consultation-design3} = \"item1-1\"",
+                            "name": "consultationDesign4-NS",
+                            "visibleIf": "{consultationDesign3} = \"item1-1\"",
                             "title": {
                                 "default": "Which External Stakeholders will you be engaging?",
                                 "fr": "Quels intervenants externes allez-vous consulter?"
@@ -2142,19 +2142,19 @@
                     ]
                 }
             ],
-            "visibleIf": "{project-phase} = \"item1\"",
+            "visibleIf": "{projectDetailsPhase} = \"item1\"",
             "title": "Consultations"
         },
         {
-            "name": "rm-consultation-implementation",
+            "name": "consultationImplementation",
             "elements": [
                 {
                     "type": "panel",
-                    "name": "rm-consultation-implementation-MS",
+                    "name": "consultationImplementationPanel-MS",
                     "elements": [
                         {
                             "type": "html",
-                            "name": "rm-consultation-intro",
+                            "name": "consultation-intro",
                             "html": {
                                 "default": "<h4>Have you engaged with any of the following groups?</h4>",
                                 "fr": "<h4>Avez-vous consulté l'un ou l'autre des groupes suivants ?</h4>"
@@ -2162,7 +2162,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "consultation-implementation1",
+                            "name": "consultationImplementation1",
                             "title": {
                                 "default": "Internal Stakeholders (Strategic policy and planning, Data Governance, Program Policy, etc.)",
                                 "fr": "Intervenants internes (politique et planification stratégiques, gouvernance des données, politique du programme, etc.)"
@@ -2186,8 +2186,8 @@
                         },
                         {
                             "type": "checkbox",
-                            "name": "consultation-implementation2-NS",
-                            "visibleIf": "{consultation-implementation1} = \"item1-1\"",
+                            "name": "consultationImplementation2-NS",
+                            "visibleIf": "{consultationImplementation1} = \"item1-1\"",
                             "title": {
                                 "default": "Which Internal Stakeholders have you engaged?",
                                 "fr": "Quels intervenants internes avez-vous consulté?"
@@ -2248,7 +2248,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "consultation-implementation3",
+                            "name": "consultationImplementation3",
                             "title": {
                                 "default": "External Stakeholders (Civil Society, Academia, Industry, etc.)",
                                 "fr": "Intervenants externes (société civile, universités, industrie, etc.)"
@@ -2272,8 +2272,8 @@
                         },
                         {
                             "type": "checkbox",
-                            "name": "consultation-implementation4-NS",
-                            "visibleIf": "{consultation-implementation3} = \"item1-1\"",
+                            "name": "consultationImplementation4-NS",
+                            "visibleIf": "{consultationImplementation3} = \"item1-1\"",
                             "title": {
                                 "default": "Which External Stakeholders have you engaged?",
                                 "fr": "Quels intervenants externes avez-vous consulté?"
@@ -2310,33 +2310,34 @@
                     ]
                 }
             ],
-            "visibleIf": "{project-phase} = \"item2\"",
+            "visibleIf": "{projectDetailsPhase} = \"item2\"",
             "title": "Consultations"
         },
         {
-            "name": "rm-data-quality-design",
+            "name": "dataQualityDesign",
             "elements": [
                 {
                     "type": "panel",
-                    "name": "data-quality-MS",
+                    "name": "dataQualityDesignPanel-MS",
                     "elements": [
                         {
                             "type": "radiogroup",
-                            "name": "rm-data-qual1",
+                            "name": "dataQualityDesign1",
                             "title": {
                                 "default": "Will you have documented processes in place to test datasets against biases and other unexpected outcomes? This could include experience in applying frameworks, methods, guidelines or other assessment tools.",
                                 "fr": "Disposerez-vous de processus documentés pour tester les jeux de données en fonction de biais et d’autres résultats inattendus? Par exemple, ceci pourrait inclure une expérience dans l’application de cadres, de méthodes, de lignes directrices ou d’outils d’évaluation."
                             },
+                            "valueName": "dataQualityDesignMitigationQ1",
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2346,21 +2347,22 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "mitigation-makePublic",
+                            "name": "dataQualityDesign2",
+                            "visibleIf": "{dataQualityDesign1} = \"item1-2\"",
                             "title": {
-                                "default": "Will you be making this information publically available?",
+                                "default": "Will you be making this information publicly available?",
                                 "fr": "Allez-vous rendre cette information disponible publiquement?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": "item2",
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2370,21 +2372,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question35",
+                            "name": "dataQualityDesign3",
                             "title": {
                                 "default": "Will you be developing a process to document how data quality issues were resolved during the design process?",
                                 "fr": "Allez-vous élaborer un processus permettant de documenter la façon dont les problèmes de qualité des données qui seront résolus pendant le processus de conception?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2394,21 +2396,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question59",
+                            "name": "dataQualityDesign4",
                             "title": {
-                                "default": "Will you be making this information publically available?",
+                                "default": "Will you be making this information publicly available?",
                                 "fr": "Allez-vous rendre cette information disponible publiquement?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": "item2",
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2418,7 +2420,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question36",
+                            "name": "dataQualityDesign5",
                             "title": {
                                 "default": "Will you undertake a Gender Based Analysis Plus of the data?",
                                 "fr": "Entreprendrez-vous une analyse comparative entre les sexes plus des données?"
@@ -2442,21 +2444,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question60",
+                            "name": "dataQualityDesign6",
                             "title": {
-                                "default": "Will you be making this information publically available?",
+                                "default": "Will you be making this information publicly available?",
                                 "fr": "Allez-vous rendre cette information disponible publiquement?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": "item2",
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2466,21 +2468,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question37",
+                            "name": "dataQualityDesign7",
                             "title": {
                                 "default": "Have you assigned accountability in your institution for the design, development, maintenance, and improvement of the system?",
                                 "fr": "Dans votre établissement, existe-t-il des responsables de la conception, du développement, de la maintenance et de l’amélioration du système?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2490,7 +2492,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question38",
+                            "name": "dataQualityDesign8",
                             "title": {
                                 "default": "Will you have a documented process to manage the risk that outdated or unreliable data is used to make an automated decision?",
                                 "fr": "Disposerez-vous d'un processus documenté pour gérer le risque que des données périmées ou non fiables soient utilisées pour prendre une décision automatisée?"
@@ -2514,21 +2516,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question61",
+                            "name": "dataQualityDesign9",
                             "title": {
-                                "default": "Will you be making this information publically available?",
+                                "default": "Will you be making this information publicly available?",
                                 "fr": "Allez-vous rendre cette information disponible publiquement?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": "item2",
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2538,7 +2540,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question39",
+                            "name": "dataQualityDesign10",
                             "title": {
                                 "default": "Will the data used for this system be posted on the Open Government Portal?",
                                 "fr": "Les données utilisées pour ce système seront-elles affichées sur la portail du gouvernement ouvert?"
@@ -2567,36 +2569,36 @@
                     }
                 }
             ],
-            "visibleIf": "{project-phase} = \"item1\"",
+            "visibleIf": "{projectDetailsPhase} = \"item1\"",
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation"
             }
         },
         {
-            "name": "rm-data-quality-implementation",
+            "name": "dataQualityImplementation",
             "elements": [
                 {
                     "type": "panel",
-                    "name": "panel1",
+                    "name": "dataQualityImplementationPanel-MS",
                     "elements": [
                         {
                             "type": "radiogroup",
-                            "name": "question1",
+                            "name": "dataQualityImplementation1",
                             "title": {
                                 "fr": "Disposez-vous de processus documentés pour tester les jeux de données en fonction de biais et d’autres résultats inattendus? Par exemple, ceci pourrait inclure une expérience dans l’application de cadres, de méthodes, de lignes directrices ou d’outils d’évaluation.",
                                 "default": "Do you have documented processes in place to test datasets against biases and other unexpected outcomes? This could include experience in applying frameworks, methods, guidelines or other assessment tools."
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2606,7 +2608,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question62",
+                            "name": "dataQualityImplementation2",
                             "title": {
                                 "default": "Is this information publicly available?",
                                 "fr": "Cette information est-elle publiquement disponible?"
@@ -2630,21 +2632,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question2",
+                            "name": "dataQualityImplementation3",
                             "title": {
                                 "default": "Have you developed a process to document how data quality issues were resolved during the design process?",
                                 "fr": "Avez-vous élaboré un processus permettant de documenter la façon dont les problèmes de qualité des données qui seront résolus pendant le processus de conception?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2654,7 +2656,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question63",
+                            "name": "dataQualityImplementation4",
                             "title": {
                                 "default": "Is this information publicly available?",
                                 "fr": "Cette information est-elle publiquement disponible?"
@@ -2678,21 +2680,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question3",
+                            "name": "dataQualityImplementation5",
                             "title": {
                                 "default": "Have you undertaken a Gender Based Analysis Plus of the data?",
                                 "fr": "Avez-vous entrepris une analyse comparative entre les sexes plus des données?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2702,7 +2704,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question64",
+                            "name": "dataQualityImplementation6",
                             "title": {
                                 "default": "Is this information publicly available?",
                                 "fr": "Cette information est-elle publiquement disponible?"
@@ -2726,21 +2728,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question4",
+                            "name": "dataQualityImplementation7",
                             "title": {
                                 "default": "Have you assigned accountability in your institution for the design, development, maintenance, and improvement of the system?",
                                 "fr": "Dans votre établissement, existe-t-il des responsables de la conception, du développement, de la maintenance et de l’amélioration du système?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2750,21 +2752,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question5",
+                            "name": "dataQualityImplementation8",
                             "title": {
                                 "default": "Do you have a documented process to manage the risk that outdated or unreliable data is used to make an automated decision?",
                                 "fr": "Disposez-vous d'un processus documenté pour gérer le risque que des données périmées ou non fiables soient utilisées pour prendre une décision automatisée?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2774,7 +2776,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question65",
+                            "name": "dataQualityImplementation9",
                             "title": {
                                 "default": "Is this information publicly available?",
                                 "fr": "Cette information est-elle publiquement disponible?"
@@ -2798,21 +2800,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question6",
+                            "name": "dataQualityImplementation10",
                             "title": {
                                 "default": "Is the data used for this system posted on the Open Government Portal?",
                                 "fr": "Les données utilisées pour ce système seront-elles affichées sur la portail du gouvernement ouvert?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2827,36 +2829,36 @@
                     }
                 }
             ],
-            "visibleIf": "{project-phase} = \"item2\"",
+            "visibleIf": "{projectDetailsPhase} = \"item2\"",
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation"
             }
         },
         {
-            "name": "rm-fairness-design",
+            "name": "fairnessDesign",
             "elements": [
                 {
                     "type": "panel",
-                    "name": "procedural-fairness-MS",
+                    "name": "fairnessDesignPanel-MS",
                     "elements": [
                         {
                             "type": "radiogroup",
-                            "name": "question40",
+                            "name": "fairnessDesign1",
                             "title": {
                                 "default": "Will the system provide an audit trail that records all the recommendations or decisions made by the system?",
                                 "fr": "Est-ce que le système fournira une piste de vérification qui enregistre les recommandations ou les décisions?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2866,21 +2868,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question41",
+                            "name": "fairnessDesign2",
                             "title": {
                                 "default": "Will you maintain a log detailing all of the changes made to the model and the system?",
                                 "fr": "Tiendrez-vous un registre détaillant toutes les modifications apportées au modèle et au système?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2890,21 +2892,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question42",
+                            "name": "fairnessDesign3",
                             "title": {
                                 "default": "Will the audit trail clearly set out all decision points made by the system?",
                                 "fr": "La piste de vérification énoncera-t-elle clairement tous les points de décision pris par le système?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2914,21 +2916,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question43",
+                            "name": "fairnessDesign4",
                             "title": {
                                 "default": "Will the audit trail show who an authorized decision-maker is?",
                                 "fr": "La piste de vérification indiquera-t-elle qui est un décideur autorisé?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2938,21 +2940,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question44",
+                            "name": "fairnessDesign5",
                             "title": {
                                 "default": "Will the system be able to produce reasons for its decisions or recommendations when required?",
                                 "fr": "Le système justifiera-t-il ses décisions ou ses recommandations, au besoin?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2962,21 +2964,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question45",
+                            "name": "fairnessDesign6",
                             "title": {
                                 "default": "Will there be a process in place to grant, monitor, and revoke access permission to the system?",
                                 "fr": "Existera-t-il un processus en place permettant d’accorder, de surveiller et de révoquer l’autorisation d’accès au système?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2986,21 +2988,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question46",
+                            "name": "fairnessDesign7",
                             "title": {
                                 "default": "Will there be a mechanism to capture feedback by users of the system?",
                                 "fr": "Existera-t-il un mécanisme permettant de recueillir les commentaires des utilisateurs du système?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3010,21 +3012,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question47",
+                            "name": "fairnessDesign8",
                             "title": {
                                 "default": "Is there a recourse process planned or established for clients that wish to challenge the decision?",
                                 "fr": "Un processus de recours est-il prévu ou établi pour les clients qui souhaitent contester la décision?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3034,21 +3036,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question48",
+                            "name": "fairnessDesign9",
                             "title": {
                                 "default": "Will the system enable human override of system decisions?",
                                 "fr": "Le système permettra-t-il aux humains de passer outre les décisions du système?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3058,21 +3060,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question49",
+                            "name": "fairnessDesign10",
                             "title": {
                                 "default": "Will there a process in place to log the instances when overrides were performed?",
                                 "fr": "Y aura-t-il un processus en place pour consigner les cas où des dérogations ont été effectuées?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3082,21 +3084,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question50",
+                            "name": "fairnessDesign11",
                             "title": {
                                 "default": "Will the audit trail include change control processes to record modifications to the system's operation or performance?",
                                 "fr": "La piste de vérification comprendra-t-elle des processus de contrôle des changements pour consigner les modifications apportées au fonctionnement ou au rendement du système?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3106,21 +3108,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question51",
+                            "name": "fairnessDesign12",
                             "title": {
                                 "default": "Have you prepared a concept case to the Government of Canada Enterprise Architecture Review Baord?",
                                 "fr": "Avez-vous préparé un dossier conceptuel pour le Conseil d’examen de l’architecture intégrée du gouvernement du Canada?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3135,36 +3137,36 @@
                     }
                 }
             ],
-            "visibleIf": "{project-phase} = \"item1\"",
+            "visibleIf": "{projectDetailsPhase} = \"item1\"",
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation"
             }
         },
         {
-            "name": "rm-fairness-implementation",
+            "name": "fairnessImplementation",
             "elements": [
                 {
                     "type": "panel",
-                    "name": "panel2",
+                    "name": "fairnessImplementationPanel-MS",
                     "elements": [
                         {
                             "type": "radiogroup",
-                            "name": "question7",
+                            "name": "fairnessImplementation1",
                             "title": {
                                 "default": "Does the system's audit trail indicate all the recommendations or decisions made by the system?",
                                 "fr": "Est-ce que le système fourni une piste de vérification qui enregistre les recommandations ou les décisions?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3174,21 +3176,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question9",
+                            "name": "fairnessImplementation2",
                             "title": {
                                 "default": "Do you maintain a current and up to date log detailing all of the changes made to the model and the system?",
                                 "fr": "Tenez-vous un registre à jour détaillant toutes les modifications apportées au modèle et au système?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3198,21 +3200,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question10",
+                            "name": "fairnessImplementation3",
                             "title": {
                                 "default": "Does the system's audit trail clearly indicate all decision points made by the system?",
                                 "fr": "La piste de vérification énonce-t-elle clairement tous les points de décision pris par le système?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3222,21 +3224,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question11",
+                            "name": "fairnessImplementation4",
                             "title": {
                                 "default": "Does the audit trail show who an authorized decision-maker is?",
                                 "fr": "La piste de vérification indique-t-elle qui est un décideur autorisé?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3246,21 +3248,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question12",
+                            "name": "fairnessImplementation5",
                             "title": {
                                 "default": "Is the system be able to produce reasons for its decisions or recommendations when required?",
                                 "fr": "Le système justifie-t-il ses décisions ou ses recommandations, au besoin?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3270,21 +3272,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question52",
+                            "name": "fairnessImplementation6",
                             "title": {
                                 "default": "Is there a process in place to grant, monitor, and revoke access permission to the system?",
                                 "fr": "Existe-t-il un processus en place permettant d’accorder, de surveiller et de révoquer l’autorisation d’accès au système?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3294,21 +3296,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question53",
+                            "name": "fairnessImplementation7",
                             "title": {
                                 "default": "Is there a mechanism to capture feedback by users of the system?",
                                 "fr": "Existe-t-il un mécanisme permettant de recueillir les commentaires des utilisateurs du système?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3318,21 +3320,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question54",
+                            "name": "fairnessImplementation8",
                             "title": {
                                 "default": "Is there a recourse process established for clients that wish to challenge the decision?",
                                 "fr": "Un processus de recours est-il établi pour les clients qui souhaitent contester la décision?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3342,21 +3344,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question55",
+                            "name": "fairnessImplementation9",
                             "title": {
                                 "default": "Does the system enable human override of system decisions?",
                                 "fr": "Le système permet-il aux humains de passer outre les décisions du système?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3366,21 +3368,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question56",
+                            "name": "fairnessImplementation10",
                             "title": {
                                 "default": "Is there a process in place to log the instances when overrides were performed?",
                                 "fr": "Y a-t-il un processus en place pour consigner les cas où des dérogations ont été effectuées?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3390,21 +3392,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question57",
+                            "name": "fairnessImplementation11",
                             "title": {
                                 "default": "Does the audit trail include change control processes to record modifications to the system's operation or performance?",
                                 "fr": "La piste de vérification comprend-elle des processus de contrôle des changements pour consigner les modifications apportées au fonctionnement ou au rendement du système?"
                             },
                             "choices": [
                                 {
-                                    "value": 2,
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3414,21 +3416,21 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "question58",
+                            "name": "fairnessImplementation12",
                             "title": {
                                 "default": "Has your concept case been approved by the Government of Canada Enterprise Architecture Review Baord?",
                                 "fr": "Votre dossier conceptuel pour le Conseil d’examen de l’architecture intégrée du gouvernement du Canada a-t-il été approuvé?"
                             },
                             "choices": [
                                 {
-                                    "value": 1,
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": 0,
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3443,7 +3445,7 @@
                     }
                 }
             ],
-            "visibleIf": "{project-phase} = \"item2\"",
+            "visibleIf": "{projectDetailsPhase} = \"item2\"",
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation"
