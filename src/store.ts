@@ -5,8 +5,6 @@ import {
   IQuestion,
   QuestionSelectBase,
   SurveyModel,
-  PageModel,
-  Survey
 } from "survey-vue";
 
 Vue.use(Vuex);

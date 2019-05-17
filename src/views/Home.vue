@@ -6,8 +6,13 @@
         $t("linkProjectText")
       }}</a>
     </p>
+    <form>
+      <input type="button" class="btn btn-primary" value="Save" v-on:click="save"/>
+      <input type="button" class="btn btn-primary" value="Load"/>
+    </form>
     <AssessmentTool :survey="Survey" />
     <Score />
+    
   </div>
 </template>
 
@@ -29,6 +34,17 @@ import i18n from "@/plugins/i18n";
 })
 export default class Home extends Vue {
   readonly Survey: Model = new Model(surveyJSON);
+  save() { 
+    const data = JSON.stringify(this.$store.getters.plainData);
+    const blob = new Blob([data], {type: 'text/plain'})
+    const e = document.createEvent('MouseEvents');
+    const a = document.createElement('a');
+    a.download = "test.json";
+    a.href = window.URL.createObjectURL(blob);
+    a.dataset.downloadurl = ['text/json', a.download, a.href].join(':');
+    e.initEvent('click', true, false);
+    a.dispatchEvent(e);
+  }
   created() {
     this.Survey.onComplete.add(result => {
       this.$store.commit("updateResult", result);
