@@ -159,8 +159,9 @@ function calculateFinalScore(survey: SurveyModel): number[] {
     }
   });
 
-  if (mitigationScore >= percentage * maxMitigationScore) {
-    total = rawRiskScore - rawRiskScore * deduction;
+  //maxMitigationScore is divided by 2 because of Design/Implementation fork
+  if (mitigationScore >= percentage * (maxMitigationScore / 2)) {
+    total = (1 - deduction) * rawRiskScore;
   } else {
     total = rawRiskScore;
   }
