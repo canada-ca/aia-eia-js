@@ -1,11 +1,7 @@
 import Vue from "vue";
 import Vuex, { StoreOptions } from "vuex";
 import { RootState } from "./types";
-import {
-  IQuestion,
-  QuestionSelectBase,
-  SurveyModel,
-} from "survey-vue";
+import { IQuestion, QuestionSelectBase, SurveyModel } from "survey-vue";
 
 Vue.use(Vuex);
 
@@ -193,6 +189,17 @@ const store: StoreOptions<RootState> = {
     }
   },
   getters: {
+    SurveyFile: (state, getters) => {
+      console.log("Loading Survey File");
+      return JSON.stringify({
+        currentPage: getters.getPageNo,
+        data: getters.toolData
+      });
+    },
+    getPageNo: state => {
+      if (state.result === undefined) return 0;
+      return state.result.currentPageNo;
+    },
     calcscore: state => {
       if (state.result === undefined) return [0, 0, 0];
       return calculateFinalScore(state.result);

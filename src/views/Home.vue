@@ -7,44 +7,42 @@
       }}</a>
     </p>
     <form>
-      <input type="button" class="btn btn-primary" value="Save" v-on:click="save"/>
-      <input type="button" class="btn btn-primary" value="Load"/>
+      <SaveLoadFile v-on:fileLoaded="fileLoaded($event)" />
     </form>
     <AssessmentTool :survey="Survey" />
     <Score />
-    
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { Model } from "survey-vue";
+import showdown from "showdown";
+
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import Score from "@/components/Score.vue";
-import { RootState } from "../types";
-import surveyJSON from "../survey-enfr.json";
-import showdown from "showdown";
+import SaveLoadFile from "@/components/SaveLoadFile.vue";
+import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
+import { RootState } from "@/types";
+import surveyJSON from "@/survey-enfr.json";
 
 @Component({
   components: {
     AssessmentTool,
+    SaveLoadFile,
     Score
   }
 })
 export default class Home extends Vue {
-  readonly Survey: Model = new Model(surveyJSON);
-  save() { 
-    const data = JSON.stringify(this.$store.getters.plainData);
-    const blob = new Blob([data], {type: 'text/plain'})
-    const e = document.createEvent('MouseEvents');
-    const a = document.createElement('a');
-    a.download = "test.json";
-    a.href = window.URL.createObjectURL(blob);
-    a.dataset.downloadurl = ['text/json', a.download, a.href].join(':');
-    e.initEvent('click', true, false);
-    a.dispatchEvent(e);
+  Survey: Model = new Model(surveyJSON);
+
+  fileLoaded($event: SurveyFile) {
+    this.Survey.data = $event.data;
+    this.Survey.currentPageNo = $event.currentPage;
+    this.Survey.start();
   }
+
   created() {
     this.Survey.onComplete.add(result => {
       this.$store.commit("updateResult", result);
