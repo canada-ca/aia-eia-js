@@ -2355,14 +2355,14 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": "item2",
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2403,14 +2403,14 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": "item2",
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2451,14 +2451,14 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": "item2",
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -2523,14 +2523,14 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": "item2",
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
