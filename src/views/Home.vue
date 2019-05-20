@@ -6,6 +6,9 @@
         $t("linkProjectText")
       }}</a>
     </p>
+    <form>
+      <SaveLoadFile v-on:fileLoaded="fileLoaded($event)" />
+    </form>
     <AssessmentTool :survey="Survey" />
     <Score />
   </div>
@@ -14,21 +17,32 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { Model } from "survey-vue";
+import showdown from "showdown";
+
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import Score from "@/components/Score.vue";
-import { RootState } from "../types";
-import surveyJSON from "../survey-enfr.json";
-import showdown from "showdown";
+import SaveLoadFile from "@/components/SaveLoadFile.vue";
+import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
+import { RootState } from "@/types";
+import surveyJSON from "@/survey-enfr.json";
 
 @Component({
   components: {
     AssessmentTool,
+    SaveLoadFile,
     Score
   }
 })
 export default class Home extends Vue {
-  readonly Survey: Model = new Model(surveyJSON);
+  Survey: Model = new Model(surveyJSON);
+
+  fileLoaded($event: SurveyFile) {
+    this.Survey.data = $event.data;
+    this.Survey.currentPageNo = $event.currentPage;
+    this.Survey.start();
+  }
+
   created() {
     this.Survey.onComplete.add(result => {
       this.$store.commit("updateResult", result);
