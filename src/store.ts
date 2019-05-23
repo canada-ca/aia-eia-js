@@ -184,7 +184,7 @@ const store: StoreOptions<RootState> = {
     plainData: [],
     result: undefined, 
     currentPageNo: 0,
-    toolData: {}
+    toolData: {},
   },
   mutations: {
     updateResult(state: RootState, result: SurveyModel) {
@@ -197,13 +197,6 @@ const store: StoreOptions<RootState> = {
     }
   },
   getters: {
-    SurveyFile: (state) => {
-      console.log("Loading Survey File");
-      return JSON.stringify({
-        currentPage: state.currentPageNo,
-        data: state.toolData
-      });
-    },
     calcscore: state => {
       if (state.result === undefined) return [0, 0, 0];
       return calculateFinalScore(state.result);
