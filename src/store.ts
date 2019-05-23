@@ -181,46 +181,37 @@ function calculateFinalScore(survey: SurveyModel): number[] {
 
 const store: StoreOptions<RootState> = {
   state: {
-    result: undefined
+    plainData: [],
+    result: undefined, 
+    currentPageNo: 0,
+    toolData: {}
   },
   mutations: {
     updateResult(state: RootState, result: SurveyModel) {
       state.result = result;
+      state.currentPageNo = result.currentPageNo;
+      state.toolData = result.data;
+      state.plainData = result.getPlainData({
+        includeEmpty: false
+      });
     }
   },
   getters: {
-    SurveyFile: (state, getters) => {
+    SurveyFile: (state) => {
       console.log("Loading Survey File");
       return JSON.stringify({
-        currentPage: getters.getPageNo,
-        data: getters.toolData
+        currentPage: state.currentPageNo,
+        data: state.toolData
       });
-    },
-    getPageNo: state => {
-      if (state.result === undefined) return 0;
-      return state.result.currentPageNo;
     },
     calcscore: state => {
       if (state.result === undefined) return [0, 0, 0];
       return calculateFinalScore(state.result);
     },
-    toolData: state => {
-      if (state.result === undefined) return {};
-      return state.result.data;
-    },
-    plainData: state => {
-      if (state.result === undefined) return {};
-      if (state.result.data === undefined) return {};
-      return state.result.getPlainData({
-        includeEmpty: false
-      });
-    },
     resultDataSections: state => {
       if (state.result === undefined) return {};
       if (state.result.data === undefined) return {};
-      var surveyResults = state.result.getPlainData({
-        includeEmpty: false
-      });
+      var surveyResults = state.plainData;
 
       var projectResults: any[] = [];
       var riskResults: any[] = [];

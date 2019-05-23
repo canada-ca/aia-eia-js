@@ -33,13 +33,6 @@ describe("store.ts", () => {
     expect(getter).toEqual([0, 0, 0]);
   });
 
-  it("tooldata getter calculated properly, if data is not defined", () => {
-    store.state.result = undefined;
-
-    const toolDataGetter = store.getters.toolData;
-
-    expect(toolDataGetter).toEqual({});
-  });
 
   it("tooldata getter calculated properly, if state is defined", () => {
     store.state.result = new SurveyModel(surveyJSON);
@@ -59,7 +52,7 @@ describe("store.ts", () => {
 
     store.commit("updateResult", result);
 
-    const toolDataGetter = store.getters.toolData;
+    const toolDataGetter = store.state.toolData;
 
     expect(toolDataGetter).toEqual(result.data);
   });
