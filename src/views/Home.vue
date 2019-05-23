@@ -7,7 +7,10 @@
       }}</a>
     </p>
     <form>
-      <SaveLoadFile v-on:fileLoaded="fileLoaded($event)" />
+      <ActionButtonBar
+        v-on:fileLoaded="fileLoaded($event)"
+        v-on:startAgain="startAgain"
+      />
     </form>
     <AssessmentTool :survey="Survey" />
     <Score />
@@ -21,7 +24,7 @@ import showdown from "showdown";
 
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import Score from "@/components/Score.vue";
-import SaveLoadFile from "@/components/SaveLoadFile.vue";
+import ActionButtonBar from "@/components/ActionButtonBar.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
 import { RootState } from "@/types";
@@ -30,13 +33,17 @@ import surveyJSON from "@/survey-enfr.json";
 @Component({
   components: {
     AssessmentTool,
-    SaveLoadFile,
+    ActionButtonBar,
     Score
   }
 })
 export default class Home extends Vue {
   Survey: Model = new Model(surveyJSON);
 
+  startAgain() {
+    this.Survey.clear(true, true);
+    window.localStorage.clear();
+  }
   fileLoaded($event: SurveyFile) {
     this.Survey.data = $event.data;
     this.Survey.currentPageNo = $event.currentPage;
@@ -102,13 +109,11 @@ export default class Home extends Vue {
       }
     });
 
-    //if answer data was found reload from local storage
-    const obj = this.$store.state.toolData;
-
-    if (!(Object.entries(obj).length === 0 && obj.constructor === Object)) {
+    //if survey is in progress reload from store
+    if (this.$store.getters.inProgress) {
       this.fileLoaded({
         currentPage: this.$store.state.currentPageNo,
-        data: obj
+        data: this.$store.state.toolData
       } as SurveyFile);
     }
   }
