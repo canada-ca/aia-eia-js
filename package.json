@@ -26,10 +26,7 @@
     "vue-property-decorator": "^7.0.0",
     "vue-router": "^3.0.1",
     "vuex": "^3.1.0",
-    "@types/html2canvas": "latest",
-    "@types/jspdf": "latest",
-    "html2canvas": "latest",
-    "jspdf": "latest"
+    "vuex-persist": "^2.0.1"
   },
   "devDependencies": {
     "@types/jest": "^23.1.4",

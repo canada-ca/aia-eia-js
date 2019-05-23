@@ -28,7 +28,7 @@ export default class SaveLoadFile extends Vue {
     const a = document.createElement("a");
     a.download = "SurveyResults.json";
 
-    const saveFile = this.$store.getters.SurveyFile;
+    const saveFile = this.buildSurveyFile();
     const blob = new Blob([saveFile], { type: "text/plain" });
 
     a.href = window.URL.createObjectURL(blob);
@@ -58,7 +58,12 @@ export default class SaveLoadFile extends Vue {
 
     this.loadSurvey(files[0]);
   }
-
+  buildSurveyFile(): string {
+    return JSON.stringify({
+      currentPage: this.$store.state.currentPageNo,
+      data: this.$store.state.toolData
+    });
+  }
   loadSurvey(file: any) {
     const reader = new FileReader();
     reader.onload = (e: ProgressEvent) => {
