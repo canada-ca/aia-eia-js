@@ -24,22 +24,21 @@ import SurveyFile from "@/interfaces/SurveyFile";
 
 @Component
 export default class SaveLoadFile extends Vue {
-  // saveSurvey() {
+  saveSurvey() {
+    const a = document.createElement("a");
+    a.download = "SurveyResults.json";
 
-  //   const a = document.createElement('a');
-  //   a.download = "SurveyResults.json";
+    const saveFile = this.$store.getters.SurveyFile;
+    const blob = new Blob([saveFile], { type: "text/plain" });
 
-  //   const saveFile = this.$store.getters.SurveyFile;
-  //   const blob = new Blob([saveFile], {type: 'text/plain'})
+    a.href = window.URL.createObjectURL(blob);
 
-  //   a.href = window.URL.createObjectURL(blob);
+    a.dataset.downloadurl = ["text/json", a.download, a.href].join(":");
 
-  //   a.dataset.downloadurl = ['text/json', a.download, a.href].join(':');
-
-  //   const e = document.createEvent('MouseEvents');
-  //   e.initEvent('click', true, false);
-  //   a.dispatchEvent(e);
-  // }
+    const e = document.createEvent("MouseEvents");
+    e.initEvent("click", true, false);
+    a.dispatchEvent(e);
+  }
 
   onFileChanged($event: any) {
     if (
