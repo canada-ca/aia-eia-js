@@ -5,7 +5,7 @@
       class="mrgn-bttm-sm btn btn-success"
       v-on:click="saveSurvey"
     >
-      Save
+      {{ $t("saveButton") }}
     </button>
     <input
       type="file"
