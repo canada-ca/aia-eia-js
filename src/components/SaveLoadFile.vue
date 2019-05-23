@@ -58,11 +58,11 @@ export default class SaveLoadFile extends Vue {
 
     this.loadSurvey(files[0]);
   }
-  buildSurveyFile(): string { 
-      return JSON.stringify({
-        currentPage: this.$store.state.currentPageNo,
-        data: this.$store.state.toolData
-      });
+  buildSurveyFile(): string {
+    return JSON.stringify({
+      currentPage: this.$store.state.currentPageNo,
+      data: this.$store.state.toolData
+    });
   }
   loadSurvey(file: any) {
     const reader = new FileReader();

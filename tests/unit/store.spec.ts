@@ -33,7 +33,6 @@ describe("store.ts", () => {
     expect(getter).toEqual([0, 0, 0]);
   });
 
-
   it("tooldata getter calculated properly, if state is defined", () => {
     store.state.result = new SurveyModel(surveyJSON);
 

@@ -1,9 +1,18 @@
 import Vue from "vue";
 import Vuex, { StoreOptions } from "vuex";
+import VuexPersistence from "vuex-persist";
 import { RootState } from "./types";
 import { IQuestion, QuestionSelectBase, SurveyModel } from "survey-vue";
 
 Vue.use(Vuex);
+
+const vuexLocal = new VuexPersistence({
+  storage: window.localStorage,
+  reducer: (state: RootState) => ({
+    toolData: state.toolData,
+    currentPageNo: state.currentPageNo
+  })
+});
 
 function addItemsInArray(val: any[]) {
   let total = 0;
@@ -114,16 +123,10 @@ function getMaxScoreForQuestion(question: QuestionSelectBase): number {
   return max;
 }
 
-function calculateFinalScore(survey: SurveyModel): number[] {
-  const valueNames = survey
-    .getAllQuestions()
-    .filter(question => {
-      return hasScore(question);
-    })
-    .map(question => {
-      return question.name;
-    });
-
+function calculateFinalScore(
+  survey: SurveyModel,
+  questionNames: string[]
+): number[] {
   let rawRiskScore = 0;
   let maxRawRiskScore = 0;
   let maxMitigationScore = 0;
@@ -136,7 +139,7 @@ function calculateFinalScore(survey: SurveyModel): number[] {
   let threshold2 = 0.5;
   let threshold3 = 0.75;
 
-  valueNames.forEach(name => {
+  questionNames.forEach(name => {
     var currentQuestion = survey.getQuestionByName(name);
     var currentQuestionType = getScoreType(currentQuestion);
 
@@ -180,40 +183,52 @@ function calculateFinalScore(survey: SurveyModel): number[] {
 }
 
 const store: StoreOptions<RootState> = {
+  plugins: [vuexLocal.plugin],
   state: {
-    plainData: [],
-    result: undefined, 
+    answerData: [],
+    result: undefined,
     currentPageNo: 0,
     toolData: {},
+    questionNames: []
   },
   mutations: {
     updateResult(state: RootState, result: SurveyModel) {
       state.result = result;
       state.currentPageNo = result.currentPageNo;
-      state.toolData = result.data;
-      state.plainData = result.getPlainData({
+      //freeze this data so we can load from localStorage
+      state.toolData = Object.freeze(result.data);
+      state.answerData = result.getPlainData({
         includeEmpty: false
       });
+
+      if (state.questionNames.length === 0) {
+        state.questionNames = result
+          .getAllQuestions()
+          .filter(question => {
+            return hasScore(question);
+          })
+          .map(question => {
+            return question.name;
+          });
+      }
     }
   },
   getters: {
     calcscore: state => {
       if (state.result === undefined) return [0, 0, 0];
-      return calculateFinalScore(state.result);
+      return calculateFinalScore(state.result, state.questionNames);
     },
     resultDataSections: state => {
       if (state.result === undefined) return {};
-      if (state.result.data === undefined) return {};
-      var surveyResults = state.plainData;
 
       var projectResults: any[] = [];
       var riskResults: any[] = [];
       var mitigationResults: any[] = [];
       var mitigationResultsYes: any[] = [];
 
-      surveyResults.forEach(function(result) {
+      state.answerData.forEach(function(result) {
         var question = state.result!.getQuestionByName(result.name);
-        var scoreType = getScoreType(question);
+        const scoreType = getScoreType(question);
 
         if (scoreType === 1 && question.parent.name === "panel-project-NS") {
           projectResults.push(result);

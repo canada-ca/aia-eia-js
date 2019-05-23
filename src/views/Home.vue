@@ -41,6 +41,7 @@ export default class Home extends Vue {
     this.Survey.data = $event.data;
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
+    this.$store.commit("updateResult", this.Survey);
   }
 
   created() {
@@ -100,6 +101,16 @@ export default class Home extends Vue {
           "</label>";
       }
     });
+
+    //if answer data was found reload from local storage
+    const obj = this.$store.state.toolData;
+
+    if (!(Object.entries(obj).length === 0 && obj.constructor === Object)) {
+      this.fileLoaded({
+        currentPage: this.$store.state.currentPageNo,
+        data: obj
+      } as SurveyFile);
+    }
   }
 }
 </script>
