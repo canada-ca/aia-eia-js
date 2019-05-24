@@ -1,18 +1,33 @@
 <template>
   <div>
+    <ul class="list-inline lst-spaced">
+      <li>
+        <button
+          type="button"
+          class="mrgn-bttm-sm btn btn-success"
+          v-on:click="saveSurvey"
+          v-if="$store.getters.inProgress"
+        >
+          {{ $t("saveButton") }}
+        </button>
+      </li>
+      <li>
+        <input
+          type="file"
+          class="btn btn-default"
+          value="Load"
+          @change="onFileChanged($event)"
+        />
+      </li>
+    </ul>
     <button
       type="button"
-      class="mrgn-bttm-sm btn btn-success"
-      v-on:click="saveSurvey"
-    >
-      {{ $t("saveButton") }}
-    </button>
-    <input
-      type="file"
+      value="Start Over"
       class="btn btn-default"
-      value="Load"
-      @change="onFileChanged($event)"
-    />
+      v-on:click="$emit('startAgain')"
+    >
+      {{ $t("startAgain") }}
+    </button>
   </div>
 </template>
 
@@ -23,7 +38,7 @@ import i18n from "@/plugins/i18n";
 import SurveyFile from "@/interfaces/SurveyFile";
 
 @Component
-export default class SaveLoadFile extends Vue {
+export default class ActionButtonBar extends Vue {
   saveSurvey() {
     const a = document.createElement("a");
     a.download = "SurveyResults.json";

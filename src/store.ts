@@ -3,6 +3,7 @@ import Vuex, { StoreOptions } from "vuex";
 import VuexPersistence from "vuex-persist";
 import { RootState } from "./types";
 import { IQuestion, QuestionSelectBase, SurveyModel } from "survey-vue";
+import isEmpty from "lodash.isempty";
 
 Vue.use(Vuex);
 
@@ -214,6 +215,9 @@ const store: StoreOptions<RootState> = {
     }
   },
   getters: {
+    inProgress: state => {
+      return !isEmpty(state.toolData);
+    },
     calcscore: state => {
       if (state.result === undefined) return [0, 0, 0];
       return calculateFinalScore(state.result, state.questionNames);
