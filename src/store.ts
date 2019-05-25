@@ -240,7 +240,10 @@ const store: StoreOptions<RootState> = {
         var question = state.result!.getQuestionByName(result.name);
         const scoreType = getScoreType(question);
 
-        if (scoreType === 1 && question.parent.name === "projectDetailsPanel-NS") {
+        if (
+          scoreType === 1 &&
+          question.parent.name === "projectDetailsPanel-NS"
+        ) {
           projectResults.push(result);
         } else if (scoreType === 2) {
           riskResults.push(result);
