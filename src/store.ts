@@ -252,6 +252,12 @@ const store: StoreOptions<RootState> = {
           if (result.value > 0) {
             mitigationResultsYes.push(result);
           }
+          if (typeof result.value === "string") {
+            const val = getValue(result.value);
+            if (val > 0) {
+              mitigationResultsYes.push(result);
+            }
+          }
         }
       });
 

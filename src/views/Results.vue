@@ -37,8 +37,10 @@
       <div class="row">
         <h2 id="mitigationMeasures">{{ $t("resultSectionMeasure") }}</h2>
       </div>
-      <div class="row" v-for="result in myResults[3]" :key="result.name">
-        <Result :data="result"></Result>
+      <div class="row">
+        <p v-for="result in myResults[3]" :key="result.name">
+          {{ $t(result.name) }}
+        </p>
       </div>
 
       <div class="row">
