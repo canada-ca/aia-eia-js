@@ -43,6 +43,7 @@ export default class Home extends Vue {
   startAgain() {
     this.Survey.clear(true, true);
     window.localStorage.clear();
+    this.$store.commit("resetSurvey");
   }
   fileLoaded($event: SurveyFile) {
     this.Survey.data = $event.data;

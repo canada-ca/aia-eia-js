@@ -193,6 +193,12 @@ const store: StoreOptions<RootState> = {
     questionNames: []
   },
   mutations: {
+    resetSurvey(state: RootState) {
+      state.answerData = [];
+      state.result = undefined;
+      state.currentPageNo = 0;
+      state.toolData = {};
+    },
     updateResult(state: RootState, result: SurveyModel) {
       state.result = result;
       state.currentPageNo = result.currentPageNo;
