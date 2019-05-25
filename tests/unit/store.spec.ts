@@ -78,7 +78,7 @@ describe("store.ts", () => {
 
     const resultDataSections = store.getters.resultDataSections;
 
-    expect(resultDataSections[0].length).toEqual(0);
+    expect(resultDataSections[0].length).toEqual(7);
     expect(resultDataSections[1].length).toEqual(2);
     expect(resultDataSections[2].length).toEqual(1);
   });
