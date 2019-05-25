@@ -193,6 +193,12 @@ const store: StoreOptions<RootState> = {
     questionNames: []
   },
   mutations: {
+    resetSurvey(state: RootState) {
+      state.answerData = [];
+      state.result = undefined;
+      state.currentPageNo = 0;
+      state.toolData = {};
+    },
     updateResult(state: RootState, result: SurveyModel) {
       state.result = result;
       state.currentPageNo = result.currentPageNo;
@@ -234,7 +240,10 @@ const store: StoreOptions<RootState> = {
         var question = state.result!.getQuestionByName(result.name);
         const scoreType = getScoreType(question);
 
-        if (scoreType === 1 && question.parent.name === "projectDetailsPanel-NS") {
+        if (
+          scoreType === 1 &&
+          question.parent.name === "projectDetailsPanel-NS"
+        ) {
           projectResults.push(result);
         } else if (scoreType === 2) {
           riskResults.push(result);

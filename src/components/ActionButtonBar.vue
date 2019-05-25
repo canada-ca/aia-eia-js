@@ -1,33 +1,42 @@
 <template>
   <div>
-    <ul class="list-inline lst-spaced">
-      <li>
-        <button
-          type="button"
-          class="mrgn-bttm-sm btn btn-success"
-          v-on:click="saveSurvey"
-          v-if="$store.getters.inProgress"
-        >
-          {{ $t("saveButton") }}
-        </button>
-      </li>
-      <li>
-        <input
-          type="file"
-          class="btn btn-default"
-          value="Load"
-          @change="onFileChanged($event)"
-        />
-      </li>
-    </ul>
-    <button
-      type="button"
-      value="Start Over"
-      class="btn btn-default"
-      v-on:click="$emit('startAgain')"
-    >
-      {{ $t("startAgain") }}
-    </button>
+    <div v-if="$store.getters.inProgress">
+      <ul class="list-inline lst-spaced">
+        <li>
+          <button
+            type="button"
+            class="mrgn-bttm-sm btn btn-success"
+            v-on:click="saveSurvey"
+          >
+            {{ $t("saveButton") }}
+          </button>
+        </li>
+        <li>
+          <input
+            type="file"
+            class="btn btn-default"
+            value="Load"
+            @change="onFileChanged($event)"
+          />
+        </li>
+      </ul>
+      <button
+        type="button"
+        value="Start Over"
+        class="btn btn-default"
+        v-on:click="$emit('startAgain')"
+      >
+        {{ $t("startAgain") }}
+      </button>
+    </div>
+    <div v-else>
+      <input
+        type="file"
+        class="btn btn-default"
+        value="Load"
+        @change="onFileChanged($event)"
+      />
+    </div>
   </div>
 </template>
 
