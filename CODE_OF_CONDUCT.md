@@ -1,4 +1,4 @@
-# Code of Conduct for the `aia-eia-js project`
+# Code of Conduct for the `aia-eia-js` project
 
 Contributors to repositories hosted in `aia-eia-js` are expected to follow the Contributor Covenant Code of Conduct, and those working within Government are also expected to follow the Values and Ethics Code for the Public Sector
 
