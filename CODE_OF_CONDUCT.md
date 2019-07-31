@@ -112,7 +112,7 @@ Toutes les plaintes feront l'objet d'un examen et d'une enquête et donneront li
 L'équipe de projet est dans l'obligation de respecter la confidentialité à l'égard du déclarant d'un incident.
 De plus amples détails sur les politiques d'application spécifiques peuvent être affichés séparément.
 
-Les responsables de projet qui ne respectent pas ou n'appliquent pas le Code de conduite en bonne et due formepeuvent faire face à des répercussions temporaires ou permanentes déterminées par d'autres membres de la les membres de la direction du projet.
+Les responsables de projet qui ne respectent pas ou n'appliquent pas le Code de conduite en bonne et due forme peuvent faire face à des répercussions temporaires ou permanentes déterminées par d'autres membres de la les membres de la direction du projet.
 
 ## Attribution [FR]
 

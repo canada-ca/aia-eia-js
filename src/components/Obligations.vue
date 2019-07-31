@@ -29,7 +29,7 @@ import Component from "vue-class-component";
 @Component({
   computed: {
     score: function() {
-      return this.$store.getters.calcscore;
+      return this.$store.getters.calcScore;
     }
   }
 })

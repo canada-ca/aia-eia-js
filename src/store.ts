@@ -145,11 +145,15 @@ function calculateFinalScore(
     var currentQuestionType = getScoreType(currentQuestion);
 
     if (currentQuestionType === 2) {
+      // no real risk of injection since we are just getting a value, worst case it breaks our score
+      // eslint-disable-next-line security/detect-object-injection
       rawRiskScore += getValue(survey.data[name]);
       maxRawRiskScore += getMaxScoreForQuestion(<QuestionSelectBase>(
         currentQuestion
       ));
     } else if (currentQuestionType === 3) {
+      // no real risk of injection since we are just getting a value, worst case it breaks our score
+      // eslint-disable-next-line security/detect-object-injection
       mitigationScore += getValue(survey.data[name]);
       maxMitigationScore += getMaxScoreForQuestion(<QuestionSelectBase>(
         currentQuestion
@@ -224,7 +228,7 @@ const store: StoreOptions<RootState> = {
     inProgress: state => {
       return !isEmpty(state.toolData);
     },
-    calcscore: state => {
+    calcScore: state => {
       if (state.result === undefined) return [0, 0, 0];
       return calculateFinalScore(state.result, state.questionNames);
     },

@@ -3,7 +3,7 @@ import { SurveyModel } from "survey-vue";
 import surveyJSON from "@/survey-enfr.json";
 
 describe("store.ts", () => {
-  it("calcscore getter is properly calculated if data is defined", () => {
+  it("calcScore getter is properly calculated if data is defined", () => {
     store.state.result = new SurveyModel(surveyJSON);
 
     const result = new SurveyModel(surveyJSON);
@@ -21,14 +21,14 @@ describe("store.ts", () => {
 
     store.commit("updateResult", result);
 
-    const calcscore = store.getters.calcscore;
+    const calcScore = store.getters.calcScore;
 
-    expect(calcscore).toEqual([3, 0, 3, 1]);
+    expect(calcScore).toEqual([3, 0, 3, 1]);
   });
 
-  it("calcscore is properly calculated if data is undefined", () => {
+  it("calcScore is properly calculated if data is undefined", () => {
     store.state.result = undefined;
-    const getter = store.getters.calcscore;
+    const getter = store.getters.calcScore;
 
     expect(getter).toEqual([0, 0, 0]);
   });

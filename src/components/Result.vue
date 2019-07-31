@@ -36,8 +36,8 @@ export default class Result extends Vue {
     if (!Array.isArray(data.value)) return false;
 
     //return true if all items are numbers
-    return data.value.reduce((acc: boolean, currval: any) => {
-      return typeof currval === "number" && acc;
+    return data.value.reduce((accumulator: boolean, currentValue: any) => {
+      return typeof currentValue === "number" && accumulator;
     }, true);
   }
 }
