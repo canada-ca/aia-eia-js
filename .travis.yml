@@ -3,12 +3,9 @@ language: node_js
 node_js:
   "lts/*"
 
-install: 
-  npm ci
-  
 script:
-  npm run lint
-  npm run test:unit
-  npm run spellcheck:markdown
-  npm run spellcheck:code
-  npm run spellcheck:questions
+  - npm run lint
+  - npm run test:unit
+  - npm run spellcheck:markdown
+  - npm run spellcheck:code
+  - npm run spellcheck:questions
