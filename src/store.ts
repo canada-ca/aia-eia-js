@@ -228,7 +228,7 @@ const store: StoreOptions<RootState> = {
     inProgress: state => {
       return !isEmpty(state.toolData);
     },
-    calcscore: state => {
+    calcScore: state => {
       if (state.result === undefined) return [0, 0, 0];
       return calculateFinalScore(state.result, state.questionNames);
     },

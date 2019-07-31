@@ -18,7 +18,7 @@ export default class AssessmentTool extends Vue {
   Mounted() {
     const converter = new showdown.Converter();
     this.survey.onTextMarkdown.add(function(survey, options) {
-      //convert the mardown text to html
+      //convert the markdown text to html
       var str = converter.makeHtml(options.text);
       //remove root paragraphs <p></p>
       str = str.substring(3);

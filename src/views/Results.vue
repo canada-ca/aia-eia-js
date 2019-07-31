@@ -87,7 +87,7 @@ import i18n from "@/plugins/i18n";
   },
   computed: {
     score: function() {
-      return this.$store.getters.calcscore;
+      return this.$store.getters.calcScore;
     }
   }
 })

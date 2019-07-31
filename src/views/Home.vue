@@ -68,7 +68,7 @@ export default class Home extends Vue {
     const converter = new showdown.Converter();
 
     this.Survey.onTextMarkdown.add(function(survey, options) {
-      //convert the mardown text to html
+      //convert the markdown text to html
       var str = converter.makeHtml(options.text);
       //remove root paragraphs <p></p>
       str = str.substring(3);
