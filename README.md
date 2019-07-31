@@ -10,7 +10,7 @@ The AIA is a critical piece of the [Directive on Automated Decision-Making](http
 
 The users of this project will be Government of Canada employees assessing the impact of using an automated decision system, including Artificial Intelligence, as part of their programs and services.
 
-As this assessment tool is open source, other countries and individiuals may wish to also leverage it and even contribute back to it.
+As this assessment tool is open source, other countries and individuals may wish to also leverage it and even contribute back to it.
 
 It leverages the [SurveyJS library](https://surveyjs.io/Overview/Library/) to generate questions and answers. The primary source of the content, the file to edit if you want to change the questions and answers, is the `survey-enfr.json`, located in the `/src` folder.
 
@@ -47,7 +47,7 @@ As such, some answers have weights that are used in a specific way in order to p
 The text of the answer, what will be displayed to the users, can then be defined in English and French by assigning the English value to `default` and the French value to `fr`.
 
 To render the web application, we also make use of the Vue.js framework.
-You can see all the components built in `/src/compontents` and all the views in `/src/views`.
+You can see all the components built in `/src/components` and all the views in `/src/views`.
 
 Finally, if you would like to render the web application without the Government of Canada template and branding, you can remove the line 32 of the index.html file which sits in the /public folder.
 
