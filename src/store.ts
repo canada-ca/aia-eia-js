@@ -51,8 +51,14 @@ function parseEmbeddedValue(val: String): number {
   return 0;
 }
 
+function isValidValue(val: any) {
+  return (
+    typeof val === "string" || typeof val === "number" || Array.isArray(val)
+  );
+}
+
 function getValue(val: any) {
-  if (val === undefined) {
+  if (val === undefined || !isValidValue(val)) {
     return 0;
   }
 
@@ -62,10 +68,6 @@ function getValue(val: any) {
 
   if (typeof val === "string") {
     return parseEmbeddedValue(val);
-  }
-
-  if (typeof val !== "number") {
-    return 0;
   }
 
   return val;
