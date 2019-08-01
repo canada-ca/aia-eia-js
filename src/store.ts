@@ -134,7 +134,6 @@ function calculateFinalScore(
   let maxRawRiskScore = 0;
   let maxMitigationScore = 0;
   let mitigationScore = 0;
-  let total = 0;
 
   questionNames.forEach(name => {
     var currentQuestion = survey.getQuestionByName(name);
@@ -157,18 +156,47 @@ function calculateFinalScore(
     }
   });
 
+  let total = calculateTotal(mitigationScore, maxMitigationScore, rawRiskScore);
+
+  let level = getLevel(total, maxRawRiskScore);
+
+  return [rawRiskScore, mitigationScore, total, level];
+}
+
+function calculateTotal(mitigationScore: number, maxMitigationScore: number, rawRiskScore: number): number {
+  let total = 0;
   const percentage = 0.8;
   const deduction = 0.15;
   //maxMitigationScore is divided by 2 because of Design/Implementation fork
   if (mitigationScore >= percentage * (maxMitigationScore / 2)) {
     total = Math.round((1 - deduction) * rawRiskScore);
-  } else {
+  }
+  else {
     total = rawRiskScore;
   }
+  return total;
+}
 
-  let level = getLevel(total, maxRawRiskScore);
-
-  return [rawRiskScore, mitigationScore, total, level];
+function getLevel(total: number, maxRawRiskScore: number) : number {
+  const threshold1 = 0.25;
+  const threshold2 = 0.5;
+  const threshold3 = 0.75;
+  let level : number;
+  if (total <= maxRawRiskScore * threshold1) {
+    level = 1;
+  }
+  else if (total > maxRawRiskScore * threshold1 &&
+    total <= maxRawRiskScore * threshold2) {
+    level = 2;
+  }
+  else if (total > maxRawRiskScore * threshold2 &&
+    total <= maxRawRiskScore * threshold3) {
+    level = 3;
+  }
+  else {
+    level = 4;
+  }
+  return level;
 }
 
 const store: StoreOptions<RootState> = {
@@ -260,26 +288,5 @@ const store: StoreOptions<RootState> = {
 };
 
 
-function getLevel(total: number, maxRawRiskScore: number) : number {
-  const threshold1 = 0.25;
-  const threshold2 = 0.5;
-  const threshold3 = 0.75;
-  let level : number;
-  if (total <= maxRawRiskScore * threshold1) {
-    level = 1;
-  }
-  else if (total > maxRawRiskScore * threshold1 &&
-    total <= maxRawRiskScore * threshold2) {
-    level = 2;
-  }
-  else if (total > maxRawRiskScore * threshold2 &&
-    total <= maxRawRiskScore * threshold3) {
-    level = 3;
-  }
-  else {
-    level = 4;
-  }
-  return level;
-}
 
 export default new Vuex.Store<RootState>(store);
