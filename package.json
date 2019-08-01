@@ -17,6 +17,7 @@
     "spellcheck:questions": "cspell src/plugins/*.json src/survey-enfr.json --color",
     "install:codeclimate": "docker pull codeclimate/codeclimate",
     "codeclimate:analyze": "docker run --tty --rm  --env CODECLIMATE_CODE=\"$PWD\"  --volume \"$PWD\":/code  --volume /var/run/docker.sock:/var/run/docker.sock  --volume /tmp/cc:/tmp/cc  codeclimate/codeclimate analyze",
+    "codeclimate:validate-config": "docker run --tty --rm  --env CODECLIMATE_CODE=\"$PWD\"  --volume \"$PWD\":/code  --volume /var/run/docker.sock:/var/run/docker.sock  --volume /tmp/cc:/tmp/cc  codeclimate/codeclimate validate-config",
     "deploy": "npm run build; push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
