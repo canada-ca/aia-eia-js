@@ -163,37 +163,41 @@ function calculateFinalScore(
   return [rawRiskScore, mitigationScore, total, level];
 }
 
-function calculateTotal(mitigationScore: number, maxMitigationScore: number, rawRiskScore: number): number {
+function calculateTotal(
+  mitigationScore: number,
+  maxMitigationScore: number,
+  rawRiskScore: number
+): number {
   let total = 0;
   const percentage = 0.8;
   const deduction = 0.15;
   //maxMitigationScore is divided by 2 because of Design/Implementation fork
   if (mitigationScore >= percentage * (maxMitigationScore / 2)) {
     total = Math.round((1 - deduction) * rawRiskScore);
-  }
-  else {
+  } else {
     total = rawRiskScore;
   }
   return total;
 }
 
-function getLevel(total: number, maxRawRiskScore: number) : number {
+function getLevel(total: number, maxRawRiskScore: number): number {
   const threshold1 = 0.25;
   const threshold2 = 0.5;
   const threshold3 = 0.75;
-  let level : number;
+  let level: number;
   if (total <= maxRawRiskScore * threshold1) {
     level = 1;
-  }
-  else if (total > maxRawRiskScore * threshold1 &&
-    total <= maxRawRiskScore * threshold2) {
+  } else if (
+    total > maxRawRiskScore * threshold1 &&
+    total <= maxRawRiskScore * threshold2
+  ) {
     level = 2;
-  }
-  else if (total > maxRawRiskScore * threshold2 &&
-    total <= maxRawRiskScore * threshold3) {
+  } else if (
+    total > maxRawRiskScore * threshold2 &&
+    total <= maxRawRiskScore * threshold3
+  ) {
     level = 3;
-  }
-  else {
+  } else {
     level = 4;
   }
   return level;
@@ -278,11 +282,13 @@ const store: StoreOptions<RootState> = {
   }
 };
 
-
-
 export default new Vuex.Store<RootState>(store);
 
-function dealWithScoreType3(mitigationResults: any[], result: any, mitigationResultsYes: any[]) {
+function dealWithScoreType3(
+  mitigationResults: any[],
+  result: any,
+  mitigationResultsYes: any[]
+) {
   mitigationResults.push(result);
   if (result.value > 0) {
     mitigationResultsYes.push(result);
