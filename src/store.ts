@@ -135,12 +135,6 @@ function calculateFinalScore(
   let maxMitigationScore = 0;
   let mitigationScore = 0;
   let total = 0;
-  let percentage = 0.8;
-  let deduction = 0.15;
-  let level = 0;
-  let threshold1 = 0.25;
-  let threshold2 = 0.5;
-  let threshold3 = 0.75;
 
   questionNames.forEach(name => {
     var currentQuestion = survey.getQuestionByName(name);
@@ -163,6 +157,8 @@ function calculateFinalScore(
     }
   });
 
+  const percentage = 0.8;
+  const deduction = 0.15;
   //maxMitigationScore is divided by 2 because of Design/Implementation fork
   if (mitigationScore >= percentage * (maxMitigationScore / 2)) {
     total = Math.round((1 - deduction) * rawRiskScore);
@@ -170,21 +166,7 @@ function calculateFinalScore(
     total = rawRiskScore;
   }
 
-  if (total <= maxRawRiskScore * threshold1) {
-    level = 1;
-  } else if (
-    total > maxRawRiskScore * threshold1 &&
-    total <= maxRawRiskScore * threshold2
-  ) {
-    level = 2;
-  } else if (
-    total > maxRawRiskScore * threshold2 &&
-    total <= maxRawRiskScore * threshold3
-  ) {
-    level = 3;
-  } else {
-    level = 4;
-  }
+  let level = getLevel(total, maxRawRiskScore);
 
   return [rawRiskScore, mitigationScore, total, level];
 }
@@ -276,5 +258,28 @@ const store: StoreOptions<RootState> = {
     }
   }
 };
+
+
+function getLevel(total: number, maxRawRiskScore: number) : number {
+  const threshold1 = 0.25;
+  const threshold2 = 0.5;
+  const threshold3 = 0.75;
+  let level : number;
+  if (total <= maxRawRiskScore * threshold1) {
+    level = 1;
+  }
+  else if (total > maxRawRiskScore * threshold1 &&
+    total <= maxRawRiskScore * threshold2) {
+    level = 2;
+  }
+  else if (total > maxRawRiskScore * threshold2 &&
+    total <= maxRawRiskScore * threshold3) {
+    level = 3;
+  }
+  else {
+    level = 4;
+  }
+  return level;
+}
 
 export default new Vuex.Store<RootState>(store);
