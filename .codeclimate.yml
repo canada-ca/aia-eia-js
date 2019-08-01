@@ -1,0 +1,12 @@
+plugins:
+  git-legal: 
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript:
+exclude_paths:
+- spec/**/*
+- node_modules/*
+- build/**
