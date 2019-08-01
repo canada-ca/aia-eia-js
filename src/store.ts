@@ -247,10 +247,10 @@ const store: StoreOptions<RootState> = {
     resultDataSections: state => {
       if (state.result === undefined) return {};
 
-      var projectResults: any[] = [];
-      var riskResults: any[] = [];
-      var mitigationResults: any[] = [];
-      var mitigationResultsYes: any[] = [];
+      let projectResults: any[] = [];
+      let riskResults: any[] = [];
+      let mitigationResults: any[] = [];
+      let mitigationResultsYes: any[] = [];
 
       state.answerData.forEach(function(result) {
         var question = state.result!.getQuestionByName(result.name);
@@ -264,16 +264,7 @@ const store: StoreOptions<RootState> = {
         } else if (scoreType === 2) {
           riskResults.push(result);
         } else if (scoreType === 3) {
-          mitigationResults.push(result);
-          if (result.value > 0) {
-            mitigationResultsYes.push(result);
-          }
-          if (typeof result.value === "string") {
-            const val = getValue(result.value);
-            if (val > 0) {
-              mitigationResultsYes.push(result);
-            }
-          }
+          dealWithScoreType3(mitigationResults, result, mitigationResultsYes);
         }
       });
 
@@ -290,3 +281,16 @@ const store: StoreOptions<RootState> = {
 
 
 export default new Vuex.Store<RootState>(store);
+
+function dealWithScoreType3(mitigationResults: any[], result: any, mitigationResultsYes: any[]) {
+  mitigationResults.push(result);
+  if (result.value > 0) {
+    mitigationResultsYes.push(result);
+  }
+  if (typeof result.value === "string") {
+    const val = getValue(result.value);
+    if (val > 0) {
+      mitigationResultsYes.push(result);
+    }
+  }
+}
