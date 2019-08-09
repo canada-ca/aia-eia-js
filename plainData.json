@@ -358,7 +358,7 @@
   },
   {
     "name": "multi-sources",
-    "title": "Will the system data use from multiple different sources?",
+    "title": "Will the system use data from multiple different sources?",
     "value": 0,
     "displayValue": "No",
     "isNode": false,
