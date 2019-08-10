@@ -1,5 +1,5 @@
 <style>
-section.midpage {
+section.above-fold {
   position: fixed;
   top: 50%;
   right: 0;
@@ -11,7 +11,7 @@ p {
 }
 </style>
 <template>
-  <section :class="alertclass" class="midpage" id="score">
+  <section :class="alertclass" class="above-fold" id="score">
     <p>{{ $t("riskLevel") }} {{ score[3] }}</p>
     <p>{{ $t("currentScore") }} {{ score[2] }}</p>
     <p>{{ $t("rawRiskScore") }} {{ score[0] }}</p>
