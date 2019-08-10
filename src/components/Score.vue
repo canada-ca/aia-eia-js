@@ -1,5 +1,5 @@
 <style>
-section.above-fold {
+.above-fold {
   position: fixed;
   top: 50%;
   right: 0;
@@ -7,12 +7,15 @@ section.above-fold {
   width: 230px;
   z-index: 1000;
 }
+.above-fold-fr {
+  width: 280px !important;
+}
 p {
   float: right;
 }
 </style>
 <template>
-  <section :class="alertclass" class="above-fold" id="score">
+  <section :class="alertclass" id="score">
     <p>{{ $t("riskLevel") }} {{ score[3] }}</p>
     <p>{{ $t("currentScore") }} {{ score[2] }}</p>
     <p>{{ $t("rawRiskScore") }} {{ score[0] }}</p>
@@ -24,6 +27,15 @@ p {
 import { Component, Vue } from "vue-property-decorator";
 import { Getter } from "vuex";
 import { Model } from "survey-vue";
+import i18n from "@/plugins/i18n";
+import surveyJSON from "@/survey-enfr.json";
+
+let scorePanel = "above-fold";
+let Survey: Model = new Model(surveyJSON);
+Survey.locale = i18n.locale;
+if (Survey && Survey.locale) {
+  scorePanel += " above-fold-fr"
+}
 
 @Component({
   computed: {
@@ -31,11 +43,14 @@ import { Model } from "survey-vue";
       return this.$store.getters.calcScore;
     },
     alertclass: function() {
+      props: {
+        scorePanel: String
+      }
       const score = this.$store.getters.calcScore[3];
-      if (score === undefined || score === 1) return "alert alert-success";
-      if (score === 2) return "alert alert-info";
-      if (score === 3) return "alert alert-warning";
-      if (score === 4) return "alert alert-danger";
+      if (score === undefined || score === 1) return scorePanel + " alert alert-success";
+      if (score === 2) return scorePanel + " alert alert-info";
+      if (score === 3) return scorePanel + " alert alert-warning";
+      if (score === 4) return scorePanel + " alert alert-danger";
       /*const score = this.$store.getters.calcScore[2];
       if (score <= 18) return "alert alert-success";
       if (score > 18 && score <= 36) return "alert alert-info";
@@ -44,5 +59,12 @@ import { Model } from "survey-vue";
     }
   }
 })
-export default class Score extends Vue {}
+export default class Score extends Vue {
+  created() {
+    Survey.locale = i18n.locale;
+    if (Survey && Survey.locale) {
+      scorePanel += " above-fold-fr"
+    }
+  }
+}
 </script>
