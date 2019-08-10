@@ -1,5 +1,17 @@
+<style>
+section.midpage {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  border: 2px solid #4CAF50;
+  width: 230px;
+}
+p {
+  float: right;
+}
+</style>
 <template>
-  <section :class="alertclass" id="score">
+  <section :class="alertclass" class="midpage" id="score">
     <p>{{ $t("riskLevel") }} {{ score[3] }}</p>
     <p>{{ $t("currentScore") }} {{ score[2] }}</p>
     <p>{{ $t("rawRiskScore") }} {{ score[0] }}</p>
