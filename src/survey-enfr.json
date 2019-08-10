@@ -1787,7 +1787,7 @@
                             "type": "radiogroup",
                             "name": "aboutDataSource4",
                             "title": {
-                                "default": "Will the system data use from multiple different sources?",
+                                "default": "Will the system use data from multiple different sources?",
                                 "fr": "Les données utilisées par le système proviendront-elles de plusieurs sources différentes?"
                             },
                             "choices": [
