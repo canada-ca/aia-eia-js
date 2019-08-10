@@ -5,6 +5,7 @@ section.above-fold {
   right: 0;
   border: 2px solid #4CAF50;
   width: 230px;
+  z-index: 1000;
 }
 p {
   float: right;
