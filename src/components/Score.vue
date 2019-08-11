@@ -3,7 +3,7 @@
   position: fixed;
   top: 50%;
   right: 0;
-  border: 2px solid #4CAF50;
+  border: 2px solid #4caf50;
   width: 230px;
   z-index: 1000;
 }
@@ -34,7 +34,7 @@ let scorePanel = "above-fold";
 let Survey: Model = new Model(surveyJSON);
 Survey.locale = i18n.locale;
 if (Survey && Survey.locale) {
-  scorePanel += " above-fold-fr"
+  scorePanel += " above-fold-fr";
 }
 
 @Component({
@@ -43,9 +43,6 @@ if (Survey && Survey.locale) {
       return this.$store.getters.calcScore;
     },
     alertclass: function() {
-      props: {
-        scorePanel: String
-      }
       const score = this.$store.getters.calcScore[3];
       if (score === undefined || score === 1) return scorePanel + " alert alert-success";
       if (score === 2) return scorePanel + " alert alert-info";
@@ -63,7 +60,7 @@ export default class Score extends Vue {
   created() {
     Survey.locale = i18n.locale;
     if (Survey && Survey.locale) {
-      scorePanel += " above-fold-fr"
+      scorePanel += " above-fold-fr";
     }
   }
 }
