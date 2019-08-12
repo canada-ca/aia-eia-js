@@ -7,7 +7,7 @@
     "hrsdc",
     "rhdcc",
     "charest",
-    "guillaume", 
+    "guillaume",
     "wordmark",
     "Trollage",
     "enfr",
@@ -35,7 +35,8 @@
     "Telefilm",
     "anonymized",
     "postsecondaire",
-    "EFVP"
+    "EFVP",
+    "toggleable"
   ],
   "flagWords": [],
   "import": ["./node_modules/cspell-dict-fr-fr/cspell-ext.json"],
