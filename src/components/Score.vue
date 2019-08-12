@@ -1,41 +1,32 @@
 <style>
-.above-fold {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  border: 2px solid #4caf50;
-  width: 230px;
-  z-index: 1000;
-}
-.above-fold-fr {
-  width: 280px !important;
-}
-p {
-  float: right;
+.scoreClass {
+  font-size: 0.8em !important;
 }
 </style>
 <template>
-  <section :class="alertclass" id="score">
-    <p>{{ $t("riskLevel") }} {{ score[3] }}</p>
-    <p>{{ $t("currentScore") }} {{ score[2] }}</p>
-    <p>{{ $t("rawRiskScore") }} {{ score[0] }}</p>
-    <p>{{ $t("mitigationScore") }} {{ score[1] }}</p>
-  </section>
+  <b-navbar toggleable="lg" type="dark" variant="info" :sticky="true" fixed="bottom">
+    <b-navbar-brand href="#">AIA SCORE</b-navbar-brand>
+
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+
+      <b-container>
+        <b-row :class="alertclass" :no-gutters="true">
+          <b-col>{{ $t("riskLevel") }}: {{ score[3] }}</b-col>
+          <b-col>{{ $t("currentScore") }}: {{ score[2] }}</b-col>
+          <b-col>{{ $t("rawRiskScore") }}: {{ score[0] }}</b-col>
+          <b-col>{{ $t("mitigationScore") }}: {{ score[1] }}</b-col>
+        </b-row>
+      </b-container>
+
+    </b-collapse>
+  </b-navbar>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { Getter } from "vuex";
-import { Model } from "survey-vue";
-import i18n from "@/plugins/i18n";
-import surveyJSON from "@/survey-enfr.json";
-
-let scorePanel = "above-fold";
-let Survey: Model = new Model(surveyJSON);
-Survey.locale = i18n.locale;
-if (Survey && Survey.locale) {
-  scorePanel += " above-fold-fr";
-}
 
 @Component({
   computed: {
@@ -44,10 +35,10 @@ if (Survey && Survey.locale) {
     },
     alertclass: function() {
       const score = this.$store.getters.calcScore[3];
-      if (score === undefined || score === 1) return scorePanel + " alert alert-success";
-      if (score === 2) return scorePanel + " alert alert-info";
-      if (score === 3) return scorePanel + " alert alert-warning";
-      if (score === 4) return scorePanel + " alert alert-danger";
+      if (score === undefined || score === 1) return "scoreClass alert alert-success";
+      if (score === 2) return "scoreClass alert alert-info";
+      if (score === 3) return "scoreClass alert alert-warning";
+      if (score === 4) return "scoreClass alert alert-danger";
       /*const score = this.$store.getters.calcScore[2];
       if (score <= 18) return "alert alert-success";
       if (score > 18 && score <= 36) return "alert alert-info";
@@ -56,12 +47,5 @@ if (Survey && Survey.locale) {
     }
   }
 })
-export default class Score extends Vue {
-  created() {
-    Survey.locale = i18n.locale;
-    if (Survey && Survey.locale) {
-      scorePanel += " above-fold-fr";
-    }
-  }
-}
+export default class Score extends Vue {}
 </script>
