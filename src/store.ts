@@ -31,6 +31,7 @@ function hasScore(question: IQuestion): boolean {
   if (
     question.getType() === "radiogroup" ||
     question.getType() === "checkbox" ||
+    question.getType() === "rating" ||
     question.getType() === "dropdown"
   ) {
     // Check the suffix for "-RS" or "-MS" for valid score questions.
@@ -118,6 +119,13 @@ function getMaxScoreForQuestion(question: QuestionSelectBase): number {
     question.choices.forEach(item => {
       value = getValue(item.itemValue);
       max += value;
+    });
+  } else if (questionType == "rating") {
+    question.rateValues.forEach(item => {
+      value = getValue(item.itemValue);
+      if (max < value) {
+        max = value;
+      }
     });
   }
 
