@@ -2,33 +2,51 @@
 .scoreClass {
   font-size: 0.8em !important;
 }
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+}
 </style>
 <template>
-  <b-navbar toggleable="lg" type="dark" variant="info" :sticky="true" fixed="bottom">
-    <b-navbar-brand href="#">AIA SCORE</b-navbar-brand>
-
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-    <b-collapse id="nav-collapse" is-nav>
-
-      <b-container>
-        <b-row :class="alertclass" :no-gutters="true">
-          <b-col>{{ $t("riskLevel") }}: {{ score[3] }}</b-col>
-          <b-col>{{ $t("currentScore") }}: {{ score[2] }}</b-col>
-          <b-col>{{ $t("rawRiskScore") }}: {{ score[0] }}</b-col>
-          <b-col>{{ $t("mitigationScore") }}: {{ score[1] }}</b-col>
-        </b-row>
-      </b-container>
-
-    </b-collapse>
-  </b-navbar>
+  <b-container class="sticky">
+    <b-row :class="alertclass" :no-gutters="true" v-if="!isMobile()">
+      <b-col>{{ $t("riskLevel") }}: {{ score[3] }}</b-col>
+      <b-col>{{ $t("currentScore") }}: {{ score[2] }}</b-col>
+      <b-col>{{ $t("rawRiskScore") }}: {{ score[0] }}</b-col>
+      <b-col>{{ $t("mitigationScore") }}: {{ score[1] }}</b-col>
+    </b-row>
+      <b-row :class="alertclass" :no-gutters="true" v-if="isMobile()">
+      <b-col>IL: {{ score[3] }}</b-col>
+      <b-col>CS: {{ score[2] }}</b-col>
+      <b-col>RS: {{ score[0] }}</b-col>
+      <b-col>MS: {{ score[1] }}</b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { Getter } from "vuex";
 
+// define a mixin object
+var myMixin = {
+  methods: {
+    isMobile: function () {
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        console.log('Is Mobile');
+        return true;
+      } else {
+        console.log('Not Mobile');
+        return false;
+      }
+    }
+  }
+}
+
+
 @Component({
+  mixins: [myMixin],
   computed: {
     score: function() {
       return this.$store.getters.calcScore;
@@ -47,5 +65,6 @@ import { Getter } from "vuex";
     }
   }
 })
+
 export default class Score extends Vue {}
 </script>
