@@ -1,3 +1,9 @@
 div.sv_qstn_error_top  span.glyphicon-exclamation-sign {
     display: none
 }
+.progress {
+  height: 23px !important;
+}
+.checkbox label, .radio label {
+  padding-left: 30px !important;
+}
