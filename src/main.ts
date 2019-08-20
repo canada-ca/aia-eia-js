@@ -12,7 +12,7 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 
-StylesManager.applyTheme("bootstrap");
+StylesManager.applyTheme("bootstrapmaterial");
 
 new Vue({
   created() {
