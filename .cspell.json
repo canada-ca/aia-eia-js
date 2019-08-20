@@ -36,7 +36,8 @@
     "anonymized",
     "postsecondaire",
     "EFVP",
-    "toggleable"
+    "toggleable",
+    "mixins"
   ],
   "flagWords": [],
   "import": ["./node_modules/cspell-dict-fr-fr/cspell-ext.json"],
