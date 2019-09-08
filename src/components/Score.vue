@@ -1,6 +1,7 @@
 <style>
 .scoreClass {
   font-size: 0.8em !important;
+  display: flex !important;
 }
 .sticky {
   position: -webkit-sticky; /* Safari */
