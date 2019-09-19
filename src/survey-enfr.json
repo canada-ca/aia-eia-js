@@ -14,7 +14,7 @@
                     "html": {
                         "default": "This is a work in progress and changes are being made on a daily basis to the application. You can follow its development and even participate by joining us on GitHub at the link above.</br></br>If you find a bug or if you encounter a problem, please create an <a href='https://github.com/canada-ca/aia-eia-js/issues' target='_blank'>issue on the project site.</a><h3>Can I use this project for my government or company?</h3>Yes, this is an open source project released under the MIT licence and you are welcome to use it for your own needs. See the link above for the project repository.<br><br>Please provide notice of licence and attribution of the work where required.<h3>What is the Algorithmic Impact Assessment?</h3>The AIA is a questionnaire designed to help you assess and mitigate the impacts associated with deploying an automated decision system. The AIA also helps identify the impact level of your automated decision system under the Directive on Automated Decision-Making. The questions are focused on your business processes, your data, and your system design decisions.<h3>How does it work?</h3>The questionnaire asks you around 60 questions related to your business process, data and system designed decisions. The results will demonstrate your impact level as well as a link where you can learn about what your requirements are under the Directive. The questionnaire takes at least 35 minutes to complete.<h3>Where can I find out why my system was rated a certain level?</h3>When you complete the questionnaire, a detailed results page will be displayed. You can print it or save it as PDF.<h3>Can I save my responses and complete the questionnaire later?</h3>Yes. When you want to save your progress, click on the 'Save' button at the top of the window and save the JSON file (machine readable structure text document) to your local folders. If you want to continue where you left off, click on the 'Choose file' button and select your saved JSON file.<h3>Do you store my answers?</h3>No. We don't store your responses and data only remains within your browser's local storage. Feel free to use this tool as many times as you need along the development of your system. </br></br>All data will be deleted if you click on the button 'Start over'",
                         "fr": "Ceci est un travail en cours et de nombreux changements ont lieu chaque jour. Vous pouvez suivre le développement de l'application et même y participer en nous rejoignant sur le lien GitHub ici-haut.</br></br>Si vous découvrez un bogue ou si vous rencontrez un problème, nous vous prions de bien vouloir créer un <a href='https://github.com/canada-ca/aia-eia-js/issues' target='_blank'>billet sur le projet</a><h3>Puis-je utiliser ce projet pour mon gouvernement ou ma compagnie?</h3>Oui, il s'agit d'un projet de logiciel libre publié sous la licence MIT et vous pouvez l'utiliser pour vos propres besoins. Veuillez consulter le lien ici-haut pour accéder au répertoire du projet.<br><br>Nous vous prions de bien vouloir inclure la licence et attribuer le travail où cela est requis.<h3>Qu'est-ce que l'évaluation d'impact algorithmique?</h3>L'EIA est un questionnaire conçu pour vous aider à évaluer et à atténuer les risques associés au déploiement d'un système de prise de décision automatisé. L'EIA permet également d'identifier le niveau d'impact de votre système de décision automatisé en vertu de la directive proposée sur la prise de décision automatisée. Les questions portent sur vos processus métier, vos données et vos décisions de conception de système.<h3>Comment ça marche?</h3>Ce questionnaire vous demande environ 60 questions liées à vos processus métier, à vos données et à vos décisions en matière de système. Les résultats démontreront votre niveau d'impact ainsi qu'un lien vous permettant de connaître vos exigences en vertu de la directive. Le questionnaire prend plus de 35 minutes à compléter.<h3>Où puis-je savoir pourquoi mon système a été évalué à un certain niveau?</h3>Lorsque vous aurez complété le questionnaire, une page de résultats détaillés vous sera présentée. Vous pouvez imprimer la page ou encore l'enregistrer en format PDF</br></br>Davantage de fonctionnalités seront ajoutées dans le futur afin de vous permettre de sauvegarder vos résultats.<h3>Puis-je sauvegarder mes réponses et remplir le questionnaire plus tard?</h3>Oui. Lorsque vous voulez sauvegarder votre progrès, cliquez sur le bouton 'Sauvegarder' en haut de la fenêtre et enregistrez le fichier JSON (un format texte structuré). Si vous voulez poursuivre à partir d'une sauvegarde, cliquez sur 'Choisir un fichier' et choisissez votre fichier JSON.<h3>Est-ce que vous sauvegardez mes réponses?</h3>Non, nous ne stockons pas vos réponses et les données saisies résident uniquement dans votre ordinateur. N'hésitez pas à utiliser cet outil autant de fois que nécessaire pendant le développement de votre système.</br></br>Toutes les données saisies seront instantanément effacées si vous cliquez sur le bouton 'Recommencer'.",
-                        "es": "Este es un trabajo en progreso y muchos cambios están ocurriendo cada día. Puedes seguir el desarrollo de la aplicación e incluso participar uniéndote a nosotros en el <a href='https://github.com/canada-ca/aia-eia-js/issues' target='_blank'>enlace de GitHub </a><h3>¿Puedo usar este proyecto para mi gobierno o empresa?</h3>Sí, es un proyecto de software libre publicado bajo la licencia del MIT y puedes usarlo para tus propias necesidades. Consulta el enlace anterior para acceder al directorio del proyecto. <br><br><br><br>Por favor, incluye la licencia y asigna el trabajo donde sea necesario. <h3>¿Qué es la Evaluación de Impacto Algorítmico? </h3>El EIA es un cuestionario diseñado para ayudarle a evaluar y mitigar los riesgos asociados con el despliegue de un sistema automatizado de toma de decisiones. La EIA también identifica el nivel de impacto de su sistema automatizado de toma de decisiones según la directiva propuesta sobre la toma de decisiones automatizada. Las preguntas se centran en sus procesos de negocio, datos y decisiones de diseño de sistemas. <h3>Cómo funciona. </h3>Este cuestionario le hace unas 60 preguntas relacionadas con sus procesos de negocio, datos y decisiones de sistema. Los resultados demostrarán su nivel de impacto y un vínculo con sus requisitos en virtud de la Directiva. El cuestionario tarda más de 35 minutos en completarse. <h3>¿Dónde puedo averiguar por qué mi sistema ha sido evaluado a un determinado nivel? </h3>Después de que haya completado el cuestionario, se le presentará una página de resultados detallados. Puede imprimir la página o guardarla en PDF</br></br></br> Más características serán añadidas en el futuro para permitirle guardar sus resultados. <h3>¿Puedo guardar mis respuestas y completar el cuestionario más tarde? </h3>Sí. Cuando quiera guardar su progreso, haga clic en el botón 'Guardar' en la parte superior de la ventana y guarde el archivo JSON (un formato de texto estructurado). Si desea continuar desde una copia de seguridad, haga clic en'Elegir un archivo' y elija su archivo JSON. <h3>¿Guardan mis respuestas? </h3>No, no almacenamos sus respuestas y los datos introducidos residen sólo en su ordenador. Siéntase libre de utilizar esta herramienta tantas veces como sea necesario durante el desarrollo de su sistema. </br></br> Todos los datos introducidos se borrarán instantáneamente si hace clic en el botón 'Reiniciar'."
+                        "es": "Este es un trabajo en progreso y muchos cambios están ocurriendo cada día. Puedes seguir el desarrollo de la aplicación e incluso participar uniéndote a nosotros en el <a href='https://github.com/canada-ca/aia-eia-js/issues' target='_blank'>enlace de GitHub </a><h3>¿Puedo usar este proyecto para mi gobierno o empresa?</h3>Sí, es un proyecto de software libre publicado bajo la licencia del MIT y puedes usarlo para tus propias necesidades. Consulta el enlace anterior para acceder al directorio del proyecto. <br><br><br><br>Por favor, incluye la licencia y asigna el trabajo donde sea necesario. <h3>¿Qué es la Evaluación de Impacto Algorítmico? </h3>El EIA es un cuestionario diseñado para ayudarle a evaluar y mitigar los riesgos asociados con el despliegue de un sistema automatizado de toma de decisiones. La EIA también identifica el nivel de impacto de su sistema automatizado de toma de decisiones según la directiva propuesta sobre la toma de decisiones automatizada. Las preguntas se centran en sus procesos de negocio, datos y decisiones de diseño de sistemas. <h3>Cómo funciona. </h3>Este cuestionario le hace unas 60 preguntas relacionadas con sus procesos de negocio, datos y decisiones de sistema. Los resultados demostrarán su nivel de impacto y un vínculo con sus requisitos en virtud de la Directiva. El cuestionario tarda más de 35 minutos en completarse. <h3>¿Dónde puedo averiguar por qué mi sistema ha sido evaluado a un determinado nivel? </h3>Después de que haya completado el cuestionario, se le presentará una página de resultados detallados. Puede imprimir la página o guardarla en PDF</br></br></br> Más características serán añadidas en el futuro para permitirle guardar sus resultados. <h3>¿Puedo guardar mis respuestas y completar el cuestionario más tarde? </h3>Sí. Cuando quiera guardar su progreso, haga clic en el botón 'Guardar' en la parte superior de la ventana y guarde el archivo JSON (un formato de texto estructurado). Si desea continuar desde una copia de seguridad, haga clic en 'Elegir un archivo' y elija su archivo JSON. <h3>¿Guardan mis respuestas? </h3>No, no almacenamos sus respuestas y los datos introducidos residen sólo en su ordenador. Siéntase libre de utilizar esta herramienta tantas veces como sea necesario durante el desarrollo de su sistema. </br></br> Todos los datos introducidos se borrarán instantáneamente si hace clic en el botón 'Reiniciar'."
                     }
                 }
             ]
@@ -31,11 +31,13 @@
                             "name": "projectDetailsRespondent",
                             "title": {
                                 "default": "Name of Respondent",
-                                "fr": "Nom de la personne sondée"
+                                "fr": "Nom de la personne sondée",
+                                "es": "Nombre del encuestado"
                             },
                             "description": {
                                 "default": "The name of the respondent is the name of the person that answers the questions.",
-                                "fr": "Le nom de la personne répondant aux questions."
+                                "fr": "Le nom de la personne répondant aux questions.",
+                                "es": "Nombre de la persona que responde las preguntas."
                             }
                         },
                         {
@@ -43,7 +45,8 @@
                             "name": "projectDetailsJob",
                             "title": {
                                 "default": "Job Title",
-                                "fr": "Titre du poste"
+                                "fr": "Titre du poste",
+                                "es": "Título profesional"
                             }
                         },
                         {
@@ -51,7 +54,8 @@
                             "name": "projectDetailsDepartment-NS",
                             "title": {
                                 "default": "Department",
-                                "fr": "Ministère"
+                                "fr": "Ministère",
+                                "es": "Organización"
                             },
                             "choices": [
                                 {
@@ -769,7 +773,8 @@
                             "name": "projectDetailsBranch",
                             "title": {
                                 "default": "Branch",
-                                "fr": "Direction"
+                                "fr": "Direction",
+                                "es": "Dirección"
                             }
                         },
                         {
@@ -777,7 +782,8 @@
                             "name": "projectDetailsTitle",
                             "title": {
                                 "default": "Project Title",
-                                "fr": "Titre du projet"
+                                "fr": "Titre du projet",
+                                "es": "Título del proyecto"
                             }
                         },
                         {
@@ -785,7 +791,8 @@
                             "name": "projectDetailsID",
                             "title": {
                                 "default": "Project ID from IT Plan",
-                                "fr": "Identifiant du projet provenant du Plan TI"
+                                "fr": "Identifiant du projet provenant du Plan TI",
+                                "es": "identificador del proyecto"
                             }
                         },
                         {
@@ -801,7 +808,8 @@
                             "name": "projectDetailsPhase",
                             "title": {
                                 "default": "Project Phase",
-                                "fr": "Phase du projet"
+                                "fr": "Phase du projet",
+                                "es": "Fase del proyecto"
                             },
                             "isRequired": true,
                             "choices": [
@@ -813,7 +821,8 @@
                                     "value": "item2",
                                     "text": {
                                         "default": "Implementation",
-                                        "fr": "Implémentation"
+                                        "fr": "Implémentation",
+                                        "es": "Implementación"
                                     }
                                 }
                             ]
@@ -823,7 +832,8 @@
                             "name": "projectDetailsDescription",
                             "title": {
                                 "default": "Please provide a project description:",
-                                "fr": "Veuillez fournir une description du projet :"
+                                "fr": "Veuillez fournir une description du projet :",
+                                "es": "Por favor, describa su proyecto"
                             }
                         }
                     ]
@@ -831,7 +841,8 @@
             ],
             "title": {
                 "default": "Project Details",
-                "fr": "Détails du projet"
+                "fr": "Détails du projet",
+                "es": "Detalles del proyecto"
             }
         },
         {
@@ -1139,7 +1150,7 @@
                                     "text": {
                                         "default": "Process optimization & workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows",
                                         "fr": "Optimisation des processus et automatisation des flux de travail:    Analyser de vastes jeux de connées pour déterminer et corriger les anomalies, les modèles de grappes, prévoir les résultats ou les façons d'optimiser; et d'automatiser des flux de travail spécifique.",
-                                        "es": "Optimización de procesos y automatización del flujo de trabajo: análisis de grandes conjuntos de datos para identificar anomalías, patrones, predecir resultados o proponer formas de automatizar y optimizar flujos de trabajo específicos."
+                                        "es": "Optimizar de procesos y automatización del flujo de trabajo: análisis de grandes conjuntos de datos para identificar anomalías, patrones, predecir resultados o proponer formas de automatizar y optimizar flujos de trabajo específicos."
                                     }
                                 },
                                 {
@@ -1466,7 +1477,7 @@
                             "title": {
                                 "default": "Are the impacts resulting from the decision reversible?",
                                 "fr": "Les incidences découlant de la décision sont-elles réversibles?",
-                                "es": "¿Son reversibles los impactos resultantes de la decisión?"
+                                "es": "¿Son reversibles los efectos resultantes de la decisión?"
                             },
                             "choices": [
                                 {
@@ -1509,7 +1520,7 @@
                             "title": {
                                 "default": "How long will impacts from the decision last?",
                                 "fr": "Combien de temps les incidences de la décision dureront-elles?",
-                                "es": "¿Cuánto tiempo durarán los impactos de la decisión?"
+                                "es": "¿Cuánto tiempo durarán los efectos de la decisión?"
                             },
                             "choices": [
                                 {
@@ -1517,7 +1528,7 @@
                                     "text": {
                                         "default": "Impacts are most likely to be brief",
                                         "fr": "Les incidences risquent fort probablement d’être brèves",
-                                        "es": "Es más probable que los impactos sean breves"
+                                        "es": "Es más probable que los efectos sean breves"
                                     }
                                 },
                                 {
@@ -1525,7 +1536,7 @@
                                     "text": {
                                         "default": "Some impacts may last a matter of months, but some lingering impacts may last longer",
                                         "fr": "Certaines incidences peuvent durer quelques mois ou plus longtemps.",
-                                        "es": "Algunos impactos pueden durar varios meses, pero otros pueden durar más tiempo."
+                                        "es": "Algunos efectos pueden durar varios meses, pero otros pueden durar más tiempo."
                                     }
                                 },
                                 {
@@ -1533,7 +1544,7 @@
                                     "text": {
                                         "default": "Impacts can last years",
                                         "fr": "Les incidences peuvent durer des années.",
-                                        "es": "Los impactos pueden durar años"
+                                        "es": "Los efectos pueden durar años"
                                     }
                                 },
                                 {
@@ -1541,7 +1552,7 @@
                                     "text": {
                                         "default": "Most impacts are perpetual",
                                         "fr": "La plupart des incidences sont sans limite dans le temps.",
-                                        "es": "La mayoría de los impactos no tienen límite de tiempo"
+                                        "es": "La mayoría de los efectos no tienen límite de tiempo"
                                     }
                                 }
                             ]
@@ -1552,7 +1563,7 @@
                             "title": {
                                 "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus). ",
-                                "es": "Describa por qué los impactos resultantes de la decisión son (según la opción seleccionada anteriormente)."
+                                "es": "Describa por qué los efectos resultantes de la decisión son (según la opción seleccionada anteriormente)."
                             }
                         },
                         {
@@ -1561,7 +1572,7 @@
                             "title": {
                                 "default": "The impacts that the decision will have on the rights or freedoms of individuals will likely be:",
                                 "fr": "Les incidences de la décision sur les droits ou libertés des personnes seront probablement les suivantes :",
-                                "es": "Los impactos que la decisión tendrá sobre los derechos o libertades de los individuos o comunidades, probablemente serán:"
+                                "es": "Los efectos que la decisión tendrá sobre los derechos o libertades de los individuos o comunidades, probablemente serán:"
                             },
                             "choices": [
                                 {
@@ -1604,7 +1615,7 @@
                             "title": {
                                 "default": "Please describe why the impacts resulting from the decision are (as per selected option above).",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus).",
-                                "es": "Describa por qué los impactos resultantes de la decisión son (según la opción seleccionada anteriormente)."
+                                "es": "Describa por qué los efectos resultantes de la decisión son (según la opción seleccionada anteriormente)."
                             }
                         },
                         {
@@ -1613,7 +1624,7 @@
                             "title": {
                                 "default": "The impacts that the decision will have on the health and well-being of individuals will likely be:",
                                 "fr": "Les incidences de la décision sur la santé et le bien-être des personnes seront probablement les suivantes :",
-                                "es": "Los impactos que la decisión tendrá sobre la salud y el bienestar de los individuos o las comunidades, probablemente serán:"
+                                "es": "Los efectos que la decisión tendrá sobre la salud y el bienestar de los individuos o las comunidades, probablemente serán:"
                             },
                             "choices": [
                                 {
@@ -1656,7 +1667,7 @@
                             "title": {
                                 "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus).",
-                                "es": "Describa por qué los impactos resultantes de la decisión son (según la opción seleccionada arriba)"
+                                "es": "Describa por qué los efectos resultantes de la decisión son (según la opción seleccionada arriba)"
                             }
                         },
                         {
@@ -1665,7 +1676,7 @@
                             "title": {
                                 "default": "The impacts that the decision will have on the economic interests of individuals will likely be:",
                                 "fr": "Les incidences de la décision sur les intérêts économiques des personnes seront probablement les suivantes :",
-                                "es": "Los impactos que la decisión tendrá sobre los intereses económicos de individuos o comunidades, probablemente serán:"
+                                "es": "Los efectos que la decisión tendrá sobre los intereses económicos de individuos o comunidades, probablemente serán:"
                             },
                             "choices": [
                                 {
@@ -1708,7 +1719,7 @@
                             "title": {
                                 "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus).",
-                                "es": "Describa por qué los impactos resultantes de la decisión son (según la opción seleccionada arriba)"
+                                "es": "Describa por qué los efectos resultantes de la decisión son (según la opción seleccionada arriba)"
                             }
                         },
                         {
@@ -1717,7 +1728,7 @@
                             "title": {
                                 "default": "The impacts that the decision will have on the ongoing sustainability of an environmental ecosystem, will likely be:",
                                 "fr": "Les incidences de la décision sur la pérennité d’un écosystème environnemental seront probablement les suivantes :",
-                                "es": "Los impactos que la decisión tendrá sobre la sostenibilidad de un ecosistema ambiental, probablemente serán:"
+                                "es": "Los efectos que la decisión tendrá sobre la sostenibilidad de un ecosistema ambiental, probablemente serán:"
                             },
                             "choices": [
                                 {
@@ -1760,7 +1771,7 @@
                             "title": {
                                 "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus).",
-                                "es": "Describa por qué los impactos resultantes de la decisión son (según la opción seleccionada arriba)"
+                                "es": "Describa por qué los efectos resultantes de la decisión son (según la opción seleccionada arriba)"
                             }
                         }
                     ]
@@ -2062,7 +2073,7 @@
                                     "text": {
                                         "default": "A foreign government or non-government third party",
                                         "fr": "Un gouvernement étranger ou un tiers non gouvernemental",
-                                        "es": "Un gobierno extranjeroo un tercero no gubernamental"
+                                        "es": "Un gobierno extranjero un tercero no gubernamental"
                                     }
                                 }
                             ]
@@ -2214,7 +2225,7 @@
                                     "text": {
                                         "default": "Data Governance",
                                         "fr": "Gouvernance des données",
-                                        "es": "Gobernanza de los datos"
+                                        "es": "Gobierno de los datos"
                                     }
                                 },
                                 {
@@ -2402,7 +2413,7 @@
                                     "text": {
                                         "default": "Data Governance",
                                         "fr": "Gouvernance des données",
-                                        "es": "Gobernanza de datos"
+                                        "es": "Gobierno de datos"
                                     }
                                 },
                                 {
@@ -2813,7 +2824,7 @@
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation",
-                "es": "Medidas de reducción y mitigación del riesgo"
+                "es": "Medidas de reducción y atenuar los riesgo"
             }
         },
         {
@@ -3105,7 +3116,7 @@
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation",
-                "es": "Medidas de eliminación y mitigación de riesgos"
+                "es": "Medidas de eliminación y atenuar los riesgos"
             }
         },
         {
@@ -3338,7 +3349,7 @@
                             "title": {
                                 "default": "Will the audit trail show who the authorized decision-maker is?",
                                 "fr": "La piste de vérification indiquera-t-elle qui est le décideur autorisé?",
-                                "es": "¿El registro de auditoría muestra quién es un decisor autorizado?"
+                                "es": "¿El registro de auditoría muestra quién es tomador de decisión autorizado?"
                             },
                             "choices": [
                                 {
@@ -3392,7 +3403,7 @@
                             "title": {
                                 "default": "Will there be a process in place to grant, monitor, and revoke access permission to the system?",
                                 "fr": "Y aura-t-il un processus en place pour accorder, surveiller et révoquer l'autorisation d'accès au système?",
-                                "es": "¿Existe un proceso para otorgar, monitorear y revocar los permisos de acceso al sistema?"
+                                "es": "¿Existe un proceso para otorgar, realizar monitoreo y revocar los permisos de acceso al sistema?"
                             },
                             "choices": [
                                 {
@@ -3587,7 +3598,7 @@
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation",
-                "es": "Medidas de eliminación y mitigación de riesgos"
+                "es": "Medidas de eliminación y atenuar los riesgos"
             }
         },
         {
@@ -3873,7 +3884,7 @@
                             "title": {
                                 "default": "Is there a process in place to grant, monitor, and revoke access permission to the system?",
                                 "fr": "Avez-vous un processus en place pour accorder, surveiller et révoquer l'autorisation d'accès au système?",
-                                "es": "¿Existe un proceso para otorgar, monitorear y revocar el permiso de acceso al sistema?"
+                                "es": "¿Existe un proceso para otorgar, realizar monitoreo y revocar el permiso de acceso al sistema?"
                             },
                             "choices": [
                                 {
@@ -4068,7 +4079,7 @@
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation",
-                "es": "Medidas de eliminación y mitigación de riesgos"
+                "es": "Medidas de eliminación y atenuar los riesgos"
             }
         },
         {
@@ -4144,7 +4155,7 @@
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation",
-                "es": "Medidas de eliminación y mitigación de riesgos"
+                "es": "Medidas de eliminación y atenuar los riesgos"
             }
         },
         {
@@ -4220,7 +4231,7 @@
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation",
-                "es": "Medidas de eliminación y mitigación de riesgos"
+                "es": "Medidas de eliminación y atenuar los riesgos"
             }
         }
     ],

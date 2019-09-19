@@ -12,14 +12,14 @@
     "riskLevel": "Nivel de Impacto",
     "currentScore": "Puntaje actual",
     "rawRiskScore": "Puntuación de Impacto Bruto",
-    "mitigationScore": "Puntaje de Mitigación",
+    "mitigationScore": "Puntaje de ",
     "resultTitle": "Resultados de la evaluación de impacto algorítmico",
     "resultScore": "Resultado Final",
-    "resultSectionMeasure": "Medidas de Mitigación",
+    "resultSectionMeasure": "Medidas de Atenuación",
     "resultSectionQA": "Preguntas y Respuestas",
     "resultSectionPD": "Detalles del proyecto",
     "resultSectionRQA": "Preguntas y respuestas sobre el impacto",
-    "resultSectionMQA": "Preguntas y respuestas sobre mitigación",
+    "resultSectionMQA": "Preguntas y respuestas sobre atenuación",
     "modifier": "Puntos",
     "openSourceDesign1": "El sistema utilizará software de código abierto.",
     "consultationDesign1": "Se consultará a las siguientes partes interesadas internas:",
@@ -47,7 +47,7 @@
     "fairnessDesign9": "La pista de auditoría mostrará quién es el responsable de la toma de decisiones autorizado.",
     "fairnessDesign10": "El sistema podrá motivar sus decisiones o recomendaciones cuando sea necesario.",
     "fairnessDesign11": "Habrá un proceso para conceder, supervisar y revocar los permisos de acceso al sistema.",
-    "fairnessDesign12": "Se establecerá un mecanismo para captar la retroalimentación de los usuarios del sistema.",
+    "fairnessDesign12": "Se establecerá un mecanismo para captar la retro alimentación de los usuarios del sistema.",
     "fairnessDesign13": "Se establecerá un proceso de recursos para los clientes que deseen impugnar la decisión.",
     "fairnessDesign14": "El sistema permitirá la anulación humana de las decisiones del sistema",
     "fairnessDesign15": "Habrá un proceso para registrar las instancias en las que se realizaron las sustituciones.",
@@ -80,8 +80,8 @@
     "proceduralFairnessImplementation8": "El seguimiento de auditoría generado por el sistema puede utilizarse para generar notificaciones, incluida una declaración de motivos.",
     "proceduralFairnessImplementation9": "El log del sistema muestra quiénes son los responsables de la toma de decisiones autorizados.",
     "proceduralFairnessImplementation10": "El sistema puede presentar las razones de su decisión o recomendaciones cuando sea necesario.",
-    "proceduralFairnessImplementation11": "Existe un proceso para otorgar, monitorear y revocar el permiso de acceso al sistema.",
-    "proceduralFairnessImplementation12": "Existe un mecanismo para captar la retroalimentación de los usuarios de los sistemas.",
+    "proceduralFairnessImplementation11": "Existe un proceso para otorgar, rastrear y revocar el permiso de acceso al sistema.",
+    "proceduralFairnessImplementation12": "Existe un mecanismo para captar la retro alimentación de los usuarios de los sistemas.",
     "proceduralFairnessImplementation13": "Existe un proceso de recurso para los clientes que deseen impugnar la decisión.",
     "proceduralFairnessImplementation14": "El sistema permite la anulación humana de las decisiones del sistema.",
     "proceduralFairnessImplementation15": "Existe un proceso para registrar las instancias en las que se realizaron las sustituciones.",
@@ -132,11 +132,11 @@
                 "elements": [{
                     "text": "Además de cualquier requisito legislativo aplicable, se debe garantizar una explicación significativa de los resultados de las decisiones. Esto puede incluir proporcionar la explicación a través de una sección de Preguntas Frecuentes en un sitio web."
                 }, {
-                    "text": "Además de cualquier requisito legislativo aplicable, se debe asegurar una explicación significativa cuando se solicite para cualquier decisión que resulte en la negación de un beneficio, un servicio u otra acción regulatoria."
+                    "text": "Además de cualquier requisito legislativo aplicable, se debe asegurar una explicación significativa cuando se solicite para cualquier decisión que resulte en la negación de un beneficio, un servicio u otra acción reguladora."
                 }, {
-                    "text": "Además de cualquier requisito legislativo aplicable, se debe asegurar una explicación significativa con cualquier decisión que resulte en la negación de un beneficio, un servicio u otra acción regulatoria."
+                    "text": "Además de cualquier requisito legislativo aplicable, se debe asegurar una explicación significativa con cualquier decisión que resulte en la negación de un beneficio, un servicio u otra acción reguladora."
                 }, {
-                    "text": "Además de cualquier requisito legislativo aplicable, se debe asegurar una explicación significativa con cualquier decisión que resulte en la negación de un beneficio, un servicio u otra acción regulatoria."
+                    "text": "Además de cualquier requisito legislativo aplicable, se debe asegurar una explicación significativa con cualquier decisión que resulte en la negación de un beneficio, un servicio u otra acción reguladora."
                 }]
             },
             {
