@@ -38,11 +38,12 @@
     "EFVP"
   ],
   "flagWords": [],
-  "import": ["./node_modules/cspell-dict-fr-fr/cspell-ext.json"],
+  "import": ["./node_modules/cspell-dict-fr-fr/cspell-ext.json", "./node_modules/cspell-dict-es-es/cspell-ext.json"],
   "dictionaries": [
       "fr-fr",
       "en-gb",
       "en_US",
+      "es-es",
       "typescript",
       "softwareterms",
       "html",

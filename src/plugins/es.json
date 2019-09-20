@@ -1,0 +1,205 @@
+{
+    "startAgain": "Comenzar de nuevo",
+    "swtchLang": "English",
+    "onThisPage": "En esta página",
+    "htmlCode": "es-UY",
+    "saveButton": "Guardar",
+    "appTitle": "Evaluación de Impacto Algorítmico",
+    "linkProjectText": "Enlace al repositorio del proyecto GitHub",
+    "linkDirective": "http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592#appC",
+    "print": "Imprimir",
+    "linkDirectiveText": "Enlace a la Directiva sobre requisitos de nivel de impacto para la toma de decisiones automatizada",
+    "riskLevel": "Nivel de Impacto",
+    "currentScore": "Puntaje actual",
+    "rawRiskScore": "Puntuación de Impacto Bruto",
+    "mitigationScore": "Puntaje de ",
+    "resultTitle": "Resultados de la evaluación de impacto algorítmico",
+    "resultScore": "Resultado Final",
+    "resultSectionMeasure": "Medidas de Atenuación",
+    "resultSectionQA": "Preguntas y Respuestas",
+    "resultSectionPD": "Detalles del proyecto",
+    "resultSectionRQA": "Preguntas y respuestas sobre el impacto",
+    "resultSectionMQA": "Preguntas y respuestas sobre atenuación",
+    "modifier": "Puntos",
+    "openSourceDesign1": "El sistema utilizará software de código abierto.",
+    "consultationDesign1": "Se consultará a las siguientes partes interesadas internas:",
+    "consultationDesign2": "",
+    "consultationDesign3": "Se consultará a las siguientes partes interesadas externas:",
+    "consultationDesign4": "",
+    "dataQualityDesign1": "Se pondrán en marcha procesos documentados para probar los conjuntos de datos contra sesgos y otros resultados inesperados.",
+    "dataQualityDesign2": "Esta información se pondrá a disposición del público.",
+    "dataQualityDesign3": "Se desarrollará documentación que muestre cómo se han resuelto los problemas de calidad de datos durante el proceso de diseño.",
+    "dataQualityDesign4": "Esta información se pondrá a disposición del público.",
+    "dataQualityDesign5": "Se realizará un análisis basado en el género a partir de los datos utilizados por el sistema.",
+    "dataQualityDesign6": "Esta información se pondrá a disposición del público.",
+    "dataQualityDesign7": "Se asignará la responsabilidad del diseño, desarrollo, mantenimiento y mejora del sistema.",
+    "dataQualityDesign8": "Se establecerán procesos documentados para gestionar el riesgo de que el sistema utilice datos obsoletos o poco fiables.",
+    "dataQualityDesign9": "Esta información se pondrá a disposición del público.",
+    "dataQualityDesign10": "Todos los datos utilizados por el sistema se publicarán en el Portal de Gobierno Abierto.",
+    "fairnessDesign1": "La pista de auditoría identificará la autoridad o autoridad delegada identificada en la legislación.",
+    "fairnessDesign2": "El sistema proporcionará una pista de auditoría que registrará todas las recomendaciones o decisiones adoptadas por el sistema.",
+    "fairnessDesign3": "Los puntos clave de decisión serán identificables en la pista de auditoría.",
+    "fairnessDesign4": "Todos los puntos clave de decisión estarán vinculados a la legislación, las políticas y los procedimientos pertinentes.",
+    "fairnessDesign5": "Se llevará un registro detallado de todos los cambios realizados en el modelo y en el sistema.",
+    "fairnessDesign6": "Se desarrollará una pista de auditoría que establezca claramente todos los puntos de decisión del sistema.",
+    "fairnessDesign8": "La pista de auditoría podría utilizarse para generar una notificación o una declaración de los motivos de cada decisión en la que se basa.",
+    "fairnessDesign7": "La pista de auditoría identificará qué versión del sistema se utilizó para cada decisión que apoya.",
+    "fairnessDesign9": "La pista de auditoría mostrará quién es el responsable de la toma de decisiones autorizado.",
+    "fairnessDesign10": "El sistema podrá motivar sus decisiones o recomendaciones cuando sea necesario.",
+    "fairnessDesign11": "Habrá un proceso para conceder, supervisar y revocar los permisos de acceso al sistema.",
+    "fairnessDesign12": "Se establecerá un mecanismo para captar la retro alimentación de los usuarios del sistema.",
+    "fairnessDesign13": "Se establecerá un proceso de recursos para los clientes que deseen impugnar la decisión.",
+    "fairnessDesign14": "El sistema permitirá la anulación humana de las decisiones del sistema",
+    "fairnessDesign15": "Habrá un proceso para registrar las instancias en las que se realizaron las sustituciones.",
+    "fairnessDesign16": "La pista de auditoría incluirá procesos de control de cambios para registrar las modificaciones en el funcionamiento o rendimiento del sistema.",
+    "fairnessDesign17": "Se elaborará un caso conceptual que se presentará a la Junta de Examen de la Arquitectura Empresarial del Gobierno del Canadá.",
+    "privacyDesign1": "Se llevará a cabo una evaluación de impacto sobre la privacidad o se revisará la PIA existente.",
+    "privacyDesign2": "El sistema reflejará los principios de privacidad por diseño",
+    "openSourceImplementation1": "El sistema utiliza software de código abierto",
+    "Consultations": "Consultas",
+    "consultationImplementation1": "Se ha consultado a las siguientes partes interesadas internas:",
+    "consultationImplementation2": "Lista de próximos",
+    "consultationImplementation3": "Se ha consultado a las siguientes partes interesadas externas:",
+    "consultationImplementation4": "Lista de próximos",
+    "dataQualityImplementation1": "Actualmente existe un proceso documentado para probar los conjuntos de datos contra sesgos y otros resultados inesperados.",
+    "dataQualityImplementation2": "Esta información ya está a disposición del público.",
+    "dataQualityImplementation3": "Se ha desarrollado un proceso para documentar cómo se han resuelto los problemas de calidad de datos durante el proceso de diseño.",
+    "dataQualityImplementation4": "Esta información ya está a disposición del público.",
+    "dataQualityImplementation5": "Se ha realizado un Análisis Basado en el Género además de los datos que serán utilizados por el sistema.",
+    "dataQualityImplementation6": "Esta información ya está a disposición del público.",
+    "dataQualityImplementation7": "Se han asignado responsabilidades para el diseño, desarrollo, mantenimiento y mejoras del sistema.",
+    "dataQualityImplementation8": "Se ha desarrollado un proceso para gestionar los riesgos de tener datos obsoletos o poco fiables que podrían utilizarse en el sistema.",
+    "dataQualityImplementation9": "Esta información ya está a disposición del público.",
+    "dataQualityImplementation10": "Los datos utilizados para el sistema se han publicado en el portal Open Government.",
+    "proceduralFairnessImplementation1": "La pista de auditoría identifica claramente la autoridad o la autoridad delegada según lo establecido en la legislación.",
+    "proceduralFairnessImplementation2": "El sistema registra todas las recomendaciones o decisiones tomadas por el sistema.",
+    "proceduralFairnessImplementation3": "Todos los puntos clave de decisión son identificables en la pista de auditoría.",
+    "proceduralFairnessImplementation4": "Todos los puntos clave de las decisiones están relacionados con la legislación, la política o el procedimiento pertinentes.",
+    "proceduralFairnessImplementation5": "Se ha desarrollado un log de cambios para detallar todas las modificaciones realizadas en el modelo y en el sistema.",
+    "proceduralFairnessImplementation6": "La pista de auditoría identifica qué versión del sistema se utilizó para cada decisión.",
+    "proceduralFairnessImplementation7": "La pista de auditoría del sistema indica todos los puntos de decisión realizados por el sistema.",
+    "proceduralFairnessImplementation8": "El seguimiento de auditoría generado por el sistema puede utilizarse para generar notificaciones, incluida una declaración de motivos.",
+    "proceduralFairnessImplementation9": "El log del sistema muestra quiénes son los responsables de la toma de decisiones autorizados.",
+    "proceduralFairnessImplementation10": "El sistema puede presentar las razones de su decisión o recomendaciones cuando sea necesario.",
+    "proceduralFairnessImplementation11": "Existe un proceso para otorgar, rastrear y revocar el permiso de acceso al sistema.",
+    "proceduralFairnessImplementation12": "Existe un mecanismo para captar la retro alimentación de los usuarios de los sistemas.",
+    "proceduralFairnessImplementation13": "Existe un proceso de recurso para los clientes que deseen impugnar la decisión.",
+    "proceduralFairnessImplementation14": "El sistema permite la anulación humana de las decisiones del sistema.",
+    "proceduralFairnessImplementation15": "Existe un proceso para registrar las instancias en las que se realizaron las sustituciones.",
+    "proceduralFairnessImplementation16": "La pista de auditoría del sistema incluye procesos de control de cambios para registrar las modificaciones en el funcionamiento o rendimiento del sistema.",
+    "proceduralFairnessImplementation17": "La Junta de Examen de la Arquitectura Empresarial del Gobierno del Canadá ha preparado y aprobado un caso conceptual.",
+    "privacyImplementation1": "",
+    "privacyImplementation2": "",
+     "requirements": {
+        "title": "Requisitos específicos para el nivel de impacto:",
+        "elements": [{
+                "title": "revisión por pares",
+                "elements": [{
+                    "text": "None"
+                }, {
+                    "text": "At least one of:\n\nQualified expert from a federal, provincial,territorial or municipal government institution\n\nQualified members of faculty of a post - secondary institution\n\nQualified researchers from a relevant non - governmental organization\n\nContracted third - party vendor with a related specialization\n\nPublishing specifications of the Automated Decision System in a peer - reviewed journal\n\nA data and automation advisory board specified by Treasury Board Secretariat"
+                }, {
+                    "text": "At least one of:\n\nQualified expert from a federal, provincial,territorial or municipal government institution\n\nQualified members of faculty of a post - secondary institution\n\nQualified researchers from a relevant non - governmental organization\n\nContracted third - party vendor with a related specialization\n\nPublishing specifications of the Automated Decision System in a peer - reviewed journal\n\nA data and automation advisory board specified by Treasury Board Secretariat"
+                }, {
+                    "text": "At least two of:\n\nQualified experts from the National Research Council of Canada,  Statistics Canada, or the Communications Security Establishment\n\nQualified members of faculty of a post-secondary institution\n\nQualified researchers from a relevant non- governmental organization\n\nContracted third-party vendor with a related specialization\n\nA data and automation advisory board specified by Treasury Board Secretariat\n\nOR:\n\nPublishing specifications of the Automated Decision System in a peer-reviewed journal"
+                }]
+            },
+            {
+                "title": "Aviso",
+                "elements": [{
+                    "text": "None"
+                }, {
+                    "text": "Aviso en lenguaje sencillo publicado en el sitio web del programa o servicio."
+                }, {
+                    "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\n\nHow it supports the administrative decision; and\n\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
+                }, {
+                    "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\n\nHow it supports the administrative decision; and\n\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
+                }]
+            },
+            {
+                "title": "Humanidad en el circuito de las decisiones",
+                "elements": [{
+                    "text": "Las decisiones podrán adoptarse sin intervención humana directa."
+                }, {
+                    "text": "Las decisiones podrán adoptarse sin intervención humana directa."
+                }, {
+                    "text": "Las decisiones no se pueden tomar sin tener puntos específicos de intervención humana durante el proceso de toma de decisiones; y la decisión final debe ser tomada por un humano."
+                }, {
+                    "text": "Las decisiones no se pueden tomar sin tener puntos específicos de intervención humana durante el proceso de toma de decisiones; y la decisión final debe ser tomada por un humano."
+                }]
+            },
+            {
+                "title": "Explicación de Requerimientos",
+                "elements": [{
+                    "text": "Además de cualquier requisito legislativo aplicable, se debe garantizar una explicación significativa de los resultados de las decisiones. Esto puede incluir proporcionar la explicación a través de una sección de Preguntas Frecuentes en un sitio web."
+                }, {
+                    "text": "Además de cualquier requisito legislativo aplicable, se debe asegurar una explicación significativa cuando se solicite para cualquier decisión que resulte en la negación de un beneficio, un servicio u otra acción reguladora."
+                }, {
+                    "text": "Además de cualquier requisito legislativo aplicable, se debe asegurar una explicación significativa con cualquier decisión que resulte en la negación de un beneficio, un servicio u otra acción reguladora."
+                }, {
+                    "text": "Además de cualquier requisito legislativo aplicable, se debe asegurar una explicación significativa con cualquier decisión que resulte en la negación de un beneficio, un servicio u otra acción reguladora."
+                }]
+            },
+            {
+                "title": "Pruebas",
+                "elements": [{
+                    "text": "Antes de entrar en producción, desarrolle los procesos apropiados para asegurar que los datos de capacitación sean probados en busca de sesgos no intencionales de datos y otros factores que puedan tener un impacto injusto en los resultados.\n\n Asegúrese de que los datos utilizados por el Sistema de Decisión Automatizado sean probados rutinariamente para asegurar que sigan siendo relevantes, precisos y actualizados."
+                }, {
+                    "text": "Antes de entrar en producción, desarrolle los procesos apropiados para asegurar que los datos de capacitación sean probados en busca de sesgos de datos no intencionales y otros factores que puedan tener un impacto injusto en los resultados.\n\n Asegúrese de que los datos utilizados por el Sistema de Decisión Automatizado sean probados rutinariamente para asegurar que sigan siendo relevantes, precisos y actualizados."
+                }, {
+                    "text": "Antes de entrar en producción, desarrolle los procesos apropiados para asegurar que los datos de capacitación sean probados en busca de sesgos de datos no intencionales y otros factores que puedan tener un impacto injusto en los resultados.\n\n Asegúrese de que los datos utilizados por el Sistema de Decisión Automatizado sean probados rutinariamente para asegurar que sigan siendo relevantes, precisos y actualizados."
+                }, {
+                    "text": "Antes de entrar en producción, desarrolle los procesos apropiados para asegurar que los datos de capacitación sean probados en busca de sesgos de datos no intencionales y otros factores que puedan tener un impacto injusto en los resultados.\n\n Asegúrese de que los datos utilizados por el Sistema de Decisión Automatizado sean probados rutinariamente para asegurar que sigan siendo relevantes, precisos y actualizados."
+                }]
+            },
+            {
+                "title": "Seguimiento",
+                "elements": [{
+                    "text": "Supervise los resultados de los sistemas automatizados de toma de decisiones de forma continua para protegerse de resultados no intencionados y garantizar el cumplimiento de la legislación institucional y programática, así como de la presente Directiva."
+                }, {
+                    "text": "Supervise los resultados de los sistemas automatizados de toma de decisiones de forma continua para protegerse de resultados no intencionados y garantizar el cumplimiento de la legislación institucional y programática, así como de la presente Directiva."
+                }, {
+                    "text": "Supervise los resultados de los sistemas automatizados de toma de decisiones de forma continua para protegerse de resultados no intencionados y garantizar el cumplimiento de la legislación institucional y programática, así como de la presente Directiva."
+                }, {
+                    "text": "Supervise los resultados de los sistemas automatizados de toma de decisiones de forma continua para protegerse de resultados no intencionados y garantizar el cumplimiento de la legislación institucional y programática, así como de la presente Directiva."
+                }]
+            },
+            {
+                "title": "Entrenamiento",
+                "elements": [{
+                    "text": "None"
+                }, {
+                    "text": "Documentación sobre el diseño y la funcionalidad del sistema."
+                }, {
+                    "text": "Documentación sobre el diseño y la funcionalidad del sistema.\n\nLos cursos de capacitación deben ser completados."
+                }, {
+                    "text": "Documentación sobre el diseño y la funcionalidad del sistema\n\nCursos de entrenamiento recurrentes. Un medio para verificar que el entrenamiento ha sido completado."
+                }]
+            },
+            {
+                "title": "Planificación de Contingencias",
+                "elements": [{
+                    "text": "None"
+                }, {
+                    "text": "None"
+                }, {
+                    "text": "Asegúrese que los planes de contingencia y/o los sistemas de respaldo estén disponibles en caso de que el Sistema Automático de Decisiones no esté disponible."
+                }, {
+                    "text": "Asegúrese que los planes de contingencia y/o los sistemas de respaldo estén disponibles en caso de que el Sistema Automático de Decisiones no esté disponible."
+                }]
+            },
+            {
+                "title": "Aprobación para el funcionamiento del sistema",
+                "elements": [{
+                    "text": "None"
+                }, {
+                    "text": "None"
+                }, {
+                    "text": "Jefe Adjunto"
+                }, {
+                    "text": "Consejo del Tesoro"
+                }]
+            }
+        ]
+    }
+}
