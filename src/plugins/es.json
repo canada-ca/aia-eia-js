@@ -1,6 +1,6 @@
 {
     "startAgain": "Comenzar de nuevo",
-    "swtchLang": "Español",
+    "swtchLang": "English",
     "onThisPage": "En esta página",
     "htmlCode": "es-UY",
     "saveButton": "Guardar",
@@ -56,6 +56,7 @@
     "privacyDesign1": "Se llevará a cabo una evaluación de impacto sobre la privacidad o se revisará la PIA existente.",
     "privacyDesign2": "El sistema reflejará los principios de privacidad por diseño",
     "openSourceImplementation1": "El sistema utiliza software de código abierto",
+    "Consultations": "Consultas",
     "consultationImplementation1": "Se ha consultado a las siguientes partes interesadas internas:",
     "consultationImplementation2": "Lista de próximos",
     "consultationImplementation3": "Se ha consultado a las siguientes partes interesadas externas:",

@@ -792,7 +792,7 @@
                             "title": {
                                 "default": "Project ID from IT Plan",
                                 "fr": "Identifiant du projet provenant du Plan TI",
-                                "es": "identificador del proyecto"
+                                "es": "Identificador del proyecto"
                             }
                         },
                         {
@@ -1150,7 +1150,7 @@
                                     "text": {
                                         "default": "Process optimization & workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows",
                                         "fr": "Optimisation des processus et automatisation des flux de travail:    Analyser de vastes jeux de connées pour déterminer et corriger les anomalies, les modèles de grappes, prévoir les résultats ou les façons d'optimiser; et d'automatiser des flux de travail spécifique.",
-                                        "es": "Optimizar de procesos y automatización del flujo de trabajo: análisis de grandes conjuntos de datos para identificar anomalías, patrones, predecir resultados o proponer formas de automatizar y optimizar flujos de trabajo específicos."
+                                        "es": "Optimizar los procesos y automatización del flujo de trabajo: análisis de grandes conjuntos de datos para identificar anomalías, patrones, predecir resultados o proponer formas de automatizar y optimizar flujos de trabajo específicos."
                                     }
                                 },
                                 {
@@ -1359,7 +1359,7 @@
                             "title": {
                                 "default": "Will the system only be used to assist a decision-maker?",
                                 "fr": "Le système automatisera-t-il ou remplacera-t-il les décisions humaines qui exigent du jugement ou de la discrétion?",
-                                "es": "¿El sistema automatizará o reemplazará las decisiones humanas que requieren juicio o discreción?"
+                                "es": "¿El sistema solo se utilizará para ayudar a un tomador de decisiones?"
                             },
                             "choices": [
                                 {
@@ -1386,7 +1386,7 @@
                             "title": {
                                 "default": "Will the system be replacing a decision that would otherwise be made by a human?",
                                 "fr": "Le système automatisera-t-il ou remplacera-t-il les décisions humaines qui exigent du jugement ou de la discrétion?",
-                                "es": "¿El sistema automatizará o reemplazará las decisiones humanas que requieren juicio o discreción?"
+                                "es": "¿Reemplazará el sistema una decisión que de otro modo tomaría un humano?"
                             },
                             "choices": [
                                 {
@@ -1780,7 +1780,7 @@
             "title": {
                 "default": "Impact Assessment",
                 "fr": "Évaluation de l'incidence",
-                "es": "Evaluación de impacto"
+                "es": "Evaluación de Impacto"
             }
         },
         {
@@ -2824,7 +2824,7 @@
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation",
-                "es": "Medidas de reducción y atenuar los riesgo"
+                "es": "Medidas para reducir y atenuar los riesgo"
             }
         },
         {
@@ -3116,7 +3116,7 @@
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation",
-                "es": "Medidas de eliminación y atenuar los riesgos"
+                "es": "Medidas para eliminar y atenuar los riesgos"
             }
         },
         {
@@ -3598,7 +3598,7 @@
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation",
-                "es": "Medidas de eliminación y atenuar los riesgos"
+                "es": "Medidas para eliminar y atenuar los riesgos"
             }
         },
         {
@@ -4079,7 +4079,7 @@
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation",
-                "es": "Medidas de eliminación y atenuar los riesgos"
+                "es": "Medidas para eliminar y atenuar los riesgos"
             }
         },
         {
@@ -4155,7 +4155,7 @@
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation",
-                "es": "Medidas de eliminación y atenuar los riesgos"
+                "es": "Medidas para eliminar y atenuar los riesgos"
             }
         },
         {
@@ -4231,7 +4231,7 @@
             "title": {
                 "default": "De-Risking And Mitigation Measures",
                 "fr": "Élimination des risques et mesure d'atténuation",
-                "es": "Medidas de eliminación y atenuar los riesgos"
+                "es": "Medidas para eliminar y atenuar los riesgos"
             }
         }
     ],
