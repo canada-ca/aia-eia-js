@@ -9,12 +9,9 @@ describe("i18n", () => {
   it("should have identical keys", () => {
     const val = _.difference(enKeys, frKeys);
     if (val.length > 0) {
+      const mek = _.intersection(enKeys, val).join("\n");
 
-      const mek = _.intersection(enKeys, val)
-                   .join("\n");
-
-      const mfk = _.intersection(frKeys, val)
-                   .join("\n");
+      const mfk = _.intersection(frKeys, val).join("\n");
 
       console.log(
         `extra keys in en.json\n ${mek} extra keys in fr.json\n ${mfk}`
