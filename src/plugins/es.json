@@ -93,7 +93,7 @@
      "requirements": {
         "title": "Requisitos específicos para el nivel de impacto:",
         "elements": [{
-                "title": "revisión por pares",
+                "title": "Peer Review",
                 "elements": [{
                     "text": "None"
                 }, {
@@ -105,11 +105,11 @@
                 }]
             },
             {
-                "title": "Aviso",
+                "title": "Notice",
                 "elements": [{
                     "text": "None"
                 }, {
-                    "text": "Aviso en lenguaje sencillo publicado en el sitio web del programa o servicio."
+                    "text": "Plain language notice posted on the program or service website."
                 }, {
                     "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\n\nHow it supports the administrative decision; and\n\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
                 }, {
