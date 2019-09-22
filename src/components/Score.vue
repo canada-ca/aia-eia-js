@@ -1,33 +1,60 @@
+<style>
+.scoreClass {
+  font-size: 0.8em !important;
+  display: flex !important;
+}
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+}
+</style>
 <template>
-  <section :class="alertclass" id="score">
-    <p>{{ $t("riskLevel") }} {{ score[3] }}</p>
-    <p>{{ $t("currentScore") }} {{ score[2] }}</p>
-    <p>{{ $t("rawRiskScore") }} {{ score[0] }}</p>
-    <p>{{ $t("mitigationScore") }} {{ score[1] }}</p>
-  </section>
+  <b-container class="sticky">
+    <b-row :class="alertclass" :no-gutters="true" v-if="!isMobile()">
+      <b-col>{{ $t("riskLevel") }}: {{ score[3] }}</b-col>
+      <b-col>{{ $t("currentScore") }}: {{ score[2] }}</b-col>
+      <b-col>{{ $t("rawRiskScore") }}: {{ score[0] }}</b-col>
+      <b-col>{{ $t("mitigationScore") }}: {{ score[1] }}</b-col>
+    </b-row>
+    <b-row :class="alertclass" :no-gutters="true" v-if="isMobile()">
+      <b-col>{{ $t("IL") }}: {{ score[3] }}</b-col>
+      <b-col>{{ $t("CS") }}: {{ score[2] }}</b-col>
+      <b-col>{{ $t("RS") }}: {{ score[0] }}</b-col>
+      <b-col>{{ $t("MS") }}: {{ score[1] }}</b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { Getter } from "vuex";
-import { Model } from "survey-vue";
+
+// define a mixin object
+var myMixin = {
+  methods: {
+    isMobile: function() {
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
+};
 
 @Component({
+  mixins: [myMixin],
   computed: {
     score: function() {
       return this.$store.getters.calcScore;
     },
     alertclass: function() {
       const score = this.$store.getters.calcScore[3];
-      if (score === undefined || score === 1) return "alert alert-success";
-      if (score === 2) return "alert alert-info";
-      if (score === 3) return "alert alert-warning";
-      if (score === 4) return "alert alert-danger";
-      /*const score = this.$store.getters.calcScore[2];
-      if (score <= 18) return "alert alert-success";
-      if (score > 18 && score <= 36) return "alert alert-info";
-      if (score > 36 && score <= 54) return "alert alert-warning";
-      if (score > 54) return "alert alert-danger";*/
+      if (score === undefined || score === 1) return "scoreClass alert alert-success";
+      if (score === 2) return "scoreClass alert alert-info";
+      if (score === 3) return "scoreClass alert alert-warning";
+      if (score === 4) return "scoreClass alert alert-danger";
     }
   }
 })

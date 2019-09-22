@@ -5,10 +5,14 @@ import store from "./store";
 import i18n from "@/plugins/i18n";
 import "./registerServiceWorker";
 import { StylesManager } from "survey-vue";
+import BootstrapVue from "bootstrap-vue";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
 
 Vue.config.productionTip = false;
+Vue.use(BootstrapVue);
 
-StylesManager.applyTheme("bootstrap");
+StylesManager.applyTheme("bootstrapmaterial");
 
 new Vue({
   created() {
