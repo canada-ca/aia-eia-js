@@ -82,16 +82,16 @@
     "proceduralFairnessImplementation9": "El log del sistema muestra quiénes son los responsables de la toma de decisiones autorizados.",
     "proceduralFairnessImplementation10": "El sistema puede presentar las razones de su decisión o recomendaciones cuando sea necesario.",
     "proceduralFairnessImplementation11": "Existe un proceso para otorgar, rastrear y revocar el permiso de acceso al sistema.",
-    "proceduralFairnessImplementation12": "Existe un mecanismo para captar la retro alimentación de los usuarios de los sistemas.",
-    "proceduralFairnessImplementation13": "Existe un proceso de recurso para los clientes que deseen impugnar la decisión.",
-    "proceduralFairnessImplementation14": "El sistema permite la anulación humana de las decisiones del sistema.",
-    "proceduralFairnessImplementation15": "Existe un proceso para registrar las instancias en las que se realizaron las sustituciones.",
-    "proceduralFairnessImplementation16": "La pista de auditoría del sistema incluye procesos de control de cambios para registrar las modificaciones en el funcionamiento o rendimiento del sistema.",
-    "proceduralFairnessImplementation17": "La Junta de Examen de la Arquitectura Empresarial del Gobierno del Canadá ha preparado y aprobado un caso conceptual.",
+    "proceduralFairnessImplementation12": "There is a mechanism to capture feedback by users of the systems.",
+    "proceduralFairnessImplementation13": "There is a recourse process in place for clients that wish to challenge the decision.",
+    "proceduralFairnessImplementation14": "The system enables human override of system decisions.",
+    "proceduralFairnessImplementation15": "There is a process in place to log instances when overrides were performed.",
+    "proceduralFairnessImplementation16": "The system's audit trail includes change control processes to record modifications to the system's operation or performance.",
+    "proceduralFairnessImplementation17": "A concept case has been prepared and approved by the Government of Canada Enterprise Architecture Review Board.",
     "privacyImplementation1": "",
     "privacyImplementation2": "",
      "requirements": {
-        "title": "Requisitos específicos para el nivel de impacto:",
+        "title": "Requirements Specific to Impact Level:",
         "elements": [{
                 "title": "Peer Review",
                 "elements": [{
@@ -111,9 +111,9 @@
                 }, {
                     "text": "Plain language notice posted on the program or service website."
                 }, {
-                    "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\n\nHow it supports the administrative decision; and\n\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
+                    "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\nHow it supports the administrative decision; and\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
                 }, {
-                    "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\n\nHow it supports the administrative decision; and\n\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
+                    "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\nHow it supports the administrative decision; and\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
                 }]
             },
             {
