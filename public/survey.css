@@ -1,3 +1,4 @@
+
 div.sv_qstn_error_top  span.glyphicon-exclamation-sign {
     display: none
 }
@@ -29,7 +30,8 @@ div.sv_qstn_error_top  span.glyphicon-exclamation-sign {
   margin-left: auto !important;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+/* Removing h2 to prevent side-effect of scrollbars in Chrome  */
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h3, h4, h5, h6 {
   width: 100% !important;
   line-height: 1.1 !important;
   color: inherit !important;
