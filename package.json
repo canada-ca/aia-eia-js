@@ -58,8 +58,6 @@
     "eslint-plugin-vue": "^5.0.0",
     "fibers": "^3.1.1",
     "jest-transform-stub": "^2.0.0",
-    "sass": "^1.17.2",
-    "sass-loader": "^7.1.0",
     "ts-jest": "^23.0.0",
     "typescript": "^3.2.1",
     "vue-template-compiler": "^2.6.10"
