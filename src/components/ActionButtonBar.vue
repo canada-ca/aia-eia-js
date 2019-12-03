@@ -15,6 +15,7 @@
           <input
             type="file"
             class="btn btn-default"
+            :title="$t('loadFile')"
             value="Load"
             @change="onFileChanged($event)"
           />

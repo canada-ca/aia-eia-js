@@ -30,6 +30,15 @@
       </li>
     </ul>
 
+    <form>
+      <ActionButtonBar
+        v-on:fileLoaded="fileLoaded($event)"
+        v-on:startAgain="startAgain"
+      />
+    </form>
+
+    <br/>
+
     <Score />
     <Obligations />
 
@@ -75,12 +84,14 @@
 import { Component, Vue, Prop } from "vue-property-decorator";
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import Score from "@/components/Score.vue";
+import ActionButtonBar from "@/components/ActionButtonBar.vue";
 import Result from "@/components/Result.vue";
 import Obligations from "@/components/Obligations.vue";
 import i18n from "@/plugins/i18n";
 
 @Component({
   components: {
+    ActionButtonBar,
     Result,
     Score,
     Obligations
