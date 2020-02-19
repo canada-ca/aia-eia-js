@@ -1,6 +1,7 @@
 {
     "startAgain": "Start Again",
     "loadFile": "Click to Load a Previously Saved File",
+    "localSaveWarning": "Information in the AIA is only stored locally on your computer, and the Government of Canada does not have access to the information you place into the tool. If you wish to retain your state, please save the data locally for future use.",
     "swtchLang": "Français",
     "onThisPage": "On this page",
     "htmlCode": "en-CA",

@@ -6,6 +6,11 @@
         $t("linkProjectText")
       }}</a>
     </p>
+
+    <div class="alert alert-info">
+      <p>{{ $t("localSaveWarning") }}</p>
+    </div>
+
     <form>
       <ActionButtonBar
         v-on:fileLoaded="fileLoaded($event)"
