@@ -168,3 +168,7 @@ a:active, a:hover {
   -ms-user-select: none !important;
   user-select: none !important;
 }
+
+.tinytext {
+  font-size: 0.8em;
+}
