@@ -4,7 +4,7 @@
     <h1>{{ $t("resultTitle") }}</h1>
 
     <div class="alert alert-info">
-      <p class="tinytext">{{ $t("localSaveWarning") }}</p>
+      <p class="tiny-text">{{ $t("localSaveWarning") }}</p>
     </div>
 
     <p>{{ $t("onThisPage") }}</p>
