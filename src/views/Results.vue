@@ -39,43 +39,56 @@
 
     <br/>
 
-    <Score />
-    <Obligations />
+    <div id="results-printable">
 
-    <div class="container-fluid">
-      <div class="row">
-        <h2 id="mitigationMeasures">{{ $t("resultSectionMeasure") }}</h2>
-      </div>
-      <div class="row">
-        <p v-for="result in myResults[3]" :key="result.name">
-          {{ $t(result.name) }}
-        </p>
-      </div>
+      <Score />
+      <Obligations />
 
-      <div class="row">
-        <h2 id="qA">{{ $t("resultSectionQA") }}</h2>
-      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <h2 id="mitigationMeasures">{{ $t("resultSectionMeasure") }}</h2>
+        </div>
+        <div class="row">
+          <p v-for="result in myResults[3]" :key="result.name">
+            {{ $t(result.name) }}
+          </p>
+        </div>
 
-      <div class="row">
-        <h3 id="projectDetails">{{ $t("resultSectionPD") }}</h3>
-      </div>
-      <div class="row" v-for="result in myResults[0]" :key="result.name">
-        <Result :data="result"></Result>
-      </div>
+        <div class="row">
+          <h2 id="qA">{{ $t("resultSectionQA") }}</h2>
+        </div>
 
-      <div class="row">
-        <h3 id="riskQA">{{ $t("resultSectionRQA") }}</h3>
-      </div>
-      <div class="row" v-for="result in myResults[1]" :key="result.name">
-        <Result :data="result"></Result>
-      </div>
+        <div class="row">
+          <h3 id="projectDetails">{{ $t("resultSectionPD") }}</h3>
+        </div>
+        <div class="row" v-for="result in myResults[0]" :key="result.name">
+          <Result :data="result"></Result>
+        </div>
 
-      <div class="row">
-        <h3 id="mitigationQA">{{ $t("resultSectionMQA") }}</h3>
+        <div class="row">
+          <h3 id="riskQA">{{ $t("resultSectionRQA") }}</h3>
+        </div>
+        <div class="row" v-for="result in myResults[1]" :key="result.name">
+          <Result :data="result"></Result>
+        </div>
+
+        <div class="row">
+          <h3 id="mitigationQA">{{ $t("resultSectionMQA") }}</h3>
+        </div>
+        <div class="row" v-for="result in myResults[2]" :key="result.name">
+          <Result :data="result"></Result>
+        </div>
       </div>
-      <div class="row" v-for="result in myResults[2]" :key="result.name">
-        <Result :data="result"></Result>
-      </div>
+    </div>
+    <div>
+      <button
+        type="button"
+        value="Export Results"
+        class="btn btn-default"
+        onclick="exportResults()"
+      >
+        {{ $t("exportResults") }}
+      </button>
     </div>
   </div>
 </template>
