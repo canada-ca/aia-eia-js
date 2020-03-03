@@ -8,7 +8,7 @@
     </p>
 
     <div class="alert alert-info">
-      <p class="tiny-text">{{ $t("localSaveWarning") }}</p>
+      <p class="small">{{ $t("localSaveWarning") }}</p>
     </div>
 
     <form>
