@@ -1,16 +1,16 @@
 <template>
   <div>
     <div v-if="data.value == data.displayValue">
-      <TextResult :data="data" />
+      <TextResult :data="data" :locale="locale" />
     </div>
     <div v-else-if="isMultiChoiceValueResult(data)">
-      <MultiChoiceValueResult :data="data" />
+      <MultiChoiceValueResult :data="data" :locale="locale" />
     </div>
     <div v-else-if="Array.isArray(data.value)">
-      <MultiChoiceResult :data="data" />
+      <MultiChoiceResult :data="data" :locale="locale" />
     </div>
     <div v-else>
-      <ValueResult :data="data" />
+      <ValueResult :data="data" :locale="locale" />
     </div>
   </div>
 </template>
@@ -32,6 +32,7 @@ import MultiChoiceValueResult from "@/components/MultiChoiceValueResult.vue";
 })
 export default class Result extends Vue {
   @Prop() data: any;
+  @Prop() locale: any;
   isMultiChoiceValueResult(data: any): boolean {
     if (!Array.isArray(data.value)) return false;
 

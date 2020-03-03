@@ -244,6 +244,8 @@ const store: StoreOptions<RootState> = {
         var question = state.result!.getQuestionByName(result.name);
         const scoreType = getScoreType(question);
 
+        result.titleData = { 'en': question.locTitle.getLocaleText("default"), 'fr': question.locTitle.getLocaleText("fr") };
+
         if (
           scoreType === 1 &&
           question.parent.name === "projectDetailsPanel-NS"

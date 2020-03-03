@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="col-md-10">
-      <strong>{{ data.title }}</strong>
+      <strong v-if="locale == undefined">{{ data.title }}</strong>
+      <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
       <br />
       {{ data.displayValue }}
     </div>
@@ -22,5 +23,6 @@ import Modifier from "@/components/Modifier.vue";
 })
 export default class ValueResult extends Vue {
   @Prop() data: any;
+  @Prop() locale: any;
 }
 </script>

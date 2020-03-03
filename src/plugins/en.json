@@ -1,6 +1,10 @@
 {
     "startAgain": "Start Again",
-    "exportResults": "Export Results",
+    "exportEnglishResults": "Export English Document",
+    "exportFrenchResults": "Export French Document",
+    "frenchContent": "French Content",
+    "englishContent": "English Content",
+    "export": "Export",
     "loadFile": "Click to Load a Previously Saved File",
     "swtchLang": "Français",
     "onThisPage": "On this page",
