@@ -6,7 +6,7 @@
       <br />
       <ul>
         <div v-for="(str, index) in data.value" :key="index">
-          <li>{{ getValue(str) }}</li>
+          <li>{{ getValue(str, index) }}</li>
         </div>
       </ul>
     </div>
@@ -20,10 +20,14 @@ import { Component, Vue, Prop } from "vue-property-decorator";
 export default class MultiChoiceResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
-  getValue(str: string): string {
-    const matches = this.data.data.filter((item: any) => item.value === str);
-    if (matches.length === 0) return "ERROR: No Matches found";
-    return matches[0].displayValue;
+  getValue(str: string, index: any): string {
+    if (this.locale === undefined) {
+      const matches = this.data.data.filter((item: any) => item.value === str);
+      if (matches.length === 0) return "ERROR: No Matches found";
+      return matches[0].displayValue;
+    } else {
+      return this.data.choiceData[index][this.locale];
+    }
   }
 }
 </script>
