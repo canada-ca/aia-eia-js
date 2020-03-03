@@ -1,6 +1,6 @@
 <template>
   <div>
-    <strong>{{ $t("modifier") }}:</strong> {{ str }}
+    <strong>{{ $t("modifier", locale) }}:</strong> {{ str }}
   </div>
 </template>
 
@@ -10,6 +10,7 @@ import { Component, Vue, Prop } from "vue-property-decorator";
 @Component
 export default class Modifier extends Vue {
   @Prop() data: any;
+  @Prop() locale: any;
   private str: String = this.getModifiedData();
 
   getModifiedData(): string {

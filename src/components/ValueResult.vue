@@ -7,7 +7,7 @@
       {{ data.displayValue }}
     </div>
     <div v-if="!data.name.endsWith('-NS')" class="col-md-2">
-      <Modifier :data="data.value" />
+      <Modifier :data="data.value" :locale="locale" />
     </div>
   </div>
 </template>

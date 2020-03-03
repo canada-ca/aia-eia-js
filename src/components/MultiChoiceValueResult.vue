@@ -11,7 +11,7 @@
               {{ data.displayValue.split(", ")[index] }}
             </div>
             <div class="col-md-2">
-              <Modifier :data="parseInt(str)" />
+              <Modifier :data="parseInt(str)" :locale="locale" />
             </div>
           </div>
         </div>
