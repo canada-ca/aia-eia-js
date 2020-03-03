@@ -236,6 +236,8 @@ export default class Results extends Vue {
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
     this.$store.commit("updateResult", this.Survey);
+
+    this.myResults = this.$store.getters.resultDataSections;
   }
 
   created() {
