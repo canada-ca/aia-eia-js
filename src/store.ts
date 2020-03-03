@@ -246,6 +246,10 @@ const store: StoreOptions<RootState> = {
 
         result.titleData = { 'en': question.locTitle.getLocaleText("default"), 'fr': question.locTitle.getLocaleText("fr") };
 
+        if (question.selectedItem !== undefined) {
+          result.selectedItem = { 'en': question.selectedItem.locText.getLocaleText("default"), 'fr': question.selectedItem.locText.getLocaleText("fr") };
+        }
+
         if (question.getChoices !== undefined) {
           var choices = question.getChoices();
           result.choiceData = [];
@@ -254,7 +258,6 @@ const store: StoreOptions<RootState> = {
             result.choiceData.push( { 'en': choices[i].locText.getLocaleText("default"), 'fr': choices[i].locText.getLocaleText("fr") } );
           }
         }
-        //console.log(question);
 
         if (
           scoreType === 1 &&
