@@ -102,9 +102,10 @@
       </button>
     </div>
 
-    <details id="en-content">
+    <details id="en-content-wrap">
       <summary>{{ $t("englishContent") }}</summary>
-      <div lang="en">
+      <div id="en-content" lang="en">
+        <h1>{{ $t("resultTitle", "en") }}</h1>
         <Score locale="en" />
         <Obligations locale="en" />
         <div class="container-fluid">
@@ -145,9 +146,10 @@
       </div>
     </details>
 
-    <details id="fr-content">
+    <details id="fr-content-wrap">
       <summary>{{ $t("frenchContent") }}</summary>
-      <div lang="fr">
+      <div id="fr-content" lang="fr">
+        <h1>{{ $t("resultTitle", "fr") }}</h1>
         <Score locale="fr" />
         <Obligations locale="fr" />
 
