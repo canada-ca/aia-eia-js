@@ -247,7 +247,9 @@ const store: StoreOptions<RootState> = {
         result.titleData = { 'en': question.locTitle.getLocaleText("default"), 'fr': question.locTitle.getLocaleText("fr") };
 
         if (question.selectedItem !== undefined) {
-          result.selectedItem = { 'en': question.selectedItem.locText.getLocaleText("default"), 'fr': question.selectedItem.locText.getLocaleText("fr") };
+          if (question.selectedItem.locText !== undefined) {
+            result.selectedItem = { 'en': question.selectedItem.locText.getLocaleText("default"), 'fr': question.selectedItem.locText.getLocaleText("fr") };
+          }
         }
 
         if (question.getChoices !== undefined) {
