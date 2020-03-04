@@ -246,8 +246,8 @@ const store: StoreOptions<RootState> = {
 
         result.titleData = { 'en': question.locTitle.getLocaleText("default"), 'fr': question.locTitle.getLocaleText("fr") };
 
-        if (question.selectedItem !== undefined) {
-          if (question.selectedItem.locText !== undefined) {
+        if (question.selectedItem !== undefined && question.selectedItem !== null) {
+          if (question.selectedItem.locText !== undefined && question.selectedItem.locText !== null) {
             result.selectedItem = { 'en': question.selectedItem.locText.getLocaleText("default"), 'fr': question.selectedItem.locText.getLocaleText("fr") };
           }
         }
