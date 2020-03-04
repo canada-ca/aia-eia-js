@@ -34,7 +34,7 @@ function reloadTemplate(){
   var defPreFooter = document.getElementById("def-preFooter");
   defPreFooter.outerHTML = wet.builder.preFooter({
     dateModified: "2019-05-30",
-    versionIdentifier: "0.7.5",
+    versionIdentifier: "0.8.0",
     showPostContent: false,
     showShare: false
   });
