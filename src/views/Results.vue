@@ -3,6 +3,10 @@
     <!--<PrintButton />-->
     <h1>{{ $t("resultTitle") }}</h1>
 
+    <div class="alert alert-info">
+      <p class="small">{{ $t("localSaveWarning") }}</p>
+    </div>
+
     <p>{{ $t("onThisPage") }}</p>
     <ul>
       <li>

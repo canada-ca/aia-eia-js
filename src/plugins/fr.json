@@ -1,6 +1,7 @@
 {
     "startAgain": "Recommencer",
     "loadFile": "Cliquez pour charger un fichier précédemment enregistré",
+    "localSaveWarning": "Les informations contenues dans l'EIA ne sont stockées que localement sur votre ordinateur et le gouvernement du Canada n'a pas accès aux informations que vous placez dans l'outil. Si vous souhaitez conserver votre état, veuillez enregistrer les données localement pour une utilisation future.",
     "swtchLang": "English",
     "onThisPage": "Sur cette page",
     "htmlCode": "fr-CA",
