@@ -2,9 +2,9 @@
   <div class="home">
     <h1>{{ $t("appTitle") }}</h1>
     <p>
-      <a href="https://github.com/canada-ca/aia-eia-js">{{
-        $t("linkProjectText")
-      }}</a>
+      <a class="btn btn-default pull-right" role="button" href="https://github.com/canada-ca/aia-eia-js">
+        {{ $t("linkProjectText") }}
+      </a>
     </p>
     <form>
       <ActionButtonBar

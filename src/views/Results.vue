@@ -2,6 +2,17 @@
   <div class="results">
     <!--<PrintButton />-->
     <h1>{{ $t("resultTitle") }}</h1>
+    <p>
+      <a class="btn btn-default pull-right" role="button" href="https://github.com/canada-ca/aia-eia-js">
+        {{ $t("linkProjectText") }}
+      </a>
+    </p>
+    <form>
+      <ActionButtonBar
+        v-on:fileLoaded="fileLoaded($event)"
+        v-on:startAgain="startAgain"
+      />
+    </form>
 
     <p>{{ $t("onThisPage") }}</p>
     <ul>
@@ -29,15 +40,6 @@
         </ul>
       </li>
     </ul>
-
-    <form>
-      <ActionButtonBar
-        v-on:fileLoaded="fileLoaded($event)"
-        v-on:startAgain="startAgain"
-      />
-    </form>
-
-    <br/>
 
     <div id="results-printable">
 
