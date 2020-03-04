@@ -39,7 +39,7 @@
       var val = htmlToPdfmake(source);
       var dd = {content:val};
 
-      pdfMake.createPdf(dd).download();
+      pdfMake.createPdf(dd).download("aia-" + lang + ".pdf");
     }
   </script>
 
