@@ -108,6 +108,14 @@
       <summary>{{ $t("englishContent") }}</summary>
       <div id="en-content" lang="en">
         <h1>{{ $t("resultTitle", "en") }}</h1>
+
+        <div class="row">
+          <h3 id="projectDetails">{{ $t("resultSectionPD", "en") }}</h3>
+        </div>
+        <div class="row" v-for="result in myResults[0]" :key="result.name">
+          <Result :data="result" locale="en"></Result>
+        </div>
+
         <Score locale="en" />
         <Obligations locale="en" />
         <div class="container-fluid">
@@ -122,13 +130,6 @@
 
           <div class="row">
             <h2 id="qA">{{ $t("resultSectionQA", "en") }}</h2>
-          </div>
-
-          <div class="row">
-            <h3 id="projectDetails">{{ $t("resultSectionPD", "en") }}</h3>
-          </div>
-          <div class="row" v-for="result in myResults[0]" :key="result.name">
-            <Result :data="result" locale="en"></Result>
           </div>
 
           <div class="row">
@@ -152,6 +153,14 @@
       <summary>{{ $t("frenchContent") }}</summary>
       <div id="fr-content" lang="fr">
         <h1>{{ $t("resultTitle", "fr") }}</h1>
+
+        <div class="row">
+          <h3 id="projectDetails">{{ $t("resultSectionPD", "fr") }}</h3>
+        </div>
+        <div class="row" v-for="result in myResults[0]" :key="result.name">
+          <Result :data="result" locale="fr"></Result>
+        </div>
+
         <Score locale="fr" />
         <Obligations locale="fr" />
 
@@ -167,13 +176,6 @@
 
           <div class="row">
             <h2 id="qA">{{ $t("resultSectionQA", "fr") }}</h2>
-          </div>
-
-          <div class="row">
-            <h3 id="projectDetails">{{ $t("resultSectionPD", "fr") }}</h3>
-          </div>
-          <div class="row" v-for="result in myResults[0]" :key="result.name">
-            <Result :data="result" locale="fr"></Result>
           </div>
 
           <div class="row">
