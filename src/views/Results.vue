@@ -109,9 +109,6 @@
       <div id="en-content" lang="en">
         <h1>{{ $t("resultTitle", "en") }}</h1>
 
-        <div class="row">
-          <h3 id="projectDetails">{{ $t("resultSectionPD", "en") }}</h3>
-        </div>
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="en"></Result>
         </div>
@@ -154,9 +151,6 @@
       <div id="fr-content" lang="fr">
         <h1>{{ $t("resultTitle", "fr") }}</h1>
 
-        <div class="row">
-          <h3 id="projectDetails">{{ $t("resultSectionPD", "fr") }}</h3>
-        </div>
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="fr"></Result>
         </div>

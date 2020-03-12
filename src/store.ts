@@ -239,11 +239,46 @@ const store: StoreOptions<RootState> = {
       var riskResults: any[] = [];
       var mitigationResults: any[] = [];
       var mitigationResultsYes: any[] = [];
+      var lastHeader = "";
 
       state.answerData.forEach(function(result) {
         var question = state.result!.getQuestionByName(result.name);
         const scoreType = getScoreType(question);
 
+        //Calculate the section header.
+        var questionHeader = {'en': "", 'fr':""};
+        var questionSubHeader = {'en':"", 'fr': ""};
+        if (question.parent.constructor.name === "PanelModel") {
+          var panel = question.parent;
+          if (question.parent.parent.constructor.name == "PageModel") {
+            questionHeader = {
+              'en': question.parent.parent.locTitle.getLocaleText("default"), 
+              'fr': question.parent.parent.locTitle.getLocaleText("fr")
+            };
+
+            questionSubHeader = {
+              'en': question.parent.locTitle.getLocaleText("default"), 
+              'fr': question.parent.locTitle.getLocaleText("fr")
+            };
+          }
+        }
+
+        var calculatedHeader = questionHeader.en;
+        if (questionSubHeader.en != "") { calculatedHeader += " - " + questionSubHeader.en; }
+        if (lastHeader != calculatedHeader) {
+          result.questionHeader = questionHeader;
+
+          if (questionSubHeader.en != "") {
+            result.questionHeader.en += " - " + questionSubHeader.en;
+            result.questionHeader.fr += " - " + questionSubHeader.fr;
+          }
+
+          lastHeader = calculatedHeader;
+
+          console.log(result.questionHeader);
+        }
+
+        //Add Localized results.
         result.titleData = { 'en': question.locTitle.getLocaleText("default"), 'fr': question.locTitle.getLocaleText("fr") };
 
         if (question.selectedItem !== undefined && question.selectedItem !== null) {

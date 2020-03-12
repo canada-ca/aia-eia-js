@@ -1,16 +1,21 @@
 <template>
   <div>
-    <div v-if="data.value == data.displayValue">
-      <TextResult :data="data" :locale="locale" />
+    <div v-if="data.questionHeader !== undefined && locale !== undefined">
+      <h3>{{ data.questionHeader[locale] }}</h3>
     </div>
-    <div v-else-if="isMultiChoiceValueResult(data)">
-      <MultiChoiceValueResult :data="data" :locale="locale" />
-    </div>
-    <div v-else-if="Array.isArray(data.value)">
-      <MultiChoiceResult :data="data" :locale="locale" />
-    </div>
-    <div v-else>
-      <ValueResult :data="data" :locale="locale" />
+    <div>
+      <div v-if="data.value == data.displayValue">
+        <TextResult :data="data" :locale="locale" />
+      </div>
+      <div v-else-if="isMultiChoiceValueResult(data)">
+        <MultiChoiceValueResult :data="data" :locale="locale" />
+      </div>
+      <div v-else-if="Array.isArray(data.value)">
+        <MultiChoiceResult :data="data" :locale="locale" />
+      </div>
+      <div v-else>
+        <ValueResult :data="data" :locale="locale" />
+      </div>
     </div>
   </div>
 </template>
