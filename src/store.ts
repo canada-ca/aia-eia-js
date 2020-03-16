@@ -2,7 +2,7 @@ import Vue from "vue";
 import Vuex, { StoreOptions } from "vuex";
 import VuexPersistence from "vuex-persist";
 import { RootState } from "./types";
-import { IQuestion, QuestionSelectBase, SurveyModel } from "survey-vue";
+import { IQuestion, QuestionSelectBase, SurveyModel, IPanel, LocalizableString } from "survey-vue";
 import isEmpty from "lodash.isempty";
 
 Vue.use(Vuex);
@@ -122,6 +122,19 @@ function getMaxScoreForQuestion(question: QuestionSelectBase): number {
   }
 
   return max;
+}
+
+type LanguageString = {
+  en: string;
+  fr: string;
+}
+
+function getTitleFromPanel(panel: any): LanguageString {
+  var retVal = {
+    'en': panel.locTitle.getLocaleText("default"), 
+    'fr': panel.locTitle.getLocaleText("fr")
+  };
+  return retVal;
 }
 
 function calculateFinalScore(
@@ -251,15 +264,10 @@ const store: StoreOptions<RootState> = {
         if (question.parent.constructor.name === "PanelModel") {
           var panel = question.parent;
           if (question.parent.parent.constructor.name == "PageModel") {
-            questionHeader = {
-              'en': question.parent.parent.locTitle.getLocaleText("default"), 
-              'fr': question.parent.parent.locTitle.getLocaleText("fr")
-            };
+            questionHeader = getTitleFromPanel(question.parent.parent);
+            questionSubHeader = getTitleFromPanel(question.parent);
 
-            questionSubHeader = {
-              'en': question.parent.locTitle.getLocaleText("default"), 
-              'fr': question.parent.locTitle.getLocaleText("fr")
-            };
+            console.log(question.parent);
           }
         }
 
