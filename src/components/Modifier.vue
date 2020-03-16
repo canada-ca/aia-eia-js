@@ -1,6 +1,11 @@
 <template>
   <div>
-    <strong>{{ $t("modifier", locale) }}:</strong> {{ str }}
+    <div v-if="locale === undefined">
+      <strong>{{ $t("modifier") }}:</strong> {{ str }}
+    </div>
+    <div v-if="locale !== undefined">
+      [ {{ $t("modifier", locale) }}: {{ str }} ]
+    </div>
   </div>
 </template>
 
