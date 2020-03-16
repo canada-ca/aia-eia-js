@@ -300,10 +300,6 @@ const store: StoreOptions<RootState> = {
           }
         }
 
-        if (question.title == "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)") {
-          console.log(question);
-        }
-
         //Profile Scores
         if (
           scoreType === 1 &&
