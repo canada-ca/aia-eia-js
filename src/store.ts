@@ -266,8 +266,6 @@ const store: StoreOptions<RootState> = {
           if (question.parent.parent.constructor.name == "PageModel") {
             questionHeader = getTitleFromPanel(question.parent.parent);
             questionSubHeader = getTitleFromPanel(question.parent);
-
-            console.log(question.parent);
           }
         }
 
@@ -282,8 +280,6 @@ const store: StoreOptions<RootState> = {
           }
 
           lastHeader = calculatedHeader;
-
-          console.log(result.questionHeader);
         }
 
         //Add Localized results.
@@ -304,9 +300,14 @@ const store: StoreOptions<RootState> = {
           }
         }
 
+        if (question.title == "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)") {
+          console.log(question);
+        }
+
+        //Profile Scores
         if (
           scoreType === 1 &&
-          question.parent.name === "projectDetailsPanel-NS"
+          (question.parent.name === "projectDetailsPanel-NS" || question.parent.name === "businessDriversPanel-NS" || question.parent.name === "aboutSystemPanel-NS")
         ) {
           projectResults.push(result);
         } else if (scoreType === 2) {
