@@ -12,6 +12,7 @@
     "saveButton": "Sauvegarder",
     "appTitle": "Évaluation de l'Incidence Algorithmique",
     "linkProjectText": "Lien vers le répertoire GitHub du projet",
+    "linkProjectAnchor": "https://github.com/canada-ca/aia-eia-js",
     "linkDirective": "http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32592#appC",
     "print": "Imprimer",
     "linkDirectiveText": "Lien vers les Exigences par niveau d’incidence de la Directive sur la prise de décision automatisée",
