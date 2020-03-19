@@ -57,6 +57,6 @@
     "push-dir": "^0.4.1",
     "ts-jest": "^23.0.0",
     "typescript": "^3.6.3",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.11"
   }
 }
