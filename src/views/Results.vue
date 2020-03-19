@@ -41,7 +41,7 @@
       />
     </form>
 
-    <br/>
+    <br />
 
     <Score />
     <Obligations />

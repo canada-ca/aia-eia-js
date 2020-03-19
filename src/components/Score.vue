@@ -34,7 +34,11 @@ import { Getter } from "vuex";
 var myMixin = {
   methods: {
     isMobile: function() {
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
         return true;
       } else {
         return false;
@@ -51,7 +55,8 @@ var myMixin = {
     },
     alertclass: function() {
       const score = this.$store.getters.calcScore[3];
-      if (score === undefined || score === 1) return "scoreClass alert alert-success";
+      if (score === undefined || score === 1)
+        return "scoreClass alert alert-success";
       if (score === 2) return "scoreClass alert alert-info";
       if (score === 3) return "scoreClass alert alert-warning";
       if (score === 4) return "scoreClass alert alert-danger";
