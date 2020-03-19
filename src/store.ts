@@ -148,16 +148,16 @@ function calculateFinalScore(
       // no real risk of injection since we are just getting a value, worst case it breaks our score
       // eslint-disable-next-line security/detect-object-injection
       rawRiskScore += getValue(survey.data[name]);
-      maxRawRiskScore += getMaxScoreForQuestion(<QuestionSelectBase>(
-        currentQuestion
-      ));
+      maxRawRiskScore += getMaxScoreForQuestion(
+        <QuestionSelectBase>currentQuestion
+      );
     } else if (currentQuestionType === 3) {
       // no real risk of injection since we are just getting a value, worst case it breaks our score
       // eslint-disable-next-line security/detect-object-injection
       mitigationScore += getValue(survey.data[name]);
-      maxMitigationScore += getMaxScoreForQuestion(<QuestionSelectBase>(
-        currentQuestion
-      ));
+      maxMitigationScore += getMaxScoreForQuestion(
+        <QuestionSelectBase>currentQuestion
+      );
     }
   });
 
