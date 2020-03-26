@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="col-md-12">
-      <strong>{{ data.title }}</strong>
+      <strong v-if="locale == undefined">{{ data.title }}</strong>
+      <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
       <br />
       <ul>
         <div v-for="(str, index) in data.value" :key="index">
@@ -10,7 +11,7 @@
               {{ data.displayValue.split(", ")[index] }}
             </div>
             <div class="col-md-2">
-              <Modifier :data="parseInt(str)" />
+              <Modifier :data="parseInt(str)" :locale="locale" />
             </div>
           </div>
         </div>
@@ -30,6 +31,7 @@ import Modifier from "@/components/Modifier.vue";
 })
 export default class MultiChoiceValueResult extends Vue {
   @Prop() data: any;
+  @Prop() locale: any;
   getValueList() {
     return this.data.displayValue.split(", ");
   }

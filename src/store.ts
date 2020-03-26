@@ -2,7 +2,7 @@ import Vue from "vue";
 import Vuex, { StoreOptions } from "vuex";
 import VuexPersistence from "vuex-persist";
 import { RootState } from "./types";
-import { IQuestion, QuestionSelectBase, SurveyModel } from "survey-vue";
+import { IQuestion, QuestionSelectBase, SurveyModel, IPanel, LocalizableString } from "survey-vue";
 import isEmpty from "lodash.isempty";
 
 Vue.use(Vuex);
@@ -124,6 +124,19 @@ function getMaxScoreForQuestion(question: QuestionSelectBase): number {
   return max;
 }
 
+type LanguageString = {
+  en: string;
+  fr: string;
+}
+
+function getTitleFromPanel(panel: any): LanguageString {
+  var retVal = {
+    'en': panel.locTitle.getLocaleText("default"), 
+    'fr': panel.locTitle.getLocaleText("fr")
+  };
+  return retVal;
+}
+
 function calculateFinalScore(
   survey: SurveyModel,
   questionNames: string[]
@@ -239,14 +252,58 @@ const store: StoreOptions<RootState> = {
       var riskResults: any[] = [];
       var mitigationResults: any[] = [];
       var mitigationResultsYes: any[] = [];
+      var lastHeader = "";
 
       state.answerData.forEach(function(result) {
         var question = state.result!.getQuestionByName(result.name);
         const scoreType = getScoreType(question);
 
+        //Calculate the section header.
+        var questionHeader = {'en': "", 'fr':""};
+        var questionSubHeader = {'en':"", 'fr': ""};
+        if (question.parent.constructor.name === "PanelModel") {
+          var panel = question.parent;
+          if (question.parent.parent.constructor.name == "PageModel") {
+            questionHeader = getTitleFromPanel(question.parent.parent);
+            questionSubHeader = getTitleFromPanel(question.parent);
+          }
+        }
+
+        var calculatedHeader = questionHeader.en;
+        if (questionSubHeader.en != "") { calculatedHeader += " - " + questionSubHeader.en; }
+        if (lastHeader != calculatedHeader) {
+          result.questionHeader = questionHeader;
+
+          if (questionSubHeader.en != "") {
+            result.questionHeader.en += " - " + questionSubHeader.en;
+            result.questionHeader.fr += " - " + questionSubHeader.fr;
+          }
+
+          lastHeader = calculatedHeader;
+        }
+
+        //Add Localized results.
+        result.titleData = { 'en': question.locTitle.getLocaleText("default"), 'fr': question.locTitle.getLocaleText("fr") };
+
+        if (question.selectedItem !== undefined && question.selectedItem !== null) {
+          if (question.selectedItem.locText !== undefined && question.selectedItem.locText !== null) {
+            result.selectedItem = { 'en': question.selectedItem.locText.getLocaleText("default"), 'fr': question.selectedItem.locText.getLocaleText("fr") };
+          }
+        }
+
+        if (question.getChoices !== undefined) {
+          var choices = question.getChoices();
+          result.choiceData = [];
+
+          for (var i = 0; i < choices.length; i++) {
+            result.choiceData.push( { 'en': choices[i].locText.getLocaleText("default"), 'fr': choices[i].locText.getLocaleText("fr") } );
+          }
+        }
+
+        //Profile Scores
         if (
           scoreType === 1 &&
-          question.parent.name === "projectDetailsPanel-NS"
+          (question.parent.name === "projectDetailsPanel-NS" || question.parent.name === "businessDriversPanel-NS" || question.parent.name === "aboutSystemPanel-NS")
         ) {
           projectResults.push(result);
         } else if (scoreType === 2) {

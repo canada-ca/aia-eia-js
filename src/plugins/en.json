@@ -1,5 +1,10 @@
 {
     "startAgain": "Start Again",
+    "exportEnglishResults": "Export English Document",
+    "exportFrenchResults": "Export French Document",
+    "frenchContent": "French Content",
+    "englishContent": "English Content",
+    "export": "Export",
     "loadFile": "Click to Load a Previously Saved File",
     "localSaveWarning": "Information in the AIA is only stored locally on your computer, and the Government of Canada does not have access to the information you place into the tool. If you wish to retain your state, please save the data locally for future use.",
     "swtchLang": "Français",
@@ -8,6 +13,7 @@
     "saveButton": "Save",
     "appTitle": "Algorithmic Impact Assessment",
     "linkProjectText": "Link to GitHub project repository",
+    "linkProjectAnchor": "https://github.com/canada-ca/aia-eia-js",
     "linkDirective": "http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592#appC",
     "print": "Print",
     "linkDirectiveText": "Link to the Directive on Automated Decision-Making Impact Level Requirements",

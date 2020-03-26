@@ -12,10 +12,10 @@
 <template>
   <b-container class="sticky">
     <b-row :class="alertclass" :no-gutters="true" v-if="!isMobile()">
-      <b-col>{{ $t("riskLevel") }}: {{ score[3] }}</b-col>
-      <b-col>{{ $t("currentScore") }}: {{ score[2] }}</b-col>
-      <b-col>{{ $t("rawRiskScore") }}: {{ score[0] }}</b-col>
-      <b-col>{{ $t("mitigationScore") }}: {{ score[1] }}</b-col>
+      <b-col>{{ $t("riskLevel", locale) }}: {{ score[3] }}</b-col>
+      <b-col>{{ $t("currentScore", locale) }}: {{ score[2] }}</b-col>
+      <b-col>{{ $t("rawRiskScore", locale) }}: {{ score[0] }}</b-col>
+      <b-col>{{ $t("mitigationScore", locale) }}: {{ score[1] }}</b-col>
     </b-row>
     <b-row :class="alertclass" :no-gutters="true" v-if="isMobile()">
       <b-col>{{ $t("IL") }}: {{ score[3] }}</b-col>
@@ -45,6 +45,7 @@ var myMixin = {
 
 @Component({
   mixins: [myMixin],
+  props: ["locale"],
   computed: {
     score: function() {
       return this.$store.getters.calcScore;

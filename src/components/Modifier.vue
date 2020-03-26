@@ -1,6 +1,11 @@
 <template>
   <div>
-    <strong>{{ $t("modifier") }}:</strong> {{ str }}
+    <div v-if="locale === undefined">
+      <strong>{{ $t("modifier") }}:</strong> {{ str }}
+    </div>
+    <div v-if="locale !== undefined">
+      [ {{ $t("modifier", locale) }}: {{ str }} ]
+    </div>
   </div>
 </template>
 
@@ -10,6 +15,7 @@ import { Component, Vue, Prop } from "vue-property-decorator";
 @Component
 export default class Modifier extends Vue {
   @Prop() data: any;
+  @Prop() locale: any;
   private str: String = this.getModifiedData();
 
   getModifiedData(): string {

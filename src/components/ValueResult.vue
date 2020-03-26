@@ -1,12 +1,14 @@
 <template>
   <div>
     <div class="col-md-10">
-      <strong>{{ data.title }}</strong>
+      <strong v-if="locale == undefined">{{ data.title }}</strong>
+      <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
       <br />
-      {{ data.displayValue }}
+      <div v-if="locale == undefined">{{ data.displayValue }}</div>
+      <div v-if="locale !== undefined">{{ data.selectedItem[locale] }}</div>
     </div>
     <div v-if="!data.name.endsWith('-NS')" class="col-md-2">
-      <Modifier :data="data.value" />
+      <Modifier :data="data.value" :locale="locale" />
     </div>
   </div>
 </template>
@@ -22,5 +24,6 @@ import Modifier from "@/components/Modifier.vue";
 })
 export default class ValueResult extends Vue {
   @Prop() data: any;
+  @Prop() locale: any;
 }
 </script>

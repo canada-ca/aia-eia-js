@@ -2,6 +2,17 @@
   <div class="results">
     <!--<PrintButton />-->
     <h1>{{ $t("resultTitle") }}</h1>
+    <p>
+      <a class="btn btn-default pull-right" role="button" :href="$t(linkProjectAnchor)">
+        {{ $t("linkProjectText") }}
+      </a>
+    </p>
+    <form>
+      <ActionButtonBar
+        v-on:fileLoaded="fileLoaded($event)"
+        v-on:startAgain="startAgain"
+      />
+    </form>
 
     <div class="alert alert-info">
       <p class="small">{{ $t("localSaveWarning") }}</p>
@@ -34,53 +45,153 @@
       </li>
     </ul>
 
-    <form>
-      <ActionButtonBar
-        v-on:fileLoaded="fileLoaded($event)"
-        v-on:startAgain="startAgain"
-      />
-    </form>
+    <div id="results-printable">
 
-    <br/>
+      <Score />
+      <Obligations />
 
-    <Score />
-    <Obligations />
+      <div class="container-fluid">
+        <div class="row">
+          <h2 id="mitigationMeasures">{{ $t("resultSectionMeasure") }}</h2>
+        </div>
+        <div class="row">
+          <p v-for="result in myResults[3]" :key="result.name">
+            {{ $t(result.name) }}
+          </p>
+        </div>
 
-    <div class="container-fluid">
-      <div class="row">
-        <h2 id="mitigationMeasures">{{ $t("resultSectionMeasure") }}</h2>
-      </div>
-      <div class="row">
-        <p v-for="result in myResults[3]" :key="result.name">
-          {{ $t(result.name) }}
-        </p>
-      </div>
+        <div class="row">
+          <h2 id="qA">{{ $t("resultSectionQA") }}</h2>
+        </div>
 
-      <div class="row">
-        <h2 id="qA">{{ $t("resultSectionQA") }}</h2>
-      </div>
+        <div class="row">
+          <h3 id="projectDetails">{{ $t("resultSectionPD") }}</h3>
+        </div>
+        <div class="row" v-for="result in myResults[0]" :key="result.name">
+          <Result :data="result"></Result>
+        </div>
 
-      <div class="row">
-        <h3 id="projectDetails">{{ $t("resultSectionPD") }}</h3>
-      </div>
-      <div class="row" v-for="result in myResults[0]" :key="result.name">
-        <Result :data="result"></Result>
-      </div>
+        <div class="row">
+          <h3 id="riskQA">{{ $t("resultSectionRQA") }}</h3>
+        </div>
+        <div class="row" v-for="result in myResults[1]" :key="result.name">
+          <Result :data="result"></Result>
+        </div>
 
-      <div class="row">
-        <h3 id="riskQA">{{ $t("resultSectionRQA") }}</h3>
-      </div>
-      <div class="row" v-for="result in myResults[1]" :key="result.name">
-        <Result :data="result"></Result>
-      </div>
-
-      <div class="row">
-        <h3 id="mitigationQA">{{ $t("resultSectionMQA") }}</h3>
-      </div>
-      <div class="row" v-for="result in myResults[2]" :key="result.name">
-        <Result :data="result"></Result>
+        <div class="row">
+          <h3 id="mitigationQA">{{ $t("resultSectionMQA") }}</h3>
+        </div>
+        <div class="row" v-for="result in myResults[2]" :key="result.name">
+          <Result :data="result"></Result>
+        </div>
       </div>
     </div>
+
+    <div style="margin-bottom:15px;">
+      <h1>{{ $t("export") }}</h1>
+      <button
+        type="button"
+        value="Export Results"
+        class="btn btn-default"
+        onclick="exportResults('en')"
+      >
+        {{ $t("exportEnglishResults") }}
+      </button>
+
+      <button
+        type="button"
+        value="Export Results"
+        class="btn btn-default"
+        onclick="exportResults('fr')"
+      >
+        {{ $t("exportFrenchResults") }}
+      </button>
+    </div>
+
+    <details id="en-content-wrap">
+      <summary>{{ $t("englishContent") }}</summary>
+      <div id="en-content" lang="en">
+        <h1>{{ $t("resultTitle", "en") }}</h1>
+
+        <div class="row" v-for="result in myResults[0]" :key="result.name">
+          <Result :data="result" locale="en"></Result>
+        </div>
+
+        <Score locale="en" />
+        <Obligations locale="en" />
+        <div class="container-fluid">
+          <div class="row">
+            <h2 id="mitigationMeasures">{{ $t("resultSectionMeasure", "en") }}</h2>
+          </div>
+          <div class="row">
+            <p v-for="result in myResults[3]" :key="result.name">
+              {{ $t(result.name, "en") }}
+            </p>
+          </div>
+
+          <div class="row">
+            <h2 id="qA">{{ $t("resultSectionQA", "en") }}</h2>
+          </div>
+
+          <div class="row">
+            <h3 id="riskQA">{{ $t("resultSectionRQA", "en") }}</h3>
+          </div>
+          <div class="row" v-for="result in myResults[1]" :key="result.name">
+            <Result :data="result" locale="en"></Result>
+          </div>
+
+          <div class="row">
+            <h3 id="mitigationQA">{{ $t("resultSectionMQA", "en") }}</h3>
+          </div>
+          <div class="row" v-for="result in myResults[2]" :key="result.name">
+            <Result :data="result" locale="en"></Result>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details id="fr-content-wrap">
+      <summary>{{ $t("frenchContent") }}</summary>
+      <div id="fr-content" lang="fr">
+        <h1>{{ $t("resultTitle", "fr") }}</h1>
+
+        <div class="row" v-for="result in myResults[0]" :key="result.name">
+          <Result :data="result" locale="fr"></Result>
+        </div>
+
+        <Score locale="fr" />
+        <Obligations locale="fr" />
+
+        <div class="container-fluid">
+          <div class="row">
+            <h2 id="mitigationMeasures">{{ $t("resultSectionMeasure", "fr") }}</h2>
+          </div>
+          <div class="row">
+            <p v-for="result in myResults[3]" :key="result.name">
+              {{ $t(result.name, "fr") }}
+            </p>
+          </div>
+
+          <div class="row">
+            <h2 id="qA">{{ $t("resultSectionQA", "fr") }}</h2>
+          </div>
+
+          <div class="row">
+            <h3 id="riskQA">{{ $t("resultSectionRQA", "fr") }}</h3>
+          </div>
+          <div class="row" v-for="result in myResults[1]" :key="result.name">
+            <Result :data="result" locale="fr"></Result>
+          </div>
+
+          <div class="row">
+            <h3 id="mitigationQA">{{ $t("resultSectionMQA", "fr") }}</h3>
+          </div>
+          <div class="row" v-for="result in myResults[2]" :key="result.name">
+            <Result :data="result" locale="fr"></Result>
+          </div>
+        </div>
+      </div>
+    </details>
   </div>
 </template>
 
@@ -122,12 +233,15 @@ export default class Results extends Vue {
     this.Survey.clear(true, true);
     window.localStorage.clear();
     this.$store.commit("resetSurvey");
+    this.$router.push({path:'/'});
   }
   fileLoaded($event: SurveyFile) {
     this.Survey.data = $event.data;
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
     this.$store.commit("updateResult", this.Survey);
+
+    this.myResults = this.$store.getters.resultDataSections;
   }
 
   created() {
