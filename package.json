@@ -21,6 +21,7 @@
     "@types/lodash.isempty": "^4.4.6",
     "@types/showdown": "^1.9.3",
     "bootstrap-vue": "^2.0.3",
+    "core-js": "^3.6.4",
     "lodash.isempty": "^4.4.0",
     "register-service-worker": "^1.7.1",
     "showdown": "^1.9.1",
@@ -36,7 +37,7 @@
   },
   "devDependencies": {
     "@types/jest": "^25.1.4",
-    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-babel": "^4.2.3",
     "@vue/cli-plugin-e2e-cypress": "^4.2.3",
     "@vue/cli-plugin-eslint": "^4.2.3",
     "@vue/cli-plugin-pwa": "^4.2.3",
