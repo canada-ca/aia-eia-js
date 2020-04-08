@@ -2,7 +2,9 @@
   <div class="requirements">
     <div class="container-fluid">
       <div class="row">
-        <h2 id="obligations">{{ $t("requirements.title", locale) }} {{ score[3] }}</h2>
+        <h2 id="obligations">
+          {{ $t("requirements.title", locale) }} {{ score[3] }}
+        </h2>
       </div>
       <div
         class="row"
