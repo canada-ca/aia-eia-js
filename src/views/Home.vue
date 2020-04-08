@@ -2,7 +2,11 @@
   <div class="home">
     <h1>{{ $t("appTitle") }}</h1>
     <p>
-      <a class="btn btn-default pull-right" role="button" :href="$t(linkProjectAnchor)">
+      <a
+        class="btn btn-default pull-right"
+        role="button"
+        :href="$t(linkProjectAnchor)"
+      >
         {{ $t("linkProjectText") }}
       </a>
     </p>

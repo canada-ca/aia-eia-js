@@ -3,7 +3,11 @@
     <!--<PrintButton />-->
     <h1>{{ $t("resultTitle") }}</h1>
     <p>
-      <a class="btn btn-default pull-right" role="button" :href="$t(linkProjectAnchor)">
+      <a
+        class="btn btn-default pull-right"
+        role="button"
+        :href="$t(linkProjectAnchor)"
+      >
         {{ $t("linkProjectText") }}
       </a>
     </p>
@@ -46,7 +50,6 @@
     </ul>
 
     <div id="results-printable">
-
       <Score />
       <Obligations />
 
@@ -121,7 +124,9 @@
         <Obligations locale="en" />
         <div class="container-fluid">
           <div class="row">
-            <h2 id="mitigationMeasures">{{ $t("resultSectionMeasure", "en") }}</h2>
+            <h2 id="mitigationMeasures">
+              {{ $t("resultSectionMeasure", "en") }}
+            </h2>
           </div>
           <div class="row">
             <p v-for="result in myResults[3]" :key="result.name">
@@ -164,7 +169,9 @@
 
         <div class="container-fluid">
           <div class="row">
-            <h2 id="mitigationMeasures">{{ $t("resultSectionMeasure", "fr") }}</h2>
+            <h2 id="mitigationMeasures">
+              {{ $t("resultSectionMeasure", "fr") }}
+            </h2>
           </div>
           <div class="row">
             <p v-for="result in myResults[3]" :key="result.name">
@@ -233,7 +240,7 @@ export default class Results extends Vue {
     this.Survey.clear(true, true);
     window.localStorage.clear();
     this.$store.commit("resetSurvey");
-    this.$router.push({path:'/'});
+    this.$router.push({ path: "/" });
   }
   fileLoaded($event: SurveyFile) {
     this.Survey.data = $event.data;
