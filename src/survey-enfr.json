@@ -1083,7 +1083,7 @@
                                 {
                                     "value": "item2",
                                     "text": {
-                                        "default": "Text and speech analysis: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging",
+                                        "default": "Text and speech analysis: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging",
                                         "fr": "Analyse du texte et de la parole: Analyser de vastes jeux de données pour reconnaître, traiter et étiqueter le texte, la parole, la voix et faire des recommendations en fonction du marquage."
                                     }
                                 },
@@ -1097,7 +1097,7 @@
                                 {
                                     "value": "item4",
                                     "text": {
-                                        "default": "Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
+                                        "default": "Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
                                         "fr": "Génération de contenu: Analyser de vastes jeux de données pour créer des catégories, traiter, trier, personnaliser et servir un contenu spécifique destiné à des contextes particuliers."
                                     }
                                 },
@@ -1177,7 +1177,7 @@
                             "type": "radiogroup",
                             "name": "aboutAlgorithm2",
                             "title": {
-                                "default": "The algorithmic process will be difficult to interpret or to explain",
+                                "default": "The algorithmic process will be difficult to interpret or to explain",
                                 "fr": "Le processus algorithmique sera difficile à interpréter ou à expliquer"
                             },
                             "choices": [
@@ -1316,7 +1316,7 @@
                             "type": "radiogroup",
                             "name": "impact2",
                             "title": {
-                                "default": "Will the system be replacing a decision that would otherwise be made by a human?",
+                                "default": "Will the system be replacing a decision that would otherwise be made by a human?",
                                 "fr": "Le système automatisera-t-il ou remplacera-t-il les décisions humaines qui exigent du jugement ou de la discrétion?"
                             },
                             "choices": [
@@ -1495,14 +1495,14 @@
                                 {
                                     "value": "item2-2",
                                     "text": {
-                                        "default": "Moderate impact",
+                                        "default": "Moderate impact",
                                         "fr": "Incidence modérée"
                                     }
                                 },
                                 {
                                     "value": 3,
                                     "text": {
-                                        "default": "High impact",
+                                        "default": "High impact",
                                         "fr": "Incidence élevée"
                                     }
                                 },
@@ -1541,14 +1541,14 @@
                                 {
                                     "value": "item2-2",
                                     "text": {
-                                        "default": "Moderate impact",
+                                        "default": "Moderate impact",
                                         "fr": "Incidence modérée"
                                     }
                                 },
                                 {
                                     "value": "item3-3",
                                     "text": {
-                                        "default": "High impact",
+                                        "default": "High impact",
                                         "fr": "Incidence élevée"
                                     }
                                 },
@@ -1587,14 +1587,14 @@
                                 {
                                     "value": "item2-2",
                                     "text": {
-                                        "default": "Moderate impact",
+                                        "default": "Moderate impact",
                                         "fr": "Incidence modérée"
                                     }
                                 },
                                 {
                                     "value": "item3-3",
                                     "text": {
-                                        "default": "High impact",
+                                        "default": "High impact",
                                         "fr": "Incidence élevée"
                                     }
                                 },
@@ -1620,7 +1620,7 @@
                             "name": "impact15",
                             "title": {
                                 "default": "The impacts that the decision will have on the ongoing sustainability of an environmental ecosystem, will likely be:",
-                                "fr": "Les incidences de la décision sur la pérennité d’un écosystème environnemental seront probablement les suivantes :"
+                                "fr": "Les incidences de la décision sur la pérennité d’un écosystème environnemental seront probablement les suivantes :"
                             },
                             "choices": [
                                 {
@@ -1633,14 +1633,14 @@
                                 {
                                     "value": "item2-2",
                                     "text": {
-                                        "default": "Moderate impact",
+                                        "default": "Moderate impact",
                                         "fr": "Incidence modérée"
                                     }
                                 },
                                 {
                                     "value": "item3-3",
                                     "text": {
-                                        "default": "High impact",
+                                        "default": "High impact",
                                         "fr": "Incidence élevée"
                                     }
                                 },
@@ -1984,7 +1984,7 @@
                                 {
                                     "value": "item2-4",
                                     "text": {
-                                        "default": "Images and videos",
+                                        "default": "Images and videos",
                                         "fr": "Images et vidéos"
                                     }
                                 }
