@@ -41,10 +41,25 @@ export default class Result extends Vue {
   isMultiChoiceValueResult(data: any): boolean {
     if (!Array.isArray(data.value)) return false;
 
-    //return true if all items are numbers
+    //return true if one of the value has a score
     return data.value.reduce((accumulator: boolean, currentValue: any) => {
-      return typeof currentValue === "number" && accumulator;
-    }, true);
+      return this.hasScore(currentValue) || accumulator;
+    }, false);
+  }
+
+  // TODO this is duplicating code from store.ts; can we access it here?
+  hasScore(val: String): boolean {
+    if (typeof val !== "string") {
+      return false;
+    }
+    var lastHyphenIdx = val.lastIndexOf("-");
+    if (lastHyphenIdx !== -1) {
+      // Suffix after last "-" could be a number.
+      var possibleValue = val.substr(lastHyphenIdx + 1);
+      var value = Number(possibleValue);
+      return !isNaN(value);
+    }
+    return false;
   }
 }
 </script>
