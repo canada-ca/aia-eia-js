@@ -26,6 +26,7 @@ import TextResult from "@/components/TextResult.vue";
 import ValueResult from "@/components/ValueResult.vue";
 import MultiChoiceResult from "@/components/MultiChoiceResult.vue";
 import MultiChoiceValueResult from "@/components/MultiChoiceValueResult.vue";
+import { getValue } from "@/store.ts";
 
 @Component({
   components: {
@@ -43,23 +44,8 @@ export default class Result extends Vue {
 
     //return true if one of the value has a score
     return data.value.reduce((accumulator: boolean, currentValue: any) => {
-      return this.hasScore(currentValue) || accumulator;
+      return getValue(currentValue) > 0 || accumulator;
     }, false);
-  }
-
-  // TODO this is duplicating code from store.ts; can we access it here?
-  hasScore(val: String): boolean {
-    if (typeof val !== "string") {
-      return false;
-    }
-    var lastHyphenIdx = val.lastIndexOf("-");
-    if (lastHyphenIdx !== -1) {
-      // Suffix after last "-" could be a number.
-      var possibleValue = val.substr(lastHyphenIdx + 1);
-      var value = Number(possibleValue);
-      return !isNaN(value);
-    }
-    return false;
   }
 }
 </script>
