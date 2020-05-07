@@ -24,7 +24,15 @@ export default class MultiChoiceResult extends Vue {
       if (matches.length === 0) return "ERROR: No Matches found";
       return matches[0].displayValue;
     } else {
-      return this.data.choiceData[index][this.locale];
+      var choiceValue = this.data.data[index].displayValue;
+      var returnValue = "";
+      var localePass = this.locale;
+      this.data.choiceData.forEach(function(choice:any) {
+        if (choice.en == choiceValue || choice.fr == choiceValue) {
+          returnValue = choice[localePass];
+        }
+      });
+      return returnValue;
     }
   }
 }
