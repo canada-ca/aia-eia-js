@@ -57,7 +57,7 @@ function parseEmbeddedValue(val: String): number {
   return 0;
 }
 
-function getValue(val: any) {
+export function getValue(val: any) {
   if (val === undefined) {
     return 0;
   }

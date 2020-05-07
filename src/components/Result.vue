@@ -26,6 +26,7 @@ import TextResult from "@/components/TextResult.vue";
 import ValueResult from "@/components/ValueResult.vue";
 import MultiChoiceResult from "@/components/MultiChoiceResult.vue";
 import MultiChoiceValueResult from "@/components/MultiChoiceValueResult.vue";
+import { getValue } from "@/store.ts";
 
 @Component({
   components: {
@@ -41,10 +42,10 @@ export default class Result extends Vue {
   isMultiChoiceValueResult(data: any): boolean {
     if (!Array.isArray(data.value)) return false;
 
-    //return true if all items are numbers
+    //return true if one of the value has a score
     return data.value.reduce((accumulator: boolean, currentValue: any) => {
-      return typeof currentValue === "number" && accumulator;
-    }, true);
+      return getValue(currentValue) > 0 || accumulator;
+    }, false);
   }
 }
 </script>

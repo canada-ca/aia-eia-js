@@ -4,18 +4,16 @@
       <strong v-if="locale == undefined">{{ data.title }}</strong>
       <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
       <br />
-      <ul>
-        <div v-for="(str, index) in data.value" :key="index">
-          <div class="row">
-            <div class="col-md-10">
-              {{ data.displayValue.split(", ")[index] }}
-            </div>
-            <div class="col-md-2">
-              <Modifier :data="parseInt(str)" :locale="locale" />
-            </div>
+      <div v-for="(str, index) in data.value" :key="index">
+        <div class="row">
+          <div class="col-md-10 list-item">
+            {{ getItemLabel(str, index) }}
+          </div>
+          <div class="col-md-2">
+            <Modifier :data="getScore(str)" :locale="locale" />
           </div>
         </div>
-      </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -23,17 +21,17 @@
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
 import Modifier from "@/components/Modifier.vue";
+import { getValue } from "@/store.ts";
+import MultiChoiceResult from "@/components/MultiChoiceResult.vue";
 
 @Component({
   components: {
     Modifier
   }
 })
-export default class MultiChoiceValueResult extends Vue {
-  @Prop() data: any;
-  @Prop() locale: any;
-  getValueList() {
-    return this.data.displayValue.split(", ");
+export default class MultiChoiceValueResult extends MultiChoiceResult {
+  getScore(val: String): number {
+    return getValue(val);
   }
 }
 </script>
