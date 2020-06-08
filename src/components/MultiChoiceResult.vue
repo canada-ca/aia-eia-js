@@ -4,9 +4,13 @@
       <strong v-if="locale == undefined">{{ data.title }}</strong>
       <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
       <br />
-      <ul v-for="(str, index) in data.value" :key="index">
-        <li>{{ getItemLabel(str, index) }}</li>
-      </ul>
+      <div v-for="(str, index) in data.value" :key="index">
+        <div class="row">
+          <div class="col-md-12 list-item">
+            {{ getItemLabel(str, index) }}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

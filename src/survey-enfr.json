@@ -1104,7 +1104,7 @@
                                 {
                                     "value": "item5",
                                     "text": {
-                                        "default": "Process optimization & workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows",
+                                        "default": "Process optimization and workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows",
                                         "fr": "Optimisation des processus et automatisation des flux de travail:    Analyser de vastes jeux de connées pour déterminer et corriger les anomalies, les modèles de grappes, prévoir les résultats ou les façons d'optimiser; et d'automatiser des flux de travail spécifique."
                                     }
                                 },
