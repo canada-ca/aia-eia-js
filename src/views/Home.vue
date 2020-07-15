@@ -27,7 +27,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Watch } from "vue-property-decorator";
 import { Model } from "survey-vue";
 import showdown from "showdown";
 
@@ -59,6 +59,13 @@ export default class Home extends Vue {
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
     this.$store.commit("updateResult", this.Survey);
+  }
+
+  @Watch("$i18n.locale")
+  changeLanguage(value: string, oldValue: string) {
+    console.log("executed");
+    this.Survey.locale = value;
+    this.Survey.render();
   }
 
   created() {
@@ -94,7 +101,9 @@ export default class Home extends Vue {
 
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
-    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
+    // this results in a wide range of accessibilty issues
+    // use css to change size of labels. since survey is technically a web form
+    /* this.Survey.onAfterRenderQuestion.add(function(sender, options) {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
       if (title) {
         var questionRequiredHTML = "";
@@ -117,7 +126,7 @@ export default class Home extends Vue {
           questionRequiredHTML +
           "</label>";
       }
-    });
+    });*/
 
     //if survey is in progress reload from store
     if (this.$store.getters.inProgress) {
