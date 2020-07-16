@@ -123,6 +123,10 @@ a:active, a:hover {
     outline: 0 !important;
 }
 
+#app a{
+    color: #284162 !important;
+}
+
 .btn {
     font-family: Lato,sans-serif !important;
 }
@@ -175,6 +179,16 @@ a:active, a:hover {
     user-select: none !important;
 }
 
+.survey-button {
+    color: white !important;
+    background-color: #11826b !important;
+}
+
+.survey-button:hover {
+    color: white !important;
+    background-color: #0b5445!important;
+}
+
 .language-button{
     left: unset;
     margin-right: 10px;
@@ -194,3 +208,4 @@ a:active, a:hover {
 .breadcrumb a {
     color: black;
 }
+

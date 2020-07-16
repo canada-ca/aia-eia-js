@@ -22,7 +22,10 @@
             >{{ $t("englishContent") }} :
           </strong>
           <div>
-            <textarea v-model="data.displayValueAlt"></textarea>
+            <textarea
+              aria-label="value"
+              v-model="data.displayValueAlt"
+            ></textarea>
           </div>
         </div>
       </div>

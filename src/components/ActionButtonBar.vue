@@ -5,7 +5,7 @@
         <li>
           <button
             type="button"
-            class="mrgn-bttm-sm btn btn-success"
+            class="btn survey-button"
             v-on:click="saveSurvey"
           >
             {{ $t("saveButton") }}
@@ -24,7 +24,7 @@
           <button
             type="button"
             value="Start Over"
-            class="btn btn-default"
+            class="btn survey-button"
             v-on:click="$emit('startAgain')"
           >
             {{ $t("startAgain") }}
@@ -37,6 +37,7 @@
         type="file"
         class="btn btn-default"
         value="Load"
+        :title="$t('loadFile')"
         @change="onFileChanged($event)"
       />
     </div>
