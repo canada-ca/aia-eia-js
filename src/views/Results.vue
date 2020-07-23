@@ -210,7 +210,6 @@ import { Model } from "survey-vue";
 import showdown from "showdown";
 
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
-import Score from "@/components/Score.vue";
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
 import Result from "@/components/Result.vue";
 import Obligations from "@/components/Obligations.vue";
@@ -222,7 +221,6 @@ import surveyJSON from "@/survey-enfr.json";
   components: {
     ActionButtonBar,
     Result,
-    Score,
     Obligations
   },
   computed: {

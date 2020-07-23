@@ -150,7 +150,7 @@
        }
       ],
       "visibleIf": "{section_one_enable} = true",
-      "title": "Section 1 - General Questions"
+      "title": "Section One - General Questions"
      },
      {
       "name": "sectionOneTechnicalCapabilities",
@@ -166,22 +166,18 @@
            {
             "type": "rating",
             "name": "sectionOneTechnicalCapabilitiesVersionControlApplicationCodePercentage",
-            "title": "What percentage of application code do you store in version control? ",
+            "title": "What percentage of application code do you store in version control?",
             "isRequired": true,
             "rateMin": 0,
             "rateMax": 100,
-            "rateStep": 10,
-            "minRateDescription": "No code is stored in version control",
-            "maxRateDescription": "All application code exists in a version control system "
+            "rateStep": 10
            },
            {
             "type": "rating",
             "name": "sectionOneTechnicalCapabilitiesVersionControlApplicationCodeRecovery",
-            "title": "How easily and quickly can teams reconfigure systems from version control?",
+            "title": "How easily and quickly can a team recover application code from the version control system?",
             "isRequired": true,
-            "rateMax": 7,
-            "minRateDescription": "Systems cannot be reconfigured or requires substantial effort",
-            "maxRateDescription": "Systems are easily able to be reconfigured"
+            "rateMax": 7
            }
           ],
           "title": "Application Code",
@@ -195,11 +191,17 @@
             "type": "rating",
             "name": "sectionOneTechnicalCapabilitiesVersionControlSystemConfigurationPercentage",
             "title": "What percentage of system configurations do you store in version control? ",
-            "isRequired": true
+            "isRequired": true,
+            "rateMin": 0,
+            "rateMax": 100,
+            "rateStep": 10
            },
            {
             "type": "rating",
-            "name": "question3"
+            "name": "sectionOneTechnicalCapabilitiesVersionControlSystemConfigurationReconfigure",
+            "title": "How easily and quickly can teams reconfigure systems from version control?",
+            "isRequired": true,
+            "rateMax": 7
            }
           ],
           "title": "System Configurations",
@@ -207,18 +209,49 @@
          },
          {
           "type": "panel",
-          "name": "panel4",
+          "name": "sectionOneTechnicalCapabilitiesVersionControlApplicationConfiguration",
           "elements": [
            {
             "type": "rating",
-            "name": "question5"
+            "name": "sectionOneTechnicalCapabilitiesVersionControlApplicationConfigurationPercentage",
+            "title": "What percentage of application configurations do you store in version control?",
+            "isRequired": true,
+            "rateMin": 0,
+            "rateMax": 100,
+            "rateStep": 10
            },
            {
             "type": "rating",
-            "name": "question6"
+            "name": "sectionOneTechnicalCapabilitiesVersionControlApplicationConfigurationReconfigure",
+            "title": "What percentage of application configurations do you store in version control?",
+            "isRequired": true,
+            "rateMax": 7
            }
           ],
-          "title": "Automating Builds and Configuration"
+          "title": "Application Configuration"
+         },
+         {
+          "type": "panel",
+          "name": "sectionOneTechnicalCapabilitiesVersionControlScripts",
+          "elements": [
+           {
+            "type": "rating",
+            "name": "sectionOneTechnicalCapabilitiesVersionControlScriptsPercentage",
+            "title": "What percentage do you store in version control?",
+            "isRequired": true,
+            "rateMin": 0,
+            "rateMax": 100,
+            "rateStep": 10
+           },
+           {
+            "type": "rating",
+            "name": "sectionOneTechnicalCapabilitiesVersionControlScriptsReconfigure",
+            "title": "How quickly and easily can you re-provision systems by using scripts from version control?",
+            "isRequired": true,
+            "rateMax": 7
+           }
+          ],
+          "title": "Scripts for Automating Build and Configuration"
          }
         ],
         "title": "Version Control ",
@@ -227,6 +260,229 @@
       ],
       "visibleIf": "{section_one_enable} = true",
       "title": "Section One - Technical Capabilities"
+     },
+     {
+      "name": "sectionOneContinuousIntegration",
+      "elements": [
+       {
+        "type": "rating",
+        "name": "sectionOneContinuousIntegrationCodeCommitsAutomatedBuildPercentage",
+        "title": "What percentage of code commits result in a software build without manual intervention?",
+        "isRequired": true,
+        "rateMin": 0,
+        "rateMax": 100,
+        "rateStep": 10
+       },
+       {
+        "type": "rating",
+        "name": "sectionOneContinuousIntegrationCodeCommitsAutomatedTestsPercentage",
+        "title": "What percentage of code commits result in automated tests being run without manual intervention?",
+        "isRequired": true,
+        "rateMin": 0,
+        "rateMax": 100,
+        "rateStep": 10
+       },
+       {
+        "type": "rating",
+        "name": "sectionOneContinuousIntegrationCodeCommitsAutomatedSuccessPercentage",
+        "title": "What percentage of automated builds and tests that are executed successfully every day?",
+        "isRequired": true,
+        "rateMin": 0,
+        "rateMax": 100,
+        "rateStep": 10
+       },
+       {
+        "type": "boolean",
+        "name": "sectionOneContinuousIntegrationPercentageBuildsAvailableToTests",
+        "title": "Are builds available to testers? ",
+        "isRequired": true
+       },
+       {
+        "type": "rating",
+        "name": "sectionOneContinuousIntegrationTestFeedbackPercentage",
+        "title": "What percentage of tests provide feedback that is available to developers within a day?",
+        "isRequired": true,
+        "rateMin": 0,
+        "rateMax": 100,
+        "rateStep": 10
+       },
+       {
+        "type": "radiogroup",
+        "name": "sectionOneContinuousIntegrationFixTimeFrame",
+        "title": "How long does it takes between the build breaking and having it fixed, either with a check-in that fixes the problem, or by reverting the breaking change?",
+        "isRequired": true,
+        "choices": [
+         {
+          "value": "item1",
+          "text": "Less than a day"
+         },
+         {
+          "value": "item2",
+          "text": "Between one day and one week"
+         },
+         {
+          "value": "item3",
+          "text": "Between one week and one month "
+         }
+        ],
+        "hasOther": true,
+        "otherText": "Between one month and six months"
+       },
+       {
+        "type": "boolean",
+        "name": "sectionOneContinuousIntegrationBuildsRepeatable",
+        "title": "Are builds numbered and repeatable?",
+        "isRequired": true
+       },
+       {
+        "type": "boolean",
+        "name": "sectionOneContinuousIntegrationAutomatedTests",
+        "title": "Are automated tests run every day?",
+        "isRequired": true
+       },
+       {
+        "type": "radiogroup",
+        "name": "sectionOneContinuousIntegrationBuildDuration",
+        "title": "How long do tests and build take?",
+        "isRequired": true,
+        "choices": [
+         {
+          "value": "item1",
+          "text": "Less than a day"
+         },
+         {
+          "value": "item2",
+          "text": "Between one day and one week"
+         },
+         {
+          "value": "item3",
+          "text": "Between one week and one month"
+         },
+         {
+          "value": "item4",
+          "text": "Between one month and six months"
+         }
+        ]
+       }
+      ],
+      "visibleIf": "{section_one_enable} = true",
+      "title": "Section One - Continuous Integration"
+     },
+     {
+      "name": "SectionOneDeploymentAutomation",
+      "elements": [
+       {
+        "type": "radiogroup",
+        "name": "sectionOneDeploymentAutomationManualSteps",
+        "title": "How many manual steps are in your deployment process?",
+        "isRequired": true,
+        "choices": [
+         {
+          "value": "item1",
+          "text": "0"
+         },
+         {
+          "value": "item2",
+          "text": "1-5"
+         },
+         {
+          "value": "item3",
+          "text": "5-25"
+         }
+        ],
+        "hasOther": true,
+        "otherText": "25+"
+       },
+       {
+        "type": "rating",
+        "name": "sectionOneDeploymentAutomationPercentageStepsAutomated",
+        "title": "What percentage of the deployment steps are automated? ",
+        "isRequired": true,
+        "rateMin": 0,
+        "rateMax": 100,
+        "rateStep": 10
+       },
+       {
+        "type": "radiogroup",
+        "name": "sectionOneDeploymentAutomationPipelineDelays",
+        "title": "How much time is spent on delays in the deployment pipeline?",
+        "isRequired": true,
+        "choices": [
+         {
+          "value": "item1",
+          "text": "Less than a day"
+         },
+         {
+          "value": "item2",
+          "text": "Between one day and one week"
+         },
+         {
+          "value": "item3",
+          "text": "Between one week and one month"
+         }
+        ],
+        "hasOther": true,
+        "otherText": "Between one month and six months"
+       }
+      ],
+      "visibleIf": "{section_one_enable} = true",
+      "title": "Section One - Deployment Automation"
+     },
+     {
+      "name": "sectionOneTrunkBasedDevelopment",
+      "elements": [
+       {
+        "type": "radiogroup",
+        "name": "sectionOneTrunkBasedDevelopmentActiveBranches",
+        "title": "For your main application, how many active branches on the application's code repository?",
+        "isRequired": true,
+        "choices": [
+         {
+          "value": "item1",
+          "text": "Three or fewer active branches"
+         },
+         {
+          "value": "item2",
+          "text": "Three to five active branches"
+         },
+         {
+          "value": "item3",
+          "text": "Five to ten active branches"
+         }
+        ],
+        "hasOther": true,
+        "otherText": "More than ten active branches"
+       },
+       {
+        "type": "rating",
+        "name": "sectionOneTrunkBasedDevelopmentCodeFreezes",
+        "title": "How often does your team do code freezes for their main application",
+        "isRequired": true,
+        "rateMax": 7,
+        "minRateDescription": "never",
+        "maxRateDescription": "regularly"
+       },
+       {
+        "type": "rating",
+        "name": "sectionOneTrunkBasedDevelopmentMergeFrequency",
+        "title": "How often does your team merge branches or forks into the trunk",
+        "isRequired": true,
+        "rateMax": 7,
+        "minRateDescription": "twice a year or longer",
+        "maxRateDescription": "as part of daily work"
+       },
+       {
+        "type": "rating",
+        "name": "sectionOneTrunkBasedDevelopmentCodeReviewsCompleted",
+        "title": "How often are code reviews completed and approved?",
+        "isRequired": true,
+        "rateMax": 7,
+        "minRateDescription": "rarely",
+        "maxRateDescription": "often "
+       }
+      ],
+      "visibleIf": "{section_one_enable} = true",
+      "title": "Section One - Trunk-based Development"
      }
     ],
     "showQuestionNumbers": "off",

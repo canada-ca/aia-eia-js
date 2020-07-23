@@ -22,7 +22,6 @@
       />
     </form>
     <AssessmentTool :survey="Survey" />
-    <Score />
   </div>
 </template>
 
@@ -32,7 +31,6 @@ import { Model } from "survey-vue";
 import showdown from "showdown";
 
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
-import Score from "@/components/Score.vue";
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
@@ -42,8 +40,7 @@ import surveyJSON from "@/survey-enfr.json";
 @Component({
   components: {
     AssessmentTool,
-    ActionButtonBar,
-    Score
+    ActionButtonBar
   }
 })
 export default class Home extends Vue {
