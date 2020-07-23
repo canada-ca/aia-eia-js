@@ -27,7 +27,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Watch } from "vue-property-decorator";
 import { Model } from "survey-vue";
 import showdown from "showdown";
 
@@ -61,7 +61,16 @@ export default class Home extends Vue {
     this.$store.commit("updateResult", this.Survey);
   }
 
+  @Watch("$i18n.locale")
+  changeLanguage(value: string, oldValue: string) {
+    this.Survey.locale = value;
+    this.Survey.render();
+  }
+
   created() {
+    this.Survey.css = {
+      navigationButton: "btn survey-button"
+    };
     this.Survey.onComplete.add(result => {
       this.$store.commit("updateResult", result);
     });
@@ -94,7 +103,9 @@ export default class Home extends Vue {
 
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
-    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
+    // this results in a wide range of accessibilty issues
+    // use css to change size of labels. since survey is technically a web form
+    /*this.Survey.onAfterRenderQuestion.add(function(sender, options) {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
       if (title) {
         var questionRequiredHTML = "";
@@ -116,6 +127,16 @@ export default class Home extends Vue {
           "</span>" +
           questionRequiredHTML +
           "</label>";
+      }
+    });*/
+
+    // accessibility fix... aria-labelledby being needlessly generated for html question
+    // TODO: make this dynamic by looping over questions and doing this for all html questions
+    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
+      let welcomePage = document.getElementsByName("welcome1");
+      if (welcomePage && welcomePage.length > 0) {
+        let welcomePageElement = welcomePage[0];
+        welcomePageElement.removeAttribute("aria-labelledby");
       }
     });
 

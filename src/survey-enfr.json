@@ -1142,14 +1142,6 @@
                     "name": "aboutAlgorithmPanel-RS",
                     "elements": [
                         {
-                            "type": "html",
-                            "name": "aboutAlgorithmIntro",
-                            "html": {
-                                "default": "<h4>Will your algorithm have any of the following characteristics:</h4>",
-                                "fr": "<h4>Votre algorithme aura-t-il l'une des caractéristiques suivantes :</h4>"
-                            }
-                        },
-                        {
                             "type": "radiogroup",
                             "name": "aboutAlgorithm1",
                             "title": {
@@ -2010,14 +2002,6 @@
                     "name": "consultationDesignPanel-MS",
                     "elements": [
                         {
-                            "type": "html",
-                            "name": "consultation-intro",
-                            "html": {
-                                "default": "<h4>Will you be engaging with any of the following groups?</h4>",
-                                "fr": "<h4>Allez-vous consulter l'un ou l'autre des groupes suivants ?</h4>"
-                            }
-                        },
-                        {
                             "type": "radiogroup",
                             "name": "consultationDesign1",
                             "title": {
@@ -2168,7 +2152,10 @@
                 }
             ],
             "visibleIf": "{projectDetailsPhase} = \"item1\"",
-            "title": "Consultations"
+            "title": {
+                "default": "Consultations: Will you be engaging with any of the following groups?",
+                "fr": "Consultations: Allez-vous consulter l'un ou l'autre des groupes suivants ?"
+            }
         },
         {
             "name": "consultationImplementation",
