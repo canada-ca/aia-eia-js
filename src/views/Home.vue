@@ -103,7 +103,7 @@ export default class Home extends Vue {
 
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
-    // this results in a wide range of accessibilty issues
+    // this results in a wide range of accessibility issues
     // use css to change size of labels. since survey is technically a web form
     /*this.Survey.onAfterRenderQuestion.add(function(sender, options) {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
