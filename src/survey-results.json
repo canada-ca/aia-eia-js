@@ -1,0 +1,63 @@
+{
+    "questionWorth": 7,
+    "sections":{
+        "sectionZero": {
+            "sectionZeroDeploymentFrequency": {
+                "elite": 100,
+                "high": 80,
+                "medium": 40,
+                "low": 0
+            },
+            "sectionZeroLeadTimeForChanges": {
+                "elite": 100,
+                "high": 80,
+                "medium": 40,
+                "low": 0
+            },
+            "sectionZeroTimeToRestoreService": {
+                "elite": 100,
+                "high": 80,
+                "medium": 40,
+                "low": 0
+            },
+            "sectionZeroChangeFailureRate": {
+                "elite": 100,
+                "high": 80,
+                "medium": 40,
+                "low": 0
+            }
+        },
+        "sectionOne": {
+            "sectionOneContinuousIntegrationFixTimeFrame": {
+                "elite": 100,
+                "high": 80,
+                "medium": 40,
+                "low": 0
+            },
+            "sectionOneContinuousIntegrationBuildDuration": {
+                "elite": 100,
+                "high": 80,
+                "medium": 40,
+                "low": 0
+            },
+            "sectionOneDeploymentAutomationManualSteps": {
+                "elite": 100,
+                "high": 80,
+                "medium": 40,
+                "low": 0
+            },
+            "sectionOneDeploymentAutomationPipelineDelays": {
+                "elite": 100,
+                "high": 80,
+                "medium": 40,
+                "low": 0
+            },
+            "sectionOneTrunkBasedDevelopmentActiveBranches": {
+                "elite": 100,
+                "high": 80,
+                "medium": 40,
+                "low": 0
+            }
+        }
+    }
+}

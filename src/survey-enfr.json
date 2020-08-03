@@ -22,26 +22,14 @@
       "elements": [
        {
         "type": "boolean",
+        "name": "section_zero_enable",
+        "title": "Section Zero: General",
+        "defaultValue": "true"
+       },
+       {
+        "type": "boolean",
         "name": "section_one_enable",
-        "title": "Section One",
-        "defaultValue": "true"
-       },
-       {
-        "type": "boolean",
-        "name": "section_two_enable",
-        "title": "Section Two",
-        "defaultValue": "true"
-       },
-       {
-        "type": "boolean",
-        "name": "section_three_enable",
-        "title": "Section Three",
-        "defaultValue": "true"
-       },
-       {
-        "type": "boolean",
-        "name": "section_four_enable",
-        "title": "Section Four",
+        "title": "Section One: Technical Capabilities",
         "defaultValue": "true"
        }
       ],
@@ -52,105 +40,112 @@
       "description": "select the sections from which you would like to be evaluated against "
      },
      {
-      "name": "sectionOneGeneralOne",
+      "name": "sectionZeroGeneralOne",
       "elements": [
        {
         "type": "radiogroup",
-        "name": "sectionOneDeploymentFrequencey ",
+        "name": "sectionZeroDeploymentFrequency",
         "title": "Deployment Frequency ",
         "description": "For the primary application service you work on, how often does your organization deploy code to production or release it to end users?",
         "isRequired": true,
         "choices": [
          {
-          "value": "item1",
+          "value": "elite",
           "text": "Elite: On demand"
          },
          {
-          "value": "item2",
+          "value": "high",
           "text": "High: Between once per day and once per week"
          },
          {
-          "value": "item3",
+          "value": "medium",
           "text": "Medium: Between once per week and once per month"
+         },
+         {
+          "value": "low",
+          "text": "Low: Between once per month and once every six months"
          }
         ],
-        "hasOther": true,
         "otherText": "Low: Between once per month and once every six months"
        },
        {
         "type": "radiogroup",
-        "name": "sectionOneLeadTimeForChanges",
+        "name": "sectionZeroLeadTimeForChanges",
         "title": "Lead Time for Changes",
         "description": "For the primary application or service you work on, what is your lead time for changes (i.e., how long does it take to go from code committed to code successfully running in production)?",
         "isRequired": true,
         "choices": [
          {
-          "value": "item1",
+          "value": "elite",
           "text": "Elite: Less than a day"
          },
          {
-          "value": "item2",
+          "value": "high",
           "text": "High: Between one day and one week "
          },
          {
-          "value": "item3",
+          "value": "medium",
           "text": "Medium: Between one week and one month"
          },
          {
-          "value": "item4",
+          "value": "low",
           "text": "Low: Between one month and six months"
          }
         ]
        },
        {
         "type": "radiogroup",
-        "name": "sectionOneTimeToRestoreService",
+        "name": "sectionZeroTimeToRestoreService",
         "title": "Time to Restore Service",
         "description": "For the primary application or service you work on, how long does it generally take to restore service when a service incident or a defect that impacts users occurs (e.g., unplanned outage or service impairment)? ",
         "isRequired": true,
         "choices": [
          {
-          "value": "item1",
+          "value": "elite",
           "text": "Elite: Less than one hour"
          },
          {
-          "value": "item2",
+          "value": "high",
           "text": "High: Less than one day "
          },
          {
-          "value": "item3",
+          "value": "medium",
           "text": "Medium: Less than one day "
+         },
+         {
+          "value": "low",
+          "text": "Low: Between one week and one month "
          }
-        ],
-        "hasOther": true,
-        "otherText": "Low: Between one week and one month "
+        ]
        },
        {
         "type": "radiogroup",
-        "name": "sectionOneChangeFailureRate",
+        "name": "sectionZeroChangeFailureRate",
         "title": "Change Failure Rate",
         "description": "For the primary application or service you work on, what percentage of changes to production or released to users result in degraded service (e.g., lead to service impairment or service outage) and subsequently require remediation (e.g., require a hotfix, rollback, fix forward, patch)? ",
         "isRequired": true,
         "choices": [
          {
-          "value": "item1",
+          "value": "elite",
           "text": "Elite: 0-15% "
          },
          {
-          "value": "item2",
+          "value": "high",
           "text": "High: 0-15% "
          },
          {
-          "value": "item3",
+          "value": "medium",
           "text": "Medium: 0-15% "
+         },
+         {
+          "value": "low",
+          "text": "Low: 46-60% "
          }
-        ],
-        "hasOther": true,
-        "otherText": "Low: 46-60% "
+        ]
        }
       ],
-      "visibleIf": "{section_one_enable} = true",
-      "title": "Section One - General Questions"
+      "visibleIf": "{section_zero_enable} = true",
+      "title": "Section Zero - General Questions"
      },
      {
       "name": "sectionOneTechnicalCapabilities",
@@ -313,20 +308,22 @@
         "isRequired": true,
         "choices": [
          {
-          "value": "item1",
+          "value": "elite",
           "text": "Less than a day"
          },
          {
-          "value": "item2",
+          "value": "high",
           "text": "Between one day and one week"
          },
          {
-          "value": "item3",
+          "value": "medium",
           "text": "Between one week and one month "
+         },
+         {
+          "value": "low",
+          "text": "Between one month and six months"
          }
-        ],
-        "hasOther": true,
-        "otherText": "Between one month and six months"
+        ]
        },
        {
         "type": "boolean",
@@ -347,19 +344,19 @@
         "isRequired": true,
         "choices": [
          {
-          "value": "item1",
+          "value": "elite",
           "text": "Less than a day"
          },
          {
-          "value": "item2",
+          "value": "high",
           "text": "Between one day and one week"
          },
          {
-          "value": "item3",
+          "value": "medium",
           "text": "Between one week and one month"
          },
          {
-          "value": "item4",
+          "value": "low",
           "text": "Between one month and six months"
          }
         ]
@@ -378,20 +375,22 @@
         "isRequired": true,
         "choices": [
          {
-          "value": "item1",
+          "value": "elite",
           "text": "0"
          },
          {
-          "value": "item2",
+          "value": "high",
           "text": "1-5"
          },
          {
-          "value": "item3",
+          "value": "medium",
           "text": "5-25"
+         },
+         {
+          "value": "low",
+          "text": "25+"
          }
-        ],
-        "hasOther": true,
-        "otherText": "25+"
+        ]
        },
        {
         "type": "rating",
@@ -409,20 +408,22 @@
         "isRequired": true,
         "choices": [
          {
-          "value": "item1",
+          "value": "elite",
           "text": "Less than a day"
          },
          {
-          "value": "item2",
+          "value": "high",
           "text": "Between one day and one week"
          },
          {
-          "value": "item3",
+          "value": "medium",
           "text": "Between one week and one month"
+         },
+         {
+          "value": "low",
+          "text": "Between one month and six months"
          }
-        ],
-        "hasOther": true,
-        "otherText": "Between one month and six months"
+        ]
        }
       ],
       "visibleIf": "{section_one_enable} = true",
@@ -438,20 +439,22 @@
         "isRequired": true,
         "choices": [
          {
-          "value": "item1",
+          "value": "elite",
           "text": "Three or fewer active branches"
          },
          {
-          "value": "item2",
+          "value": "high",
           "text": "Three to five active branches"
          },
          {
-          "value": "item3",
+          "value": "medium",
           "text": "Five to ten active branches"
+         },
+         {
+          "value": "low",
+          "text": "More than ten active branches"
          }
-        ],
-        "hasOther": true,
-        "otherText": "More than ten active branches"
+        ]
        },
        {
         "type": "rating",
