@@ -70,15 +70,15 @@ export default class Home extends Vue {
       navigationButton: "btn survey-button"
     };
     this.Survey.onComplete.add(result => {
-      this.$store.commit("updateResult", result);
+      this.$store.commit("calculateResult", result);
     });
 
-    this.Survey.onComplete.add(result => {
+    /*this.Survey.onComplete.add(result => {
       this.$router.push("Results");
-    });
+    });*/
 
     this.Survey.onValueChanged.add(result => {
-      this.$store.commit("updateResult", result);
+      this.$store.commit("updateSurveyData", result);
     });
 
     const converter = new showdown.Converter();

@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Vuex, { StoreOptions } from "vuex";
 import VuexPersistence from "vuex-persist";
-import { RootState } from "./types";
+import { RootState, SurveyScoring } from "./types";
 import {
   IQuestion,
   QuestionSelectBase,
@@ -10,6 +10,7 @@ import {
   LocalizableString
 } from "survey-vue";
 import isEmpty from "lodash.isempty";
+import * as resultsCalculationFile from "./survey-results.json"
 
 Vue.use(Vuex);
 
@@ -21,338 +22,293 @@ const vuexLocal = new VuexPersistence({
   })
 });
 
-function addItemsInArray(val: any[]) {
-  let total = 0;
-  val.forEach(item => {
-    if (typeof item === "number") {
-      total = total + item;
-    } else if (typeof item === "string") {
-      total = total + parseEmbeddedValue(item);
-    }
+/**
+ * Helper functions which determines which sections are enabled based on Survey Data
+ * @param state
+ * @param surveyData
+ */
+const determineSectionsEnabled = (state: RootState, surveyData: SurveyModel) => {
+  // TODO: refactor later on to loop over array of question names for section enabling flags
+  // sections zero and one are the only ones we have currently
+  let sectionZeroEnabledFlag = surveyData.getValue("section_zero_enable");
+  if(typeof sectionZeroEnabledFlag === "boolean"){
+    state.sectionZeroEnabled = sectionZeroEnabledFlag;
+  }
+  else if(sectionZeroEnabledFlag === "false"){
+    state.sectionZeroEnabled = false;
+  }
+  else state.sectionZeroEnabled = sectionZeroEnabledFlag === "true";
+
+  let sectionOneEnabledFlag = surveyData.getValue("section_one_enable")
+  if (typeof  sectionOneEnabledFlag === "boolean"){
+    state.sectionOneEnabled = sectionOneEnabledFlag;
+  }
+  else if(sectionOneEnabledFlag === "false"){
+    state.sectionOneEnabled = false;
+  }
+  else state.sectionOneEnabled = sectionOneEnabledFlag === "true"
+}
+
+/**
+ * Helper function which will update the store's data based on survey data
+ * @param state
+ * @param surveyData
+ */
+const updateSurveyData = (state: RootState, surveyData: SurveyModel) => {
+  determineSectionsEnabled(state, surveyData);
+  state.surveyModel = surveyData;
+  state.currentPageNo = surveyData.currentPageNo;
+  //freeze this data so we can load from localStorage
+  state.toolData = Object.freeze(surveyData.data);
+  state.answerData = surveyData.getPlainData({
+    includeEmpty: false
   });
-  return total;
 }
 
-function hasScore(question: IQuestion): boolean {
-  if (
-    question.getType() === "radiogroup" ||
-    question.getType() === "checkbox" ||
-    question.getType() === "dropdown"
-  ) {
-    // Check the suffix for "-RS" or "-MS" for valid score questions.
-    return getScoreType(question) > 1;
-  }
-  return false;
-}
 
-function parseEmbeddedValue(val: String): number {
-  var lastHyphenIdx = val.lastIndexOf("-");
-  if (lastHyphenIdx !== -1) {
-    // Suffix after last "-" could be a number.
-    var possibleValue = val.substr(lastHyphenIdx + 1);
-    var value = Number(possibleValue);
-    return isNaN(value) ? 0 : value;
-  }
+const calculateScoreForQuestion = (
+    currentSectionTotal: number,
+    currentSectionScore: number,
+    sectionName: string,
+    questionName: string,
+    questionValue: any,
+    questionType: string,
+    questionData?: any
+):{
+  sectionTotal: number,
+  sectionScore: number
+} => {
+  let sectionScore = currentSectionScore
+  let sectionTotal = currentSectionTotal
 
-  return 0;
-}
+  // @ts-ignore
+  let questionResultsObj = resultsCalculationFile["sections"][sectionName]
+  if (typeof questionResultsObj !== "undefined"){
+    questionResultsObj = questionResultsObj["questions"][questionName]
+    if( typeof questionResultsObj !== "undefined"){
+      let points = questionResultsObj.points
+      let scoring = questionResultsObj.scoring
 
-export function getValue(val: any) {
-  if (val === undefined) {
-    return 0;
-  }
-
-  if (Array.isArray(val)) {
-    return addItemsInArray(val);
-  }
-
-  if (typeof val === "string") {
-    return parseEmbeddedValue(val);
-  }
-
-  if (typeof val !== "number") {
-    return 0;
-  }
-
-  return val;
-}
-
-function getScoreTypeHelper(name: String): Number {
-  // 1 - Not Scored, 2 - Raw Score, 3 - Mitigation Score
-  if (name) {
-    if (name.endsWith("-RS")) {
-      return 2;
-    } else if (name.endsWith("-MS")) {
-      return 3;
-    } else if (name.endsWith("-NS")) {
-      return 1;
-    }
-  }
-
-  return 0;
-}
-
-function getScoreType(question: IQuestion): Number {
-  var result = getScoreTypeHelper(question.name);
-
-  if (result > 0) {
-    return result;
-  }
-
-  result = getScoreTypeHelper(question.parent.name);
-
-  if (result == 0) {
-    // Treat at no score.
-    return 1;
-  }
-
-  return result;
-}
-
-function getMaxScoreForQuestion(question: QuestionSelectBase): number {
-  var questionType = question.getType();
-  var max = 0;
-  var value = 0;
-  if (questionType == "radiogroup" || questionType == "dropdown") {
-    question.choices.forEach(item => {
-      value = getValue(item.itemValue);
-      if (max < value) {
-        max = value;
+      /* boolean questions point calculation
+      * 1 - Matches the value for the correctAnswer key if it exists in the scoring map
+      * 2 - If the scoring map does not exist, assign full points if the answer is true
+      * */
+      if( questionType === "boolean"){
+        sectionTotal += points
+        if(scoring){
+          if(scoring.correctAnswer && `${scoring.correctAnswer}` === `${questionValue}`){
+            sectionScore += points
+          }
+        }
+        else if ( `${questionValue}` === "true"){
+          sectionScore += points
+        }
       }
-    });
-  } else if (questionType == "checkbox") {
-    question.choices.forEach(item => {
-      value = getValue(item.itemValue);
-      max += value;
-    });
-  }
 
-  return max;
-}
+      /* rating question point calculation
+      * 1 - If there is a scoring map
+      *   a) If the inverse flag is specified as true
+      *     * minimum will be awarded full points
+      *     * maximum will be awarded no points
+      *     * in between will be calculated as (rateMax - score)/rateMax * points
+      * 2 - If there is no scoring map
+      *   a) maximum will be awarded full points
+      *   b) minimum will be awarded no points
+      *   c) in between will be calculated as score/rateMax * points
+      *
+      * */
+      else if (questionType === "rating"){
+        if(typeof questionData !== "undefined"){
+          let rateMin = questionData["rateMin"]
+          let rateMax = questionData["rateMax"]
+          if (typeof rateMin === "number" && typeof  rateMax === "number"){
+            sectionTotal += points
+            if(scoring){
+              if(scoring.inverse === true){
+                if (questionValue === rateMin){
+                  sectionScore += points
+                }
+                else if (typeof questionValue === "string" && !isNaN(Number.parseInt(questionValue))){
+                  sectionScore += (rateMax - Number.parseInt(questionValue))/rateMax * points
+                }
+              }
+            }
+            else if(questionValue === rateMax){
+              sectionScore += points
+            }
+            else if (typeof questionValue === "string" && !isNaN(Number.parseInt(questionValue))){
+              sectionScore += Number.parseInt(questionValue)/rateMax * points
+            }
+          }
+          else{
+            throw new Error(`rateMin and rateMax must be numbers provided in questionData to calculate score for question ${questionName}`)
+          }
+        }
+        else{
+          throw new Error(`rateMin and rateMax must be numbers provided in questionData to calculate score for question ${questionName}`)
+        }
+      }
 
-type LanguageString = {
-  en: string;
-  fr: string;
-};
 
-function getTitleFromPanel(panel: any): LanguageString {
-  var retVal = {
-    en: panel.locTitle.getLocaleText("default"),
-    fr: panel.locTitle.getLocaleText("fr")
-  };
-  return retVal;
-}
+      /* radiogroup question point calculation
+      * !!! scoring section must be provided otherwise no point calculation will be awarded nor points added to the total !!!
+      * 1) points will be multiplied by a percentage based on the answer selected
+      * 2) if the answer does not exist in the scoring map then no points will be awarded
+      */
+      else if(questionType === "radiogroup"){
+        if(typeof scoring !== "undefined"){
+          sectionTotal += points
+          if(typeof scoring[questionValue] === "number" && scoring[questionValue] <= 100 && scoring[questionValue] >= 0){
+            sectionScore += points * (scoring[questionValue]/100)
+          }
+        }
+      }
 
-function calculateFinalScore(
-  survey: SurveyModel,
-  questionNames: string[]
-): number[] {
-  let rawRiskScore = 0;
-  let maxRawRiskScore = 0;
-  let maxMitigationScore = 0;
-  let mitigationScore = 0;
-  let total = 0;
-  let percentage = 0.8;
-  let deduction = 0.15;
-  let level = 0;
-  let threshold1 = 0.25;
-  let threshold2 = 0.5;
-  let threshold3 = 0.75;
-
-  questionNames.forEach(name => {
-    var currentQuestion = survey.getQuestionByName(name);
-    var currentQuestionType = getScoreType(currentQuestion);
-
-    if (currentQuestionType === 2) {
-      // no real risk of injection since we are just getting a value, worst case it breaks our score
-      // eslint-disable-next-line security/detect-object-injection
-      rawRiskScore += getValue(survey.data[name]);
-      maxRawRiskScore += getMaxScoreForQuestion(<QuestionSelectBase>(
-        currentQuestion
-      ));
-    } else if (currentQuestionType === 3) {
-      // no real risk of injection since we are just getting a value, worst case it breaks our score
-      // eslint-disable-next-line security/detect-object-injection
-      mitigationScore += getValue(survey.data[name]);
-      maxMitigationScore += getMaxScoreForQuestion(<QuestionSelectBase>(
-        currentQuestion
-      ));
     }
-  });
-
-  //maxMitigationScore is divided by 2 because of Design/Implementation fork
-  if (mitigationScore >= percentage * (maxMitigationScore / 2)) {
-    total = Math.round((1 - deduction) * rawRiskScore);
-  } else {
-    total = rawRiskScore;
+    else{
+      throw new Error(`question ${questionName} for section ${sectionName} does not exist in survey-results.json`)
+    }
   }
-
-  if (total <= maxRawRiskScore * threshold1) {
-    level = 1;
-  } else if (
-    total > maxRawRiskScore * threshold1 &&
-    total <= maxRawRiskScore * threshold2
-  ) {
-    level = 2;
-  } else if (
-    total > maxRawRiskScore * threshold2 &&
-    total <= maxRawRiskScore * threshold3
-  ) {
-    level = 3;
-  } else {
-    level = 4;
+  else{
+    throw new Error(`section ${sectionName} does not exist in survey-results.json`)
   }
-
-  return [rawRiskScore, mitigationScore, total, level];
+  return {
+    sectionScore: sectionScore,
+    sectionTotal: sectionTotal
+  }
 }
+
+/**
+ * Helper function that will calculate the result for the survey
+ * @param state
+ * @param surveyData
+ */
+const calculateSurveyResult = (state: RootState, surveyData: SurveyModel) => {
+  const resultsMap = resultsCalculationFile
+  let scoring: SurveyScoring = {}
+  let surveyAnswersArray = surveyData.getPlainData({
+    includeEmpty: true
+  })
+
+  if(state.sectionZeroEnabled){
+    scoring = {
+      sectionZeroScore: 0,
+      sectionZeroTotal: 0
+    }
+  }
+
+  if(state.sectionOneEnabled){
+    scoring = {
+      sectionOneScore: 0,
+      sectionOneTotal: 0
+    }
+  }
+
+  if(surveyAnswersArray.length === 0){
+    state.scoring = scoring
+  }
+  else{
+    // loop over each question, determine what section it belongs to
+    // refer to the resultsMap to award points
+
+    for (let i in surveyAnswersArray){
+      let questionObj = surveyAnswersArray[i]
+      let questionName = questionObj.name
+      let questionValue = questionObj.value
+
+      // section zero question
+      if(
+          questionName.startsWith("sectionZero") &&
+          state.sectionZeroEnabled
+      ){
+        let newScores = calculateScoreForQuestion(
+           // @ts-ignore
+           scoring.sectionZeroTotal,
+           scoring.sectionZeroScore,
+           "sectionZero",
+           questionName,
+           questionValue,
+           surveyData.getQuestionByName(questionName).getType(),
+           surveyData.getQuestionByName(questionName)
+         )
+        scoring.sectionZeroScore = newScores.sectionScore
+        scoring.sectionZeroTotal = newScores.sectionTotal
+
+      }
+
+      // section one question
+      else if(
+          questionName.startsWith("sectionOne") &&
+          state.sectionOneEnabled
+      ){
+        let newScores = calculateScoreForQuestion(
+            // @ts-ignore
+            scoring.sectionOneTotal,
+            scoring.sectionOneScore,
+            "sectionOne",
+            questionName,
+            questionValue,
+            surveyData.getQuestionByName(questionName).getType(),
+            surveyData.getQuestionByName(questionName)
+        )
+
+        scoring.sectionOneScore = newScores.sectionScore
+        scoring.sectionOneTotal = newScores.sectionTotal
+
+      }
+    }
+
+    state.scoring = scoring
+  }
+}
+
 
 const store: StoreOptions<RootState> = {
   plugins: [vuexLocal.plugin],
   state: {
     answerData: [],
-    result: undefined,
-    currentPageNo: 0,
-    toolData: {},
-    questionNames: []
+    scoring: {},
+    sectionZeroEnabled: false,
+    sectionOneEnabled: false,
+    sectionTwoEnabled: false,
+    sectionThreeEnabled: false,
+    sectionFourEnabled: false,
+    surveyModel: undefined,
+    toolData: undefined,
+    currentPageNo: 0
   },
   mutations: {
+    // mutation to reset the state when a user resets the survey
     resetSurvey(state: RootState) {
       state.answerData = [];
-      state.result = undefined;
+      state.surveyModel = undefined;
       state.currentPageNo = 0;
       state.toolData = {};
+      state.scoring = {}
+      state.sectionZeroEnabled = false
+      state.sectionOneEnabled = false
+      state.sectionTwoEnabled = false
+      state.sectionThreeEnabled = false
+      state.sectionFourEnabled = false
     },
-    updateResult(state: RootState, result: SurveyModel) {
-      state.result = result;
-      state.currentPageNo = result.currentPageNo;
-      //freeze this data so we can load from localStorage
-      state.toolData = Object.freeze(result.data);
-      state.answerData = result.getPlainData({
-        includeEmpty: false
-      });
 
-      if (state.questionNames.length === 0) {
-        state.questionNames = result
-          .getAllQuestions()
-          .filter(question => {
-            return hasScore(question);
-          })
-          .map(question => {
-            return question.name;
-          });
-      }
+    // update state with results from survey
+    // every time a value has changed or survey completed
+    updateSurveyData(state: RootState, result: SurveyModel) {
+      updateSurveyData(state, result)
+    },
+
+    calculateResult(state: RootState, result: SurveyModel){
+      updateSurveyData(state, result)
+      calculateSurveyResult(state, result)
+
     }
+
+
   },
   getters: {
     inProgress: state => {
       return !isEmpty(state.toolData);
-    },
-    calcScore: state => {
-      if (state.result === undefined) return [0, 0, 0];
-      return calculateFinalScore(state.result, state.questionNames);
-    },
-    resultDataSections: state => {
-      if (state.result === undefined) return {};
-
-      var projectResults: any[] = [];
-      var riskResults: any[] = [];
-      var mitigationResults: any[] = [];
-      var mitigationResultsYes: any[] = [];
-      var lastHeader = "";
-
-      state.answerData.forEach(function(result) {
-        var question = state.result!.getQuestionByName(result.name);
-        const scoreType = getScoreType(question);
-
-        //Calculate the section header.
-        var questionHeader = { en: "", fr: "" };
-        var questionSubHeader = { en: "", fr: "" };
-        if (question.parent.constructor.name === "PanelModel") {
-          var panel = question.parent;
-          if (question.parent.parent.constructor.name == "PageModel") {
-            questionHeader = getTitleFromPanel(question.parent.parent);
-            questionSubHeader = getTitleFromPanel(question.parent);
-          }
-        }
-
-        var calculatedHeader = questionHeader.en;
-        if (questionSubHeader.en != "") {
-          calculatedHeader += " - " + questionSubHeader.en;
-        }
-        if (lastHeader != calculatedHeader) {
-          result.questionHeader = questionHeader;
-
-          if (questionSubHeader.en != "") {
-            result.questionHeader.en += " - " + questionSubHeader.en;
-            result.questionHeader.fr += " - " + questionSubHeader.fr;
-          }
-
-          lastHeader = calculatedHeader;
-        }
-
-        //Add Localized results.
-        result.titleData = {
-          en: question.locTitle.getLocaleText("default"),
-          fr: question.locTitle.getLocaleText("fr")
-        };
-
-        if (
-          question.selectedItem !== undefined &&
-          question.selectedItem !== null
-        ) {
-          if (
-            question.selectedItem.locText !== undefined &&
-            question.selectedItem.locText !== null
-          ) {
-            result.selectedItem = {
-              en: question.selectedItem.locText.getLocaleText("default"),
-              fr: question.selectedItem.locText.getLocaleText("fr")
-            };
-          }
-        }
-
-        if (question.getChoices !== undefined) {
-          var choices = question.getChoices();
-          result.choiceData = [];
-
-          for (var i = 0; i < choices.length; i++) {
-            result.choiceData.push({
-              en: choices[i].locText.getLocaleText("default"),
-              fr: choices[i].locText.getLocaleText("fr")
-            });
-          }
-        }
-
-        //Profile Scores
-        if (
-          scoreType === 1 &&
-          (question.parent.name === "projectDetailsPanel-NS" ||
-            question.parent.name === "businessDriversPanel-NS" ||
-            question.parent.name === "aboutSystemPanel-NS")
-        ) {
-          projectResults.push(result);
-        } else if (scoreType === 2) {
-          riskResults.push(result);
-        } else if (scoreType === 3) {
-          mitigationResults.push(result);
-          if (result.value > 0) {
-            mitigationResultsYes.push(result);
-          }
-          if (typeof result.value === "string") {
-            const val = getValue(result.value);
-            if (val > 0) {
-              mitigationResultsYes.push(result);
-            }
-          }
-        }
-      });
-
-      return [
-        projectResults,
-        riskResults,
-        mitigationResults,
-        mitigationResultsYes
-      ];
     }
   }
 };

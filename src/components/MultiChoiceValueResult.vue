@@ -21,7 +21,7 @@
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
 import Modifier from "@/components/Modifier.vue";
-import { getValue } from "@/store.ts";
+//import { getValue } from "@/store.ts";
 import MultiChoiceResult from "@/components/MultiChoiceResult.vue";
 
 @Component({
@@ -31,7 +31,8 @@ import MultiChoiceResult from "@/components/MultiChoiceResult.vue";
 })
 export default class MultiChoiceValueResult extends MultiChoiceResult {
   getScore(val: String): number {
-    return getValue(val);
+    //return getValue(val);
+    return 0
   }
 }
 </script>

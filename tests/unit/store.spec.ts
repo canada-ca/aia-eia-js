@@ -2,6 +2,7 @@ import store from "@/store";
 import { SurveyModel } from "survey-vue";
 import surveyJSON from "@/survey-enfr.json";
 
+/*
 describe("store.ts", () => {
   it("calcScore getter is properly calculated if data is defined", () => {
     store.state.result = new SurveyModel(surveyJSON);
@@ -83,3 +84,5 @@ describe("store.ts", () => {
     expect(resultDataSections[2].length).toEqual(1);
   });
 });
+
+ */
