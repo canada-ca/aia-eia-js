@@ -1,6 +1,14 @@
 {
     "sections":{
         "sectionZero": {
+            "title": {
+                "en": "General Questions",
+                "fr": "General Questions in French"
+            },
+            "description": {
+                "en": "A Description",
+                "fr": "A Description in French"
+            },
             "questions": {
                 "sectionZeroDeploymentFrequency": {
                     "points": 7,
@@ -75,6 +83,14 @@
             }
         },
         "sectionOne": {
+            "title": {
+                "en": "DevOps Knowledge",
+                "fr": "DevOps Knowledge In French"
+            },
+            "description": {
+                "en": "English Description",
+                "fr": "French Description"
+            },
             "questions": {
                 "sectionOneTechnicalCapabilitiesVersionControlApplicationCodePercentage": {
                     "points": 7

@@ -5,7 +5,7 @@
       <a
         class="btn btn-default pull-right"
         role="button"
-        :href="$t(linkProjectAnchor)"
+        :href="$t('linkProjectAnchor')"
       >
         {{ $t("linkProjectText") }}
       </a>
@@ -34,7 +34,6 @@ import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias t
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
-import { RootState } from "@/types";
 import surveyJSON from "@/survey-enfr.json";
 
 @Component({
@@ -69,8 +68,10 @@ export default class Home extends Vue {
     this.Survey.css = {
       navigationButton: "btn survey-button"
     };
+
     this.Survey.onComplete.add(result => {
       this.$store.commit("calculateResult", result);
+      this.$router.push("/results");
     });
 
     /*this.Survey.onComplete.add(result => {

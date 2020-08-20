@@ -12,7 +12,7 @@
     "htmlCode": "fr-CA",
     "saveButton": "Sauvegarder",
     "appTitle": "Évaluation de l'Incidence Algorithmique",
-    "linkProjectText": "Lien vers le répertoire GitHub du projet",
+    "linkProjectText": "Répertoire GitHub",
     "linkProjectAnchor": "https://github.com/canada-ca/aia-eia-js",
     "linkDirective": "http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32592#appC",
     "print": "Imprimer",

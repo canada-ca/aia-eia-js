@@ -1,17 +1,35 @@
 <template>
   <div>
     <div v-if="$store.getters.inProgress">
-      <ul class="list-inline lst-spaced">
-        <li>
+      <div class="row no-gutters" style="padding: 0 15px">
+        <div
+          class="col-3 col-sm-2 col-md-3 "
+          style="max-width: 120px; margin: 0 2px;"
+        >
           <button
             type="button"
             class="btn survey-button"
+            style="width: inherit"
             v-on:click="saveSurvey"
           >
             {{ $t("saveButton") }}
           </button>
-        </li>
-        <li>
+        </div>
+        <div
+          class="col-3 col-sm-3 col-md-3 "
+          style="max-width: 140px; margin: 0 2px;"
+        >
+          <button
+            type="button"
+            value="Start Over"
+            class="btn survey-button"
+            style="width: inherit"
+            v-on:click="$emit('startAgain')"
+          >
+            {{ $t("startAgain") }}
+          </button>
+        </div>
+        <div class="col-md-3 col-sm-12">
           <input
             type="file"
             class="btn btn-default"
@@ -19,18 +37,8 @@
             value="Load"
             @change="onFileChanged($event)"
           />
-        </li>
-        <li>
-          <button
-            type="button"
-            value="Start Over"
-            class="btn survey-button"
-            v-on:click="$emit('startAgain')"
-          >
-            {{ $t("startAgain") }}
-          </button>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
     <div v-else>
       <input

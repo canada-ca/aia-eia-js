@@ -12,7 +12,7 @@
     "htmlCode": "en-CA",
     "saveButton": "Save",
     "appTitle": "DORA Devops Assessment",
-    "linkProjectText": "Link to GitHub project repository",
+    "linkProjectText": "GitHub Repository",
     "linkProjectAnchor": "https://github.com/canada-ca/aia-eia-js",
     "linkDirective": "http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592#appC",
     "print": "Print",
