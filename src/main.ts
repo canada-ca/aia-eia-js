@@ -35,8 +35,8 @@ function reloadTemplate() {
           href: "#",
           text:
             switchLanguage === "en"
-              ? "Évaluation de l'Incidence Algorithmique"
-              : "Algorithmic Impact Assessment"
+              ? "Évaluation de DORA DevOps"
+              : "DORA Devops Assessment"
         }
       ],
       search: false,
@@ -173,7 +173,7 @@ function generateLanguageToggle() {
   let languageButton = document.createElement("button");
   languageButton.innerText = switchLanguage === "en" ? "Francais" : "English";
   languageButton.className =
-    "btn btn-default fixed-top language-button position-absolute";
+    "btn btn-default fixed-top language-button position-absolute page-actions";
   languageButton.style["left"] = "unset";
   languageButton.addEventListener("click", e => {
     let currentLanguage = i18n.locale;

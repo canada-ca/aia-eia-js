@@ -1,12 +1,28 @@
+<script src="../main.ts"></script>
 <template>
   <div class="results">
     <!--<PrintButton />-->
     <h1>{{ $t("resultTitle") }}</h1>
-    <p>
-      <a class="btn btn-default" role="button" :href="$t('linkProjectAnchor')">
+    <p class="page-actions">
+      <a
+        class="btn btn-default"
+        role="button"
+        :href="$t('linkProjectAnchor')"
+        style="margin: 3px 2px; width: 290px"
+      >
         <i class="fab fa-github"></i>
         {{ $t("linkProjectText") }}
       </a>
+      <button
+        type="button"
+        value="Export Results"
+        class="btn btn-default"
+        style="margin: 3px 2px; width: 290px"
+        v-on:click="exportResults"
+      >
+        <i class="fas fa-file-export"></i>
+        {{ $t("toPDF") }}
+      </button>
     </p>
 
     <form>
@@ -16,39 +32,18 @@
       />
     </form>
 
-    <div id="en-content" :class="{ hidden: $i18n.locale !== 'en' }">
+    <div v-if="$i18n.locale === 'en'" id="en-content">
       <ResultsContainer language="en" :survey="Survey" />
     </div>
 
-    <div id="fr-content" :class="{ hidden: $i18n.locale !== 'fr' }">
+    <div v-if="$i18n.locale === 'fr'" id="fr-content">
       <ResultsContainer language="fr" :survey="Survey" />
-    </div>
-
-    <div style="margin-bottom:15px;">
-      <h1>{{ $t("export") }}</h1>
-      <button
-        type="button"
-        value="Export Results"
-        class="btn btn-default"
-        onclick="exportResults('en')"
-      >
-        {{ $t("exportEnglishResults") }}
-      </button>
-
-      <button
-        type="button"
-        value="Export Results"
-        class="btn btn-default"
-        onclick="exportResults('fr')"
-      >
-        {{ $t("exportFrenchResults") }}
-      </button>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 import { Model } from "survey-vue";
 import showdown from "showdown";
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
@@ -73,6 +68,38 @@ export default class Results extends Vue {
 
   Survey: Model = new Model(surveyJSON);
 
+  exportResults() {
+    const source = window.document.getElementById(
+      this.$i18n.locale + "-content"
+    ) as HTMLElement;
+
+    let pageActions = window.document.getElementsByClassName("page-actions");
+
+    function beforePrint() {
+      for (let i in pageActions) {
+        if (pageActions[i].classList) {
+          pageActions[i].classList.add("hidden");
+        }
+      }
+    }
+
+    function afterPrint() {
+      for (let i in pageActions) {
+        if (pageActions[i].classList) {
+          pageActions[i].classList.remove("hidden");
+        }
+      }
+    }
+
+    window.addEventListener("beforeprint", beforePrint, false);
+    window.addEventListener("afterprint", afterPrint, false);
+
+    window.print();
+
+    window.removeEventListener("beforeprint", beforePrint);
+    window.removeEventListener("afterprint", afterPrint);
+  }
+
   startAgain() {
     this.Survey.clear(true, true);
     window.localStorage.clear();
@@ -83,7 +110,7 @@ export default class Results extends Vue {
     this.Survey.data = $event.data;
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
-    this.$store.commit("updateSurveyData", this.Survey);
+    this.$store.commit("calculateResult", this.Survey);
 
     this.myResults = this.$store.getters.resultDataSections;
   }

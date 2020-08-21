@@ -1,3 +1,4 @@
+<script src="../main.ts"></script>
 <template>
   <div class="home">
     <h1>{{ $t("appTitle") }}</h1>

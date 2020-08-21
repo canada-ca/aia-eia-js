@@ -1,7 +1,6 @@
 {
     "startAgain": "Recommencer",
-    "exportEnglishResults": "Exporter un document en anglais",
-    "exportFrenchResults": "Exporter un document français",
+    "toPDF": "Imprimer au format PDF",
     "frenchContent": "Contenu français",
     "englishContent": "Contenu en anglais",
     "export": "Exporter",
@@ -21,7 +20,7 @@
     "currentScore": "Cote actuelle",
     "rawRiskScore": "Cote d'incidence brute",
     "mitigationScore": "Cote d'atténuation",
-    "resultTitle": "Résultats de l'Évaluation de l'Incidence Algorithmique",
+    "resultTitle": "Résultats de l'Évaluation de DORA DevOps",
     "resultScore": "Cote finale",
     "resultSectionMeasure": "Mesures d'atténuation",
     "resultSectionQA": "Questions et réponses",

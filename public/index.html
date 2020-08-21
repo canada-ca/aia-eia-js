@@ -32,23 +32,12 @@
       isApplication: true
     }));
   </script>
-
-  <script type="text/javascript">
-    function exportResults(lang) {
-      var source = window.document.getElementById(lang + "-content").innerHTML;
-
-      var val = htmlToPdfmake(source);
-      var dd = {content:val};
-      console.log(dd);
-
-      pdfMake.createPdf(dd).download("aia-" + lang + ".pdf");
-    }
-  </script>
+  <script src="../src/main.ts"></script>
 
 </head>
 
   <body vocab="http://schema.org" typeof="WebPage">
-  <div id="def-top"></div>
+  <div id="def-top" class="page-actions"></div>
     <noscript>
       <strong>We're sorry but apphub doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>

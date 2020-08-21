@@ -1,7 +1,6 @@
 {
     "startAgain": "Start Again",
-    "exportEnglishResults": "Export English Document",
-    "exportFrenchResults": "Export French Document",
+    "toPDF": "Print to PDF",
     "frenchContent": "French Content",
     "englishContent": "English Content",
     "export": "Export",
@@ -21,7 +20,7 @@
     "currentScore": "Current Score",
     "rawRiskScore": "Raw Impact Score",
     "mitigationScore": "Mitigation Score",
-    "resultTitle": "Algorithmic Impact Assessment Results",
+    "resultTitle": "DORA DevOps Assessment Results",
     "resultScore": "Final Score",
     "resultSectionMeasure": "Mitigation Measures",
     "resultSectionQA": "Questions and Answers",
