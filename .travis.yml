@@ -3,9 +3,19 @@ language: node_js
 node_js:
   "lts/*"
 
+cache: npm
+
 script:
   - npm run lint
-  - npm run test:unit
   - npm run spellcheck:markdown
   - npm run spellcheck:code
   - npm run spellcheck:questions
+  - npm run build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  on:
+    branch: master
