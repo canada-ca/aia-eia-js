@@ -37,7 +37,8 @@
     "postsecondaire",
     "EFVP",
     "toggleable",
-    "mixins"
+    "mixins",
+    "checkmark"
   ],
   "flagWords": [],
   "import": ["./node_modules/cspell-dict-fr-fr/cspell-ext.json"],

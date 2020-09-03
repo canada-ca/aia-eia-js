@@ -45,7 +45,10 @@
        {
         "type": "radiogroup",
         "name": "sectionZeroDeploymentFrequency",
-        "title": "Deployment Frequency ",
+        "title": {
+         "en": "Deployment Frequency",
+         "fr": "Deployment Frequency In French"
+        },
         "description": "For the primary application service you work on, how often does your organization deploy code to production or release it to end users?",
         "isRequired": true,
         "choices": [

@@ -1,3 +1,4 @@
+<script src="../store.ts"></script>
 <template>
   <div class="row" style="padding: 0 15px;">
     <ResultsSectionContainer
@@ -13,7 +14,10 @@
       :sections-questions="
         Object.keys(ResultsJSON.sections.sectionZero.questions)
       "
+      :section-results="ResultsJSON.sections.sectionZero.results"
     />
+    <br />
+    <hr />
     <ResultsSectionContainer
       v-if="$store.state.sectionOneEnabled"
       :survey="survey"
@@ -27,6 +31,7 @@
       :sections-questions="
         Object.keys(ResultsJSON.sections.sectionOne.questions)
       "
+      :section-results="ResultsJSON.sections.sectionOne.results"
     />
   </div>
 </template>

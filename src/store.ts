@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-object-injection */
 import Vue from "vue";
 import Vuex, { StoreOptions } from "vuex";
 import VuexPersistence from "vuex-persist";
@@ -14,7 +15,6 @@ import resultsCalculationFile from "./survey-results.json";
 import surveyJSON from "./survey-enfr.json";
 
 Vue.use(Vuex);
-
 const vuexLocal = new VuexPersistence({
   storage: window.localStorage,
   reducer: (state: RootState) => ({
@@ -208,6 +208,7 @@ const calculateSurveyResult = (state: RootState, surveyData: SurveyModel) => {
 
   if (state.sectionOneEnabled) {
     scoring = {
+      ...scoring,
       sectionOneScore: 0,
       sectionOneTotal: 0
     };

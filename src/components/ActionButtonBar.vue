@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-actions">
     <div v-if="$store.getters.inProgress">
       <div class="row no-gutters" style="padding: 0 15px">
         <div
