@@ -38,7 +38,9 @@
     "EFVP",
     "toggleable",
     "mixins",
-    "checkmark"
+    "checkmark",
+    "Devops",
+    "hotfix"
   ],
   "flagWords": [],
   "import": ["./node_modules/cspell-dict-fr-fr/cspell-ext.json"],

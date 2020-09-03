@@ -101,8 +101,6 @@ export default class ResultsSectionContainer extends Vue {
   get resultDefinition(): ResultDefinition {
     let percentage = (this.sectionScore / this.sectionTotalScore) * 100;
     percentage = Number.isNaN(percentage) ? 0 : percentage;
-
-    console.log(this.sectionResults);
     let resultDef: ResultDefinition = {
       name: "",
       description: "",
@@ -114,12 +112,10 @@ export default class ResultsSectionContainer extends Vue {
       if (this.sectionResults.hasOwnProperty(i)) {
         /* eslint-disable-next-line security/detect-object-injection */
         let resultSection = this.sectionResults[i];
-        console.log(resultSection);
         if (
           typeof resultSection.minPercentage === "number" &&
           typeof resultSection.maxPercentage === "number"
         ) {
-          console.log(resultSection.minPercentage);
           if (
             percentage >= resultSection.minPercentage &&
             percentage <= resultSection.maxPercentage
