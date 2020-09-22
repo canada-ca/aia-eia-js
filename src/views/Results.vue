@@ -19,9 +19,17 @@
     </form>
 
     <div class="alert alert-info">
-      <p class="small">{{ $t("localSaveWarning") }}</p>
+      <p class="small" >{{ $t("localSaveWarning") }}</p>
     </div>
 
+    <div class="row">
+      <h2 style="text-align:left;">{{ $t("version") }}</h2>
+    </div>
+<!--
+  "title": {
+        "default": "Algorithmic Impact Assessment v0.8",
+        "fr": "Évaluation de l'Impact Algorithmique v0.8"
+        -->
     <p>{{ $t("onThisPage") }}</p>
     <ul>
       <li>
@@ -112,9 +120,11 @@
     </div>
 
     <details id="en-content-wrap">
+
       <summary>{{ $t("englishContent") }}</summary>
       <div id="en-content" lang="en">
         <h1>{{ $t("resultTitle", "en") }}</h1>
+        <h2 style="text-align:left;">{{ $t("version","en") }}</h2>
 
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="en"></Result>
@@ -159,7 +169,7 @@
       <summary>{{ $t("frenchContent") }}</summary>
       <div id="fr-content" lang="fr">
         <h1>{{ $t("resultTitle", "fr") }}</h1>
-
+        <h2 style="text-align:left;">{{ $t("version","fr") }}</h2>
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="fr"></Result>
         </div>

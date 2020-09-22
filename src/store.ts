@@ -7,12 +7,14 @@ import {
   QuestionSelectBase,
   SurveyModel,
   IPanel,
-  LocalizableString
+  LocalizableString,
+  Navigation
 } from "survey-vue";
 import isEmpty from "lodash.isempty";
 
 Vue.use(Vuex);
 
+//Setting up the persistence storage for re accessabililty.
 const vuexLocal = new VuexPersistence({
   storage: window.localStorage,
   reducer: (state: RootState) => ({
@@ -24,15 +26,18 @@ const vuexLocal = new VuexPersistence({
 function addItemsInArray(val: any[]) {
   let total = 0;
   val.forEach(item => {
+    // If item is of type number increament the total
     if (typeof item === "number") {
       total = total + item;
     } else if (typeof item === "string") {
+      //otherwise parse the string into an integer and incrament the total
       total = total + parseEmbeddedValue(item);
     }
   });
   return total;
 }
 
+//checks to see if question has a score or not
 function hasScore(question: IQuestion): boolean {
   if (
     question.getType() === "radiogroup" ||
@@ -45,6 +50,7 @@ function hasScore(question: IQuestion): boolean {
   return false;
 }
 
+//Takes in string value and outputs integer value of that string
 function parseEmbeddedValue(val: String): number {
   var lastHyphenIdx = val.lastIndexOf("-");
   if (lastHyphenIdx !== -1) {
@@ -53,7 +59,6 @@ function parseEmbeddedValue(val: String): number {
     var value = Number(possibleValue);
     return isNaN(value) ? 0 : value;
   }
-
   return 0;
 }
 
@@ -62,10 +67,12 @@ export function getValue(val: any) {
     return 0;
   }
 
+  //Add item into array
   if (Array.isArray(val)) {
     return addItemsInArray(val);
   }
 
+  //Typecast into integer
   if (typeof val === "string") {
     return parseEmbeddedValue(val);
   }
@@ -77,6 +84,7 @@ export function getValue(val: any) {
   return val;
 }
 
+//Returns score associated with string 
 function getScoreTypeHelper(name: String): Number {
   // 1 - Not Scored, 2 - Raw Score, 3 - Mitigation Score
   if (name) {
@@ -106,13 +114,18 @@ function getScoreType(question: IQuestion): Number {
     return 1;
   }
 
+  //Why would we want to return the type of score for the parent of the question?
   return result;
 }
+
+// Updates The Current Score
 
 function getMaxScoreForQuestion(question: QuestionSelectBase): number {
   var questionType = question.getType();
   var max = 0;
   var value = 0;
+
+  //cannot be more then one answer
   if (questionType == "radiogroup" || questionType == "dropdown") {
     question.choices.forEach(item => {
       value = getValue(item.itemValue);
@@ -120,7 +133,9 @@ function getMaxScoreForQuestion(question: QuestionSelectBase): number {
         max = value;
       }
     });
-  } else if (questionType == "checkbox") {
+  }
+  //can be more then one answer 
+  else if (questionType == "checkbox") {
     question.choices.forEach(item => {
       value = getValue(item.itemValue);
       max += value;
@@ -143,6 +158,31 @@ function getTitleFromPanel(panel: any): LanguageString {
   return retVal;
 }
 
+//TASK #360 LOGIC DONE / IMPLEMENTATION
+function removeElement(currentPages: number, button: SurveyModel): void{
+
+  console.log("Whatsup");
+  //Finds class name that is associated to the nextButton and completeButton
+  let nextButton = document.getElementsByClassName(button.naviagtion.next);
+  let completeButton = document.getElementsByClassName(
+    button.navigation.complete
+  );
+  //MAX PAGE for when they reach the end of the page.
+  let MAXPages: number = 12;
+
+  /*If the currentPage is equal to the max page we know that the user is at the final assesment page 
+   therefore remove next button. */
+  if (currentPages == MAXPages){
+    //Remove Next ButtonItem
+    nextButton.parentNode.removeChild(nextButton);
+  } else {
+  /*If the currentPage is not equal to the max page we know that the user is not at the final page and we remove completeion button instead*/
+  //Remove Complete button
+  completeButton.parentNode.removeChild(completeButton);
+  }
+}
+
+//Used to calculate final score
 function calculateFinalScore(
   survey: SurveyModel,
   questionNames: string[]
@@ -167,9 +207,7 @@ function calculateFinalScore(
       // no real risk of injection since we are just getting a value, worst case it breaks our score
       // eslint-disable-next-line security/detect-object-injection
       rawRiskScore += getValue(survey.data[name]);
-      maxRawRiskScore += getMaxScoreForQuestion(<QuestionSelectBase>(
-        currentQuestion
-      ));
+      maxRawRiskScore += getMaxScoreForQuestion(<QuestionSelectBase>(currentQuestion));
     } else if (currentQuestionType === 3) {
       // no real risk of injection since we are just getting a value, worst case it breaks our score
       // eslint-disable-next-line security/detect-object-injection
@@ -186,6 +224,8 @@ function calculateFinalScore(
   } else {
     total = rawRiskScore;
   }
+
+  //Used to calculate the impact level
 
   if (total <= maxRawRiskScore * threshold1) {
     level = 1;
@@ -216,6 +256,7 @@ const store: StoreOptions<RootState> = {
     questionNames: []
   },
   mutations: {
+    //To reset answers back to default
     resetSurvey(state: RootState) {
       state.answerData = [];
       state.result = undefined;
@@ -225,6 +266,11 @@ const store: StoreOptions<RootState> = {
     updateResult(state: RootState, result: SurveyModel) {
       state.result = result;
       state.currentPageNo = result.currentPageNo;
+
+      var currentPage = state.currentPageNo;
+
+      //this.removeElement(currentPage, result);
+    
       //freeze this data so we can load from localStorage
       state.toolData = Object.freeze(result.data);
       state.answerData = result.getPlainData({
@@ -239,18 +285,24 @@ const store: StoreOptions<RootState> = {
           })
           .map(question => {
             return question.name;
-          });
+          });     
       }
     }
   },
   getters: {
+    //Make sure that surveys in progress by validating that the toolData object not empty.
     inProgress: state => {
+
       return !isEmpty(state.toolData);
     },
+    //Used to calculute final score by taking in result and question names
     calcScore: state => {
       if (state.result === undefined) return [0, 0, 0];
+  
       return calculateFinalScore(state.result, state.questionNames);
     },
+
+    //
     resultDataSections: state => {
       if (state.result === undefined) return {};
 
@@ -311,10 +363,10 @@ const store: StoreOptions<RootState> = {
           }
         }
 
+        //Used to push answers into one that has multiple answers (COMPARE WITH MULTICHOICERESULT and MULTICHOICEVALUEREUSLT)
         if (question.getChoices !== undefined) {
           var choices = question.getChoices();
           result.choiceData = [];
-
           for (var i = 0; i < choices.length; i++) {
             result.choiceData.push({
               en: choices[i].locText.getLocaleText("default"),

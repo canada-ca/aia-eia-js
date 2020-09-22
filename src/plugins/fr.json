@@ -1,5 +1,6 @@
 {
     "startAgain": "Recommencer",
+    "version": "Évaluation de l'Impact Algorithmique v0.8",
     "exportEnglishResults": "Exporter un document en anglais",
     "exportFrenchResults": "Exporter un document français",
     "frenchContent": "Contenu français",
