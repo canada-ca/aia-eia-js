@@ -30,9 +30,6 @@ jobs:
       - run: npm run test:unit
       - run: |
           echo "::add-matcher::.github/workflows/cspell-problem-matcher.json"
-          npm run spellcheck:markdown
-      - run: |
-          echo "::add-matcher::.github/workflows/cspell-problem-matcher.json"
           npm run spellcheck:code
       - run: |
           echo "::add-matcher::.github/workflows/cspell-problem-matcher.json"
