@@ -209,6 +209,8 @@ function calculateFinalScore(
 const store: StoreOptions<RootState> = {
   plugins: [vuexLocal.plugin],
   state: {
+    //Added version variable to keep track of current version
+    version: "v0.8",
     answerData: [],
     result: undefined,
     currentPageNo: 0,
