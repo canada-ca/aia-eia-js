@@ -52,6 +52,7 @@ You can see all the components built in `/src/components` and all the views in `
 Finally, if you would like to render the web application without the Government of Canada template and branding, you can remove the line 32 of the index.html file which sits in the /public folder.
 
 Line to remove:
+
 ```html
 <script type="text/javascript" src="helper/wet.js"></script>
 ```
