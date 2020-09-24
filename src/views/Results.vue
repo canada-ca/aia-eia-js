@@ -22,6 +22,10 @@
       <p class="small">{{ $t("localSaveWarning") }}</p>
     </div>
 
+    <div class="row">
+      <h2 style="text-align:left;">{{ $t("version", locale) }}</h2>
+    </div>
+
     <p>{{ $t("onThisPage") }}</p>
     <ul>
       <li>
@@ -115,7 +119,9 @@
       <summary>{{ $t("englishContent") }}</summary>
       <div id="en-content" lang="en">
         <h1>{{ $t("resultTitle", "en") }}</h1>
-
+        <div class="row">
+          <h2 style="text-align:left;">{{ $t("version", "en") }}</h2>
+        </div>
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="en"></Result>
         </div>
@@ -159,6 +165,10 @@
       <summary>{{ $t("frenchContent") }}</summary>
       <div id="fr-content" lang="fr">
         <h1>{{ $t("resultTitle", "fr") }}</h1>
+
+        <div class="row">
+          <h2 style="text-align:left;">{{ $t("version", "fr") }}</h2>
+        </div>
 
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="fr"></Result>
@@ -243,6 +253,7 @@ export default class Results extends Vue {
     this.$router.push({ path: "/" });
   }
   fileLoaded($event: SurveyFile) {
+    this.Survey.version = $event.version;
     this.Survey.data = $event.data;
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
@@ -312,6 +323,7 @@ export default class Results extends Vue {
     //if survey is in progress reload from store
     if (this.$store.getters.inProgress) {
       this.fileLoaded({
+        version: this.$store.state.version,
         currentPage: this.$store.state.currentPageNo,
         data: this.$store.state.toolData
       } as SurveyFile);

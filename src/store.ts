@@ -10,6 +10,7 @@ import {
   LocalizableString
 } from "survey-vue";
 import isEmpty from "lodash.isempty";
+import { version } from "vue/types/umd";
 
 Vue.use(Vuex);
 
@@ -209,6 +210,8 @@ function calculateFinalScore(
 const store: StoreOptions<RootState> = {
   plugins: [vuexLocal.plugin],
   state: {
+    //Added version variable to keep track of current version
+    version: "v0.8",
     answerData: [],
     result: undefined,
     currentPageNo: 0,
