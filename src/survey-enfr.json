@@ -515,245 +515,245 @@
                                     }
                                 },
                                 {
-                                    "value": 100,
+                                    "value": "100",
                                     "text": {
                                         "default": "Canadian Centre for Occupational Health and Safety",
                                         "fr": "Centre canadien d'hygiène et de sécurité au travail"
                                     }
                                 },
                                 {
-                                    "value": 101,
+                                    "value": "101",
                                     "text": {
                                         "default": "Canadian Transportation Accident Investigation and Safety Board",
                                         "fr": "Bureau canadien d'enquête sur les accidents de transport et de la sécurité des transports"
                                     }
                                 },
                                 {
-                                    "value": 102,
+                                    "value": "102",
                                     "text": {
                                         "default": "The National Battlefields Commission",
                                         "fr": "Commission des champs de bataille nationaux"
                                     }
                                 },
                                 {
-                                    "value": 103,
+                                    "value": "103",
                                     "text": {
                                         "default": "Security Intelligence Review Committee",
                                         "fr": "Comité de surveillance des activités de renseignement de sécurité"
                                     }
                                 },
                                 {
-                                    "value": 109,
+                                    "value": "109",
                                     "text": {
                                         "default": "Patented Medicine Prices Review Board",
                                         "fr": "Conseil d'examen du prix des médicaments brevetés"
                                     }
                                 },
                                 {
-                                    "value": 116,
+                                    "value": "116",
                                     "text": {
                                         "default": "Copyright Board",
                                         "fr": "Commission du droit d'auteur"
                                     }
                                 },
                                 {
-                                    "value": 119,
+                                    "value": "119",
                                     "text": {
                                         "default": "Canadian Space Agency",
                                         "fr": "Agence spatiale canadienne"
                                     }
                                 },
                                 {
-                                    "value": 122,
+                                    "value": "122",
                                     "text": {
                                         "default": "Canada Revenue Agency - (Administered Activities)",
                                         "fr": "Agence du revenu du Canada - (activités administrées)"
                                     }
                                 },
                                 {
-                                    "value": 123,
+                                    "value": "123",
                                     "text": {
                                         "default": "Export Development Canada (Crown Corporation)",
                                         "fr": "Exportation et développement Canada (Société d'État)"
                                     }
                                 },
                                 {
-                                    "value": 124,
+                                    "value": "124",
                                     "text": {
                                         "default": "Parks Canada Agency",
                                         "fr": "Agence Parcs Canada"
                                     }
                                 },
                                 {
-                                    "value": 127,
+                                    "value": "127",
                                     "text": {
                                         "default": "Public Works and Government Services (Department of)",
                                         "fr": "Travaux publics et des Services gouvernementaux (Ministère des)"
                                     }
                                 },
                                 {
-                                    "value": 130,
+                                    "value": "130",
                                     "text": {
                                         "default": "Canada Revenue Agency",
                                         "fr": "Agence du revenu du Canada"
                                     }
                                 },
                                 {
-                                    "value": 133,
+                                    "value": "133",
                                     "text": {
                                         "default": "Canadian Grain Commission",
                                         "fr": "Commission canadienne des grains"
                                     }
                                 },
                                 {
-                                    "value": 134,
+                                    "value": "134",
                                     "text": {
                                         "default": "Canadian Dairy Commission",
                                         "fr": "Commission canadienne du lait"
                                     }
                                 },
                                 {
-                                    "value": 135,
+                                    "value": "135",
                                     "text": {
                                         "default": "Canadian Heritage (Department of)",
                                         "fr": "Patrimoine canadien (Ministère du)"
                                     }
                                 },
                                 {
-                                    "value": 136,
+                                    "value": "136",
                                     "text": {
                                         "default": "Canadian Food Inspection Agency",
                                         "fr": "Agence canadienne d'inspection des aliments"
                                     }
                                 },
                                 {
-                                    "value": 137,
+                                    "value": "137",
                                     "text": {
                                         "default": "Military Police Complaints Commission",
                                         "fr": "Commission d'examen des plaintes concernant la police militaire"
                                     }
                                 },
                                 {
-                                    "value": 138,
+                                    "value": "138",
                                     "text": {
                                         "default": "Military Grievances External Review Committee",
                                         "fr": "Comité externe d'examen des griefs militaires"
                                     }
                                 },
                                 {
-                                    "value": 139,
+                                    "value": "139",
                                     "text": {
                                         "default": "Financial Transactions and Reports Analysis Centre of Canada",
                                         "fr": "Centre d'analyse des opérations et déclarations financières du Canada"
                                     }
                                 },
                                 {
-                                    "value": 141,
+                                    "value": "141",
                                     "text": {
                                         "default": "Financial Consumer Agency of Canada",
                                         "fr": "Agence de la consommation en matière financière du Canada"
                                     }
                                 },
                                 {
-                                    "value": 142,
+                                    "value": "142",
                                     "text": {
                                         "default": "Office of Infrastructure of Canada",
                                         "fr": "Bureau de l'infrastructure du Canada"
                                     }
                                 },
                                 {
-                                    "value": 144,
+                                    "value": "144",
                                     "text": {
                                         "default": "Courts Administration Service",
                                         "fr": "Service administratif des tribunaux judiciaires"
                                     }
                                 },
                                 {
-                                    "value": 145,
+                                    "value": "145",
                                     "text": {
                                         "default": "Library and Archives of Canada",
                                         "fr": "Bibliothèque et Archives du Canada"
                                     }
                                 },
                                 {
-                                    "value": 147,
+                                    "value": "147",
                                     "text": {
                                         "default": "Office of the Conflict of Interest and Ethics Commissioner",
                                         "fr": "Commissariat aux conflits d'intérêts et à l'éthique"
                                     }
                                 },
                                 {
-                                    "value": 148,
+                                    "value": "148",
                                     "text": {
                                         "default": "Public Health Agency of Canada",
                                         "fr": "Agence de la santé publique du Canada"
                                     }
                                 },
                                 {
-                                    "value": 151,
+                                    "value": "151",
                                     "text": {
                                         "default": "Office of the Senate Ethics Officer",
                                         "fr": "Bureau du conseiller sénatorial en éthique"
                                     }
                                 },
                                 {
-                                    "value": 154,
+                                    "value": "154",
                                     "text": {
                                         "default": "Office of the Commissioner of Lobbying",
                                         "fr": "Commissariat au lobbying"
                                     }
                                 },
                                 {
-                                    "value": 163,
+                                    "value": "163",
                                     "text": {
                                         "default": "Shared Services Canada",
                                         "fr": "Services partagés Canada"
                                     }
                                 },
                                 {
-                                    "value": 165,
+                                    "value": "165",
                                     "text": {
                                         "default": "Communications Security Establishment",
                                         "fr": "Centre de la sécurité des télécommunications"
                                     }
                                 },
                                 {
-                                    "value": 170,
+                                    "value": "170",
                                     "text": {
                                         "default": "Administrative Tribunals Support Service of Canada",
                                         "fr": "Service canadien d'appui aux tribunaux administratifs"
                                     }
                                 },
                                 {
-                                    "value": 171,
+                                    "value": "171",
                                     "text": {
                                         "default": "Canadian High Arctic Research Station",
                                         "fr": "Station canadienne de recherche dans l'Extrême-Arctique"
                                     }
                                 },
                                 {
-                                    "value": 176,
+                                    "value": "176",
                                     "text": {
                                         "default": "Parliamentary Protective Service",
                                         "fr": "Service de protection parlementaire"
                                     }
                                 },
                                 {
-                                    "value": 180,
+                                    "value": "180",
                                     "text": {
                                         "default": "Invest in Canada Hub",
                                         "fr": "Investir au Canada"
                                     }
                                 },
                                 {
-                                    "value": 183,
+                                    "value": "183",
                                     "text": {
                                         "default": "Office of the Parliamentary Budget Officer",
                                         "fr": "Bureau du directeur parlementaire du budget"
                                     }
                                 },
                                 {
-                                    "value": 192,
+                                    "value": "192",
                                     "text": {
                                         "default": "Secretariat of the National Security and Intelligence Committee of Parliamentarians",
                                         "fr": "Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement"
@@ -1500,14 +1500,14 @@
                                     }
                                 },
                                 {
-                                    "value": 3,
+                                    "value": "item3-3",
                                     "text": {
                                         "default": "High impact",
                                         "fr": "Incidence élevée"
                                     }
                                 },
                                 {
-                                    "value": 4,
+                                    "value": "item4-4",
                                     "text": {
                                         "default": "Very high impact",
                                         "fr": "Incidence très élevée"
