@@ -10,7 +10,6 @@ import {
   LocalizableString
 } from "survey-vue";
 import isEmpty from "lodash.isempty";
-import { version } from "vue/types/umd";
 
 Vue.use(Vuex);
 
@@ -207,6 +206,34 @@ function calculateFinalScore(
   return [rawRiskScore, mitigationScore, total, level];
 }
 
+//Toggles wheather the next button appears based on if it is located on the last page
+function toggleNextButton(state: RootState): void {
+  //When I do not include the btn class it prevents from the next button from showing
+  var noBtnClassIncluded = " sv_next_btn btn-primary";
+  var nextButstr = "btn sv_next_btn btn-primary";
+  var nextButton;
+  const MAX = 12;
+
+  //Used to check if the next button is removed and directes to the proper classname that is shown currently on the DOM
+  if (state.removeNext) {
+    nextButton = document.getElementsByClassName(noBtnClassIncluded)[0];
+  } else {
+    nextButton = document.getElementsByClassName(nextButstr)[0];
+  }
+
+  if (nextButton != undefined) {
+    // eslint-disable-next-line prettier/prettier
+    //Checks to see if its on the last page, if so get rid of the next button by re-assigning classname.
+    if (state.currentPageNo == MAX) {
+      nextButton.setAttribute("class", noBtnClassIncluded);
+      state.removeNext = true;
+    } else {
+      nextButton.setAttribute("class", nextButstr);
+      state.removeNext = false;
+    }
+  }
+}
+
 const store: StoreOptions<RootState> = {
   plugins: [vuexLocal.plugin],
   state: {
@@ -216,7 +243,8 @@ const store: StoreOptions<RootState> = {
     result: undefined,
     currentPageNo: 0,
     toolData: {},
-    questionNames: []
+    questionNames: [],
+    removeNext: false
   },
   mutations: {
     resetSurvey(state: RootState) {
@@ -224,8 +252,10 @@ const store: StoreOptions<RootState> = {
       state.result = undefined;
       state.currentPageNo = 0;
       state.toolData = {};
+      state.removeNext = false;
     },
     updateResult(state: RootState, result: SurveyModel) {
+      //When it reaches the last page it will get rid of the button or add it back if the user decides to go back
       state.result = result;
       state.currentPageNo = result.currentPageNo;
       //freeze this data so we can load from localStorage
@@ -244,6 +274,7 @@ const store: StoreOptions<RootState> = {
             return question.name;
           });
       }
+      toggleNextButton(state);
     }
   },
   getters: {

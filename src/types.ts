@@ -7,4 +7,5 @@ export interface RootState {
   currentPageNo: number;
   result?: SurveyModel;
   questionNames: string[];
+  removeNext: boolean;
 }

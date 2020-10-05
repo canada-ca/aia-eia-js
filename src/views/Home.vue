@@ -63,6 +63,16 @@ export default class Home extends Vue {
   }
 
   created() {
+   //Render page to see weather button needs to be removed or not applied before user completes survey
+    this.Survey.onCurrentPageChanged.add(result => {
+      this.$store.commit("updateResult", result);
+    });
+
+    //Accounts for user's pressing the back button after completing survey (otherwise next button would appear on the last page)
+    this.Survey.onAfterRenderQuestion.add(result => {
+      this.$store.commit("updateResult", result);
+    });
+
     this.Survey.onComplete.add(result => {
       this.$store.commit("updateResult", result);
     });
