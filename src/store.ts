@@ -206,6 +206,33 @@ function calculateFinalScore(
   return [rawRiskScore, mitigationScore, total, level];
 }
 
+//Toggles wheather the prev button appears based on if it is located on the first page
+function toggleButton(state: RootState): void {
+  //When I do not include the btn class it prevents the prev button from showing
+  var noPrevBtnClassIncluded = " sv_prev_btn btn-primary";
+  var prevButstr = "btn sv_prev_btn btn-primary";
+  var prevButton;
+  const FIRSTPAGE = 0;
+
+  if (state.removePrev) {
+    prevButton = document.getElementsByClassName(noPrevBtnClassIncluded)[0];
+  } else {
+    prevButton = document.getElementsByClassName(prevButstr)[0];
+  }
+
+  if (prevButton != undefined) {
+    // eslint-disable-next-line prettier/prettier
+    //Checks to see if the previous button is on the first page, if so get rid of the next previous by re-assigning classname.
+    if (state.currentPageNo == FIRSTPAGE) {
+      prevButton.setAttribute("class", noPrevBtnClassIncluded);
+      state.removePrev = true;
+    } else {
+      prevButton.setAttribute("class", prevButstr);
+      state.removePrev = false;
+    }
+  }
+}
+
 const store: StoreOptions<RootState> = {
   plugins: [vuexLocal.plugin],
   state: {
@@ -213,7 +240,8 @@ const store: StoreOptions<RootState> = {
     result: undefined,
     currentPageNo: 0,
     toolData: {},
-    questionNames: []
+    questionNames: [],
+    removePrev: false
   },
   mutations: {
     resetSurvey(state: RootState) {
@@ -221,8 +249,10 @@ const store: StoreOptions<RootState> = {
       state.result = undefined;
       state.currentPageNo = 0;
       state.toolData = {};
+      state.removePrev = false;
     },
     updateResult(state: RootState, result: SurveyModel) {
+      //When it reaches the last page it will get rid of the button or add it back if the user decides to go back
       state.result = result;
       state.currentPageNo = result.currentPageNo;
       //freeze this data so we can load from localStorage
@@ -241,6 +271,7 @@ const store: StoreOptions<RootState> = {
             return question.name;
           });
       }
+      toggleButton(state);
     }
   },
   getters: {
