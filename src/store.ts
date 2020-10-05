@@ -206,6 +206,56 @@ function calculateFinalScore(
   return [rawRiskScore, mitigationScore, total, level];
 }
 
+//Toggles wheather the next button appears based on if it is located on the last page
+function toggleButton(state: RootState): void {
+  //When I do not include the btn class it prevents from the next button same for prev button from showing
+  var noNextBtnClassIncluded = " sv_next_btn btn-primary";
+  var nextButstr = "btn sv_next_btn btn-primary";
+  var noPrevBtnClassIncluded = " sv_prev_btn btn-primary";
+  var prevButstr = "btn sv_prev_btn btn-primary";
+  var nextButton, prevButton;
+  const MAX = 12;
+  const FIRSTPAGE = 0;
+
+  //Used to check if the next button and prev button is removed and directes to the proper classname that is shown currently on the DOM
+  if (state.removeNext) {
+    nextButton = document.getElementsByClassName(noNextBtnClassIncluded)[0];
+  } else {
+    nextButton = document.getElementsByClassName(nextButstr)[0];
+  }
+
+  if (nextButton != undefined) {
+    // eslint-disable-next-line prettier/prettier
+    //Checks to see if its on the last page, if so get rid of the next button by re-assigning classname.
+
+    if (state.currentPageNo == MAX) {
+      nextButton.setAttribute("class", noNextBtnClassIncluded);
+      state.removeNext = true;
+    } else {
+      nextButton.setAttribute("class", nextButstr);
+      state.removeNext = false;
+    }
+  }
+
+  if (state.removePrev) {
+    prevButton = document.getElementsByClassName(noPrevBtnClassIncluded)[0];
+  } else {
+    prevButton = document.getElementsByClassName(prevButstr)[0];
+  }
+
+  if (prevButton != undefined) {
+    // eslint-disable-next-line prettier/prettier
+    //Checks to see if the previous button is on the first page, if so get rid of the next previous by re-assigning classname.
+    if (state.currentPageNo == FIRSTPAGE) {
+      prevButton.setAttribute("class", noPrevBtnClassIncluded);
+      state.removePrev = true;
+    } else {
+      prevButton.setAttribute("class", prevButstr);
+      state.removePrev = false;
+    }
+  }
+}
+
 const store: StoreOptions<RootState> = {
   plugins: [vuexLocal.plugin],
   state: {
@@ -213,7 +263,9 @@ const store: StoreOptions<RootState> = {
     result: undefined,
     currentPageNo: 0,
     toolData: {},
-    questionNames: []
+    questionNames: [],
+    removeNext: false,
+    removePrev: false
   },
   mutations: {
     resetSurvey(state: RootState) {
@@ -221,8 +273,11 @@ const store: StoreOptions<RootState> = {
       state.result = undefined;
       state.currentPageNo = 0;
       state.toolData = {};
+      state.removeNext = false;
+      state.removePrev = false;
     },
     updateResult(state: RootState, result: SurveyModel) {
+      //When it reaches the last page it will get rid of the button or add it back if the user decides to go back
       state.result = result;
       state.currentPageNo = result.currentPageNo;
       //freeze this data so we can load from localStorage
@@ -241,6 +296,7 @@ const store: StoreOptions<RootState> = {
             return question.name;
           });
       }
+      toggleButton(state);
     }
   },
   getters: {

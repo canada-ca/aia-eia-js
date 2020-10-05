@@ -13,8 +13,8 @@
     </p>
     <form>
       <ActionButtonBar
-        v-on:fileLoaded="fileLoaded($event)"
-        v-on:startAgain="startAgain"
+        @fileLoaded="fileLoaded($event)"
+        @startAgain="startAgain"
       />
     </form>
 
@@ -238,7 +238,7 @@ export default class Results extends Vue {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add(result => {
+    this.Survey.onComplete.add(results => {
       this.$router.push("Results");
     });
 
