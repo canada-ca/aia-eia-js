@@ -11,7 +11,7 @@
                     "type": "html",
                     "name": "welcome1",
                     "html": {
-                        "default":"<h3>1. What is the Algorithmic Impact Assessment?</h3>The AIA is a questionnaire designed to help you assess and mitigate the impacts associated with deploying an automated decision system. The AIA also helps identify the impact level of your automated decision system under the Directive on Automated Decision-Making. The questions are focused on your business processes, your data, and your system design decisions.<div style='margin-left: 55px;'><h3>a. How does it work?</h3>The questionnaire asks you around 60 questions related to your business process, data and system designed decisions. The results will demonstrate your impact level as well as a link where you can learn about what your requirements are under the Directive. The questionnaire takes at least 35 minutes to complete.<h3>b. Where can I find out why my system was rated a certain level?</h3><p> When you complete the questionnaire, a detailed results page will be displayed. You can print it or save it as PDF.</p></div><h3>2. Can I save my responses and complete the questionnaire later?</h3><p>Yes. When you want to save your progress, click on the 'Save' button at the top of the window and save the JSON file (machine readable structure text document) to your local folders. If you want to continue where you left off, click on the 'Choose file' button and select your saved JSON file.</p> <p>All data will be deleted if you click on the button 'Start over'</p> <div style='margin-left: 55px;'> <h3>a. Do you store my answers?</h3><p>No. We don't store your responses and data only remains within your browser's local storage. Feel free to use this tool as many times as you need along the development of your system.</p></div><h3>3. Can I use this project for my government or company?</h3>Yes, this is an open source project released under the MIT licence and you are welcome to use it for your own needs. See the link above for the project repository. <br> <br>Please provide notice of licence and attribution of the work where required.<h3> 4. 'This is a work in progress and changes are being made on a daily basis to the application'. You can follow its development and even participate by joining us on GitHub at the link above. </h3> </br>If you find a bug or if you encounter a problem, please create an <a href='https://github.com/canada-ca/aia-eia-js/issues' target='_blank'>issue on the project site.</a><br>",
+                        "default": "<h3>1. What is the Algorithmic Impact Assessment?</h3>The AIA is a questionnaire designed to help you assess and mitigate the impacts associated with deploying an automated decision system. The AIA also helps identify the impact level of your automated decision system under the Directive on Automated Decision-Making. The questions are focused on your business processes, your data, and your system design decisions.<div style='margin-left: 55px;'><h3>a. How does it work?</h3>The questionnaire asks you around 60 questions related to your business process, data and system designed decisions. The results will demonstrate your impact level as well as a link where you can learn about what your requirements are under the Directive. The questionnaire takes at least 35 minutes to complete.<h3>b. Where can I find out why my system was rated a certain level?</h3><p> When you complete the questionnaire, a detailed results page will be displayed. You can print it or save it as PDF.</p></div><h3>2. Can I save my responses and complete the questionnaire later?</h3><p>Yes. When you want to save your progress, click on the 'Save' button at the top of the window and save the JSON file (machine readable structure text document) to your local folders. If you want to continue where you left off, click on the 'Choose file' button and select your saved JSON file.</p> <p>All data will be deleted if you click on the button 'Start over'</p> <div style='margin-left: 55px;'> <h3>a. Do you store my answers?</h3><p>No. We don't store your responses and data only remains within your browser's local storage. Feel free to use this tool as many times as you need along the development of your system.</p></div><h3>3. Can I use this project for my government or company?</h3>Yes, this is an open source project released under the MIT licence and you are welcome to use it for your own needs. See the link above for the project repository. <br> <br>Please provide notice of licence and attribution of the work where required.<h3> 4. 'This is a work in progress and changes are being made on a daily basis to the application'. You can follow its development and even participate by joining us on GitHub at the link above. </h3> </br>If you find a bug or if you encounter a problem, please create an <a href='https://github.com/canada-ca/aia-eia-js/issues' target='_blank'>issue on the project site.</a><br>",
                         "fr": "<h3>1.Qu'est-ce que l'évaluation d'impact algorithmique </h3><p>L'EIA est un questionnaire conçu pour vous aider à évaluer et à atténuer les risques associés au déploiement d'un système de prise de décision automatisé. L'EIA permet également d'identifier le niveau d'impact de votre système de décision automatisé en vertu de la directive proposée sur la prise de décision automatisée. Les questions portent sur vos processus métier, vos données et vos décisions de conception de système.<p> <div style='margin-left: 55px;'><h3>a. Comment ça marche?</h3><p>Ce questionnaire vous demande environ 60 questions liées à vos processus métier, à vos données et à vos décisions en matière de système. Les résultats démontreront votre niveau d'impact ainsi qu'un lien vous permettant de connaître vos exigences en vertu de la directive. Le questionnaire prend plus de 35 minutes à compléter.</p>  <h3>b. Où puis-je savoir pourquoi mon système a été évalué à un certain niveau?</h3><p>Lorsque vous aurez complété le questionnaire,e page de résultats détaillés vous sera présentée. Vous pouvez imprimer la page ou encore l'enregistrer en format PDF</p>Davantage de fonctionnalités seront ajoutées dans le futur afin de vous permettre de sauvegarder vos résultats.</div><h3>2. Puis-je sauvegarder mes réponses et remplir le questionnaire plus tard?</h3><p>Oui. Lorsque vous voulez sauvegarder votre progrès, cliquez sur le bouton 'Sauvegarder' en haut de la fenêtre et enregistrez le fichier JSON (un format texte structuré). Si vous voulez poursuivre à partir d'une sauvegarde, cliquez sur 'Choisir un fichier' et choisissez votre fichier JSON.</p><p>Toutes les données saisies seront instantanément effacées si vous cliquez sur le bouton 'Recommencer'.</p><div style='margin-left: 55px';><h3>a. Est-ce que vous sauvegardez mes réponses?</h3><p>Non, nous ne stockons pas vos réponses et les données saisies résident uniquement dans votre ordinateur. N'hésitez pas à utiliser cet outil autant de fois que nécessaire pendant le développement de votre système.</p></div><h3>3. Puis-je utiliser ce projet pour mon gouvernement ou ma compagnie?</h3>Oui, il s'agit d'un projet de logiciel libre publié sous la licence MIT et vous pouvez l'utiliser pour vos propres besoins. Veuillez consulter le lien ici-haut pour accéder au répertoire du projet.<br><br>Nous vous prions de bien vouloir inclure la licence et attribuer le travail où cela est requis.<h3> 4. 'Ceci est un travail en cours et de nombreux changements ont lieu chaque jour'. Vous pouvez suivre le développement de l'application et même y participer en nous rejoignant sur le lien GitHub ici-haut.</h3> <br> Si vous découvrez un bogue ou si vous rencontrez un problème, nous vous prions de bien vouloir créer un <a href='https://github.com/canada-ca/aia-eia-js/issues' target='_blank'>billet sur le projet</a></br>"
                     }
                 }
@@ -828,8 +828,8 @@
                 }
             ],
             "title": {
-                "default": "Project Details",
-                "fr": "Détails du projet"
+                "default": "<u><strong style='font-size:20px;'> Project Details </strong></u><br></br>",
+                "fr": "<u><strong style='font-size:20px;'> Détails du projet </strong></u><br></br>"
             }
         },
         {
@@ -904,8 +904,8 @@
                 }
             ],
             "title": {
-                "default": "Business Driver / Positive Impact",
-                "fr": "Facteur opérationnel / Incidence positive"
+                "default": "<u><strong style='font-size:20px;'> Business Driver / Positive Impact </strong></u><br></br></u>",
+                "fr": "<u><strong style='font-size:20px;'> Facteur opérationnel / Incidence positive </strong></u><br></br>"
             }
         },
         {
@@ -1015,8 +1015,8 @@
                 }
             ],
             "title": {
-                "default": "Risk Profile",
-                "fr": "Profil de risque"
+                "default": "<u><strong style='font-size:20px;'>Risk Profile </strong></u><br></br>",
+                "fr": "<u><strong style='font-size:20px;'>  Profil de risque </strong></u><br></br>"
             }
         },
         {
@@ -1054,8 +1054,8 @@
                 }
             ],
             "title": {
-                "default": "Project Authority",
-                "fr": "Autorité de projet"
+                "default": "<u><strong style='font-size:20px;'> Project Authority </strong></u><br></br>",
+                "fr": "<u><strong style='font-size:20px;'>Autorité de projet</strong></u><br></br>"
             }
         },
         {
@@ -1130,8 +1130,8 @@
                 }
             ],
             "title": {
-                "default": "About The System",
-                "fr": "À propos du système"
+                "default": "<u><strong style='font-size:20px;'> About The System </strong></u><br></br>",
+                "fr": "<u><strong style='font-size:20px;'> À propos du système </strong></u><br></br>"
             }
         },
         {
@@ -1145,8 +1145,8 @@
                             "type": "html",
                             "name": "aboutAlgorithmIntro",
                             "html": {
-                                "default": "<h4>Will your algorithm have any of the following characteristics:</h4>",
-                                "fr": "<h4>Votre algorithme aura-t-il l'une des caractéristiques suivantes :</h4>"
+                                "default": "<strong style='font-size:17px;'>Will your algorithm have any of the following characteristics:</strong>",
+                                "fr": "<strong style='font-size:17px;'>Votre algorithme aura-t-il l'une des caractéristiques suivantes :</storng>"
                             }
                         },
                         {
@@ -1200,9 +1200,9 @@
                     ]
                 }
             ],
-            "title": {
-                "default": "About the Algorithm",
-                "fr": "À propos de l'algorithme"
+            "title": { 
+                "default": "<u><strong style='font-size:20px;'> About the Algorithm </strong></u><br></br>",
+                "fr": "<u><strong style='font-size:20px;'> À propos de l'algorithme </strong></u><br></br>"
             }
         },
         {
@@ -1277,8 +1277,8 @@
                 }
             ],
             "title": {
-                "default": "About The Decision",
-                "fr": "À propos de la décision"
+                "default": "<u><strong style='font-size:20px;'>About The Decision </strong></u><br></br>",
+                "fr": "<u><strong style='font-size:20px;'>À propos de la décision </strong></u><br></br>"
             }
         },
         {
@@ -1665,8 +1665,8 @@
                 }
             ],
             "title": {
-                "default": "Impact Assessment",
-                "fr": "Évaluation de l'incidence"
+                "default": "<u><strong style='font-size:20px;'>Impact Assessment </strong></u><br></br>",
+                "fr": "<u><strong style='font-size:20px;'>Évaluation de l'incidence </strong></u><br></br>"
             }
         },
         {
@@ -1933,8 +1933,8 @@
                         }
                     ],
                     "title": {
-                        "default": "A. Data Source",
-                        "fr": "A. Source des données"
+                        "default": "<strong style='font-size:18px;'> A. Data Source </strong>",
+                        "fr": "<strong style='font-size:18px;'> A. Source des données </strong>"
                     }
                 },
                 {
@@ -1992,14 +1992,14 @@
                         }
                     ],
                     "title": {
-                        "default": "B. Type of Data",
-                        "fr": "B. Type de données"
+                        "default": "<br></br><strong style='font-size:18px;'>B. Type of Data </strong>",
+                        "fr": "<br></br><strong style='font-size:18px;'>B. Type de données </strong>"
                     }
                 }
             ],
             "title": {
-                "default": "About The Data",
-                "fr": "À propos des données"
+                "default": "<u><strong style='font-size:20px;'>About The Data </strong></u><br></br>",
+                "fr": "<u><strong style='font-size:20px;'> À propos des données </strong></u><br></br>"
             }
         },
         {
@@ -2013,8 +2013,8 @@
                             "type": "html",
                             "name": "consultation-intro",
                             "html": {
-                                "default": "<h4>Will you be engaging with any of the following groups?</h4>",
-                                "fr": "<h4>Allez-vous consulter l'un ou l'autre des groupes suivants ?</h4>"
+                                "default": "<strong style='font-size:18px;'> Will you be engaging with any of the following groups?</strong>",
+                                "fr": "<strong style='font-size:18px;'>Allez-vous consulter l'un ou l'autre des groupes suivants ?</strong>"
                             }
                         },
                         {
@@ -2168,7 +2168,7 @@
                 }
             ],
             "visibleIf": "{projectDetailsPhase} = \"item1\"",
-            "title": "Consultations"
+            "title": "<u><strong style='font-size:20px;'>Consultations</strong></u><br></br>"
         },
         {
             "name": "consultationImplementation",
@@ -2181,8 +2181,8 @@
                             "type": "html",
                             "name": "consultation-intro",
                             "html": {
-                                "default": "<h4>Have you engaged with any of the following groups?</h4>",
-                                "fr": "<h4>Avez-vous consulté l'un ou l'autre des groupes suivants ?</h4>"
+                                "default": "<strong style='font-size:18px;'>Have you engaged with any of the following groups?</strong>",
+                                "fr": "<strong style='font-size:18px;'>Avez-vous consulté l'un ou l'autre des groupes suivants ?</strong>"
                             }
                         },
                         {
@@ -2336,7 +2336,7 @@
                 }
             ],
             "visibleIf": "{projectDetailsPhase} = \"item2\"",
-            "title": "Consultations"
+            "title": "<u><strong style='font-size:20px;'>Consultations<strong></u><br></br>"
         },
         {
             "name": "dataQualityDesign",
@@ -2588,15 +2588,15 @@
                         }
                     ],
                     "title": {
-                        "default": "Data Quality",
-                        "fr": "Qualité Des Données"
+                        "default": "<strong style='font-size:18px;'>A. Data Quality </strong>",
+                        "fr": "<strong style='font-size:18px;'>A. Qualité Des Données</strong>"
                     }
                 }
             ],
             "visibleIf": "{projectDetailsPhase} = \"item1\"",
             "title": {
-                "default": "De-Risking And Mitigation Measures",
-                "fr": "Élimination des risques et mesure d'atténuation"
+                "default": "<u><strong style='font-size:20px;'>De-Risking And Mitigation Measures</strong></u><br></br>",
+                "fr": "<u><strong style='font-size:20px;'>Élimination des risques et mesure d'atténuation</strong></u><br></br>"
             }
         },
         {
@@ -2848,15 +2848,15 @@
                         }
                     ],
                     "title": {
-                        "default": "Data Quality",
-                        "fr": "Qualité Des Données"
+                        "default": "<strong style='font-size:18px;'>A. Data Quality </strong>",
+                        "fr": "<strong style='font-size:18px;'>A. Qualité Des Données </strong>"
                     }
                 }
             ],
             "visibleIf": "{projectDetailsPhase} = \"item2\"",
             "title": {
-                "default": "De-Risking And Mitigation Measures",
-                "fr": "Élimination des risques et mesure d'atténuation"
+                "default": "<u><strong style='font-size:20px;'>De-Risking And Mitigation Measures</strong></u><br></br> ",
+                "fr": "<u><strong style='font-size:20px;'>Élimination des risques et mesure d'atténuation </strong></u><br></br>"
             }
         },
         {
@@ -3276,15 +3276,15 @@
                         }
                     ],
                     "title": {
-                        "default": "Procedural Fairness",
-                        "fr": "Équité Procédurale"
+                        "default": "<strong style='font-size:18px;'>A. Procedural Fairness </strong>",
+                        "fr": "<strong style='font-size:18px;'>A. Équité Procédurale </strong>"
                     }
                 }
             ],
             "visibleIf": "{projectDetailsPhase} = \"item1\"",
             "title": {
-                "default": "De-Risking And Mitigation Measures",
-                "fr": "Élimination des risques et mesure d'atténuation"
+                "default": "<u><strong style='font-size:20px;'>De-Risking And Mitigation Measures</strong></u><br></br>",
+                "fr": "<u><strong style='font-size:20px;'>Élimination des risques et mesure d'atténuation</strong></u><br></br>"
             }
         },
         {
@@ -3704,15 +3704,15 @@
                         }
                     ],
                     "title": {
-                        "default": "Procedural Fairness",
-                        "fr": "Équité Procédurale"
+                        "default": "<strong style='font-size:18px;'>A. Procedural Fairness </strong>",
+                        "fr": "<strong style='font-size:18px;'>A. Équité Procédurale </strong>"
                     }
                 }
             ],
             "visibleIf": "{projectDetailsPhase} = \"item2\"",
             "title": {
-                "default": "De-Risking And Mitigation Measures",
-                "fr": "Élimination des risques et mesure d'atténuation"
+                "default": "<u><strong style='font-size:20px;'>De-Risking And Mitigation Measures</strong></u><br></br>",
+                "fr": "<u><strong style='font-size:20px;'>Élimination des risques et mesure d'atténuation</strong></u><br></br>"
             }
         },
         {
@@ -3772,15 +3772,15 @@
                         }
                     ],
                     "title": {
-                        "default": "Privacy",
-                        "fr": "Confidentialité"
+                        "default": "<strong style='font-size:18px;'>A. Privacy</strong>",
+                        "fr": "<strong style='font-size:18px;'>A. Confidentialité </strong>"
                     }
                 }
             ],
             "visibleIf": "{projectDetailsPhase} = \"item1\"",
             "title": {
-                "default": "De-Risking And Mitigation Measures",
-                "fr": "Élimination des risques et mesure d'atténuation"
+                "default": "<u><strong style='font-size:20px;'>De-Risking And Mitigation Measures</strong></u><br></br>",
+                "fr": "<u><strong style='font-size:20px;'>Élimination des risques et mesure d'atténuation </strong></u><br></br>"
             }
         },
         {
@@ -3840,15 +3840,15 @@
                         }
                     ],
                     "title": {
-                        "default": "Privacy",
-                        "fr": "Confidentialité"
+                        "default": "<strong style='font-size:18px;'>A. Privacy</strong>",
+                        "fr": "<strong style='font-size:18px;'>A. Confidentialité</strong>"
                     }
                 }
             ],
             "visibleIf": "{projectDetailsPhase} = \"item2\"",
             "title": {
-                "default": "De-Risking And Mitigation Measures",
-                "fr": "Élimination des risques et mesure d'atténuation"
+                "default": "<u><strong style='font-size:20px;'>De-Risking And Mitigation Measures </strong></u><br></br>",
+                "fr": "<u><strong style='font-size:20px;'>Élimination des risques et mesure d'atténuation </strong></u><br></br>"
             }
         }
     ],
