@@ -24,7 +24,6 @@
     "mitigationScore": "Cote d'atténuation",
     "resultTitle": "Résultats de l'Évaluation de l'Incidence Algorithmique",
     "resultScore": "Cote finale",
-    "resultSectionMeasure": "Mesures d'atténuation",
     "resultSectionQA": "Section 4: Questions et réponses",
     "resultSectionPD": "Section 4.1: Détails du projet",
     "resultSectionRQA": "Section 4.2: Questions et réponses liées aux risques",

@@ -35,9 +35,6 @@
         <a href="#obligations">{{ $t("requirements.title") }}</a>
       </li>
       <li>
-        <a href="#mitigationMeasures">{{ $t("resultSectionMeasure") }}</a>
-      </li>
-      <li>
         <a href="#qA">{{ $t("resultSectionQA") }}</a>
         <ul>
           <li>
@@ -58,9 +55,6 @@
       <Obligations />
 
       <div class="container-fluid">
-        <div class="row">
-          <h2 id="mitigationMeasures">{{ $t("resultSectionMeasure") }}</h2>
-        </div>
         <div class="row">
           <p v-for="result in myResults[3]" :key="result.name">
             {{ $t(result.name) }}
@@ -130,11 +124,6 @@
         <Obligations locale="en" />
         <div class="container-fluid">
           <div class="row">
-            <h2 id="mitigationMeasures">
-              {{ $t("resultSectionMeasure", "en") }}
-            </h2>
-          </div>
-          <div class="row">
             <p v-for="result in myResults[3]" :key="result.name">
               {{ $t(result.name, "en") }}
             </p>
@@ -178,11 +167,6 @@
         <Obligations locale="fr" />
 
         <div class="container-fluid">
-          <div class="row">
-            <h2 id="mitigationMeasures">
-              {{ $t("resultSectionMeasure", "fr") }}
-            </h2>
-          </div>
           <div class="row">
             <p v-for="result in myResults[3]" :key="result.name">
               {{ $t(result.name, "fr") }}
