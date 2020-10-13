@@ -2043,7 +2043,7 @@
                         },
                         {
                             "type": "checkbox",
-                            "name": "consultationDesign2-NS",
+                            "name": "consultationDesign2",
                             "visibleIf": "{consultationDesign1} = \"item1-1\"",
                             "title": {
                                 "default": "Which Internal Stakeholders will you be engaging?",
@@ -2129,7 +2129,7 @@
                         },
                         {
                             "type": "checkbox",
-                            "name": "consultationDesign4-NS",
+                            "name": "consultationDesign4",
                             "visibleIf": "{consultationDesign3} = \"item1-1\"",
                             "title": {
                                 "default": "Which External Stakeholders will you be engaging?",
@@ -2211,7 +2211,7 @@
                         },
                         {
                             "type": "checkbox",
-                            "name": "consultationImplementation2-NS",
+                            "name": "consultationImplementation2",
                             "visibleIf": "{consultationImplementation1} = \"item1-1\"",
                             "title": {
                                 "default": "Which Internal Stakeholders have you engaged?",
@@ -2297,7 +2297,7 @@
                         },
                         {
                             "type": "checkbox",
-                            "name": "consultationImplementation4-NS",
+                            "name": "consultationImplementation4",
                             "visibleIf": "{consultationImplementation3} = \"item1-1\"",
                             "title": {
                                 "default": "Which External Stakeholders have you engaged?",
