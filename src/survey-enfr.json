@@ -250,7 +250,7 @@
     },
     {
      "type": "rating",
-     "name": "section_two_percentage_automated_builds_and_tests_successfull",
+     "name": "section_two_percentage_automated_builds_and_tests_successfully",
      "title": "The % of automated builds and the percentage of automated tests that are executed successfully every day.",
      "isRequired": true,
      "rateMin": 0,
@@ -573,7 +573,7 @@
     }
    ],
    "visibleIf": "{section_five_enable} = true",
-   "title": "Section Five - Cloud Infastructure"
+   "title": "Section Five - Cloud Infrastructure"
   },
   {
    "name": "sectionSix",
@@ -729,7 +729,7 @@
     }
    ],
    "visibleIf": "{section_six_enable} = true",
-   "title": "Section 6. Team Experementation and Streamlining Change Approval"
+   "title": "Section 6. Team Experimentation and Streamlining Change Approval"
   },
   {
    "name": "sectionSeven",
@@ -1115,7 +1115,7 @@
    "title": "Section Ten - Learning and Generative Culture"
   },
   {
-   "name": "sectionElevin",
+   "name": "sectionEleven",
    "elements": [
     {
      "type": "rating",
@@ -1231,7 +1231,7 @@
     }
    ],
    "visibleIf": "{section_eleven_enable} = true",
-   "title": "Section Elevin - Transformation and Transformational Leadership"
+   "title": "Section Eleven - Transformation and Transformational Leadership"
   }
  ],
  "showQuestionNumbers": "off",
