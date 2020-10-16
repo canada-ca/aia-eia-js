@@ -8,13 +8,21 @@
         <TextResult :data="data" :locale="locale" />
       </div>
       <div v-else-if="isMultiChoiceValueResult(data)">
-        <MultiChoiceValueResult :data="data" :locale="locale" />
+        <MultiChoiceValueResult
+          :data="data"
+          :numCounter="currentNum"
+          :locale="locale"
+        />
       </div>
       <div v-else-if="Array.isArray(data.value)">
-        <MultiChoiceResult :data="data" :locale="locale" />
+        <MultiChoiceResult
+          :data="data"
+          :numCounter="currentNum"
+          :locale="locale"
+        />
       </div>
       <div v-else>
-        <ValueResult :data="data" :locale="locale" />
+        <ValueResult :data="data" :numCounter="currentNum" :locale="locale" />
       </div>
     </div>
   </div>
@@ -39,6 +47,8 @@ import { getValue } from "@/store.ts";
 export default class Result extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
+  @Prop() currentNum: number;
+
   isMultiChoiceValueResult(data: any): boolean {
     if (!Array.isArray(data.value)) return false;
 

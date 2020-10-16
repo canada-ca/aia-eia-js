@@ -78,14 +78,20 @@
           <h3 id="riskQA">{{ $t("resultSectionRQA") }}</h3>
         </div>
         <div class="row" v-for="result in myResults[1]" :key="result.name">
-          <Result :data="result"></Result>
+          <Result
+            :data="result"
+            :currentNum="startingValueRiskScore++"
+          ></Result>
         </div>
 
         <div class="row">
           <h3 id="mitigationQA">{{ $t("resultSectionMQA") }}</h3>
         </div>
         <div class="row" v-for="result in myResults[2]" :key="result.name">
-          <Result :data="result"></Result>
+          <Result
+            :data="result"
+            :currentNum="startingValueMitigateScore++"
+          ></Result>
         </div>
       </div>
     </div>
@@ -142,14 +148,22 @@
             <h3 id="riskQA">{{ $t("resultSectionRQA", "en") }}</h3>
           </div>
           <div class="row" v-for="result in myResults[1]" :key="result.name">
-            <Result :data="result" locale="en"></Result>
+            <Result
+              :data="result"
+              locale="en"
+              :currentNum="startingValueRiskScoreLocaleEn++"
+            ></Result>
           </div>
 
           <div class="row">
             <h3 id="mitigationQA">{{ $t("resultSectionMQA", "en") }}</h3>
           </div>
           <div class="row" v-for="result in myResults[2]" :key="result.name">
-            <Result :data="result" locale="en"></Result>
+            <Result
+              :data="result"
+              locale="en"
+              :currentNum="startingValueMitigateScoreLocaleEn++"
+            ></Result>
           </div>
         </div>
       </div>
@@ -187,14 +201,22 @@
             <h3 id="riskQA">{{ $t("resultSectionRQA", "fr") }}</h3>
           </div>
           <div class="row" v-for="result in myResults[1]" :key="result.name">
-            <Result :data="result" locale="fr"></Result>
+            <Result
+              :data="result"
+              :currentNum="startingValueRiskScoreLocaleFr++"
+              locale="fr"
+            ></Result>
           </div>
 
           <div class="row">
             <h3 id="mitigationQA">{{ $t("resultSectionMQA", "fr") }}</h3>
           </div>
           <div class="row" v-for="result in myResults[2]" :key="result.name">
-            <Result :data="result" locale="fr"></Result>
+            <Result
+              :data="result"
+              :currentNum="startingValueMitigateScoreLocaleFr++"
+              locale="fr"
+            ></Result>
           </div>
         </div>
       </div>
@@ -232,6 +254,17 @@ import surveyJSON from "@/survey-enfr.json";
   }
 })
 export default class Results extends Vue {
+  //For after the survey is completed
+  startingValueMitigateScore: number = 1;
+  startingValueRiskScore: number = 1;
+
+  //For Locale Versions (To Export)
+  startingValueRiskScoreLocaleEn: number = 1;
+  startingValueRiskScoreLocaleFr: number = 1;
+
+  startingValueMitigateScoreLocaleEn: number = 1;
+  startingValueMitigateScoreLocaleFr: number = 1;
+
   myResults = this.$store.getters.resultDataSections;
 
   Survey: Model = new Model(surveyJSON);

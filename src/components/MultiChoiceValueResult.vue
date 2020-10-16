@@ -1,8 +1,13 @@
 <template>
   <div>
     <div class="col-md-12">
-      <strong v-if="locale == undefined">{{ data.title }}</strong>
-      <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
+      <br />
+      <strong v-if="locale == undefined">{{
+        numCounter + ": " + data.title
+      }}</strong>
+      <strong v-if="locale !== undefined">{{
+        numCounter + ": " + data.titleData[locale]
+      }}</strong>
       <br />
       <div v-for="(str, index) in data.value" :key="index">
         <div class="row">
@@ -10,7 +15,9 @@
             {{ getItemLabel(str, index) }}
           </div>
           <div class="col-md-2">
-            <Modifier :data="getScore(str)" :locale="locale" />
+            <span style="float:right;">
+              <Modifier :data="getScore(str)" :locale="locale" />
+            </span>
           </div>
         </div>
       </div>
