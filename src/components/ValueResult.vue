@@ -44,6 +44,6 @@ import Modifier from "@/components/Modifier.vue";
 export default class ValueResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
-  @Prop() numCounter: number;
+  @Prop() numCounter?: number;
 }
 </script>

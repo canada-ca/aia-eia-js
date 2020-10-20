@@ -23,7 +23,7 @@ import { Component, Vue, Prop } from "vue-property-decorator";
 export default class MultiChoiceResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
-  @Prop() numCounter: number;
+  @Prop() numCounter?: number;
 
   getItemLabel(str: string, index: any): string {
     if (this.locale === undefined) {
