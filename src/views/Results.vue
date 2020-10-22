@@ -50,10 +50,16 @@
     </ul>
 
     <div id="results-printable">
-      <Score />
-      <Obligations />
-
       <div class="container-fluid">
+        <h2 id="score">
+          {{ "Section 1: " + $t("riskLevel") }} {{ ": " + score[3] }}
+        </h2>
+        <h3 style="word-spacing: 5px">
+          {{ $t("currentScore") }} {{ ": " + score[2] }}
+        </h3>
+        <h3>{{ $t("rawRiskScore") }}{{ ": " + score[0] }}</h3>
+        <h3>{{ $t("mitigationScore") }}{{ ": " + score[1] }}</h3>
+        <Obligations />
         <div class="row">
           <h2 id="mitigationMeasures">{{ $t("resultSectionMeasure") }}</h2>
         </div>
@@ -120,7 +126,14 @@
           <Result :data="result" locale="en"></Result>
         </div>
 
-        <Score locale="en" />
+        <h2>
+          {{ "Section 1: " + $t("riskLevel", locale) }} {{ ": " + score[3] }}
+        </h2>
+        <p style="word-spacing: 5px">
+          {{ $t("currentScore", locale) }}{{ ": " + score[2] }}
+        </p>
+        <p>{{ $t("rawRiskScore", locale) }}{{ ": " + score[0] }}</p>
+        <p>{{ $t("mitigationScore", locale) }}{{ ": " + score[1] }}</p>
         <Obligations locale="en" />
         <div class="container-fluid">
           <div class="row">
@@ -164,7 +177,15 @@
           <Result :data="result" locale="fr"></Result>
         </div>
 
-        <Score locale="fr" />
+        <h2>
+          {{ "Section 1: " + $t("riskLevel", (locale = "fr"))
+          }}{{ ": " + score[3] }}
+        </h2>
+        <p style="word-spacing: 5px">
+          {{ $t("currentScore", locale) }} {{ ": " + score[2] }}
+        </p>
+        <p>{{ $t("rawRiskScore", locale) }} {{ ": " + score[0] }}</p>
+        <p>{{ $t("mitigationScore", locale) }} {{ ": " + score[1] }}</p>
         <Obligations locale="fr" />
 
         <div class="container-fluid">
