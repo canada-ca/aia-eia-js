@@ -23,7 +23,6 @@
     "mitigationScore": "Mitigation Score",
     "resultTitle": "Algorithmic Impact Assessment Results",
     "resultScore": "Final Score",
-    "resultSectionMeasure": "Mitigation Measures",
     "resultSectionQA": "Questions and Answers",
     "resultSectionPD": "Project Details",
     "resultSectionRQA": "Impact Questions and Answers",
@@ -98,7 +97,7 @@
     "privacyImplementation1": "",
     "privacyImplementation2": "",
      "requirements": {
-        "title": "Requirements Specific to Impact Level:",
+        "title": "Requirements Specific to Impact Level",
         "elements": [{
                 "title": "Peer Review",
                 "elements": [{

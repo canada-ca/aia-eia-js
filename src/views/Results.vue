@@ -31,9 +31,6 @@
         <a href="#obligations">{{ $t("requirements.title") }}</a>
       </li>
       <li>
-        <a href="#mitigationMeasures">{{ $t("resultSectionMeasure") }}</a>
-      </li>
-      <li>
         <a href="#qA">{{ $t("resultSectionQA") }}</a>
         <ul>
           <li>
@@ -54,15 +51,6 @@
       <Obligations />
 
       <div class="container-fluid">
-        <div class="row">
-          <h2 id="mitigationMeasures">{{ $t("resultSectionMeasure") }}</h2>
-        </div>
-        <div class="row">
-          <p v-for="result in myResults[3]" :key="result.name">
-            {{ $t(result.name) }}
-          </p>
-        </div>
-
         <div class="row">
           <h2 id="qA">{{ $t("resultSectionQA") }}</h2>
         </div>
@@ -119,21 +107,10 @@
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="en"></Result>
         </div>
-
+        <br />
         <Score locale="en" />
         <Obligations locale="en" />
         <div class="container-fluid">
-          <div class="row">
-            <h2 id="mitigationMeasures">
-              {{ $t("resultSectionMeasure", "en") }}
-            </h2>
-          </div>
-          <div class="row">
-            <p v-for="result in myResults[3]" :key="result.name">
-              {{ $t(result.name, "en") }}
-            </p>
-          </div>
-
           <div class="row">
             <h2 id="qA">{{ $t("resultSectionQA", "en") }}</h2>
           </div>
@@ -163,22 +140,11 @@
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="fr"></Result>
         </div>
-
+        <br />
         <Score locale="fr" />
         <Obligations locale="fr" />
 
         <div class="container-fluid">
-          <div class="row">
-            <h2 id="mitigationMeasures">
-              {{ $t("resultSectionMeasure", "fr") }}
-            </h2>
-          </div>
-          <div class="row">
-            <p v-for="result in myResults[3]" :key="result.name">
-              {{ $t(result.name, "fr") }}
-            </p>
-          </div>
-
           <div class="row">
             <h2 id="qA">{{ $t("resultSectionQA", "fr") }}</h2>
           </div>
