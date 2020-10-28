@@ -19,6 +19,7 @@
       <ActionButtonBar
         v-on:fileLoaded="fileLoaded($event)"
         v-on:startAgain="startAgain"
+        :survey="Survey"
       />
     </form>
     <br />
