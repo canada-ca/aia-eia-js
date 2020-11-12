@@ -72,7 +72,7 @@ ______________________
 
 # Auto-Évaluation DORA
 
-Ce projet héberge un prototype de de l'outil d'auto-évaludation par rapport au DevOps Report Assessment développé en TypeScript.
+Ce projet héberge un prototype de de l'outil d'auto-évaluation par rapport au DevOps Report Assessment développé en TypeScript.
 
 L'outil d'auto-évaluation est une copie de l'évaluation d'impact algorithmique originale. Nous visons à apporter des améliorations au projet original si le responsable du projet souhaite les intégrer.
 
