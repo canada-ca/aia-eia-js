@@ -2,20 +2,19 @@
 
 ([Français](#gabarit-pour-dépôts-de-code-source-ouvert-du-gouvernement-du-canada))
 
-# Algorithmic Impact Assessment
+# DevOps Report Assessment (DORA) Self-Assessment tool
 
-This project hosts a prototype of the Algorithmic Impact Assessment (AIA) developed in Typescript.
+This project hosts a prototype of the IT Strategy Team's DevOps Report Assessment (DORA) Self-Assessment tool developed in Typescript.
 
-The AIA is a critical piece of the [Directive on Automated Decision-Making](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592) and we want to ensure its development is done in the open.
-
-The users of this project will be Government of Canada employees assessing the impact of using an automated decision system, including Artificial Intelligence, as part of their programs and services.
+The self-assessment tool is a fork of the original [Algorithmic Impact Assessment](https://github.com/canada-ca/aia-eia-js).
+We aim to provide enhancements to the original project if the project maintainer wishes to integrate them.
 
 As this assessment tool is open source, other countries and individuals may wish to also leverage it and even contribute back to it.
 
-It leverages the [SurveyJS library](https://surveyjs.io/Overview/Library/) to generate questions and answers. The primary source of the content, the file to edit if you want to change the questions and answers, is the `survey-enfr.json`, located in the `/src` folder.
+The tool itself leverages the [SurveyJS library](https://surveyjs.io/Overview/Library/) to generate questions and answers. The primary source of the content, the file to edit if you want to change the questions and answers, is the `survey-enfr.json`, located in the `/src` folder.
 
 Editing a JSON file directly may not be easy so you can use the web based [SurveyJS Builder](https://surveyjs.io/create-survey/) app to help you out.
-However, please note that the way we are using the library is a little different than it was initially designed for so the native layout of the Builder may not be entirely intuitive.
+However, please note that the way this tool uses the library is a little different than it was initially designed for so the native layout of the Builder may not be entirely intuitive.
 
 For example, we have introduced weights in answers so that we can measure the score.
 As such, answers have a very standard way of being created:
@@ -52,15 +51,12 @@ You can see all the components built in `/src/components` and all the views in `
 Finally, if you would like to render the web application without the Government of Canada template and branding, you can remove the line 32 of the index.html file which sits in the /public folder.
 
 Line to remove:
+
 ```html
 <script type="text/javascript" src="helper/wet.js"></script>
 ```
 
 Please note that we will not be removing the branding ourselves at this point but this may become more configurable as we break down the project in various components.
-
-## Getting Started
-
-See the [Wiki](../../wiki)
 
 ## How to Contribute
 
@@ -74,24 +70,15 @@ The Canada wordmark and related graphics associated with this distribution are p
 
 ______________________
 
-# Évaluation de l'incidence algorithmique
+# Auto-Évaluation DORA
 
-Ce projet accueillera un prototype de la prochaine itération de l'étude d'impact algorithmique (EIA) développé en JavaScript.
+Ce projet héberge un prototype de de l'outil d'auto-évaluation par rapport au DevOps Report Assessment développé en TypeScript.
 
-Il se composera de deux capacités principales :
-
-* Offrir une interface simple permettant à l'équipe administrative de mettre à jour les questions, les réponses et le mécanisme de notation du questionnaire.
-* Proposer un questionnaire en ligne aux utilisateurs finaux pour évaluer leur système automatisé de prise de décision.
-
-L'EAI est un élément essentiel de la [Directive sur la prise de décision automatisée](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592) et nous voulons nous assurer que son élaboration se fasse au grand jour.
+L'outil d'auto-évaluation est une copie de l'évaluation d'impact algorithmique originale. Nous visons à apporter des améliorations au projet original si le responsable du projet souhaite les intégrer.
 
 Les utilisateurs de ce projet seront des employés du gouvernement du Canada qui évalueront l'incidence de l'utilisation d'un système automatisé de décision, y compris l'intelligence artificielle, dans le cadre de leurs programmes et services.
 
 Comme cet outil d'évaluation est publié sous une licence libre, d'autres pays et individus peuvent souhaiter l'utiliser également et même y contribuer.
-
-## Comment utiliser
-
-Voir le [wiki](../../wiki)
 
 ## Comment contribuer
 
