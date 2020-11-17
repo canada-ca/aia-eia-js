@@ -39,6 +39,7 @@ import { getValue } from "@/store.ts";
 export default class Result extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
+
   isMultiChoiceValueResult(data: any): boolean {
     if (!Array.isArray(data.value)) return false;
 

@@ -1,16 +1,30 @@
 <template>
-  <div>
-    <div class="col-md-10">
-      <strong v-if="locale == undefined">{{ data.title }}</strong>
-      <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
+  <b-row>
+    <div v-if="locale == undefined">
       <br />
-      <div v-if="locale == undefined">{{ data.displayValue }}</div>
-      <div v-if="locale !== undefined">{{ data.selectedItem[locale] }}</div>
+      <strong>{{ data.title }}</strong>
+      <br />
+      {{ data.displayValue }}
+      <span v-if="!data.name.endsWith('-NS')" style="float: right">
+        <Modifier :data="data.value" :locale="locale" />
+      </span>
+      <br />
     </div>
-    <div v-if="!data.name.endsWith('-NS')" class="col-md-2">
-      <Modifier :data="data.value" :locale="locale" />
-    </div>
-  </div>
+
+    <b-col v-if="locale !== undefined" md="12">
+      <strong>{{ data.titleData[locale] }}</strong>
+      <b-row>
+        <b-col md="4">
+          {{ data.selectedItem[locale] }}
+        </b-col>
+
+        <b-col v-if="!data.name.endsWith('-NS')" md="8">
+          <Modifier :data="data.value" :locale="locale" />
+          <br />
+        </b-col>
+      </b-row>
+    </b-col>
+  </b-row>
 </template>
 
 <script lang="ts">
@@ -25,5 +39,6 @@ import Modifier from "@/components/Modifier.vue";
 export default class ValueResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
+  @Prop() numCounter?: number;
 }
 </script>

@@ -1,19 +1,40 @@
 <template>
   <div>
     <div class="col-md-12">
-      <strong v-if="locale == undefined">{{ data.title }}</strong>
-      <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
       <br />
-      <div v-for="(str, index) in data.value" :key="index">
-        <div class="row">
-          <div class="col-md-10 list-item">
-            {{ getItemLabel(str, index) }}
-          </div>
-          <div class="col-md-2">
-            <Modifier :data="getScore(str)" :locale="locale" />
+      <div v-if="locale == undefined">
+        <strong>{{ data.title }}</strong>
+
+        <div v-for="(str, index) in data.value" :key="index">
+          <div class="row">
+            <div class="col-md-10 list-item">
+              {{ getItemLabel(str, index) }}
+            </div>
+            <span style="float: right">
+              <Modifier :data="getScore(str)" :locale="locale" />
+            </span>
           </div>
         </div>
       </div>
+
+      <div v-else-if="locale !== undefined">
+        <strong>{{ data.titleData[locale] }}</strong>
+        <div v-for="(str, index) in data.value" :key="index">
+          <div class="row">
+            <div class="col-md-10 list-item">
+              {{ getItemLabel(str, index) }}
+            </div>
+            <span>
+              <Modifier
+                :data="getScore(str)"
+                :locale="locale"
+                style="padding-left: 10px"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+      <br />
     </div>
   </div>
 </template>
