@@ -56,7 +56,7 @@
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-vue": "^6.2.2",
     "jest-transform-stub": "^2.0.0",
-    "markdownlint-cli": "^0.24.0",
+    "markdownlint-cli": "^0.25.0",
     "push-dir": "^0.4.1",
     "ts-jest": "^26.4.1",
     "typescript": "^3.9.7",
