@@ -36,7 +36,6 @@ import Score from "@/components/Score.vue";
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
-import { RootState } from "@/types";
 import surveyJSON from "@/survey-enfr.json";
 
 @Component({
@@ -66,7 +65,7 @@ export default class Home extends Vue {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add((result) => {
+    this.Survey.onComplete.add(() => {
       this.$router.push("Results");
     });
 
