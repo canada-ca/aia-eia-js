@@ -13,8 +13,8 @@
     </p>
     <form>
       <ActionButtonBar
-        v-on:file-loaded="fileLoaded($event)"
-        v-on:start-again="startAgain()"
+        @file-loaded="fileLoaded($event)"
+        @start-again="startAgain()"
       />
     </form>
 
@@ -70,21 +70,21 @@
         <div class="row">
           <h3 id="projectDetails">{{ $t("resultSectionPD") }}</h3>
         </div>
-        <div class="row" v-for="result in myResults[0]" :key="result.name">
+        <div v-for="result in myResults[0]" :key="result.name" class="row">
           <Result :data="result"></Result>
         </div>
 
         <div class="row">
           <h3 id="riskQA">{{ $t("resultSectionRQA") }}</h3>
         </div>
-        <div class="row" v-for="result in myResults[1]" :key="result.name">
+        <div v-for="result in myResults[1]" :key="result.name" class="row">
           <Result :data="result"></Result>
         </div>
 
         <div class="row">
           <h3 id="mitigationQA">{{ $t("resultSectionMQA") }}</h3>
         </div>
-        <div class="row" v-for="result in myResults[2]" :key="result.name">
+        <div v-for="result in myResults[2]" :key="result.name" class="row">
           <Result :data="result"></Result>
         </div>
       </div>
@@ -116,7 +116,7 @@
       <div id="en-content" lang="en">
         <h1>{{ $t("resultTitle", "en") }}</h1>
 
-        <div class="row" v-for="result in myResults[0]" :key="result.name">
+        <div v-for="result in myResults[0]" :key="result.name" class="row">
           <Result :data="result" locale="en"></Result>
         </div>
 
@@ -141,14 +141,14 @@
           <div class="row">
             <h3 id="riskQA">{{ $t("resultSectionRQA", "en") }}</h3>
           </div>
-          <div class="row" v-for="result in myResults[1]" :key="result.name">
+          <div v-for="result in myResults[1]" :key="result.name" class="row">
             <Result :data="result" locale="en"></Result>
           </div>
 
           <div class="row">
             <h3 id="mitigationQA">{{ $t("resultSectionMQA", "en") }}</h3>
           </div>
-          <div class="row" v-for="result in myResults[2]" :key="result.name">
+          <div v-for="result in myResults[2]" :key="result.name" class="row">
             <Result :data="result" locale="en"></Result>
           </div>
         </div>
@@ -160,7 +160,7 @@
       <div id="fr-content" lang="fr">
         <h1>{{ $t("resultTitle", "fr") }}</h1>
 
-        <div class="row" v-for="result in myResults[0]" :key="result.name">
+        <div v-for="result in myResults[0]" :key="result.name" class="row">
           <Result :data="result" locale="fr"></Result>
         </div>
 
@@ -186,14 +186,14 @@
           <div class="row">
             <h3 id="riskQA">{{ $t("resultSectionRQA", "fr") }}</h3>
           </div>
-          <div class="row" v-for="result in myResults[1]" :key="result.name">
+          <div v-for="result in myResults[1]" :key="result.name" class="row">
             <Result :data="result" locale="fr"></Result>
           </div>
 
           <div class="row">
             <h3 id="mitigationQA">{{ $t("resultSectionMQA", "fr") }}</h3>
           </div>
-          <div class="row" v-for="result in myResults[2]" :key="result.name">
+          <div v-for="result in myResults[2]" :key="result.name" class="row">
             <Result :data="result" locale="fr"></Result>
           </div>
         </div>
