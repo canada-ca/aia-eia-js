@@ -17,8 +17,8 @@
 
     <form>
       <ActionButtonBar
-        v-on:fileLoaded="fileLoaded($event)"
-        v-on:startAgain="startAgain"
+        v-on:file-loaded="fileLoaded($event)"
+        v-on:start-again="startAgain()"
       />
     </form>
     <AssessmentTool :survey="Survey" />

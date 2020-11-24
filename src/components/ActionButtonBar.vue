@@ -25,7 +25,7 @@
             type="button"
             value="Start Over"
             class="btn btn-default"
-            v-on:click="$emit('startAgain')"
+            v-on:click="$emit('start-again')"
           >
             {{ $t("startAgain") }}
           </button>
@@ -98,7 +98,7 @@ export default class ActionButtonBar extends Vue {
       }
 
       const loadedFile: SurveyFile = JSON.parse(result);
-      this.$emit("fileLoaded", loadedFile);
+      this.$emit("file-loaded", loadedFile);
     };
 
     reader.readAsText(file);
