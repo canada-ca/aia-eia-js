@@ -6,8 +6,6 @@ import {
   IQuestion,
   QuestionSelectBase,
   SurveyModel,
-  IPanel,
-  LocalizableString,
   ItemValue,
 } from "survey-vue";
 import isEmpty from "lodash.isempty";
@@ -269,7 +267,6 @@ const store: StoreOptions<RootState> = {
         let questionHeader = { en: "", fr: "" };
         let questionSubHeader = { en: "", fr: "" };
         if (question.parent.constructor.name === "PanelModel") {
-          const panel = question.parent;
           if (question.parent.parent.constructor.name == "PageModel") {
             questionHeader = getTitleFromPanel(question.parent.parent);
             questionSubHeader = getTitleFromPanel(question.parent);
