@@ -7,9 +7,9 @@
         </h2>
       </div>
       <div
-        class="row"
         v-for="requirement in $t('requirements.elements', locale)"
         :key="requirement.title"
+        class="row"
       >
         <h3>{{ requirement.title }}</h3>
         <p>{{ requirement.elements[score[3] - 1].text }}</p>
