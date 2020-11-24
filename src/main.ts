@@ -17,7 +17,7 @@ StylesManager.applyTheme("bootstrapmaterial");
 new Vue({
   created() {
     const html = document.documentElement;
-    var lang = <string>this.$route.query["lang"];
+    let lang = <string>this.$route.query["lang"];
     if (!lang) {
       lang = i18n.availableLocales[0];
     }
@@ -27,5 +27,5 @@ new Vue({
   router,
   store,
   i18n,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");
