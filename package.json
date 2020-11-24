@@ -11,7 +11,6 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lint:md": "markdownlint \"**/*.md\" -i \"node_modules\"",
-    "test:unit": "vue-cli-service test:unit",
     "spellcheck:markdown": "cspell **/*.md --color",
     "spellcheck:code": "cspell src/**/*.ts src/**/*.vue --color",
     "spellcheck:questions": "cspell src/plugins/*.json src/survey-enfr.json --color",
@@ -36,18 +35,15 @@
     "vuex-persist": "2.2.0"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.9",
     "@typescript-eslint/eslint-plugin": "^4.8.2",
     "@typescript-eslint/parser": "^4.8.2",
     "@vue/cli-plugin-babel": "^4.4.6",
     "@vue/cli-plugin-eslint": "^4.4.6",
     "@vue/cli-plugin-pwa": "^4.4.6",
     "@vue/cli-plugin-typescript": "^4.4.6",
-    "@vue/cli-plugin-unit-jest": "^4.4.6",
     "@vue/cli-service": "^4.4.6",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
-    "@vue/test-utils": "1.0.3",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "cspell": "^4.2.2",
@@ -56,11 +52,9 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-vue": "^7.1.0",
-    "jest-transform-stub": "^2.0.0",
     "markdownlint-cli": "^0.25.0",
     "prettier": "^2.2.0",
     "push-dir": "^0.4.1",
-    "ts-jest": "^26.4.1",
     "typescript": "^3.9.7",
     "vue-template-compiler": "^2.6.11"
   }
