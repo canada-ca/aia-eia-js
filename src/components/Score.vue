@@ -28,7 +28,6 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { Getter } from "vuex";
 
 // define a mixin object
 var myMixin = {
