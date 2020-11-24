@@ -19,8 +19,8 @@ import Modifier from "@/components/Modifier.vue";
 
 @Component({
   components: {
-    Modifier
-  }
+    Modifier,
+  },
 })
 export default class ValueResult extends Vue {
   @Prop() data: any;
