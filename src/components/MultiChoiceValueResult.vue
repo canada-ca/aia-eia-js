@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="col-md-12">
+    <b-row>
       <br />
       <div v-if="locale == undefined">
         <strong>{{ data.title }}</strong>
@@ -34,8 +34,8 @@
           </div>
         </div>
       </div>
-      <br />
-    </div>
+      <br/>
+    </b-row>
   </div>
 </template>
 
