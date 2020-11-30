@@ -16,7 +16,7 @@ describe("store.ts", () => {
       projectDetailsTitle: "project",
       projectDetailsPhase: "item1",
       projectDetailsDescription: "desc",
-      decisionSector1: ["item1-1", "item2-1", "item3-1"],
+      decisionSector1: ["item1-1", "item2-1", "item3-1"]
     };
 
     store.commit("updateResult", result);
@@ -46,7 +46,7 @@ describe("store.ts", () => {
       projectDetailsTitle: "project",
       projectDetailsPhase: "item1",
       projectDetailsDescription: "desc",
-      decisionSector1: ["item1-1", "item2-1", "item3-1"],
+      decisionSector1: ["item1-1", "item2-1", "item3-1"]
     };
 
     store.commit("updateResult", result);
@@ -71,7 +71,7 @@ describe("store.ts", () => {
       projectDetailsDescription: "desc",
       decisionSector1: ["item1-1", "item2-1", "item3-1"],
       impact5: "item1-4",
-      dataQualityDesign7: "item1-2",
+      dataQualityDesign7: "item1-2"
     };
 
     store.commit("updateResult", result);
