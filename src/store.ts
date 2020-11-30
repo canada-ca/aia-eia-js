@@ -8,7 +8,6 @@ import {
   SurveyModel,
   IPanel,
   LocalizableString,
-  ItemValue,
 } from "survey-vue";
 import isEmpty from "lodash.isempty";
 
@@ -313,13 +312,13 @@ const store: StoreOptions<RootState> = {
         }
 
         if (question.getChoices !== undefined) {
-          const choices: Array<ItemValue> = question.getChoices();
+          const choices = question.getChoices();
           result.choiceData = [];
 
-          for (const choice of choices) {
+          for (let i = 0; i < choices.length; i++) {
             result.choiceData.push({
-              en: choice.locText.getLocaleText("default"),
-              fr: choice.locText.getLocaleText("fr"),
+              en: choices[i].locText.getLocaleText("default"),
+              fr: choices[i].locText.getLocaleText("fr"),
             });
           }
         }
