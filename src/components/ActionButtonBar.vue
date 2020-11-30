@@ -6,7 +6,7 @@
           <button
             type="button"
             class="mrgn-bttm-sm btn btn-success"
-            @click="saveSurvey"
+            v-on:click="saveSurvey"
           >
             {{ $t("saveButton") }}
           </button>
@@ -25,7 +25,7 @@
             type="button"
             value="Start Over"
             class="btn btn-default"
-            @click="$emit('start-again')"
+            v-on:click="$emit('start-again')"
           >
             {{ $t("startAgain") }}
           </button>

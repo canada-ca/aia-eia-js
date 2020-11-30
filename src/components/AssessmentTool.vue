@@ -2,7 +2,7 @@
   <div>
     <!--<h2>Assessment Tool</h2>-->
     <div id="surveyContainer" class="wb-frmvld">
-      <survey :survey="survey"></survey>
+      <survey v-bind:survey="survey"></survey>
     </div>
   </div>
 </template>
