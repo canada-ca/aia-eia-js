@@ -5,5 +5,9 @@ module.exports = {
   /*publicPath: "./",*/
   publicPath: process.env.NODE_ENV === "production" ? "/aia-eia-js/" : "/",
 
+  configureWebpack: {
+    devtool: "source-map",
+  },
+
   transpileDependencies: ["vuex-persist", "vue-i18n"],
 };
