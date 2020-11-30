@@ -203,12 +203,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Prop } from "vue-property-decorator";
 
 import { Model } from "survey-vue";
 
 import showdown from "showdown";
 
+import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import Score from "@/components/Score.vue";
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
 import Result from "@/components/Result.vue";
@@ -255,7 +256,7 @@ export default class Results extends Vue {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add(() => {
+    this.Survey.onComplete.add((result) => {
       this.$router.push("Results");
     });
 

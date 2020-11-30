@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts">
-import { Component } from "vue-property-decorator";
+import { Component, Vue, Prop } from "vue-property-decorator";
 import Modifier from "@/components/Modifier.vue";
 import { getValue } from "@/store.ts";
 import MultiChoiceResult from "@/components/MultiChoiceResult.vue";
