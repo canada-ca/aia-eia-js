@@ -7,7 +7,7 @@ import {
   QuestionSelectBase,
   SurveyModel,
   IPanel,
-  LocalizableString,
+  LocalizableString
 } from "survey-vue";
 import isEmpty from "lodash.isempty";
 
@@ -17,13 +17,13 @@ const vuexLocal = new VuexPersistence({
   storage: window.localStorage,
   reducer: (state: RootState) => ({
     toolData: state.toolData,
-    currentPageNo: state.currentPageNo,
-  }),
+    currentPageNo: state.currentPageNo
+  })
 });
 
 function addItemsInArray(val: any[]) {
   let total = 0;
-  val.forEach((item) => {
+  val.forEach(item => {
     if (typeof item === "number") {
       total = total + item;
     } else if (typeof item === "string") {
@@ -46,11 +46,11 @@ function hasScore(question: IQuestion): boolean {
 }
 
 function parseEmbeddedValue(val: String): number {
-  const lastHyphenIdx = val.lastIndexOf("-");
+  var lastHyphenIdx = val.lastIndexOf("-");
   if (lastHyphenIdx !== -1) {
     // Suffix after last "-" could be a number.
-    const possibleValue = val.substr(lastHyphenIdx + 1);
-    const value = Number(possibleValue);
+    var possibleValue = val.substr(lastHyphenIdx + 1);
+    var value = Number(possibleValue);
     return isNaN(value) ? 0 : value;
   }
 
@@ -93,7 +93,7 @@ function getScoreTypeHelper(name: String): Number {
 }
 
 function getScoreType(question: IQuestion): Number {
-  let result = getScoreTypeHelper(question.name);
+  var result = getScoreTypeHelper(question.name);
 
   if (result > 0) {
     return result;
@@ -110,18 +110,18 @@ function getScoreType(question: IQuestion): Number {
 }
 
 function getMaxScoreForQuestion(question: QuestionSelectBase): number {
-  const questionType = question.getType();
-  let max = 0;
-  let value = 0;
+  var questionType = question.getType();
+  var max = 0;
+  var value = 0;
   if (questionType == "radiogroup" || questionType == "dropdown") {
-    question.choices.forEach((item) => {
+    question.choices.forEach(item => {
       value = getValue(item.itemValue);
       if (max < value) {
         max = value;
       }
     });
   } else if (questionType == "checkbox") {
-    question.choices.forEach((item) => {
+    question.choices.forEach(item => {
       value = getValue(item.itemValue);
       max += value;
     });
@@ -136,9 +136,9 @@ type LanguageString = {
 };
 
 function getTitleFromPanel(panel: any): LanguageString {
-  const retVal = {
+  var retVal = {
     en: panel.locTitle.getLocaleText("default"),
-    fr: panel.locTitle.getLocaleText("fr"),
+    fr: panel.locTitle.getLocaleText("fr")
   };
   return retVal;
 }
@@ -152,31 +152,31 @@ function calculateFinalScore(
   let maxMitigationScore = 0;
   let mitigationScore = 0;
   let total = 0;
-  const percentage = 0.8;
-  const deduction = 0.15;
+  let percentage = 0.8;
+  let deduction = 0.15;
   let level = 0;
-  const threshold1 = 0.25;
-  const threshold2 = 0.5;
-  const threshold3 = 0.75;
+  let threshold1 = 0.25;
+  let threshold2 = 0.5;
+  let threshold3 = 0.75;
 
-  questionNames.forEach((name) => {
-    const currentQuestion = survey.getQuestionByName(name);
-    const currentQuestionType = getScoreType(currentQuestion);
+  questionNames.forEach(name => {
+    var currentQuestion = survey.getQuestionByName(name);
+    var currentQuestionType = getScoreType(currentQuestion);
 
     if (currentQuestionType === 2) {
       // no real risk of injection since we are just getting a value, worst case it breaks our score
       // eslint-disable-next-line security/detect-object-injection
       rawRiskScore += getValue(survey.data[name]);
-      maxRawRiskScore += getMaxScoreForQuestion(
-        <QuestionSelectBase>currentQuestion
-      );
+      maxRawRiskScore += getMaxScoreForQuestion(<QuestionSelectBase>(
+        currentQuestion
+      ));
     } else if (currentQuestionType === 3) {
       // no real risk of injection since we are just getting a value, worst case it breaks our score
       // eslint-disable-next-line security/detect-object-injection
       mitigationScore += getValue(survey.data[name]);
-      maxMitigationScore += getMaxScoreForQuestion(
-        <QuestionSelectBase>currentQuestion
-      );
+      maxMitigationScore += getMaxScoreForQuestion(<QuestionSelectBase>(
+        currentQuestion
+      ));
     }
   });
 
@@ -213,7 +213,7 @@ const store: StoreOptions<RootState> = {
     result: undefined,
     currentPageNo: 0,
     toolData: {},
-    questionNames: [],
+    questionNames: []
   },
   mutations: {
     resetSurvey(state: RootState) {
@@ -228,54 +228,54 @@ const store: StoreOptions<RootState> = {
       //freeze this data so we can load from localStorage
       state.toolData = Object.freeze(result.data);
       state.answerData = result.getPlainData({
-        includeEmpty: false,
+        includeEmpty: false
       });
 
       if (state.questionNames.length === 0) {
         state.questionNames = result
           .getAllQuestions()
-          .filter((question) => {
+          .filter(question => {
             return hasScore(question);
           })
-          .map((question) => {
+          .map(question => {
             return question.name;
           });
       }
-    },
+    }
   },
   getters: {
-    inProgress: (state) => {
+    inProgress: state => {
       return !isEmpty(state.toolData);
     },
-    calcScore: (state) => {
+    calcScore: state => {
       if (state.result === undefined) return [0, 0, 0];
       return calculateFinalScore(state.result, state.questionNames);
     },
-    resultDataSections: (state) => {
+    resultDataSections: state => {
       if (state.result === undefined) return {};
 
-      const projectResults: any[] = [];
-      const riskResults: any[] = [];
-      const mitigationResults: any[] = [];
-      const mitigationResultsYes: any[] = [];
-      let lastHeader = "";
+      var projectResults: any[] = [];
+      var riskResults: any[] = [];
+      var mitigationResults: any[] = [];
+      var mitigationResultsYes: any[] = [];
+      var lastHeader = "";
 
-      state.answerData.forEach(function (result) {
-        const question = state.result!.getQuestionByName(result.name);
+      state.answerData.forEach(function(result) {
+        var question = state.result!.getQuestionByName(result.name);
         const scoreType = getScoreType(question);
 
         //Calculate the section header.
-        let questionHeader = { en: "", fr: "" };
-        let questionSubHeader = { en: "", fr: "" };
+        var questionHeader = { en: "", fr: "" };
+        var questionSubHeader = { en: "", fr: "" };
         if (question.parent.constructor.name === "PanelModel") {
-          const panel = question.parent;
+          var panel = question.parent;
           if (question.parent.parent.constructor.name == "PageModel") {
             questionHeader = getTitleFromPanel(question.parent.parent);
             questionSubHeader = getTitleFromPanel(question.parent);
           }
         }
 
-        let calculatedHeader = questionHeader.en;
+        var calculatedHeader = questionHeader.en;
         if (questionSubHeader.en != "") {
           calculatedHeader += " - " + questionSubHeader.en;
         }
@@ -293,7 +293,7 @@ const store: StoreOptions<RootState> = {
         //Add Localized results.
         result.titleData = {
           en: question.locTitle.getLocaleText("default"),
-          fr: question.locTitle.getLocaleText("fr"),
+          fr: question.locTitle.getLocaleText("fr")
         };
 
         if (
@@ -306,19 +306,19 @@ const store: StoreOptions<RootState> = {
           ) {
             result.selectedItem = {
               en: question.selectedItem.locText.getLocaleText("default"),
-              fr: question.selectedItem.locText.getLocaleText("fr"),
+              fr: question.selectedItem.locText.getLocaleText("fr")
             };
           }
         }
 
         if (question.getChoices !== undefined) {
-          const choices = question.getChoices();
+          var choices = question.getChoices();
           result.choiceData = [];
 
-          for (let i = 0; i < choices.length; i++) {
+          for (var i = 0; i < choices.length; i++) {
             result.choiceData.push({
               en: choices[i].locText.getLocaleText("default"),
-              fr: choices[i].locText.getLocaleText("fr"),
+              fr: choices[i].locText.getLocaleText("fr")
             });
           }
         }
@@ -351,10 +351,10 @@ const store: StoreOptions<RootState> = {
         projectResults,
         riskResults,
         mitigationResults,
-        mitigationResultsYes,
+        mitigationResultsYes
       ];
-    },
-  },
+    }
+  }
 };
 
 export default new Vuex.Store<RootState>(store);

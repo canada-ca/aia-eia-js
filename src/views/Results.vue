@@ -90,7 +90,7 @@
       </div>
     </div>
 
-    <div style="margin-bottom: 15px">
+    <div style="margin-bottom:15px;">
       <h1>{{ $t("export") }}</h1>
       <button
         type="button"
@@ -223,13 +223,13 @@ import surveyJSON from "@/survey-enfr.json";
     ActionButtonBar,
     Result,
     Score,
-    Obligations,
+    Obligations
   },
   computed: {
-    score: function () {
+    score: function() {
       return this.$store.getters.calcScore;
-    },
-  },
+    }
+  }
 })
 export default class Results extends Vue {
   myResults = this.$store.getters.resultDataSections;
@@ -252,21 +252,21 @@ export default class Results extends Vue {
   }
 
   created() {
-    this.Survey.onComplete.add((result) => {
+    this.Survey.onComplete.add(result => {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add((result) => {
+    this.Survey.onComplete.add(result => {
       this.$router.push("Results");
     });
 
-    this.Survey.onValueChanged.add((result) => {
+    this.Survey.onValueChanged.add(result => {
       this.$store.commit("updateResult", result);
     });
 
     const converter = new showdown.Converter();
 
-    this.Survey.onTextMarkdown.add(function (survey, options) {
+    this.Survey.onTextMarkdown.add(function(survey, options) {
       //convert the markdown text to html
       var str = converter.makeHtml(options.text);
       //remove root paragraphs <p></p>
@@ -284,7 +284,7 @@ export default class Results extends Vue {
 
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
-    this.Survey.onAfterRenderQuestion.add(function (sender, options) {
+    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
       if (title) {
         var questionRequiredHTML = "";
@@ -313,7 +313,7 @@ export default class Results extends Vue {
     if (this.$store.getters.inProgress) {
       this.fileLoaded({
         currentPage: this.$store.state.currentPageNo,
-        data: this.$store.state.toolData,
+        data: this.$store.state.toolData
       } as SurveyFile);
     }
   }

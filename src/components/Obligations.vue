@@ -31,10 +31,10 @@ import Component from "vue-class-component";
 @Component({
   props: ["locale"],
   computed: {
-    score: function () {
+    score: function() {
       return this.$store.getters.calcScore;
-    },
-  },
+    }
+  }
 })
 export default class Obligations extends Vue {}
 </script>

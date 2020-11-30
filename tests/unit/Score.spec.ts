@@ -16,11 +16,11 @@ describe("store.ts", () => {
 
     beforeEach(() => {
       getters = {
-        score: () => 18,
+        score: () => 18
       };
 
       store = new Vuex.Store({
-        getters,
+        getters
       });
     });
 
