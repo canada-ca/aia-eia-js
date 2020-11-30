@@ -1,12 +1,23 @@
+<style>
+.scoreClass {
+  font-size: 0.8em !important;
+  display: flex !important;
+}
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+}
+</style>
 <template>
   <b-container class="sticky">
-    <b-row v-if="!isMobile()" :class="alertclass" :no-gutters="true">
+    <b-row :class="alertclass" :no-gutters="true" v-if="!isMobile()">
       <b-col>{{ $t("riskLevel", locale) }}: {{ score[3] }}</b-col>
       <b-col>{{ $t("currentScore", locale) }}: {{ score[2] }}</b-col>
       <b-col>{{ $t("rawRiskScore", locale) }}: {{ score[0] }}</b-col>
       <b-col>{{ $t("mitigationScore", locale) }}: {{ score[1] }}</b-col>
     </b-row>
-    <b-row v-if="isMobile()" :class="alertclass" :no-gutters="true">
+    <b-row :class="alertclass" :no-gutters="true" v-if="isMobile()">
       <b-col>{{ $t("IL") }}: {{ score[3] }}</b-col>
       <b-col>{{ $t("CS") }}: {{ score[2] }}</b-col>
       <b-col>{{ $t("RS") }}: {{ score[0] }}</b-col>
@@ -54,15 +65,3 @@ var myMixin = {
 })
 export default class Score extends Vue {}
 </script>
-
-<style>
-.scoreClass {
-  font-size: 0.8em !important;
-  display: flex !important;
-}
-.sticky {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  bottom: 0;
-}
-</style>
