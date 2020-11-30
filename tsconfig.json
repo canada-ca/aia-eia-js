@@ -26,7 +26,10 @@
   },
   "include": [
     "src/**/*.ts",
-    "src/**/*.vue"
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx", "src/plugins/print.ts"
   ],
   "exclude": [
     "node_modules"
