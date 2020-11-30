@@ -45,6 +45,8 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import showdown from "showdown";
+import i18n from "@/plugins/i18n";
 import SurveyFile from "@/interfaces/SurveyFile";
 
 @Component
@@ -91,7 +93,7 @@ export default class ActionButtonBar extends Vue {
   }
   loadSurvey(file: any) {
     const reader = new FileReader();
-    reader.onload = () => {
+    reader.onload = (e: ProgressEvent) => {
       const result = reader.result as string;
       if (result === "undefined") {
         return;
