@@ -13,8 +13,8 @@
     </p>
     <form>
       <ActionButtonBar
-        v-on:file-loaded="fileLoaded($event)"
-        v-on:start-again="startAgain()"
+        v-on:fileLoaded="fileLoaded($event)"
+        v-on:startAgain="startAgain"
       />
     </form>
 
