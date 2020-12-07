@@ -3254,8 +3254,8 @@
                             "type": "radiogroup",
                             "name": "fairnessDesign17",
                             "title": {
-                                "default": "Will you prepared a concept case to the Government of Canada Enterprise Architecture Review Board?",
-                                "fr": "Avez-vous préparé un dossier conceptuel à l'intention du Comité d'examen de l'architecture d'entreprise du gouvernement du Canada?"
+                                "default": "Will you be preparing a concept case to the Government of Canada Enterprise Architecture Review Board?",
+                                "fr": "Allez-vous préparer un dossier conceptuel à l'intention du Comité d'examen de l'architecture d'entreprise du gouvernement du Canada?"
                             },
                             "choices": [
                                 {
