@@ -31,7 +31,7 @@ export default class MultiChoiceResult extends Vue {
       var choiceValue = this.data.data[index].displayValue;
       var returnValue = "";
       var localePass = this.locale;
-      this.data.choiceData.forEach(function(choice:any) {
+      this.data.choiceData.forEach(function(choice: any) {
         if (choice.en == choiceValue || choice.fr == choiceValue) {
           returnValue = choice[localePass];
         }
