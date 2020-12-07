@@ -21,6 +21,9 @@
         v-on:startAgain="startAgain"
       />
     </form>
+    <br />
+    <DropDown :survey="Survey" :displayDropDown="allowDropdown" />
+    <br />
     <AssessmentTool :survey="Survey" />
     <Score />
   </div>
@@ -30,7 +33,7 @@
 import { Component, Vue } from "vue-property-decorator";
 import { Model } from "survey-vue";
 import showdown from "showdown";
-
+import DropDown from "@/components/DropDown.vue";
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import Score from "@/components/Score.vue";
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
@@ -43,16 +46,21 @@ import surveyJSON from "@/survey-enfr.json";
   components: {
     AssessmentTool,
     ActionButtonBar,
+    DropDown,
     Score
   }
 })
 export default class Home extends Vue {
   Survey: Model = new Model(surveyJSON);
+  //Default always set to false
+  allowDropdown: boolean = false;
 
   startAgain() {
     this.Survey.clear(true, true);
     window.localStorage.clear();
     this.$store.commit("resetSurvey");
+    //Resets toggle back to false
+    this.allowDropdown = false;
   }
   fileLoaded($event: SurveyFile) {
     this.Survey.data = $event.data;
@@ -87,6 +95,11 @@ export default class Home extends Vue {
 
     this.Survey.onValueChanged.add(result => {
       this.$store.commit("updateResult", result);
+      //Checks to see weather item1 = Design or item2 = implementation is checked
+      //If so then we change boolean to true and pass that parameter to DropDown.vue to check.
+      if (this.Survey.getValue("projectDetailsPhase") != undefined) {
+        this.allowDropdown = true;
+      }
     });
 
     const converter = new showdown.Converter();
