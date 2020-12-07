@@ -2918,7 +2918,7 @@
                             "type": "radiogroup",
                             "name": "fairnessDesign3",
                             "title": {
-                                "default": "Will all the key decision points identifiable in audit trail?",
+                                "default": "Will all key decision points be identifiable in the audit trail?",
                                 "fr": "Pourra-t-on identifier tous les points de décision clés dans la piste de vérification?"
                             },
                             "choices": [
@@ -3254,8 +3254,8 @@
                             "type": "radiogroup",
                             "name": "fairnessDesign17",
                             "title": {
-                                "default": "Will you prepared a concept case to the Government of Canada Enterprise Architecture Review Board?",
-                                "fr": "Avez-vous préparé un dossier conceptuel à l'intention du Comité d'examen de l'architecture d'entreprise du gouvernement du Canada?"
+                                "default": "Will you be preparing a concept case to the Government of Canada Enterprise Architecture Review Board?",
+                                "fr": "Allez-vous préparer un dossier conceptuel à l'intention du Comité d'examen de l'architecture d'entreprise du gouvernement du Canada?"
                             },
                             "choices": [
                                 {
@@ -3346,7 +3346,7 @@
                             "type": "radiogroup",
                             "name": "fairnessImplementation3",
                             "title": {
-                                "default": "Are all key decision points identifiable in audit trail?",
+                                "default": "Are all key decision points identifiable in the audit trail?",
                                 "fr": "Est-ce que tous les points de décision clés peuvent être identifiés dans la piste de vérification?"
                             },
                             "choices": [
@@ -3418,8 +3418,8 @@
                             "type": "radiogroup",
                             "name": "fairnessImplementation6",
                             "title": {
-                                "default": "Does the system's audit trail indicate all of decision points made by the system?",
-                                "fr": ""
+                                "default": "Does the system's audit trail indicate all of the decision points made by the system?",
+                                "fr": "Est-ce que la piste de vérification indique tous les points de décision pris par le système?"
                             },
                             "choices": [
                                 {

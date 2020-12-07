@@ -6,15 +6,15 @@
       <a
         class="btn btn-default pull-right"
         role="button"
-        :href="$t(linkProjectAnchor)"
+        :href="$t('linkProjectAnchor')"
       >
         {{ $t("linkProjectText") }}
       </a>
     </p>
     <form>
       <ActionButtonBar
-        v-on:fileLoaded="fileLoaded($event)"
-        v-on:startAgain="startAgain"
+        @file-loaded="fileLoaded($event)"
+        @start-again="startAgain()"
       />
     </form>
 
@@ -70,27 +70,27 @@
         <div class="row">
           <h3 id="projectDetails">{{ $t("resultSectionPD") }}</h3>
         </div>
-        <div class="row" v-for="result in myResults[0]" :key="result.name">
+        <div v-for="result in myResults[0]" :key="result.name" class="row">
           <Result :data="result"></Result>
         </div>
 
         <div class="row">
           <h3 id="riskQA">{{ $t("resultSectionRQA") }}</h3>
         </div>
-        <div class="row" v-for="result in myResults[1]" :key="result.name">
+        <div v-for="result in myResults[1]" :key="result.name" class="row">
           <Result :data="result"></Result>
         </div>
 
         <div class="row">
           <h3 id="mitigationQA">{{ $t("resultSectionMQA") }}</h3>
         </div>
-        <div class="row" v-for="result in myResults[2]" :key="result.name">
+        <div v-for="result in myResults[2]" :key="result.name" class="row">
           <Result :data="result"></Result>
         </div>
       </div>
     </div>
 
-    <div style="margin-bottom:15px;">
+    <div style="margin-bottom: 15px">
       <h1>{{ $t("export") }}</h1>
       <button
         type="button"
@@ -116,7 +116,7 @@
       <div id="en-content" lang="en">
         <h1>{{ $t("resultTitle", "en") }}</h1>
 
-        <div class="row" v-for="result in myResults[0]" :key="result.name">
+        <div v-for="result in myResults[0]" :key="result.name" class="row">
           <Result :data="result" locale="en"></Result>
         </div>
 
@@ -141,14 +141,14 @@
           <div class="row">
             <h3 id="riskQA">{{ $t("resultSectionRQA", "en") }}</h3>
           </div>
-          <div class="row" v-for="result in myResults[1]" :key="result.name">
+          <div v-for="result in myResults[1]" :key="result.name" class="row">
             <Result :data="result" locale="en"></Result>
           </div>
 
           <div class="row">
             <h3 id="mitigationQA">{{ $t("resultSectionMQA", "en") }}</h3>
           </div>
-          <div class="row" v-for="result in myResults[2]" :key="result.name">
+          <div v-for="result in myResults[2]" :key="result.name" class="row">
             <Result :data="result" locale="en"></Result>
           </div>
         </div>
@@ -160,7 +160,7 @@
       <div id="fr-content" lang="fr">
         <h1>{{ $t("resultTitle", "fr") }}</h1>
 
-        <div class="row" v-for="result in myResults[0]" :key="result.name">
+        <div v-for="result in myResults[0]" :key="result.name" class="row">
           <Result :data="result" locale="fr"></Result>
         </div>
 
@@ -186,14 +186,14 @@
           <div class="row">
             <h3 id="riskQA">{{ $t("resultSectionRQA", "fr") }}</h3>
           </div>
-          <div class="row" v-for="result in myResults[1]" :key="result.name">
+          <div v-for="result in myResults[1]" :key="result.name" class="row">
             <Result :data="result" locale="fr"></Result>
           </div>
 
           <div class="row">
             <h3 id="mitigationQA">{{ $t("resultSectionMQA", "fr") }}</h3>
           </div>
-          <div class="row" v-for="result in myResults[2]" :key="result.name">
+          <div v-for="result in myResults[2]" :key="result.name" class="row">
             <Result :data="result" locale="fr"></Result>
           </div>
         </div>
@@ -203,13 +203,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 
 import { Model } from "survey-vue";
 
 import showdown from "showdown";
 
-import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import Score from "@/components/Score.vue";
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
 import Result from "@/components/Result.vue";
@@ -223,13 +222,13 @@ import surveyJSON from "@/survey-enfr.json";
     ActionButtonBar,
     Result,
     Score,
-    Obligations
+    Obligations,
   },
   computed: {
-    score: function() {
+    score: function () {
       return this.$store.getters.calcScore;
-    }
-  }
+    },
+  },
 })
 export default class Results extends Vue {
   myResults = this.$store.getters.resultDataSections;
@@ -252,21 +251,21 @@ export default class Results extends Vue {
   }
 
   created() {
-    this.Survey.onComplete.add(result => {
+    this.Survey.onComplete.add((result) => {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add(result => {
+    this.Survey.onComplete.add(() => {
       this.$router.push("Results");
     });
 
-    this.Survey.onValueChanged.add(result => {
+    this.Survey.onValueChanged.add((result) => {
       this.$store.commit("updateResult", result);
     });
 
     const converter = new showdown.Converter();
 
-    this.Survey.onTextMarkdown.add(function(survey, options) {
+    this.Survey.onTextMarkdown.add(function (survey, options) {
       //convert the markdown text to html
       var str = converter.makeHtml(options.text);
       //remove root paragraphs <p></p>
@@ -284,7 +283,7 @@ export default class Results extends Vue {
 
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
-    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
+    this.Survey.onAfterRenderQuestion.add(function (sender, options) {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
       if (title) {
         var questionRequiredHTML = "";
@@ -313,7 +312,7 @@ export default class Results extends Vue {
     if (this.$store.getters.inProgress) {
       this.fileLoaded({
         currentPage: this.$store.state.currentPageNo,
-        data: this.$store.state.toolData
+        data: this.$store.state.toolData,
       } as SurveyFile);
     }
   }

@@ -5,7 +5,7 @@
       <a
         class="btn btn-default pull-right"
         role="button"
-        :href="$t(linkProjectAnchor)"
+        :href="$t('linkProjectAnchor')"
       >
         {{ $t("linkProjectText") }}
       </a>
@@ -17,8 +17,8 @@
 
     <form>
       <ActionButtonBar
-        v-on:fileLoaded="fileLoaded($event)"
-        v-on:startAgain="startAgain"
+        @file-loaded="fileLoaded($event)"
+        @start-again="startAgain()"
       />
     </form>
     <br />
@@ -39,16 +39,14 @@ import Score from "@/components/Score.vue";
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
-import { RootState } from "@/types";
 import surveyJSON from "@/survey-enfr.json";
 
 @Component({
   components: {
     AssessmentTool,
     ActionButtonBar,
-    DropDown,
-    Score
-  }
+    Score,
+  },
 })
 export default class Home extends Vue {
   Survey: Model = new Model(surveyJSON);
@@ -70,11 +68,11 @@ export default class Home extends Vue {
   }
 
   created() {
-    this.Survey.onComplete.add(result => {
+    this.Survey.onComplete.add((result) => {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add(result => {
+    this.Survey.onComplete.add(() => {
       this.$router.push("Results");
     });
 
@@ -82,13 +80,13 @@ export default class Home extends Vue {
       var progressBar = document.getElementsByClassName("progress-bar")[0];
       //Make sure that the current page is 0 and the progress bar is defined and displayed on the screen
       if (result.currentPageNo == 0 && progressBar != undefined) {
-        progressBar.innerHTML = "Page 1 of 13";
+        progressBar.innerHTML = "Page 1 " + this.$t("pageProgressBar");
       }
       //Increment the current page by one
       else {
-        if (progressBar != undefined) {
+        if (progressBar.innerHTML != undefined) {
           progressBar.innerHTML =
-            "Page " + (result.currentPageNo + 1) + " of 13";
+            "Page " + (result.currentPageNo + 1) + this.$t("pageProgressBar");
         }
       }
     });
@@ -104,7 +102,7 @@ export default class Home extends Vue {
 
     const converter = new showdown.Converter();
 
-    this.Survey.onTextMarkdown.add(function(survey, options) {
+    this.Survey.onTextMarkdown.add(function (survey, options) {
       //convert the markdown text to html
       var str = converter.makeHtml(options.text);
       //remove root paragraphs <p></p>
@@ -122,7 +120,7 @@ export default class Home extends Vue {
 
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
-    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
+    this.Survey.onAfterRenderQuestion.add(function (sender, options) {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
       if (title) {
         var questionRequiredHTML = "";
@@ -151,7 +149,7 @@ export default class Home extends Vue {
     if (this.$store.getters.inProgress) {
       this.fileLoaded({
         currentPage: this.$store.state.currentPageNo,
-        data: this.$store.state.toolData
+        data: this.$store.state.toolData,
       } as SurveyFile);
     }
   }

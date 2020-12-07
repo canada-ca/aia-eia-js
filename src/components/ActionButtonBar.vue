@@ -6,7 +6,7 @@
           <button
             type="button"
             class="mrgn-bttm-sm btn btn-success"
-            v-on:click="saveSurvey"
+            @click="saveSurvey"
           >
             {{ $t("saveButton") }}
           </button>
@@ -25,7 +25,7 @@
             type="button"
             value="Start Over"
             class="btn btn-default"
-            v-on:click="$emit('startAgain')"
+            @click="$emit('start-again')"
           >
             {{ $t("startAgain") }}
           </button>
@@ -45,8 +45,6 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import showdown from "showdown";
-import i18n from "@/plugins/i18n";
 import SurveyFile from "@/interfaces/SurveyFile";
 
 @Component
@@ -88,19 +86,19 @@ export default class ActionButtonBar extends Vue {
   buildSurveyFile(): string {
     return JSON.stringify({
       currentPage: this.$store.state.currentPageNo,
-      data: this.$store.state.toolData
+      data: this.$store.state.toolData,
     });
   }
   loadSurvey(file: any) {
     const reader = new FileReader();
-    reader.onload = (e: ProgressEvent) => {
+    reader.onload = () => {
       const result = reader.result as string;
       if (result === "undefined") {
         return;
       }
 
       const loadedFile: SurveyFile = JSON.parse(result);
-      this.$emit("fileLoaded", loadedFile);
+      this.$emit("file-loaded", loadedFile);
     };
 
     reader.readAsText(file);

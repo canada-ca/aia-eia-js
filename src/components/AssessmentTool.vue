@@ -2,7 +2,7 @@
   <div>
     <!--<h2>Assessment Tool</h2>-->
     <div id="surveyContainer" class="wb-frmvld">
-      <survey v-bind:survey="survey"></survey>
+      <survey :survey="survey"></survey>
     </div>
   </div>
 </template>
@@ -17,7 +17,7 @@ export default class AssessmentTool extends Vue {
   @Prop() public survey!: Model;
   Mounted() {
     const converter = new showdown.Converter();
-    this.survey.onTextMarkdown.add(function(survey, options) {
+    this.survey.onTextMarkdown.add(function (survey, options) {
       //convert the markdown text to html
       var str = converter.makeHtml(options.text);
       //remove root paragraphs <p></p>

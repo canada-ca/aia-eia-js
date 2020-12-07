@@ -7,9 +7,9 @@
         </h2>
       </div>
       <div
-        class="row"
         v-for="requirement in $t('requirements.elements', locale)"
         :key="requirement.title"
+        class="row"
       >
         <h3>{{ requirement.title }}</h3>
         <p>{{ requirement.elements[score[3] - 1].text }}</p>
@@ -25,16 +25,15 @@
 
 <script lang="ts">
 import Vue from "vue";
-import i18n from "@/plugins/i18n";
 import Component from "vue-class-component";
 
 @Component({
   props: ["locale"],
   computed: {
-    score: function() {
+    score: function () {
       return this.$store.getters.calcScore;
-    }
-  }
+    },
+  },
 })
 export default class Obligations extends Vue {}
 </script>
