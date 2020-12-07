@@ -2,18 +2,16 @@
   <div id="dropDown" v-if="displayDropDown == true">
     <label> {{ $t("navigateSectionLabel") }} </label>
 
-    <div style="margin-top: -10px; margin-left: -55px">
-      <ul>
-        <b-col md="3">
-          <!-- Calls redirectToPage function whenever user changes index -->
-          <select class="dropDownList" @change="redirectToPage()">
-            <option select>{{ $t("selectSection") }} </option>
-            <option v-for="page in totalPages" :key="page.num">
-              {{ "Section " + page.num + ": " + page.title }}
-            </option>
-          </select>
-        </b-col>
-      </ul>
+    <div>
+      <b-col md="4">
+        <!-- Calls redirectToPage function whenever user changes index -->
+        <select class="dropDownList" @change="redirectToPage()">
+          <option select>{{ $t("selectSection") }} </option>
+          <option v-for="page in totalPages" :key="page.num">
+            {{ "Section " + page.num + ": " + page.title }}
+          </option>
+        </select>
+      </b-col>
     </div>
   </div>
 </template>
