@@ -24,7 +24,6 @@
     "mitigationScore": "Cote d'atténuation",
     "resultTitle": "Résultats de l'Évaluation de l'Incidence Algorithmique",
     "resultScore": "Cote finale",
-    "resultSectionMeasure": "Mesures d'atténuation",
     "resultSectionQA": "Questions et réponses",
     "resultSectionPD": "Détails du projet",
     "resultSectionRQA": "Questions et réponses liées aux risques",
@@ -103,7 +102,7 @@
     "RS": "CIB",
     "MS": "CA",
     "requirements": {
-        "title": "Exigences spécifiques au niveau d'incidence :",
+        "title": "Section 2: Exigences spécifiques au niveau d'incidence",
         "elements": [{
                 "title": "Examen par les pairs",
                 "elements": [{

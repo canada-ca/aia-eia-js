@@ -17,14 +17,13 @@
     "linkDirective": "http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592#appC",
     "print": "Print",
     "linkDirectiveText": "Link to the Directive on Automated Decision-Making Impact Level Requirements",
-    "pageProgressBar":" of 13",
+    "pageProgressBar": " of 13",
     "riskLevel": "Impact Level",
     "currentScore": "Current Score",
     "rawRiskScore": "Raw Impact Score",
     "mitigationScore": "Mitigation Score",
     "resultTitle": "Algorithmic Impact Assessment Results",
     "resultScore": "Final Score",
-    "resultSectionMeasure": "Mitigation Measures",
     "resultSectionQA": "Questions and Answers",
     "resultSectionPD": "Project Details",
     "resultSectionRQA": "Impact Questions and Answers",
@@ -99,7 +98,7 @@
     "privacyImplementation1": "",
     "privacyImplementation2": "",
      "requirements": {
-        "title": "Requirements Specific to Impact Level:",
+        "title": "Section 2: Requirements Specific to Impact Level",
         "elements": [{
                 "title": "Peer Review",
                 "elements": [{
