@@ -68,8 +68,6 @@ h1 {
   display: inline-block;
  }
 
-ul{ list-style-type: none; list-style-position: inside;   }
-
 .h1, h1 {
   font-size: 1.9em !important;
 }
