@@ -25,22 +25,26 @@
     <p>{{ $t("onThisPage") }}</p>
     <ul>
       <li>
-        <a href="#score">{{ $t("riskLevel") }}</a>
+        <a href="#score">{{ "Section 1: " + $t("riskLevel") }}</a>
       </li>
       <li>
         <a href="#obligations">{{ $t("requirements.title") }}</a>
       </li>
       <li>
-        <a href="#qA">{{ $t("resultSectionQA") }}</a>
+        <a href="#qA">{{ "Section 3: " + $t("resultSectionQA") }}</a>
         <ul>
           <li>
-            <a href="#projectDetails">{{ $t("resultSectionPD") }}</a>
+            <a href="#projectDetails">{{
+              "Section 3.1: " + $t("resultSectionPD")
+            }}</a>
           </li>
           <li>
-            <a href="#riskQA">{{ $t("resultSectionRQA") }}</a>
+            <a href="#riskQA">{{ "Section 3.2: " + $t("resultSectionRQA") }}</a>
           </li>
           <li>
-            <a href="#mitigationQA">{{ $t("resultSectionMQA") }}</a>
+            <a href="#mitigationQA">{{
+              "Section 3.3: " + $t("resultSectionMQA")
+            }}</a>
           </li>
         </ul>
       </li>
@@ -52,25 +56,29 @@
 
       <div class="container-fluid">
         <div class="row">
-          <h2 id="qA">{{ $t("resultSectionQA") }}</h2>
+          <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA") }}</h2>
         </div>
 
         <div class="row">
-          <h3 id="projectDetails">{{ $t("resultSectionPD") }}</h3>
+          <h3 id="projectDetails">
+            {{ "Section 3.1: " + $t("resultSectionPD") }}
+          </h3>
         </div>
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result"></Result>
         </div>
 
         <div class="row">
-          <h3 id="riskQA">{{ $t("resultSectionRQA") }}</h3>
+          <h3 id="riskQA">{{ "Section 3.2: " + $t("resultSectionRQA") }}</h3>
         </div>
         <div class="row" v-for="result in myResults[1]" :key="result.name">
           <Result :data="result"></Result>
         </div>
 
         <div class="row">
-          <h3 id="mitigationQA">{{ $t("resultSectionMQA") }}</h3>
+          <h3 id="mitigationQA">
+            {{ "Section 3.3: " + $t("resultSectionMQA") }}
+          </h3>
         </div>
         <div class="row" v-for="result in myResults[2]" :key="result.name">
           <Result :data="result"></Result>
@@ -112,18 +120,22 @@
         <Obligations locale="en" />
         <div class="container-fluid">
           <div class="row">
-            <h2 id="qA">{{ $t("resultSectionQA", "en") }}</h2>
+            <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "en") }}</h2>
           </div>
 
           <div class="row">
-            <h3 id="riskQA">{{ $t("resultSectionRQA", "en") }}</h3>
+            <h3 id="riskQA">
+              {{ "Section 3.1: " + $t("resultSectionRQA", "en") }}
+            </h3>
           </div>
           <div class="row" v-for="result in myResults[1]" :key="result.name">
             <Result :data="result" locale="en"></Result>
           </div>
 
           <div class="row">
-            <h3 id="mitigationQA">{{ $t("resultSectionMQA", "en") }}</h3>
+            <h3 id="mitigationQA">
+              {{ "Section 3.2: " + $t("resultSectionMQA", "en") }}
+            </h3>
           </div>
           <div class="row" v-for="result in myResults[2]" :key="result.name">
             <Result :data="result" locale="en"></Result>
@@ -146,18 +158,22 @@
 
         <div class="container-fluid">
           <div class="row">
-            <h2 id="qA">{{ $t("resultSectionQA", "fr") }}</h2>
+            <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "fr") }}</h2>
           </div>
 
           <div class="row">
-            <h3 id="riskQA">{{ $t("resultSectionRQA", "fr") }}</h3>
+            <h3 id="riskQA">
+              {{ "Section 3.1: " + $t("resultSectionRQA", "fr") }}
+            </h3>
           </div>
           <div class="row" v-for="result in myResults[1]" :key="result.name">
             <Result :data="result" locale="fr"></Result>
           </div>
 
           <div class="row">
-            <h3 id="mitigationQA">{{ $t("resultSectionMQA", "fr") }}</h3>
+            <h3 id="mitigationQA">
+              {{ "Section 3.2: " + $t("resultSectionMQA", "fr") }}
+            </h3>
           </div>
           <div class="row" v-for="result in myResults[2]" :key="result.name">
             <Result :data="result" locale="fr"></Result>

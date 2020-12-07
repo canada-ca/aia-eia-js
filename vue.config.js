@@ -9,5 +9,5 @@ module.exports = {
     devtool: "source-map"
   },
 
-  transpileDependencies: ['vuex-persist', 'vue-i18n']
+  transpileDependencies: ["vuex-persist", "vue-i18n"]
 };
