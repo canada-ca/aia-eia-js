@@ -70,6 +70,21 @@ export default class Home extends Vue {
       this.$router.push("Results");
     });
 
+    this.Survey.onAfterRenderPage.add(result => {
+      var progressBar = document.getElementsByClassName("progress-bar")[0];
+      //Make sure that the current page is 0 and the progress bar is defined and displayed on the screen
+      if (result.currentPageNo == 0 && progressBar != undefined) {
+        progressBar.innerHTML = "Page 1 " + this.$t("pageProgressBar");
+      }
+      //Increment the current page by one
+      else {
+        if (progressBar.innerHTML != undefined) {
+          progressBar.innerHTML =
+            "Page " + (result.currentPageNo + 1) + this.$t("pageProgressBar");
+        }
+      }
+    });
+
     this.Survey.onValueChanged.add(result => {
       this.$store.commit("updateResult", result);
     });
