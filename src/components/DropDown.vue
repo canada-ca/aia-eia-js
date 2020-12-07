@@ -35,11 +35,8 @@ export default class DropDown extends Vue {
     //Used to get selected item
     var pageSection = e.options[e.selectedIndex].text;
     var newVal: any;
-    newVal = pageSection[8];
-    //Used to check to see if it is a double digit number to set as newVal which will redirect to specific page
-    if (pageSection[9] != colon) {
-      newVal = pageSection[8] + pageSection[9];
-    }
+    //Using regex (regular expressions)
+    newVal = pageSection.replace(/\D/g, "");
     //To redirect to correct page
     if (this.survey != null) {
       this.survey.currentPageNo = newVal - 1;
