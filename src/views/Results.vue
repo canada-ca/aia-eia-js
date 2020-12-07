@@ -56,12 +56,6 @@
 
       <div class="container-fluid">
         <div class="row">
-          <p v-for="result in myResults[3]" :key="result.name">
-            {{ $t(result.name) }}
-          </p>
-        </div>
-
-        <div class="row">
           <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA") }}</h2>
         </div>
 
@@ -121,16 +115,10 @@
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="en"></Result>
         </div>
-
+        <br />
         <Score locale="en" />
         <Obligations locale="en" />
         <div class="container-fluid">
-          <div class="row">
-            <p v-for="result in myResults[3]" :key="result.name">
-              {{ $t(result.name, "en") }}
-            </p>
-          </div>
-
           <div class="row">
             <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "en") }}</h2>
           </div>
@@ -164,17 +152,11 @@
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="fr"></Result>
         </div>
-
+        <br />
         <Score locale="fr" />
         <Obligations locale="fr" />
 
         <div class="container-fluid">
-          <div class="row">
-            <p v-for="result in myResults[3]" :key="result.name">
-              {{ $t(result.name, "fr") }}
-            </p>
-          </div>
-
           <div class="row">
             <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "fr") }}</h2>
           </div>
