@@ -98,96 +98,52 @@
    "elements": [
     {
      "type": "rating",
-     "name": "section_one_percentage_code_vc",
-     "title": "What % of application code do you store in version control?",
-     "isRequired": true,
-     "rateMin": 0,
-     "rateMax": 100,
-     "rateStep": 10
-    },
-    {
-     "type": "rating",
      "name": "section_one_recovery_code_vc",
-     "title": "My team can recover application code from the version control system.",
+     "title": "We can recover application code from the version control system.",
      "isRequired": true,
      "rateMax": 7
     },
-    {
-     "type": "rating",
-     "name": "section_one_percentage_system_configuration_vc",
-     "title": "What % of system configurations do you store in version control?",
-     "isRequired": true,
-     "rateMin": 0,
-     "rateMax": 100,
-     "rateStep": 10
-    },
+    
     {
      "type": "rating",
      "name": "section_one_reconfigure_system_vc",
-     "title": "My team can reconfigure systems from version control.",
+     "title": "We can reconfigure systems from files in the version control system.",
      "isRequired": true,
      "rateMax": 7
     },
-    {
-     "type": "rating",
-     "name": "section_one_percentage_application_configuration_vc",
-     "title": "What % of application configurations do you store in version control? ",
-     "isRequired": true,
-     "rateMin": 0,
-     "rateMax": 100,
-     "rateStep": 10
-    },
+    
     {
      "type": "rating",
      "name": "section_one_reconfigure_application_vc",
-     "title": "My team can reconfigure applications from code in the version control system.",
+     "title": "It is easy to change code maintained by other teams if we need to.",
      "isRequired": true,
      "rateMax": 7
     },
-    {
-     "type": "rating",
-     "name": "section_one_percentage_scripts_vc",
-     "title": "What % of scripts for automating build and configuration do you store in version control?",
-     "isRequired": true,
-     "rateMin": 0,
-     "rateMax": 100,
-     "rateStep": 10
-    },
+    
     {
      "type": "rating",
      "name": "section_one_reprovision_system_scripts_vc",
-     "title": "My team can re-provision systems by using scripts from version control.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "section_one_change_other_teams_code",
-     "title": "It is easy for us to change code maintained by other teams if we need to.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "section_one_examples_codebase",
      "title": "It is easy to find examples in our codebase.",
      "isRequired": true,
      "rateMax": 7
     },
+
     {
      "type": "rating",
-     "name": "section_one_code_reuse",
+     "name": "section_one_change_other_teams_code",
      "title": "It is easy to reuse other people’s code.",
      "isRequired": true,
      "rateMax": 7
     },
+
     {
      "type": "rating",
-     "name": "section_one_easy_add_dependencies",
+     "name": "section_one_examples_codebase",
      "title": "It is easy to add new dependencies to a project.",
      "isRequired": true,
      "rateMax": 7
     },
+
     {
      "type": "rating",
      "name": "section_one_easy_migrate_dependency",
@@ -212,23 +168,15 @@
     {
      "type": "rating",
      "name": "section_two_commits_trigger_build",
-     "title": "Code commits trigger a build of the software.",
+     "title": "Code commits result in an automated build of the software.",
      "isRequired": true,
      "rateMax": 7
     },
-    {
-     "type": "rating",
-     "name": "section_two_builds_no_manual_intervention",
-     "title": "The % of code commits that result in a software build without manual intervention.",
-     "isRequired": true,
-     "rateMin": 0,
-     "rateMax": 100,
-     "rateStep": 10
-    },
+
     {
      "type": "rating",
      "name": "section_two_commits_triggers_tests",
-     "title": "Code commits trigger a suite of automated tests.",
+     "title": "Code commits result in a series of automated tests being run.",
      "isRequired": true,
      "rateMax": 7
     },
