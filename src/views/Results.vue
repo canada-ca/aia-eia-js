@@ -136,6 +136,10 @@
               {{ "Section 3.1: " + $t("resultSectionRQA", "en") }}
             </h3>
           </div>
+
+          <div class="row">
+            <h3 id="riskQA">{{ $t("resultSectionRQA", "en") }}</h3>
+          </div>
           <div
             v-for="(result, index) in myResults[1]"
             :key="result.name"
