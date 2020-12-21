@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="col-md-12">
+      <br />
       <strong v-if="locale == undefined">{{ data.title }}</strong>
       <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
       <br />
@@ -22,6 +23,8 @@ import { Component, Vue, Prop } from "vue-property-decorator";
 export default class MultiChoiceResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
+  @Prop() numCounter?: number;
+
   getItemLabel(str: string, index: any): string {
     if (this.locale === undefined) {
       const matches = this.data.data.filter((item: any) => item.value === str);
@@ -31,7 +34,7 @@ export default class MultiChoiceResult extends Vue {
       var choiceValue = this.data.data[index].displayValue;
       var returnValue = "";
       var localePass = this.locale;
-      this.data.choiceData.forEach(function(choice:any) {
+      this.data.choiceData.forEach(function(choice: any) {
         if (choice.en == choiceValue || choice.fr == choiceValue) {
           returnValue = choice[localePass];
         }

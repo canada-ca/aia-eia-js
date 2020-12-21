@@ -77,15 +77,23 @@
         <div class="row">
           <h3 id="riskQA">{{ $t("resultSectionRQA") }}</h3>
         </div>
-        <div class="row" v-for="result in myResults[1]" :key="result.name">
-          <Result :data="result"></Result>
+        <div
+          v-for="(result, index) in myResults[1]"
+          :key="result.name"
+          class="row"
+        >
+          <Result :data="result" :current-num="index + 1"></Result>
         </div>
 
         <div class="row">
           <h3 id="mitigationQA">{{ $t("resultSectionMQA") }}</h3>
         </div>
-        <div class="row" v-for="result in myResults[2]" :key="result.name">
-          <Result :data="result"></Result>
+        <div
+          v-for="(result, index) in myResults[2]"
+          :key="result.name"
+          class="row"
+        >
+          <Result :data="result" :current-num="index + 1"></Result>
         </div>
       </div>
     </div>
@@ -141,15 +149,31 @@
           <div class="row">
             <h3 id="riskQA">{{ $t("resultSectionRQA", "en") }}</h3>
           </div>
-          <div class="row" v-for="result in myResults[1]" :key="result.name">
-            <Result :data="result" locale="en"></Result>
+          <div
+            v-for="(result, index) in myResults[1]"
+            :key="result.name"
+            class="row"
+          >
+            <Result
+              :data="result"
+              :current-num="index + 1"
+              locale="en"
+            ></Result>
           </div>
 
           <div class="row">
             <h3 id="mitigationQA">{{ $t("resultSectionMQA", "en") }}</h3>
           </div>
-          <div class="row" v-for="result in myResults[2]" :key="result.name">
-            <Result :data="result" locale="en"></Result>
+          <div
+            v-for="(result, index) in myResults[2]"
+            :key="result.name"
+            class="row"
+          >
+            <Result
+              :data="result"
+              :current-num="index + 1"
+              locale="en"
+            ></Result>
           </div>
         </div>
       </div>
@@ -186,15 +210,31 @@
           <div class="row">
             <h3 id="riskQA">{{ $t("resultSectionRQA", "fr") }}</h3>
           </div>
-          <div class="row" v-for="result in myResults[1]" :key="result.name">
-            <Result :data="result" locale="fr"></Result>
+          <div
+            v-for="(result, index) in myResults[1]"
+            :key="result.name"
+            class="row"
+          >
+            <Result
+              :data="result"
+              :current-num="index + 1"
+              locale="fr"
+            ></Result>
           </div>
 
           <div class="row">
             <h3 id="mitigationQA">{{ $t("resultSectionMQA", "fr") }}</h3>
           </div>
-          <div class="row" v-for="result in myResults[2]" :key="result.name">
-            <Result :data="result" locale="fr"></Result>
+          <div
+            v-for="(result, index) in myResults[2]"
+            :key="result.name"
+            class="row"
+          >
+            <Result
+              :data="result"
+              :current-num="index + 1"
+              locale="fr"
+            ></Result>
           </div>
         </div>
       </div>

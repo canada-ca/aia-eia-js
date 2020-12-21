@@ -1,9 +1,13 @@
 <template>
   <div>
+    <br />
     <div class="col-md-12">
-      <strong v-if="locale == undefined">{{ data.title }}</strong>
-      <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
-      <br />
+      <strong v-if="locale == undefined">{{
+        numCounter + ": " + data.title
+      }}</strong>
+      <strong v-if="locale !== undefined"
+        >{{ numCounter + ": " + data.titleData[locale] /></strong
+      >
       <div v-if="locale == undefined">
         <div>
           <strong v-if="$root.$i18n.locale == 'en'" class="label label-default"
@@ -45,5 +49,6 @@ import { Component, Vue, Prop } from "vue-property-decorator";
 export default class TextResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
+  @Prop() numCounter?: number;
 }
 </script>
