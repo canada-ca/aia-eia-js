@@ -180,15 +180,7 @@
      "isRequired": true,
      "rateMax": 7
     },
-    {
-     "type": "rating",
-     "name": "section_two_percentage_commits_trigger_automated_tests",
-     "title": "The % of code commits that result in a suite of automated tests being run without manual intervention.",
-     "isRequired": true,
-     "rateMin": 0,
-     "rateMax": 100,
-     "rateStep": 10
-    },
+    
     {
      "type": "rating",
      "name": "section_two_automated_build_and_tests_executed_successfully",
@@ -196,15 +188,7 @@
      "isRequired": true,
      "rateMax": 7
     },
-    {
-     "type": "rating",
-     "name": "section_two_percentage_automated_builds_and_tests_successfully",
-     "title": "The % of automated builds and the percentage of automated tests that are executed successfully every day.",
-     "isRequired": true,
-     "rateMin": 0,
-     "rateMax": 100,
-     "rateStep": 10
-    },
+    
     {
      "type": "rating",
      "name": "question1",
@@ -212,6 +196,7 @@
      "isRequired": true,
      "rateMax": 7
     },
+
     {
      "type": "rating",
      "name": "question2",
@@ -219,124 +204,71 @@
      "isRequired": true,
      "rateMax": 7
     },
+
     {
      "type": "rating",
      "name": "question3",
-     "title": "The % of tests that provide feedback that is available to developers within a day.",
+     "title": "Our software is in a deployable state throughout its lifecycle. ",
      "isRequired": true,
-     "rateMin": 0,
-     "rateMax": 100,
-     "rateStep": 10
+     "rateMax": 7
     },
+
     {
      "type": "rating",
      "name": "question4",
-     "title": "Broken builds are fixed immediately.",
+     "title": "My team prioritizes keeping the software deployable over working on new features. ",
      "isRequired": true,
      "rateMax": 7
     },
-    {
-     "type": "radiogroup",
-     "name": "time",
-     "title": "How much time between the build breaking and having it fixed, either with a check-in that fixes the problem, or by reverting the breaking change. ",
-     "isRequired": true,
-     "choices": [
-      {
-       "value": "week_plus",
-       "text": "More than one week"
-      },
-      {
-       "value": "day_week",
-       "text": "One day to one week"
-      },
-      {
-       "value": "less_than_day",
-       "text": "Less than one day"
-      }
-     ]
-    },
+   
     {
      "type": "rating",
      "name": "question5",
-     "title": "The % of automation in your deployment pipeline.",
-     "isRequired": true,
-     "rateMin": 0,
-     "rateMax": 100,
-     "rateStep": 10
-    },
-    {
-     "type": "radiogroup",
-     "name": "question7",
-     "title": "How much time spent on delays in the deployment pipeline? ",
-     "isRequired": true,
-     "choices": [
-      {
-       "value": "week_plus",
-       "text": "More than one week"
-      },
-      {
-       "value": "day_week",
-       "text": "One day to one week"
-      },
-      {
-       "value": "less_than_day",
-       "text": "Less than one day"
-      }
-     ]
-    },
-    {
-     "type": "rating",
-     "name": "question8",
-     "title": "Adequate test data is available to run full automated test suites.",
+     "title": "Fast feedback on the quality and deployability of the system is available to anyone on the team. ",
      "isRequired": true,
      "rateMax": 7
     },
+
     {
      "type": "rating",
      "name": "question6",
-     "title": "Test data for automated test suites can be acquired on demand.",
+     "title": "When people get feedback that the system is not deployable (such as failing builds or tests), they make fixing these issues their highest priority.",
      "isRequired": true,
      "rateMax": 7
     },
+
+    {
+     "type": "rating",
+     "name": "question7",
+     "title": "We can deploy our system to production, or to end users, at any time, on demand. ",
+     "isRequired": true,
+     "rateMax": 7
+     },
+
+    {
+     "type": "rating",
+     "name": "question8",
+     "title": "Features undergo security review early in the design process. ",
+     "isRequired": true,
+     "rateMax": 7
+     },
+    
+    {
+     "type": "rating",
+     "name": "question9",
+     "title": "Security reviews do not slow down the development cycle. ",
+     "isRequired": true,
+     "rateMax": 7
+     },
+    
     {
      "type": "rating",
      "name": "question10",
-     "title": "Test data doesn’t limit or constrain the automated tests that teams can run.",
+     "title": "Security requirements are included in the automated testing process.",
      "isRequired": true,
      "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question11",
-     "title": "The % of features that undergo security review early in the design process.",
-     "isRequired": true,
-     "rateMin": 0,
-     "rateMax": 100,
-     "rateStep": 10
-    },
-    {
-     "type": "rating",
-     "name": "question12",
-     "title": "Security reviews DO NOT slow down the development cycle.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question13",
-     "title": "The % of security requirements that are included in the automated testing process.",
-     "isRequired": true,
-     "rateMin": 0,
-     "rateMax": 100,
-     "rateStep": 10
-    },
-    {
-     "type": "rating",
-     "name": "question14",
-     "title": "Security supplies teams with an ample number of approved libraries, packages, and toolchains for use.",
-     "isRequired": true,
-     "rateMax": 7
-    }
+     }
+    
    ],
    "visibleIf": "{section_two_enable} = true",
    "title": "Section Two - Continuous Integration and Deployment"
@@ -354,7 +286,7 @@
     {
      "type": "rating",
      "name": "question16",
-     "title": "When the automated tests pass, I am confident the software is releasable.",
+     "title": "When the automated tests pass, we are confident the software is releasable.",
      "isRequired": true,
      "rateMax": 7
     },
@@ -395,13 +327,6 @@
     },
     {
      "type": "rating",
-     "name": "question22",
-     "title": "We have the test data necessary to run our tests easily at every step.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
      "name": "question23",
      "title": "Testers work alongside developers throughout the software development and delivery process.",
      "isRequired": true,
@@ -424,7 +349,21 @@
     {
      "type": "rating",
      "name": "question26",
-     "title": "I can get feedback from automated tests in less than ten minutes both on local workstation and from the CI server.",
+     "title": "Adequate test data is available to run full automated test suites. ",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question27",
+     "title": "Test data can be acquired on demand.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question28",
+     "title": "Test data does not limit or constrain the automated tests that we can run. ",
      "isRequired": true,
      "rateMax": 7
     }
@@ -438,45 +377,52 @@
     {
      "type": "rating",
      "name": "question27",
-     "title": "My team can make large-scale changes to the design of their systems without the permission of somebody outside the team or depending on other teams.",
+     "title": "We can make large-scale changes to the design of our system without the permission of somebody outside the team or creating significant work for other teams. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question28",
-     "title": "My team are able to complete work without needing fine-grained communication and coordination with people outside the team.",
+     "title": "To complete our work, we do not need to communicate and coordinate with people outside the team. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question29",
-     "title": "My team deploy and release their product or service on demand, independently of the services it depends on or of other services that depend on it. ",
+     "title": "We can deploy and release our product or service on demand, independently of other services it depends upon. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question30",
-     "title": "My team do most of their testing on demand, without requiring an integrated test environment.",
+     "title": "We can do most of our testing on demand, without requiring an integrated test environment.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question32",
-     "title": "My team can deploy during normal business hours with negligible downtime.",
+     "title": "We perform deployments during normal business hours with negligible downtime.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question31",
-     "title": "My team feels that we’re empowered to choose tools.",
+     "title": "My team feels that we are empowered to choose tools.",
      "isRequired": true,
      "rateMax": 7
-    }
+    },
+    {
+        "type": "rating",
+        "name": "question31",
+        "title": "My team proactively investigates new tools for new projects.",
+        "isRequired": true,
+        "rateMax": 7
+       }
    ],
    "visibleIf": "{section_four_enable} = true",
    "title": "Section Four - Architecture"
@@ -487,21 +433,21 @@
     {
      "type": "rating",
      "name": "question33",
-     "title": "Once I have access, I can independently provision and configure the cloud resources and capabilities required for my product or service on demand without raising tickets or requiring human interaction.",
+     "title": "Once we have access, we can independently provision and configure the cloud resources and capabilities required for our product or service on demand without raising tickets or requiring human interaction.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question34",
-     "title": "The service or product that I primarily work on is designed to be accessed from a broad range of devices (e.g. smartphones, tablets, laptops) over the network without the need for proprietary plug-ins or protocols.",
+     "title": "The service or product that we primarily work on is designed to be accessed from a broad range of devices (e.g. smartphones, tablets, laptops) over the network without the need for proprietary plug-ins or protocols.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question35",
-     "title": "The cloud my product or service runs on serves multiple teams and applications, with compute and infrastructure resources dynamically assigned and re-assigned based on demand.",
+     "title": "The cloud our product or service runs on serves multiple teams and applications, with compute and infrastructure resources dynamically assigned and re-assigned based on demand.",
      "isRequired": true,
      "rateMax": 7
     },
@@ -515,10 +461,18 @@
     {
      "type": "rating",
      "name": "question37",
-     "title": "I can monitor or control the quantity and/or cost of cloud resources used by the service or product that I primarily support.",
+     "title": "We can dynamically increase or decrease the cloud resources available for the service or product that we primarily support based on demand.",
      "isRequired": true,
      "rateMax": 7
+    },
+    {
+    "type": "rating",
+    "name": "question38",
+    "title": "We can monitor or control the quantity and/or cost of cloud resources used by the service or product that we primarily support.",
+    "isRequired": true,
+    "rateMax": 7
     }
+    
    ],
    "visibleIf": "{section_five_enable} = true",
    "title": "Section Five - Cloud Infrastructure"
@@ -528,150 +482,78 @@
    "elements": [
     {
      "type": "rating",
-     "name": "question38",
-     "title": "My team is able to work on new ideas and experiment.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
      "name": "question39",
-     "title": "My team is able to do work without having to ask for permission.",
+     "title": "We are able to work on new ideas and experiment. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question40",
-     "title": "My team is able to make changes to user needs and specifications during a project.",
+     "title": "We are able to do work and make changes without having to ask for permission. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question41",
-     "title": "My team is able to make changes without having to ask for permission.",
+     "title": "We are able to make changes to user needs and specifications during a project.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+     "type": "rating",
+     "name": "question41",
+     "title": "Changes can be promoted to production without manual change approvals. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question42",
-     "title": "Changes can be promoted to production without manual change approvals.",
+     "title": "We have a clear understanding of the process to get changes approved for implementation. ",
      "isRequired": true,
      "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question43",
-     "title": "The % of changes that do (or do not) require a manual change to be promoted to production.",
-     "isRequired": true,
-     "rateMin": 0,
-     "rateMax": 100,
-     "rateStep": 10
     },
     {
      "type": "rating",
      "name": "question44",
-     "title": "Production changes don’t need to be approved by an external body before deployment or implementation.",
+     "title": "We are confident they can get changes through the approval process in a timely manner and knows the steps it takes to go from “submitted” to “accepted”. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
-     "type": "radiogroup",
-     "name": "question45",
-     "title": "The amount of time changes spend waiting for approval from external bodies.",
-     "isRequired": true,
-     "choices": [
-      {
-       "value": "week_plus",
-       "text": "More than one week"
-      },
-      {
-       "value": "day_week",
-       "text": "One day to one week"
-      },
-      {
-       "value": "less_than_day",
-       "text": "Less than one day"
-      }
-     ]
-    },
-    {
-     "type": "rating",
-     "name": "question46",
-     "title": "The % of changes that are managed by peer-review.",
-     "isRequired": true,
-     "rateMin": 0,
-     "rateMax": 100,
-     "rateStep": 10
-    },
-    {
      "type": "rating",
      "name": "question48",
-     "title": "My team has a clear understanding of the process to get changes approved for implementation.",
+     "title": "Tools and platforms are agreed upon and tailored to the needs of the project. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question47",
-     "title": "My team is confident they can get changes through the approval process in a timely manner and know the steps it takes to go from “submitted” to “accepted”.",
+     "title": "We promote team development and handle cross-functional activities..",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question49",
-     "title": "Tools and platforms are agreed upon by the team and tailored to the needs of the project.",
+     "title": "We execute peer review which includes reviews, comments, and approvals captured as part of the development process. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question50",
-     "title": "My team promotes team development and handle cross-functional activities.",
+     "title": "We consider the development platform as a product by evaluating the changes on multiple axes, including security, performance,and stability, as well as defects. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question51",
-     "title": "My team executes peer review which includes reviews, comments, and approvals captured as part of the development process.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "radiogroup",
-     "name": "question52",
-     "title": "How much time do changes spend waiting for approval from external bodies?",
-     "isRequired": true,
-     "choices": [
-      {
-       "value": "week_plus",
-       "text": "More than one week"
-      },
-      {
-       "value": "day_week",
-       "text": "One day to one week"
-      },
-      {
-       "value": "less_than_day",
-       "text": "Less than one day"
-      }
-     ]
-    },
-    {
-     "type": "rating",
-     "name": "question53",
-     "title": "My team considers the development platform as a product by evaluating the changes on multiple axes, including security, performance,and stability, as well as defects.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question54",
-     "title": "My team continuously improve business processes by identifying and eliminating waste.",
+     "title": "We continuously improve business processes by identifying and eliminating bottlenecks. ",
      "isRequired": true,
      "rateMax": 7
     }
@@ -685,14 +567,14 @@
     {
      "type": "rating",
      "name": "question55",
-     "title": "My team actively collects customer feedback on product and features quality.",
+     "title": "We actively collect customer feedback on product and features quality.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question56",
-     "title": "My team establishes key metrics on customer satisfaction before gathering information from the customers.",
+     "title": "We establishe key metrics on customer satisfaction before gathering information from the customers.",
      "isRequired": true,
      "rateMax": 7
     },
@@ -705,57 +587,50 @@
     },
     {
      "type": "rating",
-     "name": "question65",
-     "title": "Current or recent value streams are available in the organizations to help my team fully understand the current situation, from the customer point of view, align on the problem across all roles in the organization",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
      "name": "question64",
-     "title": "My team is able to use value streams to gain insight and guide necessary improvements to ensure you have the bandwidth to support functionality and the documentation to put it into place.",
+     "title": "We are able to use value streams to gain insight and guide necessary improvements to ensure we have the bandwidth to support functionality and the documentation to put it into place.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question63",
-     "title": "Everyone in the organization have access to a visual display that shows what they’re working on and the status of their work.",
+     "title": "We focus on building, testing, and releasing code changes to an (production or testing) environment in small batches. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question62",
-     "title": "Lead time, process time and %C/A are metrics to analyze the state of work within the value stream and information to determine barriers to flow and each process block.",
+     "title": "Following production release, we are able to amplify feedback from users quickly using techniques (ex: AB testing) and enable short lead times faster. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question61",
-     "title": "My team focuses on building, testing, and releasing code changes to an (production or testing) environment in small batches.",
+     "title": "Feedback received is simple, easy to understand and provides actionable information. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question60",
-     "title": "Following production release, my team is able to amplify feedback from users quickly using techniques (ex: AB testing) and enable short lead times faster.",
+     "title": "Our features are sliced in a way that lend themselves to frequent production releases. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question59",
-     "title": "Following production release, my team is able to evaluate the results and fix bugs rapidly. ",
+     "title": "Our features are decomposed in a way that allows a developer to complete the work in a week or less. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question58",
-     "title": "Feedback received is simple, easy to understand and provides actionable information.",
+     "title": "Our work is decomposed into features that allow for minimum viable products (MVP) and rapid development, rather than complex and lengthy processes (an MVP has just enough features to get validated learning about the product & its continued development). ",
      "isRequired": true,
      "rateMax": 7
     }
@@ -769,73 +644,60 @@
     {
      "type": "rating",
      "name": "question66",
-     "title": "In my team data from application performance monitoring tools is used to make business decisions",
+     "title": "We have a solution in place to report on the overall health of systems (e.g, are my systems functioning? / do my systems have sufficient resources available?).",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question67",
-     "title": "In my team data from infrastructure monitoring tools is used to make business decisions",
+     "title": "We have a solution in place to report on system state as experienced by customers (e.g., “do my customers know if my system is down and have a bad experience?”). ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question68",
-     "title": "Monitoring in my team gives rapid feedback which helps quickly find and fix problems early in the project lifecycle?",
+     "title": "We have a solution in place for monitoring key business and systems metrics.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question75",
-     "title": "In my team the knowledge gained from application monitoring is shared across organization to help people and systems improve.",
+     "title": "We have tooling in place that can help us with understanding and debugging our systems in production.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question74",
-     "title": "In my team collected data is always accessible to different audiences to help them make decisions. ",
+     "title": "We have tooling in place that provides the ability to find information about things we did not previously know (e.g., we can identify “unknown unknowns”). ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question73",
-     "title": "Our team monitors by taking a thoughtful approach to monitoring which usually draws attention to key areas.",
+     "title": "We have access to tools and data which help us trace, understand, and diagnose infrastructure problems in our production environment, including interactions between services. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question72",
-     "title": "My team is reporting on the overall health of systems (Are my systems functioning? Do my systems have sufficient resources available?).",
+     "title": "Data from infrastructure and application performance monitoring tools is used to make business decisions. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question71",
-     "title": "My team is reporting on system state as experienced by customers (Do my customers know if my system is down and how do we know if they have a bad experience?)",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question70",
-     "title": "My team has a tooling to help to understand and debug systems in production",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question69",
-     "title": "My team has access to tools and data that help trace, understand, and diagnose infrastructure problems in production environment, including interactions between services",
+     "title": "Monitoring gives rapid feedback which helps quickly find and fix problems early in the project lifecycle. ",
      "isRequired": true,
      "rateMax": 7
     }
+    
    ],
    "visibleIf": "{section_eight_enable} = true",
    "title": "Section 8: Data Application Monitoring"
@@ -846,69 +708,49 @@
     {
      "type": "rating",
      "name": "question76",
-     "title": "People on my team are not often assigned to work on multiple mutually exclusive tasks.",
+     "title": "We are good at limiting our work in process (WIP). ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question77",
-     "title": "When faced with too much work and too few people to do it, we prioritize work and focus on completing a small number of high-priority tasks.",
+     "title": "We strive to limit our WIP, and have processes in place to do so. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question78",
-     "title": "My team often discovers invisible work when it is not expected.",
+     "title": "Our WIP limits lead to process improvement. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question84",
-     "title": "In my team we do not require people to split their time between multiple tasks.",
+     "title": "We are not often assigned to work on multiple mutually exclusive tasks. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question83",
-     "title": "Our team work is visible to other teams and stakeholders?",
+     "title": "When faced with too much work and too few people to do it, we prioritize work and focus on completing a small number of high-priority tasks. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question82",
-     "title": "My team uses visual displays and dashboards to manage the work at various stages of a process.",
+     "title": "Our work is visible to other teams and stakeholders. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
-     "type": "radiogroup",
-     "name": "question81",
-     "title": "How much time does it take to complete a project backlog item?",
-     "isRequired": true,
-     "choices": [
-      {
-       "value": "week_plus",
-       "text": "More than one week"
-      },
-      {
-       "value": "day_week",
-       "text": "One day to one week"
-      },
-      {
-       "value": "less_than_day",
-       "text": "Less than one day"
-      }
-     ]
-    },
-    {
      "type": "rating",
      "name": "question80",
-     "title": "In my team visual displays are up to date and the information contributing to measurable improvement is towards a goal that the team cares about.",
+     "title": "We use up to date visual displays and dashboards to manage the work at various stages of a process. ",
      "isRequired": true,
      "rateMax": 7
     },
@@ -916,6 +758,13 @@
      "type": "rating",
      "name": "question79",
      "title": "When looking at visual management displays I see the key process metrics my team cares about.",
+     "isRequired": true,
+     "rateMax": 7
+    },
+    {
+    "type": "rating",
+     "name": "question84",
+     "title": "When looking at visual management displays we see the key process metrics the team cares about. ",
      "isRequired": true,
      "rateMax": 7
     }
@@ -929,28 +778,28 @@
     {
      "type": "rating",
      "name": "question85",
-     "title": "In my team employees feel supported by each other. ",
+     "title": "Learning is the key to improvement. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question86",
-     "title": "In my team employees feel their feedback is valued.",
+     "title": "Once we quit learning we endanger our future. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question87",
-     "title": "In my team employees are given meaningful work that leverages their expertise.",
+     "title": "Learning is viewed as an investment, not an expense.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question104",
-     "title": "My team has support from leaders and managers for the necessary culture shift and transformation. ",
+     "title": "Their is a regular cadence of opportunities for employees to share their knowledge. ",
      "isRequired": true,
      "rateMax": 7
     },
@@ -964,98 +813,57 @@
     {
      "type": "rating",
      "name": "question102",
-     "title": "In my team failures are treated as opportunities to improve and learn.",
+     "title": "Information is actively sought.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question101",
-     "title": "My team is allowed and encouraged to experiment and try new things.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question100",
-     "title": "On my team, information is actively sought",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question99",
      "title": "Messengers are not punished when they deliver news of failures or other bad news.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
-     "name": "question98",
-     "title": "On my team, responsibilities are shared.",
+     "name": "question100",
+     "title": "Responsibilities are shared. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question97",
-     "title": "On my team, cross-functional collaboration is encouraged and rewarded.",
+     "title": "Cross-functional collaboration is encouraged and rewarded.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question96",
-     "title": "On my team, failure causes inquiry.",
+     "title": "Failures are treated primarily as opportunities to improve the system. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question95",
-     "title": "On my team, new ideas are welcomed.",
+     "title": "Employees feel supported by each other and that their feedback is valued.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question94",
-     "title": "My team views learning as a priority and an investment for growth.",
+     "title": "Employees are given meaningful work that leverages their expertise. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question93",
-     "title": "My team has the resources to engage in informal learning and the space to explore ideas.",
+     "title": "My team’s culture interacts with the broader organizational culture. ",
      "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question92",
-     "title": "My team has a regular cadence of opportunities for employees to share their knowledge.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question91",
-     "title": "In my team resources are available for continued education.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question90",
-     "title": "When employees in my team attend conferences, we have them share the new experience through presentations or trip reports.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question89",
-     "title": "In my team we encourage people to get certifications or external trainings, and help them by covering costs of external trainings and forming study groups that are a part of normal work activity.",
      "rateMax": 7
     }
    ],
@@ -1068,42 +876,35 @@
     {
      "type": "rating",
      "name": "question88",
-     "title": "My team understands clearly what the current and target conditions are.",
+     "title": "My team understands clearly the current/target conditions, up to 5 (five) years in the future, and produces outcomes that match up with the purpose of the organization.",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question105",
-     "title": "My team is running experiments on a daily basis to try to move toward the target conditions or key results",
+     "title": "My team is running experiments on a daily basis to try to move toward the target conditions or key results. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question106",
-     "title": "The outcomes that my team is working towards match up clearly to the purpose and mission of the organization",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question119",
-     "title": "Leaders understand clearly where my team and the organization are going, and where they want the team to be in five years.",
+     "title": "Leaders understand clearly where my team and the organization are going, and where they want the team to be in five years. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question118",
-     "title": "My team understands clearly where they and the organization are going, and where they want the team to be in five years.",
+     "title": "Leaders say positive things about my team and make employees proud to be a part of their organization. ",
      "isRequired": true,
      "rateMax": 7
     },
     {
      "type": "rating",
      "name": "question117",
-     "title": "Leaders say positive things about the team.",
+     "title": "Leaders challenge team members to think about old problems in new ways and to rethink some of their basic assumptions about their work. ",
      "isRequired": true,
      "rateMax": 7
     },
