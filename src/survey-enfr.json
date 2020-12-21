@@ -801,7 +801,10 @@
                             "choices": [
                                 {
                                     "value": "item1",
-                                    "text": "Design"
+                                    "text": {
+                                    "default": "Design",
+                                    "fr": " Design"
+                                    }
                                 },
                                 {
                                     "value": "item2",
