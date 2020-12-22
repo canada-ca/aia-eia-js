@@ -2,12 +2,18 @@
   <div>
     <br />
     <div class="col-md-12">
-      <strong v-if="locale == undefined">{{
-        data.title
+      <strong v-if="(locale == undefined) & (numCounter != undefined)">{{
+        numCounter + ": " + data.title
       }}</strong>
-      <strong v-if="locale !== undefined"
-        >{{ data.titleData[locale]}}</strong
-      >
+
+      <strong v-if="(locale !== undefined) & (numCounter != undefined)">{{
+        numCounter + ": " + data.titleData[locale]
+      }}</strong>
+
+      <strong v-if="locale == undefined">{{ data.title }}</strong>
+
+      <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
+
       <div v-if="locale == undefined">
         <div>
           <strong v-if="$root.$i18n.locale == 'en'" class="label label-default"

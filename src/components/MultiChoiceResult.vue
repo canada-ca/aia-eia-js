@@ -2,8 +2,10 @@
   <div>
     <div class="col-md-12">
       <br />
-      <strong v-if="locale == undefined">{{ data.title }}</strong>
-      <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
+      <strong v-if="locale == undefined && numCounter == undefined">{{ data.title }}</strong>
+      <strong v-if="locale !== undefined && numCounter == undefined">{{ data.titleData[locale] }}</strong>
+      <strong v-if="locale == undefined && numCounter != undefined">{{ numCounter + ": " + data.title }}</strong>
+      <strong v-if="locale !== undefined && numCounter != undefined">{{ numCounter + ": " + data.titleData[locale] }}</strong>
       <br />
       <div v-for="(str, index) in data.value" :key="index">
         <div class="row">
