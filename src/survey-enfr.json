@@ -910,71 +910,8 @@
     },
     {
      "type": "rating",
-     "name": "question116",
-     "title": "Leaders say things that make employees proud to be a part of their organization.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
      "name": "question115",
-     "title": "Leaders encourage people to see changing conditions as situations full of opportunities.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question114",
-     "title": "Leaders challenge team members to think about old problems in new ways and to rethink some of their basic assumptions about their work.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question113",
-     "title": "Leaders have ideas that force team members to rethink some things that they have never questioned before.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question112",
-     "title": "Leaders consider others’ personal feelings before acting.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question111",
-     "title": "Leaders behave in a manner which is thoughtful of others’ personal needs.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question110",
-     "title": "Leaders see that the interests of team members are given due consideration.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question109",
-     "title": "Leaders commend team members when they do a better than average job and acknowledge improvement in quality of team members’ work.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question108",
-     "title": "Leaders personally compliments team members when they do outstanding work.",
-     "isRequired": true,
-     "rateMax": 7
-    },
-    {
-     "type": "rating",
-     "name": "question107",
-     "title": "My team is able to describe the vision for IITB in a consistent way without having to look it up.",
+     "title": "Leaders behave in a manner which is thoughtful of my team member interests and personal needs.",
      "isRequired": true,
      "rateMax": 7
     }
