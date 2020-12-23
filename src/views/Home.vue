@@ -70,6 +70,11 @@ export default class Home extends Vue {
   }
 
   created() {
+    //Accounts for user's pressing the back button after completing survey (otherwise next button would appear on the last page)
+    this.Survey.onAfterRenderQuestion.add(result => {
+      this.$store.commit("updateResult", result);
+    });
+
     this.Survey.onComplete.add(result => {
       this.$store.commit("updateResult", result);
     });
