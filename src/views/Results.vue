@@ -143,9 +143,6 @@
             <Result :data="result" locale="en"></Result>
           </div>
           <br />
-          <Score locale="en" />
-          <Obligations locale="en" />
-
           <div class="row">
             <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "en") }}</h2>
           </div>
@@ -200,9 +197,6 @@
             <Result :data="result" locale="fr"></Result>
           </div>
           <br />
-          <Score locale="fr" />
-          <Obligations locale="fr" />
-
           <div class="row">
             <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "fr") }}</h2>
           </div>
