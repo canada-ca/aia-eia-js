@@ -1,7 +1,11 @@
 <template>
   <div class="results">
     <!--<PrintButton />-->
-    <h1>{{ $t("resultTitle") }}</h1>
+    <div>
+      <h1>{{ $t("resultTitle") }}</h1>
+      <p>{{ $t("version") }}</p>
+    </div>
+
     <p>
       <a
         class="btn btn-default pull-right"
@@ -117,7 +121,7 @@
       <summary>{{ $t("englishContent") }}</summary>
       <div id="en-content" lang="en">
         <h1>{{ $t("resultTitle", "en") }}</h1>
-
+        <p>{{ $t("version", "en") }}</p>
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="en"></Result>
         </div>
@@ -133,6 +137,13 @@
         </div>
         <Obligations locale="en" />
         <div class="container-fluid">
+          <div v-for="result in myResults[0]" :key="result.name" class="row">
+            <Result :data="result" locale="en"></Result>
+          </div>
+          <br />
+          <Score locale="en" />
+          <Obligations locale="en" />
+
           <div class="row">
             <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "en") }}</h2>
           </div>
@@ -162,7 +173,7 @@
       <summary>{{ $t("frenchContent") }}</summary>
       <div id="fr-content" lang="fr">
         <h1>{{ $t("resultTitle", "fr") }}</h1>
-
+        <p>{{ $t("version", "fr") }}</p>
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="fr"></Result>
         </div>
@@ -181,6 +192,13 @@
         <Obligations locale="fr" />
 
         <div class="container-fluid">
+          <div v-for="result in myResults[0]" :key="result.name" class="row">
+            <Result :data="result" locale="fr"></Result>
+          </div>
+          <br />
+          <Score locale="fr" />
+          <Obligations locale="fr" />
+
           <div class="row">
             <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "fr") }}</h2>
           </div>
@@ -249,6 +267,7 @@ export default class Results extends Vue {
     this.$router.push({ path: "/" });
   }
   fileLoaded($event: SurveyFile) {
+    this.Survey.version = $event.version;
     this.Survey.data = $event.data;
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
@@ -318,6 +337,7 @@ export default class Results extends Vue {
     //if survey is in progress reload from store
     if (this.$store.getters.inProgress) {
       this.fileLoaded({
+        version: this.$store.state.version,
         currentPage: this.$store.state.currentPageNo,
         data: this.$store.state.toolData
       } as SurveyFile);

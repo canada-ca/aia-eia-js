@@ -63,6 +63,7 @@ export default class Home extends Vue {
     this.allowDropdown = false;
   }
   fileLoaded($event: SurveyFile) {
+    this.Survey.version = $event.version;
     this.Survey.data = $event.data;
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
@@ -155,6 +156,7 @@ export default class Home extends Vue {
     //if survey is in progress reload from store
     if (this.$store.getters.inProgress) {
       this.fileLoaded({
+        version: this.$store.state.version,
         currentPage: this.$store.state.currentPageNo,
         data: this.$store.state.toolData
       } as SurveyFile);
