@@ -3,7 +3,7 @@
     <div v-if="locale === undefined">
       <strong>{{ $t("modifier") }}:</strong> {{ str }}
     </div>
-    <div v-if="locale !== undefined">
+    <div v-if="locale !== undefined" class="modifierPDF">
       [ {{ $t("modifier", locale) }}: {{ str }} ]
     </div>
   </div>

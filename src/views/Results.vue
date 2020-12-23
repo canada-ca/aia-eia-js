@@ -17,8 +17,8 @@
     </p>
     <form>
       <ActionButtonBar
-        v-on:fileLoaded="fileLoaded($event)"
-        v-on:startAgain="startAgain"
+        @fileLoaded="fileLoaded($event)"
+        @startAgain="startAgain"
       />
     </form>
 
@@ -29,64 +29,66 @@
     <p>{{ $t("onThisPage") }}</p>
     <ul>
       <li>
-        <a href="#score">{{ $t("riskLevel") }}</a>
+        <a href="#score">{{ "Section 1: " + $t("riskLevel") }}</a>
       </li>
       <li>
         <a href="#obligations">{{ $t("requirements.title") }}</a>
       </li>
       <li>
-        <a href="#mitigationMeasures">{{ $t("resultSectionMeasure") }}</a>
-      </li>
-      <li>
-        <a href="#qA">{{ $t("resultSectionQA") }}</a>
+        <a href="#qA">{{ "Section 3: " + $t("resultSectionQA") }}</a>
         <ul>
           <li>
-            <a href="#projectDetails">{{ $t("resultSectionPD") }}</a>
+            <a href="#projectDetails">{{
+              "Section 3.1: " + $t("resultSectionPD")
+            }}</a>
           </li>
           <li>
-            <a href="#riskQA">{{ $t("resultSectionRQA") }}</a>
+            <a href="#riskQA">{{ "Section 3.2: " + $t("resultSectionRQA") }}</a>
           </li>
           <li>
-            <a href="#mitigationQA">{{ $t("resultSectionMQA") }}</a>
+            <a href="#mitigationQA">{{
+              "Section 3.3: " + $t("resultSectionMQA")
+            }}</a>
           </li>
         </ul>
       </li>
     </ul>
 
     <div id="results-printable">
-      <Score />
-      <Obligations />
-
       <div class="container-fluid">
+        <h2 id="score">
+          {{ "Section 1: " + $t("riskLevel") }} {{ ": " + score[3] }}
+        </h2>
+        <h3 style="word-spacing: 5px">
+          {{ $t("currentScore") }} {{ ": " + score[2] }}
+        </h3>
+        <h3>{{ $t("rawRiskScore") }}{{ ": " + score[0] }}</h3>
+        <h3>{{ $t("mitigationScore") }}{{ ": " + score[1] }}</h3>
+        <Obligations />
         <div class="row">
-          <h2 id="mitigationMeasures">{{ $t("resultSectionMeasure") }}</h2>
-        </div>
-        <div class="row">
-          <p v-for="result in myResults[3]" :key="result.name">
-            {{ $t(result.name) }}
-          </p>
+          <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA") }}</h2>
         </div>
 
         <div class="row">
-          <h2 id="qA">{{ $t("resultSectionQA") }}</h2>
-        </div>
-
-        <div class="row">
-          <h3 id="projectDetails">{{ $t("resultSectionPD") }}</h3>
+          <h3 id="projectDetails">
+            {{ "Section 3.1: " + $t("resultSectionPD") }}
+          </h3>
         </div>
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result"></Result>
         </div>
 
         <div class="row">
-          <h3 id="riskQA">{{ $t("resultSectionRQA") }}</h3>
+          <h3 id="riskQA">{{ "Section 3.2: " + $t("resultSectionRQA") }}</h3>
         </div>
         <div class="row" v-for="result in myResults[1]" :key="result.name">
           <Result :data="result"></Result>
         </div>
 
         <div class="row">
-          <h3 id="mitigationQA">{{ $t("resultSectionMQA") }}</h3>
+          <h3 id="mitigationQA">
+            {{ "Section 3.3: " + $t("resultSectionMQA") }}
+          </h3>
         </div>
         <div class="row" v-for="result in myResults[2]" :key="result.name">
           <Result :data="result"></Result>
@@ -120,7 +122,20 @@
       <div id="en-content" lang="en">
         <h1>{{ $t("resultTitle", "en") }}</h1>
         <p>{{ $t("version", "en") }}</p>
-
+        <div class="row" v-for="result in myResults[0]" :key="result.name">
+          <Result :data="result" locale="en"></Result>
+        </div>
+        <h2>
+          {{ "Section 1: " + $t("riskLevel", locale) }} {{ ": " + score[3] }}
+        </h2>
+        <div class="pointFormatPDF">
+          <p style="word-spacing: 5px">
+            {{ $t("currentScore", locale) }}{{ ": " + score[2] }}
+          </p>
+          <p>{{ $t("rawRiskScore", locale) }}{{ ": " + score[0] }}</p>
+          <p>{{ $t("mitigationScore", locale) }}{{ ": " + score[1] }}</p>
+        </div>
+        <Obligations locale="en" />
         <div class="container-fluid">
           <div v-for="result in myResults[0]" :key="result.name" class="row">
             <Result :data="result" locale="en"></Result>
@@ -130,29 +145,22 @@
           <Obligations locale="en" />
 
           <div class="row">
-            <h2 id="mitigationMeasures">
-              {{ $t("resultSectionMeasure", "en") }}
-            </h2>
-          </div>
-          <div class="row">
-            <p v-for="result in myResults[3]" :key="result.name">
-              {{ $t(result.name, "en") }}
-            </p>
+            <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "en") }}</h2>
           </div>
 
           <div class="row">
-            <h2 id="qA">{{ $t("resultSectionQA", "en") }}</h2>
-          </div>
-
-          <div class="row">
-            <h3 id="riskQA">{{ $t("resultSectionRQA", "en") }}</h3>
+            <h3 id="riskQA">
+              {{ "Section 3.1: " + $t("resultSectionRQA", "en") }}
+            </h3>
           </div>
           <div class="row" v-for="result in myResults[1]" :key="result.name">
             <Result :data="result" locale="en"></Result>
           </div>
 
           <div class="row">
-            <h3 id="mitigationQA">{{ $t("resultSectionMQA", "en") }}</h3>
+            <h3 id="mitigationQA">
+              {{ "Section 3.2: " + $t("resultSectionMQA", "en") }}
+            </h3>
           </div>
           <div class="row" v-for="result in myResults[2]" :key="result.name">
             <Result :data="result" locale="en"></Result>
@@ -166,6 +174,23 @@
       <div id="fr-content" lang="fr">
         <h1>{{ $t("resultTitle", "fr") }}</h1>
         <p>{{ $t("version", "fr") }}</p>
+        <div class="row" v-for="result in myResults[0]" :key="result.name">
+          <Result :data="result" locale="fr"></Result>
+        </div>
+
+        <h2>
+          {{ "Section 1: " + $t("riskLevel", (locale = "fr"))
+          }}{{ ": " + score[3] }}
+        </h2>
+        <div class="pointFormatPDF">
+          <p style="word-spacing: 5px">
+            {{ $t("currentScore", locale) }} {{ ": " + score[2] }}
+          </p>
+          <p>{{ $t("rawRiskScore", locale) }} {{ ": " + score[0] }}</p>
+          <p>{{ $t("mitigationScore", locale) }} {{ ": " + score[1] }}</p>
+        </div>
+        <Obligations locale="fr" />
+
         <div class="container-fluid">
           <div v-for="result in myResults[0]" :key="result.name" class="row">
             <Result :data="result" locale="fr"></Result>
@@ -175,29 +200,22 @@
           <Obligations locale="fr" />
 
           <div class="row">
-            <h2 id="mitigationMeasures">
-              {{ $t("resultSectionMeasure", "fr") }}
-            </h2>
-          </div>
-          <div class="row">
-            <p v-for="result in myResults[3]" :key="result.name">
-              {{ $t(result.name, "fr") }}
-            </p>
+            <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "fr") }}</h2>
           </div>
 
           <div class="row">
-            <h2 id="qA">{{ $t("resultSectionQA", "fr") }}</h2>
-          </div>
-
-          <div class="row">
-            <h3 id="riskQA">{{ $t("resultSectionRQA", "fr") }}</h3>
+            <h3 id="riskQA">
+              {{ "Section 3.1: " + $t("resultSectionRQA", "fr") }}
+            </h3>
           </div>
           <div class="row" v-for="result in myResults[1]" :key="result.name">
             <Result :data="result" locale="fr"></Result>
           </div>
 
           <div class="row">
-            <h3 id="mitigationQA">{{ $t("resultSectionMQA", "fr") }}</h3>
+            <h3 id="mitigationQA">
+              {{ "Section 3.2: " + $t("resultSectionMQA", "fr") }}
+            </h3>
           </div>
           <div class="row" v-for="result in myResults[2]" :key="result.name">
             <Result :data="result" locale="fr"></Result>
@@ -263,7 +281,7 @@ export default class Results extends Vue {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add(result => {
+    this.Survey.onComplete.add(results => {
       this.$router.push("Results");
     });
 

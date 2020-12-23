@@ -6,7 +6,7 @@
       <br />
       <div v-for="(str, index) in data.value" :key="index">
         <div class="row">
-          <div class="col-md-10 list-item">
+          <div class="col-md-10 list-item valueResultPDF">
             {{ getItemLabel(str, index) }}
           </div>
           <div class="col-md-2">
