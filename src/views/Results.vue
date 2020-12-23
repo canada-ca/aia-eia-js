@@ -51,10 +51,16 @@
     </ul>
 
     <div id="results-printable">
-      <Score />
-      <Obligations />
-
       <div class="container-fluid">
+        <h2 id="score">
+          {{ "Section 1: " + $t("riskLevel") }} {{ ": " + score[3] }}
+        </h2>
+        <h3 style="word-spacing: 5px">
+          {{ $t("currentScore") }} {{ ": " + score[2] }}
+        </h3>
+        <h3>{{ $t("rawRiskScore") }}{{ ": " + score[0] }}</h3>
+        <h3>{{ $t("mitigationScore") }}{{ ": " + score[1] }}</h3>
+        <Obligations />
         <div class="row">
           <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA") }}</h2>
         </div>
@@ -115,8 +121,16 @@
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="en"></Result>
         </div>
-        <br />
-        <Score locale="en" />
+        <h2>
+          {{ "Section 1: " + $t("riskLevel", locale) }} {{ ": " + score[3] }}
+        </h2>
+        <div class="pointFormatPDF">
+          <p style="word-spacing: 5px">
+            {{ $t("currentScore", locale) }}{{ ": " + score[2] }}
+          </p>
+          <p>{{ $t("rawRiskScore", locale) }}{{ ": " + score[0] }}</p>
+          <p>{{ $t("mitigationScore", locale) }}{{ ": " + score[1] }}</p>
+        </div>
         <Obligations locale="en" />
         <div class="container-fluid">
           <div class="row">
@@ -152,8 +166,18 @@
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="fr"></Result>
         </div>
-        <br />
-        <Score locale="fr" />
+
+        <h2>
+          {{ "Section 1: " + $t("riskLevel", (locale = "fr"))
+          }}{{ ": " + score[3] }}
+        </h2>
+        <div class="pointFormatPDF">
+          <p style="word-spacing: 5px">
+            {{ $t("currentScore", locale) }} {{ ": " + score[2] }}
+          </p>
+          <p>{{ $t("rawRiskScore", locale) }} {{ ": " + score[0] }}</p>
+          <p>{{ $t("mitigationScore", locale) }} {{ ": " + score[1] }}</p>
+        </div>
         <Obligations locale="fr" />
 
         <div class="container-fluid">

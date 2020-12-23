@@ -4,8 +4,12 @@
       <strong v-if="locale == undefined">{{ data.title }}</strong>
       <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
       <br />
-      <div v-if="locale == undefined">{{ data.displayValue }}</div>
-      <div v-if="locale !== undefined">{{ data.selectedItem[locale] }}</div>
+      <div v-if="locale == undefined" class="valueResultPDF">
+        {{ data.displayValue }}
+      </div>
+      <div v-if="locale !== undefined" class="valueResultPDF">
+        {{ data.selectedItem[locale] }}
+      </div>
     </div>
     <div v-if="!data.name.endsWith('-NS')" class="col-md-2">
       <Modifier :data="data.value" :locale="locale" />
