@@ -125,6 +125,7 @@
         <div class="row" v-for="result in myResults[0]" :key="result.name">
           <Result :data="result" locale="en"></Result>
         </div>
+
         <h2>
           {{ "Section 1: " + $t("riskLevel", locale) }} {{ ": " + score[3] }}
         </h2>
@@ -135,6 +136,7 @@
           <p>{{ $t("rawRiskScore", locale) }}{{ ": " + score[0] }}</p>
           <p>{{ $t("mitigationScore", locale) }}{{ ": " + score[1] }}</p>
         </div>
+
         <Obligations locale="en" />
         <div class="container-fluid">
           <div v-for="result in myResults[0]" :key="result.name" class="row">
@@ -182,6 +184,7 @@
           {{ "Section 1: " + $t("riskLevel", (locale = "fr"))
           }}{{ ": " + score[3] }}
         </h2>
+
         <div class="pointFormatPDF">
           <p style="word-spacing: 5px">
             {{ $t("currentScore", locale) }} {{ ": " + score[2] }}
@@ -189,6 +192,7 @@
           <p>{{ $t("rawRiskScore", locale) }} {{ ": " + score[0] }}</p>
           <p>{{ $t("mitigationScore", locale) }} {{ ": " + score[1] }}</p>
         </div>
+
         <Obligations locale="fr" />
 
         <div class="container-fluid">
