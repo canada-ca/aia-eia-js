@@ -12,11 +12,15 @@
           </button>
         </li>
         <li>
+          <label for="fileChoose" class="btn btn-default">
+            {{ $t("jsonFileUpload") }}
+          </label>
           <input
+            id="fileChoose"
             type="file"
-            class="btn btn-default"
-            :title="$t('loadFile')"
             value="Load"
+            accept=".json"
+            style="display: none"
             @change="onFileChanged($event)"
           />
         </li>
@@ -33,24 +37,33 @@
       </ul>
     </div>
     <div v-else>
-      <input
-        type="file"
-        class="btn btn-default"
-        value="Load"
-        @change="onFileChanged($event)"
-      />
+      <div v-if="this.survey.currentPageNo != 0">
+        <label for="fileChoose" class="btn btn-default">
+          {{ $t("jsonFileUpload") }}
+        </label>
+        <input
+          id="fileChoose"
+          type="file"
+          value="Load"
+          accept=".json"
+          style="display: none"
+          @change="onFileChanged($event)"
+        />
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Prop } from "vue-property-decorator";
 import showdown from "showdown";
 import i18n from "@/plugins/i18n";
 import SurveyFile from "@/interfaces/SurveyFile";
+import { Model } from "survey-vue";
 
 @Component
 export default class ActionButtonBar extends Vue {
+  @Prop() survey?: Model;
   saveSurvey() {
     const a = document.createElement("a");
     a.download = "SurveyResults.json";
@@ -93,6 +106,7 @@ export default class ActionButtonBar extends Vue {
     });
   }
   loadSurvey(file: any) {
+    var extension = "";
     const reader = new FileReader();
     reader.onload = (e: ProgressEvent) => {
       const result = reader.result as string;
@@ -103,6 +117,13 @@ export default class ActionButtonBar extends Vue {
       const loadedFile: SurveyFile = JSON.parse(result);
       this.$emit("fileLoaded", loadedFile);
     };
+
+    extension = file.name.split(".").pop();
+
+    //Error check to inform users they need to submit a JSON file otherwise it will ask them to submit the correct file type
+    if (extension != "json") {
+      alert(this.$t("alertNotificationWrongPopUp"));
+    }
 
     reader.readAsText(file);
   }
