@@ -38,6 +38,12 @@ div.sv_qstn_error_top  span.glyphicon-exclamation-sign {
   font-weight: 600 !important;
 }
 
+h4{
+  font-size: 19px !important;
+  padding-bottom: 15px !important;
+  padding-top: 15px !important;
+}
+
 .h1, .h2, h1, h2 {
   margin-top: 38px !important;
 }
