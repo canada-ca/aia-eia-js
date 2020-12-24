@@ -8,7 +8,7 @@
     "export": "Export",
     "loadJSONFile": "Upload JSON File",
     "loadFile": "Click to load a previously saved JSON file",
-    "localSaveWarning": "Information in the AIA is only stored locally on your computer, and the Government of Canada does not have access to the information you place into the tool. If you wish to keep your work, please save the data locally for future use using the 'Save' button. You can reload a previously saved AIA form using the 'Upload JSON File' button.",
+    "localSaveWarning": "Information in the AIA is only stored locally on your computer, and the Government of Canada does not have access to the information you place into the tool. If you wish to keep your work, please save the data locally for future use by using the 'Save' button. You can reload a previously saved AIA form using the 'Upload JSON File' button.",
     "swtchLang": "Français",
     "onThisPage": "On this page",
     "jsonFileUpload":"Upload JSON File",
