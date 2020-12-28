@@ -23,21 +23,9 @@ export default class MultiChoiceResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
   getItemLabel(str: string, index: any): string {
-    if (this.locale === undefined) {
-      const matches = this.data.data.filter((item: any) => item.value === str);
-      if (matches.length === 0) return "ERROR: No Matches found";
-      return matches[0].displayValue;
-    } else {
-      var choiceValue = this.data.data[index].displayValue;
-      var returnValue = "";
-      var localePass = this.locale;
-      this.data.choiceData.forEach(function(choice: any) {
-        if (choice.en == choiceValue || choice.fr == choiceValue) {
-          returnValue = choice[localePass];
-        }
-      });
-      return returnValue;
-    }
+    const matches = this.data.data.filter((item: any) => item.value === str);
+    if (matches.length === 0) return "ERROR: No Matches found";
+    return matches[0].displayValue;
   }
 }
 </script>
