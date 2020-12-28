@@ -98,12 +98,15 @@ export default class Home extends Vue {
             "Page " + (result.currentPageNo + 1) + this.$t("pageProgressBar");
         }
       }
+      //Checks to see weather item1 = Design or item2 = implementation is checked
+      //If so then we change boolean to true and pass that parameter to DropDown.vue to check.
+      if (this.Survey.getValue("projectDetailsPhase") != undefined) {
+        this.allowDropdown = true;
+      }
     });
 
     this.Survey.onValueChanged.add(result => {
       this.$store.commit("updateResult", result);
-      //Checks to see weather item1 = Design or item2 = implementation is checked
-      //If so then we change boolean to true and pass that parameter to DropDown.vue to check.
       if (this.Survey.getValue("projectDetailsPhase") != undefined) {
         this.allowDropdown = true;
       }
