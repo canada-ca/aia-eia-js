@@ -2,17 +2,21 @@
   <div>
     <br />
     <div class="col-md-12">
-      <strong v-if="(locale == undefined) & (numCounter != undefined)">{{
+      <strong v-if="locale == undefined && numCounter != undefined">{{
         numCounter + ": " + data.title
       }}</strong>
 
-      <strong v-if="(locale !== undefined) & (numCounter != undefined)">{{
+      <strong v-if="locale !== undefined && numCounter != undefined">{{
         numCounter + ": " + data.titleData[locale]
       }}</strong>
 
-      <strong v-if="locale == undefined">{{ data.title }}</strong>
+      <strong v-if="locale == undefined && numCounter == undefined">{{
+        data.title
+      }}</strong>
 
-      <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
+      <strong v-if="locale !== undefined && numCounter == undefined">{{
+        data.titleData[locale]
+      }}</strong>
 
       <div v-if="locale == undefined">
         <div>
