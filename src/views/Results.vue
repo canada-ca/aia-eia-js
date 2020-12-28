@@ -139,9 +139,6 @@
 
         <Obligations locale="en" />
         <div class="container-fluid">
-          <div v-for="result in myResults[0]" :key="result.name" class="row">
-            <Result :data="result" locale="en"></Result>
-          </div>
           <br />
           <div class="row">
             <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "en") }}</h2>
@@ -193,9 +190,7 @@
         <Obligations locale="fr" />
 
         <div class="container-fluid">
-          <div v-for="result in myResults[0]" :key="result.name" class="row">
-            <Result :data="result" locale="fr"></Result>
-          </div>
+
           <br />
           <div class="row">
             <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "fr") }}</h2>

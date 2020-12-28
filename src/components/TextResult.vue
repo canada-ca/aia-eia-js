@@ -27,9 +27,7 @@
         </div>
       </div>
       <div v-if="locale !== undefined">
-        <p v-if="locale == $root.$i18n.locale">
-          {{ data.displayValue }}
-        </p>
+        <p>{{ data.displayValue }}</p>
         <p v-if="locale != $root.$i18n.locale">
           {{ data.displayValueAlt }}
         </p>
