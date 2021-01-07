@@ -102,7 +102,7 @@
        "fr": "Sections",
        "default": "Sections"
       },
-      "description": "Please select the sections from which you would like to be evaluated against. By default all of them are enabled. "
+      "description": "Please select the sections from which you would like to be evaluated against. By default all of them are enabled.</br>"
      },
      {
       "name": "sectionOne",
@@ -166,7 +166,7 @@
       ],
       "visibleIf": "{section_one_enable} = true",
       "title": "Section One - Version Control and Code Maintainability",
-      "description": "Please rate how strongly you agree or disagree with the following statements. For the primary application or service my team works on:"
+      "description": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:</br>"
      },
      {
       "name": "sectionTwo",
@@ -265,7 +265,7 @@
       ],
       "visibleIf": "{section_two_enable} = true",
       "title": "Section Two - Continuous Integration and Deployment",
-      "description": "Please rate how strongly you agree or disagree with the following statements. For the primary application or service my team works on:"
+      "description": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:</br>"
      },
      {
       "name": "sectionThree",
@@ -364,7 +364,7 @@
       ],
       "visibleIf": "{section_three_enable} = true",
       "title": "Section Three - Continuous Testing",
-      "description": "Please rate how strongly you agree or disagree with the following statements. For the primary application or service my team works on:"
+      "description": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:</br>"
      },
      {
       "name": "SectionFour",
@@ -421,7 +421,7 @@
       ],
       "visibleIf": "{section_four_enable} = true",
       "title": "Section Four - Architecture",
-      "description": "Please rate how strongly you agree or disagree with the following statements. For the primary application or service my team works on:"
+      "description": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:</br>"
      },
      {
       "name": "sectionFive",
@@ -464,7 +464,7 @@
       ],
       "visibleIf": "{section_five_enable} = true",
       "title": "Section Five - Cloud Infrastructure",
-      "description": "Please rate how strongly you agree or disagree with the following statements. On my team:"
+      "description": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>"
      },
      {
       "name": "sectionSix",
@@ -549,7 +549,7 @@
       ],
       "visibleIf": "{section_six_enable} = true",
       "title": "Section 6. Team Experimentation and Streamlining Change Approval",
-      "description": "Please rate how strongly you agree or disagree with the following statements. On my team:"
+      "description": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>"
      },
      {
       "name": "sectionSeven",
@@ -627,7 +627,7 @@
       ],
       "visibleIf": "{section_seven_enable} = true",
       "title": "Section 7: Customer Feedback and Work Visibility",
-      "description": "Please rate how strongly you agree or disagree with the following statements. On my team:"
+      "description": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>"
      },
      {
       "name": "sectionEight",
@@ -691,7 +691,7 @@
       ],
       "visibleIf": "{section_eight_enable} = true",
       "title": "Section 8: Data Application Monitoring",
-      "description": "How do you watch and understand your systems at work? Please rate how strongly you agree or disagree with the following statements. On my team:"
+      "description": "How do you watch and understand your systems at work? Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>"
      },
      {
       "name": "sectionNine",
@@ -755,7 +755,7 @@
       ],
       "visibleIf": "{section_nine_enable} = true",
       "title": "Section Nine - Work In Process Limits and Visual Management",
-      "description": "Please rate how strongly you agree or disagree with the following statements. On my team:"
+      "description": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>"
      },
      {
       "name": "sectionTen",
@@ -847,7 +847,7 @@
       ],
       "visibleIf": "{section_ten_enable} = true",
       "title": "Section Ten - Learning and Generative Culture",
-      "description": "Please rate how strongly you agree or disagree with the following statements as descriptive of your team and the organization:"
+      "description": "Please rate how strongly you agree (7) or disagree (1) with the following statements as descriptive of your team and the organization:"
      },
      {
       "name": "sectionEleven",
@@ -897,7 +897,7 @@
       ],
       "visibleIf": "{section_eleven_enable} = true",
       "title": "Section Eleven - Transformation and Transformational Leadership",
-      "description": "Please rate how strongly you agree or disagree with the following statements as descriptive of your team and the organization:"
+      "description": "Please rate how strongly you agree (7) or disagree (1) with the following statements as descriptive of your team and the organization:"
      }
     ],
     "showQuestionNumbers": "off",
