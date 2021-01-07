@@ -564,7 +564,7 @@
        {
         "type": "rating",
         "name": "question59",
-        "title": "We establishe key metrics on customer satisfaction before gathering information from the customers.",
+        "title": "We establish key metrics on customer satisfaction before gathering information from the customers.",
         "isRequired": true,
         "rateMax": 7
        },
