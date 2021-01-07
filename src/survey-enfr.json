@@ -24,77 +24,77 @@
         "type": "boolean",
         "name": "section_one_enable",
         "title": "Section 1: Version Control and Code Maintainability",
-        "description": "Description: Learn how to implement better version control practices for reproducibility and traceability. Make it easy for developers to find, reuse, and change code, and keep dependencies up-to-date.",
+        "description": "Learn how to implement better version control practices for reproducibility and traceability. Make it easy for developers to find, reuse, and change code, and keep dependencies up-to-date.",
         "defaultValue": "true"
        },
        {
         "type": "boolean",
         "name": "section_two_enable",
         "title": "Section 2: Continuous Integration and Deployment",
-        "description": "Description: Learn about common mistakes, ways to measure, and how to improve on your continuous integration efforts. Best practices and approaches for deployment automation and reducing manual intervention in the release process.",
+        "description": "Learn about common mistakes, ways to measure, and how to improve on your continuous integration efforts. Best practices and approaches for deployment automation and reducing manual intervention in the release process.",
         "defaultValue": "true"
        },
        {
         "type": "boolean",
         "name": "section_three_enable",
         "title": "Section 3: Continuous Testing",
-        "description": "Description: Improve software quality by building reliable automated test suits and performing all kinds of testing throughout the software delivery lifecycle. Make deploying software a reliable, low-risk process that can be performed on demand at any time.",
+        "description": "Improve software quality by building reliable automated test suits and performing all kinds of testing throughout the software delivery lifecycle. Make deploying software a reliable, low-risk process that can be performed on demand at any time.",
         "defaultValue": "true"
        },
        {
         "type": "boolean",
         "name": "section_four_enable",
         "title": "Section 4: Architecture",
-        "description": "Description: Learn about moving from a tightly coupled architecture to service-oriented and micro service architectures without re-architecting everything at once. Empower teams to make informed decisions on tools and technologies. Learn how these decisions drive more effective software delivery.",
+        "description": "Learn about moving from a tightly coupled architecture to service-oriented and micro service architectures without re-architecting everything at once. Empower teams to make informed decisions on tools and technologies. Learn how these decisions drive more effective software delivery.",
         "defaultValue": "true"
        },
        {
         "type": "boolean",
         "name": "section_five_enable",
         "title": "Section 5: Cloud Infrastructure",
-        "description": "Description: Find out how to manage cloud infrastructure effectively so you can achieve higher levels of agility, availability, and cost visibility.",
+        "description": "Find out how to manage cloud infrastructure effectively so you can achieve higher levels of agility, availability, and cost visibility.",
         "defaultValue": "true"
        },
        {
         "type": "boolean",
         "name": "section_six_enable",
         "title": "Section 6: Team Experimentation and Streamlining Change Approval",
-        "description": "Description: Innovate faster by building empowered teams that can try out new ideas without approval from people outside the team. Replace heavyweight change-approval process with peer review, to get the benefits of a more reliable, compliant release process without sacrificing speed.",
+        "description": "Innovate faster by building empowered teams that can try out new ideas without approval from people outside the team. Replace heavyweight change-approval process with peer review, to get the benefits of a more reliable, compliant release process without sacrificing speed.",
         "defaultValue": "true"
        },
        {
         "type": "boolean",
         "name": "section_seven_enable",
         "title": "Section 7: Customer Feedback and Work Visibility",
-        "description": "Description: Drive better organizational outcomes by gathering customer feedback and incorporating it into product and feature design. Understand and visualize the flow of work from idea to customer outcome in order to drive higher performance.",
+        "description": "Drive better organizational outcomes by gathering customer feedback and incorporating it into product and feature design. Understand and visualize the flow of work from idea to customer outcome in order to drive higher performance.",
         "defaultValue": "true"
        },
        {
         "type": "boolean",
         "name": "section_eight_enable",
         "title": "Section 8: Data Application Monitoring",
-        "description": "Description: Improve monitoring across infrastructure platforms and the application tier, so you can provide fast feedback to developers. Learn how to build tooling to help you to understand and debug your production system.",
+        "description": "Improve monitoring across infrastructure platforms and the application tier, so you can provide fast feedback to developers. Learn how to build tooling to help you to understand and debug your production system.",
         "defaultValue": "true"
        },
        {
         "type": "boolean",
         "name": "section_nine_enable",
         "title": "Section 9: Work in Process Limits and Visual Management",
-        "description": "Description: Prioritize work, limit the amount of things that people are working on, and focus on getting a small number of high-priority tasks done. Learn about the principles of visual management to promote information sharing, get a common understanding of where the team is, and how to improve.",
+        "description": "Prioritize work, limit the amount of things that people are working on, and focus on getting a small number of high-priority tasks done. Learn about the principles of visual management to promote information sharing, get a common understanding of where the team is, and how to improve.",
         "defaultValue": "true"
        },
        {
         "type": "boolean",
         "name": "section_ten_enable",
         "title": "Section 10: Learning and Generative Culture",
-        "description": "Description: Discover how growing a generative, high-trust culture drives better organizational and software delivery performance. Grow a learning culture and understand its impact on your organization performance.",
+        "description": "Discover how growing a generative, high-trust culture drives better organizational and software delivery performance. Grow a learning culture and understand its impact on your organization performance.",
         "defaultValue": "true"
        },
        {
         "type": "boolean",
         "name": "section_eleven_enable",
         "title": "Section 11: Transformation and Transformational Leadership",
-        "description": "Description: Learn how effective leaders influence software delivery performance by driving the adoption of technical and product management capabilities.",
+        "description": "Learn how effective leaders influence software delivery performance by driving the adoption of technical and product management capabilities.",
         "defaultValue": "true"
        }
       ],
