@@ -28,7 +28,7 @@
     "survey-vue": "^1.7.23",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.5",
-    "vue-i18n": "^8.18.2",
+    "vue-i18n": "^8.22.3",
     "vue-property-decorator": "^8.4.2",
     "vue-router": "^3.3.4",
     "vue-search-select": "^2.9.3",
