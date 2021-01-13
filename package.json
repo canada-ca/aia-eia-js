@@ -1,10 +1,10 @@
 {
-  "name": "aia-eia-js",
+  "name": "dora-js",
   "version": "0.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/canada-ca/aia-eia"
+    "url": "https://github.com/sara-sabr/dora-js"
   },
   "scripts": {
     "serve": "vue-cli-service serve",
