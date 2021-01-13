@@ -207,7 +207,7 @@
         "default": "Sections"
       },
       "description": {
-        "default": "Please select whether you would like to self-assess all the sections or select only some of them. By default all sections are enabled.</br></br>",
+        "default": "Please select whether you would like to self-assess all the sections or only some of them. By default all sections are enabled.</br></br>",
         "fr": "À compléter"
       }
     },
