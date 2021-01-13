@@ -56,7 +56,7 @@ export default class Home extends Vue {
     this.Survey.data = $event.data;
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
-    this.$store.commit("updateResult", this.Survey);
+    this.$store.commit("updateSurveyData", this.Survey);
   }
 
   @Watch("$i18n.locale")
