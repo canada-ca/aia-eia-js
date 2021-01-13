@@ -29,7 +29,7 @@
           },
           "description": {
             "default": "Section 1: Version Control and Code Maintainability</br>\nSection 2: Continuous Integration and Deployment</br>\nSection 3: Continuous Testing</br>\nSection 4: Architecture</br>\nSection 5: Cloud Infrastructure</br>\nSection 6: Team Experimentation and Streamlining Change Approval</br>\nSection 7: Customer Feedback and Work Visibility</br>\nSection 8: Customer Feedback and Work Visibility</br>\n</br>\n\n",
-            "fr": ""
+            "fr": "À compléter"
           },
           "defaultValue": "false"
         },
@@ -38,11 +38,11 @@
           "name": "section_one_enable",
           "title": {
             "default": "Section 1: Version Control and Code Maintainability",
-            "fr": ""
+            "fr": "À compléter"
           },
           "description": {
             "default": "Learn how to implement better version control practices for reproducibility and traceability. Make it easy for developers to find, reuse, and change code, and keep dependencies up-to-date.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "defaultValue": "true"
         },
@@ -51,11 +51,11 @@
           "name": "section_two_enable",
           "title": {
             "default": "Section 2: Continuous Integration and Deployment",
-            "fr": ""
+            "fr": "À compléter"
           },
           "description": {
             "default": "Learn about common mistakes, ways to measure, and how to improve on your continuous integration efforts. Best practices and approaches for deployment automation and reducing manual intervention in the release process.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "defaultValue": "true"
         },
@@ -64,11 +64,11 @@
           "name": "section_three_enable",
           "title": {
             "default": "Section 3: Continuous Testing",
-            "fr": ""
+            "fr": "À compléter"
           },
           "description": {
             "default": "Improve software quality by building reliable automated test suits and performing all kinds of testing throughout the software delivery lifecycle. Make deploying software a reliable, low-risk process that can be performed on demand at any time.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "defaultValue": "true"
         },
@@ -77,11 +77,11 @@
           "name": "section_four_enable",
           "title": {
             "default": "Section 4: Architecture",
-            "fr": ""
+            "fr": "À compléter"
           },
           "description": {
             "default": "Learn about moving from a tightly coupled architecture to service-oriented and micro service architectures without re-architecting everything at once. Empower teams to make informed decisions on tools and technologies. Learn how these decisions drive more effective software delivery.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "defaultValue": "true"
         },
@@ -90,11 +90,11 @@
           "name": "section_five_enable",
           "title": {
             "default": "Section 5: Cloud Infrastructure",
-            "fr": ""
+            "fr": "À compléter"
           },
           "description": {
             "default": "Find out how to manage cloud infrastructure effectively so you can achieve higher levels of agility, availability, and cost visibility.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "defaultValue": "true"
         },
@@ -103,11 +103,11 @@
           "name": "section_six_enable",
           "title": {
             "default": "Section 6: Team Experimentation and Streamlining Change Approval",
-            "fr": ""
+            "fr": "À compléter"
           },
           "description": {
             "default": "Innovate faster by building empowered teams that can try out new ideas without approval from people outside the team. Replace heavyweight change-approval process with peer review, to get the benefits of a more reliable, compliant release process without sacrificing speed.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "defaultValue": "true"
         },
@@ -116,11 +116,11 @@
           "name": "section_seven_enable",
           "title": {
             "default": "Section 7: Customer Feedback and Work Visibility",
-            "fr": ""
+            "fr": "À compléter"
           },
           "description": {
             "default": "Drive better organizational outcomes by gathering customer feedback and incorporating it into product and feature design. Understand and visualize the flow of work from idea to customer outcome in order to drive higher performance.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "defaultValue": "true"
         },
@@ -133,7 +133,7 @@
           },
           "description": {
             "default": "Improve monitoring across infrastructure platforms and the application tier, so you can provide fast feedback to developers. Learn how to build tooling to help you to understand and debug your production system.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "defaultValue": "true"
         },
@@ -142,11 +142,11 @@
           "name": "section_nine_enable",
           "title": {
             "default": "Section 9: Work in Process Limits and Visual Management",
-            "fr": ""
+            "fr": "À compléter"
           },
           "description": {
             "default": "Prioritize work, limit the amount of things that people are working on, and focus on getting a small number of high-priority tasks done. Learn about the principles of visual management to promote information sharing, get a common understanding of where the team is, and how to improve.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "defaultValue": "true"
         },
@@ -155,11 +155,11 @@
           "name": "section_ten_enable",
           "title": {
             "default": "Section 10: Learning and Generative Culture",
-            "fr": ""
+            "fr": "À compléter"
           },
           "description": {
             "default": "Discover how growing a generative, high-trust culture drives better organizational and software delivery performance. Grow a learning culture and understand its impact on your organization performance.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "defaultValue": "true"
         },
@@ -168,11 +168,11 @@
           "name": "section_eleven_enable",
           "title": {
             "default": "Section 11: Transformation and Transformational Leadership",
-            "fr": ""
+            "fr": "À compléter"
           },
           "description": {
             "default": "Learn how effective leaders influence software delivery performance by driving the adoption of technical and product management capabilities.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "defaultValue": "true"
         }
@@ -183,7 +183,7 @@
       },
       "description": {
         "default": "Please select the sections from which you would like to be evaluated against. By default all of them are enabled.</br>",
-        "fr": ""
+        "fr": "À compléter"
       }
     },
     {
@@ -194,7 +194,7 @@
           "name": "question1",
           "title": {
             "default": "We can recover application code from the version control system.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -204,7 +204,7 @@
           "name": "question2",
           "title": {
             "default": "We can reconfigure systems from files in the version control system.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -214,7 +214,7 @@
           "name": "question3",
           "title": {
             "default": "It is easy to change code maintained by other teams if we need to.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -224,7 +224,7 @@
           "name": "question4",
           "title": {
             "default": "It is easy to find examples in our codebase.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -234,7 +234,7 @@
           "name": "question5",
           "title": {
             "default": "It is easy to reuse other people’s code.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -244,7 +244,7 @@
           "name": "question6",
           "title": {
             "default": "It is easy to add new dependencies to a project.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -254,7 +254,7 @@
           "name": "question7",
           "title": {
             "default": "It is easy to migrate to a new version of a dependency.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -264,7 +264,7 @@
           "name": "question8",
           "title": {
             "default": "Dependencies are stable and rarely break teams’ code.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -273,11 +273,11 @@
       "visibleIf": "{section_one_enable} = true",
       "title": {
         "default": "Section One - Version Control and Code Maintainability",
-        "fr": ""
+        "fr": "À compléter"
       },
       "description": {
         "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:</br>",
-        "fr": ""
+        "fr": "À compléter"
       }
     },
     {
@@ -288,7 +288,7 @@
           "name": "question9",
           "title": {
             "default": "Code commits result in an automated build of the software.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -298,7 +298,7 @@
           "name": "question10",
           "title": {
             "default": "Code commits result in a series of automated tests being run.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -308,7 +308,7 @@
           "name": "question11",
           "title": {
             "default": "Automated builds and tests are executed successfully every day.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -318,7 +318,7 @@
           "name": "question12",
           "title": {
             "default": "Current builds are available to testers for exploratory testing.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -328,7 +328,7 @@
           "name": "question13",
           "title": {
             "default": "Developers get feedback from the acceptance and performance tests every day.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -338,7 +338,7 @@
           "name": "question14",
           "title": {
             "default": "Our software is in a deployable state throughout its lifecycle.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -348,7 +348,7 @@
           "name": "question15",
           "title": {
             "default": "My team prioritizes keeping the software deployable over working on new features.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -358,7 +358,7 @@
           "name": "question16",
           "title": {
             "default": "Fast feedback on the quality and deployability of the system is available to anyone on the team.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -368,7 +368,7 @@
           "name": "question17",
           "title": {
             "default": "When people get feedback that the system is not deployable (such as failing builds or tests), they make fixing these issues their highest priority.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -378,7 +378,7 @@
           "name": "question18",
           "title": {
             "default": "We can deploy our system to production, or to end users, at any time, on demand.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -388,7 +388,7 @@
           "name": "question19",
           "title": {
             "default": "Features undergo security review early in the design process.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -398,7 +398,7 @@
           "name": "question20",
           "title": {
             "default": "Security reviews do not slow down the development cycle.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -408,7 +408,7 @@
           "name": "question21",
           "title": {
             "default": "Security requirements are included in the automated testing process.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -417,11 +417,11 @@
       "visibleIf": "{section_two_enable} = true",
       "title": {
         "default": "Section Two - Continuous Integration and Deployment",
-        "fr": ""
+        "fr": "À compléter"
       },
       "description": {
         "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:</br>",
-        "fr": ""
+        "fr": "À compléter"
       }
     },
     {
@@ -432,7 +432,7 @@
           "name": "question22",
           "title": {
             "default": "Developers primarily create and maintain acceptance tests.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -442,7 +442,7 @@
           "name": "question23",
           "title": {
             "default": "When the automated tests pass, we are confident the software is releasable.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -452,7 +452,7 @@
           "name": "question24",
           "title": {
             "default": "Test failures are likely to indicate a real defect.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -462,7 +462,7 @@
           "name": "question25",
           "title": {
             "default": "It is easy for developers to fix acceptance test failures.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -472,7 +472,7 @@
           "name": "question26",
           "title": {
             "default": "Developers use their own development environment to reproduce acceptance failures.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -482,7 +482,7 @@
           "name": "question27",
           "title": {
             "default": "Automated tests are seamlessly integrated into our software delivery tech bricks.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -492,7 +492,7 @@
           "name": "question28",
           "title": {
             "default": "We continuously review and improve our test suite to better find defects and keep complexity and cost under control.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -502,7 +502,7 @@
           "name": "question29",
           "title": {
             "default": "Testers work alongside developers throughout the software development and delivery process.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -512,7 +512,7 @@
           "name": "question30",
           "title": {
             "default": "Manual test activities such as exploratory testing, usability testing, and acceptance testing are performed continuously throughout the delivery process.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -522,7 +522,7 @@
           "name": "question31",
           "title": {
             "default": "Developers practice test-driven development by writing unit tests before writing production code for all changes to the codebase.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -532,7 +532,7 @@
           "name": "question32",
           "title": {
             "default": "Adequate test data is available to run full automated test suites.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -542,7 +542,7 @@
           "name": "question33",
           "title": {
             "default": "Test data can be acquired on demand.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -552,7 +552,7 @@
           "name": "question34",
           "title": {
             "default": "Test data does not limit or constrain the automated tests that we can run.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -561,11 +561,11 @@
       "visibleIf": "{section_three_enable} = true",
       "title": {
         "default": "Section Three - Continuous Testing",
-        "fr": ""
+        "fr": "À compléter"
       },
       "description": {
         "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:</br>",
-        "fr": ""
+        "fr": "À compléter"
       }
     },
     {
@@ -576,7 +576,7 @@
           "name": "question35",
           "title": {
             "default": "We can make large-scale changes to the design of our system without the permission of somebody outside the team or creating significant work for other teams.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -586,7 +586,7 @@
           "name": "question36",
           "title": {
             "default": "To complete our work, we do not need to communicate and coordinate with people outside the team.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -596,7 +596,7 @@
           "name": "question37",
           "title": {
             "default": "We can deploy and release our product or service on demand, independently of other services it depends upon.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -606,7 +606,7 @@
           "name": "question38",
           "title": {
             "default": "We can do most of our testing on demand, without requiring an integrated test environment.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -616,7 +616,7 @@
           "name": "question39",
           "title": {
             "default": "We perform deployments during normal business hours with negligible downtime.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -626,7 +626,7 @@
           "name": "question40",
           "title": {
             "default": "My team feels that we are empowered to choose tools.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -636,7 +636,7 @@
           "name": "question41",
           "title": {
             "default": "My team proactively investigates new tools for new projects.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -645,11 +645,11 @@
       "visibleIf": "{section_four_enable} = true",
       "title": {
         "default": "Section Four - Architecture",
-        "fr": ""
+        "fr": "À compléter"
       },
       "description": {
         "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:</br>",
-        "fr": ""
+        "fr": "À compléter"
       }
     },
     {
@@ -660,7 +660,7 @@
           "name": "question42",
           "title": {
             "default": "Once we have access, we can independently provision and configure the cloud resources and capabilities required for our product or service on demand without raising tickets or requiring human interaction.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -670,7 +670,7 @@
           "name": "question43",
           "title": {
             "default": "The service or product that we primarily work on is designed to be accessed from a broad range of devices (e.g. smartphones, tablets, laptops) over the network without the need for proprietary plug-ins or protocols.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -680,7 +680,7 @@
           "name": "question44",
           "title": {
             "default": "The cloud our product or service runs on serves multiple teams and applications, with compute and infrastructure resources dynamically assigned and re-assigned based on demand.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -690,7 +690,7 @@
           "name": "question45",
           "title": {
             "default": "We can dynamically increase or decrease the cloud resources available for the service or product that we primarily support based on demand.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -700,7 +700,7 @@
           "name": "question46",
           "title": {
             "default": "We can monitor or control the quantity and/or cost of cloud resources used by the service or product that we primarily support.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -709,11 +709,11 @@
       "visibleIf": "{section_five_enable} = true",
       "title": {
         "default": "Section Five - Cloud Infrastructure",
-        "fr": ""
+        "fr": "À compléter"
       },
       "description": {
         "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
-        "fr": ""
+        "fr": "À compléter"
       }
     },
     {
@@ -724,7 +724,7 @@
           "name": "question47",
           "title": {
             "default": "We are able to work on new ideas and experiment.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -734,7 +734,7 @@
           "name": "question48",
           "title": {
             "default": "We are able to do work and make changes without having to ask for permission.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -744,7 +744,7 @@
           "name": "question49",
           "title": {
             "default": "We are able to make changes to user needs and specifications during a project.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -754,7 +754,7 @@
           "name": "question50",
           "title": {
             "default": "Changes can be promoted to production without manual change approvals.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -764,7 +764,7 @@
           "name": "question51",
           "title": {
             "default": "We have a clear understanding of the process to get changes approved for implementation.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -774,7 +774,7 @@
           "name": "question52",
           "title": {
             "default": "We are confident they can get changes through the approval process in a timely manner and knows the steps it takes to go from “submitted” to “accepted”.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -784,7 +784,7 @@
           "name": "question53",
           "title": {
             "default": "Tools and platforms are agreed upon and tailored to the needs of the project.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -794,7 +794,7 @@
           "name": "question54",
           "title": {
             "default": "We promote team development and handle cross-functional activities..",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -804,7 +804,7 @@
           "name": "question55",
           "title": {
             "default": "We execute peer review which includes reviews, comments, and approvals captured as part of the development process.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -814,7 +814,7 @@
           "name": "question56",
           "title": {
             "default": "We consider the development platform as a product by evaluating the changes on multiple axes, including security, performance, and stability, as well as defects.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -824,7 +824,7 @@
           "name": "question57",
           "title": {
             "default": "We continuously improve business processes by identifying and eliminating bottlenecks.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -833,11 +833,11 @@
       "visibleIf": "{section_six_enable} = true",
       "title": {
         "default": "Section 6. Team Experimentation and Streamlining Change Approval",
-        "fr": ""
+        "fr": "À compléter"
       },
       "description": {
         "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
-        "fr": ""
+        "fr": "À compléter"
       }
     },
     {
@@ -848,7 +848,7 @@
           "name": "question58",
           "title": {
             "default": "We actively collect customer feedback on product and features quality.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -858,7 +858,7 @@
           "name": "question59",
           "title": {
             "default": "We establish key metrics on customer satisfaction before gathering information from the customers.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -868,7 +868,7 @@
           "name": "question60",
           "title": {
             "default": "After seeking customer feedbacks, the team utilizes the response to understand the pain points and find solutions quickly.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -878,7 +878,7 @@
           "name": "question61",
           "title": {
             "default": "We are able to use value streams to gain insight and guide necessary improvements to ensure we have the bandwidth to support functionality and the documentation to put it into place.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -888,7 +888,7 @@
           "name": "question62",
           "title": {
             "default": "We focus on building, testing, and releasing code changes to an (production or testing) environment in small batches.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -898,7 +898,7 @@
           "name": "question63",
           "title": {
             "default": "Following production release, we are able to amplify feedback from users quickly using techniques (ex: AB testing) and enable short lead times faster.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -908,7 +908,7 @@
           "name": "question64",
           "title": {
             "default": "Feedback received is simple, easy to understand and provides actionable information.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -918,7 +918,7 @@
           "name": "question65",
           "title": {
             "default": "Our features are sliced in a way that lend themselves to frequent production releases.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -928,7 +928,7 @@
           "name": "question66",
           "title": {
             "default": "Our features are decomposed in a way that allows a developer to complete the work in a week or less.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -938,7 +938,7 @@
           "name": "question67",
           "title": {
             "default": "Our work is decomposed into features that allow for minimum viable products (MVP) and rapid development, rather than complex and lengthy processes (an MVP has just enough features to get validated learning about the product & its continued development).",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -947,11 +947,11 @@
       "visibleIf": "{section_seven_enable} = true",
       "title": {
         "default": "Section 7: Customer Feedback and Work Visibility",
-        "fr": ""
+        "fr": "À compléter"
       },
       "description": {
         "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
-        "fr": ""
+        "fr": "À compléter"
       }
     },
     {
@@ -962,7 +962,7 @@
           "name": "question68",
           "title": {
             "default": "We have a solution in place to report on the overall health of systems (e.g, are my systems functioning? / do my systems have sufficient resources available?).",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -972,7 +972,7 @@
           "name": "question69",
           "title": {
             "default": "We have a solution in place to report on system state as experienced by customers (e.g., “do my customers know if my system is down and have a bad experience?”).",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -982,7 +982,7 @@
           "name": "question70",
           "title": {
             "default": "We have a solution in place for monitoring key business and systems metrics.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -992,7 +992,7 @@
           "name": "question71",
           "title": {
             "default": "We have tooling in place that can help us with understanding and debugging our systems in production.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1002,7 +1002,7 @@
           "name": "question72",
           "title": {
             "default": "We have tooling in place that provides the ability to find information about things we did not previously know (e.g., we can identify “unknown unknowns”).",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1012,7 +1012,7 @@
           "name": "question73",
           "title": {
             "default": "We have access to tools and data which help us trace, understand, and diagnose infrastructure problems in our production environment, including interactions between services.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1022,7 +1022,7 @@
           "name": "question74",
           "title": {
             "default": "Data from infrastructure and application performance monitoring tools is used to make business decisions.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1032,7 +1032,7 @@
           "name": "question75",
           "title": {
             "default": "Monitoring gives rapid feedback which helps quickly find and fix problems early in the project lifecycle.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1041,11 +1041,11 @@
       "visibleIf": "{section_eight_enable} = true",
       "title": {
         "default": "Section 8: Data Application Monitoring",
-        "fr": ""
+        "fr": "À compléter"
       },
       "description": {
         "default": "How do you watch and understand your systems at work? Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
-        "fr": ""
+        "fr": "À compléter"
       }
     },
     {
@@ -1056,7 +1056,7 @@
           "name": "question76",
           "title": {
             "default": "We are good at limiting our work in process (WIP).",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1066,7 +1066,7 @@
           "name": "question77",
           "title": {
             "default": "We strive to limit our WIP, and have processes in place to do so.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1076,7 +1076,7 @@
           "name": "question78",
           "title": {
             "default": "Our WIP limits lead to process improvement.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1086,7 +1086,7 @@
           "name": "question79",
           "title": {
             "default": "We are not often assigned to work on multiple mutually exclusive tasks.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1096,7 +1096,7 @@
           "name": "question80",
           "title": {
             "default": "When faced with too much work and too few people to do it, we prioritize work and focus on completing a small number of high-priority tasks.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1106,7 +1106,7 @@
           "name": "question81",
           "title": {
             "default": "Our work is visible to other teams and stakeholders.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1116,7 +1116,7 @@
           "name": "question82",
           "title": {
             "default": "We use up to date visual displays and dashboards to manage the work at various stages of a process.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1126,7 +1126,7 @@
           "name": "question83",
           "title": {
             "default": "When looking at visual management displays we see the key process metrics the team cares about.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1135,11 +1135,11 @@
       "visibleIf": "{section_nine_enable} = true",
       "title": {
         "default": "Section Nine - Work In Process Limits and Visual Management",
-        "fr": ""
+        "fr": "À compléter"
       },
       "description": {
         "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
-        "fr": ""
+        "fr": "À compléter"
       }
     },
     {
@@ -1150,7 +1150,7 @@
           "name": "question84",
           "title": {
             "default": "Learning is the key to improvement.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1160,7 +1160,7 @@
           "name": "question85",
           "title": {
             "default": "Once we quit learning we endanger our future.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1170,7 +1170,7 @@
           "name": "question86",
           "title": {
             "default": "Learning is viewed as an investment, not an expense.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1180,7 +1180,7 @@
           "name": "question87",
           "title": {
             "default": "Their is a regular cadence of opportunities for employees to share their knowledge.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1190,7 +1190,7 @@
           "name": "question88",
           "title": {
             "default": "Information is actively sought.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1200,7 +1200,7 @@
           "name": "question89",
           "title": {
             "default": "Messengers are not punished when they deliver news of failures or other bad news.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1210,7 +1210,7 @@
           "name": "question90",
           "title": {
             "default": "Responsibilities are shared.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1220,7 +1220,7 @@
           "name": "question91",
           "title": {
             "default": "Cross-functional collaboration is encouraged and rewarded.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1230,7 +1230,7 @@
           "name": "question92",
           "title": {
             "default": "Failures are treated primarily as opportunities to improve the system.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1240,7 +1240,7 @@
           "name": "question93",
           "title": {
             "default": "Employees feel supported by each other and that their feedback is valued.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1250,7 +1250,7 @@
           "name": "question94",
           "title": {
             "default": "Employees are given meaningful work that leverages their expertise.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1260,7 +1260,7 @@
           "name": "question95",
           "title": {
             "default": "My team’s culture interacts with the broader organizational culture.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1269,11 +1269,11 @@
       "visibleIf": "{section_ten_enable} = true",
       "title": {
         "default": "Section Ten - Learning and Generative Culture",
-        "fr": ""
+        "fr": "À compléter"
       },
       "description": {
         "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements as descriptive of your team and the organization:",
-        "fr": ""
+        "fr": "À compléter"
       }
     },
     {
@@ -1284,7 +1284,7 @@
           "name": "question96",
           "title": {
             "default": "My team understands clearly the current/target conditions, up to 5 (five) years in the future, and produces outcomes that match up with the purpose of the organization.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1294,7 +1294,7 @@
           "name": "question97",
           "title": {
             "default": "My team is running experiments on a daily basis to try to move toward the target conditions or key results.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1304,7 +1304,7 @@
           "name": "question98",
           "title": {
             "default": "Leaders understand clearly where my team and the organization are going, and where they want the team to be in five years.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1314,7 +1314,7 @@
           "name": "question99",
           "title": {
             "default": "Leaders say positive things about my team and make employees proud to be a part of their organization.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1324,7 +1324,7 @@
           "name": "question100",
           "title": {
             "default": "Leaders challenge team members to think about old problems in new ways and to rethink some of their basic assumptions about their work.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1334,7 +1334,7 @@
           "name": "question101",
           "title": {
             "default": "Leaders behave in a manner which is thoughtful of my team member interests and personal needs.",
-            "fr": ""
+            "fr": "À compléter"
           },
           "isRequired": true,
           "rateMax": 7
@@ -1343,11 +1343,11 @@
       "visibleIf": "{section_eleven_enable} = true",
       "title": {
         "default": "Section Eleven - Transformation and Transformational Leadership",
-        "fr": ""
+        "fr": "À compléter"
       },
       "description": {
         "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements as descriptive of your team and the organization:",
-        "fr": ""
+        "fr": "À compléter"
       }
     }
   ],
