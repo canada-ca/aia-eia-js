@@ -1,266 +1,81 @@
 {
-    "sections":{
-        "sectionZero": {
-            "title": {
-                "en": "General Questions",
-                "fr": "General Questions in French"
-            },
-            "description": {
-                "en": "A Description",
-                "fr": "A Description in French"
-            },
-            "questions": {
-                "sectionZeroDeploymentFrequency": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionZeroLeadTimeForChanges": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionZeroTimeToRestoreService": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionZeroChangeFailureRate": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                }
-            },
-            "results": {
-                "low": {
-                    "name": {
-                        "en": "Low Performer",
-                        "fr": "Low Performer In French "
-                    },
-                    "minPercentage": 0,
-                    "maxPercentage": 40,
-                    "description": {
-                        "en": "Not very good I do say so myself",
-                        "fr": "Pas bein, Je suis une baguette"
-                    }
-                },
-                "medium": {
-                    "name": {
-                        "en": "Average Performer",
-                        "fr": "Average Performer In French "
-                    },
-                    "minPercentage": 41,
-                    "maxPercentage": 70,
-                    "description": {
-                        "en": "Average is average",
-                        "fr": "Francais francais je ne pas parle bein"
-                    }
-                },
-                "high": {
-                    "name": {
-                        "en": "High Performer",
-                        "fr": "High Performer In French "
-                    },
-                    "minPercentage": 71,
-                    "maxPercentage": 90,
-                    "description": {
-                        "en": "You're doing great !",
-                        "fr": "bein"
-                    }
-                },
-                "extreme": {
-                    "name": {
-                        "en": "Extreme Performer",
-                        "fr": "Extreme Performer In French "
-                    },
-                    "minPercentage": 91,
-                    "maxPercentage": 100,
-                    "description": {
-                        "en": "EXTREEEEEEEMMMMEEEE DEV OPS",
-                        "fr": "I don't know how to say in french"
-                    }
-                }
-            }
-        },
-        "sectionOne": {
-            "title": {
-                "en": "DevOps Knowledge",
-                "fr": "Connaissances DevOps"
-            },
-            "description": {
-                "en": "English Description",
-                "fr": "French Description"
-            },
-            "questions": {
-                "sectionOneTechnicalCapabilitiesVersionControlApplicationCodePercentage": {
-                    "points": 7
-                },
-                "sectionOneTechnicalCapabilitiesVersionControlApplicationCodeRecovery": {
-                    "points": 7
-                },
-                "sectionOneTechnicalCapabilitiesVersionControlSystemConfigurationPercentage": {
-                    "points": 7
-                },
-                "sectionOneTechnicalCapabilitiesVersionControlSystemConfigurationReconfigure": {
-                    "points": 7
-                },
-                "sectionOneTechnicalCapabilitiesVersionControlApplicationConfigurationPercentage": {
-                    "points": 7
-                },
-                "sectionOneTechnicalCapabilitiesVersionControlApplicationConfigurationReconfigure": {
-                    "points": 7
-                },
-                "sectionOneTechnicalCapabilitiesVersionControlScriptsPercentage": {
-                    "points": 7
-                },
-                "sectionOneTechnicalCapabilitiesVersionControlScriptsReconfigure": {
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationCodeCommitsAutomatedBuildPercentage": {
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationCodeCommitsAutomatedTestsPercentage": {
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationCodeCommitsAutomatedSuccessPercentage": {
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationPercentageBuildsAvailableToTests":{
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationTestFeedbackPercentage": {
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationFixTimeFrame": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionOneContinuousIntegrationBuildsRepeatable": {
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationAutomatedTests": {
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationBuildDuration": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionOneDeploymentAutomationManualSteps": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionOneDeploymentAutomationPercentageStepsAutomated": {
-                    "points": 7
-                },
-                "sectionOneDeploymentAutomationPipelineDelays": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionOneTrunkBasedDevelopmentActiveBranches": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionOneTrunkBasedDevelopmentCodeFreezes": {
-                    "points": 7
-                },
-                "sectionOneTrunkBasedDevelopmentMergeFrequency": {
-                    "points": 7
-                },
-                "sectionOneTrunkBasedDevelopmentCodeReviewsCompleted": {
-                    "points": 7
-                }
-            },
-            "results": {
-                "low": {
-                    "name": {
-                        "en": "Low Performer",
-                        "fr": "Low Performer In French "
-                    },
-                    "minPercentage": 0,
-                    "maxPercentage": 40,
-                    "description": {
-                        "en": "Not very good I do say so myself",
-                        "fr": "Pas bein, Je suis une baguette"
-                    }
-                },
-                "medium": {
-                    "name": {
-                        "en": "Average Performer",
-                        "fr": "Average Performer In French "
-                    },
-                    "minPercentage": 41,
-                    "maxPercentage": 70,
-                    "description": {
-                        "en": "Average is average",
-                        "fr": "Francais francais je ne pas parle bein"
-                    }
-                },
-                "high": {
-                    "name": {
-                        "en": "High Performer",
-                        "fr": "High Performer In French "
-                    },
-                    "minPercentage": 71,
-                    "maxPercentage": 90,
-                    "description": {
-                        "en": "You're doing great !",
-                        "fr": "bein"
-                    }
-                },
-                "extreme": {
-                    "name": {
-                        "en": "Extreme Performer",
-                        "fr": "Extreme Performer In French "
-                    },
-                    "minPercentage": 91,
-                    "maxPercentage": 100,
-                    "description": {
-                        "en": "EXTREEEEEEEMMMMEEEE DEV OPS",
-                        "fr": "I don't know how to say in french"
-                    }
-                }
-            }
-        }
+  "sections": {
+    "section_one": {
+      "recommendations": {
+        "1": {},
+        "3": {},
+        "5": {}
+      }
+    },
+    "section_two": {
+      "recommendations": {
+        "1": {},
+        "3": {},
+        "5": {}
+      }
+    },
+    "section_three": {
+      "recommendations": {
+        "1": {},
+        "3": {},
+        "5": {}
+      }
+    },
+    "section_four": {
+      "recommendations": {
+        "1": {},
+        "3": {},
+        "5": {}
+      }
+    },
+    "section_five": {
+      "recommendations": {
+        "1": {},
+        "3": {},
+        "5": {}
+      }
+    },
+    "section_six": {
+      "recommendations": {
+        "1": {},
+        "3": {},
+        "5": {}
+      }
+    },
+    "section_seven": {
+      "recommendations": {
+        "1": {},
+        "3": {},
+        "5": {}
+      }
+    },
+    "section_eight": {
+      "recommendations": {
+        "1": {},
+        "3": {},
+        "5": {}
+      }
+    },
+    "section_nine": {
+      "recommendations": {
+        "1": {},
+        "3": {},
+        "5": {}
+      }
+    },
+    "section_ten": {
+      "recommendations": {
+        "1": {},
+        "3": {},
+        "5": {}
+      }
+    },
+    "section_eleven": {
+      "recommendations": {
+        "1": {},
+        "3": {},
+        "5": {}
+      }
     }
+  }
 }
