@@ -1,4 +1,3 @@
-<script src="../main.ts"></script>
 <template>
   <div class="results">
     <!--<PrintButton />-->
