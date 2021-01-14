@@ -212,7 +212,7 @@
       }
     },
     {
-      "name": "sectionOne",
+      "name": "section_one",
       "elements": [
         {
           "type": "rating",
@@ -306,7 +306,7 @@
       }
     },
     {
-      "name": "sectionTwo",
+      "name": "section_two",
       "elements": [
         {
           "type": "rating",
@@ -450,7 +450,7 @@
       }
     },
     {
-      "name": "sectionThree",
+      "name": "section_three",
       "elements": [
         {
           "type": "rating",
@@ -594,7 +594,7 @@
       }
     },
     {
-      "name": "SectionFour",
+      "name": "section_four",
       "elements": [
         {
           "type": "rating",
@@ -678,7 +678,7 @@
       }
     },
     {
-      "name": "sectionFive",
+      "name": "section_five",
       "elements": [
         {
           "type": "rating",
@@ -742,7 +742,7 @@
       }
     },
     {
-      "name": "sectionSix",
+      "name": "section_six",
       "elements": [
         {
           "type": "rating",
@@ -866,7 +866,7 @@
       }
     },
     {
-      "name": "sectionSeven",
+      "name": "section_seven",
       "elements": [
         {
           "type": "rating",
@@ -980,7 +980,7 @@
       }
     },
     {
-      "name": "sectionEight",
+      "name": "section_eight",
       "elements": [
         {
           "type": "rating",
@@ -1074,7 +1074,7 @@
       }
     },
     {
-      "name": "sectionNine",
+      "name": "section_nine",
       "elements": [
         {
           "type": "rating",
@@ -1168,7 +1168,7 @@
       }
     },
     {
-      "name": "sectionTen",
+      "name": "section_ten",
       "elements": [
         {
           "type": "rating",
@@ -1302,7 +1302,7 @@
       }
     },
     {
-      "name": "sectionEleven",
+      "name": "section_eleven",
       "elements": [
         {
           "type": "rating",
