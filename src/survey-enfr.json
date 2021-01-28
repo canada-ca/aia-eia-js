@@ -1289,7 +1289,7 @@
                             "name": "impact1",
                             "title": {
                                 "default": "Will the system only be used to assist a decision-maker?",
-                                "fr": "Le système automatisera-t-il ou remplacera-t-il les décisions humaines qui exigent du jugement ou de la discrétion?"
+                                "fr": "Le système sera-t-il seulement utilisé pour aider un décideur?"
                             },
                             "choices": [
                                 {
@@ -1313,7 +1313,7 @@
                             "name": "impact2",
                             "title": {
                                 "default": "Will the system be replacing a decision that would otherwise be made by a human?",
-                                "fr": "Le système automatisera-t-il ou remplacera-t-il les décisions humaines qui exigent du jugement ou de la discrétion?"
+                                "fr": "Le système remplacera-t-il une décision qui serait autrement prise par un humain?"
                             },
                             "choices": [
                                 {
@@ -1337,7 +1337,7 @@
                             "name": "impact3",
                             "title": {
                                 "default": "Will the system be replacing human decisions that require judgement or discretion?",
-                                "fr": "Le système automatisera-t-il ou remplacera-t-il les décisions humaines qui exigent du jugement ou de la discrétion?"
+                                "fr": "Le système remplacera-t-il les décisions humaines qui exigent du jugement ou de la discrétion?"
                             },
                             "choices": [
                                 {
