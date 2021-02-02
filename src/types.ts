@@ -1,23 +1,28 @@
-import { SurveyModel } from "survey-vue";
+import { IPanel, Question, SurveyModel } from "survey-vue";
 
 export interface SurveyScoring {
-  sectionZeroScore?: number;
-  sectionZeroTotal?: number;
-  sectionOneScore?: number;
-  sectionOneTotal?: number;
+  surveySections: Section[];
 }
 
+//questionNames not used anymore
 export interface RootState {
-  sectionZeroEnabled: boolean;
-  sectionOneEnabled: boolean;
-  sectionTwoEnabled: boolean;
-  sectionThreeEnabled: boolean;
-  sectionFourEnabled: boolean;
+  sections: Section[];
+  sectionsNames: string[];
+  sectionsAllEnabled: boolean;
+  sectionsEnabled: string[];
   answerData: any[];
-  scoring: SurveyScoring;
+  scoring?: SurveyScoring;
   surveyModel?: SurveyModel;
   toolData: any;
   currentPageNo: number;
+}
+
+export interface Section {
+  sectionName: string;
+  enabled: boolean;
+  questionsNames: string[];
+  userScore: number;
+  questions: Question[];
 }
 
 export interface ResultsData {
