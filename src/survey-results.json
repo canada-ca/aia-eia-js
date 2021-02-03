@@ -1,108 +1,295 @@
 {
-  "sections": {
-    "section_one": {
-      "recommendations": {
-        "1": {
-          "en": "Ensure that every commit to version control triggers the automated creation of packages that can be deployed to any environment using only information in version control.\n\nMake it possible to create production-like test environments on demand using only scripts and configuration information from version control, and to create packages using the automated process described in the previous approach.\n\nScript testing and production infrastructure so that teams can add capacity or recover from disasters in a fully automated fashion.",
-          "fr": "À compléter"
+  "sections": [
+    {
+      "name": "section_one",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "Ensure that every commit to version control triggers the automated creation of packages that can be deployed to any environment using only information in version control.\n\nMake it possible to create production-like test environments on demand using only scripts and configuration information from version control, and to create packages using the automated process described in the previous approach.\n\nScript testing and production infrastructure so that teams can add capacity or recover from disasters in a fully automated fashion.",
+            "fr": "À compléter"
+          }
         },
-        "3": {},
-        "5": {}
-      }
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
     },
-    "section_two": {
-      "recommendations": {
-        "1": {
-          "en": "",
-          "fr": "À compléter"},
-        "3": {},
-        "5": {}
-      }
+    {
+      "name": "section_two",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
     },
-    "section_three": {
-      "recommendations": {
-        "1": {
-          "en": "",
-          "fr": "À compléter"},
-        "3": {},
-        "5": {}
-      }
+    {
+      "name": "section_three",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
     },
-    "section_four": {
-      "recommendations": {
-        "1": {
-          "en": "",
-          "fr": "À compléter"},
-        "3": {},
-        "5": {}
-      }
+    {
+      "name": "section_four",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
     },
-    "section_five": {
-      "recommendations": {
-        "1": {
-          "en": "",
-          "fr": "À compléter"},
-        "3": {},
-        "5": {}
-      }
+    {
+      "name": "section_five",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
     },
-    "section_six": {
-      "recommendations": {
-        "1": {
-          "en": "",
-          "fr": "À compléter"},
-        "3": {},
-        "5": {}
-      }
+    {
+      "name": "section_six",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
     },
-    "section_seven": {
-      "recommendations": {
-        "1": {
-          "en": "",
-          "fr": "À compléter"},
-        "3": {},
-        "5": {}
-      }
+    {
+      "name": "section_seven",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
     },
-    "section_eight": {
-      "recommendations": {
-        "1": {
-          "en": "",
-          "fr": "À compléter"},
-        "3": {},
-        "5": {}
-      }
+    {
+      "name": "section_eight",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
     },
-    "section_nine": {
-      "recommendations": {
-        "1": {
-          "en": "",
-          "fr": "À compléter"},
-        "3": {},
-        "5": {}
-      }
+    {
+      "name": "section_nine",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
     },
-    "section_ten": {
-      "recommendations": {
-        "1": {
-          "en": "",
-          "fr": "À compléter"},
-        "3": {},
-        "5": {}
-      }
+    {
+      "name": "section_ten",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
     },
-    "section_eleven": {
-      "recommendations": {
-        "1": {
-          "en": "",
-          "fr": "À compléter"},
-        "3": {},
-        "5": {}
-      }
+    {
+      "name": "section_eleven",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
     }
-  },
-  "performance": {
-    "low": {
+  ],
+  "performance": [
+    {
+      "level": "low",
       "title": {
         "default": "Low",
         "fr": "Faible"
@@ -112,7 +299,8 @@
         "fr": "Selon vos réponses, il semblerait que certains éléments pourraient être améliorés. Voici quelques recommandations."
       }
     },
-    "medium": {
+    {
+      "level": "medium",
       "title": {
         "default": "Medium",
         "fr": "Moyen"
@@ -122,7 +310,8 @@
         "fr": "Selon vos réponses, vous semblez avoir incorporé certains éléments clés dans votre pratique. Voici quelques recommandations"
       }
     },
-    "high": {
+    {
+      "level": "high",
       "title": {
         "default": "High",
         "fr": "Élevé"
@@ -132,5 +321,5 @@
         "fr": "À compléter"
       }
     }
-  }
+  ]
 }
