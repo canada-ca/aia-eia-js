@@ -4,7 +4,6 @@ export interface SurveyScoring {
   surveySections: Section[];
 }
 
-//questionNames not used anymore
 export interface RootState {
   sections: Section[];
   sectionsNames: string[];
