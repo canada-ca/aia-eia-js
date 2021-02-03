@@ -1,12 +1,15 @@
 <template>
   <b-card>
-    <b-card-title>{{ section.sectionName }}</b-card-title>
-    <b-card-text>
+    <b-card-header>{{ section.sectionName }}</b-card-header>
+    <b-card-title>
       <div v-for="question in section.questionsNames" :key="question.id">
         {{ question }}<br />
       </div>
-      Current score: {{ section.userScore }}
-    </b-card-text>
+    </b-card-title>
+    <b-card-body>
+      Current score: {{ section.userScore }}<br />
+      Recommendations:
+    </b-card-body>
   </b-card>
 </template>
 
