@@ -1,8 +1,9 @@
 <template>
   <b-card class="mt-2">
-    <b-card-header>{{ sectionName }}</b-card-header>
+    <b-card-header>
+      {{ getSectionName(thisSurveyData, sectionName) }}</b-card-header
+    >
     <b-card-title>
-      <div v-for="question in questionsNames" :key="question.id"></div>
       {{ $t("currentScore") }}: {{ userScore }}<br />
     </b-card-title>
     <b-card-body>
@@ -18,8 +19,8 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
-import { Question } from "survey-vue";
-import { Section, Recommendations } from "@/types";
+import { SurveyModel } from "survey-vue";
+import { Recommendations } from "@/types";
 import ResultRecommendations from "@/components/ResultRecommendations.vue";
 @Component({
   components: { ResultsCard, ResultRecommendations },
@@ -29,16 +30,18 @@ import ResultRecommendations from "@/components/ResultRecommendations.vue";
       return 0;
     }
   },
-  methods: {}
+  methods: {
+    getSectionName(surveyData: SurveyModel, sectionName) {
+      let page = surveyData.getPageByName(sectionName.toString());
+      return page.title;
+    }
+  }
 })
 export default class ResultsCard extends Vue {
   @Prop() public sectionName!: string;
-  @Prop() public enabled!: boolean;
-  @Prop() public questionsNames!: string[];
   @Prop() public userScore!: number;
-  @Prop() public questions!: Question[];
-  @Prop() public section!: Section;
   @Prop() public myRecommendations!: Recommendations;
   @Prop() public locale!: any;
+  thisSurveyData = this.$store.getters.returnSurveyModel;
 }
 </script>
