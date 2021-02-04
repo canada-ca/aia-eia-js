@@ -5,14 +5,12 @@ import VuexPersistence from "vuex-persist";
 import { RootState, Section } from "./types";
 import {
   IQuestion,
-  QuestionSelectBase,
   SurveyModel,
-  IPanel,
   LocalizableString,
   Question
 } from "survey-vue";
 import isEmpty from "lodash.isempty";
-import resultsCalculationFile from "./survey-results.json";
+import sectionsRecommendations from "./survey-results.json";
 import { filter } from "vue/types/umd";
 import { stat } from "fs";
 import { STATUS_CODES } from "http";
@@ -82,6 +80,18 @@ const determineSectionsEnabled = (
 };
 
 /**
+ * Getter function returning the localized strings of a Survey.js Panel object.
+ * @param panel A Survey.js panel object.
+ */
+export const getLocalizedSurveyString = (panel: any) => {
+  let localizedString = {
+    en: panel.locTitle.getLocaleText("default"),
+    fr: panel.locTitle.getLocaleText("fr")
+  };
+  return localizedString;
+};
+
+/**
  * Helper function updating the store data based on the survey data.
  * @param state An object containing the state of the survey.
  * @param surveyData An object containing the survey data.
@@ -89,6 +99,7 @@ const determineSectionsEnabled = (
 const updateSurveyData = (state: RootState, surveyData: SurveyModel) => {
   state.surveyModel = surveyData;
   state.currentPageNo = surveyData.currentPageNo;
+  state.recommendations! = sectionsRecommendations;
   if (isEmpty(state.sectionsNames)) {
     determineAllSections(state, surveyData);
   }
@@ -203,10 +214,10 @@ const store: StoreOptions<RootState> = {
     sectionsAllEnabled: false,
     sectionsEnabled: [],
     answerData: [],
-    scoring: undefined,
     surveyModel: undefined,
     toolData: undefined,
-    currentPageNo: 0
+    currentPageNo: 0,
+    recommendations: undefined
   },
   mutations: {
     // mutation to reset the state when a user resets the survey
@@ -219,7 +230,7 @@ const store: StoreOptions<RootState> = {
       state.surveyModel = undefined;
       state.currentPageNo = 0;
       state.toolData = {};
-      state.scoring = undefined;
+      state.recommendations = undefined;
     },
 
     // update state with results from survey
