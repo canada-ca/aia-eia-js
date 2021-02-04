@@ -1,266 +1,325 @@
 {
-    "sections":{
-        "sectionZero": {
-            "title": {
-                "en": "General Questions",
-                "fr": "General Questions in French"
-            },
-            "description": {
-                "en": "A Description",
-                "fr": "A Description in French"
-            },
-            "questions": {
-                "sectionZeroDeploymentFrequency": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionZeroLeadTimeForChanges": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionZeroTimeToRestoreService": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionZeroChangeFailureRate": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                }
-            },
-            "results": {
-                "low": {
-                    "name": {
-                        "en": "Low Performer",
-                        "fr": "Low Performer In French "
-                    },
-                    "minPercentage": 0,
-                    "maxPercentage": 40,
-                    "description": {
-                        "en": "Not very good I do say so myself",
-                        "fr": "Pas bein, Je suis une baguette"
-                    }
-                },
-                "medium": {
-                    "name": {
-                        "en": "Average Performer",
-                        "fr": "Average Performer In French "
-                    },
-                    "minPercentage": 41,
-                    "maxPercentage": 70,
-                    "description": {
-                        "en": "Average is average",
-                        "fr": "Francais francais je ne pas parle bein"
-                    }
-                },
-                "high": {
-                    "name": {
-                        "en": "High Performer",
-                        "fr": "High Performer In French "
-                    },
-                    "minPercentage": 71,
-                    "maxPercentage": 90,
-                    "description": {
-                        "en": "You're doing great !",
-                        "fr": "bein"
-                    }
-                },
-                "extreme": {
-                    "name": {
-                        "en": "Extreme Performer",
-                        "fr": "Extreme Performer In French "
-                    },
-                    "minPercentage": 91,
-                    "maxPercentage": 100,
-                    "description": {
-                        "en": "EXTREEEEEEEMMMMEEEE DEV OPS",
-                        "fr": "I don't know how to say in french"
-                    }
-                }
-            }
+  "sectionRecommendations": [
+    {
+      "name": "section_one",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "Ensure that every commit to version control triggers the automated creation of packages that can be deployed to any environment using only information in version control. Make it possible to create production-like test environments on demand using only scripts and configuration information from version control, and to create packages using the automated process described in the previous approach. Script testing and production infrastructure so that teams can add capacity or recover from disasters in a fully automated fashion.",
+            "fr": "À compléter"
+          }
         },
-        "sectionOne": {
-            "title": {
-                "en": "DevOps Knowledge",
-                "fr": "Connaissances DevOps"
-            },
-            "description": {
-                "en": "English Description",
-                "fr": "French Description"
-            },
-            "questions": {
-                "sectionOneTechnicalCapabilitiesVersionControlApplicationCodePercentage": {
-                    "points": 7
-                },
-                "sectionOneTechnicalCapabilitiesVersionControlApplicationCodeRecovery": {
-                    "points": 7
-                },
-                "sectionOneTechnicalCapabilitiesVersionControlSystemConfigurationPercentage": {
-                    "points": 7
-                },
-                "sectionOneTechnicalCapabilitiesVersionControlSystemConfigurationReconfigure": {
-                    "points": 7
-                },
-                "sectionOneTechnicalCapabilitiesVersionControlApplicationConfigurationPercentage": {
-                    "points": 7
-                },
-                "sectionOneTechnicalCapabilitiesVersionControlApplicationConfigurationReconfigure": {
-                    "points": 7
-                },
-                "sectionOneTechnicalCapabilitiesVersionControlScriptsPercentage": {
-                    "points": 7
-                },
-                "sectionOneTechnicalCapabilitiesVersionControlScriptsReconfigure": {
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationCodeCommitsAutomatedBuildPercentage": {
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationCodeCommitsAutomatedTestsPercentage": {
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationCodeCommitsAutomatedSuccessPercentage": {
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationPercentageBuildsAvailableToTests":{
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationTestFeedbackPercentage": {
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationFixTimeFrame": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionOneContinuousIntegrationBuildsRepeatable": {
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationAutomatedTests": {
-                    "points": 7
-                },
-                "sectionOneContinuousIntegrationBuildDuration": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionOneDeploymentAutomationManualSteps": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionOneDeploymentAutomationPercentageStepsAutomated": {
-                    "points": 7
-                },
-                "sectionOneDeploymentAutomationPipelineDelays": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionOneTrunkBasedDevelopmentActiveBranches": {
-                    "points": 7,
-                    "scoring": {
-                        "elite": 100,
-                        "high": 80,
-                        "medium": 40,
-                        "low": 0
-                    }
-                },
-                "sectionOneTrunkBasedDevelopmentCodeFreezes": {
-                    "points": 7
-                },
-                "sectionOneTrunkBasedDevelopmentMergeFrequency": {
-                    "points": 7
-                },
-                "sectionOneTrunkBasedDevelopmentCodeReviewsCompleted": {
-                    "points": 7
-                }
-            },
-            "results": {
-                "low": {
-                    "name": {
-                        "en": "Low Performer",
-                        "fr": "Low Performer In French "
-                    },
-                    "minPercentage": 0,
-                    "maxPercentage": 40,
-                    "description": {
-                        "en": "Not very good I do say so myself",
-                        "fr": "Pas bein, Je suis une baguette"
-                    }
-                },
-                "medium": {
-                    "name": {
-                        "en": "Average Performer",
-                        "fr": "Average Performer In French "
-                    },
-                    "minPercentage": 41,
-                    "maxPercentage": 70,
-                    "description": {
-                        "en": "Average is average",
-                        "fr": "Francais francais je ne pas parle bein"
-                    }
-                },
-                "high": {
-                    "name": {
-                        "en": "High Performer",
-                        "fr": "High Performer In French "
-                    },
-                    "minPercentage": 71,
-                    "maxPercentage": 90,
-                    "description": {
-                        "en": "You're doing great !",
-                        "fr": "bein"
-                    }
-                },
-                "extreme": {
-                    "name": {
-                        "en": "Extreme Performer",
-                        "fr": "Extreme Performer In French "
-                    },
-                    "minPercentage": 91,
-                    "maxPercentage": 100,
-                    "description": {
-                        "en": "EXTREEEEEEEMMMMEEEE DEV OPS",
-                        "fr": "I don't know how to say in french"
-                    }
-                }
-            }
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
         }
+      ]
+    },
+    {
+      "name": "section_two",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
+    },
+    {
+      "name": "section_three",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
+    },
+    {
+      "name": "section_four",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
+    },
+    {
+      "name": "section_five",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
+    },
+    {
+      "name": "section_six",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
+    },
+    {
+      "name": "section_seven",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
+    },
+    {
+      "name": "section_eight",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
+    },
+    {
+      "name": "section_nine",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
+    },
+    {
+      "name": "section_ten",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
+    },
+    {
+      "name": "section_eleven",
+      "recommendations": [
+        {
+          "level": "1",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "3",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        },
+        {
+          "level": "5",
+          "title": {
+            "en": "TBC",
+            "fr": "À compléter"
+          }
+        }
+      ]
     }
+  ],
+  "performance": [
+    {
+      "level": "low",
+      "title": {
+        "en": "Low",
+        "fr": "Faible"
+      },
+      "message": {
+        "en": "Based on your answers, it appears that some elements could be improved. Here are a few recommendations.",
+        "fr": "Selon vos réponses, il semblerait que certains éléments pourraient être améliorés. Voici quelques recommandations."
+      }
+    },
+    {
+      "level": "medium",
+      "title": {
+        "en": "Medium",
+        "fr": "Moyen"
+      },
+      "message": {
+        "en": "Based on your answers, you seem to have incorporated some key elements in your practice. Here are recommendations that may help you reach the next level!",
+        "fr": "Selon vos réponses, vous semblez avoir incorporé certains éléments clés dans votre pratique. Voici quelques recommandations"
+      }
+    },
+    {
+      "level": "high",
+      "title": {
+        "en": "High",
+        "fr": "Élevé"
+      },
+      "message": {
+        "en": "You seem to have incorporate many key elements in your practice. Congratulations!",
+        "fr": "À compléter"
+      }
+    }
+  ]
 }

@@ -1,4 +1,3 @@
-<script src="../main.ts"></script>
 <template>
   <div class="results">
     <!--<PrintButton />-->
@@ -32,39 +31,59 @@
       />
     </form>
 
-    <div v-if="$i18n.locale === 'en'" id="en-content">
-      <ResultsContainer language="en" :survey="Survey" />
-    </div>
-
-    <div v-if="$i18n.locale === 'fr'" id="fr-content">
-      <ResultsContainer language="fr" :survey="Survey" />
+    <div v-for="section in $store.state.sections" :key="section.id">
+      <ResultsCard
+        v-if="section.enabled"
+        :section="section"
+        :section-name="section.sectionName"
+        :questions-names="section.questionsNames"
+        :user-score="section.userScore"
+        :questions="section.questions"
+        :my-recommendations="myRecommendations"
+        :locale="locale"
+      />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import { Model } from "survey-vue";
 import showdown from "showdown";
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
 import ResultsContainer from "@/components/ResultsContainer.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
+import ResultsCard from "@/components/ResultsCard.vue";
 import i18n from "@/plugins/i18n";
 import surveyJSON from "@/survey-enfr.json";
 
 @Component({
   components: {
     ActionButtonBar,
-    ResultsContainer
+    ResultsContainer,
+    ResultsCard
   },
   computed: {
-    score: function() {
-      return this.$store.getters.calcScore;
+    sectionNames: function() {
+      return this.$store.getters.returnSectionsNames;
+    },
+    results() {
+      return this.$store.getters.resultsDataSections;
+    },
+    sections() {
+      return this.$store.getters.returnAllSections;
+    },
+    myRecommendations() {
+      return this.$store.state.recommendations;
+    },
+    locale() {
+      return this.$i18n.locale;
     }
   }
 })
 export default class Results extends Vue {
-  myResults = this.$store.getters.resultDataSections;
+  @Prop() data: any;
+  myResults = this.$store.getters.resultsDataSections;
 
   Survey: Model = new Model(surveyJSON);
 
@@ -77,16 +96,16 @@ export default class Results extends Vue {
 
     function beforePrint() {
       for (let i in pageActions) {
-        if (pageActions[i].classList) {
-          pageActions[i].classList.add("hidden");
+        if (pageActions[parseInt(i)].classList) {
+          pageActions[parseInt(i)].classList.add("hidden");
         }
       }
     }
 
     function afterPrint() {
       for (let i in pageActions) {
-        if (pageActions[i].classList) {
-          pageActions[i].classList.remove("hidden");
+        if (pageActions[parseInt(i)].classList) {
+          pageActions[parseInt(i)].classList.remove("hidden");
         }
       }
     }
@@ -113,6 +132,12 @@ export default class Results extends Vue {
     this.$store.commit("calculateResult", this.Survey);
 
     this.myResults = this.$store.getters.resultDataSections;
+  }
+
+  @Watch("$i18n.locale")
+  changeLanguage(value: string, oldValue: string) {
+    this.Survey.locale = value;
+    this.Survey.render();
   }
 
   created() {
