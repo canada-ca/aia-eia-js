@@ -185,9 +185,6 @@ const calculateSectionScore = (
       sectionScore += score;
     }
   });
-  if (sectionScore != 0) {
-    console.log(sectionScore);
-  }
   return sectionScore;
 };
 
