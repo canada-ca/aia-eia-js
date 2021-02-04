@@ -47,7 +47,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import { Model } from "survey-vue";
 import showdown from "showdown";
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
@@ -75,6 +75,9 @@ import surveyJSON from "@/survey-enfr.json";
     },
     myRecommendations() {
       return this.$store.state.recommendations;
+    },
+    locale() {
+      return this.$i18n.locale;
     }
   }
 })
@@ -94,7 +97,6 @@ export default class Results extends Vue {
 
     function beforePrint() {
       for (let i in pageActions) {
-        console.log(typeof parseInt(i));
         if (pageActions[parseInt(i)].classList) {
           pageActions[parseInt(i)].classList.add("hidden");
         }
@@ -131,6 +133,12 @@ export default class Results extends Vue {
     this.$store.commit("calculateResult", this.Survey);
 
     this.myResults = this.$store.getters.resultDataSections;
+  }
+
+  @Watch("$i18n.locale")
+  changeLanguage(value: string, oldValue: string) {
+    this.Survey.locale = value;
+    this.Survey.render();
   }
 
   created() {
