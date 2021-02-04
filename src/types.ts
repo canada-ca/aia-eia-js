@@ -44,7 +44,7 @@ export interface Performance {
 }
 
 export interface Message {
-  default: string;
+  en: string;
   fr: string;
 }
 
