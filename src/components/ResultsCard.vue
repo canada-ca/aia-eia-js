@@ -1,15 +1,16 @@
 <template>
-  <b-card>
+  <b-card class="mt-2">
     <b-card-header>{{ sectionName }}</b-card-header>
     <b-card-title>
       <div v-for="question in questionsNames" :key="question.id"></div>
-      Current score: {{ userScore }}<br />
+      {{ $t("currentScore") }}: {{ userScore }}<br />
     </b-card-title>
     <b-card-body>
       <ResultRecommendations
         :section-name="sectionName"
         :section-score-level="sectionScoreLevel"
-        :my-recommendations="myRecommendations"
+        :section-recommendations="myRecommendations.sectionRecommendations"
+        :locale="locale"
       />
     </b-card-body>
   </b-card>
@@ -17,11 +18,9 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
-import { Survey, Model, Question } from "survey-vue";
-import i18n from "@/plugins/i18n";
+import { Question } from "survey-vue";
 import { Section, Recommendations } from "@/types";
 import ResultRecommendations from "@/components/ResultRecommendations.vue";
-
 @Component({
   components: { ResultsCard, ResultRecommendations },
   computed: {
@@ -40,5 +39,6 @@ export default class ResultsCard extends Vue {
   @Prop() public questions!: Question[];
   @Prop() public section!: Section;
   @Prop() public myRecommendations!: Recommendations;
+  @Prop() public locale!: any;
 }
 </script>
