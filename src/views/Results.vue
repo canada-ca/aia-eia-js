@@ -83,7 +83,6 @@ import surveyJSON from "@/survey-enfr.json";
 })
 export default class Results extends Vue {
   @Prop() data: any;
-  @Prop() locale: any;
   myResults = this.$store.getters.resultsDataSections;
 
   Survey: Model = new Model(surveyJSON);
