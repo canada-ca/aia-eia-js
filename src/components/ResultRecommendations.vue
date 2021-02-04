@@ -1,14 +1,13 @@
 <template>
   <div>
-    Section name {{ sectionName }} t {{ myRecommendations }}
-
-    <div v-for="recommendation in recommendations" :key="recommendation.id">
-      <div v-if="recommendation.level == '1'">
-        {{ recommendation.title.en }}
-      </div>
-    </div>
     <b-card-body>
-      <div></div>
+      <div v-for="recommendation in myRecommendations" :key="recommendation.id">
+        <div v-for="rec in recommendation" :key="rec.id">
+          <div v-if="rec.name == sectionName">
+            {{ rec.recommendations[sectionScoreLevel].title.en }}
+          </div>
+        </div>
+      </div>
     </b-card-body>
   </div>
 </template>
@@ -23,10 +22,6 @@ import { Recommendations } from "@/types";
   computed: {
     locale() {
       return i18n.locale;
-    },
-    recommendations() {
-      return this.$store.state.recommendations.sectionsRecommendations
-        .recommendations;
     }
   },
   methods: {}
@@ -34,5 +29,6 @@ import { Recommendations } from "@/types";
 export default class ResultRecommendations extends Vue {
   @Prop() public myRecommendations!: Recommendations;
   @Prop() public sectionName!: string;
+  @Prop() public sectionScoreLevel!: number;
 }
 </script>
