@@ -6,7 +6,7 @@
         {
           "level": "1",
           "title": {
-            "en": "Ensure that every commit to version control triggers the automated creation of packages that can be deployed to any environment using only information in version control.\n\nMake it possible to create production-like test environments on demand using only scripts and configuration information from version control, and to create packages using the automated process described in the previous approach.\n\nScript testing and production infrastructure so that teams can add capacity or recover from disasters in a fully automated fashion.",
+            "en": "Ensure that every commit to version control triggers the automated creation of packages that can be deployed to any environment using only information in version control. Make it possible to create production-like test environments on demand using only scripts and configuration information from version control, and to create packages using the automated process described in the previous approach. Script testing and production infrastructure so that teams can add capacity or recover from disasters in a fully automated fashion.",
             "fr": "À compléter"
           }
         },
@@ -291,33 +291,33 @@
     {
       "level": "low",
       "title": {
-        "default": "Low",
+        "en": "Low",
         "fr": "Faible"
       },
       "message": {
-        "default": "Based on your answers, it appears that some elements could be improved. Here are a few recommendations.",
+        "en": "Based on your answers, it appears that some elements could be improved. Here are a few recommendations.",
         "fr": "Selon vos réponses, il semblerait que certains éléments pourraient être améliorés. Voici quelques recommandations."
       }
     },
     {
       "level": "medium",
       "title": {
-        "default": "Medium",
+        "en": "Medium",
         "fr": "Moyen"
       },
       "message": {
-        "default": "Based on your answers, you seem to have incorporated some key elements in your practice. Here are recommendations that may help you reach the next level!",
+        "en": "Based on your answers, you seem to have incorporated some key elements in your practice. Here are recommendations that may help you reach the next level!",
         "fr": "Selon vos réponses, vous semblez avoir incorporé certains éléments clés dans votre pratique. Voici quelques recommandations"
       }
     },
     {
       "level": "high",
       "title": {
-        "default": "High",
+        "en": "High",
         "fr": "Élevé"
       },
       "message": {
-        "default": "You seem to have incorporate many key elements in your practice. Congratulations!",
+        "en": "You seem to have incorporate many key elements in your practice. Congratulations!",
         "fr": "À compléter"
       }
     }
