@@ -36,8 +36,14 @@
         v-if="section.enabled"
         :section="section"
         :section-name="section.sectionName"
+        :questions-names="section.questionsNames"
+        :user-score="section.userScore"
+        :questions="section.questions"
+        :my-recommendations="myRecommendations"
+        :locale="locale"
       />
     </div>
+    
   </div>
 </template>
 
@@ -67,6 +73,9 @@ import surveyJSON from "@/survey-enfr.json";
     },
     sections() {
       return this.$store.getters.returnAllSections;
+    },
+    myRecommendations() {
+      return this.$store.state.recommendations;
     }
   }
 })
