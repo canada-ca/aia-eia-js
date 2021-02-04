@@ -43,7 +43,6 @@
         :locale="locale"
       />
     </div>
-    
   </div>
 </template>
 
@@ -95,16 +94,17 @@ export default class Results extends Vue {
 
     function beforePrint() {
       for (let i in pageActions) {
-        if (pageActions[i].classList) {
-          pageActions[i].classList.add("hidden");
+        console.log(typeof parseInt(i));
+        if (pageActions[parseInt(i)].classList) {
+          pageActions[parseInt(i)].classList.add("hidden");
         }
       }
     }
 
     function afterPrint() {
       for (let i in pageActions) {
-        if (pageActions[i].classList) {
-          pageActions[i].classList.remove("hidden");
+        if (pageActions[parseInt(i)].classList) {
+          pageActions[parseInt(i)].classList.remove("hidden");
         }
       }
     }
