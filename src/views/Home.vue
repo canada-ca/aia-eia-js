@@ -20,6 +20,14 @@
         v-on:fileLoaded="fileLoaded($event)"
         v-on:startAgain="startAgain"
       />
+      <button
+        type="button"
+        class="btn survey-button"
+        style="width: inherit"
+        v-on:click="test"
+      >
+        Router test
+      </button>
     </form>
     <AssessmentTool :survey="Survey" />
   </div>
@@ -56,6 +64,10 @@ export default class Home extends Vue {
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
     this.$store.commit("updateSurveyData", this.Survey);
+  }
+
+  test() {
+    this.$router.push("test");
   }
 
   @Watch("$i18n.locale")
