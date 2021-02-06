@@ -281,6 +281,9 @@ const store: StoreOptions<RootState> = {
       } else {
         return state.surveyModel;
       }
+    },
+    returnCurrentPageNumber: state => {
+      return state.currentPageNo;
     }
   }
 };
