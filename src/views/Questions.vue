@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch } from "vue-property-decorator";
+import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import { Model } from "survey-vue";
 import showdown from "showdown";
 
@@ -36,6 +36,15 @@ import surveyJSON from "@/survey-enfr.json";
   }
 })
 export default class Questions extends Vue {
+  @Prop() public currentPageNo!: number;
   Survey: Model = new Model(surveyJSON);
+  created() {
+    this.Survey.onComplete.add(result => {
+      this.$store.commit("calculateResult", result);
+      this.$router.push("/results");
+    });
+
+    this.Survey.currentPageNo = this.$store.getters.returnCurrentPageNumber;
+  }
 }
 </script>
