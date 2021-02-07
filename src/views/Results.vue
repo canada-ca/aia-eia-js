@@ -1,6 +1,5 @@
 <template>
   <div class="results">
-    <!--<PrintButton />-->
     <h1>{{ $t("resultTitle") }}</h1>
     <p class="page-actions">
       <a
