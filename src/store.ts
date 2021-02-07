@@ -203,6 +203,12 @@ const updateSectionsScores = (state: RootState, surveyData: SurveyModel) => {
   });
 };
 
+const updateCurrentPageNo = (state: RootState, currentPageNo: number) => {
+  if (currentPageNo >= 0 && currentPageNo < state.sections.length) {
+    state.currentPageNo = currentPageNo;
+  }
+};
+
 const store: StoreOptions<RootState> = {
   plugins: [vuexLocal.plugin],
   state: {
@@ -245,6 +251,10 @@ const store: StoreOptions<RootState> = {
     moveInSection(state: RootState, result: SurveyModel) {
       //enableSection(state);
       //hideOtherSections(state, result);
+    },
+
+    updateCurrentPageNo(state: RootState, currentPageNo: number) {
+      updateCurrentPageNo(state, currentPageNo);
     }
   },
   getters: {
