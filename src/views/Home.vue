@@ -1,40 +1,40 @@
 <template>
   <div class="home">
     <h1>{{ $t("appTitle") }}</h1>
-    <p>
+    <div class="alert alert-info">
+      <p>{{ $t("localSaveWarning") }}</p>
+    </div>
+    <p class="page-actions">
       <a
-        class="btn btn-default pull-right"
+        class="btn btn-default"
         role="button"
         :href="$t('linkProjectAnchor')"
+        style="margin: 3px 2px; width: 290px"
       >
+        <i class="fab fa-github"></i>
         {{ $t("linkProjectText") }}
       </a>
     </p>
-
-    <div class="alert alert-info">
-      <p class="small">{{ $t("localSaveWarning") }}</p>
-    </div>
-
     <form>
       <ActionButtonBar
         v-on:fileLoaded="fileLoaded($event)"
         v-on:startAgain="startAgain"
       />
-      <button
-        type="button"
-        class="btn survey-button"
-        style="width: inherit"
-        v-on:click="test"
-      >
-        Router test
-      </button>
     </form>
-    <AssessmentTool :survey="Survey" />
+    <button
+      type="button"
+      class="btn survey-button"
+      style="width: inherit"
+      v-on:click="goToQuestions"
+      :survey="Survey"
+    >
+      Go to Questions
+    </button>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch } from "vue-property-decorator";
+import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import { Model } from "survey-vue";
 import showdown from "showdown";
 
@@ -52,6 +52,7 @@ import surveyJSON from "@/survey-enfr.json";
 })
 export default class Home extends Vue {
   Survey: Model = new Model(surveyJSON);
+  currentPage: string = "section_three";
 
   startAgain() {
     this.Survey.clear(true, true);
@@ -66,8 +67,10 @@ export default class Home extends Vue {
     this.$store.commit("updateSurveyData", this.Survey);
   }
 
-  test() {
-    this.$router.push("test");
+  goToQuestions() {
+    this.Survey.currentPage = this.currentPage;
+    this.$store.commit("updateSurveyData", this.Survey);
+    this.$router.push("questions");
   }
 
   @Watch("$i18n.locale")
@@ -80,6 +83,7 @@ export default class Home extends Vue {
     this.Survey.css = {
       navigationButton: "btn survey-button"
     };
+    this.Survey.currentPage = this.currentPage;
 
     this.Survey.onComplete.add(result => {
       this.$store.commit("calculateResult", result);
