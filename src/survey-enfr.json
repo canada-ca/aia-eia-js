@@ -20,7 +20,7 @@
         {
           "type": "html",
           "name": "section_all_text",
-          "html":{
+          "html": {
             "default": "<ul><li>Section 1: Version Control and Code Maintainability</li><li>Section 2: Continuous Integration and Deployment</li><li>Section 3: Continuous Testing</li><li>Section 4: Architecture</li><li>Section 5: Cloud Infrastructure</li><li>Section 6: Team Experimentation and Streamlining Change Approval</li><li>Section 7: Customer Feedback and Work Visibility</li><li>Section 8: Data Application Monitoring</li><li>Section 9: Work in Process Limits and Visual Management</li><li>Section 10: Learning and Generative Culture</li><li>Section 11: Transformation and Transformational Leadership</li>\n</br>\n</br>\n\n",
             "fr": "À compléter"
           },
@@ -49,7 +49,7 @@
             "fr": "À compléter"
           },
           "defaultValue": "false",
-          "visibleIf":"{section_all_enable} = false"
+          "visibleIf": "{section_all_enable} = false"
         },
         {
           "type": "boolean",
@@ -199,7 +199,8 @@
       "description": {
         "default": "Please select whether you would like to self-assess all the sections or only some of them. By default all sections are enabled.</br></br>",
         "fr": "À compléter"
-      }
+      },
+      "visible": "false"
     },
     {
       "name": "section_one",
@@ -285,7 +286,6 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_one_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section One - Version Control and Code Maintainability",
         "fr": "À compléter"
@@ -429,7 +429,7 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_two_enable} = true  or {section_all_enable} = true",
+      
       "title": {
         "default": "Section Two - Continuous Integration and Deployment",
         "fr": "À compléter"
@@ -573,7 +573,7 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_three_enable} = true or {section_all_enable} = true",
+      
       "title": {
         "default": "Section Three - Continuous Testing",
         "fr": "À compléter"
@@ -657,7 +657,6 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_four_enable} = true  or {section_all_enable} = true",
       "title": {
         "default": "Section Four - Architecture",
         "fr": "À compléter"
@@ -721,7 +720,6 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_five_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section Five - Cloud Infrastructure",
         "fr": "À compléter"
@@ -845,7 +843,6 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_six_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section 6. Team Experimentation and Streamlining Change Approval",
         "fr": "À compléter"
@@ -959,7 +956,6 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_seven_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section 7: Customer Feedback and Work Visibility",
         "fr": "À compléter"
@@ -1053,7 +1049,6 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_eight_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section 8: Data Application Monitoring",
         "fr": "À compléter"
@@ -1147,7 +1142,6 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_nine_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section Nine - Work In Process Limits and Visual Management",
         "fr": "À compléter"
@@ -1281,7 +1275,6 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_ten_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section Ten - Learning and Generative Culture",
         "fr": "À compléter"
@@ -1355,7 +1348,6 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_eleven_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section Eleven - Transformation and Transformational Leadership",
         "fr": "À compléter"
@@ -1367,6 +1359,6 @@
     }
   ],
   "showQuestionNumbers": "off",
-  "showProgressBar": "top",
+  "showProgressBar": "false",
   "firstPageIsStarted": false
 }
