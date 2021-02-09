@@ -15,6 +15,7 @@ export interface RootState {
 export interface Section {
   sectionName: string;
   enabled: boolean;
+  completed: boolean;
   questionsNames: string[];
   userScore: number;
   questions: Question[];
