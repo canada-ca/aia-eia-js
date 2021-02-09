@@ -23,6 +23,9 @@ export default class MultiChoiceResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
   getItemLabel(str: string, index: any): string {
+    // this.data.data.value is value like 'item6-2'
+    // this.data.data.displayValue is value like 'Legal services'
+    // this.data.choiceData[].en = en label (Legal Services)
     if (this.locale === undefined) {
       const matches = this.data.data.filter((item: any) => item.value === str);
       if (matches.length === 0) return "ERROR: No Matches found";
@@ -36,6 +39,13 @@ export default class MultiChoiceResult extends Vue {
           returnValue = choice[localePass];
         }
       });
+      // no matching choice, because it's user-entered ("Other, please specify")
+      // in that case, just output the user-entered text.
+      if (returnValue == "") {
+        const matches = this.data.data.filter((item: any) => item.value === str);
+        if (matches.length === 0) return "ERROR: No Matches found";
+        returnValue = matches[0].displayValue;
+      }
       return returnValue;
     }
   }
