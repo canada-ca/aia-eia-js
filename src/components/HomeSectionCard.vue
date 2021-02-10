@@ -2,8 +2,6 @@
   <b-card
     :title="section.title"
     footer="This section's status"
-    img="../assets/logo.png"
-    img-alt="Image"
     img-top
     style="min-width: 30rem"
   >
