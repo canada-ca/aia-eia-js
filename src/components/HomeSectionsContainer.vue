@@ -1,9 +1,12 @@
 <template>
   <div>
     <b-card-group deck>
-      <div v-for="section in sections" :key="section.id">
-        <HomeSectionCard :section="section" />
-      </div>
+      <HomeSectionCard
+        v-for="section in sections"
+        :key="section.id"
+        :section="section"
+        :survey="survey"
+      ></HomeSectionCard>
     </b-card-group>
   </div>
 </template>
@@ -11,7 +14,7 @@
 import { Vue, Component, Prop } from "vue-property-decorator";
 import HomeSectionCard from "@/components/HomeSectionCard.vue";
 import { Section } from "@/types";
-import { PageModel } from "survey-vue";
+import { PageModel, SurveyModel } from "survey-vue";
 
 @Component({
   components: { HomeSectionCard },
@@ -19,5 +22,6 @@ import { PageModel } from "survey-vue";
 })
 export default class HomeSectionsContainer extends Vue {
   @Prop() public sections!: PageModel[];
+  @Prop() public survey!: SurveyModel;
 }
 </script>
