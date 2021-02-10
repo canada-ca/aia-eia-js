@@ -21,17 +21,8 @@
         v-on:startAgain="startAgain"
       />
     </form>
-    <button
-      type="button"
-      class="btn survey-button"
-      style="width: inherit"
-      v-on:click="goToQuestions"
-      :survey="Survey"
-    >
-      Go to Questions
-    </button>
     <div>
-      <HomeSectionsContainer :sections="sections" />
+      <HomeSectionsContainer :sections="sections" :survey="Survey" />
     </div>
   </div>
 </template>
@@ -74,12 +65,6 @@ export default class Home extends Vue {
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
     this.$store.commit("updateSurveyData", this.Survey);
-  }
-
-  goToQuestions() {
-    this.Survey.currentPage = this.currentPage;
-    this.$store.commit("updateSurveyData", this.Survey);
-    this.$router.push("questions");
   }
 
   @Watch("$i18n.locale")
