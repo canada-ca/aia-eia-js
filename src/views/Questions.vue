@@ -103,6 +103,7 @@ export default class Questions extends Vue {
     });
 
     this.Survey.currentPageNo = this.$store.getters.returnCurrentPageNumber;
+    this.Survey.data = this.$store.getters.resultsDataSections;
   }
 }
 </script>
