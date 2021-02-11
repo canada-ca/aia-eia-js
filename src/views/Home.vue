@@ -1,49 +1,61 @@
 <template>
   <div class="home">
     <h1>{{ $t("appTitle") }}</h1>
-    <p>
+    <div class="alert alert-info">
+      <details>
+        <summary>{{ $t("notice.localSaveWarningSummary") }}</summary>
+        <p class="small">{{ $t("notice.localSaveWarningParagraph") }}</p>
+      </details>
+    </div>
+    <p class="page-actions">
       <a
-        class="btn btn-default pull-right"
+        class="btn btn-default"
         role="button"
         :href="$t('linkProjectAnchor')"
+        style="margin: 3px 2px; width: 290px"
       >
+        <i class="fab fa-github"></i>
         {{ $t("linkProjectText") }}
       </a>
     </p>
-
-    <div class="alert alert-info">
-      <p class="small">{{ $t("localSaveWarning") }}</p>
-    </div>
-
     <form>
       <ActionButtonBar
         v-on:fileLoaded="fileLoaded($event)"
         v-on:startAgain="startAgain"
       />
     </form>
-    <AssessmentTool :survey="Survey" />
+    <div>
+      <HomeSectionsContainer :sections="sections" :survey="Survey" />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch } from "vue-property-decorator";
-import { Model } from "survey-vue";
+import { Component, Prop, Vue, Watch } from "vue-property-decorator";
+import { Model, PageModel, PanelModel } from "survey-vue";
 import showdown from "showdown";
 
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
+import HomeSectionsContainer from "@/components/HomeSectionsContainer.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
 import surveyJSON from "@/survey-enfr.json";
+import { Section } from "@/types";
+import resultsData from "@/survey-results.json";
+import { returnAllSectionsByPrefix } from "@/store";
 
 @Component({
   components: {
     AssessmentTool,
-    ActionButtonBar
+    ActionButtonBar,
+    HomeSectionsContainer
   }
 })
 export default class Home extends Vue {
   Survey: Model = new Model(surveyJSON);
+  currentPage: string = "section_three";
+  sections: PageModel[] = returnAllSectionsByPrefix(this.Survey, "section_");
 
   startAgain() {
     this.Survey.clear(true, true);
@@ -68,6 +80,7 @@ export default class Home extends Vue {
     this.Survey.css = {
       navigationButton: "btn survey-button"
     };
+    this.Survey.currentPage = this.currentPage;
 
     this.Survey.onComplete.add(result => {
       this.$store.commit("calculateResult", result);

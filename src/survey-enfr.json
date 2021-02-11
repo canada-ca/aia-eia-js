@@ -10,36 +10,37 @@
         {
           "type": "boolean",
           "name": "section_all_enable",
+          "visible": false,
           "title": {
             "default": "Enable all sections?",
             "fr": "Activer toutes les sections?"
           },
-          "defaultValue": "false",
-          "visible": "false"
+          "defaultValue": "false"
         },
         {
           "type": "html",
           "name": "section_all_text",
-          "html":{
+          "visible": false,
+          "visibleIf": "{section_all_enable} = true",
+          "html": {
             "default": "<ul><li>Section 1: Version Control and Code Maintainability</li><li>Section 2: Continuous Integration and Deployment</li><li>Section 3: Continuous Testing</li><li>Section 4: Architecture</li><li>Section 5: Cloud Infrastructure</li><li>Section 6: Team Experimentation and Streamlining Change Approval</li><li>Section 7: Customer Feedback and Work Visibility</li><li>Section 8: Data Application Monitoring</li><li>Section 9: Work in Process Limits and Visual Management</li><li>Section 10: Learning and Generative Culture</li><li>Section 11: Transformation and Transformational Leadership</li>\n</br>\n</br>\n\n",
             "fr": "À compléter"
-          },
-          "visibleIf": "{section_all_enable} = true",
-          "visible": "false"
+          }
         },
         {
           "type": "html",
           "name": "section_selection_text",
+          "visible": false,
+          "visibleIf": "{section_all_enable} = true",
           "html": {
             "default": "Please select which sections you would like to enable for the self-assessment. By default, all sections are disabled.</br></br>",
             "fr": "À compléter"
-          },
-          "visibleIf": "{section_all_enable} = true",
-          "visible": "false"
+          }
         },
         {
           "type": "boolean",
           "name": "section_one_enable",
+          "visibleIf": "{section_all_enable} = false",
           "title": {
             "default": "Section 1: Version Control and Code Maintainability",
             "fr": "À compléter"
@@ -48,12 +49,12 @@
             "default": "Learn how to implement better version control practices for reproducibility and traceability. Make it easy for developers to find, reuse, and change code, and keep dependencies up-to-date.",
             "fr": "À compléter"
           },
-          "defaultValue": "false",
-          "visibleIf":"{section_all_enable} = false"
+          "defaultValue": "false"
         },
         {
           "type": "boolean",
           "name": "section_two_enable",
+          "visibleIf": "{section_all_enable} = false",
           "title": {
             "default": "Section 2: Continuous Integration and Deployment",
             "fr": "À compléter"
@@ -62,12 +63,12 @@
             "default": "Learn about common mistakes, ways to measure, and how to improve on your continuous integration efforts. Best practices and approaches for deployment automation and reducing manual intervention in the release process.",
             "fr": "À compléter"
           },
-          "defaultValue": "false",
-          "visibleIf": "{section_all_enable} = false"
+          "defaultValue": "false"
         },
         {
           "type": "boolean",
           "name": "section_three_enable",
+          "visibleIf": "{section_all_enable} = false",
           "title": {
             "default": "Section 3: Continuous Testing",
             "fr": "À compléter"
@@ -76,12 +77,12 @@
             "default": "Improve software quality by building reliable automated test suits and performing all kinds of testing throughout the software delivery lifecycle. Make deploying software a reliable, low-risk process that can be performed on demand at any time.",
             "fr": "À compléter"
           },
-          "defaultValue": "false",
-          "visibleIf": "{section_all_enable} = false"
+          "defaultValue": "false"
         },
         {
           "type": "boolean",
           "name": "section_four_enable",
+          "visibleIf": "{section_all_enable} = false",
           "title": {
             "default": "Section 4: Architecture",
             "fr": "À compléter"
@@ -90,12 +91,12 @@
             "default": "Learn about moving from a tightly coupled architecture to service-oriented and micro service architectures without re-architecting everything at once. Empower teams to make informed decisions on tools and technologies. Learn how these decisions drive more effective software delivery.",
             "fr": "À compléter"
           },
-          "defaultValue": "false",
-          "visibleIf": "{section_all_enable} = false"
+          "defaultValue": "false"
         },
         {
           "type": "boolean",
           "name": "section_five_enable",
+          "visibleIf": "{section_all_enable} = false",
           "title": {
             "default": "Section 5: Cloud Infrastructure",
             "fr": "À compléter"
@@ -104,12 +105,12 @@
             "default": "Find out how to manage cloud infrastructure effectively so you can achieve higher levels of agility, availability, and cost visibility.",
             "fr": "À compléter"
           },
-          "defaultValue": "false",
-          "visibleIf": "{section_all_enable} = false"
+          "defaultValue": "false"
         },
         {
           "type": "boolean",
           "name": "section_six_enable",
+          "visibleIf": "{section_all_enable} = false",
           "title": {
             "default": "Section 6: Team Experimentation and Streamlining Change Approval",
             "fr": "À compléter"
@@ -118,12 +119,12 @@
             "default": "Innovate faster by building empowered teams that can try out new ideas without approval from people outside the team. Replace heavyweight change-approval process with peer review, to get the benefits of a more reliable, compliant release process without sacrificing speed.",
             "fr": "À compléter"
           },
-          "defaultValue": "false",
-          "visibleIf": "{section_all_enable} = false"
+          "defaultValue": "false"
         },
         {
           "type": "boolean",
           "name": "section_seven_enable",
+          "visibleIf": "{section_all_enable} = false",
           "title": {
             "default": "Section 7: Customer Feedback and Work Visibility",
             "fr": "À compléter"
@@ -132,12 +133,12 @@
             "default": "Drive better organizational outcomes by gathering customer feedback and incorporating it into product and feature design. Understand and visualize the flow of work from idea to customer outcome in order to drive higher performance.",
             "fr": "À compléter"
           },
-          "defaultValue": "false",
-          "visibleIf": "{section_all_enable} = false"
+          "defaultValue": "false"
         },
         {
           "type": "boolean",
           "name": "section_eight_enable",
+          "visibleIf": "{section_all_enable} = false",
           "title": {
             "default": "Section 8: Data Application Monitoring",
             "fr": "Section 8:"
@@ -146,12 +147,12 @@
             "default": "Improve monitoring across infrastructure platforms and the application tier, so you can provide fast feedback to developers. Learn how to build tooling to help you to understand and debug your production system.",
             "fr": "À compléter"
           },
-          "defaultValue": "false",
-          "visibleIf": "{section_all_enable} = false"
+          "defaultValue": "false"
         },
         {
           "type": "boolean",
           "name": "section_nine_enable",
+          "visibleIf": "{section_all_enable} = false",
           "title": {
             "default": "Section 9: Work in Process Limits and Visual Management",
             "fr": "À compléter"
@@ -160,12 +161,12 @@
             "default": "Prioritize work, limit the amount of things that people are working on, and focus on getting a small number of high-priority tasks done. Learn about the principles of visual management to promote information sharing, get a common understanding of where the team is, and how to improve.",
             "fr": "À compléter"
           },
-          "defaultValue": "false",
-          "visibleIf": "{section_all_enable} = false"
+          "defaultValue": "false"
         },
         {
           "type": "boolean",
           "name": "section_ten_enable",
+          "visibleIf": "{section_all_enable} = false",
           "title": {
             "default": "Section 10: Learning and Generative Culture",
             "fr": "À compléter"
@@ -174,12 +175,12 @@
             "default": "Discover how growing a generative, high-trust culture drives better organizational and software delivery performance. Grow a learning culture and understand its impact on your organization performance.",
             "fr": "À compléter"
           },
-          "defaultValue": "false",
-          "visibleIf": "{section_all_enable} = false"
+          "defaultValue": "false"
         },
         {
           "type": "boolean",
           "name": "section_eleven_enable",
+          "visibleIf": "{section_all_enable} = false",
           "title": {
             "default": "Section 11: Transformation and Transformational Leadership",
             "fr": "À compléter"
@@ -188,14 +189,11 @@
             "default": "Learn how effective leaders influence software delivery performance by driving the adoption of technical and product management capabilities.",
             "fr": "À compléter"
           },
-          "defaultValue": "false",
-          "visibleIf": "{section_all_enable} = false"
+          "defaultValue": "false"
         }
       ],
-      "title": {
-        "fr": "Sections",
-        "default": "Sections"
-      },
+      "visible": false,
+      "title": "Sections",
       "description": {
         "default": "Please select whether you would like to self-assess all the sections or only some of them. By default all sections are enabled.</br></br>",
         "fr": "À compléter"
@@ -204,6 +202,14 @@
     {
       "name": "section_one",
       "elements": [
+        {
+          "type": "html",
+          "name": "question102",
+          "html": {
+            "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:",
+            "fr": "À compléter"
+          }
+        },
         {
           "type": "rating",
           "name": "question1",
@@ -285,19 +291,26 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_one_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section One - Version Control and Code Maintainability",
         "fr": "À compléter"
       },
       "description": {
-        "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:</br>",
+        "default": "Learn how to implement better version control practices for reproducibility and traceability. Make it easy for developers to find, reuse, and change code, and keep dependencies up-to-date.",
         "fr": "À compléter"
       }
     },
     {
       "name": "section_two",
       "elements": [
+        {
+          "type": "html",
+          "name": "question104",
+          "html": {
+            "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:",
+            "fr": "À compléter"
+          }
+        },
         {
           "type": "rating",
           "name": "question9",
@@ -429,19 +442,26 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_two_enable} = true  or {section_all_enable} = true",
       "title": {
         "default": "Section Two - Continuous Integration and Deployment",
         "fr": "À compléter"
       },
       "description": {
-        "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:</br>",
-        "fr": "À compléter"
+        "fr": "À compléter",
+        "default": "Learn about common mistakes, ways to measure, and how to improve on your continuous integration efforts. Best practices and approaches for deployment automation and reducing manual intervention in the release process."
       }
     },
     {
       "name": "section_three",
       "elements": [
+        {
+          "type": "html",
+          "name": "question103",
+          "html": {
+            "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:",
+            "fr": "À compléter"
+          }
+        },
         {
           "type": "rating",
           "name": "question22",
@@ -573,19 +593,26 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_three_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section Three - Continuous Testing",
         "fr": "À compléter"
       },
       "description": {
-        "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:</br>",
-        "fr": "À compléter"
+        "fr": "À compléter",
+        "default": "Improve software quality by building reliable automated test suits and performing all kinds of testing throughout the software delivery lifecycle. Make deploying software a reliable, low-risk process that can be performed on demand at any time."
       }
     },
     {
       "name": "section_four",
       "elements": [
+        {
+          "type": "html",
+          "name": "question105",
+          "html": {
+            "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:",
+            "fr": "À compléter"
+          }
+        },
         {
           "type": "rating",
           "name": "question35",
@@ -657,19 +684,26 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_four_enable} = true  or {section_all_enable} = true",
       "title": {
         "default": "Section Four - Architecture",
         "fr": "À compléter"
       },
       "description": {
-        "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:</br>",
-        "fr": "À compléter"
+        "fr": "À compléter",
+        "default": "Learn about moving from a tightly coupled architecture to service-oriented and micro service architectures without re-architecting everything at once. Empower teams to make informed decisions on tools and technologies. Learn how these decisions drive more effective software delivery."
       }
     },
     {
       "name": "section_five",
       "elements": [
+        {
+          "type": "html",
+          "name": "question106",
+          "html": {
+            "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:",
+            "fr": "À compléter"
+          }
+        },
         {
           "type": "rating",
           "name": "question42",
@@ -721,19 +755,23 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_five_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section Five - Cloud Infrastructure",
         "fr": "À compléter"
       },
       "description": {
-        "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
-        "fr": "À compléter"
+        "fr": "À compléter",
+        "default": "Find out how to manage cloud infrastructure effectively so you can achieve higher levels of agility, availability, and cost visibility."
       }
     },
     {
       "name": "section_six",
       "elements": [
+        {
+          "type": "html",
+          "name": "question107",
+          "html": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:"
+        },
         {
           "type": "rating",
           "name": "question47",
@@ -845,19 +883,26 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_six_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section 6. Team Experimentation and Streamlining Change Approval",
         "fr": "À compléter"
       },
       "description": {
-        "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
-        "fr": "À compléter"
+        "fr": "À compléter",
+        "default": "Innovate faster by building empowered teams that can try out new ideas without approval from people outside the team. Replace heavyweight change-approval process with peer review, to get the benefits of a more reliable, compliant release process without sacrificing speed."
       }
     },
     {
       "name": "section_seven",
       "elements": [
+        {
+          "type": "html",
+          "name": "question108",
+          "html": {
+            "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
+            "fr": "À compléter"
+          }
+        },
         {
           "type": "rating",
           "name": "question58",
@@ -959,19 +1004,26 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_seven_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section 7: Customer Feedback and Work Visibility",
         "fr": "À compléter"
       },
       "description": {
-        "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
-        "fr": "À compléter"
+        "fr": "À compléter",
+        "default": "Drive better organizational outcomes by gathering customer feedback and incorporating it into product and feature design. Understand and visualize the flow of work from idea to customer outcome in order to drive higher performance."
       }
     },
     {
       "name": "section_eight",
       "elements": [
+        {
+          "type": "html",
+          "name": "question109",
+          "html": {
+            "default": "How do you watch and understand your systems at work? Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
+            "fr": "À compléter"
+          }
+        },
         {
           "type": "rating",
           "name": "question68",
@@ -1053,19 +1105,26 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_eight_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section 8: Data Application Monitoring",
         "fr": "À compléter"
       },
       "description": {
-        "default": "How do you watch and understand your systems at work? Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
-        "fr": "À compléter"
+        "fr": "À compléter",
+        "default": "Improve monitoring across infrastructure platforms and the application tier, so you can provide fast feedback to developers. Learn how to build tooling to help you to understand and debug your production system."
       }
     },
     {
       "name": "section_nine",
       "elements": [
+        {
+          "type": "html",
+          "name": "question110",
+          "html": {
+            "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
+            "fr": "À compléter"
+          }
+        },
         {
           "type": "rating",
           "name": "question76",
@@ -1147,19 +1206,26 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_nine_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section Nine - Work In Process Limits and Visual Management",
         "fr": "À compléter"
       },
       "description": {
-        "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
-        "fr": "À compléter"
+        "fr": "À compléter",
+        "default": "Prioritize work, limit the amount of things that people are working on, and focus on getting a small number of high-priority tasks done. Learn about the principles of visual management to promote information sharing, get a common understanding of where the team is, and how to improve."
       }
     },
     {
       "name": "section_ten",
       "elements": [
+        {
+          "type": "html",
+          "name": "question111",
+          "html": {
+            "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements as descriptive of your team and the organization:",
+            "fr": "À compléter"
+          }
+        },
         {
           "type": "rating",
           "name": "question84",
@@ -1281,19 +1347,26 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_ten_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section Ten - Learning and Generative Culture",
         "fr": "À compléter"
       },
       "description": {
-        "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements as descriptive of your team and the organization:",
-        "fr": "À compléter"
+        "fr": "À compléter",
+        "default": "Discover how growing a generative, high-trust culture drives better organizational and software delivery performance. Grow a learning culture and understand its impact on your organization performance."
       }
     },
     {
       "name": "section_eleven",
       "elements": [
+        {
+          "type": "html",
+          "name": "question112",
+          "html": {
+            "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements as descriptive of your team and the organization:",
+            "fr": "À compléter"
+          }
+        },
         {
           "type": "rating",
           "name": "question96",
@@ -1355,18 +1428,17 @@
           "rateMax": 7
         }
       ],
-      "visibleIf": "{section_eleven_enable} = true or {section_all_enable} = true",
       "title": {
         "default": "Section Eleven - Transformation and Transformational Leadership",
         "fr": "À compléter"
       },
       "description": {
-        "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements as descriptive of your team and the organization:",
-        "fr": "À compléter"
+        "fr": "À compléter",
+        "default": "Learn how effective leaders influence software delivery performance by driving the adoption of technical and product management capabilities."
       }
     }
   ],
   "showQuestionNumbers": "off",
-  "showProgressBar": "top",
-  "firstPageIsStarted": false
+  "showProgressBar": "false",
+  "showNavigationButtons": "false"
 }

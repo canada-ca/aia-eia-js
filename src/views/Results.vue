@@ -1,7 +1,12 @@
 <template>
   <div class="results">
-    <!--<PrintButton />-->
     <h1>{{ $t("resultTitle") }}</h1>
+    <div class="alert alert-info">
+      <details>
+        <summary>{{ $t("notice.localSaveWarningSummary") }}</summary>
+        <p class="small">{{ $t("notice.localSaveWarningParagraph") }}</p>
+      </details>
+    </div>
     <p class="page-actions">
       <a
         class="btn btn-default"
@@ -42,6 +47,18 @@
         :my-recommendations="myRecommendations"
         :locale="locale"
       />
+    </div>
+    <div class="row" style="padding: 0 5px">
+      <div class="col-3 col-sm-2 col-md-3">
+        <button
+          type="button"
+          class="btn survey-button"
+          style="width: inherit"
+          v-on:click="goToHomePage()"
+        >
+          {{ $t("navigation.chooseAnotherSection") }}
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -86,7 +103,10 @@ export default class Results extends Vue {
   myResults = this.$store.getters.resultsDataSections;
 
   Survey: Model = new Model(surveyJSON);
-
+  goToHomePage() {
+    this.$store.commit("updateSurveyData", this.Survey);
+    this.$router.push("/");
+  }
   exportResults() {
     const source = window.document.getElementById(
       this.$i18n.locale + "-content"

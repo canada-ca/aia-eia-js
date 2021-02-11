@@ -7,7 +7,7 @@ import {
   IQuestion,
   SurveyModel,
   LocalizableString,
-  Question
+  PageModel
 } from "survey-vue";
 import isEmpty from "lodash.isempty";
 import sectionsRecommendations from "./survey-results.json";
@@ -47,11 +47,12 @@ const determineAllSections = (state: RootState, surveyData: SurveyModel) => {
  * @param An object containing the state of the survey.
  * @param surveyData An object containing the survey data.
  */
-const initiateSections = (state: RootState, surveyData: SurveyModel) => {
+const initializeSections = (state: RootState, surveyData: SurveyModel) => {
   state.sectionsNames.forEach(sectionName => {
     const newSection: Section = {
       sectionName: sectionName,
       enabled: false,
+      completed: false,
       questionsNames: [],
       userScore: 0,
       questions: []
@@ -80,7 +81,7 @@ const determineSectionsEnabled = (
 };
 
 /**
- * Getter function returning the localized strings of a Survey.js Panel object.
+ * Function returning the localized strings of a Survey.js Panel object.
  * @param panel A Survey.js panel object.
  */
 export const getLocalizedSurveyString = (panel: any) => {
@@ -104,7 +105,7 @@ const updateSurveyData = (state: RootState, surveyData: SurveyModel) => {
     determineAllSections(state, surveyData);
   }
   if (isEmpty(state.sections)) {
-    initiateSections(state, surveyData);
+    initializeSections(state, surveyData);
   }
   updateSectionsScores(state, surveyData);
 
@@ -155,6 +156,19 @@ const hideOtherSections = (
   }
 };
 
+export function returnAllSectionsByPrefix(
+  surveyData: SurveyModel,
+  prefix: string
+): PageModel[] {
+  let sections: PageModel[] = [];
+  surveyData.pages.forEach(page => {
+    if (page.name.includes(prefix)) {
+      sections.push(page);
+    }
+  });
+  return sections;
+}
+
 /**
  * Helper function validating if the question has a score.
  * @param question A question object to evaluate
@@ -203,6 +217,12 @@ const updateSectionsScores = (state: RootState, surveyData: SurveyModel) => {
   });
 };
 
+const updateCurrentPageNo = (state: RootState, currentPageNo: number) => {
+  if (currentPageNo >= 0 && currentPageNo < state.sections.length) {
+    state.currentPageNo = currentPageNo;
+  }
+};
+
 const store: StoreOptions<RootState> = {
   plugins: [vuexLocal.plugin],
   state: {
@@ -245,9 +265,17 @@ const store: StoreOptions<RootState> = {
     moveInSection(state: RootState, result: SurveyModel) {
       //enableSection(state);
       //hideOtherSections(state, result);
+    },
+
+    updateCurrentPageNo(state: RootState, currentPageNo: number) {
+      updateCurrentPageNo(state, currentPageNo);
+    },
+    initializeSections(state: RootState, result: SurveyModel) {
+      initializeSections(state, result);
     }
   },
   getters: {
+    //Need to update progress status based on completed sections.
     inProgress: state => {
       return !isEmpty(state.toolData);
     },
@@ -281,6 +309,9 @@ const store: StoreOptions<RootState> = {
       } else {
         return state.surveyModel;
       }
+    },
+    returnCurrentPageNumber: state => {
+      return state.currentPageNo;
     }
   }
 };
