@@ -2045,7 +2045,6 @@
                                 "default": "Which Internal Stakeholders will you be engaging?",
                                 "fr": "Quels intervenants internes allez-vous consulter?"
                             },
-                            "hasOther": true,
                             "choices": [
                                 {
                                     "value": "item2",
@@ -2092,11 +2091,23 @@
                                         "default": "Client Experience / Client Relationship Management",
                                         "fr": "Expérience client / Gestion de la relation client"
                                     }
+                                },
+                                {
+                                    "value": "item9",
+                                    "text": {
+                                        "default": "Other (describe)",
+                                        "fr": "Autre (décrire)"
+                                    }
                                 }
-                            ],
-                            "otherText": {
-                                "default": "Other (describe)",
-                                "fr": "Autre (décrire)"
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "consultationDesign2-other",
+                            "visibleIf": "{consultationDesign2} contains \"item9\"",
+                            "title": {
+                                "default": "Please describe",
+                                "fr": "S'il vous plait décrire"
                             }
                         },
                         {
@@ -2131,7 +2142,6 @@
                                 "default": "Which External Stakeholders will you be engaging?",
                                 "fr": "Quels intervenants externes allez-vous consulter?"
                             },
-                            "hasOther": true,
                             "choices": [
                                 {
                                     "value": "item2",
@@ -2153,11 +2163,23 @@
                                         "default": "Industry",
                                         "fr": "Industrie"
                                     }
+                                },
+                                {
+                                    "value": "item9",
+                                    "text": {
+                                        "default": "Other (describe)",
+                                        "fr": "Autre (décrire)"
+                                    }
                                 }
-                            ],
-                            "otherText": {
-                                "default": "Other (describe)",
-                                "fr": "Autre (décrire)"
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "consultationDesign4-other",
+                            "visibleIf": "{consultationDesign4} contains \"item9\"",
+                            "title": {
+                                "default": "Please describe",
+                                "fr": "S'il vous plait décrire"
                             }
                         }
                     ]
@@ -2213,7 +2235,6 @@
                                 "default": "Which Internal Stakeholders have you engaged?",
                                 "fr": "Quels intervenants internes avez-vous consulté?"
                             },
-                            "hasOther": true,
                             "choices": [
                                 {
                                     "value": "item2",
@@ -2260,11 +2281,23 @@
                                         "default": "Client Experience / Client Relationship Management",
                                         "fr": "Expérience client / Gestion de la relation client"
                                     }
+                                },
+                                {
+                                    "value": "item9",
+                                    "text": {
+                                        "default": "Other (describe)",
+                                        "fr": "Autre (décrire)"
+                                    }
                                 }
-                            ],
-                            "otherText": {
-                                "default": "Other (describe)",
-                                "fr": "Autre (décrire)"
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "consultationImplementation2-other",
+                            "visibleIf": "{consultationImplementation2} contains \"item9\"",
+                            "title": {
+                                "default": "Please describe",
+                                "fr": "S'il vous plait décrire"
                             }
                         },
                         {
@@ -2299,7 +2332,6 @@
                                 "default": "Which External Stakeholders have you engaged?",
                                 "fr": "Quels intervenants externes avez-vous consulté?"
                             },
-                            "hasOther": true,
                             "choices": [
                                 {
                                     "value": "item2",
@@ -2321,11 +2353,23 @@
                                         "default": "Industry",
                                         "fr": "Industrie"
                                     }
+                                },
+                                {
+                                    "value": "item9",
+                                    "text": {
+                                        "default": "Other (describe)",
+                                        "fr": "Autre (décrire)"
+                                    }
                                 }
-                            ],
-                            "otherText": {
-                                "default": "Other (describe)",
-                                "fr": "Autre (décrire)"
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "consultationImplementation4-other",
+                            "visibleIf": "{consultationImplementation4} contains \"item9\"",
+                            "title": {
+                                "default": "Please describe",
+                                "fr": "S'il vous plait décrire"
                             }
                         }
                     ]
