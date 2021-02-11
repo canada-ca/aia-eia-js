@@ -34,6 +34,7 @@ import showdown from "showdown";
 
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
+import BaseNavigation from "@/components/BaseNavigation.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
 import surveyJSON from "@/survey-enfr.json";
@@ -41,7 +42,8 @@ import surveyJSON from "@/survey-enfr.json";
 @Component({
   components: {
     AssessmentTool,
-    ActionButtonBar
+    ActionButtonBar,
+    BaseNavigation
   }
 })
 export default class Questions extends Vue {
