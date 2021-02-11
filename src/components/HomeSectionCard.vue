@@ -8,7 +8,7 @@
   >
     <b-card-text
       ><i class="fab fa-github fa-3x"></i>
-      <p>
+      <p class="d-none d-md-block">
         {{ section.description }}
       </p>
     </b-card-text>
