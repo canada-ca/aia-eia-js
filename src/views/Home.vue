@@ -2,7 +2,10 @@
   <div class="home">
     <h1>{{ $t("appTitle") }}</h1>
     <div class="alert alert-info">
-      <p>{{ $t("localSaveWarning") }}</p>
+      <details>
+        <summary>{{ $t("notice.localSaveWarningSummary") }}</summary>
+        <p class="small">{{ $t("notice.localSaveWarningParagraph") }}</p>
+      </details>
     </div>
     <p class="page-actions">
       <a
