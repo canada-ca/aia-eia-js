@@ -1,10 +1,9 @@
 <template>
-  <b-card
-    :title="section.title"
-    footer="This section's status"
-    img-top
-    style="min-width: 30rem"
-  >
+  <b-card footer="This section's status" img-top style="min-width: 30rem">
+    <b-card-header class="row"
+      ><i class="fab fa-github fa-2x col" style="width: 10rem"></i>
+      <h2 class="col">{{ section.title }}</h2>
+    </b-card-header>
     <b-card-text>{{ section.description }} </b-card-text>
     <button
       type="button"
