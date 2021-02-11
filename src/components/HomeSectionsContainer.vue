@@ -13,12 +13,10 @@
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-property-decorator";
 import HomeSectionCard from "@/components/HomeSectionCard.vue";
-import { Section } from "@/types";
 import { PageModel, SurveyModel } from "survey-vue";
 
 @Component({
-  components: { HomeSectionCard },
-  computed: {}
+  components: { HomeSectionCard }
 })
 export default class HomeSectionsContainer extends Vue {
   @Prop() public sections!: PageModel[];
