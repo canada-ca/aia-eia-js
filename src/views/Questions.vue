@@ -24,6 +24,30 @@
       />
     </form>
     <AssessmentTool :survey="Survey" />
+    <div class="page-actions">
+      <div class="row" style="padding: 0 5px">
+        <div class="col-3 col-sm-2 col-md-3">
+          <button
+            type="button"
+            class="btn survey-button"
+            style="width: inherit"
+            v-on:click="goToHomePage()"
+          >
+            {{ $t("navigation.chooseAnotherSection") }}
+          </button>
+        </div>
+        <div class="col-3 col-sm-2 col-md-3">
+          <button
+            type="button"
+            class="btn survey-button"
+            style="width: inherit"
+            v-on:click="goToSectionResults()"
+          >
+            {{ $t("navigation.viewSectionResults") }}
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -42,8 +66,7 @@ import surveyJSON from "@/survey-enfr.json";
 @Component({
   components: {
     AssessmentTool,
-    ActionButtonBar,
-    BaseNavigation
+    ActionButtonBar
   }
 })
 export default class Questions extends Vue {
@@ -61,6 +84,16 @@ export default class Questions extends Vue {
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
     this.$store.commit("updateSurveyData", this.Survey);
+  }
+
+  goToHomePage() {
+    this.$store.commit("updateSurveyData", this.Survey);
+    this.$router.push("/");
+  }
+
+  goToSectionResults() {
+    this.$store.commit("updateSurveyData", this.Survey);
+    this.$router.push("/results");
   }
 
   created() {
