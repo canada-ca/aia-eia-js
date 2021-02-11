@@ -44,6 +44,20 @@ import surveyJSON from "@/survey-enfr.json";
 export default class Questions extends Vue {
   @Prop() public currentPageNo!: number;
   Survey: Model = new Model(surveyJSON);
+
+  startAgain() {
+    this.Survey.clear(true, true);
+    window.localStorage.clear();
+    this.$store.commit("resetSurvey");
+  }
+
+  fileLoaded($event: SurveyFile) {
+    this.Survey.data = $event.data;
+    this.Survey.currentPageNo = $event.currentPage;
+    this.Survey.start();
+    this.$store.commit("updateSurveyData", this.Survey);
+  }
+
   created() {
     this.Survey.onComplete.add(result => {
       this.$store.commit("calculateResult", result);
