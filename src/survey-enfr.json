@@ -1439,5 +1439,6 @@
     }
   ],
   "showQuestionNumbers": "off",
-  "showProgressBar": "false"
+  "showProgressBar": "false",
+  "showNavigationButtons": "false"
 }
