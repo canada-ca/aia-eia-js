@@ -77,7 +77,6 @@ export default class Home extends Vue {
     this.Survey.css = {
       navigationButton: "btn survey-button"
     };
-    this.Survey.currentPage = this.currentPage;
 
     this.Survey.onComplete.add(result => {
       this.$store.commit("calculateResult", result);
