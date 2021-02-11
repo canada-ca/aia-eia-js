@@ -1,6 +1,13 @@
 {
   "navigation": {
-    "launchThisSection": "Lancer cette section"
+    "launchThisSection": "Lancer cette section",
+    "viewSectionResults": "Résultats de la section",
+    "chooseAnotherSection": "Choisir une autre section",
+    "viewAllResults": "Tous les résultats"
+  },
+  "notice": {
+    "localSaveWarningSummary": "Remarque vie privée",
+    "localSaveWarningParagraph": "Les informations contenues dans l'outil d'auto-évaluation DORA ne sont stockées que localement sur votre ordinateur et le gouvernement du Canada n'a pas accès aux informations que vous placez dans l'outil. Si vous souhaitez conserver votre travail, veuillez enregistrer les données localement pour une utilisation future."
   },
   "startAgain": "Recommencer",
   "toPDF": "Imprimer au format PDF",
@@ -8,7 +15,6 @@
   "englishContent": "Contenu en anglais",
   "export": "Exporter",
   "loadFile": "Cliquez pour charger un fichier précédemment enregistré",
-  "localSaveWarning": "Les informations contenues dans l'outil d'auto-évaluation DORA ne sont stockées que localement sur votre ordinateur et le gouvernement du Canada n'a pas accès aux informations que vous placez dans l'outil. Si vous souhaitez conserver votre travail, veuillez enregistrer les données localement pour une utilisation future.",
   "swtchLang": "English",
   "onThisPage": "Sur cette page",
   "htmlCode": "fr-CA",
