@@ -787,7 +787,7 @@
                             "name": "projectDetailsProgram",
                             "title": {
                                 "default": "Departmental Program (from Department Results Framework)",
-                                "fr": "Programme ministériel (Cadre ministériel des résultats"
+                                "fr": "Programme ministériel (Cadre ministériel des résultats)"
                             }
                         },
                         {
@@ -801,7 +801,10 @@
                             "choices": [
                                 {
                                     "value": "item1",
-                                    "text": "Design"
+                                    "text": {
+                                        "default": "Design",
+                                        "fr": "Conception"
+                                    }
                                 },
                                 {
                                     "value": "item2",
