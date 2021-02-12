@@ -121,7 +121,7 @@ export default class ActionButtonBar extends Vue {
     extension = file.name.split(".").pop();
 
     //Error check to inform users they need to submit a JSON file otherwise it will ask them to submit the correct file type
-    if (extension != "json") {
+    if (!extension || extension.toLowerCase() != "json") {
       alert(this.$t("alertNotificationWrongPopUp"));
     }
 
