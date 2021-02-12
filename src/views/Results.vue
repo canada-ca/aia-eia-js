@@ -127,14 +127,14 @@
         </div>
 
         <h2>
-          {{ "Section 1: " + $t("riskLevel", locale) }} {{ ": " + score[3] }}
+          {{ "Section 1: " + $t("riskLevel", "en") }} {{ ": " + score[3] }}
         </h2>
         <div class="pointFormatPDF">
           <p style="word-spacing: 5px">
-            {{ $t("currentScore", locale) }}{{ ": " + score[2] }}
+            {{ $t("currentScore", "en") }}{{ ": " + score[2] }}
           </p>
-          <p>{{ $t("rawRiskScore", locale) }}{{ ": " + score[0] }}</p>
-          <p>{{ $t("mitigationScore", locale) }}{{ ": " + score[1] }}</p>
+          <p>{{ $t("rawRiskScore", "en") }}{{ ": " + score[0] }}</p>
+          <p>{{ $t("mitigationScore", "en") }}{{ ": " + score[1] }}</p>
         </div>
 
         <Obligations locale="en" />
@@ -184,10 +184,10 @@
 
         <div class="pointFormatPDF">
           <p style="word-spacing: 5px">
-            {{ $t("currentScore", locale) }} {{ ": " + score[2] }}
+            {{ $t("currentScore", "fr") }} {{ ": " + score[2] }}
           </p>
-          <p>{{ $t("rawRiskScore", locale) }} {{ ": " + score[0] }}</p>
-          <p>{{ $t("mitigationScore", locale) }} {{ ": " + score[1] }}</p>
+          <p>{{ $t("rawRiskScore", "fr") }} {{ ": " + score[0] }}</p>
+          <p>{{ $t("mitigationScore", "fr") }} {{ ": " + score[1] }}</p>
         </div>
 
         <Obligations locale="fr" />
