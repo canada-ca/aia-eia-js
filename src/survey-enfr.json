@@ -292,8 +292,8 @@
         }
       ],
       "title": {
-        "default": "Section One - Version Control and Code Maintainability",
-        "fr": "À compléter"
+        "default": "Version Control and Code Maintainability",
+        "fr": "Contrôle des versions et maintenabilité du code"
       },
       "description": {
         "default": "Learn how to implement better version control practices for reproducibility and traceability. Make it easy for developers to find, reuse, and change code, and keep dependencies up-to-date.",
@@ -443,8 +443,8 @@
         }
       ],
       "title": {
-        "default": "Section Two - Continuous Integration and Deployment",
-        "fr": "À compléter"
+        "default": "Continuous Integration and Deployment",
+        "fr": "Intégration et déploiement continus"
       },
       "description": {
         "fr": "À compléter",
@@ -594,8 +594,8 @@
         }
       ],
       "title": {
-        "default": "Section Three - Continuous Testing",
-        "fr": "À compléter"
+        "default": "Continuous Testing",
+        "fr": "Tests en continu"
       },
       "description": {
         "fr": "À compléter",
@@ -685,8 +685,8 @@
         }
       ],
       "title": {
-        "default": "Section Four - Architecture",
-        "fr": "À compléter"
+        "default": "Architecture",
+        "fr": "Architecture"
       },
       "description": {
         "fr": "À compléter",
@@ -756,8 +756,8 @@
         }
       ],
       "title": {
-        "default": "Section Five - Cloud Infrastructure",
-        "fr": "À compléter"
+        "default": "Cloud Infrastructure",
+        "fr": "Infrastructure en nuage"
       },
       "description": {
         "fr": "À compléter",
@@ -884,8 +884,8 @@
         }
       ],
       "title": {
-        "default": "Section 6. Team Experimentation and Streamlining Change Approval",
-        "fr": "À compléter"
+        "default": "Team Experimentation and Streamlining Change Approval",
+        "fr": "Expérimentation en équipe et rationalisation de l'approbation des changements"
       },
       "description": {
         "fr": "À compléter",
@@ -1005,8 +1005,8 @@
         }
       ],
       "title": {
-        "default": "Section 7: Customer Feedback and Work Visibility",
-        "fr": "À compléter"
+        "default": "Customer Feedback and Work Visibility",
+        "fr": "Rétroaction des clients et visibilité du travail"
       },
       "description": {
         "fr": "À compléter",
@@ -1106,8 +1106,8 @@
         }
       ],
       "title": {
-        "default": "Section 8: Data Application Monitoring",
-        "fr": "À compléter"
+        "default": "Data Application Monitoring",
+        "fr": "Contrôle de l'application des données"
       },
       "description": {
         "fr": "À compléter",
@@ -1207,8 +1207,8 @@
         }
       ],
       "title": {
-        "default": "Section Nine - Work In Process Limits and Visual Management",
-        "fr": "À compléter"
+        "default": "Work In Process Limits and Visual Management",
+        "fr": "Limites des travaux en cours et gestion visuelle"
       },
       "description": {
         "fr": "À compléter",
@@ -1348,8 +1348,8 @@
         }
       ],
       "title": {
-        "default": "Section Ten - Learning and Generative Culture",
-        "fr": "À compléter"
+        "default": "Learning and Generative Culture",
+        "fr": "Apprentissage et culture génératrice"
       },
       "description": {
         "fr": "À compléter",
@@ -1429,8 +1429,8 @@
         }
       ],
       "title": {
-        "default": "Section Eleven - Transformation and Transformational Leadership",
-        "fr": "À compléter"
+        "default": "Transformation and Transformational Leadership",
+        "fr": "Transformation et leadership transformationnel"
       },
       "description": {
         "fr": "À compléter",
