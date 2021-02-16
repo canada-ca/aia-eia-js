@@ -1,11 +1,29 @@
 <template>
   <div>
     <b-card-body>
-      <p>
+      <ul
+        v-if="
+          getRecommendation(sectionRecommendations, sectionName, '0').title[
+            locale
+          ].length > 1
+        "
+      >
+        <li
+          v-for="item in getRecommendation(
+            sectionRecommendations,
+            sectionName,
+            '0'
+          ).title[locale]"
+          :key="item.id"
+        >
+          {{ item }}
+        </li>
+      </ul>
+      <p v-else>
         {{
           getRecommendation(sectionRecommendations, sectionName, "0").title[
             locale
-          ]
+          ][0]
         }}
       </p>
     </b-card-body>
