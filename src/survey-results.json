@@ -1,27 +1,38 @@
 {
+  "settings": {
+    "score_type": "percentage",
+    "score_tags": "disabled"
+  },
   "sectionRecommendations": [
     {
       "name": "section_one",
       "recommendations": [
         {
           "level": "1",
+          "type": "list",
           "title": {
-            "en": "Ensure that every commit to version control triggers the automated creation of packages that can be deployed to any environment using only information in version control. Make it possible to create production-like test environments on demand using only scripts and configuration information from version control, and to create packages using the automated process described in the previous approach. Script testing and production infrastructure so that teams can add capacity or recover from disasters in a fully automated fashion.",
-            "fr": "À compléter"
+            "en": [
+              "Ensure that every commit to version control triggers the automated creation of packages that can be deployed to any environment using only information in version control.",
+              "Make it possible to create production-like test environments on demand using only scripts and configuration information from version control, and to create packages using the automated process described in the previous approach.",
+              "Script testing and production infrastructure so that teams can add capacity or recover from disasters in a fully automated fashion."
+            ],
+            "fr": ["À compléter", "À compléter", "À compléter"]
           }
         },
         {
           "level": "3",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "5",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         }
       ]
@@ -31,23 +42,26 @@
       "recommendations": [
         {
           "level": "1",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "3",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "5",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         }
       ]
@@ -57,23 +71,26 @@
       "recommendations": [
         {
           "level": "1",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "3",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "5",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         }
       ]
@@ -83,23 +100,26 @@
       "recommendations": [
         {
           "level": "1",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "3",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "5",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         }
       ]
@@ -109,23 +129,26 @@
       "recommendations": [
         {
           "level": "1",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "3",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "5",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         }
       ]
@@ -135,23 +158,26 @@
       "recommendations": [
         {
           "level": "1",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "3",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "5",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         }
       ]
@@ -161,23 +187,26 @@
       "recommendations": [
         {
           "level": "1",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "3",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "5",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         }
       ]
@@ -187,23 +216,26 @@
       "recommendations": [
         {
           "level": "1",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "3",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "5",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         }
       ]
@@ -213,23 +245,26 @@
       "recommendations": [
         {
           "level": "1",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "3",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "5",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         }
       ]
@@ -239,23 +274,26 @@
       "recommendations": [
         {
           "level": "1",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "3",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "5",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         }
       ]
@@ -265,23 +303,26 @@
       "recommendations": [
         {
           "level": "1",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "3",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         },
         {
           "level": "5",
+          "type": "list",
           "title": {
-            "en": "TBC",
-            "fr": "À compléter"
+            "en": ["TBC"],
+            "fr": ["À compléter"]
           }
         }
       ]
