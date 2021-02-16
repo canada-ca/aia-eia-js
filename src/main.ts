@@ -44,18 +44,7 @@ function reloadTemplate() {
       breadcrumbs: [
         {
           title: switchLanguage === "en" ? "Accueil" : "Home",
-          href:
-            switchLanguage === "en"
-              ? "https://www.canada.ca/fr.html"
-              : "https://www.canada.ca/en.html"
-        },
-        {
-          title:
-            switchLanguage === "en" ? "Gouvernement ouvert" : "Open Government",
-          href:
-            switchLanguage === "en"
-              ? "https://ouvert.canada.ca/fr"
-              : "https://open.canada.ca/en"
+          href: switchLanguage === "en" ? "/" : "/"
         }
       ]
     });
