@@ -8,7 +8,7 @@
   >
     <b-card-text
       ><i class="fab fa-github fa-3x"></i>
-      <p class="d-none d-md-block">
+      <p style="font-size: 16px">
         {{ section.description }}
       </p>
     </b-card-text>
@@ -41,3 +41,9 @@ export default class HomeSectionCard extends Vue {
   }
 }
 </script>
+
+<style scoped>
+h2 {
+  font-size: 1.2em !important;
+}
+</style>
