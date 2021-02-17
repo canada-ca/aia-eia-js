@@ -3,7 +3,8 @@
     "launchThisSection": "Launch This Section",
     "viewSectionResults": "View Section Results",
     "chooseAnotherSection": "Choose Another Section",
-    "viewAllResults": "View All Results"
+    "viewAllResults": "View All Results",
+    "goBack": "Back"
   },
   "notice": {
     "localSaveWarningSummary":"Privacy Notice",

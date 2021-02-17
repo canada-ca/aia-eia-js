@@ -3,7 +3,8 @@
     "launchThisSection": "Lancer cette section",
     "viewSectionResults": "Résultats de la section",
     "chooseAnotherSection": "Choisir une autre section",
-    "viewAllResults": "Tous les résultats"
+    "viewAllResults": "Tous les résultats",
+    "goBack": "Retour"
   },
   "notice": {
     "localSaveWarningSummary": "Remarque vie privée",
