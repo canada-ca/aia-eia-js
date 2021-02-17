@@ -33,7 +33,7 @@
             style="width: inherit"
             v-on:click="goToHomePage()"
           >
-            {{ $t("navigation.chooseAnotherSection") }}
+            {{ $t("navigation.goBack") }}
           </button>
         </div>
         <div class="col-3 col-sm-2 col-md-3">

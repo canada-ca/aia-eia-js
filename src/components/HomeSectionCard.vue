@@ -7,8 +7,8 @@
     style="min-width: 30rem"
   >
     <b-card-text
-      ><i class="fab fa-github fa-3x"></i>
-      <p class="d-none d-md-block">
+      ><i :class="setIconClass(icon)"></i>
+      <p style="font-size: 16px">
         {{ section.description }}
       </p>
     </b-card-text>
@@ -28,11 +28,18 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 import { PageModel, SurveyModel } from "survey-vue";
 
 @Component({
-  components: {}
+  components: {},
+  methods: {
+    setIconClass(icon: string) {
+      let classDef: string = "fas fa-" + icon + " fa-3x";
+      return classDef;
+    }
+  }
 })
 export default class HomeSectionCard extends Vue {
   @Prop() public section!: PageModel;
   @Prop() public survey!: SurveyModel;
+  @Prop() public icon!: string;
 
   goToSection(sectionName: string) {
     this.survey.currentPage = sectionName;
@@ -41,3 +48,9 @@ export default class HomeSectionCard extends Vue {
   }
 }
 </script>
+
+<style scoped>
+h2 {
+  font-size: 1.2em !important;
+}
+</style>

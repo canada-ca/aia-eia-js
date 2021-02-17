@@ -25,7 +25,11 @@
       />
     </form>
     <div>
-      <HomeSectionsContainer :sections="sections" :survey="Survey" />
+      <HomeSectionsContainer
+        :sections="sections"
+        :survey="Survey"
+        :section-recommendation="sectionRecommendation"
+      />
     </div>
   </div>
 </template>
@@ -41,7 +45,7 @@ import HomeSectionsContainer from "@/components/HomeSectionsContainer.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
 import surveyJSON from "@/survey-enfr.json";
-import { Section } from "@/types";
+import { SectionRecommendation } from "@/types";
 import resultsData from "@/survey-results.json";
 import { returnAllSectionsByPrefix } from "@/store";
 
@@ -56,7 +60,8 @@ export default class Home extends Vue {
   Survey: Model = new Model(surveyJSON);
   currentPage: string = "section_three";
   sections: PageModel[] = returnAllSectionsByPrefix(this.Survey, "section_");
-
+  sectionRecommendation: SectionRecommendation[] =
+    resultsData.sectionRecommendations;
   startAgain() {
     this.Survey.clear(true, true);
     window.localStorage.clear();
