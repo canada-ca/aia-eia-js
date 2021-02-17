@@ -32,7 +32,6 @@ import { PageModel, SurveyModel } from "survey-vue";
   methods: {
     setIconClass(icon: string) {
       let classDef: string = "fas fa-" + icon + " fa-3x";
-      console.log(classDef);
       return classDef;
     }
   }
