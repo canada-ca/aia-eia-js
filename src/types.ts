@@ -57,6 +57,7 @@ export interface Message {
 
 export interface SectionRecommendation {
   name: string;
+  icon: string;
   recommendations: Recommendation[];
 }
 
