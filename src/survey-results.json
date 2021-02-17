@@ -6,6 +6,7 @@
   "sectionRecommendations": [
     {
       "name": "section_one",
+      "icon": "code-branch",
       "recommendations": [
         {
           "level": "1",
@@ -39,6 +40,7 @@
     },
     {
       "name": "section_two",
+      "icon": "rocket",
       "recommendations": [
         {
           "level": "1",
@@ -68,6 +70,7 @@
     },
     {
       "name": "section_three",
+      "icon": "infinity",
       "recommendations": [
         {
           "level": "1",
@@ -97,6 +100,7 @@
     },
     {
       "name": "section_four",
+      "icon": "sitemap",
       "recommendations": [
         {
           "level": "1",
@@ -126,6 +130,7 @@
     },
     {
       "name": "section_five",
+      "icon": "cloud",
       "recommendations": [
         {
           "level": "1",
@@ -155,6 +160,7 @@
     },
     {
       "name": "section_six",
+      "icon": "vials",
       "recommendations": [
         {
           "level": "1",
@@ -184,6 +190,7 @@
     },
     {
       "name": "section_seven",
+      "icon": "eye",
       "recommendations": [
         {
           "level": "1",
@@ -213,6 +220,7 @@
     },
     {
       "name": "section_eight",
+      "icon": "database",
       "recommendations": [
         {
           "level": "1",
@@ -242,6 +250,7 @@
     },
     {
       "name": "section_nine",
+      "icon": "briefcase",
       "recommendations": [
         {
           "level": "1",
@@ -271,6 +280,7 @@
     },
     {
       "name": "section_ten",
+      "icon": "graduation-cap",
       "recommendations": [
         {
           "level": "1",
@@ -300,6 +310,7 @@
     },
     {
       "name": "section_eleven",
+      "icon": "random",
       "recommendations": [
         {
           "level": "1",
