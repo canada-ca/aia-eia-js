@@ -1,22 +1,7 @@
 <template>
   <div class="results">
     <h1>{{ $t("appTitle") }}</h1>
-    <div class="alert alert-info">
-      <details>
-        <summary>{{ $t("notice.localSaveWarningSummary") }}</summary>
-        <p class="small">{{ $t("notice.localSaveWarningParagraph") }}</p>
-      </details>
-    </div>
-    <p class="page-actions">
-      <a
-        class="btn btn-default pull-right"
-        role="button"
-        :href="$t('linkProjectAnchor')"
-      >
-        <i class="fab fa-github"></i>
-        {{ $t("linkProjectText") }}
-      </a>
-    </p>
+    <BaseNavigation />
     <form>
       <ActionButtonBar
         v-on:fileLoaded="fileLoaded($event)"
@@ -66,7 +51,8 @@ import surveyJSON from "@/survey-enfr.json";
 @Component({
   components: {
     AssessmentTool,
-    ActionButtonBar
+    ActionButtonBar,
+    BaseNavigation
   }
 })
 export default class Questions extends Vue {
@@ -95,7 +81,11 @@ export default class Questions extends Vue {
     this.$store.commit("updateSurveyData", this.Survey);
     this.$router.push("/results");
   }
-
+  @Watch("$i18n.locale")
+  changeLanguage(value: string, oldValue: string) {
+    this.Survey.locale = value;
+    this.Survey.render();
+  }
   created() {
     this.Survey.onComplete.add(result => {
       this.$store.commit("calculateResult", result);

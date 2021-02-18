@@ -1,24 +1,41 @@
 <template>
-  <div class="page-actions">
-    <div class="row no-gutters" style="padding: 0 15px">
-      <div class="col-3 col-sm-2 col-md-3">
-        <button
-          type="button"
-          class="btn survey-button"
-          style="width: inherit"
-          v-on:click="goToHomepage()"
-        >
-          {{ $t("navigation.viewSectionResults") }}
-        </button>
-      </div>
+  <div>
+    <div class="alert alert-info">
+      <details>
+        <summary>{{ $t("notice.localSaveWarningSummary") }}</summary>
+        <p class="small">{{ $t("notice.localSaveWarningParagraph") }}</p>
+      </details>
     </div>
+    <p class="page-actions">
+      <a
+        class="btn btn-default"
+        role="button"
+        :href="$t('linkProjectAnchor')"
+        target="_blank"
+        style="margin: 3px 2px; width: 290px"
+      >
+        <i class="fab fa-github"></i>
+        {{ $t("linkProjectText") }}
+      </a>
+      <button
+        v-if="this.$router.history.current['path'] == '/results'"
+        type="button"
+        value="Export Results"
+        class="btn btn-default"
+        style="margin: 3px 2px; width: 290px"
+        v-on:click="$emit('exportResults')"
+      >
+        <i class="fas fa-file-export"></i>
+        {{ $t("toPDF") }}
+      </button>
+    </p>
   </div>
 </template>
 <script lang="ts">
 import { Model } from "survey-vue";
-import { Vue, Prop } from "vue-property-decorator";
+import { Component, Vue, Prop } from "vue-property-decorator";
+@Component
 export default class BaseNavigation extends Vue {
   @Prop() public survey!: Model;
-  goToHomepage() {}
 }
 </script>

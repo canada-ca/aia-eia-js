@@ -1,23 +1,7 @@
 <template>
   <div class="home">
     <h1>{{ $t("appTitle") }}</h1>
-    <div class="alert alert-info">
-      <details>
-        <summary>{{ $t("notice.localSaveWarningSummary") }}</summary>
-        <p class="small">{{ $t("notice.localSaveWarningParagraph") }}</p>
-      </details>
-    </div>
-    <p class="page-actions">
-      <a
-        class="btn btn-default"
-        role="button"
-        :href="$t('linkProjectAnchor')"
-        style="margin: 3px 2px; width: 290px"
-      >
-        <i class="fab fa-github"></i>
-        {{ $t("linkProjectText") }}
-      </a>
-    </p>
+    <BaseNavigation />
     <form>
       <ActionButtonBar
         v-on:fileLoaded="fileLoaded($event)"
@@ -42,6 +26,7 @@ import showdown from "showdown";
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
 import HomeSectionsContainer from "@/components/HomeSectionsContainer.vue";
+import BaseNavigation from "@/components/BaseNavigation.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
 import surveyJSON from "@/survey-enfr.json";
@@ -53,6 +38,7 @@ import { returnAllSectionsByPrefix } from "@/store";
   components: {
     AssessmentTool,
     ActionButtonBar,
+    BaseNavigation,
     HomeSectionsContainer
   }
 })

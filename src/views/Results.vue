@@ -1,33 +1,8 @@
 <template>
   <div class="results">
     <h1>{{ $t("resultTitle") }}</h1>
-    <div class="alert alert-info">
-      <details>
-        <summary>{{ $t("notice.localSaveWarningSummary") }}</summary>
-        <p class="small">{{ $t("notice.localSaveWarningParagraph") }}</p>
-      </details>
-    </div>
-    <p class="page-actions">
-      <a
-        class="btn btn-default"
-        role="button"
-        :href="$t('linkProjectAnchor')"
-        style="margin: 3px 2px; width: 290px"
-      >
-        <i class="fab fa-github"></i>
-        {{ $t("linkProjectText") }}
-      </a>
-      <button
-        type="button"
-        value="Export Results"
-        class="btn btn-default"
-        style="margin: 3px 2px; width: 290px"
-        v-on:click="exportResults"
-      >
-        <i class="fas fa-file-export"></i>
-        {{ $t("toPDF") }}
-      </button>
-    </p>
+
+    <BaseNavigation v-on:exportResults="exportResults" />
 
     <form>
       <ActionButtonBar
@@ -71,6 +46,7 @@ import ActionButtonBar from "@/components/ActionButtonBar.vue";
 import ResultsContainer from "@/components/ResultsContainer.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import ResultsCard from "@/components/ResultsCard.vue";
+import BaseNavigation from "@/components/BaseNavigation.vue";
 import i18n from "@/plugins/i18n";
 import surveyJSON from "@/survey-enfr.json";
 
@@ -78,7 +54,8 @@ import surveyJSON from "@/survey-enfr.json";
   components: {
     ActionButtonBar,
     ResultsContainer,
-    ResultsCard
+    ResultsCard,
+    BaseNavigation
   },
   computed: {
     sectionNames: function() {
