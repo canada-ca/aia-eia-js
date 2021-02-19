@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Results from "./views/Results.vue";
 import Questions from "./views/Questions.vue";
 import Home from "./views/Home.vue";
+import SectionResults from "./views/SectionResults.vue";
 
 Vue.use(Router);
 
@@ -23,10 +24,12 @@ export default new Router({
       name: "questions",
       component: Questions
     },
+    { path: "/sections", name: "sections", component: Results },
     {
       path: "/results",
       name: "results",
       component: Results
-    }
+    },
+    { path: "*", name: "notFound", component: Home }
   ]
 });

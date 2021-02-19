@@ -2,13 +2,14 @@
   "navigation": {
     "launchThisSection": "Launch This Section",
     "viewSectionResults": "View Section Results",
-    "chooseAnotherSection": "Choose Another Section",
+    "chooseAnotherSection": "Choose Section",
     "viewAllResults": "View All Results",
     "goBack": "Back"
   },
   "notice": {
-    "localSaveWarningSummary":"Privacy Notice",
-    "localSaveWarningParagraph": "Information in the DORA Assessment is only stored locally on your computer, and the Government of Canada does not have access to the information you place into the tool. If you wish to keep your work, please save the data locally for future use."
+    "localSaveWarningSummary": "Privacy Notice",
+    "localSaveWarningParagraph": "Information in the DORA Assessment is only stored locally on your computer, and the Government of Canada does not have access to the information you place into the tool. If you wish to keep your work, please save the data locally for future use.",
+    "noProgress": "The self-assessment has not yet started. Please choose a section to complete."
   },
   "startAgain": "Start Again",
   "toPDF": "Print to PDF",
@@ -30,7 +31,8 @@
   "currentScore": "Current Score",
   "rawRiskScore": "Raw Impact Score",
   "mitigationScore": "Mitigation Score",
-  "resultTitle": "DORA DevOps Assessment Results",
+  "sectionResultsTitle": "Section Results",
+  "resultTitle": "All Results",
   "resultScore": "Final Score",
   "resultSectionMeasure": "Mitigation Measures",
   "resultSectionQA": "Questions and Answers",

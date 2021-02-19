@@ -21,7 +21,8 @@ const vuexLocal = new VuexPersistence({
   storage: window.localStorage,
   reducer: (state: RootState) => ({
     toolData: state.toolData,
-    currentPageNo: state.currentPageNo
+    currentPageNo: state.currentPageNo,
+    currentPageName: state.currentPageName
   })
 });
 
@@ -156,6 +157,11 @@ const hideOtherSections = (
   }
 };
 
+/**
+ * Helper function to return all Survey sections based on a defined prefix
+ * @param surveyData An object containing the survey data.
+ * @param prefix A string containing the prefix
+ */
 export function returnAllSectionsByPrefix(
   surveyData: SurveyModel,
   prefix: string
@@ -223,6 +229,12 @@ const updateCurrentPageNo = (state: RootState, currentPageNo: number) => {
   }
 };
 
+const updateCurrentPageName = (state: RootState, currentPageName: string) => {
+  if (currentPageName.length > 0) {
+    state.currentPageName = currentPageName;
+  }
+};
+
 const store: StoreOptions<RootState> = {
   plugins: [vuexLocal.plugin],
   state: {
@@ -234,7 +246,9 @@ const store: StoreOptions<RootState> = {
     surveyModel: undefined,
     toolData: undefined,
     currentPageNo: 0,
-    recommendations: undefined
+    currentPageName: undefined,
+    recommendations: undefined,
+    toolVersion: sectionsRecommendations.settings.version
   },
   mutations: {
     // mutation to reset the state when a user resets the survey
@@ -246,6 +260,7 @@ const store: StoreOptions<RootState> = {
       state.sectionsEnabled = [];
       state.surveyModel = undefined;
       state.currentPageNo = 0;
+      state.currentPageName = undefined;
       state.toolData = {};
       state.recommendations = undefined;
     },
@@ -270,6 +285,10 @@ const store: StoreOptions<RootState> = {
     updateCurrentPageNo(state: RootState, currentPageNo: number) {
       updateCurrentPageNo(state, currentPageNo);
     },
+    updateCurrentPageName(state: RootState, currentPageName: string) {
+      updateCurrentPageName(state, currentPageName);
+    },
+
     initializeSections(state: RootState, result: SurveyModel) {
       initializeSections(state, result);
     }
@@ -290,6 +309,16 @@ const store: StoreOptions<RootState> = {
       if (sectionsNames.length === 0) {
         return undefined;
       } else return sectionsNames;
+    },
+    returnSectionByName: state => (sectionName: string) => {
+      return state.sections.find(section => {
+        return section.sectionName === sectionName;
+      });
+    },
+    returnCurrentSection: state => {
+      return state.sections.find(section => {
+        return section.sectionName === state.currentPageName;
+      });
     },
     resultsDataSections: state => {
       let allResults = [];

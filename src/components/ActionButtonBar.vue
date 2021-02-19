@@ -1,10 +1,23 @@
 <template>
   <div class="page-actions">
     <div v-if="$store.getters.inProgress">
-      <div class="row no-gutters" style="padding: 0 15px">
-        <div
-          class="col-3 col-sm-2 col-md-3 "
-          style="max-width: 120px; margin: 0 2px;"
+      <b-row class="no-gutters" align-h="center" style="padding: 0 15px">
+        <b-col
+          class="col-lg-2 col-sm-5 col-md-10 col-xs-6"
+          style="margin: 0 165px 0 2px;"
+        >
+          <input
+            type="file"
+            class="btn btn-default"
+            :title="$t('loadFile')"
+            value="Load"
+            style="padding: 0"
+            @change="onFileChanged($event)"
+          />
+        </b-col>
+        <b-col
+          class="col-lg-2 col-sm-5 col-md-3 col-xs-6"
+          style="margin: 2px 2px;"
         >
           <button
             type="button"
@@ -14,10 +27,10 @@
           >
             {{ $t("saveButton") }}
           </button>
-        </div>
-        <div
-          class="col-3 col-sm-3 col-md-3 "
-          style="max-width: 140px; margin: 0 2px;"
+        </b-col>
+        <b-col
+          class="col-lg-2 col-sm-5 col-md-3 col-xs-6"
+          style="margin: 2px 2px;"
         >
           <button
             type="button"
@@ -28,26 +41,23 @@
           >
             {{ $t("startAgain") }}
           </button>
-        </div>
-        <div class="col-md-3 col-sm-12">
+        </b-col>
+      </b-row>
+    </div>
+    <div v-else>
+      <b-row align-h="center">
+        <b-col class="col-sm-3" style="margin: 2px 2px;">
           <input
             type="file"
             class="btn btn-default"
-            :title="$t('loadFile')"
             value="Load"
+            :title="$t('loadFile')"
             @change="onFileChanged($event)"
           />
-        </div>
-      </div>
-    </div>
-    <div v-else>
-      <input
-        type="file"
-        class="btn btn-default"
-        value="Load"
-        :title="$t('loadFile')"
-        @change="onFileChanged($event)"
-      />
+        </b-col>
+        <b-col class="col-sm-2 col-xs-6" style="margin: 2px 2px;"></b-col>
+        <b-col class="col-sm-2 col-xs-6" style="margin: 2px 2px;"></b-col>
+      </b-row>
     </div>
   </div>
 </template>

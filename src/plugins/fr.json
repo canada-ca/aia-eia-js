@@ -2,13 +2,14 @@
   "navigation": {
     "launchThisSection": "Lancer cette section",
     "viewSectionResults": "Résultats de la section",
-    "chooseAnotherSection": "Choisir une autre section",
+    "chooseAnotherSection": "Choisir une section",
     "viewAllResults": "Tous les résultats",
     "goBack": "Retour"
   },
   "notice": {
     "localSaveWarningSummary": "Remarque vie privée",
-    "localSaveWarningParagraph": "Les informations contenues dans l'outil d'auto-évaluation DORA ne sont stockées que localement sur votre ordinateur et le gouvernement du Canada n'a pas accès aux informations que vous placez dans l'outil. Si vous souhaitez conserver votre travail, veuillez enregistrer les données localement pour une utilisation future."
+    "localSaveWarningParagraph": "Les informations contenues dans l'outil d'auto-évaluation DORA ne sont stockées que localement sur votre ordinateur et le gouvernement du Canada n'a pas accès aux informations que vous placez dans l'outil. Si vous souhaitez conserver votre travail, veuillez enregistrer les données localement pour une utilisation future.",
+    "noProgress":"L'autoévaluation n'a pas encore commencée. Veuillez choisir une section à compléter."
   },
   "startAgain": "Recommencer",
   "toPDF": "Imprimer au format PDF",
@@ -30,7 +31,8 @@
   "currentScore": "Cote actuelle",
   "rawRiskScore": "Cote d'incidence brute",
   "mitigationScore": "Cote d'atténuation",
-  "resultTitle": "Résultats de l'Évaluation de DORA DevOps",
+  "sectionResultsTitle": "Résultats pour la section",
+  "resultTitle": "Tous les résultats",
   "resultScore": "Cote finale",
   "resultSectionMeasure": "Mesures d'atténuation",
   "resultSectionQA": "Questions et réponses",

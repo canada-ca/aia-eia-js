@@ -7,16 +7,6 @@
       </details>
     </div>
     <p class="page-actions">
-      <a
-        class="btn btn-default"
-        role="button"
-        :href="$t('linkProjectAnchor')"
-        target="_blank"
-        style="margin: 3px 2px; width: 290px"
-      >
-        <i class="fab fa-github"></i>
-        {{ $t("linkProjectText") }}
-      </a>
       <button
         v-if="this.$router.history.current['path'] == '/results'"
         type="button"

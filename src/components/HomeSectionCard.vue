@@ -44,7 +44,8 @@ export default class HomeSectionCard extends Vue {
   goToSection(sectionName: string) {
     this.survey.currentPage = sectionName;
     this.$store.commit("updateSurveyData", this.survey);
-    this.$router.push("questions");
+    this.$store.commit("updateCurrentPageName", sectionName);
+    this.$router.push("/questions");
   }
 }
 </script>

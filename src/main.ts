@@ -70,76 +70,24 @@ function reloadTemplate() {
         {
           href:
             switchLanguage === "en"
-              ? "/fr/formulaire/faites-nous-part-de-vos-commentaires"
-              : "/en/forms/contact-us",
-          text:
-            switchLanguage === "en"
-              ? "Contactez-nous du gouvernement ouvert"
-              : "Open Government Contact"
+              ? "https://sara-sabr.github.io/ITStrategy/a-propos-de-nous.html"
+              : "https://sara-sabr.github.io/ITStrategy/about-us.html",
+          text: switchLanguage === "en" ? "À propos de nous" : "About us"
+        },
+        {
+          href: switchLanguage === "en" ? "/" : "/",
+          text: switchLanguage === "en" ? "Fonctionnement" : "How it works"
+        },
+        {
+          href: switchLanguage === "en" ? "/" : "/",
+          text: switchLanguage === "en" ? "Contactez-nous" : "Contact us"
         },
         {
           href:
             switchLanguage === "en"
-              ? "https://www.canada.ca/fr/gouvernement/min.html"
-              : "https://www.canada.ca/en/government/dept.html",
-          text:
-            switchLanguage === "en"
-              ? "Ministères et organismes"
-              : "Departments and agencies"
-        },
-        {
-          href:
-            switchLanguage === "en"
-              ? "https://www.canada.ca/fr/gouvernement/fonctionpublique.html"
-              : "https://www.canada.ca/en/government/publicservice.html",
-          text:
-            switchLanguage === "en"
-              ? "Fonction publique et force militaire"
-              : "Public service and military"
-        },
-        {
-          href:
-            switchLanguage === "en"
-              ? "http://nouvelles.gc.ca/"
-              : "http://news.gc.ca/",
-          text: switchLanguage === "en" ? "Nouvelles" : "News"
-        },
-        {
-          href:
-            switchLanguage === "en"
-              ? "https://www.canada.ca/fr/gouvernement/systeme/lois.html"
-              : "https://www.canada.ca/en/government/system/laws.html",
-          text:
-            switchLanguage === "en"
-              ? "Traités, lois et règlements"
-              : "Treaties, laws and regulations"
-        },
-        {
-          href:
-            switchLanguage === "en"
-              ? "https://www.canada.ca/fr/transparence/rapports.html"
-              : "https://www.canada.ca/en/transparency/reporting.html",
-          text:
-            switchLanguage === "en"
-              ? "Rapports à l'échelle du gouvernement"
-              : "Government-wide reporting"
-        },
-        {
-          href: switchLanguage === "en" ? "/fr/user" : "/en/user",
-          text:
-            switchLanguage === "en"
-              ? "Ouverture de session Gouvernement ouvert"
-              : "Open Government Log In"
-        },
-        {
-          href:
-            switchLanguage === "en"
-              ? "https://www.canada.ca/fr/gouvernement/systeme.html"
-              : "https://www.canada.ca/en/government/system.html",
-          text:
-            switchLanguage === "en"
-              ? "Comment le gouvernement fonctionne"
-              : "How government works"
+              ? "https://github.com/sara-sabr/dora-js"
+              : "https://github.com/sara-sabr/dora-js",
+          text: switchLanguage === "en" ? "Code source" : "Source code"
         }
       ],
       showFeatures: false

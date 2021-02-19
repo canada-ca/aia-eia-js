@@ -1,5 +1,6 @@
 {
   "settings": {
+    "version": "0.0.1",
     "score_type": "percentage",
     "score_tags": "disabled"
   },

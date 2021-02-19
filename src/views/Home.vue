@@ -44,7 +44,6 @@ import { returnAllSectionsByPrefix } from "@/store";
 })
 export default class Home extends Vue {
   Survey: Model = new Model(surveyJSON);
-  currentPage: string = "section_three";
   sections: PageModel[] = returnAllSectionsByPrefix(this.Survey, "section_");
   sectionRecommendation: SectionRecommendation[] =
     resultsData.sectionRecommendations;
@@ -71,7 +70,6 @@ export default class Home extends Vue {
     this.Survey.css = {
       navigationButton: "btn survey-button"
     };
-    this.Survey.currentPage = this.currentPage;
 
     this.Survey.onComplete.add(result => {
       this.$store.commit("calculateResult", result);
