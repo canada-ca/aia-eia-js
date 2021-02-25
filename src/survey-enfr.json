@@ -12,7 +12,7 @@
           "name": "question102",
           "html": {
             "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:",
-            "fr": "À compléter"
+            "fr": "Évaluez dans quelle mesure vous êtes fortement d’accord ou en désaccord avec les énoncés suivants.<br/>Pour l’application ou le service principal auquel mon équipe travaille:"
           }
         },
         {
@@ -20,7 +20,7 @@
           "name": "question1",
           "title": {
             "default": "We can recover application code from the version control system.",
-            "fr": "À compléter"
+            "fr": "Nous pouvons récupérer le code d’application du système de contrôle des versions."
           },
           "isRequired": true,
           "rateMax": 7
@@ -30,7 +30,7 @@
           "name": "question2",
           "title": {
             "default": "We can reconfigure systems from files in the version control system.",
-            "fr": "À compléter"
+            "fr": "Nous pouvons reconfigurer les systèmes à partir de fichiers du système de contrôle des versions."
           },
           "isRequired": true,
           "rateMax": 7
@@ -40,7 +40,7 @@
           "name": "question3",
           "title": {
             "default": "It is easy to change code maintained by other teams if we need to.",
-            "fr": "À compléter"
+            "fr": "Il est facile de modifier le code maintenu par les autres équipes, si besoin est."
           },
           "isRequired": true,
           "rateMax": 7
@@ -50,7 +50,7 @@
           "name": "question4",
           "title": {
             "default": "It is easy to find examples in our codebase.",
-            "fr": "À compléter"
+            "fr": "Il est facile de trouver des exemples dans notre base de codes."
           },
           "isRequired": true,
           "rateMax": 7
@@ -60,7 +60,7 @@
           "name": "question5",
           "title": {
             "default": "It is easy to reuse other people’s code.",
-            "fr": "À compléter"
+            "fr": "Il est facile de réutiliser le code des autres personnes."
           },
           "isRequired": true,
           "rateMax": 7
@@ -70,7 +70,7 @@
           "name": "question6",
           "title": {
             "default": "It is easy to add new dependencies to a project.",
-            "fr": "À compléter"
+            "fr": "Il est facile d’ajouter de nouvelles interrelations à un projet"
           },
           "isRequired": true,
           "rateMax": 7
@@ -80,7 +80,7 @@
           "name": "question7",
           "title": {
             "default": "It is easy to migrate to a new version of a dependency.",
-            "fr": "À compléter"
+            "fr": "Il est facile de passer à la nouvelle version d’une interrelation."
           },
           "isRequired": true,
           "rateMax": 7
@@ -90,7 +90,7 @@
           "name": "question8",
           "title": {
             "default": "Dependencies are stable and rarely break teams’ code.",
-            "fr": "À compléter"
+            "fr": "Les interrelations sont stables et les infractions à notre code sont rares."
           },
           "isRequired": true,
           "rateMax": 7
@@ -102,7 +102,7 @@
       },
       "description": {
         "default": "Learn how to implement better version control practices for reproducibility and traceability. Make it easy for developers to find, reuse, and change code, and keep dependencies up-to-date.",
-        "fr": "À compléter"
+        "fr": "Apprendre comment mettre en œuvre des pratiques améliorées dans le contrôle des versions pour garantir la reproductibilité et la traçabilité. Faciliter la tâche des développeurs qui doivent trouver, réutiliser et modifier le code de même que tenir à jour les interrelations."
       }
     },
     {
@@ -113,7 +113,7 @@
           "name": "question104",
           "html": {
             "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:",
-            "fr": "À compléter"
+            "fr": "Évaluez dans quelle mesure vous êtes fortement d’accord ou en désaccord avec les énoncés suivants.</br>Pour l’application ou le service principal auquel mon équipe travaille:"
           }
         },
         {
@@ -121,7 +121,7 @@
           "name": "question9",
           "title": {
             "default": "Code commits result in an automated build of the software.",
-            "fr": "À compléter"
+            "fr": "Les validations de code se traduisent par un script de construction automatisée du logiciel."
           },
           "isRequired": true,
           "rateMax": 7
@@ -131,7 +131,7 @@
           "name": "question10",
           "title": {
             "default": "Code commits result in a series of automated tests being run.",
-            "fr": "À compléter"
+            "fr": "Les validations de code se traduisent par la tenue d’une série de tests automatisés."
           },
           "isRequired": true,
           "rateMax": 7
@@ -141,7 +141,7 @@
           "name": "question11",
           "title": {
             "default": "Automated builds and tests are executed successfully every day.",
-            "fr": "À compléter"
+            "fr": "L’exécution des scripts de construction et des tests automatisés tests est réussie chaque jour."
           },
           "isRequired": true,
           "rateMax": 7
@@ -151,7 +151,7 @@
           "name": "question12",
           "title": {
             "default": "Current builds are available to testers for exploratory testing.",
-            "fr": "À compléter"
+            "fr": "Les testeurs ont accès aux scripts de construction qui ont cours pour procéder à des tests exploratoires."
           },
           "isRequired": true,
           "rateMax": 7
@@ -161,7 +161,7 @@
           "name": "question13",
           "title": {
             "default": "Developers get feedback from the acceptance and performance tests every day.",
-            "fr": "À compléter"
+            "fr": "Les développeurs reçoivent quotidiennement les commentaires relatifs aux tests d’acceptation et de rendement."
           },
           "isRequired": true,
           "rateMax": 7
@@ -171,7 +171,7 @@
           "name": "question14",
           "title": {
             "default": "Our software is in a deployable state throughout its lifecycle.",
-            "fr": "À compléter"
+            "fr": "Nos logiciels sont en mesure d’être déployés tout au long de leur cycle de vie."
           },
           "isRequired": true,
           "rateMax": 7
@@ -181,7 +181,7 @@
           "name": "question15",
           "title": {
             "default": "My team prioritizes keeping the software deployable over working on new features.",
-            "fr": "À compléter"
+            "fr": "Mon équipe cherche à maintenir la déployabilité des logiciels avant de travailler à de nouvelles fonctionnalités."
           },
           "isRequired": true,
           "rateMax": 7
@@ -191,7 +191,7 @@
           "name": "question16",
           "title": {
             "default": "Fast feedback on the quality and deployability of the system is available to anyone on the team.",
-            "fr": "À compléter"
+            "fr": "Tous les membres de l’équipe ont accès rapidement aux commentaires sur la qualité et la déployabilité du système."
           },
           "isRequired": true,
           "rateMax": 7
@@ -201,7 +201,7 @@
           "name": "question17",
           "title": {
             "default": "When people get feedback that the system is not deployable (such as failing builds or tests), they make fixing these issues their highest priority.",
-            "fr": "À compléter"
+            "fr": "Lorsque les effectifs apprennent que le système ne peut être déployé (à cause de scripts de construction ou de tests défaillants), ils cherchent avant toute chose à résoudre les problèmes s’y rapportant."
           },
           "isRequired": true,
           "rateMax": 7
@@ -211,7 +211,7 @@
           "name": "question18",
           "title": {
             "default": "We can deploy our system to production, or to end users, at any time, on demand.",
-            "fr": "À compléter"
+            "fr": "Nous pouvons déployer notre système à la production ou aux utilisateurs finaux en tout temps, à la demande."
           },
           "isRequired": true,
           "rateMax": 7
@@ -221,7 +221,7 @@
           "name": "question19",
           "title": {
             "default": "Features undergo security review early in the design process.",
-            "fr": "À compléter"
+            "fr": "Les fonctionnalités font l’objet d’un examen de sécurité au début du processus de conception."
           },
           "isRequired": true,
           "rateMax": 7
@@ -231,7 +231,7 @@
           "name": "question20",
           "title": {
             "default": "Security reviews do not slow down the development cycle.",
-            "fr": "À compléter"
+            "fr": "Les examens de sécurité n’occasionnent pas le ralentissement du cycle de développement."
           },
           "isRequired": true,
           "rateMax": 7
@@ -241,7 +241,7 @@
           "name": "question21",
           "title": {
             "default": "Security requirements are included in the automated testing process.",
-            "fr": "À compléter"
+            "fr": "Les exigences en matière de sécurité font partie du processus de test automatisé."
           },
           "isRequired": true,
           "rateMax": 7
@@ -252,7 +252,7 @@
         "fr": "Intégration et déploiement continus"
       },
       "description": {
-        "fr": "À compléter",
+        "fr": "Apprenez-en sur les erreurs fréquentes, les moyens de mesurer et la façon de rehausser vos initiatives d’intégration continue. Meilleures pratiques et approches pour automatiser les déploiements et réduire les interventions manuelles dans le processus de lancement.",
         "default": "Learn about common mistakes, ways to measure, and how to improve on your continuous integration efforts. Best practices and approaches for deployment automation and reducing manual intervention in the release process."
       }
     },
@@ -263,8 +263,8 @@
           "type": "html",
           "name": "question103",
           "html": {
-            "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:",
-            "fr": "À compléter"
+            "default": "Please rate how strongly you agree or disagree with the following statements.</br>For the primary application or service my team works on:",
+            "fr": "Évaluez dans quelle mesure vous êtes fortement d’accord ou en désaccord avec les énoncés suivants.</br>Pour l’application ou le service principal auquel mon équipe travaille :"
           }
         },
         {
@@ -272,7 +272,7 @@
           "name": "question22",
           "title": {
             "default": "Developers primarily create and maintain acceptance tests.",
-            "fr": "À compléter"
+            "fr": "Les développeurs ont pour fonction principale de créer des tests de validation et de les tenir à jour."
           },
           "isRequired": true,
           "rateMax": 7
@@ -282,7 +282,7 @@
           "name": "question23",
           "title": {
             "default": "When the automated tests pass, we are confident the software is releasable.",
-            "fr": "À compléter"
+            "fr": "Lorsque les tests automatisés réussissent, nous avons l’assurance que le logiciel peut être diffusé."
           },
           "isRequired": true,
           "rateMax": 7
@@ -292,7 +292,7 @@
           "name": "question24",
           "title": {
             "default": "Test failures are likely to indicate a real defect.",
-            "fr": "À compléter"
+            "fr": "Les défaillances révélées par les tests sont vraisemblablement révélatrices d’un défaut concret."
           },
           "isRequired": true,
           "rateMax": 7
@@ -302,7 +302,7 @@
           "name": "question25",
           "title": {
             "default": "It is easy for developers to fix acceptance test failures.",
-            "fr": "À compléter"
+            "fr": "Il est facile pour les développeurs de corriger les défaillances des tests de validation."
           },
           "isRequired": true,
           "rateMax": 7
@@ -312,7 +312,7 @@
           "name": "question26",
           "title": {
             "default": "Developers use their own development environment to reproduce acceptance failures.",
-            "fr": "À compléter"
+            "fr": "Les développeurs se servent de leur propre environnement de développement pour reproduire les défaillances de validation."
           },
           "isRequired": true,
           "rateMax": 7
@@ -322,7 +322,7 @@
           "name": "question27",
           "title": {
             "default": "Automated tests are seamlessly integrated into our software delivery tech bricks.",
-            "fr": "À compléter"
+            "fr": "Les tests automatisés s’intègrent harmonieusement à nos briques technologiques de livraison de logiciels."
           },
           "isRequired": true,
           "rateMax": 7
@@ -332,7 +332,7 @@
           "name": "question28",
           "title": {
             "default": "We continuously review and improve our test suite to better find defects and keep complexity and cost under control.",
-            "fr": "À compléter"
+            "fr": "Nous procédons constamment à l’examen et à l’amélioration de notre série de tests pour déceler efficacement les défauts de même que maîtriser la complexité et les coûts."
           },
           "isRequired": true,
           "rateMax": 7
@@ -342,7 +342,7 @@
           "name": "question29",
           "title": {
             "default": "Testers work alongside developers throughout the software development and delivery process.",
-            "fr": "À compléter"
+            "fr": "Les testeurs travaillent de concert avec les développeurs tout au long du processus de développement et de livraison des logiciels."
           },
           "isRequired": true,
           "rateMax": 7
@@ -352,7 +352,7 @@
           "name": "question30",
           "title": {
             "default": "Manual test activities such as exploratory testing, usability testing, and acceptance testing are performed continuously throughout the delivery process.",
-            "fr": "À compléter"
+            "fr": "Les activités des tests manuels, comme les tests exploratoires, les tests de facilité d’utilisation et les tests de validation, sont exécutées constamment tout au long du processus de livraison."
           },
           "isRequired": true,
           "rateMax": 7
@@ -362,7 +362,7 @@
           "name": "question31",
           "title": {
             "default": "Developers practice test-driven development by writing unit tests before writing production code for all changes to the codebase.",
-            "fr": "À compléter"
+            "fr": "Les développeurs mettent en pratique le développement piloté par les tests : ils rédigent les tests unitaires avant de rédiger le code de production des changements apportés à la base de codes."
           },
           "isRequired": true,
           "rateMax": 7
@@ -372,7 +372,7 @@
           "name": "question32",
           "title": {
             "default": "Adequate test data is available to run full automated test suites.",
-            "fr": "À compléter"
+            "fr": "Des données de tests adéquates sont accessibles pour exécuter des séries de tests entièrement automatisés."
           },
           "isRequired": true,
           "rateMax": 7
@@ -382,7 +382,7 @@
           "name": "question33",
           "title": {
             "default": "Test data can be acquired on demand.",
-            "fr": "À compléter"
+            "fr": "Des données de tests peuvent être obtenues sur demande."
           },
           "isRequired": true,
           "rateMax": 7
@@ -392,7 +392,7 @@
           "name": "question34",
           "title": {
             "default": "Test data does not limit or constrain the automated tests that we can run.",
-            "fr": "À compléter"
+            "fr": "Les données de tests ne limitent ni n’entravent les tests automatisés que nous pouvons exécuter."
           },
           "isRequired": true,
           "rateMax": 7
@@ -403,7 +403,7 @@
         "fr": "Tests en continu"
       },
       "description": {
-        "fr": "À compléter",
+        "fr": "Améliorer la qualité des logiciels par la création de séries de tests automatisés fiables et l’exécution de toutes sortes de tests tout au long du cycle de vie de livraison des logiciels. Faire du déploiement des logiciels un processus fiable et peu risqué qu’on peut exécuter à la demande et en tout temps.",
         "default": "Improve software quality by building reliable automated test suits and performing all kinds of testing throughout the software delivery lifecycle. Make deploying software a reliable, low-risk process that can be performed on demand at any time."
       }
     },
@@ -415,7 +415,7 @@
           "name": "question105",
           "html": {
             "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>For the primary application or service my team works on:",
-            "fr": "À compléter"
+            "fr": "Évaluez dans quelle mesure vous êtes fortement d’accord (7) ou en désaccord (1) avec les énoncés suivants.</br>Pour l’application ou le service principal auquel mon équipe travaille :"
           }
         },
         {
@@ -423,7 +423,7 @@
           "name": "question35",
           "title": {
             "default": "We can make large-scale changes to the design of our system without the permission of somebody outside the team or creating significant work for other teams.",
-            "fr": "À compléter"
+            "fr": "Nous pouvons apporter des changements à grande échelle à la conception de notre système sans demander la permission d’une personne extérieure à l’équipe ni alourdir le travail des autres équipes."
           },
           "isRequired": true,
           "rateMax": 7
@@ -433,7 +433,7 @@
           "name": "question36",
           "title": {
             "default": "To complete our work, we do not need to communicate and coordinate with people outside the team.",
-            "fr": "À compléter"
+            "fr": "Pour terminer notre travail, la communication et la coordination avec des personnes extérieures à l’équipe ne sont pas nécessaires."
           },
           "isRequired": true,
           "rateMax": 7
@@ -443,7 +443,7 @@
           "name": "question37",
           "title": {
             "default": "We can deploy and release our product or service on demand, independently of other services it depends upon.",
-            "fr": "À compléter"
+            "fr": "Nous pouvons déployer et diffuser notre produit ou service à la demande, en toute autonomie par rapport aux autres services qui en dépendent."
           },
           "isRequired": true,
           "rateMax": 7
@@ -453,7 +453,7 @@
           "name": "question38",
           "title": {
             "default": "We can do most of our testing on demand, without requiring an integrated test environment.",
-            "fr": "À compléter"
+            "fr": "Nous pouvons effectuer la plupart de nos tests à la demande, sans nécessiter un environnement de test intégré."
           },
           "isRequired": true,
           "rateMax": 7
@@ -463,7 +463,7 @@
           "name": "question39",
           "title": {
             "default": "We perform deployments during normal business hours with negligible downtime.",
-            "fr": "À compléter"
+            "fr": "Nous effectuons des déploiements pendant les heures ouvrables et le temps d’arrêt occasionné est négligeable."
           },
           "isRequired": true,
           "rateMax": 7
@@ -473,7 +473,7 @@
           "name": "question40",
           "title": {
             "default": "My team feels that we are empowered to choose tools.",
-            "fr": "À compléter"
+            "fr": "Mon équipe estime que nous sommes en mesure de choisir les outils."
           },
           "isRequired": true,
           "rateMax": 7
@@ -483,7 +483,7 @@
           "name": "question41",
           "title": {
             "default": "My team proactively investigates new tools for new projects.",
-            "fr": "À compléter"
+            "fr": "Mon équipe procède en amont à l’étude de nouveaux outils en vue de nouveaux projets."
           },
           "isRequired": true,
           "rateMax": 7
@@ -494,7 +494,7 @@
         "fr": "Architecture"
       },
       "description": {
-        "fr": "À compléter",
+        "fr": "Apprendre à passer d’une architecture étroitement couplée à une architecture axée sur le service et à base de microservices sans pour autant la reconstruire intégralement. Mettre les équipes en mesure de prendre des décisions éclairées sur les outils et les technologies. Apprendre en quoi de telles décisions favorisent une livraison fructueuse des logiciels.",
         "default": "Learn about moving from a tightly coupled architecture to service-oriented and micro service architectures without re-architecting everything at once. Empower teams to make informed decisions on tools and technologies. Learn how these decisions drive more effective software delivery."
       }
     },
@@ -506,7 +506,7 @@
           "name": "question106",
           "html": {
             "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:",
-            "fr": "À compléter"
+            "fr": "Évaluez dans quelle mesure vous êtes fortement d’accord (7) ou en désaccord (1) avec les énoncés suivants.</br>Dans mon équipe:"
           }
         },
         {
@@ -514,7 +514,7 @@
           "name": "question42",
           "title": {
             "default": "Once we have access, we can independently provision and configure the cloud resources and capabilities required for our product or service on demand without raising tickets or requiring human interaction.",
-            "fr": "À compléter"
+            "fr": "Une fois l’accès obtenu, nous pouvons fournir et configurer en toute autonomie les ressources et les capacités infonuagiques requises pour notre produit ou service à la demande, sans devoir envoyer de demandes ni recourir à une interaction humaine."
           },
           "isRequired": true,
           "rateMax": 7
@@ -524,7 +524,7 @@
           "name": "question43",
           "title": {
             "default": "The service or product that we primarily work on is designed to be accessed from a broad range of devices (e.g. smartphones, tablets, laptops) over the network without the need for proprietary plug-ins or protocols.",
-            "fr": "À compléter"
+            "fr": "Le service ou le produit auquel nous travaillons essentiellement est conçu pour être accessible à partir d’une vaste gamme d’appareils (p. ex., téléphones intelligents, tablettes, ordinateurs portables) sur le réseau sans nécessiter de modules externes ni de protocoles exclusifs."
           },
           "isRequired": true,
           "rateMax": 7
@@ -534,7 +534,7 @@
           "name": "question44",
           "title": {
             "default": "The cloud our product or service runs on serves multiple teams and applications, with compute and infrastructure resources dynamically assigned and re-assigned based on demand.",
-            "fr": "À compléter"
+            "fr": "L’infonuagique à la base du fonctionnement de notre produit ou service est bénéfique à de nombreuses équipes et applications, et l’attribution ou la réattribution des ressources de calcul et d’infrastructure est dynamique et en fonction de la demande."
           },
           "isRequired": true,
           "rateMax": 7
@@ -544,7 +544,7 @@
           "name": "question45",
           "title": {
             "default": "We can dynamically increase or decrease the cloud resources available for the service or product that we primarily support based on demand.",
-            "fr": "À compléter"
+            "fr": "Nous pouvons augmenter ou diminuer de façon dynamique les ressources infonuagiques offertes dans le cadre du service ou du produit que nous appuyons essentiellement en fonction de la demande."
           },
           "isRequired": true,
           "rateMax": 7
@@ -554,7 +554,7 @@
           "name": "question46",
           "title": {
             "default": "We can monitor or control the quantity and/or cost of cloud resources used by the service or product that we primarily support.",
-            "fr": "À compléter"
+            "fr": "Nous pouvons suivre l’évolution ou assurer la maîtrise de la quantité ou du coût des ressources infonuagiques employées par le service ou le produit que nous appuyons essentiellement."
           },
           "isRequired": true,
           "rateMax": 7
@@ -565,7 +565,7 @@
         "fr": "Infrastructure en nuage"
       },
       "description": {
-        "fr": "À compléter",
+        "fr": "Découvrir comment gérer fructueusement l’infrastructure infonuagique pour se hisser à des niveaux supérieurs d’agilité, de disponibilité et de visibilité des coûts.",
         "default": "Find out how to manage cloud infrastructure effectively so you can achieve higher levels of agility, availability, and cost visibility."
       }
     },
@@ -575,14 +575,18 @@
         {
           "type": "html",
           "name": "question107",
-          "html": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:"
+          "html": {
+            "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:",
+            "fr": "Évaluez dans quelle mesure vous êtes fortement d’accord (7) ou en désaccord (1) avec les énoncés suivants.</br>Dans mon équipe :"
+          }
+          
         },
         {
           "type": "rating",
           "name": "question47",
           "title": {
             "default": "We are able to work on new ideas and experiment.",
-            "fr": "À compléter"
+            "fr": "Nous sommes en mesure de travailler à de nouvelles idées et de procéder à des mises à l’essai."
           },
           "isRequired": true,
           "rateMax": 7
@@ -592,7 +596,7 @@
           "name": "question48",
           "title": {
             "default": "We are able to do work and make changes without having to ask for permission.",
-            "fr": "À compléter"
+            "fr": "Nous sommes en mesure d’exécuter le travail et d’apporter des changements sans devoir demander de permission."
           },
           "isRequired": true,
           "rateMax": 7
@@ -602,7 +606,7 @@
           "name": "question49",
           "title": {
             "default": "We are able to make changes to user needs and specifications during a project.",
-            "fr": "À compléter"
+            "fr": "Nous sommes en mesure d’apporter des changements aux besoins et aux cahiers des charges des utilisateurs durant un projet."
           },
           "isRequired": true,
           "rateMax": 7
@@ -612,7 +616,7 @@
           "name": "question50",
           "title": {
             "default": "Changes can be promoted to production without manual change approvals.",
-            "fr": "À compléter"
+            "fr": "Nous pouvons favoriser la réalisation des changements à la production sans nécessiter d’approbation manuelle pour autant."
           },
           "isRequired": true,
           "rateMax": 7
@@ -622,7 +626,7 @@
           "name": "question51",
           "title": {
             "default": "We have a clear understanding of the process to get changes approved for implementation.",
-            "fr": "À compléter"
+            "fr": "Nous concevons clairement le processus d’approbation des changements en vue de leur mise en œuvre."
           },
           "isRequired": true,
           "rateMax": 7
@@ -632,7 +636,7 @@
           "name": "question52",
           "title": {
             "default": "We are confident they can get changes through the approval process in a timely manner and knows the steps it takes to go from “submitted” to “accepted”.",
-            "fr": "À compléter"
+            "fr": "Nous avons l’assurance qu’il est possible d’apporter des changements au processus d’approbation en temps voulu et que les étapes nécessaires pour passer de « soumis » à « accepté » sont connues."
           },
           "isRequired": true,
           "rateMax": 7
@@ -642,7 +646,7 @@
           "name": "question53",
           "title": {
             "default": "Tools and platforms are agreed upon and tailored to the needs of the project.",
-            "fr": "À compléter"
+            "fr": "Les outils et les plateformes sont convenus et adaptés en fonction des besoins du projet."
           },
           "isRequired": true,
           "rateMax": 7
@@ -652,7 +656,7 @@
           "name": "question54",
           "title": {
             "default": "We promote team development and handle cross-functional activities..",
-            "fr": "À compléter"
+            "fr": "Nous favorisons la création d’une synergie et nous nous occupons des activités interfonctionnelles."
           },
           "isRequired": true,
           "rateMax": 7
@@ -662,7 +666,7 @@
           "name": "question55",
           "title": {
             "default": "We execute peer review which includes reviews, comments, and approvals captured as part of the development process.",
-            "fr": "À compléter"
+            "fr": "Nous effectuons des examens par les pairs qui touchent les examens, les commentaires et les approbations saisis dans le cadre du processus d’élaboration."
           },
           "isRequired": true,
           "rateMax": 7
@@ -672,7 +676,7 @@
           "name": "question56",
           "title": {
             "default": "We consider the development platform as a product by evaluating the changes on multiple axes, including security, performance, and stability, as well as defects.",
-            "fr": "À compléter"
+            "fr": "Nous considérons la plateforme de développement comme un produit par l’évaluation des changements selon plusieurs axes à la fois, dont la sécurité, le rendement et la stabilité, ainsi que des défauts."
           },
           "isRequired": true,
           "rateMax": 7
@@ -682,7 +686,7 @@
           "name": "question57",
           "title": {
             "default": "We continuously improve business processes by identifying and eliminating bottlenecks.",
-            "fr": "À compléter"
+            "fr": "Nous améliorons continuellement les processus opérationnels par le repérage et l’élimination des goulots d’étranglement."
           },
           "isRequired": true,
           "rateMax": 7
@@ -693,7 +697,7 @@
         "fr": "Expérimentation en équipe et rationalisation de l'approbation des changements"
       },
       "description": {
-        "fr": "À compléter",
+        "fr": "Accélérer l’innovation par la mise sur pied d’équipes habilitées qui peuvent mettre à l’essai de nouvelles idées sans nécessiter l’approbation de personnes de l’extérieur. Remplacer le processus lourd d’approbation des changements lourds par un examen par les pairs afin de bénéficier des avantages liés à un processus de diffusion d’une fiabilité et d’une conformité accrues sans pour autant sacrifier la vitesse.",
         "default": "Innovate faster by building empowered teams that can try out new ideas without approval from people outside the team. Replace heavyweight change-approval process with peer review, to get the benefits of a more reliable, compliant release process without sacrificing speed."
       }
     },
@@ -705,7 +709,7 @@
           "name": "question108",
           "html": {
             "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
-            "fr": "À compléter"
+            "fr": "Évaluez dans quelle mesure vous êtes fortement d’accord ou en désaccord avec les énoncés suivants.</br>Dans mon équipe :"
           }
         },
         {
@@ -713,7 +717,7 @@
           "name": "question58",
           "title": {
             "default": "We actively collect customer feedback on product and features quality.",
-            "fr": "À compléter"
+            "fr": "Nous recueillons activement les commentaires des clients sur la qualité des produits et des fonctionnalités."
           },
           "isRequired": true,
           "rateMax": 7
@@ -723,7 +727,7 @@
           "name": "question59",
           "title": {
             "default": "We establish key metrics on customer satisfaction before gathering information from the customers.",
-            "fr": "À compléter"
+            "fr": "Nous mettons en place les paramètres clés de la satisfaction de la clientèle avant de recueillir l’information auprès des cette dernière."
           },
           "isRequired": true,
           "rateMax": 7
@@ -733,7 +737,7 @@
           "name": "question60",
           "title": {
             "default": "After seeking customer feedbacks, the team utilizes the response to understand the pain points and find solutions quickly.",
-            "fr": "À compléter"
+            "fr": "Après avoir recueilli les commentaires de la clientèle, nous nous servons des suites données pour concevoir les sources d’agacement et découvrir rapidement des solutions."
           },
           "isRequired": true,
           "rateMax": 7
@@ -743,7 +747,7 @@
           "name": "question61",
           "title": {
             "default": "We are able to use value streams to gain insight and guide necessary improvements to ensure we have the bandwidth to support functionality and the documentation to put it into place.",
-            "fr": "À compléter"
+            "fr": "Nous sommes en mesure d’utiliser les flux de valeur pour nous familiariser avec les améliorations nécessaires et guider celles-ci afin de disposer de la bande passante nécessaire à la fonctionnalité et de la documentation nécessaire pour la mettre en place."
           },
           "isRequired": true,
           "rateMax": 7
@@ -753,7 +757,7 @@
           "name": "question62",
           "title": {
             "default": "We focus on building, testing, and releasing code changes to an (production or testing) environment in small batches.",
-            "fr": "À compléter"
+            "fr": "Nous prêtons attention à la création de changements de code, à leur mise à l’essai et à leur diffusion en petits lots dans un environnement (de production ou d’essai)."
           },
           "isRequired": true,
           "rateMax": 7
@@ -763,7 +767,7 @@
           "name": "question63",
           "title": {
             "default": "Following production release, we are able to amplify feedback from users quickly using techniques (ex: AB testing) and enable short lead times faster.",
-            "fr": "À compléter"
+            "fr": "Après la diffusion de production, nous sommes en mesure d’amplifier rapidement les commentaires des utilisateurs à l’aide de techniques (p. ex., les tests AB) et d’accélérer la compression des délais d’exécution."
           },
           "isRequired": true,
           "rateMax": 7
@@ -773,7 +777,7 @@
           "name": "question64",
           "title": {
             "default": "Feedback received is simple, easy to understand and provides actionable information.",
-            "fr": "À compléter"
+            "fr": "Les commentaires reçus sont simples, faciles à comprendre et il en découle une information exploitable."
           },
           "isRequired": true,
           "rateMax": 7
@@ -783,7 +787,7 @@
           "name": "question65",
           "title": {
             "default": "Our features are sliced in a way that lend themselves to frequent production releases.",
-            "fr": "À compléter"
+            "fr": "Nos fonctionnalités sont réparties de telle sorte qu’elles se prêtent de fréquentes versions de production."
           },
           "isRequired": true,
           "rateMax": 7
@@ -793,7 +797,7 @@
           "name": "question66",
           "title": {
             "default": "Our features are decomposed in a way that allows a developer to complete the work in a week or less.",
-            "fr": "À compléter"
+            "fr": "Nos fonctionnalités sont décomposées de telle sorte qu’elles permettent au promoteur de réaliser les travaux en une semaine ou moins."
           },
           "isRequired": true,
           "rateMax": 7
@@ -803,7 +807,7 @@
           "name": "question67",
           "title": {
             "default": "Our work is decomposed into features that allow for minimum viable products (MVP) and rapid development, rather than complex and lengthy processes (an MVP has just enough features to get validated learning about the product & its continued development).",
-            "fr": "À compléter"
+            "fr": "Notre travail est décomposé en des fonctionnalités permettant les plus petits produits viables (PPPV) et un développement rapide, plutôt qu’en des processus complexes et fastidieux (le PPPV comporte tout juste assez de fonctionnalités pour permettre la validation de l’apprentissage du produit et de son développement continu)."
           },
           "isRequired": true,
           "rateMax": 7
@@ -814,7 +818,7 @@
         "fr": "Rétroaction des clients et visibilité du travail"
       },
       "description": {
-        "fr": "À compléter",
+        "fr": "Favoriser des résultats organisationnels améliorés par la collecte des commentaires des clients et leur intégration à la conception des produits et des fonctionnalités. Concevoir et visualiser le flux du travail, à partir de l’idée jusqu’aux résultats pour le client, pour favoriser l’amélioration du rendement.",
         "default": "Drive better organizational outcomes by gathering customer feedback and incorporating it into product and feature design. Understand and visualize the flow of work from idea to customer outcome in order to drive higher performance."
       }
     },
@@ -826,7 +830,7 @@
           "name": "question109",
           "html": {
             "default": "How do you watch and understand your systems at work? Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
-            "fr": "À compléter"
+            "fr": "Comment surveillez-vous et concevez-vous vos systèmes au travail? Évaluez dans quelle mesure vous êtes fortement d’accord (7) ou en désaccord (1) avec les énoncés suivants.</br>Dans mon équipe:</br>"
           }
         },
         {
@@ -834,7 +838,7 @@
           "name": "question68",
           "title": {
             "default": "We have a solution in place to report on the overall health of systems (e.g, are my systems functioning? / do my systems have sufficient resources available?).",
-            "fr": "À compléter"
+            "fr": "Nous avons mis en place une solution pour rendre compte de la santé globale des systèmes (p. ex., mes systèmes fonctionnent-ils? disposent-ils de ressources suffisantes?)."
           },
           "isRequired": true,
           "rateMax": 7
@@ -844,7 +848,7 @@
           "name": "question69",
           "title": {
             "default": "We have a solution in place to report on system state as experienced by customers (e.g., “do my customers know if my system is down and have a bad experience?”).",
-            "fr": "À compléter"
+            "fr": "Nous avons mis en place une solution pour rendre compte de l’état du système selon l’expérience vécue par la clientèle (p. ex. « mes clients savent-ils si mon système est en panne et vivent-ils une mauvaise expérience? »)."
           },
           "isRequired": true,
           "rateMax": 7
@@ -854,7 +858,7 @@
           "name": "question70",
           "title": {
             "default": "We have a solution in place for monitoring key business and systems metrics.",
-            "fr": "À compléter"
+            "fr": "Nous avons mis en place une solution pour surveiller les principaux paramètres opérationnels et systémiques."
           },
           "isRequired": true,
           "rateMax": 7
@@ -864,7 +868,7 @@
           "name": "question71",
           "title": {
             "default": "We have tooling in place that can help us with understanding and debugging our systems in production.",
-            "fr": "À compléter"
+            "fr": "Nous avons mis en place un outillage qui nous permet de concevoir nos systèmes en cours de production et de les dépanner."
           },
           "isRequired": true,
           "rateMax": 7
@@ -874,7 +878,7 @@
           "name": "question72",
           "title": {
             "default": "We have tooling in place that provides the ability to find information about things we did not previously know (e.g., we can identify “unknown unknowns”).",
-            "fr": "À compléter"
+            "fr": "Nous avons mis en place un outillage qui donne la capacité de trouver de l’information sur des éléments qui nous étaient préalablement inconnus (p. ex., nous pouvons discerner les « éléments inconnus qui nous étaient inconnus »)."
           },
           "isRequired": true,
           "rateMax": 7
@@ -884,7 +888,7 @@
           "name": "question73",
           "title": {
             "default": "We have access to tools and data which help us trace, understand, and diagnose infrastructure problems in our production environment, including interactions between services.",
-            "fr": "À compléter"
+            "fr": "Nous avons accès à des outils et à des données qui nous permettent de repérer, de concevoir et de diagnostiquer les problèmes d’infrastructure dans notre environnement de production, y compris les interactions entre services."
           },
           "isRequired": true,
           "rateMax": 7
@@ -894,7 +898,7 @@
           "name": "question74",
           "title": {
             "default": "Data from infrastructure and application performance monitoring tools is used to make business decisions.",
-            "fr": "À compléter"
+            "fr": "Les données provenant des outils de surveillance du rendement de l’infrastructure et des applications servent à la prise de décisions opérationnelles."
           },
           "isRequired": true,
           "rateMax": 7
@@ -904,7 +908,7 @@
           "name": "question75",
           "title": {
             "default": "Monitoring gives rapid feedback which helps quickly find and fix problems early in the project lifecycle.",
-            "fr": "À compléter"
+            "fr": "La surveillance se traduit par des commentaires rapides qui permettent de déceler et de régler précocement les problèmes durant le cycle de vie du projet."
           },
           "isRequired": true,
           "rateMax": 7
@@ -915,7 +919,7 @@
         "fr": "Contrôle de l'application des données"
       },
       "description": {
-        "fr": "À compléter",
+        "fr": "Améliorer la surveillance à l’échelle des plateformes d’infrastructure et de l’application tierce afin de pouvoir présenter rapidement des commentaires aux développeurs. Apprendre comment en arriver à un outillage permettant de concevoir le système de production et de le dépanner.",
         "default": "Improve monitoring across infrastructure platforms and the application tier, so you can provide fast feedback to developers. Learn how to build tooling to help you to understand and debug your production system."
       }
     },
@@ -927,7 +931,7 @@
           "name": "question110",
           "html": {
             "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements.</br>On my team:</br>",
-            "fr": "À compléter"
+            "fr": "Évaluez dans quelle mesure vous êtes fortement d’accord (7) ou en désaccord (1) avec les énoncés suivants.</br>Dans mon équipe:</br>"
           }
         },
         {
@@ -935,7 +939,7 @@
           "name": "question76",
           "title": {
             "default": "We are good at limiting our work in process (WIP).",
-            "fr": "À compléter"
+            "fr": "Nous parvenons bien à établir les limites de notre travail en cours (TEC)."
           },
           "isRequired": true,
           "rateMax": 7
@@ -945,7 +949,7 @@
           "name": "question77",
           "title": {
             "default": "We strive to limit our WIP, and have processes in place to do so.",
-            "fr": "À compléter"
+            "fr": "Nous tâchons d’établir les limites de notre TEC et nous avons des processus en place pour ce faire."
           },
           "isRequired": true,
           "rateMax": 7
@@ -955,7 +959,7 @@
           "name": "question78",
           "title": {
             "default": "Our WIP limits lead to process improvement.",
-            "fr": "À compléter"
+            "fr": "Les limites établies de notre TEC contribuent à l’amélioration des processus."
           },
           "isRequired": true,
           "rateMax": 7
@@ -965,7 +969,7 @@
           "name": "question79",
           "title": {
             "default": "We are not often assigned to work on multiple mutually exclusive tasks.",
-            "fr": "À compléter"
+            "fr": "On nous confie rarement du travail relatif à plusieurs tâches à la fois qui ne se recoupent pas."
           },
           "isRequired": true,
           "rateMax": 7
@@ -975,7 +979,7 @@
           "name": "question80",
           "title": {
             "default": "When faced with too much work and too few people to do it, we prioritize work and focus on completing a small number of high-priority tasks.",
-            "fr": "À compléter"
+            "fr": "Si nous avons trop de travail à exécuter et trop peu d’effectifs à cette fin, nous donnons priorité au travail et à l’achèvement d’un nombre réduit de tâches à priorité élevée."
           },
           "isRequired": true,
           "rateMax": 7
@@ -985,7 +989,7 @@
           "name": "question81",
           "title": {
             "default": "Our work is visible to other teams and stakeholders.",
-            "fr": "À compléter"
+            "fr": "Notre travail est visible pour les autres équipes et parties prenantes."
           },
           "isRequired": true,
           "rateMax": 7
@@ -995,7 +999,7 @@
           "name": "question82",
           "title": {
             "default": "We use up to date visual displays and dashboards to manage the work at various stages of a process.",
-            "fr": "À compléter"
+            "fr": "Nous avons recours à des soutiens visuels et à des tableaux de bord actualisés pour gérer le travail à divers stades du processus."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1005,7 +1009,7 @@
           "name": "question83",
           "title": {
             "default": "When looking at visual management displays we see the key process metrics the team cares about.",
-            "fr": "À compléter"
+            "fr": "L’examen des soutiens de gestion visuelle permet de constater les principaux paramètres du processus dont l’équipe se soucie."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1016,7 +1020,7 @@
         "fr": "Limites des travaux en cours et gestion visuelle"
       },
       "description": {
-        "fr": "À compléter",
+        "fr": "Définir les priorités des tâches, limiter la charge de travail de l’équipe, et se concentrer sur un nombre réduit de tâches à priorité élevée. Apprendre les principes de la gestion visuelle pour favoriser l’échange d’information, en arriver à une interprétation commune de la situation de l’équipe, et trouver des moyens par lesquels s’améliorer. ",
         "default": "Prioritize work, limit the amount of things that people are working on, and focus on getting a small number of high-priority tasks done. Learn about the principles of visual management to promote information sharing, get a common understanding of where the team is, and how to improve."
       }
     },
@@ -1028,7 +1032,7 @@
           "name": "question111",
           "html": {
             "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements as descriptive of your team and the organization:",
-            "fr": "À compléter"
+            "fr": "Évaluez dans quelle mesure vous êtes fortement d’accord (7) ou en désaccord (1) avec les énoncés suivants comme étant représentatifs de votre équipe et de votre organisation."
           }
         },
         {
@@ -1036,7 +1040,7 @@
           "name": "question84",
           "title": {
             "default": "Learning is the key to improvement.",
-            "fr": "À compléter"
+            "fr": "L’apprentissage est indispensable à l’amélioration."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1046,7 +1050,7 @@
           "name": "question85",
           "title": {
             "default": "Once we quit learning we endanger our future.",
-            "fr": "À compléter"
+            "fr": "Dès que nous cessons d’apprendre, nous mettons notre avenir en péril."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1056,7 +1060,7 @@
           "name": "question86",
           "title": {
             "default": "Learning is viewed as an investment, not an expense.",
-            "fr": "À compléter"
+            "fr": "L’apprentissage est perçu comme un investissement plutôt qu’une dépense."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1066,7 +1070,7 @@
           "name": "question87",
           "title": {
             "default": "Their is a regular cadence of opportunities for employees to share their knowledge.",
-            "fr": "À compléter"
+            "fr": "Les possibilités offertes aux employés de communiquer leur savoir suivent une cadence régulière."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1076,7 +1080,7 @@
           "name": "question88",
           "title": {
             "default": "Information is actively sought.",
-            "fr": "À compléter"
+            "fr": "L’information est très recherchée."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1086,7 +1090,7 @@
           "name": "question89",
           "title": {
             "default": "Messengers are not punished when they deliver news of failures or other bad news.",
-            "fr": "À compléter"
+            "fr": "Les messagers ne sont pas tenus coupables des mauvaises nouvelles, notamment les échecs, qu’ils annoncent."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1096,7 +1100,7 @@
           "name": "question90",
           "title": {
             "default": "Responsibilities are shared.",
-            "fr": "À compléter"
+            "fr": "Les responsabilités sont partagées."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1106,7 +1110,7 @@
           "name": "question91",
           "title": {
             "default": "Cross-functional collaboration is encouraged and rewarded.",
-            "fr": "À compléter"
+            "fr": "La collaboration interfonctionnelle est encouragée et récompensée."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1116,7 +1120,7 @@
           "name": "question92",
           "title": {
             "default": "Failures are treated primarily as opportunities to improve the system.",
-            "fr": "À compléter"
+            "fr": "Les défaillances sont considérées essentiellement comme des occasions d’améliorer le système."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1126,7 +1130,7 @@
           "name": "question93",
           "title": {
             "default": "Employees feel supported by each other and that their feedback is valued.",
-            "fr": "À compléter"
+            "fr": "Les employés estiment qu’ils s’appuient les uns les autres et que leurs commentaires sont appréciés."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1136,7 +1140,7 @@
           "name": "question94",
           "title": {
             "default": "Employees are given meaningful work that leverages their expertise.",
-            "fr": "À compléter"
+            "fr": "On confie aux employés un travail valorisant qui met à profit leur savoir-faire."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1146,7 +1150,7 @@
           "name": "question95",
           "title": {
             "default": "My team’s culture interacts with the broader organizational culture.",
-            "fr": "À compléter"
+            "fr": "La culture de mon équipe agit avec la culture organisationnelle au sens large, et vice-versa."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1157,7 +1161,7 @@
         "fr": "Apprentissage et culture génératrice"
       },
       "description": {
-        "fr": "À compléter",
+        "fr": "Découvrir en quoi l’instauration d’une culture génératrice fondée sur la confiance contribue à l’amélioration du rendement organisationnel et dans la livraison de logiciels. Instaurer une culture d’apprentissage et en concevoir les retombées sur le rendement organisationnel.",
         "default": "Discover how growing a generative, high-trust culture drives better organizational and software delivery performance. Grow a learning culture and understand its impact on your organization performance."
       }
     },
@@ -1168,8 +1172,8 @@
           "type": "html",
           "name": "question112",
           "html": {
-            "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements as descriptive of your team and the organization:",
-            "fr": "À compléter"
+            "default": "Please rate how strongly you agree (7) or disagree (1) with the following statements as descriptive of your team and the organization.",
+            "fr": "Évaluez dans quelle mesure vous êtes fortement d’accord (7) ou en désaccord (1) avec les énoncés suivants comme étant représentatifs de votre équipe et de votre organisation."
           }
         },
         {
@@ -1177,7 +1181,7 @@
           "name": "question96",
           "title": {
             "default": "My team understands clearly the current/target conditions, up to 5 (five) years in the future, and produces outcomes that match up with the purpose of the organization.",
-            "fr": "À compléter"
+            "fr": "Mon équipe conçoit clairement les conditions actuelles et ciblées, jusqu’à 5 (cinq) ans dans l’avenir, et produit des résultats en phase avec l’objectif de l’organisation."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1187,7 +1191,7 @@
           "name": "question97",
           "title": {
             "default": "My team is running experiments on a daily basis to try to move toward the target conditions or key results.",
-            "fr": "À compléter"
+            "fr": "Mon équipe procède quotidiennement à des mises à l’essai pour tenter de progresser vers les conditions ciblées ou les résultats clés."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1197,7 +1201,7 @@
           "name": "question98",
           "title": {
             "default": "Leaders understand clearly where my team and the organization are going, and where they want the team to be in five years.",
-            "fr": "À compléter"
+            "fr": "Les chefs de file conçoivent clairement vers quoi mon équipe et l’organisation se dirigent et où ils souhaitent voir l’équipe dans cinq ans."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1207,7 +1211,7 @@
           "name": "question99",
           "title": {
             "default": "Leaders say positive things about my team and make employees proud to be a part of their organization.",
-            "fr": "À compléter"
+            "fr": "Les chefs de file parlent en bien de mon équipe et, de ce fait, les employés sont fiers de faire partie de leur organisation."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1217,7 +1221,7 @@
           "name": "question100",
           "title": {
             "default": "Leaders challenge team members to think about old problems in new ways and to rethink some of their basic assumptions about their work.",
-            "fr": "À compléter"
+            "fr": "Les chefs de file exhortent les membres de l’équipe à réfléchir de façon novatrice aux problèmes de longue date et à reconceptualiser certaines de leurs suppositions fondamentales au sujet de leur travail."
           },
           "isRequired": true,
           "rateMax": 7
@@ -1227,7 +1231,7 @@
           "name": "question101",
           "title": {
             "default": "Leaders behave in a manner which is thoughtful of my team member interests and personal needs.",
-            "fr": "À compléter"
+            "fr": "Les chefs de file tiennent compte, dans leur comportement, des intérêts et besoins personnels des membres de mon équipe."
           },
           "isRequired": true,
           "rateMax": 7

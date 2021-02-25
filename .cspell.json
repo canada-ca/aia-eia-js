@@ -47,17 +47,25 @@
     "mixins",
     "checkmark",
     "Devops",
-    "hotfix"
+    "hotfix",
+    "microservices",
+    "PPPV",
+    "interfonctionnelle",
+    "interfonctionnelles",
+    "reconceptualiser",
+    "déployabilité"
   ],
   "flagWords": [],
-  "import": ["./node_modules/cspell-dict-fr-fr/cspell-ext.json"],
+  "import": [
+    "./node_modules/cspell-dict-fr-fr/cspell-ext.json"
+  ],
   "dictionaries": [
-      "fr-fr",
-      "en-gb",
-      "en_US",
-      "typescript",
-      "softwareterms",
-      "html",
-      "css"
+    "fr-fr",
+    "en-gb",
+    "en_US",
+    "typescript",
+    "softwareterms",
+    "html",
+    "css"
   ]
 }
