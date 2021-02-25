@@ -14,27 +14,35 @@
           "type": "list",
           "title": {
             "en": [
-              "Ensure that every commit to version control triggers the automated creation of packages that can be deployed to any environment using only information in version control.",
-              "Make it possible to create production-like test environments on demand using only scripts and configuration information from version control, and to create packages using the automated process described in the previous approach.",
-              "Script testing and production infrastructure so that teams can add capacity or recover from disasters in a fully automated fashion."
+              "This excerpt from to the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities) indicates that the following practices can improve the **version control**:\n> - Ensure that every commit to version control triggers the automated creation of packages that can be deployed to any environment using only information in version control.\n> - Make it possible to create production-like test environments on demand using only scripts and configuration information from version control, and to create packages using the automated process described in the previous approach.\n> - Script testing and production infrastructure so that teams can add capacity or recover from disasters in a fully automated fashion.\n*Learn more about [Version Control](https://cloud.google.com/solutions/devops/devops-tech-version-control)*\nBased on the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities), the following practices can improve the **code maintainability**:\n- **Team collaboration**. Teams need to access and recommend changes to each other. This helps transfer of knowledge and unblocks teams to make changes to other parts of the codebases.\n- **Traceability**. It is essential to rapidly trace packages or deployments to its version in the event of an incident. This is crucial to make change to any changes to debug problems triggered by a dependency in the codebase.\n- **Code quality**. Run cross-team code maintenance to improve internal quality and reduce people to refactor the codes. This requires making changes to multiple parts of the codebase.\n*Learn more about [Code Maintainability](https://cloud.google.com/solutions/devops/devops-tech-code-maintainability)*"
             ],
-            "fr": ["À compléter", "À compléter", "À compléter"]
+            "fr": [
+              "Cet extrait des [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities) indique que les pratiques suivantes peuvent permettre d’améliorer le **contrôle des versions** :\n> - Assurez-vous que chaque validation du contrôle des versions déclenche la création automatisée de progiciels qui peuvent être déployés dans n’importe quel environnement en utilisant uniquement l’information contenue dans le contrôle des versions.\n> - Faites en sorte de créer des environnements de test de type production à la demande en utilisant uniquement les scripts et les informations de configuration provenant du contrôle des versions, et des progiciels à l’aide du processus automatisé décrit dans l’approche précédente.\n> - Mettez en œuvre une infrastructure de test et de production de scripts permettant aux équipes d’ajouter de la capacité ou d’effectuer une reprise après sinistre de manière entièrement automatisée.\n*Pour en savoir plus sur [le contrôle des versions](https://cloud.google.com/solutions/devops/devops-tech-version-control)*\nSelon les [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities), les pratiques suivantes peuvent permettre d’améliorer la **gestion du code** :\n- **Collaboration des équipes**. Les équipes ont besoin d’accéder les unes aux autres et de se recommander des changements. Cette démarche facilite le transfert des connaissances et le décloisonnement des équipes dans l’optique d’effectuer des changements à d’autres parties des bases de code.\n- **Traçabilité**. Celle-ci est essentielle afin de retracer rapidement les progiciels ou les interrelations vers leur version en cas d’incident. Elle joue un rôle crucial dans les changements apportés pour résoudre les problèmes déclenchés par une interrelation dans la base de codes.\n- **Qualité du code**. Effectuer la maintenance du code entre les équipes afin d’améliorer la qualité interne et de réduire le nombre de personnes qui remanient les codes. Cette démarche exige d’apporter des changements à plusieurs parties à la fois de la base de codes.\n*Pour en savoir plus sur [la gestion du code](https://cloud.google.com/solutions/devops/devops-tech-code-maintainability)*"
+            ]
           }
         },
         {
           "level": "3",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         },
         {
           "level": "5",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         }
       ]
@@ -47,24 +55,36 @@
           "level": "1",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "Based on the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities), the following practices can improve the **Continuous Integration**:\n- **Automated Build Process**. Having automated scripts that has the ability to create packages and be deployed in any environment. The CI packages built must be authoritative and used in downstream processes. The builds should also be run daily as well as numbered and repeatable.\n- **A suite of automated tests**. To ensure the reliability the high-value functionality of your system, start writing a set of unit and acceptance test (if not done). This will guide to identify the issue if the test fail and to ensure all new functionality will not cause serious problems with the system.The tests should be rapidly done run daily.\n- **System run the build and automated tests**. The system status of the tests should be visible to the team. Avoid the use of email notification. Chat systems are a more popular way to notify the team.\n*Learn more about [Continuous Integration](https://cloud.google.com/solutions/devops/devops-tech-deployment-automation)*\nBased on the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities), to improve the **deployment automation**, teams should document existing deployment processes and incrementality simplify and automate them.\nThe following actions are required for this approach:\n- Packaging code in ways suitable for deployment.\n- Creating pre-configured virtual machine images or containers.\n- Automating the deployment and configuration of middleware.\n- Copying packages or files into the production environment.\n- Restarting servers, applications, or services.\n- Generating configuration files from templates.\n- Running automated deployment tests to make sure the system is working and correctly configured.\n- Running testing procedures.\n- Scripting and automating database migrations.\n*Learn more about [Deployment Automation](https://cloud.google.com/solutions/devops/devops-tech-test-automation)*\nThis excerpt from to the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities) indicates that the following practices can improve the **Security quality**:\n>- **Conduct security reviews**.\nConduct a security review for all major features while ensuring that the security review process doesn't slow down development.\n>- **Build preapproved code**.\nHave the InfoSec team build preapproved, easy-to-consume libraries, packages, toolchains, and processes for developers and IT operations to use in their work.\n>- **Integrate security review into every phase**.\nIntegrate InfoSec into the daily work of the entire software delivery lifecycle.\nThis includes having the InfoSec team provide input during the design of the application, attending software demos, and providing feedback during demos.\n>- **Test for security**.\nTest security requirements as a part of the automated testing process including areas where preapproved code should be used.\n>- **Invite InfoSec to demos**.\nIf you include the InfoSec team in your application demos, they can spot security-related weaknesses early, which gives the team ample time to fix.\n*Learn more about [Security Quality](https://cloud.google.com/solutions/devops/devops-tech-shifting-left-on-security)*"
+            ],
+            "fr": [
+              "Selon les [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities), les pratiques suivantes peuvent permettre d’améliorer l’**intégration continue** :\n- **Un processus de scripts de construction automatisée**. Disposer de scripts de construction automatisée qui ont la capacité de créer des progiciels et dont le déploiement est possible dans n’importe quel environnement. Les progiciels d’intégration continue (IC) qui sont créés doivent faire autorité et être utilisés dans les processus en aval. De plus, les scripts de construction doivent être exécutés tous les jours, numérotés et reproductibles.\n- **Une série de tests automatisés**. Pour assurer la fiabilité de la principale fonctionnalité de votre système, mettez-vous à rédiger un ensemble de tests unitaires et d’acceptation (si ça n’est déjà fait). Vous pourrez ainsi déceler le problème en cas d’échec du test et voir à ce que les nouvelles fonctionnalités ne posent pas gravement problème dans le système. Les tests doivent être effectués rapidement et quotidiennement.\n- **L’exécution systémique du script de construction et des tests automatisés**. L’équipe doit être en mesure de consulter l’état des tests dans le système. N’envoyez pas d’avis par courriel. Le clavardage est un moyen plus répandu d’aviser l’équipe.\n*Pour en savoir plus sur [l’intégration continue](https://cloud.google.com/solutions/devops/devops-tech-deployment-automation)*\nSelon les [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities), pour améliorer l’**automatisation du déploiement**, les équipes doivent documenter les processus de déploiement qui ont cours pour ensuite les simplifier et les automatiser progressivement.\nVoici les mesures requises dans le cadre de cette démarche :\n- Générer les progiciels de code dans l’optique du déploiement.\n- Créer des images ou des conteneurs préconfigurés de machines virtuelles.\n- Automatiser le déploiement et la configuration des intergiciels.\n- Copier les progiciels ou les fichiers dans l’environnement de production.\n- Redémarrer des serveurs, des applications ou des services.\n- Générer des fichiers de configuration à partir de modèles.\n- Effectuer des tests de déploiement automatisé pour voir à ce que le système fonctionne et soit correctement configuré.\n- Exécuter des procédures de test.\n- Concevoir des scripts de migration des bases de données et automatiser celle-ci.\n*Pour en savoir plus sur [l’automatisation du déploiement](https://cloud.google.com/solutions/devops/devops-tech-test-automation)*\nCet extrait des [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities) indique que les pratiques suivantes peuvent permettre d’améliorer la **qualité de la sécurité** :\n>- **Réaliser des examens de sécurité**.\nEffectuer un examen de sécurité pour toutes les fonctionnalités principales et, parallèlement, voir à ne pas ralentir les opérations de développement.\n>- **Créer un script de construction préapprouvé**.\nDemander à l’équipe InfoSec de créer des bibliothèques, des progiciels, des chaînes d’outils et des processus préapprouvés et faciles à utiliser, que les développeurs et les responsables des opérations de la TI pourront utiliser dans leur travail.\n>- **Intégrer un examen de sécurité à chaque phase**.\nAssocier l’équipe InfoSec au travail quotidien sur l’ensemble du cycle de vie de livraison des logiciels :\ninterventions lors de la conception de l’application, présence aux démonstrations de logiciels et communication de commentaires au cours de ces démonstrations.\n>- **Tester la sécurité**.\nIntégrer les exigences de sécurité au processus de tests automatisés, y compris dans les domaines qui imposent l’utilisation d’un code préapprouvé.\n>- **Inviter InfoSec aux démonstrations**.\nSi l’équipe InfoSec est associée à vos démonstrations d’applications, elle peut repérer précocement les vulnérabilités relatives à la sécurité, ce qui laisse à l’équipe amplement le temps de les corriger.\n*Pour en savoir plus sur [la qualité de la sécurité](https://cloud.google.com/solutions/devops/devops-tech-shifting-left-on-security)*"
+            ]
           }
         },
         {
           "level": "3",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         },
         {
           "level": "5",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         }
       ]
@@ -77,24 +97,36 @@
           "level": "1",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "Based on the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities), the following concepts can improve the quality of evaluating the functionality and architecture of the system, it's important to consider the organizational and technical components:\nOrganizational\n- Allow testers to work alongside developers throughout the software development and delivery process.\n- Perform manual test activities such as exploratory testing, usability testing, and acceptance testing throughout the delivery process.\nTechnical\nBuilding and maintaining a set of key automated test suites such as Units Tests and acceptance tests.\nIf you have limited test automation, start building a skeleton deployment pipeline which includes:\n- Single unit test\n- Single acceptance test\n- Automated deployments scripts for a exploratory test environments\n- Increase test coverage and extend the deployments product as the product or service evolves\nIt is also recommended to write your **unit tests** before writing code to improve the code are testable and the tests are maintainable.\nFinally, you can write a small number of **acceptance tests** for the high-value functionality.\nMake sure you require developers to write unit and acceptance tests for any new functionality, and any functionality you are changing.\n*Learn more about [Continuous Testing](https://cloud.google.com/solutions/devops/devops-tech-test-automation)*\nThis excerpt from to the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities) indicates that the following practices can effectively and efficiently improve the **Test Data Management**:\n> 1. Favor unit tests.\nUnit tests should be independent of each other and any other part of the system except the code being tested.\nUnit tests should not depend on external data. As defined by the test automation pyramid, unit tests should make up the majority of your tests. Well-written unit tests that run against a well-designed codebase are much easier to triage and cheaper to maintain than higher-level tests. Increasing the coverage of your unit tests can help minimize your reliance on higher-level tests that consume external data.\n> ![Test automation pyramid.](assets/images/devops-tech-test-automation-pyramid.svg){:height='80%' width='80%' margin-top='2em' margin-bottom='2em'}\n> 2. Minimize reliance on test data.\nTest data requires careful and ongoing maintenance.\nAs your APIs and interfaces evolve, you must update or re-create related test data.\nThis process represents a cost that can negatively impact team velocity.\nHence, it's good practice to minimize the amount of test data needed to run automated tests.\n> 3. Isolate your test data.\nRun your tests in well-defined environments with controlled inputs and expected outputs that can be compared to actual outputs.\nMake sure that data consumed by a particular test is explicitly associated with that test, and isn't modified by other tests or processes.\nWherever possible, your tests should create the necessary state themselves as part of setup, using the application's APIs.\nIsolating your test data is also a prerequisite for tests to run in parallel.\n> 4. Minimize reliance on test data stored in databases.\nMaintaining test data stored in databases can be particularly challenging for the following reasons:\n>    1. **Poor test isolation**.\nDatabases store data durably; any changes to the data will persist across tests unless explicitly reset.\nLess reliable test inputs make test isolation more difficult, and can prevent parallelization.\n>    2. **Performance impact**.\nSpeed of execution is a key requirement for automated tests.\nInteracting with a database is typically slower and more cumbersome than interacting with locally stored data.\nFavor in-memory databases where appropriate.\n> 5. Make test data readily available.\nRunning tests against a copy of a full production database introduces risk.\nIt can be challenging and slow to get the data refreshed.\nAs a result, the data can become out of date.\nProduction data can also contain sensitive information.\nInstead, identify relevant sections of data that the tests require.\nExport these sections regularly and make them easily available to tests.\n*Learn more about [Test Data Management](https://cloud.google.com/solutions/devops/devops-tech-test-data-management)*"
+            ],
+            "fr": [
+              "Selon les [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities), les concepts suivants peuvent améliorer la qualité de l’évaluation de la fonctionnalité et de l’architecture du système, pour autant que soient prises en compte les composantes organisationnelles et techniques :\nComposantes organisationnelles\n- Permettre aux testeurs de travailler de concert avec les développeurs tout au long du processus de développement et de livraison des logiciels.\n- Exécuter les activités des tests manuels, comme les tests exploratoires, les tests de facilité d’utilisation et les tests de validation, tout au long du processus de livraison.\nComposantes techniques\ncréer et tenir à jour un ensemble de séries de tests automatisés clés comme les tests unitaires et les tests de validation;\nSi l’automatisation des tests dont vous disposez est limitée, commencez par créer un pipeline de déploiement paramétrable qui comprend :\n- un seul test unitaire;\n- un seul test de validation;\n- des scripts de déploiement automatisés qui sont adaptés aux environnements de tests exploratoires;\n- l’augmentation de la couverture des tests puis l’étendue du pipeline de déploiement à mesure que le produit ou le service évolue.\nIl est également recommandé de rédiger vos **tests unitaires** avant de rédiger le code pour faire en sorte que le code puisse être testé et que les tests soient faciles à gérer.\nEnfin, vous pouvez rédiger un nombre restreint de **tests de validation** de la fonctionnalité stratégique.\nAssurez-vous de demander aux développeurs de rédiger des tests unitaires et de validation des nouvelles fonctionnalités et de celles que vous modifiez.\n*Pour en savoir plus sur [les tests continus](https://cloud.google.com/solutions/devops/devops-tech-test-automation)*\nCet extrait des [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities) indique que les pratiques suivantes peuvent améliorer de façon fructueuse et judicieuse la **gestion des données de test** :\n> 1. Privilégier les tests unitaires.\nLes tests unitaires doivent être indépendants les uns des autres et de toute autre partie du système, à l’exception du code testé.\nLes tests unitaires ne doivent pas dépendre de données externes. Comme le définit la pyramide d’automatisation des tests, les tests unitaires devraient constituer la majorité de vos tests. Les tests unitaires bien rédigés qui s’exécutent sur une base de code bien conçue sont beaucoup plus faciles à trier et moins coûteux à gérer que les tests de niveau supérieur. Si vous augmentez la couverture de vos tests unitaires, vous pouvez réduire votre dépendance à des tests de niveau supérieur qui consomment des données externes.\n> ![Test automation pyramid.](assets/images/devops-tech-test-automation-pyramid.svg){:height='80%' width='80%' margin-top='2em' margin-bottom='2em'}\n> 2. Réduire la dépendance aux données de tests.\nLes données de tests nécessitent une maintenance minutieuse et permanente.\nAu fur et à mesure de l’évolution de vos interfaces, dont les API (interfaces de programmation applicative), vous devez mettre à jour ou recréer les données de test s’y rapportant.\nCe processus représente un coût qui peut nuire à la vitesse de l’équipe.\nPar conséquent, il est recommandé de réduire la quantité de données de test nécessaire pour exécuter des tests automatisés.\n> 3. Isoler les données de vos tests.\nExécutez vos tests dans des environnements bien définis avec des intrants contrôlés et des extrants attendus que vous pouvez comparer aux extrants réels.\nAssurez-vous que les données consommées par un test en particulier sont explicitement liées à celui-ci et qu’elles ne sont pas modifiées par d’autres tests ou processus.\nDans la mesure du possible, vos tests mêmes doivent permettre de créer l’état nécessaire dans le cadre de la configuration, à l’aide des API de l’application.\nL’isolation des données de vos tests est également une condition préalable à l’exécution de ces tests en parallèle.\n> 4. Réduire la dépendance aux données de test stockées dans des bases de données.\nLa maintenance des données de tests stockées dans des bases de données peut se révéler particulièrement difficile pour les raisons suivantes :\n>    1. **Mauvaise isolation du test**.\nLes bases de données stockent les données de façon durable; les modifications apportées aux données sont conservées entre les tests, sauf si elles sont explicitement réinitialisées.\nDes extrants de tests d’une fiabilité moindre compliquent l’isolation des tests et risquent d’empêcher la parallélisation.\n>    2. **Retombées sur la performance**.\nLa rapidité d’exécution est une condition essentielle pour les tests automatisés.\nL’interaction avec une base de données est généralement plus lente et plus fastidieuse que celle avec des données stockées localement.\nIl faut privilégier les bases de données en mémoire, le cas échéant.\n> 5. Permettre un accès facile aux données des tests.\nL’exécution de tests sur une copie d’une base de données de production complète présente un risque.\nL’actualisation des données peut se révéler difficile et lente à obtenir.\nPar conséquent, les données peuvent devenir obsolètes.\nLes données de production peuvent également contenir de l’information de nature délicate.\nTâchez plutôt de discerner les sections pertinentes des données que les tests exigent.\nExportez ces sections régulièrement et rendez-les facilement accessibles pour les tests.\n*Pour en savoir plus sur [la gestion des données de tests](https://cloud.google.com/solutions/devops/devops-tech-test-data-management)*"
+            ]
           }
         },
         {
           "level": "3",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         },
         {
           "level": "5",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         }
       ]
@@ -107,24 +139,36 @@
           "level": "1",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "Based on the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities), the following recommendations can improve the developer productivity, deployment outcomes and overall **architecture**:\n- **Evolutionary architecture**. An iterative approach to improving the design of your enterprise system. This will lead successful products and services to re-architect during their lifecycle due to the changing requirements placed on them.\nBefore transforming a functionality into a service, they need to consist of the traits below:\n- Implements a single business function or capability.\n- Performs its function with minimal interaction with other services.\n- Is built, scaled, and deployed independently from other services.\n- Interacts with other services by using lightweight communication methods, for example, a message bus or HTTP endpoints.\n- Can be implemented with different tools, programming languages, data stores, and so on\n*Learn more about [Architecture](https://cloud.google.com/solutions/devops/devops-tech-architecture)*\n\nThe following excerpt from the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities) provides recommendations to make sure **the team is empowered** to make tool and technology decisions:\n>- **Periodically assess the tech stack**.\nDuring assessments, encourage team members to critically evaluate how well the current tools address requirements.\nAdditionally, during these reviews, discuss issues with the existing tools and potential new tool experimentation can be discussed and planned.\n>- **Proactively investigate new tools for new projects**.\nHave members of the teams think about and experiment with new tools to determine whether those tools are worth supporting.\nTry implementing a key piece of the new system using both existing and proposed technologies to see whether the expected benefits materialize.\nWhen you select technologies, have a good understanding of the costs associated with the technology. These might include licensing, support, and the infrastructure required to run the tools. You might also need to hire more people to help with adopting and maintaining the technology.\n>- **Schedule time to experiment with new tools**.\nPeriodically, hold sessions (such as hackathons) where teams can play around with new projects and new technologies.\nNot all tools will be kept as a result of these experiments.\nBut the important point is that you're easing these new technologies into your stack or decide they aren't appropriate.\n>- **Hold regular presentations to discuss new tools**.\nSponsor organized meetings (such as lunch meetings) where new tech is presented and discussed.\nThey can be informal meetings where one person does a presentation about a project they are working on in a new tech, or something they are investigating.\nInformal meetings like these are a good way for the group to talk about new technologies and stay up to date.\nA good approach is to rotate the presentations, with team members taking turns presenting Or you can invite people from other teams or someone from outside of the company to present.\nIncluding people from outside the organization can be particularly helpful, because if they have experience with a tool, they can discuss hidden costs and complexities that will only be apparent after longer-term use.\n*Learn more about [Empowering teams to choose tools](https://cloud.google.com/solutions/devops/devops-tech-teams-empowered-to-choose-tools)*"
+            ],
+            "fr": [
+              "Selon les [Guides des capacités DevOps de la DORA](https://cloud.google.com/solutions/devops/capabilities), les recommandations suivantes peuvent améliorer la productivité des développeurs, les résultats du déploiement et l’**architecture** globale :\n- **Architecture évolutive**. Approche itérative visant à améliorer la conception de votre système d’entreprise. Dans cette approche, les produits et services performants nécessiteront une nouvelle architecture au cours de leur cycle de vie en raison de l’évolution des exigences auxquelles ils sont soumis.\nAvant de prendre la forme d’un service, la fonctionnalité doit présenter les caractéristiques suivantes :\n- Elle met en œuvre une fonction ou une capacité opérationnelle unique.\n- Pour remplir sa fonction, elle requiert des interactions minimales avec d’autres services.\n- Elle est construite, mise à l’échelle et déployée indépendamment des autres services.\n- Elle interagit avec d’autres services au moyen de méthodes de communication légères, comme un bus de messages ou des terminaux HTTP.\n- Elle peut être mise en œuvre à l’aide de différents outils, langages de programmation, magasins de données, etc.\n*Pour en savoir plus sur [l’architecture](https://cloud.google.com/solutions/devops/devops-tech-architecture)*\nL’extrait suivant des [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities) fournit des recommandations pour **habiliter l’équipe** à prendre des décisions relatives aux outils et à la technologie :\n>- **Évaluer périodiquement la pile technologique**.\nPendant les évaluations, invitez les membres de l’équipe à jauger de façon critique la mesure dans laquelle les outils en cours répondent bien aux exigences.\nProfitez-en également pour analyser les problèmes posés par les outils existants de même que la mise à l’essai potentielle de nouveaux outils et planifier celle-ci.\n>- **Étudier en amont de nouveaux outils en vue de nouveaux projets**.\nDemandez aux membres des équipes de réfléchir aux nouveaux outils et de les mettre à l’essai afin de déterminer s’il convient de les adopter.\nTentez de mettre en œuvre un élément clé du nouveau système à l’aide des technologies existantes et proposées pour voir si les avantages attendus se concrétisent.\nLorsque vous sélectionnez des technologies, assurez-vous de bien interpréter les coûts qui s’y rapportent. Examinez entre autres le coût des licences, de l’assistance et de l’infrastructure requise pour utiliser les outils. Peut-être devrez-vous augmenter les effectifs embauchés afin de permettre l’adoption et la maintenance de la technologie.\n>- **Prévoyez du temps pour mettre à l’essai de nouveaux outils**.\nOrganisez périodiquement des événements (comme des marathons de programmation) où les équipes peuvent s’initier aux nouveaux projets et aux nouvelles technologies.\nTous les outils ne seront pas forcément adoptés à l’issue de ces mises à l’essai.\nIl s’agit essentiellement pour vous soit d’intégrer ces nouvelles technologies à votre pile, soit de déterminer qu’elles ne conviennent pas.\n>- **Organisez à intervalles réguliers des présentations pour discuter des nouveaux outils**.\nParrainez les réunions organisées (comme des midis-rencontres) pendant lesquelles de nouvelles technologies sont présentées et analysées.\nCe peut être des réunions informelles où une personne présente un projet auquel elle travaille dans le contexte d’une nouvelle technologie ou un élément qu’elle étudie.\nDe telles réunions informelles sont un bon moyen pour le groupe d’échanger sur les nouvelles technologies et de demeurer au fait de celles-ci.\nN’hésitez pas à alterner les présentations pour que les membres de l’équipe interviennent à tour de rôle ou à inviter des collègues des autres équipes ou des personnes de l’extérieur à donner une présentation.\nLe fait d’intégrer des personnes de l’extérieur peut se révéler tout particulièrement utile, car si elles ont l’expérience d’un outil, elles peuvent exposer les coûts cachés et les complexités qui seront manifestes seulement à la suite d’une utilisation à long terme.\n*Pour en savoir plus sur le fait de [permettre aux équipes de choisir leurs outils](https://cloud.google.com/solutions/devops/devops-tech-teams-empowered-to-choose-tools)*"
+            ]
           }
         },
         {
           "level": "3",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         },
         {
           "level": "5",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         }
       ]
@@ -137,24 +181,36 @@
           "level": "1",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "Based on the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities),to achieve more rapid, reliable releases, and higher levels of availability, velocity, and reliability of the **Cloud Infrastructure**, the key actions below need to be considered:\n- **Close collaboration** with developers, operations teams, information security, procurement, and finance. This will assist to identify and resolve any concerns or conflicts to substantial changes in adopting cloud-native processes and practices.\n- **Adopting Infrastructure-as-code** .This allows Infrastructure configuration to run version control, and developers can provision environments, make configuration changes, and execute deployments through an automated mechanism. Additional, consider the requirements to be assessed such as the engineering effort and process change, including changing policies for implementing information security controls.\n*To learn more about [Cloud Infrastructure](https://cloud.google.com/solutions/devops/devops-tech-cloud-infrastructure)*"
+            ],
+            "fr": [
+              "Selon les [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities), pour en arriver à des diffusions accélérées et d’une fiabilité accrue, ainsi qu’à des niveaux supérieurs d’accessibilité, de vitesse et de fiabilité de l’**infrastructure infonuagique**, les principales mesures suivantes doivent être prises :\n- **Une étroite collaboration** avec les développeurs, les équipes chargées des opérations, les équipes responsables de la sécurité de l’information, et les responsables des achats et de la finance. Cette mesure permettra de cerner et de résoudre les préoccupations ou les conflits liés aux changements importants apportés à l’adoption de processus et de pratiques conçus pour l’informatique infonuagique.\n- **L’adoption de l’« infrastructure en tant que code »** Celle-ci permet à la configuration de l’infrastructure d’exécuter le contrôle des versions, et aux développeurs d’approvisionner des environnements, d’apporter des changements à la configuration et d’exécuter des déploiements par un mécanisme automatisé. De plus, il faut tenir compte des exigences à évaluer, comme les efforts d’ingénierie et la modification des processus, y compris la modification des règles de mise en œuvre des contrôles de la sécurité de l’information.\n*Pour en savoir plus sur [l’infrastructure infonuagique](https://cloud.google.com/solutions/devops/devops-tech-cloud-infrastructure)*"
+            ]
           }
         },
         {
           "level": "3",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         },
         {
           "level": "5",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         }
       ]
@@ -167,24 +223,36 @@
           "level": "1",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "The following excerpt of the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities) indicates that the following practices can improve your **team experimentation**:\n>- **Hold regular hackathons.** Hackathons are opportunities for the team to experiment and to work with and share ideas. They also have the added benefit of letting your team work with new technologies and tools.\n>- **Encourage teams to iterate on and continually improve solutions to foster experimentation.** Many times the first solution to a problem isn't the best. Improvements to one service or feature often yield improvements in others.\n>- **Allow developers and operators to talk to and observe customers.** This kind of interaction provides more context and information that teams can use to solve problems and develop new ideas.\n*Learn more about [Team experimentation](https://cloud.google.com/solutions/devops/devops-process-team-experimentation)*\nThis excerpt of the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities) indicates that to improve your **change approval processes**, focus on implementing the following:\n>1. Moving to a peer-review based process for individual changes, enforced at code check-in time, and supported by automated tests.\n>1. Finding ways to discover problems such as regressions, performance problems, and security issues in an automated fashion as soon as possible after changes are committed.\n>1. Performing ongoing analysis to detect and flag high risk changes early on so that they can be subjected to additional scrutiny.\n>1. Looking at the change process end-to-end, identifying bottlenecks, and experimenting with ways to shift validations into the development platform.\n>1. Implementing information security controls at the platform and infrastructure layer and in the development tool chain, rather than reviewing them manually as part of the software delivery process.\n*Learn more about [Streamlining change approval](https://cloud.google.com/solutions/devops/devops-process-streamlining-change-approval)*"
+            ],
+            "fr": [
+              "L’extrait suivant des [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities) indique que les pratiques suivantes peuvent permettre d’améliorer votre **expérimentation en équipe** :\n>- **Organisez à intervalles réguliers des marathons de programmation.** Les marathons de programmation donnent à l’équipe l’occasion de mettre à l’essai des idées, de travailler à celles-ci et de les communiquer. De plus, ils permettent à votre équipe de se familiariser avec de nouvelles technologies et de nouveaux outils.\n>- **Invitez les équipes à répéter et à améliorer continuellement les solutions pour favoriser la mise à l’essai.** Souvent, la première solution à un problème n’est pas la meilleure. Les améliorations apportées à un service ou à une fonctionnalité se traduisent fréquemment par des améliorations à d’autres.\n>- **Autorisez les développeurs et les opérateurs à parler aux clients et à les observer.** Ce type d’interaction permet d’étoffer le contexte et l’information dont disposent les équipes pour résoudre des problèmes et développer de nouvelles idées.\n*Pour en savoir plus sur [l’expérimentation en équipe](https://cloud.google.com/solutions/devops/devops-process-team-experimentation)*\nCet extrait des [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities) indique que l’amélioration de vos **processus d’approbation des changements** passe par l’instauration des mesures suivantes :\n>1. Passer à un processus fondé sur l’examen par les pairs en ce qui touche les changements individuels, lequel sera mis en application au moment de l’insertion du code et compatible avec les tests automatisés.\n>2. Trouver des moyens de déceler automatiquement des problèmes tels que les régressions, les problèmes de rendement et les enjeux de sécurité dès que possible après la validation des changements.\n>3. Effectuer des analyses en continu afin de détecter et de signaler au plus vite les changements à risque élevé afin qu’ils soient soumis à des vérifications supplémentaires.\n>4. Examiner le processus de changement de bout en bout, déceler les goulots d’étranglement et mettre à l’essai des façons par lesquelles transférer les validations vers la plateforme de développement.\n>5. Mettre en œuvre des contrôles de sécurité de l’information au niveau de la plateforme et de l’infrastructure, ainsi que dans la chaîne d’outils de développement, plutôt que de les examiner manuellement dans le cadre du processus de livraison des logiciels.\n*Pour en savoir plus sur le fait de [rationaliser l’approbation des changements](https://cloud.google.com/solutions/devops/devops-process-streamlining-change-approval)*"
+            ]
           }
         },
         {
           "level": "3",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         },
         {
           "level": "5",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         }
       ]
@@ -197,24 +265,36 @@
           "level": "1",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "Increased engagement with customers and participation in product management processes contributes to stronger identification with your organization's goals and values.\nBased on the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities), a team should use the following pattern in order to maximize their chances of successfully solving **customer problems**:\n- Gather customer feedback first, before defining any potential features.\n- Validate that you're solving a real problem.\n- Iterate on a solution that actually solves that problem (and nothing more).\n- Ensure the solution results in a viable business (for example, the cost is less than the anticipated revenue).\n- Track key metrics to gauge success.\n- Iterate through the above to improve those metrics.\n*Learn more about [Customer feedback...](https://cloud.google.com/solutions/devops/devops-process-customer-feedback)*\nThe following excerpt of the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities) proposes that to improve **work visibility** you should:\n- **Provide tools for visualizing and recording workflow.** Start with making sure the team has visual management displays that show their work and its flow through the part of the value stream that is closest to them, including both the upstream and downstream parts of the process. Record how long it takes work to get through the process, and how often rework must be performed because the team didn't get it right the first time. This will uncover your early and best opportunities for improvement at the team level.\n- **Create a value stream map.** Work with other teams to perform a value-stream mapping exercise to discover how work flows from idea to customer outcome, and report the VSM metrics (lead time, process time, %C/A) for each process block. Have the team prepare a future-state value stream map and work to implement it.\n- **Share artifacts.** Make sure the artifacts from these exercises are available to everyone in the organization, and that they are updated at least annually.\n*Learn more about [Visibility of work in the value stream](https://cloud.google.com/solutions/devops/devops-process-work-visibility-in-value-stream)*\n**Working in small batches** is an essential principle in any discipline where feedback loops are important, or you want to learn quickly from your decisions. Research recommends that each feature or batch of work follow the agile concept:\n- **Independent.** Make batches of work as independent as possible from other batches, so that teams can work on them in any order, and deploy and validate them independent of other batches of work.\n- **Negotiable.** Each batch of work is iterable and can be renegotiated as feedback is received.\n- **Valuable.** Discrete batches of work are usable and provide value to the stakeholders.\n- **Estimable.** Enough information exists about the batches of work that you can easily estimate the scope.\n- **Small.** During a sprint, you should be able to complete batches of work in small increments of time, meaning hours to a couple days.\n- **Testable.** Each batch of work can be tested, monitored, and verified as working in the way users expect.\n*Learn more about [Working in small batches...](https://cloud.google.com/solutions/devops/devops-process-working-in-small-batches)*"
+            ],
+            "fr": [
+              "La coopération accrue de la clientèle et la hausse de la participation aux processus de gestion des produits contribuent à mieux discerner les objectifs et les valeurs de votre organisation.\nSelon les [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities), l’équipe doit recourir au schéma suivant afin d’optimiser ses possibilités de résoudre avec brio **les problèmes des clients** :\n- Recueillez d’abord les commentaires des clients, avant même de définir les fonctionnalités potentielles de votre solution.\n- Assurez-vous que votre objectif est de résoudre un problème réel.\n- Effectuez des itérations sur une solution qui résout réellement ce problème (et rien de plus).\n- Assurez-vous que la solution se traduit par une activité viable (par exemple, le coût doit être inférieur aux revenus attendus).\n- Effectuez le suivi des principaux paramètres pour évaluer la réussite.\n- Répéter les étapes précédentes pour améliorer ces paramètres.\n*Pour en savoir plus sur [les commentaires des clients...](https://cloud.google.com/solutions/devops/devops-process-customer-feedback)*\nL’extrait suivant des [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities) vous propose les mesures suivantes pour améliorer **la visibilité du travail** :\n- **Fournir des outils de visualisation et d’enregistrement du flux de travail.** Assurez-vous tout d’abord que les membres de l’équipe ont accès à des dispositifs de gestion visuelle représentant leur travail et son déroulement dans la partie du flux de travail qui leur est la plus proche, y compris les parties situées en amont et en aval du processus. Enregistrez le temps nécessaire au travail pour traverser le processus, ainsi que la fréquence à laquelle il faut reprendre le travail parce que celui-ci n’est pas effectué correctement du premier coup par l’équipe. Vous découvrirez ainsi les possibilités précoces et optimales d’amélioration de l’équipe.\n- **Cartographier les flux de valeur.** Collaborez avec d’autres équipes à la réalisation d’un exercice de cartographie des flux de valeur (CFV) afin de déterminer le flux du travail, à partir de l’idée jusqu’aux résultats pour le client, puis relatez les paramètres de la CFV (temps d’écoulement, pourcentage d’achèvement et de conformité) pour chaque bloc de processus. Demandez à l’équipe de cartographier le futur état du flux de valeur et de travailler à sa mise en œuvre.\n- **Partager les artéfacts.** Assurez-vous que les artéfacts issus de ces exercices sont accessibles à tous les membres de l’organisation et actualisés au moins une fois l’an.\n*Pour en savoir plus sur [la visibilité du travail dans le flux de valeur](https://cloud.google.com/solutions/devops/devops-process-work-visibility-in-value-stream)*\n**Travailler par petits lots** est un principe déterminant dans les disciplines où les boucles d’asservissement sont importantes, ou lorsqu’on souhaite tirer un apprentissage rapide des décisions prises. Dans la recherche, il est recommandé que chaque fonctionnalité ou lot de travail soit conforme au concept Agile :\n- **Indépendant.** Faites en sorte que les lots de travail soient aussi indépendants que possible des autres lots afin que les équipes puissent les traiter dans n’importe quel ordre, puis déployez-les et validez-les indépendamment des autres lots de travail.\n- **Négociable.** Chaque lot de travail est itératif et peut être renégocié au fil des commentaires reçus.\n- **Valorisé.** Les lots de travail discrets sont utiles et apportent de la valeur aux parties prenantes.\n- **Estimable.** Il existe assez d’information sur les lots de travail pour vous permettre d’en évaluer facilement le champ d’application.\n- **Suffisamment petit.** Lors d’un sprint, vous devez être capable d’achever des lots de travail en de petits laps de temps, à savoir de quelques heures à quelques jours.\n- **Testable.** Chaque lot de travail peut être testé, surveillé et certifié conforme aux attentes des utilisateurs.\n*Pour en savoir plus sur le fait de [travailler par petits lots...](https://cloud.google.com/solutions/devops/devops-process-working-in-small-batches)*"
+            ]
           }
         },
         {
           "level": "3",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         },
         {
           "level": "5",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         }
       ]
@@ -227,24 +307,36 @@
           "level": "1",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "This excerpt from the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities) indicates that in order to improve team **monitoring effectiveness**, you should focus efforts on two main areas:\n>- **Collecting data from key areas throughout the value chain.**\nBy analysing the data that you collect and doing a gap analysis, you can help ensure that you collect the right data for your organization.\n>- **Using the collected data to make business decisions.**\nThe data that you collect should drive value across the organization, and the metrics that you select must be meaningful to your organization.\nMeaningful data can be used by many teams, from DevOps to Finance.\nIt's also important to find the right medium to display the monitoring information.\nDifferent uses for the information demand different presentation choices.\nReal-time dashboards might be most useful to the DevOps team, while regularly generated business reports might be useful for metrics measured over a longer period.\nThe most important thing is to ensure the data is available, shared, and used to guide decisions.\nIf the best you can do to kick things off is a shared spreadsheet, use that.\nThen graduate to fancy dashboards later.\nDon't let perfect be the enemy of good enough.\n*Learn more about [Monitoring systems to inform business decisions](https://cloud.google.com/solutions/devops/devops-measurement-monitoring-systems)*\nBased on the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities), to improve **monitoring and observability**, your teams should have the following:\n- Reporting on the overall health of systems (Are my systems functioning? Do my systems have sufficient resources available?).\n- Reporting on system state as experienced by customers (Do my customers know if my system is down and have a bad experience?).\n- Monitoring for key business and systems metrics.\n- Tooling to help you understand and debug your systems in production.\n- Tooling to find information about things you did not previously know (that is, you can identify unknown unknowns).\n- Access to tools and data that help trace, understand, and diagnose infrastructure problems in your production environment, including interactions between services.\nHere are a few key measures to validate an effective implementation of monitoring and observability.\n- Your monitoring should tell you what is broken and help you understand why, before too much damage is done.\n- The key metric in the event of an outage or service degradation is time-to-restore (TTR).\n- A key contributor to TTR is the ability to rapidly understand what broke and the quickest path to restoring service (which may not involve immediately remediating the underlying problems).\n*Learn more about [Monitoring and observability](https://cloud.google.com/solutions/devops/devops-measurement-monitoring-and-observability)*"
+            ],
+            "fr": [
+              "Cet extrait des [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities) indique que l’amélioration de **l’efficacité de la surveillance** de l’équipe passe par deux grands domaines :\n>- **Recueillir les données de domaines clés tout au long de la chaîne de valeur.**\nPar l’analyse des données recueillies et l’analyse de l’écart, vous pouvez vous assurer de recueillir les données appropriées à votre organisation.\n>- **Utiliser les données recueillies pour prendre des décisions opérationnelles.**\nLes données que vous recueillez doivent générer de la valeur pour l’ensemble de l’organisation, et les paramètres que vous sélectionnez doivent être pertinents à votre organisation.\nNombreuses sont les équipes, allant de celle de DevOps à celle des finances, qui peuvent recourir aux données pertinentes.\nDe plus, il importe de trouver le bon moyen de véhiculer l’information sur la surveillance.\nSelon l’usage fait de l’information, les choix de présentation varieront.\nPeut-être que les tableaux de bord en temps réel se révéleront les plus utiles à l’équipe de DevOps et que les rapports opérationnels réguliers, les plus pertinents quant aux paramètres mesurés sur une période prolongée.\nCe qui importe le plus, c’est de s’assurer que les données sont accessibles, communiquées et employées pour orienter les décisions.\nSi une feuille de calcul partagée constitue le moyen idéal au départ, utilisez-en une.\nVous pourrez migrer ultérieurement vers des tableaux de bord élaborés.\nNe laissez pas la perfection être l’ennemie du bien.\n*Pour en savoir plus sur [les systèmes de surveillance pour des décisions opérationnelles éclairées](https://cloud.google.com/solutions/devops/devops-measurement-monitoring-systems)*\nSelon les [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities), pour améliorer **la surveillance et l’observabilité**, vos équipes doivent disposer des éléments suivants :\n- Des rapports sur l’état général des systèmes (Mes systèmes fonctionnent-ils? Disposent-ils de suffisamment de ressources?)\n- Des rapports sur l’état du système tel qu’il est perçu par les clients (Mes clients savent-ils si mon système est en panne et vivent-ils une mauvaise expérience?)\n- La surveillance des principaux paramètres opérationnels et systémiques.\n- Un outillage permettant de concevoir le système de production et de le dépanner.\n- Un outillage pour trouver de l’information sur des éléments qui vous étaient préalablement inconnus (p. ex., vous pouvez discerner les « éléments inconnus qui vous étaient inconnus »).\n- L’accès à des outils et à des données qui permettent de repérer, de concevoir et de diagnostiquer les problèmes d’infrastructure dans votre environnement de production, y compris les interactions entre services.\nVoici quelques mesures clés pour valider une mise en œuvre efficace de la surveillance et de l’observabilité.\n- Votre solution de surveillance doit vous indiquer ce qui est défectueux et vous aider à comprendre pourquoi, avant que les dommages ne soient trop importants.\n- Le paramètre clé en cas de panne ou de détérioration du service est le délai de rétablissement (DDR).\n- L’un des principaux facteurs qui interviennent dans le DDR, c’est la capacité d’interpréter sans tarder ce qui est défectueux ainsi que le moyen le plus rapide de rétablir le service (il ne s’agit pas forcément ici de remédier dans l’immédiat aux problèmes sous-jacents).\n*Pour en savoir plus sur [la surveillance et l’observabilité](https://cloud.google.com/solutions/devops/devops-measurement-monitoring-and-observability)*"
+            ]
           }
         },
         {
           "level": "3",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         },
         {
           "level": "5",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         }
       ]
@@ -257,24 +349,36 @@
           "level": "1",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "This excerpt from the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities) explains improve **work in process limits** when faced with too much work and too few people to do it:\n>- **Make your work visible.**\nAs you do this, try to surface all of your work, making all of it visible, to several teams and stakeholders. (See [visual displays](https://cloud.google.com/solutions/devops/devops-measurement-visual-management) for details).\n>- **Set WIP limits that match your team's capacity for work.**\n>   - Account for activities like production support, meeting time and technical debt.\n>   - Don't allow more WIP in any given part of the process than you have people to work on tasks.\n>   - Don't require people to split their time between multiple tasks.\n>   - When a particular piece of work is completed, move the card representing that work to the next column, and pull the highest priority piece of work waiting in the queue.\n>- **Set up a weekly meeting for stakeholders to prioritize all work in order.**\nLet stakeholders know that if they don't attend, their work won't get done.\n>- **Work to increase flow.**\nMeasure the lead time of work through the system.\nRecord the date that work started on a card and the date work ended.\nFrom this information, you can create a running frequency histogram, which shows the number of days work takes to go through the system.\nThis data will allow you to calculate the mean lead time, as well as variability, with the goal of having low variability: high variability means you are not scoping projects well or have significant constraints outside of your team. High variability also means your estimates and predictions about future work will not be as reliable.\n>- **Improve work processes.**\nReduce hand-offs, simplify and automate tasks, and think about how to collaborate better to get work done.\nAfter you've removed some obstacles and things feel comfortable, reduce your WIP limits to reveal the next set of obstacles.\nThe ideal is single-piece flow, which means that work flows from idea to customer with minimal wait time or rework.\nThis ideal may not be achievable, but it acts as a 'true north' to guide the way in a process of continuous improvement.\n*Learn more about [Work in process limits...](https://cloud.google.com/solutions/devops/devops-measurement-wip-limits)*\nThis excerpt from the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities) explains that to improve effectiveness in **visual management**, systems must do the following:\n>- **Reflect information that the team cares about and will act on.**\nHaving build monitors does no good if teams don't care whether the display shows an issue (for example, showing that the build status is red, meaning broken), and won't actually act on this information by swarming to fix the issue.\n>- **Be easy to understand.**\nIt should be possible to tell at a glance from across the room whether something needs attention.\nIf there is a problem, teams should know how to perform further diagnosis or fix the problem.\n>- **Give the team information that is relevant to their work.**\nWhile it's important to collect as much data as possible about the team's work, the display should present only data that is relevant to the team's goals.\nIn the face of information overload, particularly information that cannot be acted upon, people ignore visual management displays; the displays just become noise.\nThe additional data can be accessed and used by the team when they are swarming to fix the problem.\n>- **Be updated as part of daily work.**\nIf the team lets the data go stale or become inaccurate, they will ignore the visual displays, and the displays will no longer be a useful beacon when important issues arise.\nIf displays are currently displaying stale or inaccurate data, investigate the cause: is the data not related to the team's goals?\nWhat data would make the display an important and compelling information source for the team?\n*Learn more about [Visual management capabilities...](https://cloud.google.com/solutions/devops/devops-measurement-visual-management)*"
+            ],
+            "fr": [
+              "Dans cet extrait des [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities), on explique **l’amélioration dans l’établissement des limites du travail en cours** lorsqu’il y a trop de travail à exécuter et trop peu d’effectifs à cette fin :\n>- **Rendre votre travail visible.**\nEssayez ici de mettre de l’avant l’intégralité de votre travail, en le rendant visible aux yeux de plusieurs équipes et parties prenantes. (Consultez les [supports visuels](https://cloud.google.com/solutions/devops/devops-measurement-visual-management) pour plus de détails).\n>- **Définir des limites de TEC qui correspondent aux capacités de l’équipe.**\n> - Tenez compte des activités telles que l’assistance à la production, les horaires de réunion et les contraintes techniques.\n> - N’autorisez pas plus de TEC dans les parties du processus que vous avez d’effectifs pour exécuter les tâches.\n> - Évitez d’exiger des effectifs qu’ils consacrent leur temps de travail à plusieurs tâches à la fois.\n> - Lorsqu’une tâche particulière est terminée, déplacez la fiche correspondant à cette tâche vers la colonne suivante, puis remplacez-la par la fiche relative à la tâche la plus prioritaire en attente dans la file.\n>- **Organiser une réunion hebdomadaire avec les parties prenantes pour établir l’ordre de priorité des travaux.**\nFaites comprendre aux parties prenantes que leur présence à la réunion est indispensable à l’exécution de leur travail.\n>- **Viser l’augmentation du flux de travail.**\nMesurer le délai d’exécution du travail dans le système.\nNotez sur une fiche les dates de début et de fin de travail.\nÀ partir de cette information, vous pouvez créer un histogramme sur la fréquence d’exécution qui permet d’illustrer le nombre de jours nécessaires à la réalisation d’une tâche dans le système.\nCes données vous permettront de calculer le délai d’exécution moyen, ainsi que la variabilité, dans l’optique d’en arriver à une faible variabilité : si la variabilité est élevée, c’est parce que vous ne définissez pas adéquatement les projets ou que vous faites face à des contraintes importantes qui ne relèvent pas de votre équipe. Une variabilité élevée signifie également que vos estimations et prévisions au sujet des futurs travaux futurs manqueront de fiabilité.\n>- **Optimiser les processus de travail.**\nRéduisez les transferts, simplifiez et automatisez les tâches et réfléchissez à la mise en place d’une collaboration rehaussée dans l’exécution du travail.\nDès que vous aurez éliminé certains obstacles et que vous vous sentirez à l’aise dans le processus, réduisez vos limites de TEC pour mettre au jour la prochaine série d’obstacles.\nLe flux « d’une seule traite », à savoir la concrétisation du travail à partir de l’idée jusqu’à sa prestation au client moyennant le plus petit temps d’attente ou la plus petite reprise du travail, constitue l’idéal.\nCelui-ci n’est peut-être pas réalisable, mais il sert de « boussole » pour tendre vers un processus d’amélioration continue.\n*Pour en savoir plus sur [les limites de travail en cours...](https://cloud.google.com/solutions/devops/devops-measurement-wip-limits)*\nDans cet extrait des [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities), on explique que pour améliorer l’efficacité des **fonctionnalités de gestion visuelle**, les systèmes doivent :\n>- **Refléter l’information qui intéresse l’équipe et sur laquelle elle peut agir.**\nLes écrans de surveillance des scripts de construction ne servent à rien si le support signale un problème (par exemple, montrer que l’état du script de construction est en rouge, ce qui signifie « défectueux ») mais que les équipent s’en fichent et qu’elles n’y donnent pas suite en tentant de résoudre le problème.\n>- **Être compréhensible.**\nSi un incident nécessite une attention particulière, il faut être en mesure de le repérer d’emblée.\nDans l’éventualité où l’incident pose problème, les équipes doivent savoir comment effectuer un diagnostic approfondi ou corriger le problème.\n>- **Fournir à l’équipe de l’information pertinente à son travail.**\nIl importe de recueillir le plus de données possible sur le travail de l’équipe, mais le support ne doit afficher que les données pertinentes aux objectifs de l’équipe.\nDans un contexte de surinformation, notamment d’information sur laquelle on ne peut agir, les effectifs font peu de cas des supports de gestion visuelle; ces supports deviennent alors un simple bruit.\nLes membres de l’équipe peuvent consulter les données supplémentaires et s’en servir lorsqu’ils tentent de résoudre le problème.\n>- **Être mis à jour au quotidien.**\nSi l’équipe néglige les données et que celles-ci deviennent obsolètes ou inexactes, elle fera peu de cas des soutiens visuels et ceux-ci perdront leur utilité lorsque d’importants enjeux surviendront.\nSi les soutiens montrent actuellement des données obsolètes ou inexactes, recherchez-en la cause : les données ne sont-elles pas liées aux objectifs de l’équipe?\nQuelles données feraient du soutien une source d’information importante et convaincante aux yeux des membres de l’équipe?\n*Pour en savoir plus sur [les fonctionnalités de gestion visuelle...](https://cloud.google.com/solutions/devops/devops-measurement-visual-management)*"
+            ]
           }
         },
         {
           "level": "3",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         },
         {
           "level": "5",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         }
       ]
@@ -287,24 +391,36 @@
           "level": "1",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "This excerpt from the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities) indicates that in order to improve **employees job satisfaction**, the following key actions should be taken:\n>- **Give employees the tools and resources needed to do their work.**\nEmployees must have the tools necessary to get their work done, and teams that can decide which tools they use do better at continuous delivery.\nTeams that can choose their own tools make these choices based on how they work, and on the tasks they need to perform.\nNo one knows better than practitioners what they need to be effective, so it's not surprising that practitioner tool choice helps to drive better outcomes.\nEmployees must also have the resources necessary to do their work.\nThose might be technical resources, such as access to servers or environments necessary to develop and test, or resources needed to learn and develop new skills, such as access to course materials and budget to attend trainings or technical conferences.\n>- **Give employees meaningful work that leverages their expertise.**\nThe importance of meaningful work can't be overstated.\nIn some studies, employees have rated the importance of meaningful work just as highly as the importance of salary.\nMeaningful work makes a difference and is often very personal.\n*Learn more about [Job satisfaction](https://cloud.google.com/solutions/devops/devops-culture-job-satisfaction)*\nThis excerpt from the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities) suggests that in order **to change the way people work**, the following practices can be implemented to improve your organizational culture:\n>- **High cooperation.**\nCreate cross-functional teams that include representatives from each functional area of the software delivery process (business analysts, developers, quality engineers, ops, security, and so on).\nThis practice lets everyone share the responsibility for building, deploying, and maintaining a product.\nIt's also important that there is good cooperation within the team.\n>- **Train the messengers.**\nThis means we want people to bring us bad news so we can make things better.\nHold blameless post mortems.\nBy removing blame, you remove fear; and by removing fear, you enable teams to surface problems and solve them more effectively.\nAlso create and foster an environment where it is safe to take smart risks and fail, so that anyone can surface problems at any time—even without the ceremony of a post mortem.\n>- **Share risks.**\nAlong with this, encourage shared responsibilities.\nQuality, availability, reliability and security are everyone's job.\nOne way to improve the quality of your services is to ensure that developers share responsibility for maintaining their code in production.\nThe improvement in collaboration that comes from sharing responsibility inherently reduces risk:\nThe more eyes on the software delivery process, the more you'll avoid errors in process or planning.\nAutomation also reduces risk, and with the right tool choice, can enable collaboration.\n>- **Encourage bridging.**\nBreak down silos.\nIn addition to creating cross-functional teams, techniques for breaking down silos include co-locating ops with the dev team; including ops in planning throughout the software delivery lifecycle; and implementing ChatOps.\nAnother tip is to identify someone in the organization whose work you don't understand (or whose work frustrates you, like procurement) and invite them to coffee or lunch.\nInformal discussions help foster better communication, and you may understand why they do what they do—and you can come up with creative solutions together.\n>- **Let failure lead to inquiry.**\nAgain, hold blameless post mortems.\nThe response to failure shapes the culture of an organization.\nBlaming individuals for failures creates a negative culture.\nIf instead, failures lead you to ask questions about what caused the failures and how you can keep them from happening again in the future, you've improved your technical system, your processes, and your culture.\n>- **Implement novelty.**\nEncourage experimentation.\nGiving employees freedom to explore new ideas can lead to great outcomes.\nSome companies give engineers time each week for experimentation.\nOthers host internal hack days or mini-conferences to share ideas and collaborate.\nMany new features and products began this way.\nWhen you release your employees from habitual pathways and repetitive tasks, they can generate enormous value for your organization.\nAnd remember that novelty isn't limited to new products and features.\nAlso encourage and reward improvements in process and ideas that help foster collaboration.\n*Learn more about [Westrum organizational culture](https://cloud.google.com/solutions/devops/devops-culture-westrum-organizational-culture)*\nContinuing to build a climate for learning is directly related to how an organization encourages and invests in learning. This excerpt from the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities) presents some ways an organization can show that learning is important and necessary for growth:\n>- **Have regular lunchtime meetings ('brown bags') where one person presents about a project they are working on in a new tech, or something they are investigating.**\nRotate the presentations among team members and reward people for presenting.\n>- **When people attend conferences, have them share the new ideas through presentations or trip reports.**\nYou can even host regular meetups or mini-conferences to increase networking and exposure to new technologies and ideas.\n>- **Encourage people to get certifications or external trainings.**\nYou can help with this by covering costs of external trainings and forming study groups that are a part of normal work activity.\n*Learn more about [Learning culture](https://cloud.google.com/solutions/devops/devops-culture-learning-culture)*"
+            ],
+            "fr": [
+              "Cet extrait des [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities) indique que pour rehausser **la satisfaction au travail** des employés, il convient de prendre les mesures clés suivantes :\n>- **Donner aux employés les outils et les ressources nécessaires pour faire leur travail.**\nLes employés doivent disposer des outils nécessaires pour effectuer leur travail et les équipes pouvant choisir les outils qu’elles utilisent sont les meilleures en matière de livraison continue.\nLes équipes qui peuvent choisir leurs propres outils les choisissent en fonction de leur travail et des tâches qu’elles doivent effectuer.\nLes personnes qui effectuent ces tâches sont les mieux placées pour savoir ce dont elles ont besoin afin de performer; il n’est donc pas étonnant que leur choix d’outils contribue à l’amélioration des résultats.\nLes employés doivent également disposer des ressources nécessaires pour faire leur travail.\nIl peut s’agir de ressources techniques, telles que l’accès aux serveurs ou aux environnements nécessaires au développement et aux tests, ou des ressources nécessaires à l’apprentissage et à l’acquisition de nouvelles compétences, comme l’accès au matériel des cours et le budget nécessaire pour assister à des formations ou à des conférences techniques.\n>- **Confier aux employés un travail valorisant qui met à profit leur savoir-faire.**\nOn ne saurait trop insister sur l’importance du travail valorisant.\nIl ressort de certaines études que l’importance du travail valorisant est tout aussi considérable que l’importance du salaire dans les évaluations d’employés.\nUn travail valorisant change le cours des choses et revêt souvent un caractère très personnel.\n*Pour en savoir plus sur [la satisfaction au travail](https://cloud.google.com/solutions/devops/devops-culture-job-satisfaction)*\nCet extrait des [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities) semble indiquer que pour **changer la façon dont les effectifs travaillent**, vous pouvez instaurer les pratiques suivantes afin de rehausser votre culture organisationnelle :\n>- **Haute coopération.**\nCréer des équipes pluridisciplinaires comprenant des représentants de chaque domaine fonctionnel du processus de livraison des logiciels (analystes de veille stratégique, développeurs, ingénieurs de la qualité, chargés des opérations, chargés de la sécurité, etc.).\nCette pratique permet à tout le monde de partager la responsabilité de la création, du déploiement et de la maintenance d’un produit.\nLa bonne coopération au sein de l’équipe est également importante.\n>- **Les messagers sont formés.**\nAutrement dit, nous souhaitons que les mauvaises nouvelles soient bien relayées afin de pouvoir améliorer les choses.\nLes rapports d’incidents ne doivent entraîner aucune sanction.\nSupprimer le blâme, c’est supprimer la peur et, une fois la peur supprimée, vous permettez aux équipes de signaler les problèmes et de les résoudre avec une efficacité accrue.\nCréez et favorisez également un environnement dans lequel il est permis de prendre des risques intelligents et d’échouer, de sorte que tout le monde puisse faire état de problèmes en tout temps, même sans le caractère cérémonieux que prend un rapport d’incident.\n>- **Les risques sont partagés.**\nParallèlement à cet aspect, encouragez les responsabilités partagées.\nLa qualité, la disponibilité, la fiabilité et la sécurité sont l’affaire de tous.\nL’un des moyens d’améliorer la qualité de vos services est de vous assurer que les développeurs partagent la responsabilité de la maintenance de leur code en production.\nLe partage naturel des responsabilités améliore la collaboration et, de ce fait, contribue à réduire les risques :\nplus il y a de personnes qui surveillent le processus de livraison de logiciel, plus vous éviterez les erreurs de processus ou de planification.\nL’automatisation réduit également les risques et, si les outils sont bien choisis, la collaboration s’en trouve favorisée.\n>- **La liaison est encouragée.**\nDécloisonnez l’information.\nOutre la création d’équipes pluridisciplinaires, il existe d’autres techniques de décloisonnement de l’information, dont le regroupement des équipes opérationnelles et de développement sur un même site; l’intégration des opérations à la planification tout au long du cycle de livraison du logiciel; ou la mise en œuvre de ChatOps.\nUne autre astuce consiste à choisir une personne au sein de l’organisation dont vous ne comprenez pas le travail (ou dont le travail vous frustre, comme l’approvisionnement) et à l’inviter à prendre un café ou à dîner.\nLes discussions à bâtons rompus favorisent une meilleure communication, et vous comprendrez peut-être comprendrez-vous alors pourquoi cette personne fait ce qu’elle fait... après quoi vous pourrez trouver en collaboration des solutions ingénieuses.\n>- **Laisser un échec conduire à une enquête.**\nEncore une fois, les rapports d’incident ne doivent pas occasionner de sanctions.\nLe comportement en réponse à l’échec façonne la culture de l’organisation.\nImputer la faute des échecs aux personnes est source de culture négative.\nSi, au contraire, les échecs déclenchent un questionnement sur ce qui les a provoqués et comment vous pouvez les éviter à l’avenir, vous aurez ainsi amélioré votre système technique, vos processus et votre culture.\n>- **La nouveauté est mise en œuvre.**\nEncouragez les mises à l’essai.\nSi vous accordez aux employés la liberté d’approfondir de nouvelles idées, d’excellents résultats pourraient en découler.\nDans certaines entreprises, on donne chaque semaine aux ingénieurs le temps de procéder à des mises à l’essai.\nD’autres organisent à l’interne des journées consacrées au piratage ou des mini-conférences pour échanger des idées et collaborer.\nC’est ainsi qu’un grand nombre de fonctionnalités ou produits ont vu le jour.\nLorsque vous autorisez les employés à sortir des sentiers battus (trajectoires habituelles et tâches répétitives), ils peuvent alors générer une valeur considérable pour votre organisation.\nFait à retenir, qui dit nouveauté ne dit pas forcément nouveaux produits ou nouvelles fonctionnalités.\nVoyez également à favoriser et à récompenser les améliorations apportées aux processus et aux idées propices à la collaboration.\n*Pour en savoir plus sur [la culture organisationnelle de Westrum](https://cloud.google.com/solutions/devops/devops-culture-westrum-organizational-culture)*\nLe maintien d’un climat propice à l’apprentissage est directement lié à la façon dont une organisation encourage l’apprentissage et investit dans celui-ci. Cet extrait des [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities) présente certaines façons par lesquelles l’organisation peut démontrer que l’apprentissage est important et nécessaire à la croissance :\n>- **Organisez à intervalles réguliers des dîners-rencontres où une personne présente un nouvel outil technologique qu’elle approfondit ou qu’elle étudie dans le cadre d’un projet.**\nAttribuez l’ordre de présentation des exposés selon une rotation et récompensez les membres de l’équipe qui les présentent.\n>- **Demandez aux personnes qui assistent à des conférences de transmettre les nouvelles idées qu’elles en ont tirées à l’aide d’exposés ou de rapports de voyage.**\nVous pouvez même tenir à intervalles réguliers des rencontres ou des mini-conférences pour favoriser le réseautage et la diffusion des nouvelles technologies et idées.\n>- **Invitez les personnes à obtenir des attestations ou de la formation à l’externe.**\nVous pouvez les aider en ce sens en assumant le coût de la formation à l’externe et en constituant des groupes d’étude dont l’activité s’inscrit dans le déroulement normal du travail.\n*Pour en savoir plus sur [la culture d’apprentissage](https://cloud.google.com/solutions/devops/devops-culture-learning-culture)*"
+            ]
           }
         },
         {
           "level": "3",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         },
         {
           "level": "5",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         }
       ]
@@ -317,24 +433,36 @@
           "level": "1",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "Your organization can follow some general principles in order to increase your chances of success in **transformational leadership**. This excerpt from the [DORA DevOps capabilities guides](https://cloud.google.com/solutions/devops/capabilities) presents some key principles:\n>- **Improvement work is never done.**\nHigh-performing organizations are never satisfied with their performance and are always trying to get better at what they do.\nImprovement work is ongoing and baked into the daily work of teams.\nPeople in these organizations understand that failing to change is as risky as change, and they don't use 'that's the way we've always done it' as a justification for resisting change.\nHowever that doesn't mean taking an undisciplined approach to change.\nChange management should be performed in a scientific way in pursuit of a measurable team or organizational goal.\n>- **Leaders and teams agree on and communicate measurable outcomes, and teams determine how to achieve them.**\nIt's essential that everybody in the organization knows the measurable business and organizational outcomes that they are working towards.\nThese outcomes should be short (a few sentences at most) at the organizational level, and match up clearly to the purpose and mission of the organization.\nAt the level of an individual business unit, the outcomes should fit on a single page.\nThe organizational outcomes should be decided by leaders and teams working together, although leaders have the ultimate authority.\nAt lower levels of the organization, goals are stated in more detail and with shorter horizons.\n>- **Large-scale change is achieved iteratively and incrementally.**\nThe annual budgeting cycle tends to drive organizations towards a project-based model in which work of all kinds is tied to expensive projects that take a long time to deliver.\nWith few exceptions, it's better to break work down into smaller pieces that can be delivered incrementally.\nWorking in small batches delivers a host of benefits.\nThe most important is that it lets organizations correct course based on what they discover.\nThis avoids wasting time and money doing work that doesn't deliver the expected benefits.\n*Learn more about [Transformational leadership](https://cloud.google.com/solutions/devops/devops-culture-transformational-leadership) and [How to transform](https://cloud.google.com/solutions/devops/devops-culture-transform)*"
+            ],
+            "fr": [
+              "Votre organisation peut observer certains principes généraux afin d’accroître les possibilités de réussite en **leadership transformationnel**. Cet extrait des [Guides des capacités DevOps de DORA](https://cloud.google.com/solutions/devops/capabilities) présente quelques principes clés :\n>- **Le travail d’amélioration n’est jamais terminé.**\nLes organisations très performantes ne sont jamais satisfaites de leur rendement et tentent constamment de s’améliorer dans ce qu’elles font.\nLe travail d’amélioration est continuel et fait partie intégrante du travail quotidien des équipes.\nLes membres de ces organisations conçoivent que le défaut de changement est tout aussi risqué que le changement, et leur réticence face à un changement ne s’appuie pas sur des considérations routinières.\nIl ne s’agit pas pour autant d’enfourcher à bride abattue le changement.\nEn effet, la gestion du changement doit reposer sur une démarche scientifique qui tend vers un objectif mesurable à l’échelle de l’équipe ou de l’organisation.\n>- **Les chefs de file et les équipes conviennent de résultats mesurables et communiquent ceux-ci, après quoi les équipes déterminent comment y parvenir.**\nIl est essentiel que les membres de l’organisation soient conscients des résultats opérationnels et organisationnels mesurables vers lesquels ils tendent.\nCeux-ci doivent être succincts (quelques phrases tout au plus) au niveau organisationnel, et s’inscrire clairement dans l’objectif et la mission de l’organisation.\nÀ l’échelle de l’unité opérationnelle en particulier, les résultats doivent tenir sur une seule page.\nLes résultats organisationnels doivent être déterminés par les chefs de file et les équipes en collaboration, quoique la décision définitive appartienne aux chefs de file.\nAux échelons inférieurs de l’organisation, les objectifs sont énoncés en détail et à court terme.\n>- **Le changement à grande échelle est apporté de façon répétitive et progressive.**\nLe cycle budgétaire annuel tend à inciter les organisations à adopter un modèle axé sur les projets dans lequel les travaux, tous types confondus, sont liés à des projets coûteux dont l’exécution prend beaucoup de temps.\nÀ quelques exceptions près, mieux vaut morceler le travail et en assurer la prestation progressivement.\nLe travail en petits lots présente une foule d’avantages.\nL’important, c’est que les organisations puissent rectifier le tir en fonction de ce qu’elles découvrent.\nDe cette façon, on évite de consacrer en pure perte temps et argent à un travail qui n’apporte pas les bienfaits attendus.\n*Pour en savoir plus sur [le leadership transformationnel](https://cloud.google.com/solutions/devops/devops-culture-transformational-leadership) et [réussir sa transformation](https://cloud.google.com/solutions/devops/devops-culture-transform)*"
+            ]
           }
         },
         {
           "level": "3",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         },
         {
           "level": "5",
           "type": "list",
           "title": {
-            "en": ["TBC"],
-            "fr": ["À compléter"]
+            "en": [
+              "TBC"
+            ],
+            "fr": [
+              "À compléter"
+            ]
           }
         }
       ]

@@ -23,6 +23,7 @@
     "bootstrap-vue": "^2.14.0",
     "core-js": "^3.6.5",
     "lodash.isempty": "^4.4.0",
+    "marked": "^2.0.0",
     "register-service-worker": "^1.7.1",
     "showdown": "^1.9.1",
     "survey-vue": "^1.7.7",

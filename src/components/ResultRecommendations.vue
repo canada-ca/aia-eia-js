@@ -1,31 +1,15 @@
 <template>
   <div>
     <b-card-body>
-      <ul
-        v-if="
-          getRecommendation(sectionRecommendations, sectionName, '0').title[
-            locale
-          ].length > 1
-        "
-      >
-        <li
-          v-for="item in getRecommendation(
-            sectionRecommendations,
-            sectionName,
-            '0'
-          ).title[locale]"
-          :key="item.id"
-        >
-          {{ item }}
-        </li>
-      </ul>
-      <p v-else>
-        {{
-          getRecommendation(sectionRecommendations, sectionName, "0").title[
-            locale
-          ][0]
-        }}
-      </p>
+      <div
+        v-for="item in getRecommendation(
+          sectionRecommendations,
+          sectionName,
+          '0'
+        ).title[locale]"
+        :key="item.id"
+        v-html="markdownToHtml(item)"
+      ></div>
     </b-card-body>
   </div>
 </template>
@@ -36,7 +20,12 @@ import { Vue, Component, Prop } from "vue-property-decorator";
   components: {
     ResultRecommendations
   },
-  computed: {},
+  computed: {
+    getMarkdown() {
+      const marked = require("marked");
+      return marked("# Title\n## subtitle\n\n- test\n- test\n- test")
+    }
+  },
   methods: {
     /**
      * Gets the recommendations based on the section name provided and the level achieved in the section
@@ -50,6 +39,10 @@ import { Vue, Component, Prop } from "vue-property-decorator";
         return section.name == sectionName;
       });
       return sectionRec?.recommendations[parseInt(scoreLevel)];
+    },
+    markdownToHtml(item: string) {
+      const marked = require("marked");
+      return marked(item)
     }
   }
 })
