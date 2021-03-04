@@ -1716,7 +1716,7 @@
                                     }
                                 },
                                 {
-                                    "value": "item2-2",
+                                    "value": "item2-4",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -1754,8 +1754,8 @@
                             "name": "aboutDataSource11",
                             "visibleIf": "{aboutDataSource1} = \"item1-4\"",
                             "title": {
-                                "default": "Have you verified if the system is using personal information in a way that is consistent with: (a) the current Personal Information Banks (PIBs) and Privacy Impact Assessments (PIAs) of your programs or (b) will the PIBs or PIAs be modified to take into account the new uses and processes?",
-                                "fr": "Avez-vous vérifié si le système utilise les informations personnelles d'une manière compatible avec: (a) les fichiers de renseignements personnels (FRP) et évaluations des facteurs relatifs à la vie privée (EFVP) de vos programmes ou (b) les FRP ou EFVP seront-ils modifiés pour tenir compte des nouveaux usages et processus?"
+                                "default": "Have you verified if the system is using personal information in a way that is consistent with: (a) the current Personal Information Banks (PIBs) and Privacy Impact Assessments (PIAs) of your programs or (b) planned or implemented modifications to the PIBs or PIAs that take new uses and processes into account?",
+                                "fr": "Avez-vous vérifié si le système utilise les informations personnelles d'une manière compatible avec: (a) les fichiers de renseignements personnels (FRP) et évaluations des facteurs relatifs à la vie privée (EFVP) de vos programmes ou (b) les modifications prévues ou mises en oeuvre des FRP ou des EFVP qui tiennent compte des nouveaux usages et processus?"
                             },
                             "choices": [
                                 {
