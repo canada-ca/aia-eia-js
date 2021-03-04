@@ -14,14 +14,14 @@
         <h3>{{ requirement.title }}</h3>
         <p>{{ requirement.elements[score[3] - 1].text }}</p>
       </div>
-      <p class="row">
-        <a :href="$t('linkDirective', locale)" target="_blank">
+      <div class="row">
+        <h3>{{ $t("otherRequirementsTitle", locale) }}</h3>
+        <p>{{ $t("otherRequirements", locale) }}</p>
+        <p><a :href="$t('linkDirective', locale)" target="_blank">
           {{ $t("linkDirectiveText", locale) }}
-        </a>
-      </p>
-      <p class="row">
-          {{ $t("contactAtipForPia", locale) }}
-      </p>
+        </a></p>
+        <p>{{ $t("contactAtipForPia", locale) }}</p>
+      </div>
     </div>
   </div>
 </template>
