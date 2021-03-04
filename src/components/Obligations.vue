@@ -19,6 +19,9 @@
           {{ $t("linkDirectiveText", locale) }}
         </a>
       </p>
+      <p class="row">
+          {{ $t("contactAtipForPia", locale) }}
+      </p>
     </div>
   </div>
 </template>
