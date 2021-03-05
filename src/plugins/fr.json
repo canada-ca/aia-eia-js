@@ -140,11 +140,11 @@
                 "elements": [{
                     "text": "Aucune"
                 }, {
-                    "text": "Avis en langage simple publié par l’entremise du site Web du programme ou du service."
+                    "text": "Avis en langage simple publié par l’entremise de tous les modes de prestation de services utilisés (Internet, en personne, par courrier, par téléphone)."
                 }, {
-                    "text": "Publier de la documentation sur les sites Web pertinents au sujet du système décisionnel automatisé, en langage simple, décrivant :\n\nle fonctionnement des composants;\n\nla façon dont il appuie la décision administrative;\n\nles résultats de tout examen ou audit;\n\net\n\nUne description des données de formation ou un lien vers les données de formation anonymisées si ces données sont accessibles au public."
+                    "text": "Un avis en langage simple publié par l’entremise de tous les modes de prestation de services utilisés (Internet, en personne, par courrier, par téléphone). De plus, publier de la documentation sur les sites Web pertinents au sujet du système décisionnel automatisé, en langage simple, décrivant :\n\nle fonctionnement des composants;\n\nla façon dont il appuie la décision administrative;\n\nles résultats de tout examen ou audit;\n\net\n\nUne description des données de formation ou un lien vers les données de formation anonymisées si ces données sont accessibles au public."
                 }, {
-                    "text": "Publier de la documentation sur les sites Web pertinents au sujet du système décisionnel automatisé, en langage simple, décrivant :\n\nle fonctionnement des composants;\n\nla façon dont il appuie la décision administrative;\n\nles résultats de tout examen ou audit;\n\net\n\nUne description des données de formation ou un lien vers les données de formation anonymisées si ces données sont accessibles au public."
+                    "text": "Un avis en langage simple publié par l’entremise de tous les modes de prestation de services utilisés (Internet, en personne, par courrier, par téléphone). De plus, publier de la documentation sur les sites Web pertinents au sujet du système décisionnel automatisé, en langage simple, décrivant :\n\nle fonctionnement des composants;\n\nla façon dont il appuie la décision administrative;\n\nles résultats de tout examen ou audit;\n\net\n\nUne description des données de formation ou un lien vers les données de formation anonymisées si ces données sont accessibles au public."
                 }]
             },
             {
@@ -162,37 +162,13 @@
             {
                 "title": "Exigences en matière d’explication",
                 "elements": [{
-                    "text": "En plus de toute exigence législative applicable, s’assurer qu’une explication statique des résultats communs des décisions soit fournie. Cela peut inclure une explication dans la section de la Foire aux questions d’un site Web."
+                    "text": "En plus de toute exigence juridique applicable, s’assurer qu’une explication statique des résultats communs des décisions soit fournie. Cela peut inclure une explication dans la section de la Foire aux questions d’un site Web."
                 }, {
-                    "text": "En plus de toute exigence législative applicable, s’assurer qu’une explication significative est fournie sur demande avec toute décision qui conduit à un refus de prestation, de service ou autre mesure réglementaire."
+                    "text": "En plus de toute exigence juridique applicable, s’assurer qu’une explication significative soit fournie avec toute décision qui a conduit à un refus de prestation, de service ou autre mesure réglementaire."
                 }, {
-                    "text": "En plus de toute exigence législative applicable, s’assurer qu’une explication significative est fournie avec toute décision qui a conduit à un refus de prestation, de service ou autre mesure réglementaire."
+                    "text": "En plus de toute exigence juridique applicable, s’assurer qu’une explication significative soit fournie avec toute décision qui a conduit à un refus de prestation, de service ou autre mesure réglementaire."
                 }, {
-                    "text": "En plus de toute exigence législative applicable, s’assurer qu’une explication significative est fournie avec toute décision qui a conduit à un refus de prestation, de service ou autre mesure réglementaire."
-                }]
-            },
-            {
-                "title": "Mise à l’essai",
-                "elements": [{
-                    "text": "Avant d’amorcer la production, élaborer les processus appropriés afin de veiller à ce que les données d’apprentissage soient évaluées pour la présence de biais imprévus dans les données et d’autres facteurs qui pourraient influencer injustement les résultats.\n\nVeiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l’ essai afin de veiller à ce qu’ elles soient toujours pertinentes, exactes et à jour."
-                }, {
-                    "text": "Avant d’amorcer la production, élaborer les processus appropriés afin de veiller à ce que les données d’apprentissage soient évaluées pour la présence de biais imprévus dans les données et d’autres facteurs qui pourraient influencer injustement les résultats.\n\nVeiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l’ essai afin de veiller à ce qu’ elles soient toujours pertinentes, exactes et à jour."
-                }, {
-                    "text": "Avant d’amorcer la production, élaborer les processus appropriés afin de veiller à ce que les données d’apprentissage soient évaluées pour la présence de biais imprévus dans les données et d’autres facteurs qui pourraient influencer injustement les résultats.\n\nVeiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l’ essai afin de veiller à ce qu’ elles soient toujours pertinentes, exactes et à jour."
-                }, {
-                    "text": "Avant d’amorcer la production, élaborer les processus appropriés afin de veiller à ce que les données d’apprentissage soient évaluées pour la présence de biais imprévus dans les données et d’autres facteurs qui pourraient influencer injustement les résultats.\n\nVeiller à ce que les données utilisées par le système décisionnel automatisé soient régulièrement mises à l’ essai afin de veiller à ce qu’ elles soient toujours pertinentes, exactes et à jour."
-                }]
-            },
-            {
-                "title": "Surveillance",
-                "elements": [{
-                    "text": "Surveiller les résultats des systèmes décisionnels automatisés afin de protéger contre les résultats imprévus et d’assurer la conformité avec les dispositions législatives institutionnelles et relatives aux programmes, ainsi qu’avec la présente Directive."
-                }, {
-                    "text": "Surveiller les résultats des systèmes décisionnels automatisés afin de protéger contre les résultats imprévus et d’assurer la conformité avec les dispositions législatives institutionnelles et relatives aux programmes, ainsi qu’avec la présente Directive."
-                }, {
-                    "text": "Surveiller les résultats des systèmes décisionnels automatisés afin de protéger contre les résultats imprévus et d’assurer la conformité avec les dispositions législatives institutionnelles et relatives aux programmes, ainsi qu’avec la présente Directive."
-                }, {
-                    "text": "Surveiller les résultats des systèmes décisionnels automatisés afin de protéger contre les résultats imprévus et d’assurer la conformité avec les dispositions législatives institutionnelles et relatives aux programmes, ainsi qu’avec la présente Directive."
+                    "text": "En plus de toute exigence juridique applicable, s’assurer qu’une explication significative soit fournie avec toute décision qui a conduit à un refus de prestation, de service ou autre mesure réglementaire."
                 }]
             },
             {
