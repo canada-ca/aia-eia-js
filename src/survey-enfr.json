@@ -3975,7 +3975,7 @@
                             "name": "privacyImplementation1",
                             "title": {
                                 "default": "If your system involves the use of personal information, have you undertaken a Privacy Impact Assessment, or updated an existing one?",
-                                "fr": "Si votre système implique l’utilisation de renseignements personnels, avez-vous entreprepris une évaluation des facteurs relatifs à la vie privée ou révisé une évaluation existante?"
+                                "fr": "Si votre système implique l’utilisation de renseignements personnels, avez-vous entrepris une évaluation des facteurs relatifs à la vie privée ou révisé une évaluation existante?"
                             },
                             "choices": [
                                 {
