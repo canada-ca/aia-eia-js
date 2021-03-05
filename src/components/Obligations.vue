@@ -20,6 +20,7 @@
         <p><a :href="$t('linkDirective', locale)" target="_blank">
           {{ $t("linkDirectiveText", locale) }}
         </a></p>
+        <p>{{ $t("contactAtipForPia", locale) }}</p>
       </div>
     </div>
   </div>

@@ -1700,6 +1700,81 @@
                             ]
                         },
                         {
+                            "type": "radiogroup",
+                            "name": "aboutDataSource9",
+                            "visibleIf": "{aboutDataSource1} = \"item1-4\"",
+                            "title": {
+                                "default": "Have you verified that the use of personal information is limited to only what is directly related to delivering a program or service?",
+                                "fr": "Avez-vous vérifié que l'utilisation des informations personnelles est limitée à ce qui est directement lié à la prestation d'un programme ou d'un service?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-4",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutDataSource10",
+                            "visibleIf": "{aboutDataSource1} = \"item1-4\"",
+                            "title": {
+                                "default": "Is the personal information of individuals being used in a decision-making process that directly affects those individuals?",
+                                "fr": "Les informations personnelles des individus sont-elles utilisées dans un processus décisionnel qui affecte directement ces individus?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutDataSource11",
+                            "visibleIf": "{aboutDataSource1} = \"item1-4\"",
+                            "title": {
+                                "default": "Have you verified if the system is using personal information in a way that is consistent with: (a) the current Personal Information Banks (PIBs) and Privacy Impact Assessments (PIAs) of your programs or (b) planned or implemented modifications to the PIBs or PIAs that take new uses and processes into account?",
+                                "fr": "Avez-vous vérifié si le système utilise les informations personnelles d'une manière compatible avec: (a) les fichiers de renseignements personnels (FRP) et évaluations des facteurs relatifs à la vie privée (EFVP) de vos programmes ou (b) les modifications prévues ou mises en oeuvre des FRP ou des EFVP qui tiennent compte des nouveaux usages et processus?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
                             "type": "dropdown",
                             "name": "aboutDataSource2",
                             "title": {
@@ -2080,8 +2155,8 @@
                                 {
                                     "value": "item6",
                                     "text": {
-                                        "default": "Access To Information Policy",
-                                        "fr": "Politique sur l'accès à l'information"
+                                        "default": "Access To Information and Privacy Office",
+                                        "fr": "Bureau de l'accès à l'information et de la protection des renseignements personnels"
                                     }
                                 },
                                 {
@@ -2165,6 +2240,13 @@
                                     "text": {
                                         "default": "Industry",
                                         "fr": "Industrie"
+                                    }
+                                },
+                                {
+                                    "value": "item10",
+                                    "text": {
+                                        "default": "Office of the Privacy Commissioner",
+                                        "fr": "Commissariat à la protection de la vie privée"
                                     }
                                 },
                                 {
@@ -2270,8 +2352,8 @@
                                 {
                                     "value": "item6",
                                     "text": {
-                                        "default": "Access To Information Policy",
-                                        "fr": "Politique sur l'accès à l'information"
+                                        "default": "Access to Information and Privacy Office",
+                                        "fr": "Bureau de l'accès à l'information et de la protection des renseignements personnels"
                                     }
                                 },
                                 {
@@ -2355,6 +2437,13 @@
                                     "text": {
                                         "default": "Industry",
                                         "fr": "Industrie"
+                                    }
+                                },
+                                {
+                                    "value": "item10",
+                                    "text": {
+                                        "default": "Office of the Privacy Commissioner",
+                                        "fr": "Commissariat à la protection de la vie privée"
                                     }
                                 },
                                 {
@@ -3769,8 +3858,8 @@
                             "type": "radiogroup",
                             "name": "privacyDesign1",
                             "title": {
-                                "default": "Will you need to undertake a Privacy Impact Assessment, or revise an existing one?",
-                                "fr": "Devrez-vous entreprendre une évaluation des facteurs relatifs à la vie privée ou réviser une évaluation existante??"
+                                "default": "If your system involves the use of personal information, will you or have you undertaken a Privacy Impact Assessment, or updated an existing one?",
+                                "fr": "Si votre système implique l’utilisation de renseignements personnels, avez-vous ou allez-vous entreprendre une évaluation des facteurs relatifs à la vie privée ou réviser une évaluation existante?"
                             },
                             "choices": [
                                 {
@@ -3793,8 +3882,56 @@
                             "type": "radiogroup",
                             "name": "privacyDesign2",
                             "title": {
-                                "default": "Will your system reflect Privacy by Design principles?",
-                                "fr": "Votre système tiendra-t-il compte des principes de la 'Protection de la vie privée dès la conception'?"
+                                "default": "Will you design and build security and privacy into your systems from the concept stage of the project?",
+                                "fr": "Concevrez-vous et intégrerez-vous la sécurité et la confidentialité dans vos systèmes dès la phase de conception du projet?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "privacyDesign3",
+                            "title": {
+                                "default": "Will information be used within a closed system (i.e. no connections to the Internet, Intranet or any other system)?",
+                                "fr": "Les informations seront-elles utilisées dans un système fermé (c'est-à-dire sans connexion à Internet, Intranet ou tout autre système)?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "privacyDesign4",
+                            "title": {
+                                "default": "If the sharing of personal information is involved, has an agreement or arrangement with appropriate safeguards been established?",
+                                "fr": "Si le partage d'informations personnelles est impliqué, un accord ou un arrangement avec des garanties appropriées a-t-il été établi?"
                             },
                             "choices": [
                                 {
@@ -3837,8 +3974,8 @@
                             "type": "radiogroup",
                             "name": "privacyImplementation1",
                             "title": {
-                                "default": "Have you completed a Privacy Impact Assessment or revised an existing one?",
-                                "fr": "Avez-vous entrepris une évaluation des facteurs relatifs à la vie privée ou révisé une évaluation existante?"
+                                "default": "If your system involves the use of personal information, have you undertaken a Privacy Impact Assessment, or updated an existing one?",
+                                "fr": "Si votre système implique l’utilisation de renseignements personnels, avez-vous entrepris une évaluation des facteurs relatifs à la vie privée ou révisé une évaluation existante?"
                             },
                             "choices": [
                                 {
@@ -3861,8 +3998,56 @@
                             "type": "radiogroup",
                             "name": "privacyImplementation2",
                             "title": {
-                                "default": "Does your system reflect Privacy by Design principles?",
-                                "fr": "Votre système reflète-t-il les principes de la 'Protection de la vie privée dès la conception'?"
+                                "default": "Have you designed and built security and privacy into your systems from the concept stage of the project?",
+                                "fr": "Avez-vous conçu et intégré la sécurité et la confidentialité dans vos systèmes dès la phase de conception du projet?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "privacyImplementation3",
+                            "title": {
+                                "default": "Is the information used within a closed system (i.e. no connections to the Internet, Intranet or any other system)?",
+                                "fr": "Les informations sont-elles utilisées dans un système fermé (c'est-à-dire sans connexion à Internet, Intranet ou tout autre système)?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "privacyImplementation4",
+                            "title": {
+                                "default": "If the sharing of personal information is involved, has an agreement or arrangement with appropriate safeguards been established?",
+                                "fr": "Si le partage d'informations personnelles est impliqué, un accord ou un arrangement avec des garanties appropriées a-t-il été établi?"
                             },
                             "choices": [
                                 {
