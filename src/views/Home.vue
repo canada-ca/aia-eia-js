@@ -22,7 +22,6 @@
         :survey="Survey"
       />
     </form>
-    <br />
     <DropDown :survey="Survey" :displayDropDown="allowDropdown" />
     <br />
     <AssessmentTool :survey="Survey" />
