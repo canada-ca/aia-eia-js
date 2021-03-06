@@ -37,19 +37,17 @@
       </ul>
     </div>
     <div v-else>
-      <div v-if="this.survey.currentPageNo != 0">
-        <label for="fileChoose" class="btn btn-default">
-          {{ $t("jsonFileUpload") }}
-        </label>
-        <input
-          id="fileChoose"
-          type="file"
-          value="Load"
-          accept=".json"
-          style="display: none"
-          @change="onFileChanged($event)"
-        />
-      </div>
+      <label for="fileChoose" class="btn btn-default">
+        {{ $t("jsonFileUpload") }}
+      </label>
+      <input
+        id="fileChoose"
+        type="file"
+        value="Load"
+        accept=".json"
+        style="display: none"
+        @change="onFileChanged($event)"
+      />
     </div>
   </div>
 </template>
