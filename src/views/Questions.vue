@@ -96,6 +96,7 @@ export default class Questions extends Vue {
 
     this.Survey.currentPageNo = this.$store.getters.returnCurrentPageNumber;
     this.Survey.data = this.$store.getters.resultsDataSections;
+    this.Survey.locale = this.$i18n.locale;
   }
 }
 </script>
