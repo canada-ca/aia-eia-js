@@ -11,7 +11,7 @@ function reloadTemplate(){
     appName: [
       {
         href: "#",
-        text: (switchLanguage === 'en' ? "Évaluation de l'Incidence Algorithmique" : 'Algorithmic Impact Assessment')
+        text: (switchLanguage === 'en' ? "Évaluation de l'incidence algorithmique" : 'Algorithmic Impact Assessment')
       }
     ],
     search: false,
