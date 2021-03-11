@@ -36,6 +36,7 @@
     "otherRequirementsTitle": "Other Requirements",
     "otherRequirements": "The Directive on Automated Decision-Making also includes other requirements that must be met for all impact levels.",
     "linkDirectiveText": "Link to the Directive on Automated Decision-Making",
+    "contactAtipForPia": "Contact your institution's ATIP office to discuss the requirement for a Privacy Impact Assessment as per the Directive on Privacy Impact Assessment.",
     "pageProgressBar": " of 13",
     "riskLevel": "Impact Level",
     "currentScore": "Current Score",
@@ -137,11 +138,11 @@
                 "elements": [{
                     "text": "None"
                 }, {
-                    "text": "Plain language notice posted on the program or service website."
+                    "text": "Plain language notice posted through all service delivery channels in use (Internet, in person, mail or telephone)."
                 }, {
-                    "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\nHow it supports the administrative decision; and\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
+                    "text": "Plain language notice through all service delivery channels in use (Internet, in person, mail or telephone). In addition, publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\nHow it supports the administrative decision; and\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
                 }, {
-                    "text": "Publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\nHow it supports the administrative decision; and\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
+                    "text": "Plain language notice through all service delivery channels in use (Internet, in person, mail or telephone). In addition, publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\nHow it supports the administrative decision; and\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
                 }]
             },
             {
@@ -159,37 +160,13 @@
             {
                 "title": "Explanation Requirement",
                 "elements": [{
-                    "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided for common decision results. This can include providing the explanation via a Frequently Asked Questions section on a website."
+                    "text": "In addition to any applicable legal requirement, ensuring that a meaningful explanation is provided for common decision results. This can include providing the explanation via a Frequently Asked Questions section on a website."
                 }, {
-                    "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided upon request for any decision that resulted in the denial of a benefit, a service, or other regulatory action."
+                    "text": "In addition to any applicable legal requirement, ensuring that a meaningful explanation is provided with any decision that resulted in the denial of a benefit, a service, or other regulatory action."
                 }, {
-                    "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided with any decision that resulted in the denial of a benefit, a service, or other regulatory action."
+                    "text": "In addition to any applicable legal requirement, ensuring that a meaningful explanation is provided with any decision that resulted in the denial of a benefit, a service, or other regulatory action."
                 }, {
-                    "text": "In addition to any applicable legislative requirement, ensuring that a meaningful explanation is provided with any decision that resulted in the denial of a benefit, a service, or other regulatory action."
-                }]
-            },
-            {
-                "title": "Testing",
-                "elements": [{
-                    "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
-                }, {
-                    "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
-                }, {
-                    "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
-                }, {
-                    "text": "Before going into production, develop the appropriate processes to ensure that training data is tested for unintended data biases and other factors that may unfairly impact the outcomes.\n\nEnsure that data being used by the Automated Decision System is routinely tested to ensure that it is still relevant, accurate, and up-to-date."
-                }]
-            },
-            {
-                "title": "Monitoring",
-                "elements": [{
-                    "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
-                }, {
-                    "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
-                }, {
-                    "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
-                }, {
-                    "text": "Monitor the outcomes of Automated Decision Systems on an ongoing basis to safeguard against unintentional outcomes and to ensure compliance with institutional and program legislation, as well as this Directive."
+                    "text": "In addition to any applicable legal requirement, ensuring that a meaningful explanation is provided with any decision that resulted in the denial of a benefit, a service, or other regulatory action."
                 }]
             },
             {
