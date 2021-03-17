@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-card-group deck>
+    <ul class="card-deck">
       <HomeSectionCard
         v-for="section in sections"
         :key="section.id"
@@ -8,7 +8,7 @@
         :survey="survey"
         :icon="getIcon(section.name, sectionRecommendation)"
       ></HomeSectionCard>
-    </b-card-group>
+    </ul>
   </div>
 </template>
 <script lang="ts">

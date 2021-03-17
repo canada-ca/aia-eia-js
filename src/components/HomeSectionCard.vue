@@ -1,13 +1,15 @@
 <template>
-  <div
+  <li
     class="card"
     img-top
+    tabindex="0"
     style="min-width: 30rem; margin-top: 15px; margin-bottom: 5px;"
     v-on:click="goToSection(section.name)"
     :survey="survey"
     v-bind:style="cardStyles"
     @mouseover="hover = true"
     @mouseleave="hover = false"
+    @keydown.space="goToSection(section.name)"
   >
     <i
       :class="setIconClass(icon)"
@@ -20,7 +22,7 @@
       </p>
     </div>
     <div class="card-footer">This section's status</div>
-  </div>
+  </li>
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
@@ -30,9 +32,7 @@ import { PageModel, SurveyModel } from "survey-vue";
   data: function() {
     return {
       cardStyleHover: {
-        border: "1px solid black",
-        "box-shadow":
-          "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+        "box-shadow": "0 0 0 2px black",
         cursor: "pointer"
       },
       cardStyle: {
@@ -75,5 +75,9 @@ export default class HomeSectionCard extends Vue {
 <style scoped>
 h2 {
   font-size: 1.2em !important;
+}
+li:focus {
+  outline: "1px solid black";
+  box-shadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
 }
 </style>
