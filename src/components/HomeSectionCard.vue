@@ -1,34 +1,56 @@
 <template>
-  <b-card
-    :title="section.title"
-    title-tag="h2"
-    footer="This section's status"
+  <div
+    class="card"
     img-top
-    style="min-width: 30rem"
+    style="min-width: 30rem; margin-top: 15px; margin-bottom: 5px;"
+    v-on:click="goToSection(section.name)"
+    :survey="survey"
+    v-bind:style="cardStyles"
+    @mouseover="hover = true"
+    @mouseleave="hover = false"
   >
-    <b-card-text
-      ><i :class="setIconClass(icon)"></i>
-      <p style="font-size: 16px">
+    <i
+      :class="setIconClass(icon)"
+      style="margin-top: 20px; margin-left: 25px;"
+    ></i>
+    <div class="card-body">
+      <h2 class="card-title">{{ section.title }}</h2>
+      <p style="font-size: 16px" class="card-text">
         {{ section.description }}
       </p>
-    </b-card-text>
-    <button
-      type="button"
-      class="btn survey-button"
-      style="width: inherit"
-      v-on:click="goToSection(section.name)"
-      :survey="survey"
-    >
-      {{ $t("navigation.launchThisSection") }}
-    </button>
-  </b-card>
+    </div>
+    <div class="card-footer">This section's status</div>
+  </div>
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 import { PageModel, SurveyModel } from "survey-vue";
 
 @Component({
-  components: {},
+  data: function() {
+    return {
+      cardStyleHover: {
+        border: "1px solid black",
+        "box-shadow":
+          "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+        cursor: "pointer"
+      },
+      cardStyle: {
+        "box-shadow":
+          "0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)"
+      },
+      hover: false
+    };
+  },
+  computed: {
+    cardStyles() {
+      if (this.$data.hover == true) {
+        return this.$data.cardStyleHover;
+      } else {
+        return this.$data.cardStyle;
+      }
+    }
+  },
   methods: {
     setIconClass(icon: string) {
       let classDef: string = "fas fa-" + icon + " fa-3x";
