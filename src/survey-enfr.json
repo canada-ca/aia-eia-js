@@ -2095,7 +2095,7 @@
                             "type": "radiogroup",
                             "name": "consultationDesign1",
                             "title": {
-                                "default": "Internal Stakeholders (Strategic policy and planning, Data Governance, Program Policy, etc.)",
+                                "default": "Internal Stakeholders (Strategic Policy and Planning, Data Governance, Program Policy, etc.)",
                                 "fr": "Intervenants internes (politique et planification stratégiques, gouvernance des données, politique du programme, etc.)"
                             },
                             "choices": [
@@ -2128,7 +2128,7 @@
                                     "value": "item2",
                                     "text": {
                                         "default": "Strategic Policy and Planning",
-                                        "fr": "Politique et planification stratégiques"
+                                        "fr": "Politique et planification stratégique"
                                     }
                                 },
                                 {
@@ -2155,7 +2155,7 @@
                                 {
                                     "value": "item6",
                                     "text": {
-                                        "default": "Access To Information and Privacy Office",
+                                        "default": "Access to Information and Privacy Office",
                                         "fr": "Bureau de l'accès à l'information et de la protection des renseignements personnels"
                                     }
                                 },
@@ -3858,7 +3858,7 @@
                             "type": "radiogroup",
                             "name": "privacyDesign1",
                             "title": {
-                                "default": "If your system involves the use of personal information, will you or have you undertaken a Privacy Impact Assessment, or updated an existing one?",
+                                "default": "If your system involves the use of personal information, will you undertake or have you undertaken a Privacy Impact Assessment, or updated an existing one?",
                                 "fr": "Si votre système implique l’utilisation de renseignements personnels, avez-vous ou allez-vous entreprendre une évaluation des facteurs relatifs à la vie privée ou réviser une évaluation existante?"
                             },
                             "choices": [
