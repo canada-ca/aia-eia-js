@@ -260,7 +260,7 @@ const store: StoreOptions<RootState> = {
   plugins: [vuexLocal.plugin],
   state: {
     //Added version variable to keep track of current version
-    version: "v0.8",
+    version: "v0.9",
     answerData: [],
     result: undefined,
     currentPageNo: 0,
