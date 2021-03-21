@@ -17,9 +17,12 @@
       <div class="row">
         <h3>{{ $t("otherRequirementsTitle", locale) }}</h3>
         <p>{{ $t("otherRequirements", locale) }}</p>
-        <p><a :href="$t('linkDirective', locale)" target="_blank">
-          {{ $t("linkDirectiveText", locale) }}
-        </a></p>
+        <p>
+          <a :href="$t('linkDirective', locale)" target="_blank">
+            {{ $t("linkDirectiveText", locale) }}
+          </a>
+        </p>
+        <p>{{ $t("contactAtipForPia", locale) }}</p>
       </div>
     </div>
   </div>
