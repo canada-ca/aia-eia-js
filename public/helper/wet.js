@@ -11,7 +11,7 @@ function reloadTemplate(){
     appName: [
       {
         href: "#",
-        text: (switchLanguage === 'en' ? "Évaluation de l'Incidence Algorithmique" : 'Algorithmic Impact Assessment')
+        text: (switchLanguage === 'en' ? "Évaluation de l'incidence algorithmique" : 'Algorithmic Impact Assessment')
       }
     ],
     search: false,
@@ -33,8 +33,8 @@ function reloadTemplate(){
 
   var defPreFooter = document.getElementById("def-preFooter");
   defPreFooter.outerHTML = wet.builder.preFooter({
-    dateModified: "2020-06-03",
-    versionIdentifier: "0.8.1",
+    dateModified: "2021-03-22",
+    versionIdentifier: "0.9",
     showPostContent: false,
     showShare: false
   });
