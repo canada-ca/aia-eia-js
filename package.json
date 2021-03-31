@@ -21,7 +21,7 @@
     "@types/lodash.isempty": "^4.4.6",
     "@types/showdown": "^1.9.3",
     "bootstrap-vue": "^2.15.0",
-    "core-js": "^3.6.5",
+    "core-js": "^3.10.0",
     "lodash.isempty": "^4.4.0",
     "register-service-worker": "^1.7.1",
     "showdown": "^1.9.1",
