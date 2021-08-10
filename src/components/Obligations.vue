@@ -18,9 +18,7 @@
         <h3>{{ $t("otherRequirementsTitle", locale) }}</h3>
         <p>{{ $t("otherRequirements", locale) }}</p>
         <p>
-          <a :href="$t('linkDirective', locale)" target="_blank">
-            {{ $t("linkDirectiveText", locale) }}
-          </a>
+          <a :href="$t('linkDirective', locale)" :title="$t('linkDirectiveText', locale)" target="_blank">{{ $t("linkDirectiveText", locale) }}</a>
         </p>
         <p>{{ $t("contactAtipForPia", locale) }}</p>
       </div>

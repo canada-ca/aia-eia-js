@@ -38,6 +38,15 @@
 
       var val = htmlToPdfmake(source);
       var dd = {content:val,
+       info: {
+          title: window.document.title,
+          'lang': lang
+       },
+       pageSize: 'LETTER',
+       version: "1.5",
+       displayTitle: true,
+       'lang': lang,
+       tagged: true,
        "styles": {
           "valueResultPDF": {
             margin: [0, -15, 0, 15]
@@ -52,7 +61,6 @@
           },
         }
       };
-      console.log(dd);
 
       pdfMake.createPdf(dd).download("aia-" + lang + ".pdf");
     }
