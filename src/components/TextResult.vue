@@ -31,7 +31,7 @@
           {{ data.displayValue }}
         </p>
         <p v-if="locale != $root.$i18n.locale">
-          {{ data.displayValueAlt }}
+          <span style="white-space: pre">{{ data.displayValueAlt }}</span>
         </p>
       </div>
     </div>
