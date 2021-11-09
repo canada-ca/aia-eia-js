@@ -12,7 +12,9 @@
           <strong v-if="$root.$i18n.locale == 'fr'" class="label label-default"
             >{{ $t("frenchContent") }} :
           </strong>
-          <p>{{ data.displayValue }}</p>
+          <p>
+            <span style="white-space: pre">{{ data.displayValue }}</span>
+          </p>
         </div>
         <div>
           <strong v-if="$root.$i18n.locale == 'en'" class="label label-default"
@@ -28,7 +30,7 @@
       </div>
       <div v-if="locale !== undefined">
         <p v-if="locale == $root.$i18n.locale">
-          {{ data.displayValue }}
+          <span style="white-space: pre">{{ data.displayValue }}</span>
         </p>
         <p v-if="locale != $root.$i18n.locale">
           <span style="white-space: pre">{{ data.displayValueAlt }}</span>
