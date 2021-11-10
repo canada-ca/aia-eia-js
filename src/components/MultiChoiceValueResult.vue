@@ -21,7 +21,7 @@
 <script lang="ts">
 import { Component, Vue, Prop } from "vue-property-decorator";
 import Modifier from "@/components/Modifier.vue";
-import { getValue } from "@/store.ts";
+import { getValue } from "@/store";
 import MultiChoiceResult from "@/components/MultiChoiceResult.vue";
 
 @Component({
