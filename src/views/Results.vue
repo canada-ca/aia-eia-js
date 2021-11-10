@@ -10,7 +10,7 @@
       <a
         class="btn btn-default pull-right"
         role="button"
-        :href="$t(linkProjectAnchor)"
+        :href="$t('linkProjectAnchor')"
       >
         {{ $t("linkProjectText") }}
       </a>
