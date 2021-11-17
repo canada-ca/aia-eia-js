@@ -206,22 +206,21 @@ function calculateFinalScore(
   return [rawRiskScore, mitigationScore, total, level];
 }
 
-//Toggles wheather the next button appears based on if it is located on the last page
+//Toggles whether the next button appears based on if it is located on the last page
 function toggleButton(state: RootState): void {
   //When I do not include the btn class it prevents from the next button same for prev button from showing
   var noNextBtnClassIncluded = " sv_next_btn btn-primary";
-  var nextButstr = "btn sv_next_btn btn-primary";
+  var nextButttonClass = "btn sv_next_btn btn-primary";
   var noPrevBtnClassIncluded = " sv_prev_btn btn-primary";
-  var prevButstr = "btn sv_prev_btn btn-primary";
+  var prevButtonClass = "btn sv_prev_btn btn-primary";
   var nextButton, prevButton;
   const MAX = 12;
-  const FIRSTPAGE = 0;
 
   //Used to check if the next button and prev button is removed and directes to the proper classname that is shown currently on the DOM
   if (state.removeNext) {
     nextButton = document.getElementsByClassName(noNextBtnClassIncluded)[0];
   } else {
-    nextButton = document.getElementsByClassName(nextButstr)[0];
+    nextButton = document.getElementsByClassName(nextButttonClass)[0];
   }
 
   if (nextButton != undefined) {
@@ -232,7 +231,7 @@ function toggleButton(state: RootState): void {
       nextButton.setAttribute("class", noNextBtnClassIncluded);
       state.removeNext = true;
     } else {
-      nextButton.setAttribute("class", nextButstr);
+      nextButton.setAttribute("class", nextButttonClass);
       state.removeNext = false;
     }
   }
@@ -240,17 +239,17 @@ function toggleButton(state: RootState): void {
   if (state.removePrev) {
     prevButton = document.getElementsByClassName(noPrevBtnClassIncluded)[0];
   } else {
-    prevButton = document.getElementsByClassName(prevButstr)[0];
+    prevButton = document.getElementsByClassName(prevButtonClass)[0];
   }
 
   if (prevButton != undefined) {
     // eslint-disable-next-line prettier/prettier
     //Checks to see if the previous button is on the first page, if so get rid of the next previous by re-assigning classname.
-    if (state.currentPageNo == FIRSTPAGE) {
+    if (state.currentPageNo == 0) {
       prevButton.setAttribute("class", noPrevBtnClassIncluded);
       state.removePrev = true;
     } else {
-      prevButton.setAttribute("class", prevButstr);
+      prevButton.setAttribute("class", prevButtonClass);
       state.removePrev = false;
     }
   }

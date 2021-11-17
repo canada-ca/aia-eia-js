@@ -84,7 +84,7 @@ Il se composera de deux capacités principales :
 * Offrir une interface simple permettant à l'équipe administrative de mettre à jour les questions, les réponses et le mécanisme de notation du questionnaire.
 * Proposer un questionnaire en ligne aux utilisateurs finaux pour évaluer leur système automatisé de prise de décision.
 
-L'EAI est un élément essentiel de la [Directive sur la prise de décisions automatisée](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592) et nous voulons nous assurer que son élaboration se fasse au grand jour.
+L'EIA est un élément essentiel de la [Directive sur la prise de décisions automatisée](http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592) et nous voulons nous assurer que son élaboration se fasse au grand jour.
 
 Les utilisateurs de ce projet seront des employés du gouvernement du Canada qui évalueront l'incidence de l'utilisation d'un système automatisé de décision, y compris l'intelligence artificielle, dans le cadre de leurs programmes et services.
 
