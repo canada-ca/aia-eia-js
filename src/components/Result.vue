@@ -26,7 +26,7 @@ import TextResult from "@/components/TextResult.vue";
 import ValueResult from "@/components/ValueResult.vue";
 import MultiChoiceResult from "@/components/MultiChoiceResult.vue";
 import MultiChoiceValueResult from "@/components/MultiChoiceValueResult.vue";
-import { getValue } from "@/store.ts";
+import { getValue } from "@/store";
 
 @Component({
   components: {

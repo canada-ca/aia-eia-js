@@ -28,12 +28,12 @@ export default class MultiChoiceResult extends Vue {
       if (matches.length === 0) return "ERROR: No Matches found";
       return matches[0].displayValue;
     } else {
-      var choiceValue = this.data.data[index].displayValue;
+      var choiceValue = this.data.data[index].displayValue; // eslint-disable-line security/detect-object-injection
       var returnValue = "";
       var localePass = this.locale;
       this.data.choiceData.forEach(function(choice: any) {
         if (choice.en == choiceValue || choice.fr == choiceValue) {
-          returnValue = choice[localePass];
+          returnValue = choice[localePass]; // eslint-disable-line security/detect-object-injection
         }
       });
       return returnValue;
