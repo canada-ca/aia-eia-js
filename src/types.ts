@@ -1,7 +1,7 @@
 import { SurveyModel } from "survey-vue";
 
 export interface RootState {
-  alias: any;
+  translationsOnResult: any;
   version: string;
   answerData: any[];
   toolData: any;

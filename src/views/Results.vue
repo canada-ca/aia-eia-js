@@ -259,7 +259,7 @@ export default class Results extends Vue {
   fileLoaded($event: SurveyFile) {
     this.Survey.version = $event.version;
     this.Survey.data = $event.data;
-    this.Survey.alias = $event.alias;
+    this.Survey.translationsOnResult = $event.translationsOnResult;
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
     this.$store.commit("updateResult", this.Survey);

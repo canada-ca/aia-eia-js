@@ -17,7 +17,7 @@ const vuexLocal = new VuexPersistence({
   storage: window.localStorage,
   reducer: (state: RootState) => ({
     toolData: state.toolData,
-    alias: state.alias,
+    translationsOnResult: state.translationsOnResult,
     currentPageNo: state.currentPageNo
   })
 });
@@ -266,7 +266,7 @@ const store: StoreOptions<RootState> = {
     result: undefined,
     currentPageNo: 0,
     toolData: {},
-    alias: {},
+    translationsOnResult: {},
     questionNames: [],
     removeNext: false,
     removePrev: false
@@ -277,7 +277,7 @@ const store: StoreOptions<RootState> = {
       state.result = undefined;
       state.currentPageNo = 0;
       state.toolData = {};
-      state.alias = {};
+      state.translationsOnResult = {};
       state.removeNext = false;
       state.removePrev = false;
     },
@@ -287,7 +287,7 @@ const store: StoreOptions<RootState> = {
       state.currentPageNo = result.currentPageNo;
       //freeze this data so we can load from localStorage
       state.toolData = Object.freeze(result.data);
-      state.alias = Object.freeze(result.alias);
+      state.translationsOnResult = Object.freeze(result.translationsOnResult);
       state.answerData = result.getPlainData({
         includeEmpty: false
       });
@@ -313,8 +313,8 @@ const store: StoreOptions<RootState> = {
       if (state.result === undefined) return [0, 0, 0];
       return calculateFinalScore(state.result, state.questionNames);
     },
-    getAlias: state => {
-      return state.alias;
+    getTranslationsOnResult: state => {
+      return state.translationsOnResult;
     },
     resultDataSections: state => {
       if (state.result === undefined) return {};
