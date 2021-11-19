@@ -41,11 +41,20 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from "vue-property-decorator";
+import { Component, Vue, Prop, Watch } from "vue-property-decorator";
 
 @Component
 export default class TextResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
+  created() {
+    if (this.$store.getters.getTranslationsOnResult) {
+      // eslint-disable-next-line prettier/prettier
+      this.data.displayValueAlt = this.$store.getters.getTranslationsOnResult[this.data.name];
+    }
+  }
+  saveTranslation() {
+    this.$store.state.translationsOnResult[this.data.name] = this.data.displayValueAlt;
+  }
 }
 </script>
