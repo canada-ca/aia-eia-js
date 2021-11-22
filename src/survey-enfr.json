@@ -3922,6 +3922,5 @@
     ],
     "showQuestionNumbers": "off",
     "showProgressBar": "top",
-    "firstPageIsStarted": true,
-    "translationsOnResult": {}
+    "firstPageIsStarted": true
 }
