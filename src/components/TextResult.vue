@@ -25,11 +25,10 @@
           </strong>
           <div>
             <textarea
-              v-model="data.displayValueAlt"
-              @blur="saveTranslation"
+              :value="this.$store.getters.getTranslationsOnResult[this.data.name]"
+              @blur="saveTranslation($event.target.value)"
             ></textarea>
           </div>
-          <div>{{this.$store.getters.getTranslationsOnResult[this.data.name]}}</div>
         </div>
       </div>
       <div v-if="locale !== undefined">
@@ -37,7 +36,7 @@
           <span style="white-space: pre">{{ data.displayValue }}</span>
         </p>
         <p v-if="locale != $root.$i18n.locale">
-          <span style="white-space: pre">{{ data.displayValueAlt }}</span>
+          <span style="white-space: pre">{{ this.$store.getters.getTranslationsOnResult[this.data.name] }}</span>
         </p>
       </div>
     </div>
@@ -46,21 +45,23 @@
 
 <script lang="ts">
 import { Component, Vue, Prop, Watch } from "vue-property-decorator";
-import { mapState } from "vuex";
 
 @Component
 export default class TextResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
-  created() {
-    if (this.$store.getters.getTranslationsOnResult) {
-      this.data.displayValueAlt = this.$store.getters.getTranslationsOnResult[this.data.name];
+  updated(){
+    if(Object.keys(this.$store.getters.getTranslationsOnResult).length === 0){
+      this.$store.dispatch("saveTranslationsOnResult", {
+        key: this.data.name,
+        value: ""
+      });
     }
   }
-  saveTranslation() {
+  saveTranslation(displayValueAlt: string) {
     this.$store.dispatch("saveTranslationsOnResult", {
       key: this.data.name,
-      value: this.data.displayValueAlt
+      value: displayValueAlt
     });
   }
 }

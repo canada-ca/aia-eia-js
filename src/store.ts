@@ -287,7 +287,7 @@ const store: StoreOptions<RootState> = {
       state.currentPageNo = result.currentPageNo;
       //freeze this data so we can load from localStorage
       state.toolData = Object.freeze(result.data);
-      state.translationsOnResult = result.translationsOnResult;
+      state.translationsOnResult = result.translationsOnResult===undefined?{}:result.translationsOnResult;
       state.answerData = result.getPlainData({
         includeEmpty: false
       });
