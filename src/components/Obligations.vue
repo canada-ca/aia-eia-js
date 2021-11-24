@@ -12,7 +12,7 @@
         :key="requirement.title"
       >
         <h3>{{ requirement.title }}</h3>
-        <p>{{ requirement.elements[score[3] - 1].text }}</p>
+        <list-item :text="requirement.elements[score[3] - 1].text" />
       </div>
       <div class="row">
         <h3>{{ $t("otherRequirementsTitle", locale) }}</h3>
@@ -32,6 +32,7 @@
 import Vue from "vue";
 import i18n from "@/plugins/i18n";
 import Component from "vue-class-component";
+import ListItem from "@/components/ListItem.vue";
 
 @Component({
   props: ["locale"],
@@ -39,6 +40,9 @@ import Component from "vue-class-component";
     score: function() {
       return this.$store.getters.calcScore;
     }
+  },
+  components: {
+    ListItem
   }
 })
 export default class Obligations extends Vue {}
