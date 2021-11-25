@@ -1,19 +1,62 @@
-<!DOCTYPE html><html lang="en-CA"><head><title>Algorithmic Impact Assessment - Évaluation de l'incidence algorithmique</title><meta charset="utf-8"><meta name="description" v-bind:content="description"><meta name="keywords" content="App,Application,Hub,Dashboard,Code,Coverage,Automated,Unit Test"><meta name="author" v-bind:content="author"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><!--[if IE]><link rel="icon" href="/aia-eia-js/favicon.ico"><![endif]--><link rel="stylesheet" type="text/css" href="/aia-eia-js/survey.css"><script src="helper/startswith.js"></script><script src="helper/browser.js"></script><script src="helper/pdfmake.min.js"></script><script src="helper/vfs_fonts.js"></script><script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script><script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script><script>document.write(wet.builder.refTop({
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+  <title>Algorithmic Impact Assessment - Évaluation de l'incidence algorithmique</title>
+  <meta charset="utf-8">
+  <meta name="description" v-bind:content="description">
+  <meta name="keywords" content="App,Application,Hub,Dashboard,Code,Coverage,Automated,Unit Test">
+  <meta name="author" v-bind:content="author">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--[if IE]><link rel="icon" href="/aia-eia-js/favicon.ico"><![endif]-->
+  <link rel="stylesheet" type="text/css" href="/aia-eia-js/survey.css">
+  <script type="text/javascript">
+    // Single Page Apps for GitHub Pages
+    // MIT License
+    // https://github.com/rafgraph/spa-github-pages
+    // This script checks to see if a redirect is present in the query string,
+    // converts it back into the correct url and adds it to the
+    // browser's history using window.history.replaceState(...),
+    // which won't cause the browser to attempt to load the new url.
+    // When the single page app is loaded further down in this file,
+    // the correct url will be waiting in the browser's history for
+    // the single page app to route accordingly.
+    (function(l) {
+      if (l.search[1] === '/' ) {
+        var decoded = l.search.slice(1).split('&').map(function(s) { 
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
+  <script src="helper/startswith.js"></script>
+  <script src="helper/browser.js"></script>
+  <script src="helper/pdfmake.min.js"></script>
+  <script src="helper/vfs_fonts.js"></script>
+  <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+  <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+  <script>document.write(wet.builder.refTop({
       cdnEnv: 'prod',
       subTheme: 'gcweb',
       jqueryEnv: 'external',
       localPath: '',
       isApplication: true
-    }));</script><script>function exportResults(lang) {
+    }));</script>
+  <script>function exportResults(lang) {
       var source = window.document.getElementById(lang + "-content").innerHTML;
 
       var val = htmlToPdfmake(source);
-      var dd = {content:val,
-       "styles": {
+      var dd = {
+        content: val,
+        "styles": {
           "valueResultPDF": {
             margin: [0, -15, 0, 15]
           },
-         
+
           "modifierPDF": {
             margin: [325, -30, 0, 17]
           },
@@ -25,4 +68,36 @@
       };
 
       pdfMake.createPdf(dd).download("aia-" + lang + ".pdf");
-    }</script><script src="helper/wet.js"></script><link href="/aia-eia-js/css/app.f3dbd147.css" rel="preload" as="style"><link href="/aia-eia-js/css/chunk-vendors.c26e9052.css" rel="preload" as="style"><link href="/aia-eia-js/js/app.9b64c0ba.js" rel="preload" as="script"><link href="/aia-eia-js/js/chunk-vendors.9de3a766.js" rel="preload" as="script"><link href="/aia-eia-js/css/chunk-vendors.c26e9052.css" rel="stylesheet"><link href="/aia-eia-js/css/app.f3dbd147.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="32x32" href="/aia-eia-js/img/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/aia-eia-js/img/icons/favicon-16x16.png"><link rel="manifest" href="/aia-eia-js/manifest.json"><meta name="theme-color" content="#4DBA87"><meta name="apple-mobile-web-app-capable" content="no"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="aia-eia-js"><link rel="apple-touch-icon" href="/aia-eia-js/img/icons/apple-touch-icon-152x152.png"><link rel="mask-icon" href="/aia-eia-js/img/icons/safari-pinned-tab.svg" color="#4DBA87"><meta name="msapplication-TileImage" content="/aia-eia-js/img/icons/msapplication-icon-144x144.png"><meta name="msapplication-TileColor" content="#000000"></head><body vocab="http://schema.org" typeof="WebPage"><div id="def-top"></div><noscript><strong>We're sorry but apphub doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><main id="wb-cont" role="main" property="mainContentOfPage" class="container"><div id="app"></div><div id="def-preFooter"></div></main><div id="def-footer"></div><script src="/aia-eia-js/js/chunk-vendors.9de3a766.js"></script><script src="/aia-eia-js/js/app.9b64c0ba.js"></script></body></html>
+    }</script>
+  <script src="helper/wet.js"></script>
+  <link href="/aia-eia-js/css/app.f3dbd147.css" rel="preload" as="style">
+  <link href="/aia-eia-js/css/chunk-vendors.c26e9052.css" rel="preload" as="style">
+  <link href="/aia-eia-js/js/app.9b64c0ba.js" rel="preload" as="script">
+  <link href="/aia-eia-js/js/chunk-vendors.9de3a766.js" rel="preload" as="script">
+  <link href="/aia-eia-js/css/chunk-vendors.c26e9052.css" rel="stylesheet">
+  <link href="/aia-eia-js/css/app.f3dbd147.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/aia-eia-js/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/aia-eia-js/img/icons/favicon-16x16.png">
+  <link rel="manifest" href="/aia-eia-js/manifest.json">
+  <meta name="theme-color" content="#4DBA87">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="aia-eia-js">
+  <link rel="apple-touch-icon" href="/aia-eia-js/img/icons/apple-touch-icon-152x152.png">
+  <link rel="mask-icon" href="/aia-eia-js/img/icons/safari-pinned-tab.svg" color="#4DBA87">
+  <meta name="msapplication-TileImage" content="/aia-eia-js/img/icons/msapplication-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#000000">
+</head>
+
+<body vocab="http://schema.org" typeof="WebPage">
+  <div id="def-top"></div><noscript><strong>We're sorry but apphub doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+  <main id="wb-cont" role="main" property="mainContentOfPage" class="container">
+    <div id="app"></div>
+    <div id="def-preFooter"></div>
+  </main>
+  <div id="def-footer"></div>
+  <script src="/aia-eia-js/js/chunk-vendors.9de3a766.js"></script>
+  <script src="/aia-eia-js/js/app.9b64c0ba.js"></script>
+</body>
+
+</html>
