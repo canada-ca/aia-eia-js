@@ -29,12 +29,12 @@
         </div>
       </div>
       <div v-if="locale !== undefined">
-        <p v-if="locale == $root.$i18n.locale">
+        <div v-if="locale == $root.$i18n.locale" class="valueResultPDF">
           <span style="white-space: pre">{{ data.displayValue }}</span>
-        </p>
-        <p v-if="locale != $root.$i18n.locale">
+        </div>
+        <div v-if="locale != $root.$i18n.locale" class="valueResultPDF">
           <span style="white-space: pre">{{ data.displayValueAlt }}</span>
-        </p>
+        </div>
       </div>
     </div>
   </div>
