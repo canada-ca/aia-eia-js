@@ -50,6 +50,14 @@ import { Component, Vue, Prop, Watch } from "vue-property-decorator";
 export default class TextResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
+  created(){
+    if(this.$store.getters.getTranslationsOnResult[this.data.name]===undefined){
+      this.$store.dispatch("saveTranslationsOnResult", {
+        key: this.data.name,
+        value: ""
+      });
+    }
+  }
   saveTranslation(displayValueAlt: string) {
     this.$store.dispatch("saveTranslationsOnResult", {
       key: this.data.name,
