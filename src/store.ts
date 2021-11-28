@@ -305,7 +305,7 @@ const store: StoreOptions<RootState> = {
       toggleButton(state);
     },
     setTranslationsOnResult(state: RootState, { key, value }) {
-      state.translationsOnResult[key] = value;
+      state.translationsOnResult[`${key}`] = value;
     }
   },
   getters: {
@@ -426,7 +426,7 @@ const store: StoreOptions<RootState> = {
   },
   actions: {
     saveTranslationsOnResult(context, { key, value }) {
-      context.commit('setTranslationsOnResult', { key, value });
+      context.commit("setTranslationsOnResult", { key, value });
     }
   }
 };
