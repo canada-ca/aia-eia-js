@@ -126,11 +126,11 @@
                 "elements": [{
                     "text": "None"
                 }, {
-                    "text": "At least one of: Qualified expert from a federal, provincial, territorial or municipal government institution. Qualified members of faculty of a post-secondary institution. Qualified researchers from a relevant non-governmental organization. Contracted third-party vendor with a related specialization. Publishing specifications of the Automated Decision System in a peer-reviewed journal. A data and automation advisory board specified by Treasury Board Secretariat."
+                    "text": "At least one of: \n\nQualified expert from a federal, provincial, territorial or municipal government institution. \nQualified members of faculty of a post-secondary institution. \nQualified researchers from a relevant non-governmental organization. \nContracted third-party vendor with a related specialization. \nPublishing specifications of the Automated Decision System in a peer-reviewed journal. \nA data and automation advisory board specified by Treasury Board Secretariat."
                 }, {
-                    "text": "At least one of: Qualified expert from a federal, provincial, territorial or municipal government institution. Qualified members of faculty of a post-secondary institution. Qualified researchers from a relevant non-governmental organization. Contracted third-party vendor with a related specialization. Publishing specifications of the Automated Decision System in a peer-reviewed journal. A data and automation advisory board specified by Treasury Board Secretariat."
+                    "text": "At least one of: \n\nQualified expert from a federal, provincial, territorial or municipal government institution. \nQualified members of faculty of a post-secondary institution. \nQualified researchers from a relevant non-governmental organization. \nContracted third-party vendor with a related specialization. \nPublishing specifications of the Automated Decision System in a peer-reviewed journal. \nA data and automation advisory board specified by Treasury Board Secretariat."
                 }, {
-                    "text": "At least two of: Qualified experts from the National Research Council of Canada, Statistics Canada, or the Communications Security Establishment. Qualified members of faculty of a post-secondary institution. Qualified researchers from a relevant non-governmental organization. Contracted third-party vendor with a related specialization. A data and automation advisory board specified by Treasury Board Secretariat. OR: Publishing specifications of the Automated Decision System in a peer-reviewed journal."
+                    "text": "At least two of: \n\nQualified experts from the National Research Council of Canada, Statistics Canada, or the Communications Security Establishment. \nQualified members of faculty of a post-secondary institution. \nQualified researchers from a relevant non-governmental organization. \nContracted third-party vendor with a related specialization. \nA data and automation advisory board specified by Treasury Board Secretariat. \nOR: Publishing specifications of the Automated Decision System in a peer-reviewed journal."
                 }]
             },
             {
@@ -176,9 +176,9 @@
                 }, {
                     "text": "Documentation on the design and functionality of the system."
                 }, {
-                    "text": "Documentation on the design and functionality of the system.\n\nTraining courses must be completed."
+                    "text": "Documentation on the design and functionality of the system. Training courses must be completed."
                 }, {
-                    "text": "Documentation on the design and functionality of the system.\n\nRe-occurring training courses.\n\nA means to verify that training has been completed."
+                    "text": "Documentation on the design and functionality of the system. Re-occurring training courses. A means to verify that training has been completed."
                 }]
             },
             {

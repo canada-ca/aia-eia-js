@@ -1108,7 +1108,7 @@
                                     }
                                 },
                                 {
-                                    "value": "item6-1",
+                                    "value": "item6",
                                     "text": {
                                         "default": "Other (please specify)",
                                         "fr": "Autre (veuillez préciser)"
@@ -1119,7 +1119,7 @@
                         {
                             "type": "comment",
                             "name": "aboutSystem2",
-                            "visibleIf": "{aboutSystem1} contains [\"item6-1\"]",
+                            "visibleIf": "{aboutSystem1} contains [\"item6\"]",
                             "title": {
                                 "default": "Please describe",
                                 "fr": "S'il vous plait décrire"
