@@ -2,7 +2,9 @@
   <div>
     <div class="col-md-10">
       <strong v-if="locale == undefined">{{ num + ". " + data.title }}</strong>
-      <strong v-if="locale !== undefined">{{ num + ". " + data.titleData[locale] }}</strong>
+      <strong v-if="locale !== undefined">{{
+        num + ". " + data.titleData[locale]
+      }}</strong>
       <br />
       <div v-if="locale == undefined" class="valueResultPDF">
         {{ data.displayValue }}

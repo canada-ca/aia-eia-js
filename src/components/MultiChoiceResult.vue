@@ -2,7 +2,9 @@
   <div>
     <div class="col-md-12">
       <strong v-if="locale == undefined">{{ num + ". " + data.title }}</strong>
-      <strong v-if="locale !== undefined">{{ num + ". " + data.titleData[locale] }}</strong>
+      <strong v-if="locale !== undefined">{{
+        num + ". " + data.titleData[locale]
+      }}</strong>
       <br />
       <div v-for="(str, index) in data.value" :key="index">
         <div class="row">
