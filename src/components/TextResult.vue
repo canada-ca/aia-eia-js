@@ -1,8 +1,10 @@
 <template>
   <div>
     <div class="col-md-12">
-      <strong v-if="locale == undefined">{{ data.title }}</strong>
-      <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
+      <strong v-if="locale == undefined">{{ num + ". " + data.title }}</strong>
+      <strong v-if="locale !== undefined">{{
+        num + ". " + data.titleData[locale]
+      }}</strong>
       <br />
       <div v-if="locale == undefined">
         <div>
@@ -29,12 +31,12 @@
         </div>
       </div>
       <div v-if="locale !== undefined">
-        <p v-if="locale == $root.$i18n.locale">
+        <div v-if="locale == $root.$i18n.locale" class="valueResultPDF">
           <span style="white-space: pre">{{ data.displayValue }}</span>
-        </p>
-        <p v-if="locale != $root.$i18n.locale">
+        </div>
+        <div v-if="locale != $root.$i18n.locale" class="valueResultPDF">
           <span style="white-space: pre">{{ data.displayValueAlt }}</span>
-        </p>
+        </div>
       </div>
     </div>
   </div>
@@ -47,5 +49,6 @@ import { Component, Vue, Prop } from "vue-property-decorator";
 export default class TextResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
+  @Prop() num!: number;
 }
 </script>
