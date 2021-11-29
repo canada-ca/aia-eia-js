@@ -33,8 +33,8 @@ import { getValue } from "@/store";
     TextResult,
     ValueResult,
     MultiChoiceResult,
-    MultiChoiceValueResult
-  }
+    MultiChoiceValueResult,
+  },
 })
 export default class Result extends Vue {
   @Prop() data: any;
@@ -46,6 +46,17 @@ export default class Result extends Vue {
     return data.value.reduce((accumulator: boolean, currentValue: any) => {
       return getValue(currentValue) > 0 || accumulator;
     }, false);
+  }
+  created() {
+    if (this.data.value === this.data.displayValue) {
+      if (
+        this.$store.getters.getTranslationsOnResult[this.data.name] !== undefined
+      ) {
+        this.data.displayValueAlt = this.$store.getters.getTranslationsOnResult[this.data.name];
+      } else {
+        this.data.displayValueAlt = "";
+      }
+    }
   }
 }
 </script>
