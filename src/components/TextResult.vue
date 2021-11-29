@@ -25,7 +25,7 @@
           </strong>
           <div>
             <textarea
-              :value="this.$store.getters.getTranslationsOnResult[this.data.name]"
+              v-model="data.displayValueAlt"
               @blur="saveTranslation($event.target.value)"
             ></textarea>
           </div>
@@ -36,7 +36,7 @@
           <span style="white-space: pre">{{ data.displayValue }}</span>
         </p>
         <p v-if="locale != $root.$i18n.locale">
-          <span style="white-space: pre">{{ this.$store.getters.getTranslationsOnResult[this.data.name] }}</span>
+          <span style="white-space: pre">{{ data.displayValueAlt }}</span>
         </p>
       </div>
     </div>
@@ -50,14 +50,7 @@ import { Component, Vue, Prop, Watch } from "vue-property-decorator";
 export default class TextResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
-  created(){
-    if(this.$store.getters.getTranslationsOnResult[this.data.name]===undefined){
-      this.$store.dispatch("saveTranslationsOnResult", {
-        key: this.data.name,
-        value: ""
-      });
-    }
-  }
+
   saveTranslation(displayValueAlt: string) {
     this.$store.dispatch("saveTranslationsOnResult", {
       key: this.data.name,
