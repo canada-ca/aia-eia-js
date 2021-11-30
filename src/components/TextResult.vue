@@ -25,7 +25,7 @@
           </strong>
           <div>
             <textarea
-              v-model="data.displayValueAlt"
+              :value="this.$store.getters.getTranslationsOnResult[this.data.name]"
               @blur="saveTranslation($event.target.value)"
             ></textarea>
           </div>
@@ -36,7 +36,7 @@
           <span style="white-space: pre">{{ data.displayValue }}</span>
         </p>
         <p v-if="locale != $root.$i18n.locale">
-          <span style="white-space: pre">{{ data.displayValueAlt }}</span>
+          <span style="white-space: pre">{{ this.$store.getters.getTranslationsOnResult[this.data.name] }}</span>
         </p>
       </div>
     </div>
@@ -44,7 +44,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop, Watch } from "vue-property-decorator";
+import { Component, Vue, Prop } from "vue-property-decorator";
 
 @Component
 export default class TextResult extends Vue {
