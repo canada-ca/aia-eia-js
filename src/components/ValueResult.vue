@@ -1,8 +1,10 @@
 <template>
   <div>
     <div class="col-md-10">
-      <strong v-if="locale == undefined">{{ data.title }}</strong>
-      <strong v-if="locale !== undefined">{{ data.titleData[locale] }}</strong>
+      <strong v-if="locale == undefined">{{ num + ". " + data.title }}</strong>
+      <strong v-if="locale !== undefined">{{
+        num + ". " + data.titleData[locale]
+      }}</strong>
       <br />
       <div v-if="locale == undefined" class="valueResultPDF">
         {{ data.displayValue }}
@@ -29,5 +31,6 @@ import Modifier from "@/components/Modifier.vue";
 export default class ValueResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
+  @Prop() num!: number;
 }
 </script>

@@ -5,16 +5,16 @@
     </div>
     <div>
       <div v-if="data.value == data.displayValue">
-        <TextResult :data="data" :locale="locale" />
+        <TextResult :data="data" :locale="locale" :num="num" />
       </div>
       <div v-else-if="isMultiChoiceValueResult(data)">
-        <MultiChoiceValueResult :data="data" :locale="locale" />
+        <MultiChoiceValueResult :data="data" :locale="locale" :num="num" />
       </div>
       <div v-else-if="Array.isArray(data.value)">
-        <MultiChoiceResult :data="data" :locale="locale" />
+        <MultiChoiceResult :data="data" :locale="locale" :num="num" />
       </div>
       <div v-else>
-        <ValueResult :data="data" :locale="locale" />
+        <ValueResult :data="data" :locale="locale" :num="num" />
       </div>
     </div>
   </div>
@@ -39,6 +39,7 @@ import { getValue } from "@/store";
 export default class Result extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
+  @Prop() num!: number;
   isMultiChoiceValueResult(data: any): boolean {
     if (!Array.isArray(data.value)) return false;
 

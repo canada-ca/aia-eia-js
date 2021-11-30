@@ -305,7 +305,6 @@ const store: StoreOptions<RootState> = {
       toggleButton(state);
     },
     setTranslationsOnResult(state: RootState, { key, value }) {
-      //state.translationsOnResult[`${key}`] = value;
       Vue.set(state.translationsOnResult, key, value);
     }
   },
