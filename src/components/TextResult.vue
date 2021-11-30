@@ -26,7 +26,10 @@
             >{{ $t("englishContent") }} :
           </strong>
           <div>
-            <textarea v-model="data.displayValueAlt"></textarea>
+            <textarea
+              :value="this.$store.getters.getTranslationsOnResult[this.data.name]"
+              @blur="saveTranslation($event.target.value)"
+            ></textarea>
           </div>
         </div>
       </div>
@@ -35,7 +38,7 @@
           <span style="white-space: pre">{{ data.displayValue }}</span>
         </div>
         <div v-if="locale != $root.$i18n.locale" class="valueResultPDF">
-          <span style="white-space: pre">{{ data.displayValueAlt }}</span>
+          <span style="white-space: pre">{{ this.$store.getters.getTranslationsOnResult[this.data.name] }}</span>
         </div>
       </div>
     </div>
@@ -50,5 +53,11 @@ export default class TextResult extends Vue {
   @Prop() data: any;
   @Prop() locale: any;
   @Prop() num!: number;
+  saveTranslation(displayValueAlt: string) {
+    this.$store.dispatch("saveTranslationsOnResult", {
+      key: this.data.name,
+      value: displayValueAlt
+    });
+  }
 }
 </script>

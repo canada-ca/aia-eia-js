@@ -17,6 +17,7 @@ const vuexLocal = new VuexPersistence({
   storage: window.localStorage,
   reducer: (state: RootState) => ({
     toolData: state.toolData,
+    translationsOnResult: state.translationsOnResult,
     currentPageNo: state.currentPageNo
   })
 });
@@ -265,6 +266,7 @@ const store: StoreOptions<RootState> = {
     result: undefined,
     currentPageNo: 0,
     toolData: {},
+    translationsOnResult: {},
     questionNames: [],
     removeNext: false,
     removePrev: false
@@ -275,6 +277,7 @@ const store: StoreOptions<RootState> = {
       state.result = undefined;
       state.currentPageNo = 0;
       state.toolData = {};
+      state.translationsOnResult = {};
       state.removeNext = false;
       state.removePrev = false;
     },
@@ -284,6 +287,7 @@ const store: StoreOptions<RootState> = {
       state.currentPageNo = result.currentPageNo;
       //freeze this data so we can load from localStorage
       state.toolData = Object.freeze(result.data);
+      state.translationsOnResult = result.translationsOnResult===undefined?{}:result.translationsOnResult;
       state.answerData = result.getPlainData({
         includeEmpty: false
       });
@@ -299,6 +303,9 @@ const store: StoreOptions<RootState> = {
           });
       }
       toggleButton(state);
+    },
+    setTranslationsOnResult(state: RootState, { key, value }) {
+      Vue.set(state.translationsOnResult, key, value);
     }
   },
   getters: {
@@ -308,6 +315,9 @@ const store: StoreOptions<RootState> = {
     calcScore: state => {
       if (state.result === undefined) return [0, 0, 0];
       return calculateFinalScore(state.result, state.questionNames);
+    },
+    getTranslationsOnResult: state => {
+      return state.translationsOnResult;
     },
     resultDataSections: state => {
       if (state.result === undefined) return {};
@@ -412,6 +422,11 @@ const store: StoreOptions<RootState> = {
         mitigationResults,
         mitigationResultsYes
       ];
+    }
+  },
+  actions: {
+    saveTranslationsOnResult(context, { key, value }) {
+      context.commit("setTranslationsOnResult", { key, value });
     }
   }
 };

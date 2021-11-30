@@ -100,7 +100,8 @@ export default class ActionButtonBar extends Vue {
     return JSON.stringify({
       version: this.$store.state.version,
       currentPage: this.$store.state.currentPageNo,
-      data: this.$store.state.toolData
+      data: this.$store.state.toolData,
+      translationsOnResult: this.$store.state.translationsOnResult
     });
   }
   loadSurvey(file: any) {

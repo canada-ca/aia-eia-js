@@ -295,6 +295,7 @@ export default class Results extends Vue {
   fileLoaded($event: SurveyFile) {
     this.Survey.version = $event.version;
     this.Survey.data = $event.data;
+    this.Survey.translationsOnResult = $event.translationsOnResult;
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
     this.$store.commit("updateResult", this.Survey);
@@ -365,7 +366,8 @@ export default class Results extends Vue {
       this.fileLoaded({
         version: this.$store.state.version,
         currentPage: this.$store.state.currentPageNo,
-        data: this.$store.state.toolData
+        data: this.$store.state.toolData,
+        translationsOnResult: this.$store.state.translationsOnResult
       } as SurveyFile);
     }
   }
