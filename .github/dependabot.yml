@@ -18,3 +18,5 @@ updates:
     interval: daily
     time: "11:00"
   open-pull-requests-limit: 99
+  allow:
+    - dependency-type: "production"
