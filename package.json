@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@types/lodash.isempty": "^4.4.6",
-    "@types/showdown": "^1.9.3",
+    "@types/showdown": "^1.9.4",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.11.2",
     "lodash.isempty": "^4.4.0",
