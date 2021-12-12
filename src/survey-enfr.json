@@ -2605,6 +2605,10 @@
                                 "default": "Will you be making this information publicly available?",
                                 "fr": "Allez-vous rendre cette information disponible publiquement?"
                             },
+                            "help":{
+                                "default": "Would define how the info is made <strong>publicly</strong> available",
+                                "fr": "Défini comment l’information sera rendue <strong>publique</strong>"
+                            },
                             "choices": [
                                 {
                                     "value": "item1-1",

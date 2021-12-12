@@ -22,6 +22,7 @@
         :survey="Survey"
       />
     </form>
+
     <DropDown :survey="Survey" :displayDropDown="allowDropdown" />
     <br />
     <AssessmentTool :survey="Survey" />
@@ -155,6 +156,31 @@ export default class Home extends Vue {
           questionRequiredHTML +
           "</label>";
       }
+    });
+
+    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
+      if (!options.question.help) return;
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "btn btn-info btn-xs";
+
+      btn.style.position = "absolute";
+      btn.style.marginLeft = "20px";
+
+      btn.innerHTML = "(Show help)";
+      var question = options.question;
+      btn.onclick = function() {
+        document.getElementById("questionDescriptionText")
+        .innerHTML = question.help.default;
+    document.getElementById("questionDescriptionPopup").modal();
+      };
+
+      var header = options.htmlElement.querySelector("h5");
+      if (!header) header = options.htmlElement;
+      var span = document.createElement("span");
+      span.innerHTML = "  ";
+      header.appendChild(span);
+      header.appendChild(btn);
     });
 
     //if survey is in progress reload from store

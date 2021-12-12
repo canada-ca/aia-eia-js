@@ -249,7 +249,8 @@
         </div>
       </div>
     </details>
-  </div>
+    <help-modal />
+  </div>  
 </template>
 
 <script lang="ts">
@@ -264,6 +265,7 @@ import Score from "@/components/Score.vue";
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
 import Result from "@/components/Result.vue";
 import Obligations from "@/components/Obligations.vue";
+import HelpModal from "@/components/HelpModal.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
 import surveyJSON from "@/survey-enfr.json";
@@ -273,7 +275,8 @@ import surveyJSON from "@/survey-enfr.json";
     ActionButtonBar,
     Result,
     Score,
-    Obligations
+    Obligations,
+    HelpModal
   },
   computed: {
     score: function() {
@@ -361,6 +364,38 @@ export default class Results extends Vue {
       }
     });
 
+    this.Survey
+    .Serializer
+    .addProperty("question", "help:text");
+
+    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
+      if (!options.question.help) return;
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "btn btn-info btn-xs";
+
+      btn.style.position = "absolute";
+      btn.style.marginLeft = "20px";
+
+      btn.innerHTML = "(Show help)";
+      var question = options.question;
+      btn.onclick = function() {
+        showHelp(question);
+      };
+
+      var header = options.htmlElement.querySelector("h5");
+      if (!header) header = options.htmlElement;
+      var span = document.createElement("span");
+      span.innerHTML = "  ";
+      header.appendChild(span);
+      header.appendChild(btn);
+    });
+
+    function showHelp(element) {
+    document.getElementById("questionDescriptionText")
+        .innerHTML = element.help.default;
+    $("#questionDescriptionPopup").modal();
+    }
     //if survey is in progress reload from store
     if (this.$store.getters.inProgress) {
       this.fileLoaded({
