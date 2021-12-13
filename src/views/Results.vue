@@ -249,7 +249,7 @@
         </div>
       </div>
     </details>
-  </div>  
+  </div>
 </template>
 
 <script lang="ts">
