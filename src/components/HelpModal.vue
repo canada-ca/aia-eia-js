@@ -1,5 +1,5 @@
 <template>
-  <div id="questionDescriptionPopup" class="modal fade" role="dialog">
+  <div id="helpModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content">
@@ -10,9 +10,7 @@
           <h4 class="modal-title">Modal Header</h4>
         </div>
         <div class="modal-body">
-          <!-- An element that displays a survey element's 'popupdescription' property value-->
-
-          <div id="questionDescriptionText"></div>
+          <div id="helpText"></div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">

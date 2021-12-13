@@ -27,6 +27,8 @@
     <br />
     <AssessmentTool :survey="Survey" />
     <Score />
+
+    <help-modal />
   </div>
 </template>
 
@@ -38,6 +40,7 @@ import DropDown from "@/components/DropDown.vue";
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import Score from "@/components/Score.vue";
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
+import HelpModal from "@/components/HelpModal.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
 import { RootState } from "@/types";
@@ -48,8 +51,9 @@ import surveyJSON from "@/survey-enfr.json";
     AssessmentTool,
     ActionButtonBar,
     DropDown,
-    Score
-  }
+    Score,
+    HelpModal,
+  },
 })
 export default class Home extends Vue {
   Survey: Model = new Model(surveyJSON);
@@ -74,19 +78,19 @@ export default class Home extends Vue {
 
   created() {
     //Accounts for user's pressing the back button after completing survey (otherwise next button would appear on the last page)
-    this.Survey.onAfterRenderQuestion.add(result => {
+    this.Survey.onAfterRenderQuestion.add((result) => {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add(result => {
+    this.Survey.onComplete.add((result) => {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add(result => {
+    this.Survey.onComplete.add((result) => {
       this.$router.push("Results");
     });
 
-    this.Survey.onAfterRenderPage.add(result => {
+    this.Survey.onAfterRenderPage.add((result) => {
       var progressBar = document.getElementsByClassName("progress-bar")[0];
       //Make sure that the current page is 0 and the progress bar is defined and displayed on the screen
       if (result.currentPageNo == 0 && progressBar != undefined) {
@@ -106,7 +110,7 @@ export default class Home extends Vue {
       }
     });
 
-    this.Survey.onValueChanged.add(result => {
+    this.Survey.onValueChanged.add((result) => {
       this.$store.commit("updateResult", result);
       if (this.Survey.getValue("projectDetailsPhase") != undefined) {
         this.allowDropdown = true;
@@ -115,7 +119,7 @@ export default class Home extends Vue {
 
     const converter = new showdown.Converter();
 
-    this.Survey.onTextMarkdown.add(function(survey, options) {
+    this.Survey.onTextMarkdown.add(function (survey, options) {
       //convert the markdown text to html
       var str = converter.makeHtml(options.text);
       //remove root paragraphs <p></p>
@@ -133,7 +137,7 @@ export default class Home extends Vue {
 
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
-    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
+    this.Survey.onAfterRenderQuestion.add(function (sender, options) {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
       if (title) {
         var questionRequiredHTML = "";
@@ -158,7 +162,9 @@ export default class Home extends Vue {
       }
     });
 
-    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
+    this.Survey.Serializer.addProperty("question", "help:text");
+    
+    this.Survey.onAfterRenderQuestion.add(function (sender, options) {
       if (!options.question.help) return;
       var btn = document.createElement("button");
       btn.type = "button";
@@ -169,10 +175,8 @@ export default class Home extends Vue {
 
       btn.innerHTML = "(Show help)";
       var question = options.question;
-      btn.onclick = function() {
-        document.getElementById("questionDescriptionText")
-        .innerHTML = question.help.default;
-    document.getElementById("questionDescriptionPopup").modal();
+      btn.onclick = function () {
+        showHelp(question);
       };
 
       var header = options.htmlElement.querySelector("h5");
@@ -183,13 +187,19 @@ export default class Home extends Vue {
       header.appendChild(btn);
     });
 
+    function showHelp(element) {
+      document.getElementById("helpText").innerHTML =
+        element.help.default;
+      document.getElementById("helpModal").modal();
+    }
+
     //if survey is in progress reload from store
     if (this.$store.getters.inProgress) {
       this.fileLoaded({
         version: this.$store.state.version,
         currentPage: this.$store.state.currentPageNo,
         data: this.$store.state.toolData,
-        translationsOnResult: this.$store.state.translationsOnResult
+        translationsOnResult: this.$store.state.translationsOnResult,
       } as SurveyFile);
     }
   }

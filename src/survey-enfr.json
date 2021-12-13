@@ -1179,6 +1179,10 @@
                                 "default": "The algorithmic process will be difficult to interpret or to explain",
                                 "fr": "Le processus algorithmique sera difficile à interpréter ou à expliquer"
                             },
+                            "help":{
+                                "default": "The aim of this question is to investigate whether the system proposed will suffer from a <strong>black box problem</strong>. The goal is to be able to understand the model’s predictions and have the ability to explain them to the client who is impacted by the decision. 'Having an easily interpretable model can also greatly simplify testing and verifying of the system, including assessing bias' <a href=\"https://www.canada.ca/en/government/system/digital-government/guideline-service-digital.html#ToC4_5_3\">(section 4.5.3) Guideline on Service and Digital.</a>",
+                                "fr": "Le but de cette question est de comprendre si le système souffrira de…"
+                            },
                             "choices": [
                                 {
                                     "value": "item1-3",
