@@ -34,7 +34,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { Model } from "survey-vue";
+import * as Survey from "survey-vue";
 import showdown from "showdown";
 import DropDown from "@/components/DropDown.vue";
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
@@ -46,6 +46,8 @@ import i18n from "@/plugins/i18n";
 import { RootState } from "@/types";
 import surveyJSON from "@/survey-enfr.json";
 
+Survey.Serializer.addProperty("question", "help:text");
+
 @Component({
   components: {
     AssessmentTool,
@@ -56,7 +58,7 @@ import surveyJSON from "@/survey-enfr.json";
   },
 })
 export default class Home extends Vue {
-  Survey: Model = new Model(surveyJSON);
+  Survey: Survey.Model = new Survey.Model(surveyJSON);
   //Default always set to false
   allowDropdown: boolean = false;
 
@@ -74,6 +76,11 @@ export default class Home extends Vue {
     this.Survey.translationsOnResult = $event.translationsOnResult;
     this.Survey.start();
     this.$store.commit("updateResult", this.Survey);
+  }
+  
+  showHelp(){
+    alert("hello");
+    document.getElementById("helpModal")!.style.display = "block";
   }
 
   created() {
@@ -139,6 +146,8 @@ export default class Home extends Vue {
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
     this.Survey.onAfterRenderQuestion.add(function (sender, options) {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
+      let helpButton = "";
+
       if (title) {
         var questionRequiredHTML = "";
 
@@ -149,6 +158,11 @@ export default class Home extends Vue {
             ' <strong class="required">(' + requiredText + ")</strong>";
         }
 
+        if (options.question.help) {
+          let helpTxt = sender.locale == "fr" ? String(options.question.help.fr) : String(options.question.help.default);
+          helpButton = '<button class="btn btn-info" type="button" id="show-btn" onclick="showHelp()">Show help</button>';
+          document.getElementById("helpText")!.innerHTML = helpTxt;
+        }
         title.outerHTML =
           '<label for="' +
           options.question.inputId +
@@ -158,40 +172,10 @@ export default class Home extends Vue {
           title.innerText +
           "</span>" +
           questionRequiredHTML +
-          "</label>";
+          "</label>" +
+          helpButton;
       }
     });
-
-    this.Survey.Serializer.addProperty("question", "help:text");
-    
-    this.Survey.onAfterRenderQuestion.add(function (sender, options) {
-      if (!options.question.help) return;
-      var btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "btn btn-info btn-xs";
-
-      btn.style.position = "absolute";
-      btn.style.marginLeft = "20px";
-
-      btn.innerHTML = "(Show help)";
-      var question = options.question;
-      btn.onclick = function () {
-        showHelp(question);
-      };
-
-      var header = options.htmlElement.querySelector("h5");
-      if (!header) header = options.htmlElement;
-      var span = document.createElement("span");
-      span.innerHTML = "  ";
-      header.appendChild(span);
-      header.appendChild(btn);
-    });
-
-    function showHelp(element) {
-      document.getElementById("helpText").innerHTML =
-        element.help.default;
-      document.getElementById("helpModal").modal();
-    }
 
     //if survey is in progress reload from store
     if (this.$store.getters.inProgress) {
