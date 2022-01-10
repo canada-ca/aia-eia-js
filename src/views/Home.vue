@@ -28,7 +28,8 @@
     <AssessmentTool :survey="Survey" />
     <Score />
 
-    <help-modal />
+    
+    <HelpModal />
   </div>
 </template>
 
@@ -76,12 +77,7 @@ export default class Home extends Vue {
     this.Survey.translationsOnResult = $event.translationsOnResult;
     this.Survey.start();
     this.$store.commit("updateResult", this.Survey);
-  }
-  
-  showHelp(){
-    alert("hello");
-    document.getElementById("helpModal")!.style.display = "block";
-  }
+  }  
 
   created() {
     //Accounts for user's pressing the back button after completing survey (otherwise next button would appear on the last page)
@@ -160,7 +156,8 @@ export default class Home extends Vue {
 
         if (options.question.help) {
           let helpTxt = sender.locale == "fr" ? String(options.question.help.fr) : String(options.question.help.default);
-          helpButton = '<button class="btn btn-info" type="button" id="show-btn" onclick="showHelp()">Show help</button>';
+          let showHelp = sender.locale == "fr" ? "Afficher l'aide" : "Show help"; 
+          helpButton = ' <button class="btn btn-info" type="button" id="show-btn" onclick="showHelp()">' + showHelp + '</button>';
           document.getElementById("helpText")!.innerHTML = helpTxt;
         }
         title.outerHTML =
