@@ -29,7 +29,7 @@
             type="button"
             value="Start Over"
             class="btn btn-default"
-            v-on:click="$emit('startAgain')"
+            v-on:click="startModal"
           >
             {{ $t("startAgain") }}
           </button>
@@ -62,6 +62,15 @@ import { Model } from "survey-vue";
 @Component
 export default class ActionButtonBar extends Vue {
   @Prop() survey?: Model;
+  startModal() {
+    let text =
+      this.$i18n.locale === "fr"
+        ? "Cette action effacera toutes les données non enregistrées. Êtes-vous sûr de vouloir continuer ?"
+        : "This will erase all unsaved data. Are you sure you want to continue?";
+    if (confirm(text)) {
+      this.$emit("startAgain");
+    }
+  }
   saveSurvey() {
     const a = document.createElement("a");
     a.download = "SurveyResults.json";
