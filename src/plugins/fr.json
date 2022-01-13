@@ -49,6 +49,7 @@
     "resultSectionMQA": "Questions et réponses liées aux mesures d'atténuation",
     "alertNotificationPopUp": "Type de fichier correct: fichier JSON chargé avec succès",
     "alertNotificationWrongPopUp": "Type de fichier incorrect: veuillez soumettre un fichier JSON",
+    "alertConfirmRestart": "Cette action effacera toutes les données non enregistrées. Êtes-vous sûr de vouloir continuer ?",
     "modifier": "Points",
     "openSourceDesign1": "Le système utilisera des logiciels libres.",
     "consultationDesign1": "Les intervenants internes suivants seront consultés:",
