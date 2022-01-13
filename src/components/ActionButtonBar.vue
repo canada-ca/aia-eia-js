@@ -63,11 +63,7 @@ import { Model } from "survey-vue";
 export default class ActionButtonBar extends Vue {
   @Prop() survey?: Model;
   startModal() {
-    let text =
-      this.$i18n.locale === "fr"
-        ? "Cette action effacera toutes les données non enregistrées. Êtes-vous sûr de vouloir continuer ?"
-        : "This will erase all unsaved data. Are you sure you want to continue?";
-    if (confirm(text)) {
+    if (confirm(this.$t("alertConfirmRestart").toString())) {
       this.$emit("startAgain");
     }
   }
