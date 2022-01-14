@@ -157,7 +157,7 @@ export default class Home extends Vue {
         if (options.question.help) {
           let helpTxt = sender.locale == "fr" ? String(options.question.help.fr) : String(options.question.help.default);
           let showHelp = sender.locale == "fr" ? "Afficher l'aide" : "Show help"; 
-          helpButton = ' <button class="btn btn-info" type="button" id="show-btn" onclick="showHelp()">' + showHelp + '</button>';
+          helpButton = ' <a role="button" id="show-btn" onclick="showHelp()"><img src="img/icons/show-help.png" alt="' + showHelp + '"></a>';
           document.getElementById("helpText")!.innerHTML = helpTxt;
         }
         title.outerHTML =
