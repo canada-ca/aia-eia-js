@@ -22,36 +22,44 @@
         :survey="Survey"
       />
     </form>
+
     <DropDown :survey="Survey" :displayDropDown="allowDropdown" />
     <br />
     <AssessmentTool :survey="Survey" />
     <Score />
+
+    
+    <HelpModal />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { Model } from "survey-vue";
+import * as Survey from "survey-vue";
 import showdown from "showdown";
 import DropDown from "@/components/DropDown.vue";
 import AssessmentTool from "@/components/AssessmentTool.vue"; // @ is an alias to /src
 import Score from "@/components/Score.vue";
 import ActionButtonBar from "@/components/ActionButtonBar.vue";
+import HelpModal from "@/components/HelpModal.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
 import { RootState } from "@/types";
 import surveyJSON from "@/survey-enfr.json";
+
+Survey.Serializer.addProperty("question", "help:text");
 
 @Component({
   components: {
     AssessmentTool,
     ActionButtonBar,
     DropDown,
-    Score
-  }
+    Score,
+    HelpModal,
+  },
 })
 export default class Home extends Vue {
-  Survey: Model = new Model(surveyJSON);
+  Survey: Survey.Model = new Survey.Model(surveyJSON);
   //Default always set to false
   allowDropdown: boolean = false;
 
@@ -69,23 +77,23 @@ export default class Home extends Vue {
     this.Survey.translationsOnResult = $event.translationsOnResult;
     this.Survey.start();
     this.$store.commit("updateResult", this.Survey);
-  }
+  }  
 
   created() {
     //Accounts for user's pressing the back button after completing survey (otherwise next button would appear on the last page)
-    this.Survey.onAfterRenderQuestion.add(result => {
+    this.Survey.onAfterRenderQuestion.add((result) => {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add(result => {
+    this.Survey.onComplete.add((result) => {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add(result => {
+    this.Survey.onComplete.add((result) => {
       this.$router.push("Results");
     });
 
-    this.Survey.onAfterRenderPage.add(result => {
+    this.Survey.onAfterRenderPage.add((result) => {
       var progressBar = document.getElementsByClassName("progress-bar")[0];
       //Make sure that the current page is 0 and the progress bar is defined and displayed on the screen
       if (result.currentPageNo == 0 && progressBar != undefined) {
@@ -105,7 +113,7 @@ export default class Home extends Vue {
       }
     });
 
-    this.Survey.onValueChanged.add(result => {
+    this.Survey.onValueChanged.add((result) => {
       this.$store.commit("updateResult", result);
       if (this.Survey.getValue("projectDetailsPhase") != undefined) {
         this.allowDropdown = true;
@@ -114,7 +122,7 @@ export default class Home extends Vue {
 
     const converter = new showdown.Converter();
 
-    this.Survey.onTextMarkdown.add(function(survey, options) {
+    this.Survey.onTextMarkdown.add(function (survey, options) {
       //convert the markdown text to html
       var str = converter.makeHtml(options.text);
       //remove root paragraphs <p></p>
@@ -132,8 +140,10 @@ export default class Home extends Vue {
 
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
-    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
+    this.Survey.onAfterRenderQuestion.add((sender, options) => {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
+      let helpButton = "";
+
       if (title) {
         var questionRequiredHTML = "";
 
@@ -144,6 +154,19 @@ export default class Home extends Vue {
             ' <strong class="required">(' + requiredText + ")</strong>";
         }
 
+        if (options.question.help) {
+          let helpTxt = sender.locale == "fr" ? String(options.question.help.fr) : String(options.question.help.default);
+          helpTxt = helpTxt
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, 'ooooo')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/\(/g, '&#40;')
+            .replace(/\)/g, '&#41;');
+          let showHelpTxt = this.$t("showHelp").toString();
+          helpButton = ` <a role="button" onclick="showHelp('${helpTxt}')"><img src="img/icons/show-help.png" alt="${showHelpTxt}"></a>`;
+        }
         title.outerHTML =
           '<label for="' +
           options.question.inputId +
@@ -153,7 +176,8 @@ export default class Home extends Vue {
           title.innerText +
           "</span>" +
           questionRequiredHTML +
-          "</label>";
+          "</label>" +
+          helpButton;
       }
     });
 
@@ -163,7 +187,7 @@ export default class Home extends Vue {
         version: this.$store.state.version,
         currentPage: this.$store.state.currentPageNo,
         data: this.$store.state.toolData,
-        translationsOnResult: this.$store.state.translationsOnResult
+        translationsOnResult: this.$store.state.translationsOnResult,
       } as SurveyFile);
     }
   }

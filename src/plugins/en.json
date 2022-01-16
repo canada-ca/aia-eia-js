@@ -1,4 +1,5 @@
 {
+    "showHelp": "Show help",
     "startAgain": "Start Again",
     "version": "Version: 0.9.1",
     "exportEnglishResults": "Export English Document",
@@ -50,6 +51,7 @@
     "resultSectionMQA": "Mitigation Questions and Answers",
     "alertNotificationPopUp": "Correct file type: successfully loaded JSON file",
     "alertNotificationWrongPopUp": "Wrong file type: please select a JSON file",
+    "alertConfirmRestart": "This will erase all unsaved data. Are you sure you want to continue?",
     "modifier": "Points",
     "openSourceDesign1": "The system will use open source software.",
     "consultationDesign1": "The following internal stakeholders will be consulted:",
