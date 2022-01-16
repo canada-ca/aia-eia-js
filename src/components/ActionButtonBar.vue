@@ -29,7 +29,7 @@
             type="button"
             value="Start Over"
             class="btn btn-default"
-            v-on:click="$emit('startAgain')"
+            v-on:click="startModal"
           >
             {{ $t("startAgain") }}
           </button>
@@ -62,6 +62,11 @@ import { Model } from "survey-vue";
 @Component
 export default class ActionButtonBar extends Vue {
   @Prop() survey?: Model;
+  startModal() {
+    if (confirm(this.$t("alertConfirmRestart").toString())) {
+      this.$emit("startAgain");
+    }
+  }
   saveSurvey() {
     const a = document.createElement("a");
     a.download = "SurveyResults.json";
