@@ -80,6 +80,25 @@
   </script>
 
   <script type="text/javascript" src="helper/wet.js"></script>
+  <script>
+    function showHelp(helpTxt){
+      helpTxt = helpTxt.replace(/ooooo/g, '&#39;');
+      document.getElementById("helpText").innerHTML = helpTxt;
+      document.getElementById("helpModal").style.display = "block";
+    
+      var modal = document.getElementById("helpModal");
+      var span = document.getElementsByClassName("closeS")[0];
+      
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    }
+  </script>
 </head>
 
   <body vocab="http://schema.org" typeof="WebPage">
