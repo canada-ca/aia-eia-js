@@ -44,4 +44,20 @@
       };
 
       pdfMake.createPdf(dd).download("aia-" + lang + ".pdf");
-    }</script><script src="helper/wet.js"></script><link href="/aia-eia-js/css/app.f3dbd147.css" rel="preload" as="style"><link href="/aia-eia-js/css/chunk-vendors.c26e9052.css" rel="preload" as="style"><link href="/aia-eia-js/js/app.165ec4fc.js" rel="preload" as="script"><link href="/aia-eia-js/js/chunk-vendors.9de3a766.js" rel="preload" as="script"><link href="/aia-eia-js/css/chunk-vendors.c26e9052.css" rel="stylesheet"><link href="/aia-eia-js/css/app.f3dbd147.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="32x32" href="/aia-eia-js/img/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/aia-eia-js/img/icons/favicon-16x16.png"><link rel="manifest" href="/aia-eia-js/manifest.json"><meta name="theme-color" content="#4DBA87"><meta name="apple-mobile-web-app-capable" content="no"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="aia-eia-js"><link rel="apple-touch-icon" href="/aia-eia-js/img/icons/apple-touch-icon-152x152.png"><link rel="mask-icon" href="/aia-eia-js/img/icons/safari-pinned-tab.svg" color="#4DBA87"><meta name="msapplication-TileImage" content="/aia-eia-js/img/icons/msapplication-icon-144x144.png"><meta name="msapplication-TileColor" content="#000000"></head><body vocab="http://schema.org" typeof="WebPage"><div id="def-top"></div><noscript><strong>We're sorry but apphub doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><main id="wb-cont" role="main" property="mainContentOfPage" class="container"><div id="app"></div><div id="def-preFooter"></div></main><div id="def-footer"></div><script src="/aia-eia-js/js/chunk-vendors.9de3a766.js"></script><script src="/aia-eia-js/js/app.165ec4fc.js"></script></body></html>
+    }</script><script src="helper/wet.js"></script><script>function showHelp(helpTxt){
+      helpTxt = helpTxt.replace(/ooooo/g, '&#39;');
+      document.getElementById("helpText").innerHTML = helpTxt;
+      document.getElementById("helpModal").style.display = "block";
+    
+      var modal = document.getElementById("helpModal");
+      var span = document.getElementsByClassName("closeS")[0];
+      
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    }</script><link href="/aia-eia-js/css/app.aa35b300.css" rel="preload" as="style"><link href="/aia-eia-js/css/chunk-vendors.c26e9052.css" rel="preload" as="style"><link href="/aia-eia-js/js/app.f5defeb1.js" rel="preload" as="script"><link href="/aia-eia-js/js/chunk-vendors.242963d2.js" rel="preload" as="script"><link href="/aia-eia-js/css/chunk-vendors.c26e9052.css" rel="stylesheet"><link href="/aia-eia-js/css/app.aa35b300.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="32x32" href="/aia-eia-js/img/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/aia-eia-js/img/icons/favicon-16x16.png"><link rel="manifest" href="/aia-eia-js/manifest.json"><meta name="theme-color" content="#4DBA87"><meta name="apple-mobile-web-app-capable" content="no"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="aia-eia-js"><link rel="apple-touch-icon" href="/aia-eia-js/img/icons/apple-touch-icon-152x152.png"><link rel="mask-icon" href="/aia-eia-js/img/icons/safari-pinned-tab.svg" color="#4DBA87"><meta name="msapplication-TileImage" content="/aia-eia-js/img/icons/msapplication-icon-144x144.png"><meta name="msapplication-TileColor" content="#000000"></head><body vocab="http://schema.org" typeof="WebPage"><div id="def-top"></div><noscript><strong>We're sorry but apphub doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><main id="wb-cont" role="main" property="mainContentOfPage" class="container"><div id="app"></div><div id="def-preFooter"></div></main><div id="def-footer"></div><script src="/aia-eia-js/js/chunk-vendors.242963d2.js"></script><script src="/aia-eia-js/js/app.f5defeb1.js"></script></body></html>
