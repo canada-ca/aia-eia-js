@@ -81,7 +81,9 @@
 
   <script type="text/javascript" src="helper/wet.js"></script>
   <script>
-    function showHelp(){
+    function showHelp(helpTxt){
+      helpTxt = helpTxt.replace(/ooooo/g, '&#39;');
+      document.getElementById("helpText").innerHTML = helpTxt;
       document.getElementById("helpModal").style.display = "block";
     
       var modal = document.getElementById("helpModal");

@@ -140,7 +140,7 @@ export default class Home extends Vue {
 
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
-    this.Survey.onAfterRenderQuestion.add(function (sender, options) {
+    this.Survey.onAfterRenderQuestion.add((sender, options) => {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
       let helpButton = "";
 
@@ -156,9 +156,16 @@ export default class Home extends Vue {
 
         if (options.question.help) {
           let helpTxt = sender.locale == "fr" ? String(options.question.help.fr) : String(options.question.help.default);
-          let showHelp = sender.locale == "fr" ? "Afficher l'aide" : "Show help"; 
-          helpButton = ' <a role="button" id="show-btn" onclick="showHelp()"><img src="img/icons/show-help.png" alt="' + showHelp + '"></a>';
-          document.getElementById("helpText")!.innerHTML = helpTxt;
+          helpTxt = helpTxt
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, 'ooooo')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/\(/g, '&#40;')
+            .replace(/\)/g, '&#41;');
+          let showHelpTxt = this.$t("showHelp").toString();
+          helpButton = ` <a role="button" onclick="showHelp('${helpTxt}')"><img src="img/icons/show-help.png" alt="${showHelpTxt}"></a>`;
         }
         title.outerHTML =
           '<label for="' +
