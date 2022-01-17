@@ -46,11 +46,12 @@
                             "title": {
                                 "default": "Department",
                                 "fr": "Ministère"
-                            },                 
+                            },
                             "renderAs": "select2",
                             "choicesByUrl": {
-                                "url": "https://raw.githubusercontent.com/canada-ca/aia-eia-js/master/src/depts_sorted.json"
-                              },
+                                "url": "https://raw.githubusercontent.com/canada-ca/aia-eia-js/master/convertedDepartments.json",
+                                "titleName": "text"
+                            },
                             "choicesOrder": "asc"
                         },
                         {
