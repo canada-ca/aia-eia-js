@@ -62,6 +62,7 @@
         <h3 style="word-spacing: 5px">
           {{ $t("currentScore") }} {{ ": " + score[2] }}
         </h3>
+        <b-table striped hover :items="items"></b-table>
         <h3>{{ $t("rawRiskScore") }}{{ ": " + score[0] }}</h3>
         <h3>{{ $t("mitigationScore") }}{{ ": " + score[1] }}</h3>
         <Obligations />
@@ -283,6 +284,11 @@ import surveyJSON from "@/survey-enfr.json";
 })
 export default class Results extends Vue {
   myResults = this.$store.getters.resultDataSections;
+
+  items = [
+          { risk_area: "1. Project", no_of_questions: 15, project_score: 9, maximum_score: 15 },
+          { risk_area: "1. Project", no_of_questions: 15, project_score: this.$store.getters.calcScore[2], maximum_score: 15 },
+        ];
 
   Survey: Model = new Model(surveyJSON);
 
