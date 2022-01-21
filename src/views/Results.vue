@@ -62,8 +62,10 @@
         <h3 style="word-spacing: 5px">
           {{ $t("currentScore") }} {{ ": " + score[2] }}
         </h3>
-        <b-table striped hover :items="items"></b-table>
         <h3>{{ $t("rawRiskScore") }}{{ ": " + score[0] }}</h3>
+
+        <b-table striped hover :items="items()"></b-table>
+
         <h3>{{ $t("mitigationScore") }}{{ ": " + score[1] }}</h3>
         <Obligations />
         <div class="row">
@@ -109,7 +111,7 @@
       </div>
     </div>
 
-    <div style="margin-bottom:15px;">
+    <div style="margin-bottom: 15px">
       <h1>{{ $t("export") }}</h1>
       <button
         type="button"
@@ -277,18 +279,37 @@ import surveyJSON from "@/survey-enfr.json";
     Obligations
   },
   computed: {
-    score: function() {
+    score: function () {
       return this.$store.getters.calcScore;
-    }
-  }
+    },
+  },
 })
 export default class Results extends Vue {
   myResults = this.$store.getters.resultDataSections;
 
-  items = [
-          { risk_area: "1. Project", no_of_questions: 15, project_score: 9, maximum_score: 15 },
-          { risk_area: "1. Project", no_of_questions: 15, project_score: this.$store.getters.calcScore[2], maximum_score: 15 },
-        ];
+  items() {
+    let items = [];
+    let qustions = this.$store.questionname;
+    alert(qustions);
+    if (this.myResults[1]?.length > 0) {
+      this.myResults[1].forEach((myResult) => {
+        let riskArea = "";
+        let quesionsNum = 0;
+        let projectScore = 0;
+        let maxScore = 0;
+        if (myResult.questionHeader){
+          riskArea = myResult.questionHeader[this.$i18n.locale];
+        }
+        items.push({
+          risk_area: riskArea,
+          no_of_questions: quesionsNum,
+          project_score: projectScore,
+          maximum_score: maxScore,
+        });
+      });
+      return items;
+    }
+  }
 
   Survey: Model = new Model(surveyJSON);
 
@@ -310,21 +331,21 @@ export default class Results extends Vue {
   }
 
   created() {
-    this.Survey.onComplete.add(result => {
+    this.Survey.onComplete.add((result) => {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add(results => {
+    this.Survey.onComplete.add((results) => {
       this.$router.push("Results");
     });
 
-    this.Survey.onValueChanged.add(result => {
+    this.Survey.onValueChanged.add((result) => {
       this.$store.commit("updateResult", result);
     });
 
     const converter = new showdown.Converter();
 
-    this.Survey.onTextMarkdown.add(function(survey, options) {
+    this.Survey.onTextMarkdown.add(function (survey, options) {
       //convert the markdown text to html
       var str = converter.makeHtml(options.text);
       //remove root paragraphs <p></p>
@@ -342,7 +363,7 @@ export default class Results extends Vue {
 
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
-    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
+    this.Survey.onAfterRenderQuestion.add(function (sender, options) {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
       if (title) {
         var questionRequiredHTML = "";
@@ -373,7 +394,7 @@ export default class Results extends Vue {
         version: this.$store.state.version,
         currentPage: this.$store.state.currentPageNo,
         data: this.$store.state.toolData,
-        translationsOnResult: this.$store.state.translationsOnResult
+        translationsOnResult: this.$store.state.translationsOnResult,
       } as SurveyFile);
     }
   }
