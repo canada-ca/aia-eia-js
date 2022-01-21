@@ -289,8 +289,6 @@ export default class Results extends Vue {
 
   items() {
     let items = [];
-    let qustions = this.$store.questionname;
-    alert(qustions);
     if (this.myResults[1]?.length > 0) {
       this.myResults[1].forEach((myResult) => {
         let riskArea = "";
