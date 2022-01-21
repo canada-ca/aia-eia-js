@@ -292,7 +292,7 @@ export default class Results extends Vue {
     if (this.myResults[1]?.length > 0) {
       this.myResults[1].forEach((myResult) => {
         let riskArea = "";
-        let quesionsNum = 0;
+        let questionsNum = 0;
         let projectScore = 0;
         let maxScore = 0;
         if (myResult.questionHeader){
@@ -300,7 +300,7 @@ export default class Results extends Vue {
         }
         items.push({
           risk_area: riskArea,
-          no_of_questions: quesionsNum,
+          no_of_questions: questionsNum,
           project_score: projectScore,
           maximum_score: maxScore,
         });
