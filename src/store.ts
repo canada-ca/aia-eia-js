@@ -342,7 +342,7 @@ const store: StoreOptions<RootState> = {
       if (state.result === undefined) return [0, 0, 0];
       return calculateFinalScore(state.result, state.questionNames);
     },
-    getScoreBySection: state => section => {
+    getScoreBySection: state => (section: string) => {
       if (state.result === undefined) {
         return [0, 0, 0];
       }
