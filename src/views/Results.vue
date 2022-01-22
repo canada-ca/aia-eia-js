@@ -270,6 +270,7 @@ import Obligations from "@/components/Obligations.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
 import surveyJSON from "@/survey-enfr.json";
+import RiskArea from "@/interfaces/RiskArea";
 
 @Component({
   components: {
@@ -288,25 +289,27 @@ export default class Results extends Vue {
   myResults = this.$store.getters.resultDataSections;
 
   items() {
-    let items = [];
+    let items: RiskArea[] = [];
     if (this.myResults[1]?.length > 0) {
       this.myResults[1].forEach((myResult) => {
-        let riskArea = "";
-        let questionsNum = 0;
-        let projectScore = 0;
-        let maxScore = 0;
-        if (myResult.questionHeader){
-          riskArea = myResult.questionHeader[this.$i18n.locale];
+        if (myResult.questionHead) {
+          let riskAreaTitle = myResult.questionHead;
+          let riskAreaName = myResult.name.replace(/\d/, "");
+          alert(riskAreaName);
+          let sectionScore = this.$store.getters.getScoreBySection(
+            riskAreaName
+          );
+          items.push({
+            risk_area: riskAreaTitle[this.$i18n.locale],
+            no_of_questions: sectionScore[0],
+            project_score: sectionScore[1],
+            maximum_score: sectionScore[2],
+          });
         }
-        items.push({
-          risk_area: riskArea,
-          no_of_questions: questionsNum,
-          project_score: projectScore,
-          maximum_score: maxScore,
-        });
       });
-      return items;
     }
+
+    return items;
   }
 
   Survey: Model = new Model(surveyJSON);
