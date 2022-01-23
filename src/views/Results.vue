@@ -64,9 +64,12 @@
         </h3>
         <h3>{{ $t("rawRiskScore") }}{{ ": " + score[0] }}</h3>
 
-        <b-table striped hover :items="items()"></b-table>
+        <b-table striped hover :items="riskAreaItems"></b-table>
 
         <h3>{{ $t("mitigationScore") }}{{ ": " + score[1] }}</h3>
+
+        <b-table striped hover :items="mitigationItems"></b-table>
+
         <Obligations />
         <div class="row">
           <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA") }}</h2>
@@ -277,7 +280,7 @@ import RiskArea from "@/interfaces/RiskArea";
     ActionButtonBar,
     Result,
     Score,
-    Obligations
+    Obligations,
   },
   computed: {
     score: function () {
@@ -288,27 +291,69 @@ import RiskArea from "@/interfaces/RiskArea";
 export default class Results extends Vue {
   myResults = this.$store.getters.resultDataSections;
 
-  items() {
+  riskAreaItems() {
     let items: RiskArea[] = [];
+    let totalNoQuestions = 0;
+    let totalProjectScore = 0;
+    let totalMaxScore = 0;
     if (this.myResults[1]?.length > 0) {
       this.myResults[1].forEach((myResult) => {
-        if (myResult.questionHead) {
-          let riskAreaTitle = myResult.questionHead;
+        if (myResult.questionHeader !== undefined) {
+          let riskAreaTitle = myResult.questionHeader;
           let riskAreaName = myResult.name.replace(/\d/, "");
-          alert(riskAreaName);
-          let sectionScore = this.$store.getters.getScoreBySection(
-            riskAreaName
-          );
+          let sectionScore =
+            this.$store.getters.getScoreBySection(riskAreaName);
+          items.push({
+            risk_area: riskAreaTitle[this.$i18n.locale],
+            no_of_questions: sectionScore[0],
+            project_score: sectionScore[1],
+            maximum_score: sectionScore[2]
+          });
+          totalNoQuestions += sectionScore[0];
+          totalProjectScore += sectionScore[1];
+          totalMaxScore += sectionScore[2];
+        }
+      });
+    }
+    items.push({
+      risk_area: "RAW IMPACT SCORE",
+      no_of_questions: totalNoQuestions,
+      project_score: totalProjectScore,
+      maximum_score: totalMaxScore
+    });
+    return items;
+  }
+
+  mitigationItems() {
+    let items: RiskArea[] = [];
+    let totalNoQuestions = 0;
+    let totalProjectScore = 0;
+    let totalMaxScore = 0;
+    if (this.myResults[2]?.length > 0) {
+      this.myResults[2].forEach((myResult) => {
+        if (myResult.questionHeader !== undefined) {
+          let riskAreaTitle = myResult.questionHeader;
+          let riskAreaName = myResult.name.replace(/\d/, "");
+          let sectionScore =
+            this.$store.getters.getScoreBySection(riskAreaName);
           items.push({
             risk_area: riskAreaTitle[this.$i18n.locale],
             no_of_questions: sectionScore[0],
             project_score: sectionScore[1],
             maximum_score: sectionScore[2],
-          });
+          });          
+          totalNoQuestions += sectionScore[0];
+          totalProjectScore += sectionScore[1];
+          totalMaxScore += sectionScore[2];
         }
       });
     }
-
+    items.push({
+      risk_area: "MITIGATION SCORE",
+      no_of_questions: totalNoQuestions,
+      project_score: totalProjectScore,
+      maximum_score: totalMaxScore
+    });
     return items;
   }
 
