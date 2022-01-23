@@ -297,7 +297,7 @@ export default class Results extends Vue {
     let totalProjectScore = 0;
     let totalMaxScore = 0;
     if (this.myResults[1]?.length > 0) {
-      this.myResults[1].forEach((myResult) => {
+      this.myResults[1].forEach((myResult: any) => {
         if (myResult.questionHeader !== undefined) {
           let riskAreaTitle = myResult.questionHeader;
           let riskAreaName = myResult.name.replace(/\d/, "");
@@ -330,7 +330,7 @@ export default class Results extends Vue {
     let totalProjectScore = 0;
     let totalMaxScore = 0;
     if (this.myResults[2]?.length > 0) {
-      this.myResults[2].forEach((myResult) => {
+      this.myResults[2].forEach((myResult: any) => {
         if (myResult.questionHeader !== undefined) {
           let riskAreaTitle = myResult.questionHeader;
           let riskAreaName = myResult.name.replace(/\d/, "");
