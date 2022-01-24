@@ -64,11 +64,21 @@
         </h3>
         <h3>{{ $t("rawRiskScore") }}{{ ": " + score[0] }}</h3>
 
-        <b-table striped hover :items="riskAreaItems"></b-table>
+        <b-table
+          striped
+          hover
+          :items="riskAreaItems()"
+          :fields="riskAreaFields"
+        ></b-table>
 
         <h3>{{ $t("mitigationScore") }}{{ ": " + score[1] }}</h3>
 
-        <b-table striped hover :items="mitigationItems"></b-table>
+        <b-table
+          striped
+          hover
+          :items="mitigationItems()"
+          :fields="mitigationFields"
+        ></b-table>
 
         <Obligations />
         <div class="row">
@@ -280,16 +290,30 @@ import RiskArea from "@/interfaces/RiskArea";
     ActionButtonBar,
     Result,
     Score,
-    Obligations,
+    Obligations
   },
   computed: {
-    score: function () {
+    score: function() {
       return this.$store.getters.calcScore;
-    },
-  },
+    }
+  }
 })
 export default class Results extends Vue {
   myResults = this.$store.getters.resultDataSections;
+
+  riskAreaFields = [
+    { key: "risk_area", label: this.$t("riskArea").toString() },
+    { key: "no_of_questions", label: this.$t("noOfQuestions").toString() },
+    { key: "project_score", label: this.$t("projectScore").toString() },
+    { key: "maximum_score", label: this.$t("maximumScore").toString() }
+  ];
+
+  mitigationFields = [
+    { key: "risk_area", label: this.$t("mitigationArea").toString() },
+    { key: "no_of_questions", label: this.$t("noOfQuestions").toString() },
+    { key: "project_score", label: this.$t("projectScore").toString() },
+    { key: "maximum_score", label: this.$t("maximumScore").toString() }
+  ];
 
   riskAreaItems() {
     let items: RiskArea[] = [];
@@ -301,8 +325,9 @@ export default class Results extends Vue {
         if (myResult.questionHeader !== undefined) {
           let riskAreaTitle = myResult.questionHeader;
           let riskAreaName = myResult.name.replace(/\d/, "");
-          let sectionScore =
-            this.$store.getters.getScoreBySection(riskAreaName);
+          let sectionScore = this.$store.getters.getScoreBySection(
+            riskAreaName
+          );
           items.push({
             risk_area: riskAreaTitle[this.$i18n.locale],
             no_of_questions: sectionScore[0],
@@ -316,7 +341,9 @@ export default class Results extends Vue {
       });
     }
     items.push({
-      risk_area: "RAW IMPACT SCORE",
+      risk_area: this.$t("rawRiskScore")
+        .toString()
+        .toUpperCase(),
       no_of_questions: totalNoQuestions,
       project_score: totalProjectScore,
       maximum_score: totalMaxScore
@@ -334,14 +361,17 @@ export default class Results extends Vue {
         if (myResult.questionHeader !== undefined) {
           let riskAreaTitle = myResult.questionHeader;
           let riskAreaName = myResult.name.replace(/\d/, "");
-          let sectionScore =
-            this.$store.getters.getScoreBySection(riskAreaName);
+          let sectionScore = this.$store.getters.getScoreBySection(
+            riskAreaName
+          );
           items.push({
-            risk_area: riskAreaTitle[this.$i18n.locale],
+            risk_area: riskAreaTitle[this.$i18n.locale]
+              ? riskAreaTitle[this.$i18n.locale]
+              : riskAreaTitle["en"],
             no_of_questions: sectionScore[0],
             project_score: sectionScore[1],
-            maximum_score: sectionScore[2],
-          });          
+            maximum_score: sectionScore[2]
+          });
           totalNoQuestions += sectionScore[0];
           totalProjectScore += sectionScore[1];
           totalMaxScore += sectionScore[2];
@@ -349,7 +379,9 @@ export default class Results extends Vue {
       });
     }
     items.push({
-      risk_area: "MITIGATION SCORE",
+      risk_area: this.$t("mitigationScore")
+        .toString()
+        .toUpperCase(),
       no_of_questions: totalNoQuestions,
       project_score: totalProjectScore,
       maximum_score: totalMaxScore
@@ -377,21 +409,21 @@ export default class Results extends Vue {
   }
 
   created() {
-    this.Survey.onComplete.add((result) => {
+    this.Survey.onComplete.add(result => {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add((results) => {
+    this.Survey.onComplete.add(results => {
       this.$router.push("Results");
     });
 
-    this.Survey.onValueChanged.add((result) => {
+    this.Survey.onValueChanged.add(result => {
       this.$store.commit("updateResult", result);
     });
 
     const converter = new showdown.Converter();
 
-    this.Survey.onTextMarkdown.add(function (survey, options) {
+    this.Survey.onTextMarkdown.add(function(survey, options) {
       //convert the markdown text to html
       var str = converter.makeHtml(options.text);
       //remove root paragraphs <p></p>
@@ -409,7 +441,7 @@ export default class Results extends Vue {
 
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
-    this.Survey.onAfterRenderQuestion.add(function (sender, options) {
+    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
       if (title) {
         var questionRequiredHTML = "";
@@ -440,7 +472,7 @@ export default class Results extends Vue {
         version: this.$store.state.version,
         currentPage: this.$store.state.currentPageNo,
         data: this.$store.state.toolData,
-        translationsOnResult: this.$store.state.translationsOnResult,
+        translationsOnResult: this.$store.state.translationsOnResult
       } as SurveyFile);
     }
   }
