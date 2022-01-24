@@ -1,4 +1,9 @@
 {
+    "riskArea": "Secteur de risque",
+    "noOfQuestions": "Nombre de questions",
+    "projectScore": "Cote du projet",
+    "maximumScore": "Cote maximale",
+    "mitigationArea": "Secteur d'atténuation",
     "showHelp": "Afficher l'aide",
     "startAgain": "Recommencer",
     "version": "Version: 0.9.1",

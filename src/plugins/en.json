@@ -1,4 +1,9 @@
 {
+    "riskArea": "Risk Area",
+    "noOfQuestions": "No. of Questions",
+    "projectScore": "Project Score",
+    "maximumScore": "Maximum Score",
+    "mitigationArea": "Mitigation Area",
     "showHelp": "Show help",
     "startAgain": "Start Again",
     "version": "Version: 0.9.1",

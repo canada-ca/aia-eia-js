@@ -207,6 +207,29 @@ function calculateFinalScore(
   return [rawRiskScore, mitigationScore, total, level];
 }
 
+function calculateSectionScore(
+  survey: SurveyModel,
+  questionNames: string[],
+  section: string
+): number[] {
+  let projectScore = 0;
+  let maximumScore = 0;
+  let noOfQuesions = 0;
+
+  let questionNamesBySection = questionNames.filter(name =>
+    name.includes(section)
+  );
+  noOfQuesions = questionNamesBySection.length;
+  questionNamesBySection.forEach(name => {
+    var currentQuestion = survey.getQuestionByName(name);
+    // eslint-disable-next-line security/detect-object-injection
+    projectScore += getValue(survey.data[name]);
+    maximumScore += getMaxScoreForQuestion(<QuestionSelectBase>currentQuestion);
+  });
+
+  return [noOfQuesions, projectScore, maximumScore];
+}
+
 //Toggles wheather the next button appears based on if it is located on the last page
 function toggleButton(state: RootState): void {
   //When I do not include the btn class it prevents from the next button same for prev button from showing
@@ -318,6 +341,12 @@ const store: StoreOptions<RootState> = {
     calcScore: state => {
       if (state.result === undefined) return [0, 0, 0];
       return calculateFinalScore(state.result, state.questionNames);
+    },
+    getScoreBySection: state => (section: string) => {
+      if (state.result === undefined) {
+        return [0, 0, 0];
+      }
+      return calculateSectionScore(state.result, state.questionNames, section);
     },
     getTranslationsOnResult: state => {
       return state.translationsOnResult;

@@ -63,7 +63,23 @@
           {{ $t("currentScore") }} {{ ": " + score[2] }}
         </h3>
         <h3>{{ $t("rawRiskScore") }}{{ ": " + score[0] }}</h3>
+
+        <b-table
+          striped
+          hover
+          :items="riskAreaItems()"
+          :fields="riskAreaFields"
+        ></b-table>
+
         <h3>{{ $t("mitigationScore") }}{{ ": " + score[1] }}</h3>
+
+        <b-table
+          striped
+          hover
+          :items="mitigationItems()"
+          :fields="mitigationFields"
+        ></b-table>
+
         <Obligations />
         <div class="row">
           <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA") }}</h2>
@@ -108,7 +124,7 @@
       </div>
     </div>
 
-    <div style="margin-bottom:15px;">
+    <div style="margin-bottom: 15px">
       <h1>{{ $t("export") }}</h1>
       <button
         type="button"
@@ -267,6 +283,7 @@ import Obligations from "@/components/Obligations.vue";
 import SurveyFile from "@/interfaces/SurveyFile";
 import i18n from "@/plugins/i18n";
 import surveyJSON from "@/survey-enfr.json";
+import RiskArea from "@/interfaces/RiskArea";
 
 @Component({
   components: {
@@ -283,6 +300,94 @@ import surveyJSON from "@/survey-enfr.json";
 })
 export default class Results extends Vue {
   myResults = this.$store.getters.resultDataSections;
+
+  riskAreaFields = [
+    { key: "risk_area", label: this.$t("riskArea").toString() },
+    { key: "no_of_questions", label: this.$t("noOfQuestions").toString() },
+    { key: "project_score", label: this.$t("projectScore").toString() },
+    { key: "maximum_score", label: this.$t("maximumScore").toString() }
+  ];
+
+  mitigationFields = [
+    { key: "risk_area", label: this.$t("mitigationArea").toString() },
+    { key: "no_of_questions", label: this.$t("noOfQuestions").toString() },
+    { key: "project_score", label: this.$t("projectScore").toString() },
+    { key: "maximum_score", label: this.$t("maximumScore").toString() }
+  ];
+
+  riskAreaItems() {
+    let items: RiskArea[] = [];
+    let totalNoQuestions = 0;
+    let totalProjectScore = 0;
+    let totalMaxScore = 0;
+    if (this.myResults[1]?.length > 0) {
+      this.myResults[1].forEach((myResult: any) => {
+        if (myResult.questionHeader !== undefined) {
+          let riskAreaTitle = myResult.questionHeader;
+          let riskAreaName = myResult.name.replace(/\d/, "");
+          let sectionScore = this.$store.getters.getScoreBySection(
+            riskAreaName
+          );
+          items.push({
+            risk_area: riskAreaTitle[this.$i18n.locale],
+            no_of_questions: sectionScore[0],
+            project_score: sectionScore[1],
+            maximum_score: sectionScore[2]
+          });
+          totalNoQuestions += sectionScore[0];
+          totalProjectScore += sectionScore[1];
+          totalMaxScore += sectionScore[2];
+        }
+      });
+    }
+    items.push({
+      risk_area: this.$t("rawRiskScore")
+        .toString()
+        .toUpperCase(),
+      no_of_questions: totalNoQuestions,
+      project_score: totalProjectScore,
+      maximum_score: totalMaxScore
+    });
+    return items;
+  }
+
+  mitigationItems() {
+    let items: RiskArea[] = [];
+    let totalNoQuestions = 0;
+    let totalProjectScore = 0;
+    let totalMaxScore = 0;
+    if (this.myResults[2]?.length > 0) {
+      this.myResults[2].forEach((myResult: any) => {
+        if (myResult.questionHeader !== undefined) {
+          let riskAreaTitle = myResult.questionHeader;
+          let riskAreaName = myResult.name.replace(/\d/, "");
+          let sectionScore = this.$store.getters.getScoreBySection(
+            riskAreaName
+          );
+          items.push({
+            risk_area: riskAreaTitle[this.$i18n.locale]
+              ? riskAreaTitle[this.$i18n.locale]
+              : riskAreaTitle["en"],
+            no_of_questions: sectionScore[0],
+            project_score: sectionScore[1],
+            maximum_score: sectionScore[2]
+          });
+          totalNoQuestions += sectionScore[0];
+          totalProjectScore += sectionScore[1];
+          totalMaxScore += sectionScore[2];
+        }
+      });
+    }
+    items.push({
+      risk_area: this.$t("mitigationScore")
+        .toString()
+        .toUpperCase(),
+      no_of_questions: totalNoQuestions,
+      project_score: totalProjectScore,
+      maximum_score: totalMaxScore
+    });
+    return items;
+  }
 
   Survey: Model = new Model(surveyJSON);
 
