@@ -41,10 +41,12 @@
     "ATIP",
     "AIPRP",
     "PIBs",
-    "PIAs"
+    "PIAs",
+    "l'EIA",
+    "L'EIA"
   ],
   "flagWords": [],
-  "import": ["./node_modules/cspell-dict-fr-fr/cspell-ext.json"],
+  "import": ["./node_modules/@cspell/dict-fr-fr/cspell-ext.json"],
   "dictionaries": [
       "fr-fr",
       "en-gb",
