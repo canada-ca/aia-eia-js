@@ -52,7 +52,7 @@
     "@cspell/dict-fr-fr": "^2.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-vue": "^6.2.2",
+    "eslint-plugin-vue": "^8.3.0",
     "jest-transform-stub": "^2.0.0",
     "markdownlint-cli": "^0.30.0",
     "push-dir": "^0.4.1",
