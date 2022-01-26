@@ -33,7 +33,7 @@ function reloadTemplate(){
 
   var defPreFooter = document.getElementById("def-preFooter");
   defPreFooter.outerHTML = wet.builder.preFooter({
-    dateModified: "2021-11-30",
+    dateModified: "2022-01-26",
     versionIdentifier: "0.9.1",
     showPostContent: false,
     showShare: false
