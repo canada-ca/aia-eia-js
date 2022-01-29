@@ -367,11 +367,11 @@ const store: StoreOptions<RootState> = {
         //Calculate the section header.
         var questionHeader = { en: "", fr: "" };
         var questionSubHeader = { en: "", fr: "" };
-        if (question.parent.constructor.name === "PanelModel") {
+        if (question.parent.isPanel) {
           var panel = question.parent;
-          if (question.parent.parent.constructor.name == "PageModel") {
-            questionHeader = getTitleFromPanel(question.parent.parent);
-            questionSubHeader = getTitleFromPanel(question.parent);
+          if (panel.parent.isPage) {
+            questionHeader = getTitleFromPanel(panel.parent);
+            questionSubHeader = getTitleFromPanel(panel);
           }
         }
 
