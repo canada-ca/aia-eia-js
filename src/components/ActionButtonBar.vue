@@ -59,6 +59,13 @@ import i18n from "@/plugins/i18n";
 import SurveyFile from "@/interfaces/SurveyFile";
 import { Model } from "survey-vue";
 
+// make saveJsonFile() declared in index.html available to TS
+declare global {
+    interface Window {
+        saveJsonFile:any;
+    }
+}
+
 @Component
 export default class ActionButtonBar extends Vue {
   @Prop() survey?: Model;
@@ -68,19 +75,9 @@ export default class ActionButtonBar extends Vue {
     }
   }
   saveSurvey() {
-    const a = document.createElement("a");
-    a.download = "SurveyResults.json";
-
     const saveFile = this.buildSurveyFile();
     const blob = new Blob([saveFile], { type: "text/plain" });
-
-    a.href = window.URL.createObjectURL(blob);
-
-    a.dataset.downloadurl = ["text/json", a.download, a.href].join(":");
-
-    const e = document.createEvent("MouseEvents");
-    e.initEvent("click", true, false);
-    a.dispatchEvent(e);
+    window.saveJsonFile("AIA Results.json", blob);
   }
 
   onFileChanged($event: any) {

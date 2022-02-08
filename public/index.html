@@ -55,6 +55,62 @@
   </script>
 
   <script type="text/javascript">
+    function saveJsonFile(filename, blob) {
+      const saveOptions = {
+        suggestedName: filename,
+        types: [
+          {
+            description: "JSON",
+            accept: {
+              "application/json": [".json"],
+            },
+          },
+        ],
+      };
+
+      _saveFile(saveOptions, "application/json", blob);
+    }
+
+    function savePdfFile(filename, blob) {
+      const saveOptions = {
+        suggestedName: filename,
+        types: [
+          {
+            description: "PDF",
+            accept: {
+              "application/pdf": [".pdf"],
+            },
+          },
+        ],
+      };
+
+      _saveFile(saveOptions, "application/pdf", blob);
+    }
+    
+    async function _saveFile(saveOptions, mimeType, blob) {
+      // see File System Access API for a description of saveOptions (https://web.dev/file-system-access/)
+      if (window.showSaveFilePicker) { // not all browsers have File System Access API...
+        const fileHandle = await window.showSaveFilePicker(saveOptions);
+        const fileStream = await fileHandle.createWritable();
+        await fileStream.write(blob);
+        await fileStream.close();
+      } else {
+        // fallback to download function if File System Access API is not available
+        const filename = saveOptions.suggestedName;
+        _basicDownload(filename, mimeType, blob);
+      }
+    }
+
+    function _basicDownload(filename, mimeType, blob) {
+      const a = document.createElement("a");
+      a.download = filename;
+      a.href = window.URL.createObjectURL(blob);
+      a.dataset.downloadurl = [mimeType, a.download, a.href].join(":");
+      const e = document.createEvent("MouseEvents");
+      e.initEvent("click", true, false);
+      a.dispatchEvent(e);
+    }
+
     function exportResults(lang) {
       var source = window.document.getElementById(lang + "-content").innerHTML;
 
@@ -74,8 +130,11 @@
           },
         }
       };
-
-      pdfMake.createPdf(dd).download("aia-" + lang + ".pdf");
+      ;
+      pdfMake.createPdf(dd).getBlob((blob) => {
+        const filename = ("aia-" + lang + ".pdf");
+        savePdfFile(filename, blob);
+      });
     }
   </script>
 
