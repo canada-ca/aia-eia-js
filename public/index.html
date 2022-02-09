@@ -56,47 +56,33 @@
 
   <script type="text/javascript">
     function saveJsonFile(filename, blob) {
-      const saveOptions = {
-        suggestedName: filename,
-        types: [
-          {
-            description: "JSON",
-            accept: {
-              "application/json": [".json"],
-            },
-          },
-        ],
-      };
-
-      _saveFile(saveOptions, "application/json", blob);
+      _saveFile(filename, "JSON", ".json", "application/json", blob);
     }
 
     function savePdfFile(filename, blob) {
-      const saveOptions = {
-        suggestedName: filename,
-        types: [
-          {
-            description: "PDF",
-            accept: {
-              "application/pdf": [".pdf"],
-            },
-          },
-        ],
-      };
-
-      _saveFile(saveOptions, "application/pdf", blob);
+      _saveFile(filename, "PDF", ".pdf", "application/pdf", blob);
     }
     
-    async function _saveFile(saveOptions, mimeType, blob) {
+    async function _saveFile(filename, typeDescription, typeExtension, mimeType, blob) {
       // see File System Access API for a description of saveOptions (https://web.dev/file-system-access/)
       if (window.showSaveFilePicker) { // not all browsers have File System Access API...
+        const saveOptions = {
+          suggestedName: filename,
+          types: [
+            {
+              description: typeDescription,
+              accept: {
+                [mimeType]: [typeExtension],
+              },
+            },
+          ],
+        };
         const fileHandle = await window.showSaveFilePicker(saveOptions);
         const fileStream = await fileHandle.createWritable();
         await fileStream.write(blob);
         await fileStream.close();
       } else {
         // fallback to download function if File System Access API is not available
-        const filename = saveOptions.suggestedName;
         _basicDownload(filename, mimeType, blob);
       }
     }
