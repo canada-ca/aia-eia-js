@@ -23,7 +23,49 @@
       jqueryEnv: 'external',
       localPath: '',
       isApplication: true
-    }));</script><script>function exportResults(lang) {
+    }));</script><script>function saveJsonFile(filename, blob) {
+      _saveFile(filename, "JSON", ".json", "application/json", blob);
+    }
+
+    function savePdfFile(filename, blob) {
+      _saveFile(filename, "PDF", ".pdf", "application/pdf", blob);
+    }
+    
+    async function _saveFile(filename, typeDescription, typeExtension, mimeType, blob) {
+      // see File System Access API for a description of saveOptions (https://web.dev/file-system-access/)
+      if (window.showSaveFilePicker) { // not all browsers have File System Access API...
+        const saveOptions = {
+          suggestedName: filename,
+          types: [
+            {
+              description: typeDescription,
+              accept: {
+                [mimeType]: [typeExtension],
+              },
+            },
+          ],
+        };
+        const fileHandle = await window.showSaveFilePicker(saveOptions);
+        const fileStream = await fileHandle.createWritable();
+        await fileStream.write(blob);
+        await fileStream.close();
+      } else {
+        // fallback to download function if File System Access API is not available
+        _basicDownload(filename, mimeType, blob);
+      }
+    }
+
+    function _basicDownload(filename, mimeType, blob) {
+      const a = document.createElement("a");
+      a.download = filename;
+      a.href = window.URL.createObjectURL(blob);
+      a.dataset.downloadurl = [mimeType, a.download, a.href].join(":");
+      const e = document.createEvent("MouseEvents");
+      e.initEvent("click", true, false);
+      a.dispatchEvent(e);
+    }
+
+    function exportResults(lang) {
       var source = window.document.getElementById(lang + "-content").innerHTML;
 
       var val = htmlToPdfmake(source);
@@ -42,8 +84,11 @@
           },
         }
       };
-
-      pdfMake.createPdf(dd).download("aia-" + lang + ".pdf");
+      ;
+      pdfMake.createPdf(dd).getBlob((blob) => {
+        const filename = ("aia-" + lang + ".pdf");
+        savePdfFile(filename, blob);
+      });
     }</script><script src="helper/wet.js"></script><script>function showHelp(helpTxt){
       helpTxt = helpTxt.replace(/ooooo/g, '&#39;');
       document.getElementById("helpText").innerHTML = helpTxt;
@@ -60,4 +105,4 @@
           modal.style.display = "none";
         }
       }
-    }</script><link href="/aia-eia-js/css/app.aa35b300.css" rel="preload" as="style"><link href="/aia-eia-js/css/chunk-vendors.c26e9052.css" rel="preload" as="style"><link href="/aia-eia-js/js/app.b50b4ebf.js" rel="preload" as="script"><link href="/aia-eia-js/js/chunk-vendors.1a1b24c2.js" rel="preload" as="script"><link href="/aia-eia-js/css/chunk-vendors.c26e9052.css" rel="stylesheet"><link href="/aia-eia-js/css/app.aa35b300.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="32x32" href="/aia-eia-js/img/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/aia-eia-js/img/icons/favicon-16x16.png"><link rel="manifest" href="/aia-eia-js/manifest.json"><meta name="theme-color" content="#4DBA87"><meta name="apple-mobile-web-app-capable" content="no"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="aia-eia-js"><link rel="apple-touch-icon" href="/aia-eia-js/img/icons/apple-touch-icon-152x152.png"><link rel="mask-icon" href="/aia-eia-js/img/icons/safari-pinned-tab.svg" color="#4DBA87"><meta name="msapplication-TileImage" content="/aia-eia-js/img/icons/msapplication-icon-144x144.png"><meta name="msapplication-TileColor" content="#000000"></head><body vocab="http://schema.org" typeof="WebPage"><div id="def-top"></div><noscript><strong>We're sorry but apphub doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><main id="wb-cont" role="main" property="mainContentOfPage" class="container"><div id="app"></div><div id="def-preFooter"></div></main><div id="def-footer"></div><script src="/aia-eia-js/js/chunk-vendors.1a1b24c2.js"></script><script src="/aia-eia-js/js/app.b50b4ebf.js"></script></body></html>
+    }</script><link href="/aia-eia-js/css/app.aa35b300.css" rel="preload" as="style"><link href="/aia-eia-js/css/chunk-vendors.c26e9052.css" rel="preload" as="style"><link href="/aia-eia-js/js/app.60e3e7d7.js" rel="preload" as="script"><link href="/aia-eia-js/js/chunk-vendors.22c24cb1.js" rel="preload" as="script"><link href="/aia-eia-js/css/chunk-vendors.c26e9052.css" rel="stylesheet"><link href="/aia-eia-js/css/app.aa35b300.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="32x32" href="/aia-eia-js/img/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/aia-eia-js/img/icons/favicon-16x16.png"><link rel="manifest" href="/aia-eia-js/manifest.json"><meta name="theme-color" content="#4DBA87"><meta name="apple-mobile-web-app-capable" content="no"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="aia-eia-js"><link rel="apple-touch-icon" href="/aia-eia-js/img/icons/apple-touch-icon-152x152.png"><link rel="mask-icon" href="/aia-eia-js/img/icons/safari-pinned-tab.svg" color="#4DBA87"><meta name="msapplication-TileImage" content="/aia-eia-js/img/icons/msapplication-icon-144x144.png"><meta name="msapplication-TileColor" content="#000000"></head><body vocab="http://schema.org" typeof="WebPage"><div id="def-top"></div><noscript><strong>We're sorry but apphub doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><main id="wb-cont" role="main" property="mainContentOfPage" class="container"><div id="app"></div><div id="def-preFooter"></div></main><div id="def-footer"></div><script src="/aia-eia-js/js/chunk-vendors.22c24cb1.js"></script><script src="/aia-eia-js/js/app.60e3e7d7.js"></script></body></html>
