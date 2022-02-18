@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/aia-eia-js/precache-manifest.d6b27f619fd28deca80ab3273ceba620.js"
+  "/aia-eia-js/precache-manifest.97deb06f835c59cd51f185ad9aaea25e.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "aia-eia-js"});
