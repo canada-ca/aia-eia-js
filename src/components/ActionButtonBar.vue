@@ -61,9 +61,9 @@ import { Model } from "survey-vue";
 
 // make saveJsonFile() declared in index.html available to TS
 declare global {
-    interface Window {
-        saveJsonFile:any;
-    }
+  interface Window {
+    saveJsonFile: any;
+  }
 }
 
 @Component
@@ -116,6 +116,12 @@ export default class ActionButtonBar extends Vue {
       }
 
       const loadedFile: SurveyFile = JSON.parse(result);
+      // little conversion for older files before #622 was implemented
+      if ((loadedFile?.data as any)?.aboutSystem1?.includes("item6-1")) {
+        const aboutSystem = (loadedFile.data as any).aboutSystem1 as string[];
+        aboutSystem[aboutSystem.indexOf("item6-1")] = "item6";
+      }
+
       this.$emit("fileLoaded", loadedFile);
     };
 
