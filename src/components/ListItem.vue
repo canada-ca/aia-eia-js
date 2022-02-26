@@ -12,33 +12,51 @@
           * A federal expert
           * A corporation
           * A university
+      
+      If you only want simple paragraphs, simply separate them with \n, without \n\n (marker for list).
+      You can include multiple paragraph/list groups by separating them with \n\n\n.
 -->
 
 <template>
   <div>
-    <p>{{ title }}</p>
-    <div v-if="list.length > 1">
-      <ul v-for="(item, index) in list" :key="index">
-        <li>{{ item }}</li>
-      </ul>
+    <div v-for="(section, index) in sections" :key="index">
+      <p>{{ section.title }}</p>
+      <div v-if="section.list.length > 1">
+        <ul v-for="(item, index) in section.list" :key="index">
+          <li>{{ item }}</li>
+        </ul>
+      </div>
     </div>
-    <p v-if="list.length === 1">{{ list[0] }}</p>
   </div>
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 
+interface Section {
+  title: String;
+  list: string[];
+}
+
 @Component
 export default class ListItem extends Vue {
   @Prop() text!: string;
-  private title: string = "";
-  private list: string[] = [];
+  private sections: Section[] = [];
   mounted() {
     if (this.text.indexOf("\n") < 0) {
-      this.title = this.text;
+      this.sections.push({ title: this.text, list: [] });
     } else {
-      this.title = this.text.split("\n\n")[0];
-      this.list = this.text.split("\n\n")[1].split("\n");
+      for (let s of this.text.split("\n\n\n")) {
+        if (s.indexOf("\n\n") < 0) {
+          // only basic paragraphs, no list...
+          for (let p of s.split("\n")) {
+            this.sections.push({ title: p, list: [] });
+          }
+        } else {
+          let t = s.split("\n\n")[0];
+          let l = s.split("\n\n")[1].split("\n");
+          this.sections.push({ title: t, list: l });
+        }
+      }
     }
   }
 }
