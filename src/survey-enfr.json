@@ -1280,7 +1280,7 @@
                 }
             ],
             "title": {
-                "default": "About The Decision",
+                "default": "About the Decision",
                 "fr": "À propos de la décision"
             }
         },
@@ -2076,7 +2076,7 @@
                 }
             ],
             "title": {
-                "default": "About The Data",
+                "default": "About the Data",
                 "fr": "À propos des données"
             }
         },
@@ -2725,13 +2725,13 @@
                     ],
                     "title": {
                         "default": "Data Quality",
-                        "fr": "Qualité Des Données"
+                        "fr": "Qualité des données"
                     }
                 }
             ],
             "visibleIf": "{projectDetailsPhase} = \"item1\"",
             "title": {
-                "default": "De-Risking And Mitigation Measures",
+                "default": "De-Risking and Mitigation Measures",
                 "fr": "Élimination des risques et mesures d'atténuation"
             }
         },
@@ -2985,13 +2985,13 @@
                     ],
                     "title": {
                         "default": "Data Quality",
-                        "fr": "Qualité Des Données"
+                        "fr": "Qualité des données"
                     }
                 }
             ],
             "visibleIf": "{projectDetailsPhase} = \"item2\"",
             "title": {
-                "default": "De-Risking And Mitigation Measures",
+                "default": "De-Risking and Mitigation Measures",
                 "fr": "Élimination des risques et mesures d'atténuation"
             }
         },
@@ -3413,13 +3413,13 @@
                     ],
                     "title": {
                         "default": "Procedural Fairness",
-                        "fr": "Équité Procédurale"
+                        "fr": "Équité procédurale"
                     }
                 }
             ],
             "visibleIf": "{projectDetailsPhase} = \"item1\"",
             "title": {
-                "default": "De-Risking And Mitigation Measures",
+                "default": "De-Risking and Mitigation Measures",
                 "fr": "Élimination des risques et mesures d'atténuation"
             }
         },
@@ -3841,13 +3841,13 @@
                     ],
                     "title": {
                         "default": "Procedural Fairness",
-                        "fr": "Équité Procédurale"
+                        "fr": "Équité procédurale"
                     }
                 }
             ],
             "visibleIf": "{projectDetailsPhase} = \"item2\"",
             "title": {
-                "default": "De-Risking And Mitigation Measures",
+                "default": "De-Risking and Mitigation Measures",
                 "fr": "Élimination des risques et mesures d'atténuation"
             }
         },
@@ -3963,7 +3963,7 @@
             ],
             "visibleIf": "{projectDetailsPhase} = \"item1\"",
             "title": {
-                "default": "De-Risking And Mitigation Measures",
+                "default": "De-Risking and Mitigation Measures",
                 "fr": "Élimination des risques et mesures d'atténuation"
             }
         },
@@ -4079,7 +4079,7 @@
             ],
             "visibleIf": "{projectDetailsPhase} = \"item2\"",
             "title": {
-                "default": "De-Risking And Mitigation Measures",
+                "default": "De-Risking and Mitigation Measures",
                 "fr": "Élimination des risques et mesures d'atténuation"
             }
         }
