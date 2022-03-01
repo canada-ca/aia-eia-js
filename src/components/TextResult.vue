@@ -15,7 +15,7 @@
             >{{ $t("frenchContent") }} :
           </strong>
           <p>
-            <span style="white-space: pre">{{ data.displayValue }}</span>
+            <span style="white-space: pre-wrap">{{ data.displayValue }}</span>
           </p>
         </div>
         <div>
@@ -35,10 +35,10 @@
       </div>
       <div v-if="locale !== undefined">
         <div v-if="locale == $root.$i18n.locale" class="valueResultPDF">
-          <span style="white-space: pre">{{ data.displayValue }}</span>
+          <span style="white-space: pre-wrap">{{ data.displayValue }}</span>
         </div>
         <div v-if="locale != $root.$i18n.locale" class="valueResultPDF">
-          <span style="white-space: pre">{{ this.$store.getters.getTranslationsOnResult[this.data.name] }}</span>
+          <span style="white-space: pre-wrap">{{ this.$store.getters.getTranslationsOnResult[this.data.name] }}</span>
         </div>
       </div>
     </div>
