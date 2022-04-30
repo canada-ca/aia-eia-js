@@ -26,7 +26,7 @@
             >{{ $t("englishContent") }} :
           </strong>
           <div>
-            <textarea
+            <textarea style="width: 100%"
               :value="this.$store.getters.getTranslationsOnResult[this.data.name]"
               @blur="saveTranslation($event.target.value)"
             ></textarea>
