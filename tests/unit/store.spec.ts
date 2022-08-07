@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import store from "@/store";
 import { SurveyModel } from "survey-vue";
 import surveyJSON from "@/survey-enfr.json";
