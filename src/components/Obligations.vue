@@ -37,13 +37,13 @@ import ListItem from "@/components/ListItem.vue";
 @Component({
   props: ["locale"],
   computed: {
-    score: function() {
+    score: function () {
       return this.$store.getters.calcScore;
-    }
+    },
   },
   components: {
-    ListItem
-  }
+    ListItem,
+  },
 })
 export default class Obligations extends Vue {}
 </script>

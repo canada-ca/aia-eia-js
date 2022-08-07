@@ -10,6 +10,6 @@ export default new VueI18n({
   fallbackLocale: "en", // set fallback locale
   messages: {
     en: en,
-    fr: fr
-  }
+    fr: fr,
+  },
 });

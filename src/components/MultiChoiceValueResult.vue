@@ -28,8 +28,8 @@ import MultiChoiceResult from "@/components/MultiChoiceResult.vue";
 
 @Component({
   components: {
-    Modifier
-  }
+    Modifier,
+  },
 })
 export default class MultiChoiceValueResult extends MultiChoiceResult {
   getScore(val: String): number {

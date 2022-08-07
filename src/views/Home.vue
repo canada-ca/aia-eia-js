@@ -28,7 +28,6 @@
     <AssessmentTool :survey="Survey" />
     <Score />
 
-    
     <HelpModal />
   </div>
 </template>
@@ -77,7 +76,7 @@ export default class Home extends Vue {
     this.Survey.translationsOnResult = $event.translationsOnResult;
     this.Survey.start();
     this.$store.commit("updateResult", this.Survey);
-  }  
+  }
 
   created() {
     //Accounts for user's pressing the back button after completing survey (otherwise next button would appear on the last page)
@@ -155,15 +154,18 @@ export default class Home extends Vue {
         }
 
         if (options.question.help) {
-          let helpTxt = sender.locale == "fr" ? String(options.question.help.fr) : String(options.question.help.default);
+          let helpTxt =
+            sender.locale == "fr"
+              ? String(options.question.help.fr)
+              : String(options.question.help.default);
           helpTxt = helpTxt
-            .replace(/&/g, '&amp;')
-            .replace(/"/g, '&quot;')
-            .replace(/'/g, 'ooooo')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/\(/g, '&#40;')
-            .replace(/\)/g, '&#41;');
+            .replace(/&/g, "&amp;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "ooooo")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/\(/g, "&#40;")
+            .replace(/\)/g, "&#41;");
           let showHelpTxt = this.$t("showHelp").toString();
           helpButton = ` <a role="button" onclick="showHelp('${helpTxt}')"><img src="img/icons/show-help.png" alt="${showHelpTxt}"></a>`;
         }

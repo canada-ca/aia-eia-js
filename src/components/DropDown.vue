@@ -6,7 +6,7 @@
       <b-col md="4">
         <!-- Calls redirectToPage function whenever user changes index -->
         <select class="dropDownList" @change="redirectToPage()">
-          <option select>{{ $t("selectSection") }} </option>
+          <option select>{{ $t("selectSection") }}</option>
           <option v-for="page in totalPages" :key="page.num">
             {{ "Section " + page.num + ": " + page.title }}
           </option>
@@ -47,59 +47,59 @@ export default class DropDown extends Vue {
       totalPages: [
         {
           title: this.$t("resultSectionPD"),
-          num: 1
+          num: 1,
         },
         {
           title: this.$t("sectionBusinessDriverImpact"),
-          num: 2
+          num: 2,
         },
         {
           title: this.$t("riskProfile"),
-          num: 3
+          num: 3,
         },
         {
           title: this.$t("projectAuthority"),
-          num: 4
+          num: 4,
         },
         {
           title: this.$t("aboutTheSystem"),
-          num: 5
+          num: 5,
         },
         {
           title: this.$t("aboutTheAlgorithm"),
-          num: 6
+          num: 6,
         },
         {
           title: this.$t("aboutDecision"),
-          num: 7
+          num: 7,
         },
         {
           title: this.$t("impactAssessment"),
-          num: 8
+          num: 8,
         },
         {
           title: this.$t("aboutTheData"),
-          num: 9
+          num: 9,
         },
         {
           title: this.$t("consultations"),
-          num: 10
+          num: 10,
         },
 
         {
           title: this.$t("deRiskingAndMitigationMeasuresDQ"),
-          num: 11
+          num: 11,
         },
 
         {
           title: this.$t("deRiskingAndMitigationMeasuresPF"),
-          num: 12
+          num: 12,
         },
         {
           title: this.$t("deRiskingAndMitigationMeasuresP"),
-          num: 13
-        }
-      ]
+          num: 13,
+        },
+      ],
     };
   }
 }

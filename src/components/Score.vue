@@ -33,7 +33,7 @@ import { Getter } from "vuex";
 // define a mixin object
 var myMixin = {
   methods: {
-    isMobile: function() {
+    isMobile: function () {
       if (
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
           navigator.userAgent
@@ -43,26 +43,26 @@ var myMixin = {
       } else {
         return false;
       }
-    }
-  }
+    },
+  },
 };
 
 @Component({
   mixins: [myMixin],
   props: ["locale"],
   computed: {
-    score: function() {
+    score: function () {
       return this.$store.getters.calcScore;
     },
-    alertclass: function() {
+    alertclass: function () {
       const score = this.$store.getters.calcScore[3];
       if (score === undefined || score === 1)
         return "scoreClass alert alert-success";
       if (score === 2) return "scoreClass alert alert-info";
       if (score === 3) return "scoreClass alert alert-warning";
       if (score === 4) return "scoreClass alert alert-danger";
-    }
-  }
+    },
+  },
 })
 export default class Score extends Vue {}
 </script>

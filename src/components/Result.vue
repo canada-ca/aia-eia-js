@@ -33,8 +33,8 @@ import { getValue } from "@/store";
     TextResult,
     ValueResult,
     MultiChoiceResult,
-    MultiChoiceValueResult
-  }
+    MultiChoiceValueResult,
+  },
 })
 export default class Result extends Vue {
   @Prop() data: any;
