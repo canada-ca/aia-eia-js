@@ -10,7 +10,7 @@ function localVueInstance() {
 }
 
 describe("store.ts", () => {
-  it("renders calcscore getter", () => {
+  it.skip("renders calcscore getter", () => {
     let getters;
     let store;
 
