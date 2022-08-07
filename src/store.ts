@@ -6,8 +6,8 @@ import {
   IQuestion,
   QuestionSelectBase,
   SurveyModel,
-  IPanel,
-  LocalizableString,
+  QuestionRadiogroupModel,
+  ItemValue,
 } from "survey-vue";
 import isEmpty from "lodash.isempty";
 
@@ -115,15 +115,15 @@ function getMaxScoreForQuestion(question: QuestionSelectBase): number {
   let max = 0;
   let value = 0;
   if (questionType == "radiogroup" || questionType == "dropdown") {
-    question.choices.forEach((item) => {
-      value = getValue(item.itemValue);
+    question.choices.forEach((item: ItemValue) => {
+      value = getValue(item.value);
       if (max < value) {
         max = value;
       }
     });
   } else if (questionType == "checkbox") {
-    question.choices.forEach((item) => {
-      value = getValue(item.itemValue);
+    question.choices.forEach((item: ItemValue) => {
+      value = getValue(item.value);
       max += value;
     });
   }
@@ -311,9 +311,9 @@ const store: StoreOptions<RootState> = {
       //freeze this data so we can load from localStorage
       state.toolData = Object.freeze(result.data);
       state.translationsOnResult =
-        result.translationsOnResult === undefined
+        (result as any).translationsOnResult === undefined
           ? {}
-          : result.translationsOnResult;
+          : (result as any).translationsOnResult;
       state.answerData = result.getPlainData({
         includeEmpty: false,
       });
@@ -396,23 +396,22 @@ const store: StoreOptions<RootState> = {
           fr: question.locTitle.getLocaleText("fr"),
         };
 
-        if (
-          question.selectedItem !== undefined &&
-          question.selectedItem !== null
-        ) {
-          if (
-            question.selectedItem.locText !== undefined &&
-            question.selectedItem.locText !== null
-          ) {
-            result.selectedItem = {
-              en: question.selectedItem.locText.getLocaleText("default"),
-              fr: question.selectedItem.locText.getLocaleText("fr"),
-            };
-          }
+        const questionType = question.getType();
+
+        const isRadiogroup = questionType === "radiogroup";
+        if (isRadiogroup) {
+          const radiogroupQuestion = question as QuestionRadiogroupModel;
+          result.selectedItem = {
+            en: radiogroupQuestion.selectedItem.locText.getLocaleText("default"),
+            fr: radiogroupQuestion.selectedItem.locText.getLocaleText("fr"),
+          };
         }
 
-        if (question.getChoices !== undefined) {
-          const choices = question.getChoices();
+        const isDropDown = questionType === "dropdown";
+        const isCheckbox = questionType === "checkbox";
+        if (isDropDown || isCheckbox) {
+          const selectBaseQuestion = question as QuestionSelectBase;
+          const choices = selectBaseQuestion.choices as Array<ItemValue>;
           result.choiceData = [];
 
           for (let i = 0; i < choices.length; i++) {
