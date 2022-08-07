@@ -36,6 +36,7 @@
     "vuex-persist": "^2.3.0"
   },
   "devDependencies": {
+    "@cspell/dict-fr-fr": "^2.0.1",
     "@types/jest": "^27.4.1",
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^5.0.8",
@@ -49,7 +50,6 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "cspell": "^6.5.0",
-    "@cspell/dict-fr-fr": "^2.0.1",
     "eslint": "^8.21.0",
     "eslint-plugin-security": "^1.5.0",
     "eslint-plugin-vue": "^9.3.0",
@@ -58,6 +58,7 @@
     "push-dir": "^0.4.1",
     "ts-jest": "^27.0.4",
     "typescript": "^4.7.4",
+    "vue-jest": "^3.0.7",
     "vue-template-compiler": "^2.7.8"
   }
 }
