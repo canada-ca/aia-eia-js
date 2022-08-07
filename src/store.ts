@@ -402,7 +402,9 @@ const store: StoreOptions<RootState> = {
         if (isRadiogroup) {
           const radiogroupQuestion = question as QuestionRadiogroupModel;
           result.selectedItem = {
-            en: radiogroupQuestion.selectedItem.locText.getLocaleText("default"),
+            en: radiogroupQuestion.selectedItem.locText.getLocaleText(
+              "default"
+            ),
             fr: radiogroupQuestion.selectedItem.locText.getLocaleText("fr"),
           };
         }
