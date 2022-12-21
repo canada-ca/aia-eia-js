@@ -18,7 +18,7 @@
     "deploy": "npm run build; push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@types/lodash.isempty": "^4.4.6",
+    "@types/lodash.isempty": "^4.4.7",
     "@types/showdown": "^2.0.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.26.1",
