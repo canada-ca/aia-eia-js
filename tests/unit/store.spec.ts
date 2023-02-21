@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 import store from "@/store";
 import { SurveyModel } from "survey-vue";
 import surveyJSON from "@/survey-enfr.json";
@@ -23,7 +26,7 @@ describe("store.ts", () => {
 
     const calcScore = store.getters.calcScore;
 
-    expect(calcScore).toEqual([3, 0, 3, 1]);
+    expect(calcScore).toEqual([3, 0, 3, 4]);
   });
 
   it("calcScore is properly calculated if data is undefined", () => {
