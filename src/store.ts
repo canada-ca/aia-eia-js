@@ -115,14 +115,14 @@ function getMaxScoreForQuestion(question: QuestionSelectBase): number {
   var max = 0;
   var value = 0;
   if (questionType == "radiogroup" || questionType == "dropdown") {
-    question.choices.forEach(item => {
+    question.choices.forEach((item: { itemValue: any; }) => {
       value = getValue(item.itemValue);
       if (max < value) {
         max = value;
       }
     });
   } else if (questionType == "checkbox") {
-    question.choices.forEach(item => {
+    question.choices.forEach((item: { itemValue: any; }) => {
       value = getValue(item.itemValue);
       max += value;
     });
@@ -304,16 +304,17 @@ const store: StoreOptions<RootState> = {
       state.removeNext = false;
       state.removePrev = false;
     },
-    updateResult(state: RootState, result: SurveyModel) {
+    updateResult(state: RootState, result: SurveyModel ) {
       //When it reaches the last page it will get rid of the button or add it back if the user decides to go back
       state.result = result;
       state.currentPageNo = result.currentPageNo;
       //freeze this data so we can load from localStorage
       state.toolData = Object.freeze(result.data);
+      var resultData:any = result;
       state.translationsOnResult =
-        result.translationsOnResult === undefined
+      resultData.translationsOnResult === undefined
           ? {}
-          : result.translationsOnResult;
+          : resultData.translationsOnResult;
       state.answerData = result.getPlainData({
         includeEmpty: false
       });
@@ -361,7 +362,7 @@ const store: StoreOptions<RootState> = {
       var lastHeader = "";
 
       state.answerData.forEach(function(result) {
-        var question = state.result!.getQuestionByName(result.name);
+        var question:any = state.result!.getQuestionByName(result.name);
         const scoreType = getScoreType(question);
 
         //Calculate the section header.
