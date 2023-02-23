@@ -71,29 +71,30 @@ export default class Home extends Vue {
     this.allowDropdown = false;
   }
   fileLoaded($event: SurveyFile) {
-    this.Survey.version = $event.version;
+    var surveyWithExtraData:any = this.Survey;
+    surveyWithExtraData.version = $event.version;
     this.Survey.data = $event.data;
     this.Survey.currentPageNo = $event.currentPage;
-    this.Survey.translationsOnResult = $event.translationsOnResult;
+    surveyWithExtraData.translationsOnResult = $event.translationsOnResult;
     this.Survey.start();
     this.$store.commit("updateResult", this.Survey);
   }  
 
   created() {
     //Accounts for user's pressing the back button after completing survey (otherwise next button would appear on the last page)
-    this.Survey.onAfterRenderQuestion.add((result) => {
+    this.Survey.onAfterRenderQuestion.add((result: any) => {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add((result) => {
+    this.Survey.onComplete.add((result: any) => {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add((result) => {
+    this.Survey.onComplete.add((result: any) => {
       this.$router.push("Results");
     });
 
-    this.Survey.onAfterRenderPage.add((result) => {
+    this.Survey.onAfterRenderPage.add((result: { currentPageNo: number; }) => {
       var progressBar = document.getElementsByClassName("progress-bar")[0];
       //Make sure that the current page is 0 and the progress bar is defined and displayed on the screen
       if (result.currentPageNo == 0 && progressBar != undefined) {
@@ -113,7 +114,7 @@ export default class Home extends Vue {
       }
     });
 
-    this.Survey.onValueChanged.add((result) => {
+    this.Survey.onValueChanged.add((result: any) => {
       this.$store.commit("updateResult", result);
       if (this.Survey.getValue("projectDetailsPhase") != undefined) {
         this.allowDropdown = true;
@@ -122,7 +123,7 @@ export default class Home extends Vue {
 
     const converter = new showdown.Converter();
 
-    this.Survey.onTextMarkdown.add(function (survey, options) {
+    this.Survey.onTextMarkdown.add(function (survey:any, options:any) {
       //convert the markdown text to html
       var str = converter.makeHtml(options.text);
       //remove root paragraphs <p></p>
@@ -140,7 +141,7 @@ export default class Home extends Vue {
 
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
-    this.Survey.onAfterRenderQuestion.add((sender, options) => {
+    this.Survey.onAfterRenderQuestion.add((sender:any, options:any) => {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
       let helpButton = "";
 
