@@ -943,7 +943,7 @@
                         },
                         {
                             "type": "checkbox",
-                            "name": "consequence-nondeployment",
+                            "name": "consequence-nonDeployment",
                             "title": {
                                 "default": "What would be the consequence of not deploying the system?",
                                 "fr": "Quelle serait la conséquence du non-déploiement du système?"
@@ -995,8 +995,8 @@
                         },
                         {
                             "type": "comment",
-                            "name": "consequence-nondeployment-other",
-                            "visibleIf": "{consequence-nondeployment} contains \"item6-0\"",
+                            "name": "consequence-nonDeployment-other",
+                            "visibleIf": "{consequence-nonDeployment} contains \"item6-0\"",
                             "title": {
                                 "default": "Please describe",
                                 "fr": "S'il vous plait décrire"
@@ -1200,8 +1200,8 @@
                         },
                         {
                             "type": "comment",
-                            "name": "riskprofile6",
-                            "visibleIf": "{riskprofile5} = \"item1-3\"",
+                            "name": "riskProfile6",
+                            "visibleIf": "{riskProfile5} = \"item1-3\"",
                             "title": {
                                 "default": "If yes, please describe the barriers and any planned or existing measures to identify, remove, and/or prevent them.",
                                 "fr": "Si oui, veuillez décrire les difficultés et toute mesure prévue ou existante pour les identifier, les éliminer ou les éviter."
