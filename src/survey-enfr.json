@@ -1173,6 +1173,39 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "riskProfile5",
+                            "title": {
+                                "default": "Will the use of the system create or exacerbate barriers for persons with disabilities?",
+                                "fr": "L’utilisation du système entraînera-t-elle des difficultés pour les personnes en situation de handicap ou les accentuera-t-elle?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-3",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "riskprofile6",
+                            "visibleIf": "{riskprofile5} = \"item1-3\"",
+                            "title": {
+                                "default": "If yes, please describe the barriers and any planned or existing measures to identify, remove, and/or prevent them.",
+                                "fr": "Si oui, veuillez décrire les difficultés et toute mesure prévue ou existante pour les identifier, les éliminer ou les éviter."
+                            }
                         }
                     ]
                 }
