@@ -1819,6 +1819,15 @@
                             ]
                         },
                         {
+                            "type": "text",
+                            "name": "pibNumbers",
+                            "visibleIf": "{aboutDataSource11} = \"item1-0\"",
+                            "title": {
+                                "default": "Please list relevant PIB Bank Numbers.",
+                                "fr": "Veuillez énumérer les numéros de fichiers FRP pertinents."
+                            }
+                        },
+                        {
                             "type": "dropdown",
                             "name": "aboutDataSource2",
                             "title": {
@@ -2048,6 +2057,14 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "dataCollectionDetails",
+                            "title": {
+                                "default": "Please describe the input data collected and used by the system, its source, and method of collection.",
+                                "fr": "Veuillez décrire les données d’entrée collectées et utilisées par le système, leur source et leur méthode de collecte."
+                            }
                         }
                     ],
                     "title": {
