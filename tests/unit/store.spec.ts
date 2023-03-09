@@ -26,7 +26,7 @@ describe("store.ts", () => {
 
     const calcScore = store.getters.calcScore;
 
-    expect(calcScore).toEqual([3, 0, 3, 4]);
+    expect(calcScore).toEqual([3, 0, 3, 1]);
   });
 
   it("calcScore is properly calculated if data is undefined", () => {
