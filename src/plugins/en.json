@@ -27,7 +27,7 @@
     "linkProjectAnchor": "https://github.com/canada-ca/aia-eia-js",
     "linkDirective": "http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592",
     "print": "Print",
-    "sectionBusinessDriverImpact":"Business Driver / Positive Impact",
+    "sectionBusinessDriverImpact":"Reasons for Automation",
     "riskProfile": "Risk Profile",
     "projectAuthority": "Project Authority",
     "aboutTheSystem":"About the System",
