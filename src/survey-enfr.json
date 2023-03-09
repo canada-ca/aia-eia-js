@@ -1456,6 +1456,13 @@
                                     }
                                 },
                                 {
+                                    "value": "item7-1",
+                                    "text": {
+                                        "default": "Employment (recruitment, hiring, promotion, performance evaluation, monitoring, security clearance)",
+                                        "fr": "Emploi (recrutement, embauche, promotion, évaluation de rendement, surveillance, habilitation de sécurité)"
+                                    }
+                                },
+                                {
                                     "value": "item6-1",
                                     "text": {
                                         "default": "Other (please specify)",
