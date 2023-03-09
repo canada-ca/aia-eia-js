@@ -7,7 +7,8 @@ import {
   QuestionSelectBase,
   SurveyModel,
   IPanel,
-  LocalizableString
+  LocalizableString,
+  ItemValue
 } from "survey-vue";
 import isEmpty from "lodash.isempty";
 
@@ -115,15 +116,15 @@ function getMaxScoreForQuestion(question: QuestionSelectBase): number {
   var max = 0;
   var value = 0;
   if (questionType == "radiogroup" || questionType == "dropdown") {
-    question.choices.forEach((item: { itemValue: any; }) => {
-      value = getValue(item.itemValue);
+    question.choices.forEach((item: ItemValue) => {
+      value = getValue(item.value);
       if (max < value) {
         max = value;
       }
     });
   } else if (questionType == "checkbox") {
-    question.choices.forEach((item: { itemValue: any; }) => {
-      value = getValue(item.itemValue);
+    question.choices.forEach((item: ItemValue) => {
+      value = getValue(item.value);
       max += value;
     });
   }
