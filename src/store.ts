@@ -430,7 +430,6 @@ const store: StoreOptions<RootState> = {
         if (
           scoreType === 1 &&
           (question.parent.name === "projectDetailsPanel-NS" ||
-            question.parent.name === "businessDriversPanel-NS" ||
             question.parent.name === "aboutSystemPanel-NS")
         ) {
           projectResults.push(result);
