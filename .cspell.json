@@ -44,7 +44,9 @@
     "PIAs",
     "l'EIA",
     "L'EIA",
-    "Tradeoffs"
+    "Tradeoffs",
+    "SLGBTQI",
+    "ELGBTQI"
   ],
   "flagWords": [],
   "import": ["./node_modules/@cspell/dict-fr-fr/cspell-ext.json"],

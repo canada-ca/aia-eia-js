@@ -2217,8 +2217,8 @@
                             "type": "radiogroup",
                             "name": "consultationDesign1",
                             "title": {
-                                "default": "Internal Stakeholders (Strategic Policy and Planning, Data Governance, Program Policy, etc.)",
-                                "fr": "Intervenants internes (politique et planification stratégiques, gouvernance des données, politique du programme, etc.)"
+                                "default": "Internal Stakeholders (federal institutions, including the federal public service)",
+                                "fr": "Intervenants internes (institutions fédérales et fonction publique fédérale)"
                             },
                             "choices": [
                                 {
@@ -2293,6 +2293,62 @@
                                     }
                                 },
                                 {
+                                    "value": "item10",
+                                    "text": {
+                                        "default": "Digital Policy",
+                                        "fr": "Politique sur le numérique"
+                                    }
+                                },
+                                {
+                                    "value": "item11",
+                                    "text": {
+                                        "default": "Human Resources",
+                                        "fr": "Ressources humaines"
+                                    }
+                                },
+                                {
+                                    "value": "item12",
+                                    "text": {
+                                        "default": "TBS Office of the Chief Human Resources Officer",
+                                        "fr": "Bureau du dirigeante principale des ressources humaines du SCT"
+                                    }
+                                },
+                                {
+                                    "value": "item13",
+                                    "text": {
+                                        "default": "TBS Office of the Chief Information Officer",
+                                        "fr": "Bureau de la dirigeante principale de l’information du SCT"
+                                    }
+                                },
+                                {
+                                    "value": "item14",
+                                    "text": {
+                                        "default": "Office of the Privacy Commissioner of Canada",
+                                        "fr": "Commissariat à la protection de la vie privée du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item15",
+                                    "text": {
+                                        "default": "Networks for Equity-seeking Employees",
+                                        "fr": "Réseaux pour les employés visés par l’équité"
+                                    }
+                                },
+                                {
+                                    "value": "item16",
+                                    "text": {
+                                        "default": "Accessibility Working Groups",
+                                        "fr": "Groupes de travail sur l’accessibilité"
+                                    }
+                                },
+                                {
+                                    "value": "item17",
+                                    "text": {
+                                        "default": "2SLGBTQI+ Secretariat",
+                                        "fr": "Secrétariat 2ELGBTQI+"
+                                    }
+                                },
+                                {
                                     "value": "item9",
                                     "text": {
                                         "default": "Other (describe)",
@@ -2314,8 +2370,8 @@
                             "type": "radiogroup",
                             "name": "consultationDesign3",
                             "title": {
-                                "default": "External Stakeholders (Civil Society, Academia, Industry, etc.)",
-                                "fr": "Intervenants externes (société civile, universités, industrie, etc.)"
+                                "default": "External Stakeholders (groups in other sectors or jurisdictions)",
+                                "fr": "Intervenants externes (groupes d’autres secteurs ou administrations)"
                             },
                             "choices": [
                                 {
@@ -2365,10 +2421,38 @@
                                     }
                                 },
                                 {
-                                    "value": "item10",
+                                    "value": "item11",
                                     "text": {
-                                        "default": "Office of the Privacy Commissioner",
-                                        "fr": "Commissariat à la protection de la vie privée"
+                                        "default": "Bargaining Agents",
+                                        "fr": "Agents négociateurs"
+                                    }
+                                },
+                                {
+                                    "value": "item12",
+                                    "text": {
+                                        "default": "Governments in other Jurisdictions",
+                                        "fr": "Gouvernements d’autres administrations"
+                                    }
+                                },
+                                {
+                                    "value": "item13",
+                                    "text": {
+                                        "default": "International Organizations",
+                                        "fr": "Organisations internationales"
+                                    }
+                                },
+                                {
+                                    "value": "item14",
+                                    "text": {
+                                        "default": "Clients or their Representatives",
+                                        "fr": "Clients ou leurs représentants"
+                                    }
+                                },
+                                {
+                                    "value": "item15",
+                                    "text": {
+                                        "default": "Indigenous Groups",
+                                        "fr": "Groupes autochtones"
                                     }
                                 },
                                 {
@@ -2414,8 +2498,8 @@
                             "type": "radiogroup",
                             "name": "consultationImplementation1",
                             "title": {
-                                "default": "Internal Stakeholders (Strategic policy and planning, Data Governance, Program Policy, etc.)",
-                                "fr": "Intervenants internes (politique et planification stratégiques, gouvernance des données, politique du programme, etc.)"
+                                "default": "Internal Stakeholders (federal institutions, including the federal public service)",
+                                "fr": "Intervenants internes (institutions fédérales et fonction publique fédérale)"
                             },
                             "choices": [
                                 {
@@ -2490,6 +2574,62 @@
                                     }
                                 },
                                 {
+                                    "value": "item10",
+                                    "text": {
+                                        "default": "Digital Policy",
+                                        "fr": "Politique sur le numérique"
+                                    }
+                                },
+                                {
+                                    "value": "item11",
+                                    "text": {
+                                        "default": "Human Resources",
+                                        "fr": "Ressources humaines"
+                                    }
+                                },
+                                {
+                                    "value": "item12",
+                                    "text": {
+                                        "default": "TBS Office of the Chief Human Resources Officer",
+                                        "fr": "Bureau du dirigeante principale des ressources humaines du SCT"
+                                    }
+                                },
+                                {
+                                    "value": "item13",
+                                    "text": {
+                                        "default": "TBS Office of the Chief Information Officer",
+                                        "fr": "Bureau de la dirigeante principale de l’information du SCT"
+                                    }
+                                },
+                                {
+                                    "value": "item14",
+                                    "text": {
+                                        "default": "Office of the Privacy Commissioner of Canada",
+                                        "fr": "Commissariat à la protection de la vie privée du Canada"
+                                    }
+                                },
+                                {
+                                    "value": "item15",
+                                    "text": {
+                                        "default": "Networks for Equity-seeking Employees",
+                                        "fr": "Réseaux pour les employés visés par l’équité"
+                                    }
+                                },
+                                {
+                                    "value": "item16",
+                                    "text": {
+                                        "default": "Accessibility Working Groups",
+                                        "fr": "Groupes de travail sur l’accessibilité"
+                                    }
+                                },
+                                {
+                                    "value": "item17",
+                                    "text": {
+                                        "default": "2SLGBTQI+ Secretariat",
+                                        "fr": "Secrétariat 2ELGBTQI+"
+                                    }
+                                },
+                                {
                                     "value": "item9",
                                     "text": {
                                         "default": "Other (describe)",
@@ -2511,8 +2651,8 @@
                             "type": "radiogroup",
                             "name": "consultationImplementation3",
                             "title": {
-                                "default": "External Stakeholders (Civil Society, Academia, Industry, etc.)",
-                                "fr": "Intervenants externes (société civile, universités, industrie, etc.)"
+                                "default": "External Stakeholders (groups in other sectors or jurisdictions)",
+                                "fr": "Intervenants externes (groupes d’autres secteurs ou administrations)"
                             },
                             "choices": [
                                 {
@@ -2562,10 +2702,38 @@
                                     }
                                 },
                                 {
-                                    "value": "item10",
+                                    "value": "item11",
                                     "text": {
-                                        "default": "Office of the Privacy Commissioner",
-                                        "fr": "Commissariat à la protection de la vie privée"
+                                        "default": "Bargaining Agents",
+                                        "fr": "Agents négociateurs"
+                                    }
+                                },
+                                {
+                                    "value": "item12",
+                                    "text": {
+                                        "default": "Governments in other Jurisdictions",
+                                        "fr": "Gouvernements d’autres administrations"
+                                    }
+                                },
+                                {
+                                    "value": "item13",
+                                    "text": {
+                                        "default": "International Organizations",
+                                        "fr": "Organisations internationales"
+                                    }
+                                },
+                                {
+                                    "value": "item14",
+                                    "text": {
+                                        "default": "Clients or their Representatives",
+                                        "fr": "Clients ou leurs représentants"
+                                    }
+                                },
+                                {
+                                    "value": "item15",
+                                    "text": {
+                                        "default": "Indigenous Groups",
+                                        "fr": "Groupes autochtones"
                                     }
                                 },
                                 {
