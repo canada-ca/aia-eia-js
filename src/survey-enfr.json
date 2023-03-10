@@ -4148,8 +4148,8 @@
                             "type": "radiogroup",
                             "name": "privacyDesign1",
                             "title": {
-                                "default": "If your system involves the use of personal information, will you undertake or have you undertaken a Privacy Impact Assessment, or updated an existing one?",
-                                "fr": "Si votre système implique l’utilisation de renseignements personnels, avez-vous ou allez-vous entreprendre une évaluation des facteurs relatifs à la vie privée ou réviser une évaluation existante?"
+                                "default": "If your system uses or creates personal information, will you undertake or have you undertaken a Privacy Impact Assessment, or updated an existing one?",
+                                "fr": "Si votre système utilise ou crée des renseignements personnels, avez-vous ou allez-vous entreprendre une évaluation des facteurs relatifs à la vie privée ou réviser une évaluation existante?"
                             },
                             "choices": [
                                 {
@@ -4167,6 +4167,24 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "privacyDesign5",
+                            "visibleIf": "{privacyDesign1} = \"item1-1\"",
+                            "title": {
+                                "default": "Please indicate the following in your answer: Title and scope of the Privacy Impact Assessment; How the automation project fits into the program; and Date of Privacy Impact Assessment completion or modification.",
+                                "fr": "Veuillez indiquer les éléments suivants dans votre réponse : titre et portée de l’évaluation des facteurs relatifs à la vie privée; la manière dont le projet d’automatisation s’intègre au programme; date d’achèvement ou de modification de l’évaluation des facteurs relatifs à la vie privée."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "privacyDesign6",
+                            "visibleIf": "{privacyDesign1} = \"item2-0\"",
+                            "title": {
+                                "default": "Have you undertaken other types of privacy assessments for your automation project?  Please describe any relevant efforts.",
+                                "fr": "Avez-vous entrepris d’autres types d’évaluations de la protection de la vie privée pour votre projet d’automatisation? Veuillez décrire toute mesure pertinente."
+                            }
                         },
                         {
                             "type": "radiogroup",
@@ -4239,6 +4257,39 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "privacyDesign7",
+                            "title": {
+                                "default": "Will you de-identify any personal information used or created by the system at any point in the lifecycle? ",
+                                "fr": "Allez-vous dépersonnaliser les renseignements personnels utilisés ou établis par le système à tout moment du cycle de vie? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "privacyDesign8",
+                            "visibleIf": "{privacyDesign7} = \"item1-1\"",
+                            "title": {
+                                "default": "Please describe your de-identification method(s).",
+                                "fr": "Veuillez décrire la méthode ou les méthodes de dépersonnalisation que vous allez utiliser. "
+                            }
                         }
                     ],
                     "title": {
@@ -4264,8 +4315,8 @@
                             "type": "radiogroup",
                             "name": "privacyImplementation1",
                             "title": {
-                                "default": "If your system involves the use of personal information, have you undertaken a Privacy Impact Assessment, or updated an existing one?",
-                                "fr": "Si votre système implique l’utilisation de renseignements personnels, avez-vous entrepris une évaluation des facteurs relatifs à la vie privée ou révisé une évaluation existante?"
+                                "default": "If your system uses or creates personal information, have you undertaken a Privacy Impact Assessment, or updated an existing one?",
+                                "fr": "Si votre système utilise ou crée des renseignements personnels, avez-vous entrepris une évaluation des facteurs relatifs à la vie privée ou révisé une évaluation existante?"
                             },
                             "choices": [
                                 {
@@ -4283,6 +4334,24 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "privacyImplementation5",
+                            "visibleIf": "{privacyImplementation1} = \"item1-1\"",
+                            "title": {
+                                "default": "Please indicate the following in your answer: Title and scope of the Privacy Impact Assessment; How the automation project fits into the program; and Date of Privacy Impact Assessment completion or modification.",
+                                "fr": "Veuillez indiquer les éléments suivants dans votre réponse : titre et portée de l’évaluation des facteurs relatifs à la vie privée; la manière dont le projet d’automatisation s’intègre au programme; date d’achèvement ou de modification de l’évaluation des facteurs relatifs à la vie privée."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "privacyImplementation6",
+                            "visibleIf": "{privacyImplementation1} = \"item2-0\"",
+                            "title": {
+                                "default": "Have you undertaken other types of privacy assessments for your automation project?  Please describe any relevant efforts.",
+                                "fr": "Avez-vous entrepris d’autres types d’évaluations de la protection de la vie privée pour votre projet d’automatisation? Veuillez décrire toute mesure pertinente."
+                            }
                         },
                         {
                             "type": "radiogroup",
@@ -4355,6 +4424,39 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "privacyImplementation7",
+                            "title": {
+                                "default": "Will you de-identify any personal information used or created by the system at any point in the lifecycle? ",
+                                "fr": "Allez-vous dépersonnaliser les renseignements personnels utilisés ou établis par le système à tout moment du cycle de vie? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "privacyImplementation8",
+                            "visibleIf": "{privacyImplementation7} = \"item1-1\"",
+                            "title": {
+                                "default": "Please describe your de-identification method(s).",
+                                "fr": "Veuillez décrire la méthode ou les méthodes de dépersonnalisation que vous allez utiliser. "
+                            }
                         }
                     ],
                     "title": {
