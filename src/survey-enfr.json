@@ -1413,6 +1413,14 @@
                     "name": "decisionSectorPanel-RS",
                     "elements": [
                         {
+                            "type": "comment",
+                            "name": "impact4", "//comment": "this is named 'impact4' because the question used to be in that section. Keeping the name allows the data from previous AIAs to be transferred automatically",
+                            "title": {
+                                "default": "Please describe the decision(s) that will be automated.",
+                                "fr": "Veuillez décrire la ou les décisions qui seront automatisées."
+                            }
+                        },
+                        {
                             "type": "checkbox",
                             "name": "decisionSector1",
                             "title": {
@@ -1550,15 +1558,6 @@
                                     }
                                 }
                             ]
-                        },
-                        {
-                            "type": "comment",
-                            "name": "impact4",
-                            "visibleIf": "{impact3} contains [\"item1-4\"]",
-                            "title": {
-                                "default": "Please describe the decision(s) that will be automated",
-                                "fr": "Veuillez décrire la ou les décisions qui seront automatisées"
-                            }
                         },
                         {
                             "type": "comment",
