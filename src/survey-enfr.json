@@ -1497,58 +1497,42 @@
                     "elements": [
                         {
                             "type": "radiogroup",
-                            "name": "impact1",
+                            "name": "impactFullOrPartial",
                             "title": {
-                                "default": "Will the system only be used to assist a decision-maker?",
-                                "fr": "Le système sera-t-il seulement utilisé pour aider un décideur?"
+                                "default": "Which of the following best describes the type of automation you are planning? ",
+                                "fr": "Parmi les propositions suivantes, laquelle décrit le mieux le type d’automatisation que vous envisagez? "
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-4",
                                     "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
+                                        "default": "Full automation (the system will make an administrative decision) ",
+                                        "fr": "Automatisation complète (le système prendra une décision administrative)"
                                     }
                                 },
                                 {
-                                    "value": "item2-0",
+                                    "value": "item2-2",
                                     "text": {
-                                        "default": "No",
-                                        "fr": "Non"
+                                        "default": "Partial automation (the system will contribute to administrative decision-making by supporting an officer through assessments, recommendations, intermediate decisions, or other outputs)",
+                                        "fr": "Automatisation partielle (le système facilitera la prise de décisions administratives en appuyant un agent au moyen d’évaluations, de recommandations, de décisions provisoires ou d’autres résultats)"
                                     }
                                 }
                             ]
                         },
                         {
-                            "type": "radiogroup",
-                            "name": "impact2",
+                            "type": "comment",
+                            "name": "impactRoleOfSystem",
                             "title": {
-                                "default": "Will the system be replacing a decision that would otherwise be made by a human?",
-                                "fr": "Le système remplacera-t-il une décision qui serait autrement prise par un humain?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-3",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
+                                "default": "Please describe the role of the system in the decision-making process.",
+                                "fr": "Veuillez décrire le rôle du système dans le processus de prise de décisions."
+                            }
                         },
                         {
                             "type": "radiogroup",
                             "name": "impact3",
                             "title": {
-                                "default": "Will the system be replacing human decisions that require judgement or discretion?",
-                                "fr": "Le système remplacera-t-il les décisions humaines qui exigent du jugement ou de la discrétion?"
+                                "default": "Will the system be making decisions or assessments that require judgement or discretion?",
+                                "fr": "Le système prendra-t-il des décisions ou effectuera-t-il des évaluations qui exigent du jugement ou de la discrétion?"
                             },
                             "choices": [
                                 {
@@ -1574,6 +1558,55 @@
                             "title": {
                                 "default": "Please describe the decision(s) that will be automated",
                                 "fr": "Veuillez décrire la ou les décisions qui seront automatisées"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "impact20",
+                            "title": {
+                                "default": "Please describe the criteria used to evaluate client data and the operations applied to process it.",
+                                "fr": "Veuillez décrire les critères utilisés pour évaluer les données des clients et les procédures appliquées pour les traiter."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "impact21",
+                            "title": {
+                                "default": "Please describe the output produced by the system and any relevant information needed to interpret it in the context of the administrative decision.",
+                                "fr": "Veuillez décrire le résultat produit par le système et les renseignements pertinents nécessaires à l’interprétation dans le contexte de la décision administrative."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "impact22",
+                            "title": {
+                                "default": "Will the system perform an assessment or other operation that would not otherwise be completed by a human?",
+                                "fr": "Le système effectuera-t-il une évaluation ou une autre activité qui ne serait autrement pas réalisée par un humain?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "impact23",
+                            "visibleIf": "{impact22} contains [\"item1-4\"]",
+                            "title": {
+                                "default": "Please describe the relevant function(s) of the system.",
+                                "fr": "Veuillez décrire la ou les fonctions pertinentes du système."
                             }
                         },
                         {
@@ -1725,6 +1758,52 @@
                         {
                             "type": "comment",
                             "name": "impact10",
+                            "title": {
+                                "default": "Please describe why the impacts resulting from the decision are (as per selected option above).",
+                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                            }
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "impact24",
+                            "title": {
+                                "default": "The impacts that the decision will have on the equality, dignity, privacy, and autonomy of individuals will likely be:",
+                                "fr": "Les incidences de la décision sur l’égalité, la dignité, la vie privée et l’autonomie des personnes seront probablement :"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Little to no impact",
+                                        "fr": "Incidence faible ou nulle"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "Moderate impact",
+                                        "fr": "Incidence modérée"
+                                    }
+                                },
+                                {
+                                    "value": "item3-3",
+                                    "text": {
+                                        "default": "High impact",
+                                        "fr": "Incidence élevée"
+                                    }
+                                },
+                                {
+                                    "value": "item4-4",
+                                    "text": {
+                                        "default": "Very high impact",
+                                        "fr": "Incidence très élevée"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "impact25",
                             "title": {
                                 "default": "Please describe why the impacts resulting from the decision are (as per selected option above).",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
