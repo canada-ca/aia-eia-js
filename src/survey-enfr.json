@@ -839,6 +839,67 @@
                     "name": "businessDriversPanel-RS",
                     "elements": [
                         {
+                            "type": "checkbox",
+                            "name": "businessDrivers1",
+                            "title": {
+                                "default": "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)",
+                                "fr": "Qu'est-ce qui motive votre équipe à introduire l'automatisation dans ce processus décisionnel? (Cochez toutes les réponses qui s'appliquent.)"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1",
+                                    "text": {
+                                        "default": "Existing backlog of work or cases",
+                                        "fr": "Arriéré de travail ou de cas existant"
+                                    }
+                                },
+                                {
+                                    "value": "item2",
+                                    "text": {
+                                        "default": "Improve overall quality of decisions",
+                                        "fr": "Amélioration de la qualité générale des décisions"
+                                    }
+                                },
+                                {
+                                    "value": "item3",
+                                    "text": {
+                                        "default": "Lower transaction costs of an existing program",
+                                        "fr": "Réduction des coûts de transaction d'un programme existant"
+                                    }
+                                },
+                                {
+                                    "value": "item4",
+                                    "text": {
+                                        "default": "The system is performing tasks that humans could not accomplish in a reasonable period of time",
+                                        "fr": "Le système exécute des tâches que les humains ne sont pas en mesure d'accomplir dans un délai raisonnable"
+                                    }
+                                },
+                                {
+                                    "value": "item5",
+                                    "text": {
+                                        "default": "Use innovative approaches",
+                                        "fr": "Utilisation d'approches novatrices"
+                                    }
+                                },
+                                {
+                                    "value": "item6",
+                                    "text": {
+                                        "default": "Other (please specify)",
+                                        "fr": "Autre (veuillez préciser)"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "motivation-other",
+                            "visibleIf": "{businessDrivers1} contains \"item6\"",
+                            "title": {
+                                "default": "Please describe",
+                                "fr": "S'il vous plait décrire"
+                            }
+                        },
+                        {
                             "type": "comment",
                             "name": "clientNeeds",
                             "title": {
@@ -997,67 +1058,6 @@
                             "type": "comment",
                             "name": "consequence-nonDeployment-other",
                             "visibleIf": "{consequence-nonDeployment} contains \"item6-0\"",
-                            "title": {
-                                "default": "Please describe",
-                                "fr": "S'il vous plait décrire"
-                            }
-                        },
-                        {
-                            "type": "checkbox",
-                            "name": "businessDrivers1",
-                            "title": {
-                                "default": "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)",
-                                "fr": "Qu'est-ce qui motive votre équipe à introduire l'automatisation dans ce processus décisionnel? (Cochez toutes les réponses qui s'appliquent.)"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1",
-                                    "text": {
-                                        "default": "Existing backlog of work or cases",
-                                        "fr": "Arriéré de travail ou de cas existant"
-                                    }
-                                },
-                                {
-                                    "value": "item2",
-                                    "text": {
-                                        "default": "Improve overall quality of decisions",
-                                        "fr": "Amélioration de la qualité générale des décisions"
-                                    }
-                                },
-                                {
-                                    "value": "item3",
-                                    "text": {
-                                        "default": "Lower transaction costs of an existing program",
-                                        "fr": "Réduction des coûts de transaction d'un programme existant"
-                                    }
-                                },
-                                {
-                                    "value": "item4",
-                                    "text": {
-                                        "default": "The system is performing tasks that humans could not accomplish in a reasonable period of time",
-                                        "fr": "Le système exécute des tâches que les humains ne sont pas en mesure d'accomplir dans un délai raisonnable"
-                                    }
-                                },
-                                {
-                                    "value": "item5",
-                                    "text": {
-                                        "default": "Use innovative approaches",
-                                        "fr": "Utilisation d'approches novatrices"
-                                    }
-                                },
-                                {
-                                    "value": "item6",
-                                    "text": {
-                                        "default": "Other (please specify)",
-                                        "fr": "Autre (veuillez préciser)"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "comment",
-                            "name": "motivation-other",
-                            "visibleIf": "{businessDrivers1} contains \"item6\"",
                             "title": {
                                 "default": "Please describe",
                                 "fr": "S'il vous plait décrire"
