@@ -836,7 +836,7 @@
             "elements": [
                 {
                     "type": "panel",
-                    "name": "businessDriversPanel-NS",
+                    "name": "businessDriversPanel-RS",
                     "elements": [
                         {
                             "type": "checkbox",
@@ -892,7 +892,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "motivation-other",
+                            "name": "businessDrivers-motivation-other",
                             "visibleIf": "{businessDrivers1} contains \"item6\"",
                             "title": {
                                 "default": "Please describe",
@@ -901,7 +901,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "clientNeeds",
+                            "name": "businessDrivers-clientNeeds",
                             "title": {
                                 "default": "What client needs will the system address and how will this system meet them? If possible, describe how client needs have been identified.",
                                 "fr": "Quels sont les besoins des clients auxquels le système répondra et comment le système y répondra-t-il? Si possible, décrivez la façon dont les besoins des clients ont été déterminés."
@@ -909,7 +909,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "publicBenefits",
+                            "name": "businessDrivers-publicBenefits",
                             "title": {
                                 "default": "Please describe any public benefits the system is expected to have.",
                                 "fr": "Veuillez décrire tous les bienfaits d’intérêt public que le système devrait avoir."
@@ -917,7 +917,7 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "effectivenessInMeetingNeeds",
+                            "name": "businessDrivers-effectivenessInMeetingNeeds",
                             "title": {
                                 "default": "How effective will the system likely be in meeting client needs?",
                                 "fr": "Dans quelle mesure le système sera-t-il efficace pour répondre aux besoins des clients?"
@@ -948,7 +948,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "systemImprovements",
+                            "name": "businessDrivers-systemImprovements",
                             "title": {
                                 "default": "Please describe any improvements, benefits, or advantages you expect from using an automated system. This could include relevant program indicators and performance targets.",
                                 "fr": "Veuillez décrire les améliorations, les bienfaits ou les avantages que vous attendez de l’utilisation d’un système automatisé. Cela pourrait inclure des indicateurs de programme et des objectifs de rendement pertinents."
@@ -956,7 +956,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "limitToNeed",
+                            "name": "businessDrivers-limitToNeed",
                             "title": {
                                 "default": "Please describe how you will ensure that the system is confined to addressing the client needs identified above.",
                                 "fr": "Veuillez décrire la façon dont vous allez vous assurer que le système se limite à répondre aux besoins des clients mentionnés ci-dessus."
@@ -964,7 +964,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "automationTradeoffs",
+                            "name": "businessDrivers-automationTradeoffs",
                             "title": {
                                 "default": "Please describe any trade-offs between client interests and program objectives that you have considered during the design of the project.",
                                 "fr": "Veuillez décrire toutes les concessions mutuelles entre les intérêts des clients et les objectifs du programme que vous avez pris en considération lors de l’élaboration du projet."
@@ -972,7 +972,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "nonAutomatedAlternatives",
+                            "name": "businessDrivers-nonAutomatedAlternatives",
                             "title": {
                                 "default": "Have alternative non-automated processes been considered?",
                                 "fr": "D’autres options de processus non automatisés ont-elles été envisagées?"
@@ -996,7 +996,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "automationPreference",
+                            "name": "businessDrivers-automationPreference",
                             "title": {
                                 "default": "If non-automated processes were considered, why was automation identified as the preferred option?",
                                 "fr": "Si des processus non automatisés ont été envisagés, pourquoi l’automatisation a-t-elle été l’option choisie?"
@@ -1004,7 +1004,7 @@
                         },
                         {
                             "type": "checkbox",
-                            "name": "consequence-nonDeployment",
+                            "name": "businessDrivers-consequence-nonDeployment",
                             "title": {
                                 "default": "What would be the consequence of not deploying the system?",
                                 "fr": "Quelle serait la conséquence du non-déploiement du système?"
@@ -1056,7 +1056,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "consequence-nonDeployment-other",
+                            "name": "businessDrivers-consequence-nonDeployment-other",
                             "visibleIf": "{consequence-nonDeployment} contains \"item6-0\"",
                             "title": {
                                 "default": "Please describe",
@@ -1067,8 +1067,8 @@
                 }
             ],
             "title": {
-                "default": "Business Driver / Positive Impact",
-                "fr": "Facteur opérationnel / Incidence positive"
+                "default": "Reasons for Automation",
+                "fr": "Raisons de l'automatisation"
             }
         },
         {
@@ -2062,7 +2062,7 @@
                         },
                         {
                             "type": "text",
-                            "name": "pibNumbers",
+                            "name": "aboutDataSourcePibNumbers",
                             "visibleIf": "{aboutDataSource11} = \"item1-0\"",
                             "title": {
                                 "default": "Please list relevant PIB Bank Numbers.",
@@ -2302,7 +2302,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "dataCollectionDetails",
+                            "name": "aboutDataSourceDataCollectionDetails",
                             "title": {
                                 "default": "Please describe the input data collected and used by the system, its source, and method of collection.",
                                 "fr": "Veuillez décrire les données d’entrée collectées et utilisées par le système, leur source et leur méthode de collecte."
