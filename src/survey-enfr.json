@@ -840,67 +840,6 @@
                     "elements": [
                         {
                             "type": "checkbox",
-                            "name": "consequence-nonDeployment",
-                            "title": {
-                                "default": "What would be the consequence of not deploying the system?",
-                                "fr": "Quelle serait la conséquence du non-déploiement du système?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-3",
-                                    "text": {
-                                        "default": "Service cannot be delivered at all",
-                                        "fr": "La prestation du service est impossible"
-                                    }
-                                },
-                                {
-                                    "value": "item2-2",
-                                    "text": {
-                                        "default": "Service cannot be delivered in a timely or efficient manner",
-                                        "fr": "La prestation du service ne peut pas être effectuée en temps voulu ou de manière efficace"
-                                    }
-                                },
-                                {
-                                    "value": "item3-0",
-                                    "text": {
-                                        "default": " Service costs are too high",
-                                        "fr": "Les coûts du service sont trop élevés"
-                                    }
-                                },
-                                {
-                                    "value": "item4-0",
-                                    "text": {
-                                        "default": "Service quality is not as high",
-                                        "fr": "La qualité du service n’est pas aussi élevée"
-                                    }
-                                },
-                                {
-                                    "value": "item5-0",
-                                    "text": {
-                                        "default": "Service delivery cannot achieve performance targets",
-                                        "fr": "La prestation du service ne parvient pas à atteindre les objectifs de rendement"
-                                    }
-                                },
-                                {
-                                    "value": "item6-0",
-                                    "text": {
-                                        "default": "Other (please specify)",
-                                        "fr": "Autre (veuillez préciser)"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "comment",
-                            "name": "consequence-nonDeployment-other",
-                            "visibleIf": "{consequence-nonDeployment} contains \"item6-0\"",
-                            "title": {
-                                "default": "Please describe",
-                                "fr": "S'il vous plait décrire"
-                            }
-                        },
-                        {
-                            "type": "checkbox",
                             "name": "businessDrivers1",
                             "title": {
                                 "default": "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)",
@@ -955,6 +894,170 @@
                             "type": "comment",
                             "name": "motivation-other",
                             "visibleIf": "{businessDrivers1} contains \"item6\"",
+                            "title": {
+                                "default": "Please describe",
+                                "fr": "S'il vous plait décrire"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "clientNeeds",
+                            "title": {
+                                "default": "What client needs will the system address and how will this system meet them? If possible, describe how client needs have been identified.",
+                                "fr": "Quels sont les besoins des clients auxquels le système répondra et comment le système y répondra-t-il? Si possible, décrivez la façon dont les besoins des clients ont été déterminés."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "publicBenefits",
+                            "title": {
+                                "default": "Please describe any public benefits the system is expected to have.",
+                                "fr": "Veuillez décrire tous les bienfaits d’intérêt public que le système devrait avoir."
+                            }
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "effectivenessInMeetingNeeds",
+                            "title": {
+                                "default": "How effective will the system likely be in meeting client needs?",
+                                "fr": "Dans quelle mesure le système sera-t-il efficace pour répondre aux besoins des clients?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Slightly effective",
+                                        "fr": "Légèrement efficace"
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "Moderately effective",
+                                        "fr": "Modérément efficace"
+                                    }
+                                },
+                                {
+                                    "value": "item3-0",
+                                    "text": {
+                                        "default": "Very effective",
+                                        "fr": "Très efficace"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "systemImprovements",
+                            "title": {
+                                "default": "Please describe any improvements, benefits, or advantages you expect from using an automated system. This could include relevant program indicators and performance targets.",
+                                "fr": "Veuillez décrire les améliorations, les bienfaits ou les avantages que vous attendez de l’utilisation d’un système automatisé. Cela pourrait inclure des indicateurs de programme et des objectifs de rendement pertinents."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "limitToNeed",
+                            "title": {
+                                "default": "Please describe how you will ensure that the system is confined to addressing the client needs identified above.",
+                                "fr": "Veuillez décrire la façon dont vous allez vous assurer que le système se limite à répondre aux besoins des clients mentionnés ci-dessus."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "automationTradeoffs",
+                            "title": {
+                                "default": "Please describe any trade-offs between client interests and program objectives that you have considered during the design of the project.",
+                                "fr": "Veuillez décrire toutes les concessions mutuelles entre les intérêts des clients et les objectifs du programme que vous avez pris en considération lors de l’élaboration du projet."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "nonAutomatedAlternatives",
+                            "title": {
+                                "default": "Have alternative non-automated processes been considered?",
+                                "fr": "D’autres options de processus non automatisés ont-elles été envisagées?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "automationPreference",
+                            "title": {
+                                "default": "If non-automated processes were considered, why was automation identified as the preferred option?",
+                                "fr": "Si des processus non automatisés ont été envisagés, pourquoi l’automatisation a-t-elle été l’option choisie?"
+                            }
+                        },
+                        {
+                            "type": "checkbox",
+                            "name": "consequence-nonDeployment",
+                            "title": {
+                                "default": "What would be the consequence of not deploying the system?",
+                                "fr": "Quelle serait la conséquence du non-déploiement du système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-3",
+                                    "text": {
+                                        "default": "Service cannot be delivered at all",
+                                        "fr": "La prestation du service est impossible"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "Service cannot be delivered in a timely or efficient manner",
+                                        "fr": "La prestation du service ne peut pas être effectuée en temps voulu ou de manière efficace"
+                                    }
+                                },
+                                {
+                                    "value": "item3-0",
+                                    "text": {
+                                        "default": " Service costs are too high",
+                                        "fr": "Les coûts du service sont trop élevés"
+                                    }
+                                },
+                                {
+                                    "value": "item4-0",
+                                    "text": {
+                                        "default": "Service quality is not as high",
+                                        "fr": "La qualité du service n’est pas aussi élevée"
+                                    }
+                                },
+                                {
+                                    "value": "item5-0",
+                                    "text": {
+                                        "default": "Service delivery cannot achieve performance targets",
+                                        "fr": "La prestation du service ne parvient pas à atteindre les objectifs de rendement"
+                                    }
+                                },
+                                {
+                                    "value": "item6-0",
+                                    "text": {
+                                        "default": "Other (please specify)",
+                                        "fr": "Autre (veuillez préciser)"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "consequence-nonDeployment-other",
+                            "visibleIf": "{consequence-nonDeployment} contains \"item6-0\"",
                             "title": {
                                 "default": "Please describe",
                                 "fr": "S'il vous plait décrire"
