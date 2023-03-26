@@ -1446,7 +1446,7 @@
                                 {
                                     "value": "item3-1",
                                     "text": {
-                                        "default": "Social assistance (ei, disability claims, etc)",
+                                        "default": "Social assistance (employment insurance, disability claims, etc)",
                                         "fr": "Aide sociales (assurance-emploi, demandes de prestations d'invalidité, etc.)"
                                     }
                                 },
