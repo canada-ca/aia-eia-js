@@ -1603,10 +1603,10 @@
                         {
                             "type": "comment",
                             "name": "impact23",
-                            "visibleIf": "{impact22} contains [\"item1-4\"]",
+                            "visibleIf": "{impact22} contains [\"item1-2\"]",
                             "title": {
-                                "default": "Please describe the relevant function(s) of the system.",
-                                "fr": "Veuillez décrire la ou les fonctions pertinentes du système."
+                                "default": "If yes, please describe the relevant function(s) of the system.",
+                                "fr": "Si oui, veuillez décrire la ou les fonctions pertinentes du système."
                             }
                         },
                         {
