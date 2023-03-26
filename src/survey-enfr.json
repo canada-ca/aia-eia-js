@@ -1508,14 +1508,14 @@
                             "type": "radiogroup",
                             "name": "impactFullOrPartial",
                             "title": {
-                                "default": "Which of the following best describes the type of automation you are planning? ",
-                                "fr": "Parmi les propositions suivantes, laquelle décrit le mieux le type d’automatisation que vous envisagez? "
+                                "default": "Which of the following best describes the type of automation you are planning? ",
+                                "fr": "Parmi les propositions suivantes, laquelle décrit le mieux le type d’automatisation que vous envisagez? "
                             },
                             "choices": [
                                 {
                                     "value": "item1-4",
                                     "text": {
-                                        "default": "Full automation (the system will make an administrative decision) ",
+                                        "default": "Full automation (the system will make an administrative decision) ",
                                         "fr": "Automatisation complète (le système prendra une décision administrative)"
                                     }
                                 },
@@ -2552,8 +2552,8 @@
                             "type": "radiogroup",
                             "name": "consultationDesign3",
                             "title": {
-                                "default": "External Stakeholders (groups in other sectors or jurisdictions)",
-                                "fr": "Intervenants externes (groupes d’autres secteurs ou administrations)"
+                                "default": "External Stakeholders (groups in other sectors or jurisdictions)",
+                                "fr": "Intervenants externes (groupes d’autres secteurs ou administrations)"
                             },
                             "choices": [
                                 {
@@ -2833,8 +2833,8 @@
                             "type": "radiogroup",
                             "name": "consultationImplementation3",
                             "title": {
-                                "default": "External Stakeholders (groups in other sectors or jurisdictions)",
-                                "fr": "Intervenants externes (groupes d’autres secteurs ou administrations)"
+                                "default": "External Stakeholders (groups in other sectors or jurisdictions)",
+                                "fr": "Intervenants externes (groupes d’autres secteurs ou administrations)"
                             },
                             "choices": [
                                 {
@@ -4364,7 +4364,7 @@
                             "name": "privacyDesign6",
                             "visibleIf": "{privacyDesign1} = \"item2-0\"",
                             "title": {
-                                "default": "Have you undertaken other types of privacy assessments for your automation project?  Please describe any relevant efforts.",
+                                "default": "Have you undertaken other types of privacy assessments for your automation project?  Please describe any relevant efforts.",
                                 "fr": "Avez-vous entrepris d’autres types d’évaluations de la protection de la vie privée pour votre projet d’automatisation? Veuillez décrire toute mesure pertinente."
                             }
                         },
@@ -4531,7 +4531,7 @@
                             "name": "privacyImplementation6",
                             "visibleIf": "{privacyImplementation1} = \"item2-0\"",
                             "title": {
-                                "default": "Have you undertaken other types of privacy assessments for your automation project?  Please describe any relevant efforts.",
+                                "default": "Have you undertaken other types of privacy assessments for your automation project?  Please describe any relevant efforts.",
                                 "fr": "Avez-vous entrepris d’autres types d’évaluations de la protection de la vie privée pour votre projet d’automatisation? Veuillez décrire toute mesure pertinente."
                             }
                         },
