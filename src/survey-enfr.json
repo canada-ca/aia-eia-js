@@ -1184,7 +1184,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-3",
+                                    "value": "item1-4",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
