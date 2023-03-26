@@ -997,6 +997,7 @@
                         {
                             "type": "comment",
                             "name": "businessDrivers-automationPreference",
+                            "visibleIf": "{businessDrivers-nonAutomatedAlternatives} contains \"item1-0\"",
                             "title": {
                                 "default": "If non-automated processes were considered, why was automation identified as the preferred option?",
                                 "fr": "Si des processus non automatisés ont été envisagés, pourquoi l’automatisation a-t-elle été l’option choisie?"
@@ -1057,7 +1058,7 @@
                         {
                             "type": "comment",
                             "name": "businessDrivers-consequence-nonDeployment-other",
-                            "visibleIf": "{consequence-nonDeployment} contains \"item6-0\"",
+                            "visibleIf": "{businessDrivers-consequence-nonDeployment} contains \"item6-0\"",
                             "title": {
                                 "default": "Please describe",
                                 "fr": "S'il vous plait décrire"
