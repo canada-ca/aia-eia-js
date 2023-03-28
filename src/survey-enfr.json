@@ -1028,7 +1028,7 @@
                                 {
                                     "value": "item3-0",
                                     "text": {
-                                        "default": " Service costs are too high",
+                                        "default": "Service costs are too high",
                                         "fr": "Les coûts du service sont trop élevés"
                                     }
                                 },
@@ -1202,7 +1202,7 @@
                         {
                             "type": "comment",
                             "name": "riskProfile6",
-                            "visibleIf": "{riskProfile5} = \"item1-3\"",
+                            "visibleIf": "{riskProfile5} = \"item1-4\"",
                             "title": {
                                 "default": "If yes, please describe the barriers and any planned or existing measures to identify, remove, and/or prevent them.",
                                 "fr": "Si oui, veuillez décrire les difficultés et toute mesure prévue ou existante pour les identifier, les éliminer ou les éviter."
@@ -2465,7 +2465,10 @@
                                 },
                                 {
                                     "value": "item7",
-                                    "text": "Communications"
+                                    "text": {
+                                        "default": "Communications services",
+                                        "fr": "Services des communications"
+                                    }
                                 },
                                 {
                                     "value": "item8",
@@ -2746,7 +2749,10 @@
                                 },
                                 {
                                     "value": "item7",
-                                    "text": "Communications"
+                                    "text": {
+                                        "default": "Communications services",
+                                        "fr": "Services des communications"
+                                    }
                                 },
                                 {
                                     "value": "item8",
