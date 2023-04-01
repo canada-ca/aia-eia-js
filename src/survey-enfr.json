@@ -892,7 +892,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "businessDrivers-motivation-other",
+                            "name": "motivation-other",
                             "visibleIf": "{businessDrivers1} contains \"item6\"",
                             "title": {
                                 "default": "Please describe",
@@ -901,7 +901,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "businessDrivers-clientNeeds",
+                            "name": "businessDrivers3",
                             "title": {
                                 "default": "What client needs will the system address and how will this system meet them? If possible, describe how client needs have been identified.",
                                 "fr": "Quels sont les besoins des clients auxquels le système répondra et comment le système y répondra-t-il? Si possible, décrivez la façon dont les besoins des clients ont été déterminés."
@@ -909,7 +909,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "businessDrivers-publicBenefits",
+                            "name": "businessDrivers4",
                             "title": {
                                 "default": "Please describe any public benefits the system is expected to have.",
                                 "fr": "Veuillez décrire tous les bienfaits d’intérêt public que le système devrait avoir."
@@ -917,7 +917,7 @@
                         },
                         {
                             "type": "dropdown",
-                            "name": "businessDrivers-effectivenessInMeetingNeeds",
+                            "name": "businessDrivers5",
                             "title": {
                                 "default": "How effective will the system likely be in meeting client needs?",
                                 "fr": "Dans quelle mesure le système sera-t-il efficace pour répondre aux besoins des clients?"
@@ -948,7 +948,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "businessDrivers-systemImprovements",
+                            "name": "businessDrivers6",
                             "title": {
                                 "default": "Please describe any improvements, benefits, or advantages you expect from using an automated system. This could include relevant program indicators and performance targets.",
                                 "fr": "Veuillez décrire les améliorations, les bienfaits ou les avantages que vous attendez de l’utilisation d’un système automatisé. Cela pourrait inclure des indicateurs de programme et des objectifs de rendement pertinents."
@@ -956,7 +956,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "businessDrivers-limitToNeed",
+                            "name": "businessDrivers7",
                             "title": {
                                 "default": "Please describe how you will ensure that the system is confined to addressing the client needs identified above.",
                                 "fr": "Veuillez décrire la façon dont vous allez vous assurer que le système se limite à répondre aux besoins des clients mentionnés ci-dessus."
@@ -964,7 +964,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "businessDrivers-automationTradeoffs",
+                            "name": "businessDrivers8",
                             "title": {
                                 "default": "Please describe any trade-offs between client interests and program objectives that you have considered during the design of the project.",
                                 "fr": "Veuillez décrire toutes les concessions mutuelles entre les intérêts des clients et les objectifs du programme que vous avez pris en considération lors de l’élaboration du projet."
@@ -972,7 +972,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "businessDrivers-nonAutomatedAlternatives",
+                            "name": "businessDrivers9",
                             "title": {
                                 "default": "Have alternative non-automated processes been considered?",
                                 "fr": "D’autres options de processus non automatisés ont-elles été envisagées?"
@@ -996,8 +996,8 @@
                         },
                         {
                             "type": "comment",
-                            "name": "businessDrivers-automationPreference",
-                            "visibleIf": "{businessDrivers-nonAutomatedAlternatives} contains \"item1-0\"",
+                            "name": "businessDrivers10",
+                            "visibleIf": "{businessDrivers9} contains \"item1-0\"",
                             "title": {
                                 "default": "If non-automated processes were considered, why was automation identified as the preferred option?",
                                 "fr": "Si des processus non automatisés ont été envisagés, pourquoi l’automatisation a-t-elle été l’option choisie?"
@@ -1005,7 +1005,7 @@
                         },
                         {
                             "type": "checkbox",
-                            "name": "businessDrivers-consequence-nonDeployment",
+                            "name": "businessDrivers11",
                             "title": {
                                 "default": "What would be the consequence of not deploying the system?",
                                 "fr": "Quelle serait la conséquence du non-déploiement du système?"
@@ -1057,8 +1057,8 @@
                         },
                         {
                             "type": "comment",
-                            "name": "businessDrivers-consequence-nonDeployment-other",
-                            "visibleIf": "{businessDrivers-consequence-nonDeployment} contains \"item6-0\"",
+                            "name": "businessDrivers12",
+                            "visibleIf": "{businessDrivers11} contains \"item6-0\"",
                             "title": {
                                 "default": "Please describe",
                                 "fr": "S'il vous plait décrire"
@@ -1415,7 +1415,7 @@
                     "elements": [
                         {
                             "type": "comment",
-                            "name": "impact4", "//comment": "this is named 'impact4' because the question used to be in that section. Keeping the name allows the data from previous AIAs to be transferred automatically",
+                            "name": "decisionSector3",
                             "title": {
                                 "default": "Please describe the decision(s) that will be automated.",
                                 "fr": "Veuillez décrire la ou les décisions qui seront automatisées."
@@ -1506,7 +1506,7 @@
                     "elements": [
                         {
                             "type": "radiogroup",
-                            "name": "impactFullOrPartial",
+                            "name": "impact30",
                             "title": {
                                 "default": "Which of the following best describes the type of automation you are planning? ",
                                 "fr": "Parmi les propositions suivantes, laquelle décrit le mieux le type d’automatisation que vous envisagez? "
@@ -1530,7 +1530,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "impactRoleOfSystem",
+                            "name": "impact31",
                             "title": {
                                 "default": "Please describe the role of the system in the decision-making process.",
                                 "fr": "Veuillez décrire le rôle du système dans le processus de prise de décisions."
@@ -2063,7 +2063,7 @@
                         },
                         {
                             "type": "text",
-                            "name": "aboutDataSourcePibNumbers",
+                            "name": "aboutDataSource12",
                             "visibleIf": "{aboutDataSource11} = \"item1-0\"",
                             "title": {
                                 "default": "Please list relevant PIB Bank Numbers.",
@@ -2303,7 +2303,7 @@
                         },
                         {
                             "type": "comment",
-                            "name": "aboutDataSourceDataCollectionDetails",
+                            "name": "aboutDataSource13",
                             "title": {
                                 "default": "Please describe the input data collected and used by the system, its source, and method of collection.",
                                 "fr": "Veuillez décrire les données d’entrée collectées et utilisées par le système, leur source et leur méthode de collecte."

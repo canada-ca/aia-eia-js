@@ -324,7 +324,7 @@ export default class Results extends Vue {
       this.myResults[1].forEach((myResult: any) => {
         if (myResult.questionHeader !== undefined) {
           let riskAreaTitle = myResult.questionHeader;
-          let riskAreaName = myResult.name.replace(/\d/, "");
+          let riskAreaName = myResult.name.replace(/\d/g, "");
           let sectionScore = this.$store.getters.getScoreBySection(
             riskAreaName
           );
