@@ -1446,8 +1446,8 @@
                                 {
                                     "value": "item3-1",
                                     "text": {
-                                        "default": "Social assistance (employment insurance, disability claims, etc)",
-                                        "fr": "Aide sociales (assurance-emploi, demandes de prestations d'invalidité, etc.)"
+                                        "default": "Social assistance (employment insurance, disability claims)",
+                                        "fr": "Aide sociales (assurance-emploi, demandes de prestations d'invalidité)"
                                     }
                                 },
                                 {
@@ -1759,7 +1759,7 @@
                             "type": "comment",
                             "name": "impact10",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are (as per selected option above).",
+                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
                             }
                         },
@@ -1805,7 +1805,7 @@
                             "type": "comment",
                             "name": "impact25",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are (as per selected option above).",
+                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
                             }
                         },
@@ -1851,7 +1851,7 @@
                             "type": "comment",
                             "name": "impact12",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
+                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
                             }
                         },
@@ -1897,7 +1897,7 @@
                             "type": "comment",
                             "name": "impact14",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
+                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
                             }
                         },
@@ -1943,7 +1943,7 @@
                             "type": "comment",
                             "name": "impact16",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are (as per selected option above)",
+                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
                                 "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
                             }
                         }
@@ -2400,7 +2400,7 @@
                             "name": "consultationDesign1",
                             "title": {
                                 "default": "Internal Stakeholders (federal institutions, including the federal public service)",
-                                "fr": "Intervenants internes (institutions fédérales et fonction publique fédérale)"
+                                "fr": "Intervenants internes (institutions fédérales, y compris la fonction publique fédérale)"
                             },
                             "choices": [
                                 {
