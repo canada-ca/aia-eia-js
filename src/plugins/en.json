@@ -39,7 +39,7 @@
     "deRiskingAndMitigationMeasuresDQ": "De-Risking and Mitigation Measures - Data Quality",
     "deRiskingAndMitigationMeasuresPF": "De-Risking and Mitigation Measures - Procedural Fairness",
     "deRiskingAndMitigationMeasuresP": "De-Risking and Mitigation Measures - Privacy",
-    "otherRequirementsTitle": "Other Requirements",
+    "otherRequirementsTitle": "Other requirements",
     "otherRequirements": "The Directive on Automated Decision-Making also includes other requirements that must be met for all impact levels.",
     "linkDirectiveText": "Link to the Directive on Automated Decision-Making",
     "contactAtipForPia": "Contact your institution's ATIP office to discuss the requirement for a Privacy Impact Assessment as per the Directive on Privacy Impact Assessment.",
@@ -133,11 +133,11 @@
                 "elements": [{
                     "text": "None"
                 }, {
-                    "text": "Consult at least one of the following experts and publish the complete review or a plain language summary of the findings on a Government of Canada website: \n\nQualified expert from a federal, provincial, territorial or municipal government institution \nQualified members of faculty of a post-secondary institution \nQualified researchers from a relevant non-governmental organization \nContracted third-party vendor with a relevant specialization \nA data and automation advisory board specified by Treasury Board of Canada Secretariat. \n\n\nOR Publish specifications of the automated decision system in a peer-reviewed journal. Where access to the published review is restricted, ensure that a plain language summary of the findings is openly available."
+                    "text": "Consult at least one of the following experts and publish the complete review or a plain language summary of the findings on a Government of Canada website: \n\nqualified expert from a federal, provincial, territorial or municipal government institution \nqualified members of faculty of a post-secondary institution \nqualified researchers from a relevant non-governmental organization \ncontracted third-party vendor with a relevant specialization \na data and automation advisory board specified by Treasury Board of Canada Secretariat. \n\n\nOR \nPublish specifications of the automated decision system in a peer-reviewed journal. Where access to the published review is restricted, ensure that a plain language summary of the findings is openly available."
                 }, {
-                    "text": "Consult at least one of the following experts and publish the complete review or a plain language summary of the findings on a Government of Canada website: \n\nQualified expert from a federal, provincial, territorial or municipal government institution \nQualified members of faculty of a post-secondary institution \nQualified researchers from a relevant non-governmental organization \nContracted third-party vendor with a relevant specialization \nA data and automation advisory board specified by Treasury Board of Canada Secretariat. \n\n\nOR Publish specifications of the automated decision system in a peer-reviewed journal. Where access to the published review is restricted, ensure that a plain language summary of the findings is openly available."
+                    "text": "Consult at least one of the following experts and publish the complete review or a plain language summary of the findings on a Government of Canada website: \n\nqualified expert from a federal, provincial, territorial or municipal government institution \nqualified members of faculty of a post-secondary institution \nqualified researchers from a relevant non-governmental organization \ncontracted third-party vendor with a relevant specialization \na data and automation advisory board specified by Treasury Board of Canada Secretariat. \n\n\nOR \nPublish specifications of the automated decision system in a peer-reviewed journal. Where access to the published review is restricted, ensure that a plain language summary of the findings is openly available."
                 }, {
-                    "text": "Consult at least two of the following experts and publish the complete review or a plain language summary of the findings on a Government of Canada website: \n\nQualified experts from the National Research Council of Canada, Statistics Canada, or the Communications Security Establishment. \nQualified members of faculty of a post-secondary institution. \nQualified researchers from a relevant non-governmental organization. \nContracted third-party vendor with a relevant specialization. \nA data and automation advisory board specified by Treasury Board of Canada Secretariat. \n\n\nOR Publish specifications of the automated decision system in a peer-reviewed journal. Where access to the published review is restricted, ensure that a plain language summary of the findings is openly available."
+                    "text": "Consult at least two of the following experts and publish the complete review or a plain language summary of the findings on a Government of Canada website: \n\nqualified experts from the National Research Council of Canada, Statistics Canada, or the Communications Security Establishment \nqualified members of faculty of a post-secondary institution \nqualified researchers from a relevant non-governmental organization \ncontracted third-party vendor with a relevant specialization \na data and automation advisory board specified by Treasury Board of Canada Secretariat. \n\n\nOR \nPublish specifications of the automated decision system in a peer-reviewed journal. Where access to the published review is restricted, ensure that a plain language summary of the findings is openly available."
                 }]
             },
             {
@@ -171,9 +171,9 @@
                 }, {
                     "text": "Decisions may be rendered without direct human involvement."
                 }, {
-                    "text": "Decisions cannot be made without having specific human intervention points during the decision-making process; and the final decision must be made by a human."
+                    "text": "Decisions cannot be made without having specific human intervention points during the decision-making process; and \nThe final decision must be made by a human."
                 }, {
-                    "text": "Decisions cannot be made without having specific human intervention points during the decision-making process; and the final decision must be made by a human."
+                    "text": "Decisions cannot be made without having specific human intervention points during the decision-making process; and \nThe final decision must be made by a human."
                 }]
             },
             {
