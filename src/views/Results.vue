@@ -398,10 +398,9 @@ export default class Results extends Vue {
     this.$router.push({ path: "/" });
   }
   fileLoaded($event: SurveyFile) {
-    var surveyWithExtraData:any = this.Survey;
-    surveyWithExtraData.version = $event.version;
+    this.Survey.version = $event.version;
     this.Survey.data = $event.data;
-    surveyWithExtraData.translationsOnResult = $event.translationsOnResult;
+    this.Survey.translationsOnResult = $event.translationsOnResult;
     this.Survey.currentPageNo = $event.currentPage;
     this.Survey.start();
     this.$store.commit("updateResult", this.Survey);
@@ -410,21 +409,21 @@ export default class Results extends Vue {
   }
 
   created() {
-    this.Survey.onComplete.add((result: any) => {
+    this.Survey.onComplete.add(result => {
       this.$store.commit("updateResult", result);
     });
 
-    this.Survey.onComplete.add((results: any) => {
+    this.Survey.onComplete.add(results => {
       this.$router.push("Results");
     });
 
-    this.Survey.onValueChanged.add((result: any) => {
+    this.Survey.onValueChanged.add(result => {
       this.$store.commit("updateResult", result);
     });
 
     const converter = new showdown.Converter();
 
-    this.Survey.onTextMarkdown.add(function(survey:any, options:any) {
+    this.Survey.onTextMarkdown.add(function(survey, options) {
       //convert the markdown text to html
       var str = converter.makeHtml(options.text);
       //remove root paragraphs <p></p>
@@ -442,7 +441,7 @@ export default class Results extends Vue {
 
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
-    this.Survey.onAfterRenderQuestion.add(function(sender:any, options:any) {
+    this.Survey.onAfterRenderQuestion.add(function(sender, options) {
       let title = options.htmlElement.getElementsByTagName("H5")[0];
       if (title) {
         var questionRequiredHTML = "";
