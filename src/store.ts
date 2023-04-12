@@ -285,7 +285,7 @@ const store: StoreOptions<RootState> = {
   plugins: [vuexLocal.plugin],
   state: {
     //Added version variable to keep track of current version
-    version: "v0.9.1",
+    version: "v0.10.0",
     answerData: [],
     result: undefined,
     currentPageNo: 0,
@@ -430,7 +430,6 @@ const store: StoreOptions<RootState> = {
         if (
           scoreType === 1 &&
           (question.parent.name === "projectDetailsPanel-NS" ||
-            question.parent.name === "businessDriversPanel-NS" ||
             question.parent.name === "aboutSystemPanel-NS")
         ) {
           projectResults.push(result);

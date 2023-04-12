@@ -43,7 +43,10 @@
     "PIBs",
     "PIAs",
     "l'EIA",
-    "L'EIA"
+    "L'EIA",
+    "Tradeoffs",
+    "SLGBTQI",
+    "ELGBTQI"
   ],
   "flagWords": [],
   "import": ["./node_modules/@cspell/dict-fr-fr/cspell-ext.json"],
