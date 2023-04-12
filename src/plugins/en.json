@@ -39,7 +39,7 @@
     "deRiskingAndMitigationMeasuresDQ": "De-Risking and Mitigation Measures - Data Quality",
     "deRiskingAndMitigationMeasuresPF": "De-Risking and Mitigation Measures - Procedural Fairness",
     "deRiskingAndMitigationMeasuresP": "De-Risking and Mitigation Measures - Privacy",
-    "otherRequirementsTitle": "Other Requirements",
+    "otherRequirementsTitle": "Other requirements",
     "otherRequirements": "The Directive on Automated Decision-Making also includes other requirements that must be met for all impact levels.",
     "linkDirectiveText": "Link to the Directive on Automated Decision-Making",
     "contactAtipForPia": "Contact your institution's ATIP office to discuss the requirement for a Privacy Impact Assessment as per the Directive on Privacy Impact Assessment.",
@@ -126,18 +126,30 @@
     "fairnessImplementation17": "A concept case has been prepared for the Government of Canada Enterprise Architecture Review Board.",
     "privacyImplementation1": "",
     "privacyImplementation2": "",
-     "requirements": {
+    "requirements": {
         "title": "Section 2: Requirements Specific to Impact Level",
         "elements": [{
-                "title": "Peer Review",
+                "title": "Peer review",
                 "elements": [{
                     "text": "None"
                 }, {
-                    "text": "At least one of: \n\nQualified expert from a federal, provincial, territorial or municipal government institution. \nQualified members of faculty of a post-secondary institution. \nQualified researchers from a relevant non-governmental organization. \nContracted third-party vendor with a related specialization. \nPublishing specifications of the Automated Decision System in a peer-reviewed journal. \nA data and automation advisory board specified by Treasury Board Secretariat."
+                    "text": "Consult at least one of the following experts and publish the complete review or a plain language summary of the findings on a Government of Canada website: \n\nqualified expert from a federal, provincial, territorial or municipal government institution \nqualified members of faculty of a post-secondary institution \nqualified researchers from a relevant non-governmental organization \ncontracted third-party vendor with a relevant specialization \na data and automation advisory board specified by Treasury Board of Canada Secretariat. \n\n\nOR \nPublish specifications of the automated decision system in a peer-reviewed journal. Where access to the published review is restricted, ensure that a plain language summary of the findings is openly available."
                 }, {
-                    "text": "At least one of: \n\nQualified expert from a federal, provincial, territorial or municipal government institution. \nQualified members of faculty of a post-secondary institution. \nQualified researchers from a relevant non-governmental organization. \nContracted third-party vendor with a related specialization. \nPublishing specifications of the Automated Decision System in a peer-reviewed journal. \nA data and automation advisory board specified by Treasury Board Secretariat."
+                    "text": "Consult at least one of the following experts and publish the complete review or a plain language summary of the findings on a Government of Canada website: \n\nqualified expert from a federal, provincial, territorial or municipal government institution \nqualified members of faculty of a post-secondary institution \nqualified researchers from a relevant non-governmental organization \ncontracted third-party vendor with a relevant specialization \na data and automation advisory board specified by Treasury Board of Canada Secretariat. \n\n\nOR \nPublish specifications of the automated decision system in a peer-reviewed journal. Where access to the published review is restricted, ensure that a plain language summary of the findings is openly available."
                 }, {
-                    "text": "At least two of: \n\nQualified experts from the National Research Council of Canada, Statistics Canada, or the Communications Security Establishment. \nQualified members of faculty of a post-secondary institution. \nQualified researchers from a relevant non-governmental organization. \nContracted third-party vendor with a related specialization. \nA data and automation advisory board specified by Treasury Board Secretariat. \n\n\nOR: Publishing specifications of the Automated Decision System in a peer-reviewed journal."
+                    "text": "Consult at least two of the following experts and publish the complete review or a plain language summary of the findings on a Government of Canada website: \n\nqualified experts from the National Research Council of Canada, Statistics Canada, or the Communications Security Establishment \nqualified members of faculty of a post-secondary institution \nqualified researchers from a relevant non-governmental organization \ncontracted third-party vendor with a relevant specialization \na data and automation advisory board specified by Treasury Board of Canada Secretariat. \n\n\nOR \nPublish specifications of the automated decision system in a peer-reviewed journal. Where access to the published review is restricted, ensure that a plain language summary of the findings is openly available."
+                }]
+            },
+            {
+                "title": "Gender-based Analysis Plus",
+                "elements": [{
+                    "text": "None"
+                }, {
+                    "text": "Ensure that the Gender-based Analysis Plus addresses the following issues: \n\nimpacts of the automation project (including the system, data and decision) on gender and/or other identity factors; \nplanned or existing measures to address risks identified through the Gender-based Analysis Plus."
+                }, {
+                    "text": "Ensure that the Gender-based Analysis Plus addresses the following issues: \n\nimpacts of the automation project (including the system, data and decision) on gender and/or other identity factors; \nplanned or existing measures to address risks identified through the Gender-based Analysis Plus."
+                }, {
+                    "text": "Ensure that the Gender-based Analysis Plus addresses the following issues: \n\nimpacts of the automation project (including the system, data and decision) on gender and/or other identity factors; \nplanned or existing measures to address risks identified through the Gender-based Analysis Plus."
                 }]
             },
             {
@@ -147,9 +159,9 @@
                 }, {
                     "text": "Plain language notice posted through all service delivery channels in use (Internet, in person, mail or telephone)."
                 }, {
-                    "text": "Plain language notice through all service delivery channels in use (Internet, in person, mail or telephone). In addition, publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\nHow it supports the administrative decision;\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
+                    "text": "Plain language notice posted through all service delivery channels in use (Internet, in person, mail or telephone). In addition, publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nhow the components work;\nhow it supports the administrative decision;\nresults of any reviews or audits; and\na description of the training data, or a link to the anonymized training data if this data is publicly available."
                 }, {
-                    "text": "Plain language notice through all service delivery channels in use (Internet, in person, mail or telephone). In addition, publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nHow the components work;\nHow it supports the administrative decision;\nResults of any reviews or audits; and\nA description of the training data, or a link to the anonymized training data if this data is publicly available."
+                    "text": "Plain language notice posted through all service delivery channels in use (Internet, in person, mail or telephone). In addition, publish documentation on relevant websites about the automated decision system, in plain language, describing:\n\nhow the components work;\nhow it supports the administrative decision;\nresults of any reviews or audits; and\na description of the training data, or a link to the anonymized training data if this data is publicly available."
                 }]
             },
             {
@@ -159,21 +171,21 @@
                 }, {
                     "text": "Decisions may be rendered without direct human involvement."
                 }, {
-                    "text": "Decisions cannot be made without having specific human intervention points during the decision-making process; and the final decision must be made by a human."
+                    "text": "Decisions cannot be made without having specific human intervention points during the decision-making process; and \nThe final decision must be made by a human."
                 }, {
-                    "text": "Decisions cannot be made without having specific human intervention points during the decision-making process; and the final decision must be made by a human."
+                    "text": "Decisions cannot be made without having specific human intervention points during the decision-making process; and \nThe final decision must be made by a human."
                 }]
             },
             {
-                "title": "Explanation Requirement",
+                "title": "Explanation",
                 "elements": [{
-                    "text": "In addition to any applicable legal requirement, ensuring that a meaningful explanation is provided for common decision results. This can include providing the explanation via a Frequently Asked Questions section on a website."
+                    "text": "In addition to any applicable legal requirement, ensure that a meaningful explanation is published for common decision results. The explanation must provide a general description of: \n\nthe role of the system in the decision-making process; \ninput data, its source and method of collection; \nthe criteria used to evaluate input data and the operations applied to process it; \nthe output produced by the system and any relevant information needed to interpret it in the context of the administrative decision; and \nthe principal factors behind a decision. \n\n\nExplanations must also inform clients of relevant recourse options, where appropriate.\nDescriptions must be made available in plain language through the Algorithmic Impact Assessment and discoverable via a departmental website."
                 }, {
-                    "text": "In addition to any applicable legal requirement, ensuring that a meaningful explanation is provided with any decision that resulted in the denial of a benefit, a service, or other regulatory action."
+                    "text": "In addition to any applicable legal requirement, ensure that a meaningful explanation is provided to the client with any decision that results in the denial of a benefit or service, or involves a regulatory action. The explanation must inform the client in plain language of:\n\nthe role of the system in the decision-making process; \nthe training and client data, their source, and method of collection, as applicable; \nthe criteria used to evaluate client data and the operations applied to process it;\nthe output produced by the system and any relevant information needed to interpret it in the context of the administrative decision; and\na justification of the administrative decision, including the principal factors that led to it.\n\n\nExplanations must also inform clients of relevant recourse options, where appropriate. \nA general description of these elements must also be made available through the Algorithmic Impact Assessment and discoverable via a departmental website."
                 }, {
-                    "text": "In addition to any applicable legal requirement, ensuring that a meaningful explanation is provided with any decision that resulted in the denial of a benefit, a service, or other regulatory action."
+                    "text": "In addition to any applicable legal requirement, ensure that a meaningful explanation is provided to the client with any decision that results in the denial of a benefit or service, or involves a regulatory action. The explanation must inform the client in plain language of:\n\nthe role of the system in the decision-making process; \nthe training and client data, their source, and method of collection, as applicable; \nthe criteria used to evaluate client data and the operations applied to process it;\nthe output produced by the system and any relevant information needed to interpret it in the context of the administrative decision; and\na justification of the administrative decision, including the principal factors that led to it.\n\n\nExplanations must also inform clients of relevant recourse options, where appropriate. \nA general description of these elements must also be made available through the Algorithmic Impact Assessment and discoverable via a departmental website."
                 }, {
-                    "text": "In addition to any applicable legal requirement, ensuring that a meaningful explanation is provided with any decision that resulted in the denial of a benefit, a service, or other regulatory action."
+                    "text": "In addition to any applicable legal requirement, ensure that a meaningful explanation is provided to the client with any decision that results in the denial of a benefit or service, or involves a regulatory action. The explanation must inform the client in plain language of:\n\nthe role of the system in the decision-making process; \nthe training and client data, their source, and method of collection, as applicable; \nthe criteria used to evaluate client data and the operations applied to process it;\nthe output produced by the system and any relevant information needed to interpret it in the context of the administrative decision; and\na justification of the administrative decision, including the principal factors that led to it.\n\n\nExplanations must also inform clients of relevant recourse options, where appropriate. \nA general description of these elements must also be made available through the Algorithmic Impact Assessment and discoverable via a departmental website."
                 }]
             },
             {
@@ -185,19 +197,19 @@
                 }, {
                     "text": "Documentation on the design and functionality of the system.\nTraining courses must be completed."
                 }, {
-                    "text": "Documentation on the design and functionality of the system.\nRe-occurring training courses.\nA means to verify that training has been completed."
+                    "text": "Documentation on the design and functionality of the system.\nRecurring training courses.\nA means to verify that training has been completed."
                 }]
             },
             {
-                "title": "Contingency Planning",
+                "title": "IT and business continuity management",
                 "elements": [{
                     "text": "None"
                 }, {
                     "text": "None"
                 }, {
-                    "text": "Ensure that contingency plans and/or backup systems are available should the Automated Decision System be unavailable."
+                    "text": "Ensure that system recovery strategies, business continuity plans, and other relevant security controls are established in coordination with designated officials should the automated decision system be unavailable."
                 }, {
-                    "text": "Ensure that contingency plans and/or backup systems are available should the Automated Decision System be unavailable."
+                    "text": "Ensure that system recovery strategies, business continuity plans, and other relevant security controls are established in coordination with designated officials should the automated decision system be unavailable."
                 }]
             },
             {
