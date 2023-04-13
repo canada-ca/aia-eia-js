@@ -121,6 +121,19 @@ export default class ActionButtonBar extends Vue {
         const aboutSystem = (loadedFile.data as any).aboutSystem1 as string[];
         aboutSystem[aboutSystem.indexOf("item6-1")] = "item6";
       }
+      // another conversion, for when we moved "describe the decision automated" from impact to decision
+      if (loadedFile?.data !== undefined && "impact4" in (loadedFile.data as any)) {
+        const decisionAutomated = (loadedFile.data as any).impact4 as string;
+        (loadedFile.data as any).decisionSector3 = decisionAutomated;
+        delete (loadedFile.data as any).impact4;
+
+        // also bring over the translation
+        if (loadedFile.translationsOnResult !== undefined && "impact4" in (loadedFile.translationsOnResult as any)) {
+          var translations = (loadedFile.translationsOnResult as any);
+          translations.decisionSector3 = translations.impact4;
+          delete translations.impact4;
+        }
+      }
 
       this.$emit("fileLoaded", loadedFile);
     };
