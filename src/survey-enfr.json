@@ -916,7 +916,7 @@
                                 {
                                     "value": "item6",
                                     "text": {
-                                        "default": "Other (please specify)",
+                                        "default": "Other (specify)",
                                         "fr": "Autre (veuillez préciser)"
                                     }
                                 }
