@@ -999,8 +999,8 @@
                             "type": "comment",
                             "name": "businessDrivers8",
                             "title": {
-                                "default": "Please describe any trade-offs between client interests and program objectives that you have considered during the design of the project.",
-                                "fr": "Veuillez décrire toutes les concessions mutuelles entre les intérêts des clients et les objectifs du programme que vous avez pris en considération lors de l’élaboration du projet."
+                                "default": "Describe any trade-offs between client interests and program objectives that you have considered during the design of the project.",
+                                "fr": "Veuillez décrire tous les compromis envisagés lors de la conception du projet pour concilier les intérêts de la clientèle et les objectifs du programme."
                             }
                         },
                         {
