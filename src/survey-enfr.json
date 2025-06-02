@@ -875,7 +875,7 @@
                             "name": "businessDrivers1",
                             "title": {
                                 "default": "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)",
-                                "fr": "Qu'est-ce qui motive votre équipe à introduire l'automatisation dans ce processus décisionnel? (Cochez toutes les réponses qui s'appliquent.)"
+                                "fr": "Qu’est-ce qui motive votre équipe à intégrer l’automatisation dans ce processus décisionnel? (Cochez toutes les réponses qui s’appliquent.)"
                             },
                             "choices": [
                                 {
