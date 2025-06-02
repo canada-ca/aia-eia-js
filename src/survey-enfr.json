@@ -49,6 +49,14 @@
                             }
                         },
                         {
+                            "type": "text",
+                            "name": "ADMresponsible",
+                            "title": {
+                                "default": "Name of ADM responsible for the program using the automated decision system ",
+                                "fr": "Nom du sous-ministre adjoint ou de la sous-ministre adjointe responsable du programme pour lequel le système décisionnel automatisé est utilisé"
+                            }
+                        },
+                        {
                             "type": "dropdown",
                             "name": "projectDetailsDepartment-NS",
                             "title": {
