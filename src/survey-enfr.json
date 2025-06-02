@@ -1011,6 +1011,14 @@
                                 "fr": "Veuillez décrire les améliorations, les bienfaits ou les avantages que votre ministère entend obtenir de l’utilisation d’un système automatisé."
                             }
                         },
+                         {
+                            "type": "comment",
+                            "name": "businessDrivers6B",
+                            "title": {
+                                "default": "What are your current program indicators, service standards or performance targets?",
+                                "fr": "Quels sont les indicateurs, les normes de service ou les objectifs de rendement de votre programme?"
+                            }
+                        },
                         {
                             "type": "radiogroup",
                             "name": "businessDrivers9",
