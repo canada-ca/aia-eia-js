@@ -808,6 +808,14 @@
                         },
                         {
                             "type": "text",
+                            "name": "ServiceID",
+                            "title": {
+                                "default": "Service ID",
+                                "fr": "ID du service"
+                            }
+                        },
+                        {
+                            "type": "text",
                             "name": "projectDetailsProgram",
                             "title": {
                                 "default": "Departmental Program (from Department Results Framework)",
