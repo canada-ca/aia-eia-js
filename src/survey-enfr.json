@@ -22,6 +22,14 @@
                     "elements": [
                         {
                             "type": "text",
+                            "name": "projectAIAnumber",
+                            "title": {
+                                "default": "Published AIA version number",
+                                "fr": "Numéro de la version publiée de l’évaluation de l’incidence algorithmique (EIA)"
+                            }
+                        },
+                        {
+                            "type": "text",
                             "name": "projectDetailsRespondent",
                             "title": {
                                 "default": "Name of Respondent",
