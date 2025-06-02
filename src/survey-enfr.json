@@ -952,7 +952,7 @@
                             "name": "businessDrivers5",
                             "title": {
                                 "default": "How effective will the system likely be in meeting client needs?",
-                                "fr": "Dans quelle mesure le système sera-t-il efficace pour répondre aux besoins des clients?"
+                                "fr": "Dans quelle mesure le système permettra-t-il de répondre efficacement aux besoins de la clientèle?"
                             },
                             "choices": [
                                 {
