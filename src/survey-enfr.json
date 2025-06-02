@@ -1040,7 +1040,7 @@
                             "name": "businessDrivers9",
                             "title": {
                                 "default": "Have alternative non-automated processes been considered?",
-                                "fr": "D’autres options de processus non automatisés ont-elles été envisagées?"
+                                "fr": "D’autres processus non automatisés ont-elles été envisagées?"
                             },
                             "choices": [
                                 {
