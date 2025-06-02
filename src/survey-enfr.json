@@ -1020,6 +1020,14 @@
                             }
                         },
                         {
+                            "type": "comment",
+                            "name": "businessDrivers6C",
+                            "title": {
+                                "default": "What is your current performance level against these indicators, standards or targets?",
+                                "fr": "Quel est votre niveau de rendement par rapport à ces indicateurs, à ces normes ou à ces objectifs?"
+                            }
+                        },
+                        {
                             "type": "radiogroup",
                             "name": "businessDrivers9",
                             "title": {
