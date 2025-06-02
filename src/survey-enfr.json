@@ -976,6 +976,7 @@
                                         "fr": "Très efficace"
                                     }
                                 }
+                                
                             ]
                         },
                         {
@@ -990,8 +991,8 @@
                             "type": "comment",
                             "name": "businessDrivers7",
                             "title": {
-                                "default": "Please describe how you will ensure that the system is confined to addressing the client needs identified above.",
-                                "fr": "Veuillez décrire la façon dont vous allez vous assurer que le système se limite à répondre aux besoins des clients mentionnés ci-dessus."
+                                "default": "Describe how you will ensure that the system is confined to addressing the client needs identified.",
+                                "fr": "Veuillez décrire les mesures que vous prendrez pour vous assurer que le système ne servira qu’à répondre aux besoins de la clientèle."
                             }
                         },
                         {
