@@ -803,7 +803,7 @@
                             "name": "projectDetailsID",
                             "title": {
                                 "default": "Project ID from IT Plan",
-                                "fr": "Identifiant du projet provenant du Plan TI"
+                                "fr": "Numéro du projet dans le Plan des TI "
                             }
                         },
                         {
