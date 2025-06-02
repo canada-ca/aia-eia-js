@@ -903,7 +903,7 @@
                                     "value": "item4",
                                     "text": {
                                         "default": "Perform tasks that humans could not accomplish in a reasonable period of time",
-                                        "fr": "Le système exécute des tâches que les humains ne sont pas en mesure d'accomplir dans un délai raisonnable"
+                                        "fr": "Exécution par le système de tâches qu’une personne n’est pas en mesure d’accomplir dans un délai raisonnable"
                                     }
                                 },
                                 {
