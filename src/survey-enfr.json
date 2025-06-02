@@ -818,7 +818,7 @@
                             "type": "text",
                             "name": "projectDetailsProgram",
                             "title": {
-                                "default": "Departmental Program (from Department Results Framework)",
+                                "default": "Departmental Program (from Departmental Results Framework)",
                                 "fr": "Programme ministériel (Cadre ministériel des résultats)"
                             }
                         },
