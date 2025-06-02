@@ -1065,7 +1065,7 @@
                             "visibleIf": "{businessDrivers9} contains \"item1-0\"",
                             "title": {
                                 "default": "If non-automated processes were considered, why was automation identified as the preferred option?",
-                                "fr": "Si des processus non automatisés ont été envisagés, pourquoi l’automatisation a-t-elle été l’option choisie?"
+                                "fr": "Si oui, pourquoi l’automatisation a-t-elle été la solution choisie?"
                             }
                         },
                         {
