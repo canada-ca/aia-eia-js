@@ -1003,6 +1003,14 @@
                                 "fr": "Veuillez décrire tous les compromis envisagés lors de la conception du projet pour concilier les intérêts de la clientèle et les objectifs du programme."
                             }
                         },
+                         {
+                            "type": "comment",
+                            "name": "businessDrivers6A",
+                            "title": {
+                                "default": "Describe any improvements, benefits, or advantages your department expects from using an automated system.",
+                                "fr": "Veuillez décrire les améliorations, les bienfaits ou les avantages que votre ministère entend obtenir de l’utilisation d’un système automatisé."
+                            }
+                        },
                         {
                             "type": "radiogroup",
                             "name": "businessDrivers9",
