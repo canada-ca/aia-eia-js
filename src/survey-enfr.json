@@ -943,8 +943,8 @@
                             "type": "comment",
                             "name": "businessDrivers4",
                             "title": {
-                                "default": "Please describe any public benefits the system is expected to have.",
-                                "fr": "Veuillez décrire tous les bienfaits d’intérêt public que le système devrait avoir."
+                                "default": "Describe any positive impacts on clients and Canadian society that the system is expected to have.",
+                                "fr": "Veuillez décrire tous les avantages que le système devrait apporter à la clientèle et à la société canadienne."
                             }
                         },
                         {
