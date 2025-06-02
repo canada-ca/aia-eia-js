@@ -1148,8 +1148,8 @@
                             "type": "radiogroup",
                             "name": "riskProfile1",
                             "title": {
-                                "default": "Is the project within an area of intense public scrutiny (e.g. because of privacy concerns) and/or frequent litigation?",
-                                "fr": "Le projet fait-il l'objet d'un examen public approfondi (e.g.: en raison de préoccupations liées à la protection de la vie privée) et/ou de litiges fréquents?"
+                                "default": "Is the project within an area of intense public scrutiny (for example, because of privacy concerns) and/or frequent litigation?",
+                                "fr": "Le projet s’inscrit-il dans un domaine sujet à un examen public approfondi (par exemple, en raison de préoccupations liées à la protection de la vie privée) et/ou à des litiges fréquents?"
                             },
                             "choices": [
                                 {
@@ -1172,8 +1172,8 @@
                             "type": "radiogroup",
                             "name": "riskProfile2",
                             "title": {
-                                "default": "Are clients in this line of business particularly vulnerable?",
-                                "fr": "Les clients de ce secteur d'activité sont-ils particulièrement vulnérables?"
+                                "default": "Does the line of business serve equity denied groups?",
+                                "fr": "Des groupes privés d’équité sont-ils desservis dans ce secteur d’activité?"
                             },
                             "choices": [
                                 {
@@ -1193,11 +1193,20 @@
                             ]
                         },
                         {
+                            "type": "comment",
+                            "name": "riskProfile2A",
+                            "visibleIf": "{riskProfile2} contains \"item1-3\"",
+                            "title": {
+                                "default": "Indicate which equity denied groups are served and describe your mitigation strategies to prevent adverse impacts for these groups.",
+                                "fr": "Veuillez indiquer les groupes privés d’équité desservis et décrire les stratégies d’atténuation qui seront prises pour éviter de leur causer préjudice."
+                            }
+                        },
+                        {
                             "type": "radiogroup",
                             "name": "riskProfile3",
                             "title": {
-                                "default": "Are stakes of the decisions very high?",
-                                "fr": "Les enjeux des décisions de ce programme sont-ils très élevés? "
+                                "default": "Are there any population groups that the automated decision system should not be applied to?",
+                                "fr": "Certains groupes de population ne devraient-ils pas être exclus de l’application du système décisionnel automatisé?"
                             },
                             "choices": [
                                 {
@@ -1217,11 +1226,20 @@
                             ]
                         },
                         {
+                            "type": "comment",
+                            "name": "riskProfile3A",
+                            "visibleIf": "{riskProfile3} contains \"item1-4\"",
+                            "title": {
+                                "default": "Indicate the population group and explain why the automated decision system should not be applied.",
+                                "fr": "Veuillez indiquer les groupes de population qui devraient être exclus et expliquer pourquoi le système décisionnel automatisé ne doit pas être utilisé."
+                            }
+                        },
+                        {
                             "type": "radiogroup",
                             "name": "riskProfile4",
                             "title": {
-                                "default": "Will this project have major impacts on staff, either in terms of their numbers or their roles?",
-                                "fr": "Ce projet aura-t-il d'importantes répercussions sur le personnel, que ce soit en termes de nombre ou de rôle?"
+                                "default": "Has the system been assessed to understand whether it would create or exacerbate barriers for persons with disabilities?",
+                                "fr": "Le système a-t-il été soumis à une évaluation visant à déterminer s’il est susceptible d’accentuer les difficultés auxquelles sont confrontées les personnes en situation de handicap ou d’en créer de nouvelles?"
                             },
                             "choices": [
                                 {
@@ -1271,6 +1289,63 @@
                             "title": {
                                 "default": "If yes, please describe the barriers and any planned or existing measures to identify, remove, and/or prevent them.",
                                 "fr": "Si oui, veuillez décrire les difficultés et toute mesure prévue ou existante pour les identifier, les éliminer ou les éviter."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "riskProfile7",
+                            "title": {
+                                "default": "Could the automated decision-system be at heightened risk of being an exploitation target for malicious actors (for example, fraud for financial gain)?",
+                                "fr": "Le recours au système décisionnel automatisé pourrait-il accroître le risque d'exploitation malveillants (par exemple, des fraudes financières)?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-4",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "riskProfile8",
+                            "title": {
+                                "default": "Have potential issues or harms with the existing service delivery approach been raised by clients or their representatives, the media, audits or parliamentary committees?",
+                                "fr": "Des problèmes ou des préjudices potentiels liés à l’approche utilisée pour la prestation de services ont-ils été soulevés par des personnes utilisant le service ou celles les représentant, les médias ou des membres de comités d’audit ou parlementaires?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-4",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "riskProfile8A",
+                            "visibleIf": "{riskProfile8} = \"item1-4\"",
+                            "title": {
+                                "default": "Indicate the issue or harm, the group that raised them, and how these have been addressed.",
+                                "fr": "Veuillez préciser le problème ou le préjudice en question, le groupe qui en a fait état et la manière dont il a été traité."
                             }
                         }
                     ]
