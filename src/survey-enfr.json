@@ -1028,6 +1028,14 @@
                             }
                         },
                         {
+                            "type": "comment",
+                            "name": "businessDrivers6D",
+                            "title": {
+                                "default": "How do you expect the system will change performance against your program indicators, service standards or performance targets?",
+                                "fr": "À votre avis, en quoi le système améliorera-t-il votre rendement par rapport aux indicateurs, aux normes de service ou aux objectifs de rendement établis pour votre programme?"
+                            }
+                        },
+                        {
                             "type": "radiogroup",
                             "name": "businessDrivers9",
                             "title": {
