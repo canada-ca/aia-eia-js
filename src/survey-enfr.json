@@ -784,6 +784,14 @@
                         },
                         {
                             "type": "text",
+                            "name": "consultedTeams",
+                            "title": {
+                                "default": "Teams consulted on completion of the Algorithmic Impact Assessment",
+                                "fr": "Équipes consultées lors de l’EIA"
+                            }
+                        },
+                        {
+                            "type": "text",
                             "name": "projectDetailsTitle",
                             "title": {
                                 "default": "Project Title",
