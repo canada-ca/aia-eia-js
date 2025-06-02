@@ -1080,35 +1080,35 @@
                                     "value": "item1-3",
                                     "text": {
                                         "default": "Service cannot be delivered at all",
-                                        "fr": "La prestation du service est impossible"
+                                        "fr": "La prestation du service serait impossible"
                                     }
                                 },
                                 {
                                     "value": "item2-2",
                                     "text": {
                                         "default": "Service cannot be delivered in a timely or efficient manner",
-                                        "fr": "La prestation du service ne peut pas être effectuée en temps voulu ou de manière efficace"
+                                        "fr": "La prestation du service ne pourrait pas être effectuée en temps voulu ou de manière efficace"
                                     }
                                 },
                                 {
                                     "value": "item3-0",
                                     "text": {
                                         "default": "Service costs are too high",
-                                        "fr": "Les coûts du service sont trop élevés"
+                                        "fr": "Les coûts du service seraient trop élevés"
                                     }
                                 },
                                 {
                                     "value": "item4-0",
                                     "text": {
                                         "default": "Service quality is not as high",
-                                        "fr": "La qualité du service n’est pas aussi élevée"
+                                        "fr": "La qualité du service ne serait pas aussi élevée"
                                     }
                                 },
                                 {
                                     "value": "item5-0",
                                     "text": {
                                         "default": "Service delivery cannot achieve performance targets",
-                                        "fr": "La prestation du service ne parvient pas à atteindre les objectifs de rendement"
+                                        "fr": "Les objectifs de rendement liés à la prestation du service ne pourraient pas être atteints"
                                     }
                                 },
                                 {
