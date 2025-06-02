@@ -851,7 +851,7 @@
                             "type": "comment",
                             "name": "projectDetailsDescription",
                             "title": {
-                                "default": "Please provide a project description:",
+                                "default": "Provide a project description:",
                                 "fr": "Veuillez fournir une description du projet :"
                             }
                         }
