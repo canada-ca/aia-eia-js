@@ -881,7 +881,7 @@
                                 {
                                     "value": "item1",
                                     "text": {
-                                        "default": "Existing backlog of work or cases",
+                                        "default": "Reduce existing backlog of work or cases",
                                         "fr": "Arriéré de travail ou de cas existant"
                                     }
                                 },
