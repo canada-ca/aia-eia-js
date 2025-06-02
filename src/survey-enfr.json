@@ -935,8 +935,8 @@
                             "type": "comment",
                             "name": "businessDrivers3",
                             "title": {
-                                "default": "What client needs will the system address and how will this system meet them? If possible, describe how client needs have been identified.",
-                                "fr": "Quels sont les besoins des clients auxquels le système répondra et comment le système y répondra-t-il? Si possible, décrivez la façon dont les besoins des clients ont été déterminés."
+                                "default": "What are the client needs the system will address?  Describe how client needs have been identified. ",
+                                "fr": "Quels sont les besoins de la clientèle auxquels le système permettra de répondre? Décrivez les mesures prises pour déterminer les besoins de la clientèle."
                             }
                         },
                         {
