@@ -1114,7 +1114,7 @@
                                 {
                                     "value": "item6-0",
                                     "text": {
-                                        "default": "Other (please specify)",
+                                        "default": "Other (specify)",
                                         "fr": "Autre (veuillez préciser)"
                                     }
                                 }
@@ -1125,8 +1125,8 @@
                             "name": "businessDrivers12",
                             "visibleIf": "{businessDrivers11} contains \"item6-0\"",
                             "title": {
-                                "default": "Please describe",
-                                "fr": "S'il vous plait décrire"
+                                "default": "Describe",
+                                "fr": "Veuillez expliquer votre réponse."
                             }
                         }
                     ]
