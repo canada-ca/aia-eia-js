@@ -1985,7 +1985,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-3",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -2027,6 +2027,271 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "checkbox",
+                            "name": "aboutAlgorithm3",
+                            "title": {
+                                "default": "Is the algorithm (Check all that apply):",
+                                "fr": "L’algorithme est (cochez toutes les réponses qui s’appliquent) :"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Based on rules developed from laws and policy and/or using human expertise (for example, if/then statements)",
+                                        "fr": "fondé sur des règles établies en fonction des lois et des politiques ou à l’aide de l’expertise humaine (par exemple, des énoncés de type « si » ou « alors »)"
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "Based on patterns in data identified by the AI model (for example, neural network, deep learning)",
+                                        "fr": "fondé sur des modèles de données déterminés par le modèle d’IA (par exemple, réseau neuronal et apprentissage profond)"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "checkbox",
+                            "name": "aboutAlgorithm4",
+                            "title": {
+                                "default": "If the automated decision-system is model based, is the model inference (select all that apply):",
+                                "fr": "Si le système décisionnel automatisé est fondé sur un modèle, l’inférence du modèle est-elle (cochez toutes les réponses qui s’appliquent) :"
+                            },
+                             "help":{
+                                "default": "See <a href=\"https://www.oecd.org/en/publications/oecd-framework-for-the-classification-of-ai-systems_cb6d9eca-en.html\">OECD Framework for the Classification of AI systems</a> for more information.",
+                                "fr": "Pour en savoir plus, consultez le <a href=\"https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/02/oecd-framework-for-the-classification-of-ai-systems_336a8b57/cb6d9eca-en.pdf\">Cadre de l’OCDE pour la classification des systèmes de l’IA</a>."
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Deterministic (follow precise rules and generate single outcome)",
+                                        "fr": "déterministe (suit des règles précises et produit un résultat unique) "
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "Probabilistic (infer several models to explain data)",
+                                        "fr": "probabiliste (explique les données en appliquant plusieurs modèles)"
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "radiogroup",
+                            "name": "aboutAlgorithm5",
+                            "title": {
+                                "default": "Is the model: ",
+                                "fr": "Le modèle est : "
+                            },
+                             "help":{
+                                "default": "See <a href=\"https://www.oecd.org/en/publications/oecd-framework-for-the-classification-of-ai-systems_cb6d9eca-en.html\">OECD Framework for the Classification of AI systems</a> for more information.",
+                                "fr": "Pour en savoir plus, consultez le <a href=\"https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/02/oecd-framework-for-the-classification-of-ai-systems_336a8b57/cb6d9eca-en.pdf\">Cadre de l’OCDE pour la classification des systèmes de l’IA</a>."
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Discriminative (for example, regression analyses, decision trees)",
+                                        "fr": "discriminatif (par exemple, analyses de régression et arbres de décision)"
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "Generative (for example, linear discriminant analysis, naïve Bayes)",
+                                        "fr": "génératif (par exemple, analyse discriminante linéaire et classification naïve bayésienne)"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutAlgorithm6",
+                            "title": {
+                                "default": "Describe the model being used.",
+                                "fr": "Veuillez décrire le modèle utilisé."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutAlgorithm7",
+                            "title": {
+                                "default": "Explain why you chose the model",
+                                "fr": "Expliquez pourquoi vous avez choisi ce modèle."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutAlgorithm8",
+                            "title": {
+                                "default": "Will the algorithm continue to learn and evolve as it is used?",
+                                "fr": "L’algorithme continuera-t-il à apprendre et à évoluer à mesure qu’il est utilisé?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-3",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutAlgorithm8A",
+                            "visibleIf": "{aboutAlgorithm8} = \"item1-3\"",
+                            "title": {
+                                "default": "If yes, are there mechanisms in place to monitor the changes?",
+                                "fr": "Si oui, des mécanismes ont-ils été mis en place pour vous permettre d’en suivre l’évolution?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutAlgorithm9",
+                            "title": {
+                                "default": "Does the algorithm consider protected characteristics to make its decisions or recommendations?",
+                                "fr": "L’algorithme tient-il compte des caractéristiques protégées lors de la prise de décisions ou de la formulation de recommandations?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutAlgorithm9A",
+                            "visibleIf": "{aboutAlgorithm9} = \"item1-2\"",
+                            "title": {
+                                "default": "Describe why protected characteristics are being considered and any mitigations in place to address potential issues with bias or discrimination.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles les caractéristiques protégées sont prises en compte et les mesures d’atténuation mises en place pour résoudre les problèmes de biais ou de discrimination, le cas échéant."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutAlgorithm10",
+                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
+                            "title": {
+                                "default": "Will you evaluate whether variables that the system bases its decisions or recommendations on could be proxies for protected characteristics?",
+                                "fr": "Allez-vous vérifier si les variables sur lesquelles le système fonde ses décisions ou ses recommandations pourraient être des substituts de caractéristiques protégées?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutAlgorithm11",
+                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
+                            "title": {
+                                "default": "Have you evaluated whether variables that the system bases its decisions or recommendations on could be proxies for protected characteristics?",
+                                "fr": "Avez-vous vérifié si les variables sur lesquelles le système fonde ses décisions ou ses recommandations pourraient être des substituts de caractéristiques protégées?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutAlgorithm10A",
+                            "visibleIf": "{aboutAlgorithm10} = \"item1-0\"",
+                            "title": {
+                                "default": "Describe which protected characteristics, risks identified, and how they have been addressed.",
+                                "fr": "Veuillez décrire les caractéristiques protégées, les risques recensés et les mesures prises pour les gérer."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutAlgorithm11A",
+                            "visibleIf": "{aboutAlgorithm11} = \"item1-0\"",
+                            "title": {
+                                "default": "Describe which protected characteristics, risks identified, and how they have been addressed.",
+                                "fr": "Veuillez décrire les caractéristiques protégées, les risques recensés et les mesures prises pour les gérer."
+                            }
+                        },
+
+                        {
+                            "type": "comment",
+                            "name": "aboutAlgorithm10B",
+                            "visibleIf": "{aboutAlgorithm10} = \"item2-2\"",
+                            "title": {
+                                "default": "Describe why you have not evaluated whether variables could be proxies for protected characteristics.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles vous n’avez pas vérifié si les variables peuvent être des substituts de caractéristiques protégées."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutAlgorithm11B",
+                            "visibleIf": "{aboutAlgorithm11} = \"item2-2\"",
+                            "title": {
+                                "default": "Describe why you have not evaluated whether variables could be proxies for protected characteristics.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles vous n’avez pas vérifié si les variables peuvent être des substituts de caractéristiques protégées."
+                            }
                         }
                     ]
                 }
