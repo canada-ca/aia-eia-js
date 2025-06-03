@@ -1418,8 +1418,8 @@
                             "type": "radiogroup",
                             "name": "projectAuthority1",
                             "title": {
-                                "default": "Will you require new policy authority for this project?",
-                                "fr": "Aurez-vous besoin d'une nouvelle autorisation en termes de politiques pour ce projet ?"
+                                "default": "Will you require new policy or legal authority for this project?",
+                                "fr": "Aurez-vous besoin d’une nouvelle autorisation stratégique ou légale pour ce projet?"
                             },
                             "choices": [
                                 {
