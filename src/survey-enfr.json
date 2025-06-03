@@ -1077,14 +1077,14 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-3",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Service cannot be delivered at all",
                                         "fr": "La prestation du service serait impossible"
                                     }
                                 },
                                 {
-                                    "value": "item2-2",
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "Service cannot be delivered in a timely or efficient manner",
                                         "fr": "La prestation du service ne pourrait pas être effectuée en temps voulu ou de manière efficace"
@@ -1210,7 +1210,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-4",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -1228,7 +1228,7 @@
                         {
                             "type": "comment",
                             "name": "riskProfile3A",
-                            "visibleIf": "{riskProfile3} contains \"item1-4\"",
+                            "visibleIf": "{riskProfile3} contains \"item1-1\"",
                             "title": {
                                 "default": "Indicate the population group and explain why the automated decision system should not be applied.",
                                 "fr": "Veuillez indiquer les groupes de population qui devraient être exclus et expliquer pourquoi le système décisionnel automatisé ne doit pas être utilisé."
@@ -1243,14 +1243,14 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-3",
+                                    "value": "item1-0",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": "item2-0",
+                                    "value": "item2-4",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -1260,10 +1260,11 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "riskProfile5",
+                            "name": "riskProfile4A",
+                            "visibleIf": "{riskProfile4} = \"item1-0\"",
                             "title": {
-                                "default": "Will the use of the system create or exacerbate barriers for persons with disabilities?",
-                                "fr": "L’utilisation du système entraînera-t-elle des difficultés pour les personnes en situation de handicap ou les accentuera-t-elle?"
+                                "default": "If yes, will the use of the system create or exacerbate barriers for persons with disabilities?",
+                                "fr": "Si oui, le système accentuera-t-il les difficultés auxquelles sont confrontées les personnes en situation de handicap ou en créera-t-il de nouvelles?"
                             },
                             "choices": [
                                 {
@@ -1282,15 +1283,15 @@
                                 }
                             ]
                         },
-                        {
+                       {
                             "type": "comment",
-                            "name": "riskProfile6",
-                            "visibleIf": "{riskProfile5} = \"item1-4\"",
+                            "name": "riskProfile4B",
+                            "visibleIf": "{riskProfile4A} contains \"item1-4\"",
                             "title": {
-                                "default": "If yes, please describe the barriers and any planned or existing measures to identify, remove, and/or prevent them.",
-                                "fr": "Si oui, veuillez décrire les difficultés et toute mesure prévue ou existante pour les identifier, les éliminer ou les éviter."
+                                "default": "If yes, describe the barriers and any planned or existing measures to identify, remove, and/or prevent them.",
+                                "fr": "Si oui, veuillez décrire les difficultés observées et les mesures que vous mises en place pour les cerner, les éliminer ou les prévenir ou celles que vous avez prévues mettre en place."
                             }
-                        },
+                        },  
                         {
                             "type": "radiogroup",
                             "name": "riskProfile7",
@@ -1300,7 +1301,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-4",
+                                    "value": "item1-3",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -1324,7 +1325,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-4",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -1342,11 +1343,61 @@
                         {
                             "type": "comment",
                             "name": "riskProfile8A",
-                            "visibleIf": "{riskProfile8} = \"item1-4\"",
+                            "visibleIf": "{riskProfile8} = \"item1-1\"",
                             "title": {
                                 "default": "Indicate the issue or harm, the group that raised them, and how these have been addressed.",
                                 "fr": "Veuillez préciser le problème ou le préjudice en question, le groupe qui en a fait état et la manière dont il a été traité."
                             }
+                        },
+                         {
+                            "type": "radiogroup",
+                            "name": "riskProfile9",
+                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
+                            "title": {
+                                "default": "Will you be submitting a concept case to TBS and presenting the project to the Government of Canada Enterprise Architecture Review Board?",
+                                "fr": "Avez-vous l’intention de soumettre un cas conceptuel au Secrétariat du Conseil du Trésor du Canada (SCT) et présenté le projet au conseil d’examen de l’architecture intégrée du gouvernement du Canada?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "riskProfile10",
+                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
+                            "title": {
+                                "default": "Have you submitted a concept case to TBS and presented the project to the Government of Canada Enterprise Architecture Review Board?",
+                                "fr": "Avez-vous soumis un cas conceptuel au Secrétariat du Conseil du Trésor du Canada (SCT) et présenté le projet au conseil d’examen de l’architecture intégrée du gouvernement du Canada?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
                         }
                     ]
                 }
@@ -4004,12 +4055,12 @@
                             "type": "radiogroup",
                             "name": "fairnessDesign17",
                             "title": {
-                                "default": "Will you be preparing a concept case to the Government of Canada Enterprise Architecture Review Board?",
-                                "fr": "Allez-vous préparer un dossier conceptuel à l'intention du Comité d'examen de l'architecture d'entreprise du gouvernement du Canada?"
+                                "default": "Will you be submitting a concept case to TBS and presenting the project to the Government of Canada Enterprise Architecture Review Board?",
+                                "fr": "Avez-vous l’intention de soumettre un cas conceptuel au Secrétariat du Conseil du Trésor du Canada (SCT) et présenté le projet au conseil d’examen de l’architecture intégrée du gouvernement du Canada?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-0",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -4432,12 +4483,12 @@
                             "type": "radiogroup",
                             "name": "fairnessImplementation17",
                             "title": {
-                                "default": "Have you prepared a concept case to the Government of Canada Enterprise Architecture Review Board?",
-                                "fr": "Avez-vous préparé un dossier conceptuel à l'intention du Comité d'examen de l'architecture d'entreprise du gouvernement du Canada?"
+                                "default": "Have you submitted a concept case to TBS and presented the project to the Government of Canada Enterprise Architecture Review Board?",
+                                "fr": "Avez-vous soumis un cas conceptuel au Secrétariat du Conseil du Trésor du Canada (SCT) et présenté le projet au conseil d’examen de l’architecture intégrée du gouvernement du Canada?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-0",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
