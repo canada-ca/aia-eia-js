@@ -1451,55 +1451,55 @@
             "elements": [
                 {
                     "type": "panel",
-                    "name": "aboutSystemPanel-NS",
+                    "name": "aboutSystemPanel-RS",
                     "elements": [
                         {
                             "type": "checkbox",
                             "name": "aboutSystem1",
                             "title": {
-                                "default": "Please check which of the following capabilities apply to your system.",
-                                "fr": "Veuillez indiquer laquelle des capacités suivantes s'applique à votre système."
+                                "default": "Check which of the following capabilities apply to your system.",
+                                "fr": "Parmi les capacités suivantes, cochez celles qui s’appliquent à votre système."
                             },
                             "choices": [
                                 {
                                     "value": "item1",
                                     "text": {
-                                        "default": "Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.",
-                                        "fr": "Reconnaissance d'images et d'objets: Analyser de volumineux jeux de donnée pour automatiser la reconnaissance, la classification et le context associés à une image ou à un objet."
+                                        "default": "Image and object recognition: Analyzing large data sets to automate the recognition, classification, and context associated with an image or object",
+                                        "fr": "Reconnaissance d’images et d’objets : Analyse de vastes jeux de données pour l’automatisation de la reconnaissance, de la classification et du contexte associés à une image ou à un objet"
                                     }
                                 },
                                 {
                                     "value": "item2",
                                     "text": {
-                                        "default": "Text and speech analysis: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging",
-                                        "fr": "Analyse du texte et de la parole: Analyser de vastes jeux de données pour reconnaître, traiter et étiqueter le texte, la parole, la voix et faire des recommendations en fonction du marquage."
+                                        "default": "Text and speech analysis: Analyzing large data sets to recognize, process, and categorize text, speech and voice, and make recommendations based on the categorization",
+                                        "fr": "Analyse du texte et de la parole : Analyse de vastes jeux de données pour la reconnaissance, le traitement et la catégorisation de textes, de la parole et de la voix, ainsi que la formulation de recommandations fondées sur la catégorisation"
                                     }
                                 },
                                 {
                                     "value": "item3",
                                     "text": {
-                                        "default": "Risk assessment: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions",
-                                        "fr": "Évaluation des risques: Analyser de volumineux jeux de données pour déterminer les tendances et recommander des mesures et, dans certains cas, déclencher la prise de mesures précises. "
+                                        "default": "Risk assessment: Analyzing large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions",
+                                        "fr": "Évaluation des risques : Analyse de vastes jeux de données pour la détermination des tendances, la recommandation de plans d’action et, dans certains cas, la prise de mesures précises"
                                     }
                                 },
                                 {
                                     "value": "item4",
                                     "text": {
                                         "default": "Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
-                                        "fr": "Génération de contenu: Analyser de vastes jeux de données pour créer des catégories, traiter, trier, personnaliser et servir un contenu spécifique destiné à des contextes particuliers."
+                                        "fr": "Génération de contenu : Analyse de vastes jeux de données pour l’établissement de catégories, le traitement, le triage, la personnalisation et la présentation de contenus adaptés à des contextes particuliers"
                                     }
                                 },
                                 {
                                     "value": "item5",
                                     "text": {
-                                        "default": "Process optimization and workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows",
-                                        "fr": "Optimisation des processus et automatisation des flux de travail: Analyser de vastes jeux de données pour déterminer et corriger les anomalies, les modèles de grappes, prévoir les résultats ou les façons d'optimiser; et d'automatiser des flux de travail spécifique."
+                                        "default": "Process optimization and workflow automation: Analyzing large data sets to identify any anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows",
+                                        "fr": "Optimisation des processus et automatisation des flux de travail : Analyse de vastes jeux de données pour le recensement d’anomalies ou de modèles de grappes, la prévision des résultats ou de méthodes d’optimisation et l’automatisation de flux de travail particuliers"
                                     }
                                 },
                                 {
                                     "value": "item6",
                                     "text": {
-                                        "default": "Other (please specify)",
+                                        "default": "Other (Specify)",
                                         "fr": "Autre (veuillez préciser)"
                                     }
                                 }
@@ -1510,9 +1510,47 @@
                             "name": "aboutSystem2",
                             "visibleIf": "{aboutSystem1} contains [\"item6\"]",
                             "title": {
-                                "default": "Please describe",
-                                "fr": "S'il vous plait décrire"
+                                "default": "Describe",
+                                "fr": "Veuillez expliquer votre réponse."
                             }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem3",
+                            "title": {
+                                "default": "Who developed the system?",
+                                "fr": "Qui a conçu le système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Your institution",
+                                        "fr": "Votre organisation"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "Another federal institution",
+                                        "fr": "Une autre organisation fédérale"
+                                    }
+                                },
+                                {
+                                    "value": "item3-1",
+                                    "text": {
+                                        "default": "Another government",
+                                        "fr": "Une autre administration publique"
+                                    }
+                                },
+                                {
+                                    "value": "item4-1",
+                                    "text": {
+                                        "default": "A non-government third party",
+                                        "fr": "Un organisme tiers non gouvernemental"
+                                    }
+                                }
+                            ]
                         }
                     ]
                 }
