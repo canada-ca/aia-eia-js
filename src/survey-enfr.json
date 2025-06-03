@@ -2312,51 +2312,51 @@
                             "type": "comment",
                             "name": "decisionSector3",
                             "title": {
-                                "default": "Please describe the decision(s) that will be automated.",
-                                "fr": "Veuillez décrire la ou les décisions qui seront automatisées."
+                                "default": "Describe the administrative decision(s) that is being supported or made by the algorithm.",
+                                "fr": "Veuillez décrire les décisions administratives qui seront appuyées ou exécutées par l’algorithme."
                             }
                         },
                         {
                             "type": "checkbox",
                             "name": "decisionSector1",
                             "title": {
-                                "default": "Does the decision pertain to any of the categories below (check all that apply):",
-                                "fr": "La décision s'applique-t-elle à l'une ou l'autre des catégories ci-dessous (*Cochez toutes les réponses qui s'appliquent) :"
+                                "default": "Does the decision pertain to any of the categories below (check all that apply). Note that the examples in brackets are not exhaustive.",
+                                "fr": "La décision s’applique-t-elle à l’une ou l’autre des catégories ci-dessous (cochez toutes les réponses qui s’appliquent)? Il convient de préciser que les exemples cités entre parenthèses ne sont pas exhaustifs."
                             },
                             "choices": [
                                 {
                                     "value": "item1-1",
                                     "text": {
-                                        "default": "Health related services",
-                                        "fr": "Services liés à la santé"
+                                        "default": "Health-related services (environmental and workplace health, product and food safety, drug regulation)",
+                                        "fr": "Services liés à la santé (santé de l’environnement et du milieu de travail, sécurité des produits et des aliments et réglementation des médicaments)"
                                     }
                                 },
                                 {
                                     "value": "item2-1",
                                     "text": {
                                         "default": "Economic interests (grants and contributions, tax benefits, debt collection)",
-                                        "fr": "Intérêts économiques (subventions et contributions, avantages fiscaux, recouvrement de dettes)"
+                                        "fr": "Intérêts économiques (subventions et contributions, avantages fiscaux, recouvrement de dettes) "
                                     }
                                 },
                                 {
                                     "value": "item3-1",
                                     "text": {
-                                        "default": "Social assistance (employment insurance, disability claims)",
-                                        "fr": "Aide sociales (assurance-emploi, demandes de prestations d'invalidité)"
+                                        "default": "Social assistance (employment insurance, disability or housing benefits, children or seniors programs)",
+                                        "fr": "Aide sociale (prestations d’assurance-emploi, d’invalidité ou pour le logement et programmes pour les enfants ou les aînés)"
                                     }
                                 },
                                 {
                                     "value": "item4-1",
                                     "text": {
-                                        "default": "Access and mobility (security clearances, border crossings)",
-                                        "fr": "Accès et mobilité (habitations de sécurité, passages frontaliers)"
+                                        "default": "Access and mobility (security clearances, border management, immigration)",
+                                        "fr": "Accès et mobilité (habitations de sécurité, gestion des frontières, immigration)"
                                     }
                                 },
                                 {
                                     "value": "item5-1",
                                     "text": {
-                                        "default": "Licensing and issuance of permits",
-                                        "fr": "Accréditation et délivrance de permis"
+                                        "default": "Licensing and issuance of permits (possession and acquisition licence, export permits, commercial fishing licence)",
+                                        "fr": "Accréditation et délivrance de permis (permis de possession et d’acquisition, d’exportation et de pêche commerciale)"
                                     }
                                 },
                                 {
@@ -2367,9 +2367,16 @@
                                     }
                                 },
                                 {
+                                    "value": "item8-1",
+                                    "text": {
+                                        "default": "Public safety and law enforcement (investigating criminal acts)",
+                                        "fr": "Sécurité publique et application de la loi (enquêtes sur les actes criminels)"
+                                    }
+                                },
+                                {
                                     "value": "item6-1",
                                     "text": {
-                                        "default": "Other (please specify)",
+                                        "default": "Other (specify)",
                                         "fr": "Autre (veuillez préciser)"
                                     }
                                 }
@@ -2380,8 +2387,8 @@
                             "name": "decisionSector2",
                             "visibleIf": "{decisionSector1} contains [\"item6-1\"]",
                             "title": {
-                                "default": "Please describe",
-                                "fr": "S'il vous plait décrire"
+                                "default": "Describe",
+                                "fr": "Veuillez expliquer votre réponse."
                             }
                         }
                     ]
