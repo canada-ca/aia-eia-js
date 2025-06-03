@@ -2411,7 +2411,7 @@
                             "name": "impact30",
                             "title": {
                                 "default": "Which of the following best describes the type of automation you are planning? ",
-                                "fr": "Parmi les propositions suivantes, laquelle décrit le mieux le type d’automatisation que vous envisagez? "
+                                "fr": "Parmi les énoncés suivants, lequel décrit le mieux le type d’automatisation envisagé?"
                             },
                             "choices": [
                                 {
@@ -2424,8 +2424,8 @@
                                 {
                                     "value": "item2-2",
                                     "text": {
-                                        "default": "Partial automation (the system will contribute to administrative decision-making by supporting an officer through assessments, recommendations, intermediate decisions, or other outputs)",
-                                        "fr": "Automatisation partielle (le système facilitera la prise de décisions administratives en appuyant un agent au moyen d’évaluations, de recommandations, de décisions provisoires ou d’autres résultats)"
+                                        "default": "Partial automation (the system will contribute to administrative decision-making by supporting an officer with assessments, recommendations, intermediate decisions, or other outputs)",
+                                        "fr": "Automatisation partielle (le système contribuera à la prise de décision administrative en fournissant aux fonctionnaires des évaluations, des recommandations, des décisions intermédiaires ou d’autres extrants)"
                                     }
                                 }
                             ]
@@ -2434,16 +2434,16 @@
                             "type": "comment",
                             "name": "impact31",
                             "title": {
-                                "default": "Please describe the role of the system in the decision-making process.",
-                                "fr": "Veuillez décrire le rôle du système dans le processus de prise de décisions."
+                                "default": "Describe the role of the system in the decision-making process.",
+                                "fr": "Veuillez décrire le rôle du système dans le cadre du processus décisionnel."
                             }
                         },
                         {
                             "type": "radiogroup",
                             "name": "impact3",
                             "title": {
-                                "default": "Will the system be making decisions or assessments that require judgement or discretion?",
-                                "fr": "Le système prendra-t-il des décisions ou effectuera-t-il des évaluations qui exigent du jugement ou de la discrétion?"
+                                "default": "Will the system be making decisions or assessments that require judgment or discretion?",
+                                "fr": "Les décisions et les analyses qui exigent du jugement ou du discernement seront-elles prises en charge par le système?"
                             },
                             "choices": [
                                 {
@@ -2462,28 +2462,21 @@
                                 }
                             ]
                         },
-                        {
+                         {
                             "type": "comment",
-                            "name": "impact20",
+                            "name": "impact3A",
+                            "visibleIf": "{impact3} = \"item1-4\"",
                             "title": {
-                                "default": "Please describe the criteria used to evaluate client data and the operations applied to process it.",
-                                "fr": "Veuillez décrire les critères utilisés pour évaluer les données des clients et les procédures appliquées pour les traiter."
-                            }
-                        },
-                        {
-                            "type": "comment",
-                            "name": "impact21",
-                            "title": {
-                                "default": "Please describe the output produced by the system and any relevant information needed to interpret it in the context of the administrative decision.",
-                                "fr": "Veuillez décrire le résultat produit par le système et les renseignements pertinents nécessaires à l’interprétation dans le contexte de la décision administrative."
+                                "default": "Describe.",
+                                "fr": "Veuillez préciser."
                             }
                         },
                         {
                             "type": "radiogroup",
-                            "name": "impact22",
+                            "name": "impact4A",
                             "title": {
-                                "default": "Will the system perform an assessment or other operation that would not otherwise be completed by a human?",
-                                "fr": "Le système effectuera-t-il une évaluation ou une autre activité qui ne serait autrement pas réalisée par un humain?"
+                                "default": "Will this project have major impacts on staff, either in terms of their numbers or their roles?",
+                                "fr": "Ce projet aura-t-il une incidence importante sur les membres du personnel, que ce soit en ce qui a trait à leur nombre ou à leur rôle?"
                             },
                             "choices": [
                                 {
@@ -2504,11 +2497,51 @@
                         },
                         {
                             "type": "comment",
-                            "name": "impact23",
-                            "visibleIf": "{impact22} contains [\"item1-2\"]",
+                            "name": "impact20",
                             "title": {
-                                "default": "If yes, please describe the relevant function(s) of the system.",
-                                "fr": "Si oui, veuillez décrire la ou les fonctions pertinentes du système."
+                                "default": "Describe the criteria used to evaluate client data and the operations applied to process it.",
+                                "fr": "Veuillez décrire les critères utilisés pour l’analyse des données de la clientèle et les procédures appliquées pour les traiter."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "impact21",
+                            "title": {
+                                "default": "Describe the output produced by the system and any relevant information needed to interpret it in the context of the administrative decision.",
+                                "fr": "Veuillez décrire le résultat produit par le système et les renseignements utiles à leur interprétation dans le cadre du processus de décision administrative."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "impact22",
+                            "title": {
+                                "default": "Will the system perform an assessment or other operation that is not currently completed by a human?",
+                                "fr": "Le système effectuera-t-il une évaluation ou une autre opération qui n’est pas actuellement exécutée par le personnel?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "impact22A",
+                            "visibleIf": "{impact22} = \"item1-2\"",
+                            "title": {
+                                "default": "If yes, describe the relevant function(s) of the system ",
+                                "fr": "Si oui, veuillez décrire toute fonction pertinente du système."
                             }
                         },
                         {
@@ -2516,11 +2549,11 @@
                             "name": "impact5",
                             "title": {
                                 "default": "Is the system used by a different part of the organization than the ones who developed it?",
-                                "fr": "Le système est-il utilisé par une partie de l’organisation différente de celle à laquelle appartiennent ceux qui l’ont développé?"
+                                "fr": "Le système est-il utilisé par une partie de l’organisation autre que celle où il a été conçu? "
                             },
                             "choices": [
                                 {
-                                    "value": "item1-4",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -2540,7 +2573,7 @@
                             "name": "impact6",
                             "title": {
                                 "default": "Are the impacts resulting from the decision reversible?",
-                                "fr": "Les incidences découlant de la décision sont-elles réversibles?"
+                                "fr": "Les incidences de la décision sont-elles réversibles?"
                             },
                             "choices": [
                                 {
@@ -2577,7 +2610,7 @@
                             "type": "dropdown",
                             "name": "impact7",
                             "title": {
-                                "default": "How long will impacts from the decision last?",
+                                "default": "How long could impacts from the decision last?",
                                 "fr": "Combien de temps les incidences de la décision dureront-elles?"
                             },
                             "choices": [
@@ -2615,16 +2648,16 @@
                             "type": "comment",
                             "name": "impact8",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
-                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus). "
+                                "default": "Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles les incidences de la décision sont telles qu’elles ont été définies, de même que les risques recensés et les mesures d’atténuation mises en place."
                             }
                         },
                         {
                             "type": "dropdown",
                             "name": "impact9",
                             "title": {
-                                "default": "The impacts that the decision will have on the rights or freedoms of individuals will likely be:",
-                                "fr": "Les incidences de la décision sur les droits ou libertés des personnes seront probablement les suivantes :"
+                                "default": "The impacts that the decision could have on the rights or freedoms of individuals may be:",
+                                "fr": "Les incidences de la décision sur les droits et libertés des personnes pourraient être les suivants :"
                             },
                             "choices": [
                                 {
@@ -2661,16 +2694,16 @@
                             "type": "comment",
                             "name": "impact10",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
-                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                                "default": "Describe how this impact level was determined. Include which human rights frameworks were assessed, potential risk that were identified and mitigations put in place.",
+                                "fr": "Veuillez préciser la façon dont la portée des incidences a été déterminée. Indiquez les cadres des droits de la personne qui ont été évalués, les risques qui ont été recensés ainsi que les mesures d’atténuation qui ont été mises en place."
                             }
                         },
                         {
                             "type": "dropdown",
                             "name": "impact24",
                             "title": {
-                                "default": "The impacts that the decision will have on the equality, dignity, privacy, and autonomy of individuals will likely be:",
-                                "fr": "Les incidences de la décision sur l’égalité, la dignité, la vie privée et l’autonomie des personnes seront probablement :"
+                                "default": "The impacts that the decision could have on the equality, dignity, privacy, and autonomy of individuals may be: ",
+                                "fr": "Les incidences de la décision sur l’égalité, la dignité, la vie privée et l’autonomie des personnes pourraient être les suivants :"
                             },
                             "choices": [
                                 {
@@ -2707,16 +2740,16 @@
                             "type": "comment",
                             "name": "impact25",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
-                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                                "default": "Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles les incidences de la décision sont telles qu’elles ont été définies, de même que les risques recensés et les mesures d’atténuation mises en place."
                             }
                         },
                         {
                             "type": "dropdown",
                             "name": "impact11",
                             "title": {
-                                "default": "The impacts that the decision will have on the health and well-being of individuals will likely be:",
-                                "fr": "Les incidences de la décision sur la santé et le bien-être des personnes seront probablement les suivantes :"
+                                "default": "The impacts that the decision could have on the health and well-being of individuals may be:",
+                                "fr": "Les incidences de la décision sur la santé et le bien-être des pourraient être les suivants :"
                             },
                             "choices": [
                                 {
@@ -2753,16 +2786,16 @@
                             "type": "comment",
                             "name": "impact12",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
-                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                                "default": "Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles les incidences de la décision sont telles qu’elles ont été définies, de même que les risques recensés et les mesures d’atténuation mises en place."
                             }
                         },
                         {
                             "type": "dropdown",
                             "name": "impact13",
                             "title": {
-                                "default": "The impacts that the decision will have on the economic interests of individuals will likely be:",
-                                "fr": "Les incidences de la décision sur les intérêts économiques des personnes seront probablement les suivantes :"
+                                "default": "The impacts that the decision could have on the economic interests of individuals may be:",
+                                "fr": "Les incidences de la décision sur les intérêts économiques des personnes pourraient être les suivants :"
                             },
                             "choices": [
                                 {
@@ -2799,16 +2832,16 @@
                             "type": "comment",
                             "name": "impact14",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
-                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                                "default": "Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles les incidences de la décision sont telles qu’elles ont été définies, de même que les risques recensés et les mesures d’atténuation mises en place."
                             }
                         },
                         {
                             "type": "dropdown",
                             "name": "impact15",
                             "title": {
-                                "default": "The impacts that the decision will have on the ongoing sustainability of an environmental ecosystem, will likely be:",
-                                "fr": "Les incidences de la décision sur la pérennité d’un écosystème environnemental seront probablement les suivantes :"
+                                "default": "The impacts that the decision could have on the ongoing sustainability of an environmental ecosystem, may be:",
+                                "fr": "Les incidences de la décision sur la pérennité d’un écosystème environnemental pourraient être les suivants :"
                             },
                             "choices": [
                                 {
@@ -2845,9 +2878,59 @@
                             "type": "comment",
                             "name": "impact16",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
-                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                                "default": "Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles les incidences de la décision sont telles qu’elles ont été définies, de même que les risques recensés et les mesures d’atténuation mises en place."
                             }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "impact17",
+                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
+                            "title": {
+                                "default": "Will you assess system performance for clients with a range of personal and intersectional identity factors (for example, gender, age, race, language, ethnicity, disability) to verify that decisions and outcomes are fair for a diverse group of people?",
+                                "fr": "Allez-vous évaluer le rendement du système pour la clientèle ayant plusieurs facteurs d’identité personnels et intersectionnels (par exemple, le genre, l’âge, la race, la langue, l’origine ethnique ou le handicap) afin de vous assurer que les décisions et les incidences sont équitables pour un groupe de personnes diversifié?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-3",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                                                {
+                            "type": "radiogroup",
+                            "name": "impact18",
+                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
+                            "title": {
+                                "default": "Have you assessed system performance for clients with a range of personal and intersectional identity factors (for example, gender, age, race, language, ethnicity, disability) to verify that decisions and outcomes are fair for a diverse group of people?",
+                                "fr": "Avez-vous évalué le rendement du système pour la clientèle ayant plusieurs facteurs d’identité personnels et intersectionnels (par exemple, le genre, l’âge, la race, la langue, l’origine ethnique ou le handicap) afin de vous assurer que les décisions et les incidences sont équitables pour un groupe de personnes diversifié?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-3",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
                         }
                     ]
                 }
