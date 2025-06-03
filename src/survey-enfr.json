@@ -1551,6 +1551,407 @@
                                     }
                                 }
                             ]
+                        },
+                         {
+                            "type": "comment",
+                            "name": "aboutSystem3A",
+                            "visibleIf": "{aboutSystem3} contains [\"item2\"]",
+                            "title": {
+                                "default": "Specify",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutSystem3B",
+                            "visibleIf": "{aboutSystem3} contains [\"item3\"]",
+                            "title": {
+                                "default": "Specify",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutSystem3C",
+                            "visibleIf": "{aboutSystem3} contains [\"item4\"]",
+                            "title": {
+                                "default": "Specify",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem4",
+                            "title": {
+                                "default": "Who configured the system?",
+                                "fr": "Qui a configuré le système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Your institution",
+                                        "fr": "Votre organisation"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "Another federal institution",
+                                        "fr": "Une autre organisation fédérale"
+                                    }
+                                },
+                                {
+                                    "value": "item3-1",
+                                    "text": {
+                                        "default": "Another government",
+                                        "fr": "Une autre administration publique"
+                                    }
+                                },
+                                {
+                                    "value": "item4-1",
+                                    "text": {
+                                        "default": "A non-government third party",
+                                        "fr": "Un organisme tiers non gouvernemental"
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "comment",
+                            "name": "aboutSystem4A",
+                            "visibleIf": "{aboutSystem4} contains [\"item2\"]",
+                            "title": {
+                                "default": "Specify",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutSystem4B",
+                            "visibleIf": "{aboutSystem4} contains [\"item3\"]",
+                            "title": {
+                                "default": "Specify",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutSystem4C",
+                            "visibleIf": "{aboutSystem4} contains [\"item4\"]",
+                            "title": {
+                                "default": "Specify",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem5",
+                            "title": {
+                                "default": "Is the system:",
+                                "fr": "Le système est-il :"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Open source",
+                                        "fr": "à code source ouvert"
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "Custom built",
+                                        "fr": "conçu sur mesure"
+                                    }
+                                },
+                                {
+                                    "value": "item3-2",
+                                    "text": {
+                                        "default": "Commercial off the shelf (COTS)",
+                                        "fr": "disponible sur le marché (COTS)"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "name": "aboutSystem5A",
+			                "visibleIf": "{aboutSystem5} = \"item1-0\"",
+                            "title": {
+                                "default": " Indicate the open source licence that applies.",
+                                "fr": "Si à code source ouvert, veuillez indiquer la licence à code source ouvert utilisée."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem5B",
+                            "visibleIf": "{aboutSystem5} = \"item1-0\"",
+                            "title": {
+                                "default": "Has the product been customized to add functionality beyond what is available off the shelf?",
+                                "fr": "S’il s’agit d’une solution à code source ouvert ou d’une solution COTS, a-t-elle été modifiée de sorte qu’elle comprenne d’autres fonctionnalités que celles offertes sur le marché?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem5C",
+                            "visibleIf": "{aboutSystem5} = \"item3-2\"",
+                            "title": {
+                                "default": "Has the product been customized to add functionality beyond what is available off the shelf?",
+                                "fr": "S’il s’agit d’une solution à code source ouvert ou d’une solution COTS, a-t-elle été modifiée de sorte qu’elle comprenne d’autres fonctionnalités que celles offertes sur le marché?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "comment",
+                            "name": "aboutSystem5D",
+                            "visibleIf": "{aboutSystem5B} = \"item1-0\"",
+                            "title": {
+                                "default": "Specify what has been customized and who performed the customization.",
+                                "fr": "Si oui, précisez les éléments qui ont été modifiés et l’organisation qui a procédé aux modifications."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutSystem5E",
+                            "visibleIf": "{aboutSystem5C} = \"item1-0\"",
+                            "title": {
+                                "default": "Specify what has been customized and who performed the customization.",
+                                "fr": "Si oui, précisez les éléments qui ont été modifiés et l’organisation qui a procédé aux modifications."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem6",
+                            "title": {
+                                "default": "Have you assigned accountability in your institution for the design, development, and maintenance, of the system?",
+                                "fr": "Des personnes responsables de la conception, de la mise au point et de l’entretien du système ont-elles été désignées au sein de votre organisation?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "radiogroup",
+                            "name": "aboutSystem7",
+                            "title": {
+                                "default": "Is there a group in your institution responsible for identifying and implementing opportunities for improvement?",
+                                "fr": "Un groupe de votre organisation est-il chargé de recenser les améliorations possibles et de les apporter?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem8",
+                            "title": {
+                                "default": "Does your system conform with the appropriate clauses of standard CAN/ASC EN 301 549:2024, Accessibility requirements for Information and Communication Technology (ICT) products and services? ",
+                                "fr": "Votre système est-il conforme aux dispositions appropriées de la norme CAN/ASC EN 301 549:2024, Exigences d’accessibilité pour les produits et services des technologies de l’information et de la communication (TIC)?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "comment",
+                            "name": "aboutSystem8A",
+                            "visibleIf": "{aboutSystem8} = \"item2-1\"",
+                            "title": {
+                                "default": "If no, describe why the system does not conform.",
+                                "fr": "Si non, expliquez en quoi votre système n’est pas conforme."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem9",
+                            "title": {
+                                "default": "Is a non-automated alternative planned and available in the event the automated decision system was unavailable for an extended period of time?",
+                                "fr": "Une solution non automatisée est-elle également prévue et fonctionnelle au cas où le système décisionnel automatisé serait indisponible pendant une période prolongée?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem10",
+                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
+                            "title": {
+                                "default": "Will there be a process in place to grant, monitor, and revoke access permission to the system?",
+                                "fr": "Une procédure permettant d’octroyer, de surveiller et de révoquer une autorisation d’accès au système sera-t-elle établie?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem10A",
+                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
+                            "title": {
+                                "default": "Is there a process in place to grant, monitor, and revoke access permission to the system?",
+                                "fr": "Une procédure permettant d’octroyer, de surveiller et de révoquer une autorisation d’accès au système a-t-elle été établie?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "aboutSystem11",
+                            "title": {
+                                "default": "The impacts that the development, operation, and maintenance of the system could have on the ongoing sustainability of an environmental ecosystem, may be:",
+                                "fr": "L’incidence de la mise au point, de l’exploitation et de l’entretien du système sur la durabilité d’un écosystème environnemental sera :"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Little to no impact",
+                                        "fr": "faible, voire nulle"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "Moderate impact",
+                                        "fr": "modérée"
+                                    }
+                                },
+                                {
+                                    "value": "item3-3",
+                                    "text": {
+                                        "default": "High impact",
+                                        "fr": "élevée"
+                                    }
+                                },
+                                {
+                                    "value": "item4-4",
+                                    "text": {
+                                        "default": "Very high impact",
+                                        "fr": "très élevée"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutSystem12",
+                            "title": {
+                                "default": "Describe why the impacts resulting from the system’s development, operations and maintenance are as selected.",
+                                "fr": "Veuillez expliquer votre réponse."
+                            }
                         }
                     ]
                 }
