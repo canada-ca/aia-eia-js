@@ -7,8 +7,8 @@
                     "type": "html",
                     "name": "welcome1",
                     "html": {
-                        "default":"<h2>Algorithmic Impact Assessment v0.10.0</h2><h3>1. What is the Algorithmic Impact Assessment (AIA) Tool?</h3> <p>The AIA is a questionnaire designed to help you assess and mitigate the impacts associated with deploying an automated decision system. The AIA helps identify the impact level of your automation project under the <a href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592' target='_blank'>Directive on Automated Decision-Making</a>. Completion and release of an AIA is required by the Directive.</p> <div style='margin-left: 35px;'> <h3>i. How does it work?</h3> <p>The questionnaire asks you around 80 questions related to your business process, data, system design, algorithm, and decision. The results will display an impact level for your automation project and provide information about applicable requirements under the Directive. The questionnaire takes at least 35 minutes to complete. We suggest reviewing the instructions in <a href='https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html#toc3' target='_blank'>section 3 of the AIA landing page</a> before you start your assessment. </p> <h3>ii. Where can I find out why my system was classified at a certain impact level? </h3> <p>When you complete the questionnaire, a detailed results page with information about your score will be displayed. Sections 2.2 and 2.3 of the <a href='https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html#toc2' target='_blank'>AIA landing page</a> explain how scores are computed and used to determine a project's impact level. </p> </div> <h3>2. Can I save my responses and complete the questionnaire later? </h3> <p>Yes. When you want to save your progress, click on the '<em>Save</em>' button at the top of the window and save the <abbr title='JSON is an open standard, machine-readable file format'>JSON</abbr> file to a local folder. If you want to continue where you left off, click on the '<em>Upload JSON File</em>' button and select your saved JSON file. </p> <p>All data will be deleted if you click on the '<em>Start Again</em>' button. </p> <div style='margin-left: 35px;'> <h3>i. Do you store my answers? </h3> <p>No. We don't store your responses and data only remains within your browser's local storage. Feel free to use this tool as many times as you need throughout the design and implementation of your automation project. </p> </div> <h3>3. Can I use the AIA tool to support impact assessments or other initiatives outside the Government of Canada? </h3> <p>Yes, the AIA tool is an open source project released under the MIT License and you are welcome to use it for your own needs. However, we ask that you provide notice of license and attributions, as appropriate. </p> <p>The tool is updated on a regular basis. You can follow and participate in its development on <a href='https://github.com/canada-ca/aia-eia-js' target='_blank'>GitHub</a>. </p> <p>We encourage you to create an issue on the project site if you find a bug or encounter a problem. </p>",
-                        "fr": "<h2>Évaluation de l'incidence algorithmique v0.10.0</h2><h3>1. Qu'est-ce que l'outil d'évaluation de l'incidence algorithmique (EIA)? </h3> <p>L'EIA est un questionnaire conçu pour vous aider à évaluer et à atténuer les risques associées au déploiement d'un système décisionnel automatisé. L'EIA aide à déterminer le niveau d'incidence de votre projet d'automatisation en vertu de la <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32592' target='_blank'>Directive sur la prise de décisions automatisée</a>. L'achèvement et la publication d'une EIA sont requis par la directive.</p> <div style='margin-left: 35px;'> <h3>i. Comment ça fonctionne?</h3> <p>Le questionnaire vous pose environ 80 questions liées à vos processus, à vos données, à la conception du système, à votre algorithme et à la décision qui est automatisée. Les résultats afficheront un niveau d'incidence pour votre projet d'automatisation et fourniront des informations sur les exigences applicables en vertu de la directive. Le questionnaire prend au moins 35 minutes à remplir. Nous vous suggérons de consulter les instructions de <a href='https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/innovations-gouvernementales-numeriques/utilisation-responsable-ai/evaluation-incidence-algorithmique.html#toc3' target='_blank'>la section 3 de la page d'accueil de l'EIA</a> avant de commencer votre évaluation.</p> <h3>ii. Où puis-je savoir pourquoi mon système a été évalué à un certain niveau d'incidence?</h3> <p>Lorsque vous remplissez le questionnaire, une page de résultats détaillée avec des informations sur votre cote sera affichée. Les sections 2.2 et 2.3 de la <a href='https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/innovations-gouvernementales-numeriques/utilisation-responsable-ai/evaluation-incidence-algorithmique.html#toc2' target='_blank'>page d'accueil de l'EIA</a> expliquent comment les cotes sont calculées et utilisées pour déterminer le niveau d'incidence d'un projet.</p> </div> <h3>2. Puis-je sauvegarder mes réponses et terminer le questionnaire plus tard?</h3> <p>Oui. Lorsque vous souhaitez enregistrer votre progrès, cliquez sur le bouton «&nbsp;<em>Sauvegarder</em>&nbsp;» en haut de la fenêtre et enregistrez le fichier <abbr title='JSON est un format de fichier standard ouvert et lisible par machine'>JSON</abbr> dans un dossier local. Si vous souhaitez continuer là où vous vous êtes arrêté, cliquez sur le bouton «&nbsp;<em>Importer un fichier JSON</em>&nbsp;» et sélectionnez votre fichier JSON enregistré.</p> <p>Toutes les données seront supprimées si vous cliquez sur le bouton «&nbsp;<em>Recommencer</em>&nbsp;».</p> <div style='margin-left: 35px;'> <h3>i. Est-ce que vous sauvegardez mes réponses?</h3> <p>Non. Nous ne stockons pas vos réponses et les données saisies résident uniquement dans votre ordinateur. N'hésitez pas à utiliser cet outil autant de fois que vous en avez besoin tout au long de la conception et de la mise en œuvre de votre projet d'automatisation.</p> </div> <h3>3. Puis-je utiliser l'outil d'EIA pour appuyer les évaluations d'incidences ou d'autres initiatives à l'extérieur du gouvernement du Canada?</h3> <p>Oui, l'outil d'EIA est un logiciel libre publié sous la licence MIT et vous êtes invités à l'utiliser pour vos propres besoins. Nous vous prions de bien vouloir inclure la licence et attribuer le travail où cela est requis.</p> <p>L'outil est mis à jour régulièrement. Vous pouvez suivre et participer à son développement sur <a href='https://github.com/canada-ca/aia-eia-js' target='_blank'>GitHub</a>.</p> <p>Nous vous encourageons à créer un problème sur le site du projet si vous trouvez un bogue ou rencontrez un problème.</p>"
+                        "default":"<h2>Algorithmic Impact Assessment v1.0.0</h2><h3>1. What is the Algorithmic Impact Assessment (AIA) Tool?</h3> <p>The AIA is a questionnaire designed to help you assess and mitigate the impacts associated with deploying an automated decision system. The AIA helps identify the impact level of your automation project under the <a href='https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32592' target='_blank'>Directive on Automated Decision-Making</a>. Completion and release of an AIA is required by the Directive.</p> <div style='margin-left: 35px;'> <h3>i. How does it work?</h3> <p>The questionnaire asks you around 80 questions related to your business process, data, system design, algorithm, and decision. The results will display an impact level for your automation project and provide information about applicable requirements under the Directive. The questionnaire takes at least 35 minutes to complete. We suggest reviewing the instructions in <a href='https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html#toc3' target='_blank'>section 3 of the AIA landing page</a> before you start your assessment. </p> <h3>ii. Where can I find out why my system was classified at a certain impact level? </h3> <p>When you complete the questionnaire, a detailed results page with information about your score will be displayed. Sections 2.2 and 2.3 of the <a href='https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html#toc2' target='_blank'>AIA landing page</a> explain how scores are computed and used to determine a project's impact level. </p> </div> <h3>2. Can I save my responses and complete the questionnaire later? </h3> <p>Yes. When you want to save your progress, click on the '<em>Save</em>' button at the top of the window and save the <abbr title='JSON is an open standard, machine-readable file format'>JSON</abbr> file to a local folder. If you want to continue where you left off, click on the '<em>Upload JSON File</em>' button and select your saved JSON file. </p> <p>All data will be deleted if you click on the '<em>Start Again</em>' button. </p> <div style='margin-left: 35px;'> <h3>i. Do you store my answers? </h3> <p>No. We don't store your responses and data only remains within your browser's local storage. Feel free to use this tool as many times as you need throughout the design and implementation of your automation project. </p> </div> <h3>3. Can I use the AIA tool to support impact assessments or other initiatives outside the Government of Canada? </h3> <p>Yes, the AIA tool is an open source project released under the MIT License and you are welcome to use it for your own needs. However, we ask that you provide notice of license and attributions, as appropriate. </p> <p>The tool is updated on a regular basis. You can follow and participate in its development on <a href='https://github.com/canada-ca/aia-eia-js' target='_blank'>GitHub</a>. </p> <p>We encourage you to create an issue on the project site if you find a bug or encounter a problem. </p>",
+                        "fr": "<h2>Évaluation de l'incidence algorithmique v1.0.0</h2><h3>1. Qu'est-ce que l'outil d'évaluation de l'incidence algorithmique (EIA)? </h3> <p>L'EIA est un questionnaire conçu pour vous aider à évaluer et à atténuer les risques associées au déploiement d'un système décisionnel automatisé. L'EIA aide à déterminer le niveau d'incidence de votre projet d'automatisation en vertu de la <a href='https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32592' target='_blank'>Directive sur la prise de décisions automatisée</a>. L'achèvement et la publication d'une EIA sont requis par la directive.</p> <div style='margin-left: 35px;'> <h3>i. Comment ça fonctionne?</h3> <p>Le questionnaire vous pose environ 80 questions liées à vos processus, à vos données, à la conception du système, à votre algorithme et à la décision qui est automatisée. Les résultats afficheront un niveau d'incidence pour votre projet d'automatisation et fourniront des informations sur les exigences applicables en vertu de la directive. Le questionnaire prend au moins 35 minutes à remplir. Nous vous suggérons de consulter les instructions de <a href='https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/innovations-gouvernementales-numeriques/utilisation-responsable-ai/evaluation-incidence-algorithmique.html#toc3' target='_blank'>la section 3 de la page d'accueil de l'EIA</a> avant de commencer votre évaluation.</p> <h3>ii. Où puis-je savoir pourquoi mon système a été évalué à un certain niveau d'incidence?</h3> <p>Lorsque vous remplissez le questionnaire, une page de résultats détaillée avec des informations sur votre cote sera affichée. Les sections 2.2 et 2.3 de la <a href='https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/innovations-gouvernementales-numeriques/utilisation-responsable-ai/evaluation-incidence-algorithmique.html#toc2' target='_blank'>page d'accueil de l'EIA</a> expliquent comment les cotes sont calculées et utilisées pour déterminer le niveau d'incidence d'un projet.</p> </div> <h3>2. Puis-je sauvegarder mes réponses et terminer le questionnaire plus tard?</h3> <p>Oui. Lorsque vous souhaitez enregistrer votre progrès, cliquez sur le bouton «&nbsp;<em>Sauvegarder</em>&nbsp;» en haut de la fenêtre et enregistrez le fichier <abbr title='JSON est un format de fichier standard ouvert et lisible par machine'>JSON</abbr> dans un dossier local. Si vous souhaitez continuer là où vous vous êtes arrêté, cliquez sur le bouton «&nbsp;<em>Importer un fichier JSON</em>&nbsp;» et sélectionnez votre fichier JSON enregistré.</p> <p>Toutes les données seront supprimées si vous cliquez sur le bouton «&nbsp;<em>Recommencer</em>&nbsp;».</p> <div style='margin-left: 35px;'> <h3>i. Est-ce que vous sauvegardez mes réponses?</h3> <p>Non. Nous ne stockons pas vos réponses et les données saisies résident uniquement dans votre ordinateur. N'hésitez pas à utiliser cet outil autant de fois que vous en avez besoin tout au long de la conception et de la mise en œuvre de votre projet d'automatisation.</p> </div> <h3>3. Puis-je utiliser l'outil d'EIA pour appuyer les évaluations d'incidences ou d'autres initiatives à l'extérieur du gouvernement du Canada?</h3> <p>Oui, l'outil d'EIA est un logiciel libre publié sous la licence MIT et vous êtes invités à l'utiliser pour vos propres besoins. Nous vous prions de bien vouloir inclure la licence et attribuer le travail où cela est requis.</p> <p>L'outil est mis à jour régulièrement. Vous pouvez suivre et participer à son développement sur <a href='https://github.com/canada-ca/aia-eia-js' target='_blank'>GitHub</a>.</p> <p>Nous vous encourageons à créer un problème sur le site du projet si vous trouvez un bogue ou rencontrez un problème.</p>"
                     }
                 }
             ]
@@ -20,6 +20,14 @@
                     "type": "panel",
                     "name": "projectDetailsPanel-NS",
                     "elements": [
+                        {
+                            "type": "text",
+                            "name": "projectAIAnumber",
+                            "title": {
+                                "default": "Published AIA version number",
+                                "fr": "Numéro de la version publiée de l’évaluation de l’incidence algorithmique (EIA)"
+                            }
+                        },
                         {
                             "type": "text",
                             "name": "projectDetailsRespondent",
@@ -38,6 +46,14 @@
                             "title": {
                                 "default": "Job Title",
                                 "fr": "Titre du poste"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "name": "ADMresponsible",
+                            "title": {
+                                "default": "Name of ADM responsible for the program using the automated decision system ",
+                                "fr": "Nom du sous-ministre adjoint ou de la sous-ministre adjointe responsable du programme pour lequel le système décisionnel automatisé est utilisé"
                             }
                         },
                         {
@@ -763,7 +779,15 @@
                             "name": "projectDetailsBranch",
                             "title": {
                                 "default": "Branch",
-                                "fr": "Direction"
+                                "fr": "Direction générale"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "name": "consultedTeams",
+                            "title": {
+                                "default": "Teams consulted on completion of the Algorithmic Impact Assessment",
+                                "fr": "Équipes consultées lors de l’EIA"
                             }
                         },
                         {
@@ -779,14 +803,22 @@
                             "name": "projectDetailsID",
                             "title": {
                                 "default": "Project ID from IT Plan",
-                                "fr": "Identifiant du projet provenant du Plan TI"
+                                "fr": "Numéro du projet dans le Plan des TI "
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "name": "ServiceID",
+                            "title": {
+                                "default": "Service ID",
+                                "fr": "ID du service"
                             }
                         },
                         {
                             "type": "text",
                             "name": "projectDetailsProgram",
                             "title": {
-                                "default": "Departmental Program (from Department Results Framework)",
+                                "default": "Departmental Program (from Departmental Results Framework)",
                                 "fr": "Programme ministériel (Cadre ministériel des résultats)"
                             }
                         },
@@ -819,7 +851,7 @@
                             "type": "comment",
                             "name": "projectDetailsDescription",
                             "title": {
-                                "default": "Please provide a project description:",
+                                "default": "Provide a project description:",
                                 "fr": "Veuillez fournir une description du projet :"
                             }
                         }
@@ -843,13 +875,13 @@
                             "name": "businessDrivers1",
                             "title": {
                                 "default": "What is motivating your team to introduce automation into this decision-making process? (Check all that apply)",
-                                "fr": "Qu'est-ce qui motive votre équipe à introduire l'automatisation dans ce processus décisionnel? (Cochez toutes les réponses qui s'appliquent.)"
+                                "fr": "Qu’est-ce qui motive votre équipe à intégrer l’automatisation dans ce processus décisionnel? (Cochez toutes les réponses qui s’appliquent.)"
                             },
                             "choices": [
                                 {
                                     "value": "item1",
                                     "text": {
-                                        "default": "Existing backlog of work or cases",
+                                        "default": "Reduce existing backlog of work or cases",
                                         "fr": "Arriéré de travail ou de cas existant"
                                     }
                                 },
@@ -870,8 +902,8 @@
                                 {
                                     "value": "item4",
                                     "text": {
-                                        "default": "The system is performing tasks that humans could not accomplish in a reasonable period of time",
-                                        "fr": "Le système exécute des tâches que les humains ne sont pas en mesure d'accomplir dans un délai raisonnable"
+                                        "default": "Perform tasks that humans could not accomplish in a reasonable period of time",
+                                        "fr": "Exécution par le système de tâches qu’une personne n’est pas en mesure d’accomplir dans un délai raisonnable"
                                     }
                                 },
                                 {
@@ -884,7 +916,7 @@
                                 {
                                     "value": "item6",
                                     "text": {
-                                        "default": "Other (please specify)",
+                                        "default": "Other (specify)",
                                         "fr": "Autre (veuillez préciser)"
                                     }
                                 }
@@ -903,16 +935,16 @@
                             "type": "comment",
                             "name": "businessDrivers3",
                             "title": {
-                                "default": "What client needs will the system address and how will this system meet them? If possible, describe how client needs have been identified.",
-                                "fr": "Quels sont les besoins des clients auxquels le système répondra et comment le système y répondra-t-il? Si possible, décrivez la façon dont les besoins des clients ont été déterminés."
+                                "default": "What are the client needs the system will address?  Describe how client needs have been identified. ",
+                                "fr": "Quels sont les besoins de la clientèle auxquels le système permettra de répondre? Décrivez les mesures prises pour déterminer les besoins de la clientèle."
                             }
                         },
                         {
                             "type": "comment",
                             "name": "businessDrivers4",
                             "title": {
-                                "default": "Please describe any public benefits the system is expected to have.",
-                                "fr": "Veuillez décrire tous les bienfaits d’intérêt public que le système devrait avoir."
+                                "default": "Describe any positive impacts on clients and Canadian society that the system is expected to have.",
+                                "fr": "Veuillez décrire tous les avantages que le système devrait apporter à la clientèle et à la société canadienne."
                             }
                         },
                         {
@@ -920,7 +952,7 @@
                             "name": "businessDrivers5",
                             "title": {
                                 "default": "How effective will the system likely be in meeting client needs?",
-                                "fr": "Dans quelle mesure le système sera-t-il efficace pour répondre aux besoins des clients?"
+                                "fr": "Dans quelle mesure le système permettra-t-il de répondre efficacement aux besoins de la clientèle?"
                             },
                             "choices": [
                                 {
@@ -944,6 +976,7 @@
                                         "fr": "Très efficace"
                                     }
                                 }
+                                
                             ]
                         },
                         {
@@ -958,16 +991,48 @@
                             "type": "comment",
                             "name": "businessDrivers7",
                             "title": {
-                                "default": "Please describe how you will ensure that the system is confined to addressing the client needs identified above.",
-                                "fr": "Veuillez décrire la façon dont vous allez vous assurer que le système se limite à répondre aux besoins des clients mentionnés ci-dessus."
+                                "default": "Describe how you will ensure that the system is confined to addressing the client needs identified.",
+                                "fr": "Veuillez décrire les mesures que vous prendrez pour vous assurer que le système ne servira qu’à répondre aux besoins de la clientèle."
                             }
                         },
                         {
                             "type": "comment",
                             "name": "businessDrivers8",
                             "title": {
-                                "default": "Please describe any trade-offs between client interests and program objectives that you have considered during the design of the project.",
-                                "fr": "Veuillez décrire toutes les concessions mutuelles entre les intérêts des clients et les objectifs du programme que vous avez pris en considération lors de l’élaboration du projet."
+                                "default": "Describe any trade-offs between client interests and program objectives that you have considered during the design of the project.",
+                                "fr": "Veuillez décrire tous les compromis envisagés lors de la conception du projet pour concilier les intérêts de la clientèle et les objectifs du programme."
+                            }
+                        },
+                         {
+                            "type": "comment",
+                            "name": "businessDrivers6A",
+                            "title": {
+                                "default": "Describe any improvements, benefits, or advantages your department expects from using an automated system.",
+                                "fr": "Veuillez décrire les améliorations, les bienfaits ou les avantages que votre ministère entend obtenir de l’utilisation d’un système automatisé."
+                            }
+                        },
+                         {
+                            "type": "comment",
+                            "name": "businessDrivers6B",
+                            "title": {
+                                "default": "What are your current program indicators, service standards or performance targets?",
+                                "fr": "Quels sont les indicateurs, les normes de service ou les objectifs de rendement de votre programme?"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "businessDrivers6C",
+                            "title": {
+                                "default": "What is your current performance level against these indicators, standards or targets?",
+                                "fr": "Quel est votre niveau de rendement par rapport à ces indicateurs, à ces normes ou à ces objectifs?"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "businessDrivers6D",
+                            "title": {
+                                "default": "How do you expect the system will change performance against your program indicators, service standards or performance targets?",
+                                "fr": "À votre avis, en quoi le système améliorera-t-il votre rendement par rapport aux indicateurs, aux normes de service ou aux objectifs de rendement établis pour votre programme?"
                             }
                         },
                         {
@@ -975,7 +1040,7 @@
                             "name": "businessDrivers9",
                             "title": {
                                 "default": "Have alternative non-automated processes been considered?",
-                                "fr": "D’autres options de processus non automatisés ont-elles été envisagées?"
+                                "fr": "D’autres processus non automatisés ont-elles été envisagées?"
                             },
                             "choices": [
                                 {
@@ -1000,7 +1065,7 @@
                             "visibleIf": "{businessDrivers9} contains \"item1-0\"",
                             "title": {
                                 "default": "If non-automated processes were considered, why was automation identified as the preferred option?",
-                                "fr": "Si des processus non automatisés ont été envisagés, pourquoi l’automatisation a-t-elle été l’option choisie?"
+                                "fr": "Si oui, pourquoi l’automatisation a-t-elle été la solution choisie?"
                             }
                         },
                         {
@@ -1012,44 +1077,44 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-3",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Service cannot be delivered at all",
-                                        "fr": "La prestation du service est impossible"
+                                        "fr": "La prestation du service serait impossible"
                                     }
                                 },
                                 {
-                                    "value": "item2-2",
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "Service cannot be delivered in a timely or efficient manner",
-                                        "fr": "La prestation du service ne peut pas être effectuée en temps voulu ou de manière efficace"
+                                        "fr": "La prestation du service ne pourrait pas être effectuée en temps voulu ou de manière efficace"
                                     }
                                 },
                                 {
                                     "value": "item3-0",
                                     "text": {
                                         "default": "Service costs are too high",
-                                        "fr": "Les coûts du service sont trop élevés"
+                                        "fr": "Les coûts du service seraient trop élevés"
                                     }
                                 },
                                 {
                                     "value": "item4-0",
                                     "text": {
                                         "default": "Service quality is not as high",
-                                        "fr": "La qualité du service n’est pas aussi élevée"
+                                        "fr": "La qualité du service ne serait pas aussi élevée"
                                     }
                                 },
                                 {
                                     "value": "item5-0",
                                     "text": {
                                         "default": "Service delivery cannot achieve performance targets",
-                                        "fr": "La prestation du service ne parvient pas à atteindre les objectifs de rendement"
+                                        "fr": "Les objectifs de rendement liés à la prestation du service ne pourraient pas être atteints"
                                     }
                                 },
                                 {
                                     "value": "item6-0",
                                     "text": {
-                                        "default": "Other (please specify)",
+                                        "default": "Other (specify)",
                                         "fr": "Autre (veuillez préciser)"
                                     }
                                 }
@@ -1060,8 +1125,8 @@
                             "name": "businessDrivers12",
                             "visibleIf": "{businessDrivers11} contains \"item6-0\"",
                             "title": {
-                                "default": "Please describe",
-                                "fr": "S'il vous plait décrire"
+                                "default": "Describe",
+                                "fr": "Veuillez expliquer votre réponse."
                             }
                         }
                     ]
@@ -1083,8 +1148,8 @@
                             "type": "radiogroup",
                             "name": "riskProfile1",
                             "title": {
-                                "default": "Is the project within an area of intense public scrutiny (e.g. because of privacy concerns) and/or frequent litigation?",
-                                "fr": "Le projet fait-il l'objet d'un examen public approfondi (e.g.: en raison de préoccupations liées à la protection de la vie privée) et/ou de litiges fréquents?"
+                                "default": "Is the project within an area of intense public scrutiny (for example, because of privacy concerns) and/or frequent litigation?",
+                                "fr": "Le projet s’inscrit-il dans un domaine sujet à un examen public approfondi (par exemple, en raison de préoccupations liées à la protection de la vie privée) et/ou à des litiges fréquents?"
                             },
                             "choices": [
                                 {
@@ -1107,84 +1172,12 @@
                             "type": "radiogroup",
                             "name": "riskProfile2",
                             "title": {
-                                "default": "Are clients in this line of business particularly vulnerable?",
-                                "fr": "Les clients de ce secteur d'activité sont-ils particulièrement vulnérables?"
+                                "default": "Does the line of business serve equity denied groups?",
+                                "fr": "Des groupes privés d’équité sont-ils desservis dans ce secteur d’activité?"
                             },
                             "choices": [
                                 {
                                     "value": "item1-3",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "riskProfile3",
-                            "title": {
-                                "default": "Are stakes of the decisions very high?",
-                                "fr": "Les enjeux des décisions de ce programme sont-ils très élevés? "
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-4",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "riskProfile4",
-                            "title": {
-                                "default": "Will this project have major impacts on staff, either in terms of their numbers or their roles?",
-                                "fr": "Ce projet aura-t-il d'importantes répercussions sur le personnel, que ce soit en termes de nombre ou de rôle?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-3",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "riskProfile5",
-                            "title": {
-                                "default": "Will the use of the system create or exacerbate barriers for persons with disabilities?",
-                                "fr": "L’utilisation du système entraînera-t-elle des difficultés pour les personnes en situation de handicap ou les accentuera-t-elle?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-4",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -1201,12 +1194,210 @@
                         },
                         {
                             "type": "comment",
-                            "name": "riskProfile6",
-                            "visibleIf": "{riskProfile5} = \"item1-4\"",
+                            "name": "riskProfile2A",
+                            "visibleIf": "{riskProfile2} contains \"item1-3\"",
                             "title": {
-                                "default": "If yes, please describe the barriers and any planned or existing measures to identify, remove, and/or prevent them.",
-                                "fr": "Si oui, veuillez décrire les difficultés et toute mesure prévue ou existante pour les identifier, les éliminer ou les éviter."
+                                "default": "Indicate which equity denied groups are served and describe your mitigation strategies to prevent adverse impacts for these groups.",
+                                "fr": "Veuillez indiquer les groupes privés d’équité desservis et décrire les stratégies d’atténuation qui seront prises pour éviter de leur causer préjudice."
                             }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "riskProfile3",
+                            "title": {
+                                "default": "Are there any population groups that the automated decision system should not be applied to?",
+                                "fr": "Certains groupes de population ne devraient-ils pas être exclus de l’application du système décisionnel automatisé?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "riskProfile3A",
+                            "visibleIf": "{riskProfile3} contains \"item1-1\"",
+                            "title": {
+                                "default": "Indicate the population group and explain why the automated decision system should not be applied.",
+                                "fr": "Veuillez indiquer les groupes de population qui devraient être exclus et expliquer pourquoi le système décisionnel automatisé ne doit pas être utilisé."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "riskProfile4",
+                            "title": {
+                                "default": "Has the system been assessed to understand whether it would create or exacerbate barriers for persons with disabilities?",
+                                "fr": "Le système a-t-il été soumis à une évaluation visant à déterminer s’il est susceptible d’accentuer les difficultés auxquelles sont confrontées les personnes en situation de handicap ou d’en créer de nouvelles?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-4",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "riskProfile4A",
+                            "visibleIf": "{riskProfile4} = \"item1-0\"",
+                            "title": {
+                                "default": "If yes, will the use of the system create or exacerbate barriers for persons with disabilities?",
+                                "fr": "Si oui, le système accentuera-t-il les difficultés auxquelles sont confrontées les personnes en situation de handicap ou en créera-t-il de nouvelles?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-4",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                       {
+                            "type": "comment",
+                            "name": "riskProfile4B",
+                            "visibleIf": "{riskProfile4A} contains \"item1-4\"",
+                            "title": {
+                                "default": "If yes, describe the barriers and any planned or existing measures to identify, remove, and/or prevent them.",
+                                "fr": "Si oui, veuillez décrire les difficultés observées et les mesures que vous mises en place pour les cerner, les éliminer ou les prévenir ou celles que vous avez prévues mettre en place."
+                            }
+                        },  
+                        {
+                            "type": "radiogroup",
+                            "name": "riskProfile7",
+                            "title": {
+                                "default": "Could the automated decision-system be at heightened risk of being an exploitation target for malicious actors (for example, fraud for financial gain)?",
+                                "fr": "Le recours au système décisionnel automatisé pourrait-il accroître le risque d'exploitation malveillants (par exemple, des fraudes financières)?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-3",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "riskProfile8",
+                            "title": {
+                                "default": "Have potential issues or harms with the existing service delivery approach been raised by clients or their representatives, the media, audits or parliamentary committees?",
+                                "fr": "Des problèmes ou des préjudices potentiels liés à l’approche utilisée pour la prestation de services ont-ils été soulevés par des personnes utilisant le service ou celles les représentant, les médias ou des membres de comités d’audit ou parlementaires?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "riskProfile8A",
+                            "visibleIf": "{riskProfile8} = \"item1-1\"",
+                            "title": {
+                                "default": "Indicate the issue or harm, the group that raised them, and how these have been addressed.",
+                                "fr": "Veuillez préciser le problème ou le préjudice en question, le groupe qui en a fait état et la manière dont il a été traité."
+                            }
+                        },
+                         {
+                            "type": "radiogroup",
+                            "name": "riskProfile9",
+                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
+                            "title": {
+                                "default": "Will you be submitting a concept case to TBS and presenting the project to the Government of Canada Enterprise Architecture Review Board?",
+                                "fr": "Avez-vous l’intention de soumettre un cas conceptuel au Secrétariat du Conseil du Trésor du Canada (SCT) et présenté le projet au conseil d’examen de l’architecture intégrée du gouvernement du Canada?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "riskProfile10",
+                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
+                            "title": {
+                                "default": "Have you submitted a concept case to TBS and presented the project to the Government of Canada Enterprise Architecture Review Board?",
+                                "fr": "Avez-vous soumis un cas conceptuel au Secrétariat du Conseil du Trésor du Canada (SCT) et présenté le projet au conseil d’examen de l’architecture intégrée du gouvernement du Canada?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
                         }
                     ]
                 }
@@ -1227,8 +1418,8 @@
                             "type": "radiogroup",
                             "name": "projectAuthority1",
                             "title": {
-                                "default": "Will you require new policy authority for this project?",
-                                "fr": "Aurez-vous besoin d'une nouvelle autorisation en termes de politiques pour ce projet ?"
+                                "default": "Will you require new policy or legal authority for this project?",
+                                "fr": "Aurez-vous besoin d’une nouvelle autorisation stratégique ou légale pour ce projet?"
                             },
                             "choices": [
                                 {
@@ -1260,55 +1451,55 @@
             "elements": [
                 {
                     "type": "panel",
-                    "name": "aboutSystemPanel-NS",
+                    "name": "aboutSystemPanel-RS",
                     "elements": [
                         {
                             "type": "checkbox",
                             "name": "aboutSystem1",
                             "title": {
-                                "default": "Please check which of the following capabilities apply to your system.",
-                                "fr": "Veuillez indiquer laquelle des capacités suivantes s'applique à votre système."
+                                "default": "Check which of the following capabilities apply to your system.",
+                                "fr": "Parmi les capacités suivantes, cochez celles qui s’appliquent à votre système."
                             },
                             "choices": [
                                 {
                                     "value": "item1",
                                     "text": {
-                                        "default": "Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.",
-                                        "fr": "Reconnaissance d'images et d'objets: Analyser de volumineux jeux de donnée pour automatiser la reconnaissance, la classification et le context associés à une image ou à un objet."
+                                        "default": "Image and object recognition: Analyzing large data sets to automate the recognition, classification, and context associated with an image or object",
+                                        "fr": "Reconnaissance d’images et d’objets : Analyse de vastes jeux de données pour l’automatisation de la reconnaissance, de la classification et du contexte associés à une image ou à un objet"
                                     }
                                 },
                                 {
                                     "value": "item2",
                                     "text": {
-                                        "default": "Text and speech analysis: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging",
-                                        "fr": "Analyse du texte et de la parole: Analyser de vastes jeux de données pour reconnaître, traiter et étiqueter le texte, la parole, la voix et faire des recommendations en fonction du marquage."
+                                        "default": "Text and speech analysis: Analyzing large data sets to recognize, process, and categorize text, speech and voice, and make recommendations based on the categorization",
+                                        "fr": "Analyse du texte et de la parole : Analyse de vastes jeux de données pour la reconnaissance, le traitement et la catégorisation de textes, de la parole et de la voix, ainsi que la formulation de recommandations fondées sur la catégorisation"
                                     }
                                 },
                                 {
                                     "value": "item3",
                                     "text": {
-                                        "default": "Risk assessment: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions",
-                                        "fr": "Évaluation des risques: Analyser de volumineux jeux de données pour déterminer les tendances et recommander des mesures et, dans certains cas, déclencher la prise de mesures précises. "
+                                        "default": "Risk assessment: Analyzing large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions",
+                                        "fr": "Évaluation des risques : Analyse de vastes jeux de données pour la détermination des tendances, la recommandation de plans d’action et, dans certains cas, la prise de mesures précises"
                                     }
                                 },
                                 {
                                     "value": "item4",
                                     "text": {
                                         "default": "Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts",
-                                        "fr": "Génération de contenu: Analyser de vastes jeux de données pour créer des catégories, traiter, trier, personnaliser et servir un contenu spécifique destiné à des contextes particuliers."
+                                        "fr": "Génération de contenu : Analyse de vastes jeux de données pour l’établissement de catégories, le traitement, le triage, la personnalisation et la présentation de contenus adaptés à des contextes particuliers"
                                     }
                                 },
                                 {
                                     "value": "item5",
                                     "text": {
-                                        "default": "Process optimization and workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows",
-                                        "fr": "Optimisation des processus et automatisation des flux de travail: Analyser de vastes jeux de données pour déterminer et corriger les anomalies, les modèles de grappes, prévoir les résultats ou les façons d'optimiser; et d'automatiser des flux de travail spécifique."
+                                        "default": "Process optimization and workflow automation: Analyzing large data sets to identify any anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows",
+                                        "fr": "Optimisation des processus et automatisation des flux de travail : Analyse de vastes jeux de données pour le recensement d’anomalies ou de modèles de grappes, la prévision des résultats ou de méthodes d’optimisation et l’automatisation de flux de travail particuliers"
                                     }
                                 },
                                 {
                                     "value": "item6",
                                     "text": {
-                                        "default": "Other (please specify)",
+                                        "default": "Other (Specify)",
                                         "fr": "Autre (veuillez préciser)"
                                     }
                                 }
@@ -1319,8 +1510,447 @@
                             "name": "aboutSystem2",
                             "visibleIf": "{aboutSystem1} contains [\"item6\"]",
                             "title": {
-                                "default": "Please describe",
-                                "fr": "S'il vous plait décrire"
+                                "default": "Describe",
+                                "fr": "Veuillez expliquer votre réponse."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem3",
+                            "title": {
+                                "default": "Who developed the system?",
+                                "fr": "Qui a conçu le système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Your institution",
+                                        "fr": "Votre organisation"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "Another federal institution",
+                                        "fr": "Une autre organisation fédérale"
+                                    }
+                                },
+                                {
+                                    "value": "item3-1",
+                                    "text": {
+                                        "default": "Another government",
+                                        "fr": "Une autre administration publique"
+                                    }
+                                },
+                                {
+                                    "value": "item4-1",
+                                    "text": {
+                                        "default": "A non-government third party",
+                                        "fr": "Un organisme tiers non gouvernemental"
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "comment",
+                            "name": "aboutSystem3A",
+                            "visibleIf": "{aboutSystem3} contains [\"item2\"]",
+                            "title": {
+                                "default": "Specify",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutSystem3B",
+                            "visibleIf": "{aboutSystem3} contains [\"item3\"]",
+                            "title": {
+                                "default": "Specify",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutSystem3C",
+                            "visibleIf": "{aboutSystem3} contains [\"item4\"]",
+                            "title": {
+                                "default": "Specify",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem4",
+                            "title": {
+                                "default": "Who configured the system?",
+                                "fr": "Qui a configuré le système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Your institution",
+                                        "fr": "Votre organisation"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "Another federal institution",
+                                        "fr": "Une autre organisation fédérale"
+                                    }
+                                },
+                                {
+                                    "value": "item3-1",
+                                    "text": {
+                                        "default": "Another government",
+                                        "fr": "Une autre administration publique"
+                                    }
+                                },
+                                {
+                                    "value": "item4-1",
+                                    "text": {
+                                        "default": "A non-government third party",
+                                        "fr": "Un organisme tiers non gouvernemental"
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "comment",
+                            "name": "aboutSystem4A",
+                            "visibleIf": "{aboutSystem4} contains [\"item2\"]",
+                            "title": {
+                                "default": "Specify",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutSystem4B",
+                            "visibleIf": "{aboutSystem4} contains [\"item3\"]",
+                            "title": {
+                                "default": "Specify",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutSystem4C",
+                            "visibleIf": "{aboutSystem4} contains [\"item4\"]",
+                            "title": {
+                                "default": "Specify",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem5",
+                            "title": {
+                                "default": "Is the system:",
+                                "fr": "Le système est-il :"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Open source",
+                                        "fr": "à code source ouvert"
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "Custom built",
+                                        "fr": "conçu sur mesure"
+                                    }
+                                },
+                                {
+                                    "value": "item3-2",
+                                    "text": {
+                                        "default": "Commercial off the shelf (COTS)",
+                                        "fr": "disponible sur le marché (COTS)"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "name": "aboutSystem5A",
+			                "visibleIf": "{aboutSystem5} = \"item1-0\"",
+                            "title": {
+                                "default": " Indicate the open source licence that applies.",
+                                "fr": "Si à code source ouvert, veuillez indiquer la licence à code source ouvert utilisée."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem5B",
+                            "visibleIf": "{aboutSystem5} = \"item1-0\"",
+                            "title": {
+                                "default": "Has the product been customized to add functionality beyond what is available off the shelf?",
+                                "fr": "S’il s’agit d’une solution à code source ouvert ou d’une solution COTS, a-t-elle été modifiée de sorte qu’elle comprenne d’autres fonctionnalités que celles offertes sur le marché?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem5C",
+                            "visibleIf": "{aboutSystem5} = \"item3-2\"",
+                            "title": {
+                                "default": "Has the product been customized to add functionality beyond what is available off the shelf?",
+                                "fr": "S’il s’agit d’une solution à code source ouvert ou d’une solution COTS, a-t-elle été modifiée de sorte qu’elle comprenne d’autres fonctionnalités que celles offertes sur le marché?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "comment",
+                            "name": "aboutSystem5D",
+                            "visibleIf": "{aboutSystem5B} = \"item1-0\"",
+                            "title": {
+                                "default": "Specify what has been customized and who performed the customization.",
+                                "fr": "Si oui, précisez les éléments qui ont été modifiés et l’organisation qui a procédé aux modifications."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutSystem5E",
+                            "visibleIf": "{aboutSystem5C} = \"item1-0\"",
+                            "title": {
+                                "default": "Specify what has been customized and who performed the customization.",
+                                "fr": "Si oui, précisez les éléments qui ont été modifiés et l’organisation qui a procédé aux modifications."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem6",
+                            "title": {
+                                "default": "Have you assigned accountability in your institution for the design, development, and maintenance, of the system?",
+                                "fr": "Des personnes responsables de la conception, de la mise au point et de l’entretien du système ont-elles été désignées au sein de votre organisation?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "radiogroup",
+                            "name": "aboutSystem7",
+                            "title": {
+                                "default": "Is there a group in your institution responsible for identifying and implementing opportunities for improvement?",
+                                "fr": "Un groupe de votre organisation est-il chargé de recenser les améliorations possibles et de les apporter?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem8",
+                            "title": {
+                                "default": "Does your system conform with the appropriate clauses of standard CAN/ASC EN 301 549:2024, Accessibility requirements for Information and Communication Technology (ICT) products and services? ",
+                                "fr": "Votre système est-il conforme aux dispositions appropriées de la norme CAN/ASC EN 301 549:2024, Exigences d’accessibilité pour les produits et services des technologies de l’information et de la communication (TIC)?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "comment",
+                            "name": "aboutSystem8A",
+                            "visibleIf": "{aboutSystem8} = \"item2-1\"",
+                            "title": {
+                                "default": "If no, describe why the system does not conform.",
+                                "fr": "Si non, expliquez en quoi votre système n’est pas conforme."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem9",
+                            "title": {
+                                "default": "Is a non-automated alternative planned and available in the event the automated decision system was unavailable for an extended period of time?",
+                                "fr": "Une solution non automatisée est-elle également prévue et fonctionnelle au cas où le système décisionnel automatisé serait indisponible pendant une période prolongée?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem10",
+                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
+                            "title": {
+                                "default": "Will there be a process in place to grant, monitor, and revoke access permission to the system?",
+                                "fr": "Une procédure permettant d’octroyer, de surveiller et de révoquer une autorisation d’accès au système sera-t-elle établie?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutSystem10A",
+                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
+                            "title": {
+                                "default": "Is there a process in place to grant, monitor, and revoke access permission to the system?",
+                                "fr": "Une procédure permettant d’octroyer, de surveiller et de révoquer une autorisation d’accès au système a-t-elle été établie?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "aboutSystem11",
+                            "title": {
+                                "default": "The impacts that the development, operation, and maintenance of the system could have on the ongoing sustainability of an environmental ecosystem, may be:",
+                                "fr": "L’incidence de la mise au point, de l’exploitation et de l’entretien du système sur la durabilité d’un écosystème environnemental sera :"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Little to no impact",
+                                        "fr": "faible, voire nulle"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "Moderate impact",
+                                        "fr": "modérée"
+                                    }
+                                },
+                                {
+                                    "value": "item3-3",
+                                    "text": {
+                                        "default": "High impact",
+                                        "fr": "élevée"
+                                    }
+                                },
+                                {
+                                    "value": "item4-4",
+                                    "text": {
+                                        "default": "Very high impact",
+                                        "fr": "très élevée"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutSystem12",
+                            "title": {
+                                "default": "Describe why the impacts resulting from the system’s development, operations and maintenance are as selected.",
+                                "fr": "Veuillez expliquer votre réponse."
                             }
                         }
                     ]
@@ -1355,7 +1985,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-3",
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -1397,6 +2027,271 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "checkbox",
+                            "name": "aboutAlgorithm3",
+                            "title": {
+                                "default": "Is the algorithm (Check all that apply):",
+                                "fr": "L’algorithme est (cochez toutes les réponses qui s’appliquent) :"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Based on rules developed from laws and policy and/or using human expertise (for example, if/then statements)",
+                                        "fr": "fondé sur des règles établies en fonction des lois et des politiques ou à l’aide de l’expertise humaine (par exemple, des énoncés de type « si » ou « alors »)"
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "Based on patterns in data identified by the AI model (for example, neural network, deep learning)",
+                                        "fr": "fondé sur des modèles de données déterminés par le modèle d’IA (par exemple, réseau neuronal et apprentissage profond)"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "checkbox",
+                            "name": "aboutAlgorithm4",
+                            "title": {
+                                "default": "If the automated decision-system is model based, is the model inference (select all that apply):",
+                                "fr": "Si le système décisionnel automatisé est fondé sur un modèle, l’inférence du modèle est-elle (cochez toutes les réponses qui s’appliquent) :"
+                            },
+                             "help":{
+                                "default": "See <a href=\"https://www.oecd.org/en/publications/oecd-framework-for-the-classification-of-ai-systems_cb6d9eca-en.html\">OECD Framework for the Classification of AI systems</a> for more information.",
+                                "fr": "Pour en savoir plus, consultez le <a href=\"https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/02/oecd-framework-for-the-classification-of-ai-systems_336a8b57/cb6d9eca-en.pdf\">Cadre de l’OCDE pour la classification des systèmes de l’IA</a>."
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Deterministic (follow precise rules and generate single outcome)",
+                                        "fr": "déterministe (suit des règles précises et produit un résultat unique) "
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "Probabilistic (infer several models to explain data)",
+                                        "fr": "probabiliste (explique les données en appliquant plusieurs modèles)"
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "radiogroup",
+                            "name": "aboutAlgorithm5",
+                            "title": {
+                                "default": "Is the model: ",
+                                "fr": "Le modèle est : "
+                            },
+                             "help":{
+                                "default": "See <a href=\"https://www.oecd.org/en/publications/oecd-framework-for-the-classification-of-ai-systems_cb6d9eca-en.html\">OECD Framework for the Classification of AI systems</a> for more information.",
+                                "fr": "Pour en savoir plus, consultez le <a href=\"https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/02/oecd-framework-for-the-classification-of-ai-systems_336a8b57/cb6d9eca-en.pdf\">Cadre de l’OCDE pour la classification des systèmes de l’IA</a>."
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Discriminative (for example, regression analyses, decision trees)",
+                                        "fr": "discriminatif (par exemple, analyses de régression et arbres de décision)"
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "Generative (for example, linear discriminant analysis, naïve Bayes)",
+                                        "fr": "génératif (par exemple, analyse discriminante linéaire et classification naïve bayésienne)"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutAlgorithm6",
+                            "title": {
+                                "default": "Describe the model being used.",
+                                "fr": "Veuillez décrire le modèle utilisé."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutAlgorithm7",
+                            "title": {
+                                "default": "Explain why you chose the model",
+                                "fr": "Expliquez pourquoi vous avez choisi ce modèle."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutAlgorithm8",
+                            "title": {
+                                "default": "Will the algorithm continue to learn and evolve as it is used?",
+                                "fr": "L’algorithme continuera-t-il à apprendre et à évoluer à mesure qu’il est utilisé?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-3",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutAlgorithm8A",
+                            "visibleIf": "{aboutAlgorithm8} = \"item1-3\"",
+                            "title": {
+                                "default": "If yes, are there mechanisms in place to monitor the changes?",
+                                "fr": "Si oui, des mécanismes ont-ils été mis en place pour vous permettre d’en suivre l’évolution?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutAlgorithm9",
+                            "title": {
+                                "default": "Does the algorithm consider protected characteristics to make its decisions or recommendations?",
+                                "fr": "L’algorithme tient-il compte des caractéristiques protégées lors de la prise de décisions ou de la formulation de recommandations?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutAlgorithm9A",
+                            "visibleIf": "{aboutAlgorithm9} = \"item1-2\"",
+                            "title": {
+                                "default": "Describe why protected characteristics are being considered and any mitigations in place to address potential issues with bias or discrimination.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles les caractéristiques protégées sont prises en compte et les mesures d’atténuation mises en place pour résoudre les problèmes de biais ou de discrimination, le cas échéant."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutAlgorithm10",
+                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
+                            "title": {
+                                "default": "Will you evaluate whether variables that the system bases its decisions or recommendations on could be proxies for protected characteristics?",
+                                "fr": "Allez-vous vérifier si les variables sur lesquelles le système fonde ses décisions ou ses recommandations pourraient être des substituts de caractéristiques protégées?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutAlgorithm11",
+                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
+                            "title": {
+                                "default": "Have you evaluated whether variables that the system bases its decisions or recommendations on could be proxies for protected characteristics?",
+                                "fr": "Avez-vous vérifié si les variables sur lesquelles le système fonde ses décisions ou ses recommandations pourraient être des substituts de caractéristiques protégées?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutAlgorithm10A",
+                            "visibleIf": "{aboutAlgorithm10} = \"item1-0\"",
+                            "title": {
+                                "default": "Describe which protected characteristics, risks identified, and how they have been addressed.",
+                                "fr": "Veuillez décrire les caractéristiques protégées, les risques recensés et les mesures prises pour les gérer."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutAlgorithm11A",
+                            "visibleIf": "{aboutAlgorithm11} = \"item1-0\"",
+                            "title": {
+                                "default": "Describe which protected characteristics, risks identified, and how they have been addressed.",
+                                "fr": "Veuillez décrire les caractéristiques protégées, les risques recensés et les mesures prises pour les gérer."
+                            }
+                        },
+
+                        {
+                            "type": "comment",
+                            "name": "aboutAlgorithm10B",
+                            "visibleIf": "{aboutAlgorithm10} = \"item2-2\"",
+                            "title": {
+                                "default": "Describe why you have not evaluated whether variables could be proxies for protected characteristics.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles vous n’avez pas vérifié si les variables peuvent être des substituts de caractéristiques protégées."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutAlgorithm11B",
+                            "visibleIf": "{aboutAlgorithm11} = \"item2-2\"",
+                            "title": {
+                                "default": "Describe why you have not evaluated whether variables could be proxies for protected characteristics.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles vous n’avez pas vérifié si les variables peuvent être des substituts de caractéristiques protégées."
+                            }
                         }
                     ]
                 }
@@ -1417,51 +2312,51 @@
                             "type": "comment",
                             "name": "decisionSector3",
                             "title": {
-                                "default": "Please describe the decision(s) that will be automated.",
-                                "fr": "Veuillez décrire la ou les décisions qui seront automatisées."
+                                "default": "Describe the administrative decision(s) that is being supported or made by the algorithm.",
+                                "fr": "Veuillez décrire les décisions administratives qui seront appuyées ou exécutées par l’algorithme."
                             }
                         },
                         {
                             "type": "checkbox",
                             "name": "decisionSector1",
                             "title": {
-                                "default": "Does the decision pertain to any of the categories below (check all that apply):",
-                                "fr": "La décision s'applique-t-elle à l'une ou l'autre des catégories ci-dessous (*Cochez toutes les réponses qui s'appliquent) :"
+                                "default": "Does the decision pertain to any of the categories below (check all that apply). Note that the examples in brackets are not exhaustive.",
+                                "fr": "La décision s’applique-t-elle à l’une ou l’autre des catégories ci-dessous (cochez toutes les réponses qui s’appliquent)? Il convient de préciser que les exemples cités entre parenthèses ne sont pas exhaustifs."
                             },
                             "choices": [
                                 {
                                     "value": "item1-1",
                                     "text": {
-                                        "default": "Health related services",
-                                        "fr": "Services liés à la santé"
+                                        "default": "Health-related services (environmental and workplace health, product and food safety, drug regulation)",
+                                        "fr": "Services liés à la santé (santé de l’environnement et du milieu de travail, sécurité des produits et des aliments et réglementation des médicaments)"
                                     }
                                 },
                                 {
                                     "value": "item2-1",
                                     "text": {
                                         "default": "Economic interests (grants and contributions, tax benefits, debt collection)",
-                                        "fr": "Intérêts économiques (subventions et contributions, avantages fiscaux, recouvrement de dettes)"
+                                        "fr": "Intérêts économiques (subventions et contributions, avantages fiscaux, recouvrement de dettes) "
                                     }
                                 },
                                 {
                                     "value": "item3-1",
                                     "text": {
-                                        "default": "Social assistance (employment insurance, disability claims)",
-                                        "fr": "Aide sociales (assurance-emploi, demandes de prestations d'invalidité)"
+                                        "default": "Social assistance (employment insurance, disability or housing benefits, children or seniors programs)",
+                                        "fr": "Aide sociale (prestations d’assurance-emploi, d’invalidité ou pour le logement et programmes pour les enfants ou les aînés)"
                                     }
                                 },
                                 {
                                     "value": "item4-1",
                                     "text": {
-                                        "default": "Access and mobility (security clearances, border crossings)",
-                                        "fr": "Accès et mobilité (habitations de sécurité, passages frontaliers)"
+                                        "default": "Access and mobility (security clearances, border management, immigration)",
+                                        "fr": "Accès et mobilité (habitations de sécurité, gestion des frontières, immigration)"
                                     }
                                 },
                                 {
                                     "value": "item5-1",
                                     "text": {
-                                        "default": "Licensing and issuance of permits",
-                                        "fr": "Accréditation et délivrance de permis"
+                                        "default": "Licensing and issuance of permits (possession and acquisition licence, export permits, commercial fishing licence)",
+                                        "fr": "Accréditation et délivrance de permis (permis de possession et d’acquisition, d’exportation et de pêche commerciale)"
                                     }
                                 },
                                 {
@@ -1472,9 +2367,16 @@
                                     }
                                 },
                                 {
+                                    "value": "item8-1",
+                                    "text": {
+                                        "default": "Public safety and law enforcement (investigating criminal acts)",
+                                        "fr": "Sécurité publique et application de la loi (enquêtes sur les actes criminels)"
+                                    }
+                                },
+                                {
                                     "value": "item6-1",
                                     "text": {
-                                        "default": "Other (please specify)",
+                                        "default": "Other (specify)",
                                         "fr": "Autre (veuillez préciser)"
                                     }
                                 }
@@ -1485,8 +2387,8 @@
                             "name": "decisionSector2",
                             "visibleIf": "{decisionSector1} contains [\"item6-1\"]",
                             "title": {
-                                "default": "Please describe",
-                                "fr": "S'il vous plait décrire"
+                                "default": "Describe",
+                                "fr": "Veuillez expliquer votre réponse."
                             }
                         }
                     ]
@@ -1509,7 +2411,7 @@
                             "name": "impact30",
                             "title": {
                                 "default": "Which of the following best describes the type of automation you are planning? ",
-                                "fr": "Parmi les propositions suivantes, laquelle décrit le mieux le type d’automatisation que vous envisagez? "
+                                "fr": "Parmi les énoncés suivants, lequel décrit le mieux le type d’automatisation envisagé?"
                             },
                             "choices": [
                                 {
@@ -1522,8 +2424,8 @@
                                 {
                                     "value": "item2-2",
                                     "text": {
-                                        "default": "Partial automation (the system will contribute to administrative decision-making by supporting an officer through assessments, recommendations, intermediate decisions, or other outputs)",
-                                        "fr": "Automatisation partielle (le système facilitera la prise de décisions administratives en appuyant un agent au moyen d’évaluations, de recommandations, de décisions provisoires ou d’autres résultats)"
+                                        "default": "Partial automation (the system will contribute to administrative decision-making by supporting an officer with assessments, recommendations, intermediate decisions, or other outputs)",
+                                        "fr": "Automatisation partielle (le système contribuera à la prise de décision administrative en fournissant aux fonctionnaires des évaluations, des recommandations, des décisions intermédiaires ou d’autres extrants)"
                                     }
                                 }
                             ]
@@ -1532,16 +2434,16 @@
                             "type": "comment",
                             "name": "impact31",
                             "title": {
-                                "default": "Please describe the role of the system in the decision-making process.",
-                                "fr": "Veuillez décrire le rôle du système dans le processus de prise de décisions."
+                                "default": "Describe the role of the system in the decision-making process.",
+                                "fr": "Veuillez décrire le rôle du système dans le cadre du processus décisionnel."
                             }
                         },
                         {
                             "type": "radiogroup",
                             "name": "impact3",
                             "title": {
-                                "default": "Will the system be making decisions or assessments that require judgement or discretion?",
-                                "fr": "Le système prendra-t-il des décisions ou effectuera-t-il des évaluations qui exigent du jugement ou de la discrétion?"
+                                "default": "Will the system be making decisions or assessments that require judgment or discretion?",
+                                "fr": "Les décisions et les analyses qui exigent du jugement ou du discernement seront-elles prises en charge par le système?"
                             },
                             "choices": [
                                 {
@@ -1560,28 +2462,21 @@
                                 }
                             ]
                         },
-                        {
+                         {
                             "type": "comment",
-                            "name": "impact20",
+                            "name": "impact3A",
+                            "visibleIf": "{impact3} = \"item1-4\"",
                             "title": {
-                                "default": "Please describe the criteria used to evaluate client data and the operations applied to process it.",
-                                "fr": "Veuillez décrire les critères utilisés pour évaluer les données des clients et les procédures appliquées pour les traiter."
-                            }
-                        },
-                        {
-                            "type": "comment",
-                            "name": "impact21",
-                            "title": {
-                                "default": "Please describe the output produced by the system and any relevant information needed to interpret it in the context of the administrative decision.",
-                                "fr": "Veuillez décrire le résultat produit par le système et les renseignements pertinents nécessaires à l’interprétation dans le contexte de la décision administrative."
+                                "default": "Describe.",
+                                "fr": "Veuillez préciser."
                             }
                         },
                         {
                             "type": "radiogroup",
-                            "name": "impact22",
+                            "name": "impact4A",
                             "title": {
-                                "default": "Will the system perform an assessment or other operation that would not otherwise be completed by a human?",
-                                "fr": "Le système effectuera-t-il une évaluation ou une autre activité qui ne serait autrement pas réalisée par un humain?"
+                                "default": "Will this project have major impacts on staff, either in terms of their numbers or their roles?",
+                                "fr": "Ce projet aura-t-il une incidence importante sur les membres du personnel, que ce soit en ce qui a trait à leur nombre ou à leur rôle?"
                             },
                             "choices": [
                                 {
@@ -1602,11 +2497,51 @@
                         },
                         {
                             "type": "comment",
-                            "name": "impact23",
-                            "visibleIf": "{impact22} contains [\"item1-2\"]",
+                            "name": "impact20",
                             "title": {
-                                "default": "If yes, please describe the relevant function(s) of the system.",
-                                "fr": "Si oui, veuillez décrire la ou les fonctions pertinentes du système."
+                                "default": "Describe the criteria used to evaluate client data and the operations applied to process it.",
+                                "fr": "Veuillez décrire les critères utilisés pour l’analyse des données de la clientèle et les procédures appliquées pour les traiter."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "impact21",
+                            "title": {
+                                "default": "Describe the output produced by the system and any relevant information needed to interpret it in the context of the administrative decision.",
+                                "fr": "Veuillez décrire le résultat produit par le système et les renseignements utiles à leur interprétation dans le cadre du processus de décision administrative."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "impact22",
+                            "title": {
+                                "default": "Will the system perform an assessment or other operation that is not currently completed by a human?",
+                                "fr": "Le système effectuera-t-il une évaluation ou une autre opération qui n’est pas actuellement exécutée par le personnel?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "impact22A",
+                            "visibleIf": "{impact22} = \"item1-2\"",
+                            "title": {
+                                "default": "If yes, describe the relevant function(s) of the system ",
+                                "fr": "Si oui, veuillez décrire toute fonction pertinente du système."
                             }
                         },
                         {
@@ -1614,11 +2549,11 @@
                             "name": "impact5",
                             "title": {
                                 "default": "Is the system used by a different part of the organization than the ones who developed it?",
-                                "fr": "Le système est-il utilisé par une partie de l’organisation différente de celle à laquelle appartiennent ceux qui l’ont développé?"
+                                "fr": "Le système est-il utilisé par une partie de l’organisation autre que celle où il a été conçu? "
                             },
                             "choices": [
                                 {
-                                    "value": "item1-4",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -1638,7 +2573,7 @@
                             "name": "impact6",
                             "title": {
                                 "default": "Are the impacts resulting from the decision reversible?",
-                                "fr": "Les incidences découlant de la décision sont-elles réversibles?"
+                                "fr": "Les incidences de la décision sont-elles réversibles?"
                             },
                             "choices": [
                                 {
@@ -1675,7 +2610,7 @@
                             "type": "dropdown",
                             "name": "impact7",
                             "title": {
-                                "default": "How long will impacts from the decision last?",
+                                "default": "How long could impacts from the decision last?",
                                 "fr": "Combien de temps les incidences de la décision dureront-elles?"
                             },
                             "choices": [
@@ -1713,16 +2648,16 @@
                             "type": "comment",
                             "name": "impact8",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
-                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus). "
+                                "default": "Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles les incidences de la décision sont telles qu’elles ont été définies, de même que les risques recensés et les mesures d’atténuation mises en place."
                             }
                         },
                         {
                             "type": "dropdown",
                             "name": "impact9",
                             "title": {
-                                "default": "The impacts that the decision will have on the rights or freedoms of individuals will likely be:",
-                                "fr": "Les incidences de la décision sur les droits ou libertés des personnes seront probablement les suivantes :"
+                                "default": "The impacts that the decision could have on the rights or freedoms of individuals may be:",
+                                "fr": "Les incidences de la décision sur les droits et libertés des personnes pourraient être les suivants :"
                             },
                             "choices": [
                                 {
@@ -1759,16 +2694,16 @@
                             "type": "comment",
                             "name": "impact10",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
-                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                                "default": "Describe how this impact level was determined. Include which human rights frameworks were assessed, potential risk that were identified and mitigations put in place.",
+                                "fr": "Veuillez préciser la façon dont la portée des incidences a été déterminée. Indiquez les cadres des droits de la personne qui ont été évalués, les risques qui ont été recensés ainsi que les mesures d’atténuation qui ont été mises en place."
                             }
                         },
                         {
                             "type": "dropdown",
                             "name": "impact24",
                             "title": {
-                                "default": "The impacts that the decision will have on the equality, dignity, privacy, and autonomy of individuals will likely be:",
-                                "fr": "Les incidences de la décision sur l’égalité, la dignité, la vie privée et l’autonomie des personnes seront probablement :"
+                                "default": "The impacts that the decision could have on the equality, dignity, privacy, and autonomy of individuals may be: ",
+                                "fr": "Les incidences de la décision sur l’égalité, la dignité, la vie privée et l’autonomie des personnes pourraient être les suivants :"
                             },
                             "choices": [
                                 {
@@ -1805,16 +2740,16 @@
                             "type": "comment",
                             "name": "impact25",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
-                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                                "default": "Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles les incidences de la décision sont telles qu’elles ont été définies, de même que les risques recensés et les mesures d’atténuation mises en place."
                             }
                         },
                         {
                             "type": "dropdown",
                             "name": "impact11",
                             "title": {
-                                "default": "The impacts that the decision will have on the health and well-being of individuals will likely be:",
-                                "fr": "Les incidences de la décision sur la santé et le bien-être des personnes seront probablement les suivantes :"
+                                "default": "The impacts that the decision could have on the health and well-being of individuals may be:",
+                                "fr": "Les incidences de la décision sur la santé et le bien-être des pourraient être les suivants :"
                             },
                             "choices": [
                                 {
@@ -1851,16 +2786,16 @@
                             "type": "comment",
                             "name": "impact12",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
-                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                                "default": "Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles les incidences de la décision sont telles qu’elles ont été définies, de même que les risques recensés et les mesures d’atténuation mises en place."
                             }
                         },
                         {
                             "type": "dropdown",
                             "name": "impact13",
                             "title": {
-                                "default": "The impacts that the decision will have on the economic interests of individuals will likely be:",
-                                "fr": "Les incidences de la décision sur les intérêts économiques des personnes seront probablement les suivantes :"
+                                "default": "The impacts that the decision could have on the economic interests of individuals may be:",
+                                "fr": "Les incidences de la décision sur les intérêts économiques des personnes pourraient être les suivants :"
                             },
                             "choices": [
                                 {
@@ -1897,16 +2832,16 @@
                             "type": "comment",
                             "name": "impact14",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
-                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                                "default": "Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles les incidences de la décision sont telles qu’elles ont été définies, de même que les risques recensés et les mesures d’atténuation mises en place."
                             }
                         },
                         {
                             "type": "dropdown",
                             "name": "impact15",
                             "title": {
-                                "default": "The impacts that the decision will have on the ongoing sustainability of an environmental ecosystem, will likely be:",
-                                "fr": "Les incidences de la décision sur la pérennité d’un écosystème environnemental seront probablement les suivantes :"
+                                "default": "The impacts that the decision could have on the ongoing sustainability of an environmental ecosystem, may be:",
+                                "fr": "Les incidences de la décision sur la pérennité d’un écosystème environnemental pourraient être les suivants :"
                             },
                             "choices": [
                                 {
@@ -1943,9 +2878,59 @@
                             "type": "comment",
                             "name": "impact16",
                             "title": {
-                                "default": "Please describe why the impacts resulting from the decision are as per selected option above.",
-                                "fr": "Veuillez indiquer pour quelle raison les incidences découlant de la décision sont (selon l’option sélectionnée ci-dessus)."
+                                "default": "Describe why the impacts resulting from the decision are as selected, including potential risks identified and mitigations in place.",
+                                "fr": "Veuillez préciser les raisons pour lesquelles les incidences de la décision sont telles qu’elles ont été définies, de même que les risques recensés et les mesures d’atténuation mises en place."
                             }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "impact17",
+                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
+                            "title": {
+                                "default": "Will you assess system performance for clients with a range of personal and intersectional identity factors (for example, gender, age, race, language, ethnicity, disability) to verify that decisions and outcomes are fair for a diverse group of people?",
+                                "fr": "Allez-vous évaluer le rendement du système pour la clientèle ayant plusieurs facteurs d’identité personnels et intersectionnels (par exemple, le genre, l’âge, la race, la langue, l’origine ethnique ou le handicap) afin de vous assurer que les décisions et les incidences sont équitables pour un groupe de personnes diversifié?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-3",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                                                {
+                            "type": "radiogroup",
+                            "name": "impact18",
+                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
+                            "title": {
+                                "default": "Have you assessed system performance for clients with a range of personal and intersectional identity factors (for example, gender, age, race, language, ethnicity, disability) to verify that decisions and outcomes are fair for a diverse group of people?",
+                                "fr": "Avez-vous évalué le rendement du système pour la clientèle ayant plusieurs facteurs d’identité personnels et intersectionnels (par exemple, le genre, l’âge, la race, la langue, l’origine ethnique ou le handicap) afin de vous assurer que les décisions et les incidences sont équitables pour un groupe de personnes diversifié?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-3",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
                         }
                     ]
                 }
@@ -3864,12 +4849,12 @@
                             "type": "radiogroup",
                             "name": "fairnessDesign17",
                             "title": {
-                                "default": "Will you be preparing a concept case to the Government of Canada Enterprise Architecture Review Board?",
-                                "fr": "Allez-vous préparer un dossier conceptuel à l'intention du Comité d'examen de l'architecture d'entreprise du gouvernement du Canada?"
+                                "default": "Will you be submitting a concept case to TBS and presenting the project to the Government of Canada Enterprise Architecture Review Board?",
+                                "fr": "Avez-vous l’intention de soumettre un cas conceptuel au Secrétariat du Conseil du Trésor du Canada (SCT) et présenté le projet au conseil d’examen de l’architecture intégrée du gouvernement du Canada?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-0",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -4292,12 +5277,12 @@
                             "type": "radiogroup",
                             "name": "fairnessImplementation17",
                             "title": {
-                                "default": "Have you prepared a concept case to the Government of Canada Enterprise Architecture Review Board?",
-                                "fr": "Avez-vous préparé un dossier conceptuel à l'intention du Comité d'examen de l'architecture d'entreprise du gouvernement du Canada?"
+                                "default": "Have you submitted a concept case to TBS and presented the project to the Government of Canada Enterprise Architecture Review Board?",
+                                "fr": "Avez-vous soumis un cas conceptuel au Secrétariat du Conseil du Trésor du Canada (SCT) et présenté le projet au conseil d’examen de l’architecture intégrée du gouvernement du Canada?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-0",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
