@@ -2432,7 +2432,6 @@
                          {
                             "type": "comment",
                             "name": "impact3A",
-                            "visibleIf": "{impact3} = \"item1-4\"",
                             "title": {
                                 "default": "Describe.",
                                 "fr": "Veuillez préciser."
