@@ -981,14 +981,6 @@
                         },
                         {
                             "type": "comment",
-                            "name": "businessDrivers6",
-                            "title": {
-                                "default": "Please describe any improvements, benefits, or advantages you expect from using an automated system. This could include relevant program indicators and performance targets.",
-                                "fr": "Veuillez décrire les améliorations, les bienfaits ou les avantages que vous attendez de l’utilisation d’un système automatisé. Cela pourrait inclure des indicateurs de programme et des objectifs de rendement pertinents."
-                            }
-                        },
-                        {
-                            "type": "comment",
                             "name": "businessDrivers7",
                             "title": {
                                 "default": "Describe how you will ensure that the system is confined to addressing the client needs identified.",
