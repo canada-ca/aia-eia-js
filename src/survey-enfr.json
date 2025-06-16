@@ -2715,7 +2715,7 @@
                             "name": "impact11",
                             "title": {
                                 "default": "The impacts that the decision could have on the health and well-being of individuals may be:",
-                                "fr": "Les incidences de la décision sur la santé et le bien-être des pourraient être les suivants :"
+                                "fr": "Les incidences de la décision sur la santé et le bien-être des personnes pourraient être les suivants :"
                             },
                             "choices": [
                                 {
