@@ -1650,7 +1650,7 @@
                             "name": "aboutSystem5",
                             "title": {
                                 "default": "Is the system:",
-                                "fr": "Le système est-il :"
+                                "fr": "Le système est-il:"
                             },
                             "choices": [
                                 {
@@ -1688,7 +1688,7 @@
                         {
                             "type": "radiogroup",
                             "name": "aboutSystem5B",
-                            "visibleIf": "{aboutSystem5} = \"item1-0\"",
+                            "visibleIf": "{aboutSystem5} = \"item1-0\" or {aboutSystem5} = \"item3-2\"",
                             "title": {
                                 "default": "Has the product been customized to add functionality beyond what is available off the shelf?",
                                 "fr": "S’il s’agit d’une solution à code source ouvert ou d’une solution COTS, a-t-elle été modifiée de sorte qu’elle comprenne d’autres fonctionnalités que celles offertes sur le marché?"
@@ -1711,43 +1711,9 @@
                             ]
                         },
                         {
-                            "type": "radiogroup",
+                            "type": "comment",
                             "name": "aboutSystem5C",
-                            "visibleIf": "{aboutSystem5} = \"item3-2\"",
-                            "title": {
-                                "default": "Has the product been customized to add functionality beyond what is available off the shelf?",
-                                "fr": "S’il s’agit d’une solution à code source ouvert ou d’une solution COTS, a-t-elle été modifiée de sorte qu’elle comprenne d’autres fonctionnalités que celles offertes sur le marché?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-0",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                         {
-                            "type": "comment",
-                            "name": "aboutSystem5D",
                             "visibleIf": "{aboutSystem5B} = \"item1-0\"",
-                            "title": {
-                                "default": "Specify what has been customized and who performed the customization.",
-                                "fr": "Si oui, précisez les éléments qui ont été modifiés et l’organisation qui a procédé aux modifications."
-                            }
-                        },
-                        {
-                            "type": "comment",
-                            "name": "aboutSystem5E",
-                            "visibleIf": "{aboutSystem5C} = \"item1-0\"",
                             "title": {
                                 "default": "Specify what has been customized and who performed the customization.",
                                 "fr": "Si oui, précisez les éléments qui ont été modifiés et l’organisation qui a procédé aux modifications."
@@ -2041,7 +2007,7 @@
                                     "value": "item1-0",
                                     "text": {
                                         "default": "Based on rules developed from laws and policy and/or using human expertise (for example, if/then statements)",
-                                        "fr": "fondé sur des règles établies en fonction des lois et des politiques ou à l’aide de l’expertise humaine (par exemple, des énoncés de type « si » ou « alors »)"
+                                        "fr": "fondé sur des règles établies en fonction des lois et des politiques ou à l’aide de l’expertise humaine (par exemple, des énoncés de type «si» ou «alors»)"
                                     }
                                 },
                                 {
