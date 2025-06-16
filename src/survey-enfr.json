@@ -1713,7 +1713,7 @@
                         {
                             "type": "comment",
                             "name": "aboutSystem5C",
-                            "visibleIf": "{aboutSystem5B} = \"item1-0\"",
+                            "visibleIf": "({aboutSystem5} = \"item1-0\" or {aboutSystem5} = \"item3-2\") and {aboutSystem5B} = \"item1-0\"",
                             "title": {
                                 "default": "Specify what has been customized and who performed the customization.",
                                 "fr": "Si oui, précisez les éléments qui ont été modifiés et l’organisation qui a procédé aux modifications."
