@@ -3295,12 +3295,12 @@
                             "type": "radiogroup",
                             "name": "aboutDataSource1",
                             "title": {
-                                "default": "Will the Automated Decision System use personal information as input data?",
-                                "fr": "Le système de décision automatisé utilisera-t-il des renseignements personnels comme données d’entrée?"
+                                "default": "Will the system use personal information as input data?",
+                                "fr": "Les données saisies dans le système comprendront-elles des renseignements personnels?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1-4",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -3318,10 +3318,10 @@
                         {
                             "type": "radiogroup",
                             "name": "aboutDataSource9",
-                            "visibleIf": "{aboutDataSource1} = \"item1-4\"",
+                            "visibleIf": "{aboutDataSource1} = \"item1-2\"",
                             "title": {
-                                "default": "Have you verified that the use of personal information is limited to only what is directly related to delivering a program or service?",
-                                "fr": "Avez-vous vérifié que l'utilisation des renseignements personnels est limitée à ce qui est directement lié à la prestation d'un programme ou d'un service?"
+                                "default": "Have you verified that the collection of personal information is limited to only what is directly related to a program or activity of your institution?",
+                                "fr": "Avez-vous vérifié si les renseignements personnels recueillis se limitent à ceux qui sont directement liés à un programme ou à une activité de votre organisation?"
                             },
                             "choices": [
                                 {
@@ -3332,7 +3332,7 @@
                                     }
                                 },
                                 {
-                                    "value": "item2-4",
+                                    "value": "item2-2",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3343,10 +3343,10 @@
                         {
                             "type": "radiogroup",
                             "name": "aboutDataSource10",
-                            "visibleIf": "{aboutDataSource1} = \"item1-4\"",
+                            "visibleIf": "{aboutDataSource1} = \"item1-2\"",
                             "title": {
-                                "default": "Is the personal information of individuals being used in a decision-making process that directly affects those individuals?",
-                                "fr": "Les renseignements personnels des individus sont-ils utilisés dans un processus décisionnel qui affecte directement ces individus?"
+                                "default": "Is the personal information of individuals used in a decision-making process that affects those individuals?",
+                                "fr": "Les renseignements personnels recueillis auprès des personnes seront-ils utilisés dans le cadre d’’un processus décisionnel qui aura une incidence sur elles?"
                             },
                             "choices": [
                                 {
@@ -3368,10 +3368,10 @@
                         {
                             "type": "radiogroup",
                             "name": "aboutDataSource11",
-                            "visibleIf": "{aboutDataSource1} = \"item1-4\"",
+                            "visibleIf": "{aboutDataSource1} = \"item1-2\"",
                             "title": {
-                                "default": "Have you verified if the system is using personal information in a way that is consistent with: (a) the current Personal Information Banks (PIBs) and Privacy Impact Assessments (PIAs) of your programs or (b) planned or implemented modifications to the PIBs or PIAs that take new uses and processes into account?",
-                                "fr": "Avez-vous vérifié si le système utilise les renseignements personnels d'une manière compatible avec: (a) les fichiers de renseignements personnels (FRP) et évaluations des facteurs relatifs à la vie privée (EFVP) de vos programmes ou (b) les modifications prévues ou mises en oeuvre des FRP ou des EFVP qui tiennent compte des nouveaux usages et processus?"
+                                "default": "Have you verified whether the system is using personal information in a way that is consistent with: (a) the current personal information banks (PIBs) and privacy impact assessments (PIAs) of your programs or (b) planned or implemented modifications to the PIBs or PIAs that take new uses and processes into account?",
+                                "fr": "Avez-vous vérifié si le système utilise les renseignements personnels d’une manière qui est compatible avec : a) les fichiers de renseignements personnels (FRP) et les évaluations des facteurs relatifs à la vie privée (EFVP) de vos programmes; b) les modifications prévues ou apportées aux FRP ou aux EFVP qui tiennent compte des nouveaux usages et processus?"
                             },
                             "choices": [
                                 {
@@ -3393,10 +3393,10 @@
                         {
                             "type": "text",
                             "name": "aboutDataSource12",
-                            "visibleIf": "{aboutDataSource11} = \"item1-0\"",
+                            "visibleIf": "{aboutDataSource1} = \"item1-2\" and {aboutDataSource11} = \"item1-0\"",
                             "title": {
-                                "default": "Please list relevant PIB Bank Numbers.",
-                                "fr": "Veuillez énumérer les numéros de fichiers FRP pertinents."
+                                "default": "List relevant PIB numbers.",
+                                "fr": "Veuillez indiquer le numéro des FRP pertinents."
                             }
                         },
                         {
@@ -3422,27 +3422,57 @@
                                     }
                                 },
                                 {
-                                    "value": "item3-2",
+                                    "value": "item4-3",
                                     "text": {
-                                        "default": "Classified / Confidential",
-                                        "fr": "Classifié/confidentiel"
+                                        "default": "Protected B",
+                                        "fr": "Protégé B"
                                     }
                                 },
                                 {
-                                    "value": "item4-3",
+                                    "value": "item6-3",
                                     "text": {
-                                        "default": "Protected B / Protected C",
-                                        "fr": "Protégé B/Protégé C"
+                                        "default": "Protected C",
+                                        "fr": "Protégé C"
+                                    }
+                                },
+                                {
+                                    "value": "item3-2",
+                                    "text": {
+                                        "default": "Confidential",
+                                        "fr": "confidentiel"
                                     }
                                 },
                                 {
                                     "value": "item5-4",
                                     "text": {
-                                        "default": "Secret / Top Secret",
-                                        "fr": "Secret/Très Secret"
+                                        "default": "Secret",
+                                        "fr": "Secret"
+                                    }
+                                },
+                                {
+                                    "value": "item7-4",
+                                    "text": {
+                                        "default": "Top Secret",
+                                        "fr": "Très Secret"
+                                    }
+                                },
+                                {
+                                    "value": "item8-0",
+                                    "text": {
+                                        "default": "Other",
+                                        "fr": "Autre"
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "text",
+                            "name": "aboutDataSource2A",
+			                "visibleIf": "{aboutDataSource2} = \"item8-0\"",
+                            "title": {
+                                "default": "Please specify",
+                                "fr": "Précisez"
+                            }
                         },
                         {
                             "type": "dropdown",
