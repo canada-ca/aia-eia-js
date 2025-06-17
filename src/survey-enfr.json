@@ -4006,12 +4006,12 @@
                             "type": "radiogroup",
                             "name": "consultationDesign1",
                             "title": {
-                                "default": "Internal Stakeholders (federal institutions, including the federal public service)",
-                                "fr": "Intervenants internes (institutions fédérales, y compris la fonction publique fédérale)"
+                                "default": "Internal consultees or partners (federal institutions, including the federal public service).",
+                                "fr": "Des partenaires ou des parties consultantes à l’interne (organisations fédérales, y compris la fonction publique fédérale)."
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -4031,8 +4031,8 @@
                             "name": "consultationDesign2",
                             "visibleIf": "{consultationDesign1} = \"item1-1\"",
                             "title": {
-                                "default": "Which Internal Stakeholders will you be engaging?",
-                                "fr": "Quels intervenants internes allez-vous consulter?"
+                                "default": "Which internal consultees or partners will you be engaging?",
+                                "fr": "Indiquez les partenaires ou les parties consultantes que vous mobiliserez à l’interne"
                             },
                             "choices": [
                                 {
@@ -4066,7 +4066,7 @@
                                 {
                                     "value": "item6",
                                     "text": {
-                                        "default": "Access to Information and Privacy Office",
+                                        "default": "Access to Information and Privacy",
                                         "fr": "Bureau de l'accès à l'information et de la protection des renseignements personnels"
                                     }
                                 },
@@ -4080,8 +4080,8 @@
                                 {
                                     "value": "item8",
                                     "text": {
-                                        "default": "Client Experience / Client Relationship Management",
-                                        "fr": "Expérience client / Gestion de la relation client"
+                                        "default": "Client Experience / client Relationship Management",
+                                        "fr": "Expérience de la clientèle et gestion de la relation avec celle-ci "
                                     }
                                 },
                                 {
@@ -4162,12 +4162,12 @@
                             "type": "radiogroup",
                             "name": "consultationDesign3",
                             "title": {
-                                "default": "External Stakeholders (groups in other sectors or jurisdictions)",
-                                "fr": "Intervenants externes (groupes d’autres secteurs ou administrations)"
+                                "default": "External consultees or partners (groups in other sectors or jurisdictions).",
+                                "fr": "Des partenaires ou des parties consultantes à l’externe (groupes d’autres secteurs ou administrations)"
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -4187,15 +4187,15 @@
                             "name": "consultationDesign4",
                             "visibleIf": "{consultationDesign3} = \"item1-1\"",
                             "title": {
-                                "default": "Which External Stakeholders will you be engaging?",
-                                "fr": "Quels intervenants externes allez-vous consulter?"
+                                "default": "Which external consultees or partners will you be engaging?",
+                                "fr": "Indiquez les partenaires ou les parties consultantes que vous mobiliserez à l’externe."
                             },
                             "choices": [
                                 {
                                     "value": "item2",
                                     "text": {
-                                        "default": "Civil Society",
-                                        "fr": "Société civile"
+                                        "default": "General Public",
+                                        "fr": "Grand public"
                                     }
                                 },
                                 {
@@ -4243,8 +4243,22 @@
                                 {
                                     "value": "item15",
                                     "text": {
-                                        "default": "Indigenous Groups",
-                                        "fr": "Groupes autochtones"
+                                        "default": "Indigenous organizations, Elders, and leadership",
+                                        "fr": "Organisations, aînés et leadership autochtones "
+                                    }
+                                },
+                                {
+                                    "value": "item16",
+                                    "text": {
+                                        "default": "Non-governmental organizations ",
+                                        "fr": "Organisations non gouvernementales "
+                                    }
+                                },
+                                {
+                                    "value": "item19",
+                                    "text": {
+                                        "default": "Professional associations  ",
+                                        "fr": "Associations professionnelles  "
                                     }
                                 },
                                 {
@@ -4263,6 +4277,202 @@
                             "title": {
                                 "default": "Please describe",
                                 "fr": "S'il vous plait décrire"
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "consultationDesign5",
+                            "title": {
+                                "default": "Identify the consultees or partners and indicate the project lifecycle stage (Concept, Design, Data collection and processing, Building or adapting the model, Testing, Deployment, Production, Monitoring, Decommission) in which the engagement will take place.",
+                                "fr": "Indiquez les partenaires ou les parties consultantes et l’étape du cycle de vie du projet (par exemple, le plan de conception, la conception, la collecte de données et le traitement, l’élaboration ou l’adaptation du modèle, la mise à l’essai, le déploiement, la production, la surveillance et la mise hors service) au cours de laquelle les activités de consultation dérouleront."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "consultationDesign6",
+                            "title": {
+                                "default": "Will you consult with the clients that will be most impacted by the system?",
+                                "fr": "Allez-vous consulter les personnes pour lesquelles les incidences de la mise en œuvre du système seront les plus importantes?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-3",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                },
+                                {
+                                    "value": "item3-0",
+                                    "text": {
+                                        "default": "Unsure",
+                                        "fr": "Je ne sais pas"
+                                    }
+                                }
+                            ]
+                        },
+                          {
+                            "type": "comment",
+                            "name": "consultationDesign6A",
+                            "visibleIf": "{consultationDesign6} = \"item2-0\"",
+                            "title": {
+                                "default": "Explain why you did not consult the clients that will be most impacted by the system.  ",
+                                "fr": "Expliquez pourquoi vous n’allez pas consulter les personnes qui seront les plus touchées par la mise en œuvre du système."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "consultationDesign6B",
+                            "visibleIf": "{consultationDesign6} = \"item3-0\"",
+                            "title": {
+                                "default": "Explain why you are unsure. ",
+                                "fr": "Expliquez votre réponse"
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "consultationDesign7",
+                            "title": {
+                                "default": "Will you consult with clients or communities that will be adversely impacted by the system? ",
+                                "fr": "Allez-vous consulter les personnes ou les communautés qui seront lésées par la mise en œuvre du système?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-3",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                },
+                                {
+                                    "value": "item3-0",
+                                    "text": {
+                                        "default": "Unsure",
+                                        "fr": "Je ne sais pas"
+                                    }
+                                }
+                            ]
+                        },
+                          {
+                            "type": "comment",
+                            "name": "consultationDesign7A",
+                            "visibleIf": "{consultationDesign7} = \"item2-0\"",
+                            "title": {
+                                "default": "Explain why you will not consult the clients that will be adversely impacted by the system. ",
+                                "fr": "Expliquez pourquoi vous n’allez pas consulter les personnes qui seront lésées par la mise en œuvre du système."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "consultationDesign7B",
+                            "visibleIf": "{consultationDesign7} = \"item3-0\"",
+                            "title": {
+                                "default": "Explain why you are unsure. ",
+                                "fr": "Expliquez votre réponse"
+                            }
+                        },
+                        {
+                            "type": "checkbox",
+                            "name": "consultationDesign8",
+                            "title": {
+                                "default": "Have consultees or partners raised any significant concerns about the system in the following areas:  ",
+                                "fr": "Les partenaires ou les parties consultantes ont-elles soulevé des préoccupations importantes à l’égard des aspects du système qui suivent? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1",
+                                    "text": {
+                                        "default": "Fairness of outputs ",
+                                        "fr": "Équité des résultats  "
+                                    }
+                                },
+                                {
+                                    "value": "item2",
+                                    "text": {
+                                        "default": "Transparency of the system ",
+                                        "fr": "Transparence du système "
+                                    }
+                                },
+                                {
+                                    "value": "item3",
+                                    "text": {
+                                        "default": "Barriers to access",
+                                        "fr": "Obstacles à l’accès"
+                                    }
+                                },
+                                {
+                                    "value": "item4",
+                                    "text": {
+                                        "default": "Surveillance  ",
+                                        "fr": "Surveillance  "
+                                    }
+                                },
+                                {
+                                    "value": "item5",
+                                    "text": {
+                                        "default": "Protection of personal information and/or other privacy concerns",
+                                        "fr": "Protection des renseignements personnels ou autres préoccupations en la matière "
+                                    }
+                                },
+                                {
+                                    "value": "item6",
+                                    "text": {
+                                        "default": "Human rights ",
+                                        "fr": "Droits de la personne "
+                                    }
+                                },
+                                {
+                                    "value": "item7",
+                                    "text": {
+                                        "default": "Accessibility",
+                                        "fr": "Accessibilité "
+                                    }
+                                },
+                                {
+                                    "value": "item8",
+                                    "text": {
+                                        "default": "Accuracy ",
+                                        "fr": "Exactitude "
+                                    }
+                                },
+                                {
+                                    "value": "item9",
+                                    "text": {
+                                        "default": "Other",
+                                        "fr": "Autres "
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "comment",
+                            "name": "consultationDesign8A",
+                            "visibleIf": "{consultationDesign8} contains \"item1\" or {consultationDesign8} contains \"item2\" or {consultationDesign8} contains \"item3\" or {consultationDesign8} contains \"item4\" or {consultationDesign8} contains \"item5\" or {consultationDesign8} contains \"item6\" or {consultationDesign8} contains \"item7\" or {consultationDesign8} contains \"item8\" or {consultationDesign8} contains \"item9\"",
+                            "title": {
+                                "default": "Describe how the identified concerns have been assessed and managed. ",
+                                "fr": "Si vous avez sélectionné un ou plusieurs énoncés, décrivez la manière dont les préoccupations soulevées ont été évaluées et gérées. "
+                            }
+                        },
+                           {
+                            "type": "comment",
+                            "name": "consultationDesign9",
+                            "title": {
+                                "default": "Explain how you documented, analyzed and addressed the feedback received.  ",
+                                "fr": "Expliquez comment vous avez documenté, analysé et traité la rétroaction reçue.  "
                             }
                         }
                     ]
@@ -4315,8 +4525,8 @@
                             "name": "consultationImplementation2",
                             "visibleIf": "{consultationImplementation1} = \"item1-1\"",
                             "title": {
-                                "default": "Which Internal Stakeholders have you engaged?",
-                                "fr": "Quels intervenants internes avez-vous consulté?"
+                                "default": "Which internal consultees or partners have you engaged?",
+                                "fr": "Indiquez les partenaires ou les parties consultantes que vous avez mobilisés à l’interne."
                             },
                             "choices": [
                                 {
@@ -4350,7 +4560,7 @@
                                 {
                                     "value": "item6",
                                     "text": {
-                                        "default": "Access to Information and Privacy Office",
+                                        "default": "Access to Information and Privacy",
                                         "fr": "Bureau de l'accès à l'information et de la protection des renseignements personnels"
                                     }
                                 },
@@ -4364,8 +4574,8 @@
                                 {
                                     "value": "item8",
                                     "text": {
-                                        "default": "Client Experience / Client Relationship Management",
-                                        "fr": "Expérience client / Gestion de la relation client"
+                                        "default": "Client Experience / client Relationship Management",
+                                        "fr": "Expérience de la clientèle et gestion de la relation avec celle-ci "
                                     }
                                 },
                                 {
@@ -4446,8 +4656,8 @@
                             "type": "radiogroup",
                             "name": "consultationImplementation3",
                             "title": {
-                                "default": "External Stakeholders (groups in other sectors or jurisdictions)",
-                                "fr": "Intervenants externes (groupes d’autres secteurs ou administrations)"
+                                "default": "External consultees or partners (groups in other sectors or jurisdictions).",
+                                "fr": "Des partenaires ou des parties consultantes à l’externe (groupes d’autres secteurs ou administrations) "
                             },
                             "choices": [
                                 {
@@ -4471,15 +4681,15 @@
                             "name": "consultationImplementation4",
                             "visibleIf": "{consultationImplementation3} = \"item1-1\"",
                             "title": {
-                                "default": "Which External Stakeholders have you engaged?",
-                                "fr": "Quels intervenants externes avez-vous consulté?"
+                                "default": "Which external consultees or partners have you engaged?",
+                                "fr": " Indiquez les partenaires ou les parties consultantes que vous avez mobilisés à l’externe."
                             },
                             "choices": [
                                 {
                                     "value": "item2",
                                     "text": {
-                                        "default": "Civil Society",
-                                        "fr": "Société civile"
+                                        "default": "General Public",
+                                        "fr": "Grand public"
                                     }
                                 },
                                 {
@@ -4527,8 +4737,22 @@
                                 {
                                     "value": "item15",
                                     "text": {
-                                        "default": "Indigenous Groups",
-                                        "fr": "Groupes autochtones"
+                                        "default": "Indigenous organizations, Elders, and leadership",
+                                        "fr": "Organisations, aînés et leadership autochtones "
+                                    }
+                                },
+                                {
+                                    "value": "item16",
+                                    "text": {
+                                        "default": "Non-governmental organizations ",
+                                        "fr": "Organisations non gouvernementales "
+                                    }
+                                },
+                                {
+                                    "value": "item19",
+                                    "text": {
+                                        "default": "Professional associations  ",
+                                        "fr": "Associations professionnelles  "
                                     }
                                 },
                                 {
@@ -4547,6 +4771,208 @@
                             "title": {
                                 "default": "Please describe",
                                 "fr": "S'il vous plait décrire"
+                            }
+                        },
+
+
+
+
+
+
+                          {
+                            "type": "comment",
+                            "name": "consultationImplementation5",
+                            "title": {
+                                "default": "Identify the consultees or partners and indicate the project lifecycle stage (Concept, Design, Data collection and processing, Building or adapting the model, Testing, Deployment, Production, Monitoring, Decommission) in which engagement took place. ",
+                                "fr": "Indiquez les partenaires ou les parties consultantes et l’étape du cycle de vie du projet (par exemple, le plan de conception, la conception, la collecte de données et le traitement, l’élaboration ou l’adaptation du modèle, la mise à l’essai, le déploiement, la production, la surveillance et la mise hors service) au cours de laquelle les activités de consultation se sont déroulées. "
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "consultationImplementation6",
+                            "title": {
+                                "default": "Did you consult with the clients that will be most impacted by the system? ",
+                                "fr": " Avez-vous consulté les personnes pour lesquelles les incidences de la mise en œuvre du système seront les plus importantes? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-3",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                },
+                                {
+                                    "value": "item3-0",
+                                    "text": {
+                                        "default": "Unsure",
+                                        "fr": "Je ne sais pas"
+                                    }
+                                }
+                            ]
+                        },
+                          {
+                            "type": "comment",
+                            "name": "consultationImplementation6A",
+                            "visibleIf": "{consultationImplementation6} = \"item2-0\"",
+                            "title": {
+                                "default": "Explain why you did not consult the clients that will be adversely impacted by the system.   ",
+                                "fr": "Expliquez pourquoi vous n’avez pas consulté les personnes qui seront les plus touchées par la mise en œuvre du système. "
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "consultationImplementation6B",
+                            "visibleIf": "{consultationImplementation6} = \"item3-0\"",
+                            "title": {
+                                "default": "Explain why you are unsure. ",
+                                "fr": "Expliquez votre réponse"
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "consultationImplementation7",
+                            "title": {
+                                "default": "Did you consult with clients or communities that will be adversely impacted by the system? ",
+                                "fr": "Avez-vous consulté les personnes ou les communautés qui seront lésées par la mise en œuvre du système? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-3",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                },
+                                {
+                                    "value": "item3-0",
+                                    "text": {
+                                        "default": "Unsure",
+                                        "fr": "Je ne sais pas"
+                                    }
+                                }
+                            ]
+                        },
+                          {
+                            "type": "comment",
+                            "name": "consultationImplementation7A",
+                            "visibleIf": "{consultationImplementation7} = \"item2-0\"",
+                            "title": {
+                                "default": "Explain why you did not consult the clients that will be adversely impacted by the system.   ",
+                                "fr": "Expliquez pourquoi vous n’avez pas consulté les personnes qui seront lésées par la mise en œuvre du système. "
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "consultationImplementation7B",
+                            "visibleIf": "{consultationImplementation7} = \"item3-0\"",
+                            "title": {
+                                "default": "Explain why you are unsure. ",
+                                "fr": "Expliquez votre réponse"
+                            }
+                        },
+                        {
+                            "type": "checkbox",
+                            "name": "consultationImplementation8",
+                            "title": {
+                                "default": "Have consultees or partners raised any significant concerns about the system in the following areas:  ",
+                                "fr": "Les partenaires ou les parties consultantes ont-elles soulevé des préoccupations importantes à l’égard des aspects du système qui suivent? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1",
+                                    "text": {
+                                        "default": "Fairness of outputs ",
+                                        "fr": "Équité des résultats  "
+                                    }
+                                },
+                                {
+                                    "value": "item2",
+                                    "text": {
+                                        "default": "Transparency of the system ",
+                                        "fr": "Transparence du système "
+                                    }
+                                },
+                                {
+                                    "value": "item3",
+                                    "text": {
+                                        "default": "Barriers to access",
+                                        "fr": "Obstacles à l’accès"
+                                    }
+                                },
+                                {
+                                    "value": "item4",
+                                    "text": {
+                                        "default": "Surveillance  ",
+                                        "fr": "Surveillance  "
+                                    }
+                                },
+                                {
+                                    "value": "item5",
+                                    "text": {
+                                        "default": "Protection of personal information and/or other privacy concerns",
+                                        "fr": "Protection des renseignements personnels ou autres préoccupations en la matière "
+                                    }
+                                },
+                                {
+                                    "value": "item6",
+                                    "text": {
+                                        "default": "Human rights ",
+                                        "fr": "Droits de la personne "
+                                    }
+                                },
+                                {
+                                    "value": "item7",
+                                    "text": {
+                                        "default": "Accessibility",
+                                        "fr": "Accessibilité "
+                                    }
+                                },
+                                {
+                                    "value": "item8",
+                                    "text": {
+                                        "default": "Accuracy ",
+                                        "fr": "Exactitude "
+                                    }
+                                },
+                                {
+                                    "value": "item9",
+                                    "text": {
+                                        "default": "Other",
+                                        "fr": "Autres "
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "comment",
+                            "name": "consultationImplementation8A",
+                            "visibleIf": "{consultationImplementation8} contains \"item1\" or {consultationImplementation8} contains \"item2\" or {consultationImplementation8} contains \"item3\" or {consultationImplementation8} contains \"item4\" or {consultationImplementation8} contains \"item5\" or {consultationImplementation8} contains \"item6\" or {consultationImplementation8} contains \"item7\" or {consultationImplementation8} contains \"item8\" or {consultationImplementation8} contains \"item9\"",
+                            "title": {
+                                "default": "Describe how the identified concerns have been assessed and managed. ",
+                                "fr": "Si vous avez sélectionné un ou plusieurs énoncés, décrivez la manière dont les préoccupations soulevées ont été évaluées et gérées. "
+                            }
+                        },
+                           {
+                            "type": "comment",
+                            "name": "consultationImplementation9",
+                            "title": {
+                                "default": "Explain how you documented, analyzed and addressed the feedback received.  ",
+                                "fr": "Expliquez comment vous avez documenté, analysé et traité la rétroaction reçue.  "
                             }
                         }
                     ]
