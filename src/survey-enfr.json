@@ -4992,12 +4992,12 @@
                             "type": "radiogroup",
                             "name": "dataQualityDesign1",
                             "title": {
-                                "default": "Will you have documented processes in place to test datasets against biases and other unexpected outcomes? This could include experience in applying frameworks, methods, guidelines or other assessment tools.",
-                                "fr": "Disposerez-vous de processus documentés pour tester les jeux de données en fonction de biais et d’autres résultats inattendus? Par exemple, ceci pourrait inclure une expérience dans l’application de cadres, de méthodes, de lignes directrices ou d’outils d’évaluation."
+                                "default": "Will you have documented processes in place to test datasets against biases, discrimination, and other unexpected outcomes? This could include experience in applying frameworks, methods, guidelines or other assessment tools.",
+                                "fr": "Disposerez-vous de processus documentés permettant de vérifier si les jeux de données présentent des biais, des éléments discriminatoires et d’autres irrégularités? Il peut notamment s’agir de tests réalisés à l’aide de cadres, de méthodes, de lignes directrices ou d’outils d’évaluation."
                             },
                             "choices": [
                                 {
-                                    "value": "item1-2",
+                                    "value": "item1-3",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -5015,10 +5015,10 @@
                         {
                             "type": "radiogroup",
                             "name": "dataQualityDesign2",
-                            "visibleIf": "{dataQualityDesign1} = \"item1-2\"",
+                            "visibleIf": "{dataQualityDesign1} = \"item1-3\"",
                             "title": {
-                                "default": "Will you be making this information publicly available?",
-                                "fr": "Allez-vous rendre cette information disponible publiquement?"
+                                "default": "Will the documented process be publicly available? ",
+                                "fr": "Le processus documenté est-il accessible au public ou le sera-t-il?"
                             },
                             "choices": [
                                 {
@@ -5036,6 +5036,15 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "dataQualityDesign11",
+                            "visibleIf": "{dataQualityDesign1} = \"item1-3\" and {dataQualityDesign2} = \"item1-1\"",
+                            "title": {
+                                "default": "Summarize the process or provide a link if publicly available.  ",
+                                "fr": "Veuillez décrire brièvement le processus ou fournir un lien s’il est accessible au public."
+                            }
                         },
                         {
                             "type": "radiogroup",
@@ -5064,9 +5073,10 @@
                         {
                             "type": "radiogroup",
                             "name": "dataQualityDesign4",
+                            "visibleIf": "{dataQualityDesign3} = \"item1-1\"",
                             "title": {
-                                "default": "Will you be making this information publicly available?",
-                                "fr": "Allez-vous rendre cette information disponible publiquement?"
+                                "default": "Will you be making the process publicly available?",
+                                "fr": "Le processus est-il accessible au public ou le sera-t-il? "
                             },
                             "choices": [
                                 {
@@ -5086,11 +5096,20 @@
                             ]
                         },
                         {
+                            "type": "comment",
+                            "name": "dataQualityDesign12",
+                            "visibleIf": "{dataQualityDesign3} = \"item1-1\" and {dataQualityDesign4} = \"item1-1\"",
+                            "title": {
+                                "default": "Summarize the process or provide a link if publicly available.  ",
+                                "fr": "Veuillez décrire brièvement le processus ou fournir un lien s’il est accessible au public."
+                            }
+                        },
+                        {
                             "type": "radiogroup",
                             "name": "dataQualityDesign5",
                             "title": {
-                                "default": "Will you undertake a Gender Based Analysis Plus of the data?",
-                                "fr": "Entreprendrez-vous une analyse comparative entre les sexes plus des données?"
+                                "default": "Will you undertake a Gender Based Analysis Plus (GBA Plus) of the data?",
+                                "fr": "Allez-vous soumettre les données à une analyse comparative entre les sexes plus (ACS Plus)? "
                             },
                             "choices": [
                                 {
