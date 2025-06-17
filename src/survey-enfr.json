@@ -5260,8 +5260,8 @@
             ],
             "visibleIf": "{projectDetailsPhase} = \"item1\"",
             "title": {
-                "default": "De-risking and mitigation measures – data quality",
-                "fr": "Élimination des risques et mesures d’atténuation – Qualité des données "
+                "default": "De-risking and Mitigation Measures",
+                "fr": "Élimination des risques et mesures d’atténuation"
             }
         },
         {
@@ -5543,8 +5543,8 @@
             ],
             "visibleIf": "{projectDetailsPhase} = \"item2\"",
             "title": {
-                "default": "De-risking and mitigation measures – data quality",
-                "fr": "Élimination des risques et mesures d’atténuation – Qualité des données"
+                "default": "De-risking and Mitigation Measures",
+                "fr": "Élimination des risques et mesures d’atténuation"
             }
         },
         {
