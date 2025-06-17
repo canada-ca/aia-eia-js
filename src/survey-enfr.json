@@ -5654,7 +5654,7 @@
                         {
                             "type": "radiogroup",
                             "name": "fairnessDesign4",
-                            "visibleIf": "{airnessDesign3} = \"item1-2\"",
+                            "visibleIf": "{fairnessDesign3} = \"item1-2\"",
                             "title": {
                                 "default": "Will there be a process in place to log the instances when overrides were performed?",
                                 "fr": "Un processus permettant la consignation des cas de dérogation a-t-il établi, ou le sera-t-il? "
