@@ -3393,10 +3393,188 @@
                         {
                             "type": "text",
                             "name": "aboutDataSource12",
-                            "visibleIf": "{aboutDataSource1} = \"item1-2\" and {aboutDataSource11} = \"item1-0\"",
+                            "visibleIf": "{aboutDataSource1} = \"item1-2\"",
                             "title": {
                                 "default": "List relevant PIB numbers.",
                                 "fr": "Veuillez indiquer le numéro des FRP pertinents."
+                            }
+                        },
+                        {
+                            "type": "checkbox",
+                            "name": "aboutDataSource14",
+                            "visibleIf": "{aboutDataSource1} = \"item1-2\"",
+                            "title": {
+                                "default": "Will the personal information be shared (check all that apply)",
+                                "fr": "L’algorithme est (cochez toutes les réponses qui s’appliquent) :"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "No sharing ",
+                                        "fr": "Non "
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "Within your department",
+                                        "fr": "Oui, au sein de votre organisation "
+                                    }
+                                },
+                                {
+                                    "value": "item3-1",
+                                    "text": {
+                                        "default": "With another federal department",
+                                        "fr": "Oui, à une autre organisation fédérale"
+                                    }
+                                },
+                                {
+                                    "value": "item4-3",
+                                    "text": {
+                                        "default": "With a government from another jurisdiction",
+                                        "fr": "Oui, à une autre administration publique "
+                                    }
+                                },
+                                {
+                                    "value": "item5-3",
+                                    "text": {
+                                        "default": "With a third party (private sector/NGO)",
+                                        "fr": "Oui, à un tiers (secteur privé/ONG) "
+                                    }
+                                },
+                                {
+                                    "value": "item6-1",
+                                    "text": {
+                                        "default": "Other (please specify)",
+                                        "fr": "Autre (précisez)"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "name": "aboutDataSource14A",
+			                "visibleIf": "{aboutDataSource1} = \"item1-2\" and {aboutDataSource14} = \"item6-1\"",
+                            "title": {
+                                "default": "Other (please specify)",
+                                "fr": "Autre (précisez)"
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutDataSource15",
+                            "title": {
+                                "default": "Is the training and testing data for the system representative of the clients being served? ",
+                                "fr": "Les données utilisées aux fins de l’apprentissage du système et des essais réalisés sur celui-ci cadrent-elles avec la clientèle desservie?  "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                },
+                                {
+                                    "value": "item3-1",
+                                    "text": {
+                                        "default": "Unsure",
+                                        "fr": "Indéterminé"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutDataSource15Y",
+                            "visibleIf": "{aboutDataSource15} = \"item1-0\"",
+                            "title": {
+                                "default": "Describe how you have assessed that data was representative. ",
+                                "fr": "Veuillez préciser les mesures que vous avez prises pour vérifier que les données cadrent bien avec celle-ci. "
+                            }
+                        },
+                         {
+                            "type": "comment",
+                            "name": "aboutDataSource15N",
+                            "visibleIf": "{aboutDataSource15} = \"item2-2\"",
+                            "title": {
+                                "default": "Explain why the data is not representative and indicate how this has or will be managed.    ",
+                                "fr": "Veuillez expliquer les raisons pour lesquelles les données ne cadrent pas avec celle-ci et indiquez les mesures prises pour y remédier ou celles qui seront prises. "
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutDataSource15U",
+                            "visibleIf": "{aboutDataSource15} = \"item3-1\"",
+                            "title": {
+                                "default": "Explain why you are unsure whether the data is representative.  ",
+                                "fr": "Veuillez expliquer les raisons pour lesquelles vous n’êtes pas en mesure de confirmer que les données cadrent avec celle-ci. "
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutDataSource16",
+                            "title": {
+                                "default": "Are there biases in the training data that could increase the likelihood of discriminatory outcomes or lead to other impacts on human rights? ",
+                                "fr": "Les données d’apprentissage comportent-elles des biais susceptibles d’accroître le risque de discrimination ou de toute autre répercussion sur les droits de la personne? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                },
+                                {
+                                    "value": "item3-1",
+                                    "text": {
+                                        "default": "Unsure",
+                                        "fr": "Indéterminé"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutDataSource16Y",
+                            "visibleIf": "{aboutDataSource16} = \"item1-2\"",
+                            "title": {
+                                "default": "Explain the biases identified and any mitigations to address this. ",
+                                "fr": "Veuillez expliquer les biais constatés et les mesures d’atténuation prises pour y remédier.   "
+                            }
+                        },
+                         {
+                            "type": "comment",
+                            "name": "aboutDataSource16N",
+                            "visibleIf": "{aboutDataSource16} = \"item2-0\"",
+                            "title": {
+                                "default": "Explain the process taken to confirm that there are no biases in the training data that could increase the likelihood of discriminatory outcomes or other impacts on human rights.",
+                                "fr": "Expliquez les mesures prises pour garantir que les données d’apprentissage ne comportent aucun biais susceptible d’accroître le risque de discrimination ou de toute autre répercussion sur les droits de la personne."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutDataSource16U",
+                            "visibleIf": "{aboutDataSource16} = \"item3-1\"",
+                            "title": {
+                                "default": "Explain why you are unsure of whether the data could increase the likelihood of discriminatory outcomes or other impacts on human rights ",
+                                "fr": "Expliquez pourquoi vous n’êtes pas en mesure de confirmer que les données d’apprentissage ne comportent aucun biais susceptible d’accroître le risque de discrimination ou de toute autre répercussion sur les droits de la personne."
                             }
                         },
                         {
@@ -3475,6 +3653,64 @@
                             }
                         },
                         {
+                            "type": "radiogroup",
+                            "name": "aboutDataSource17",
+                            "title": {
+                                "default": "Are there measures in place to ensure the accuracy of the personal information used? ",
+                                "fr": "Des mesures ont-elles été mises en place pour garantir l’exactitude des renseignements personnels utilisés?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-2",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                },
+                                {
+                                    "value": "item3-0",
+                                    "text": {
+                                        "default": "Not applicable",
+                                        "fr": "Sans objet"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutDataSource17Y",
+                            "visibleIf": "{aboutDataSource17} = \"item1-0\"",
+                            "title": {
+                                "default": "If yes, describe the measures taken to ensure and verify the accuracy of personal information.",
+                                "fr": "Décrivez les mesures prises pour garantir et vérifier l’exactitude des renseignements personnels. "
+                            }
+                        },
+                         {
+                            "type": "comment",
+                            "name": "aboutDataSource17N",
+                            "visibleIf": "{aboutDataSource17} = \"item2-2\"",
+                            "title": {
+                                "default": "If no, describe why there are not measures in place to ensure the accuracy of personal information.",
+                                "fr": "Décrivez la raison pour laquelle aucune mesure n’a été mise en place pour garantir l’exactitude des renseignements personnels."
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutDataSource17U",
+                            "visibleIf": "{aboutDataSource17} = \"item3-0\"",
+                            "title": {
+                                "default": "Describe ",
+                                "fr": "Veuillez préciser "
+                            }
+                        },
+                        {
                             "type": "dropdown",
                             "name": "aboutDataSource3",
                             "title": {
@@ -3483,31 +3719,24 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-0",
+                                    "value": "item1-1",
                                     "text": {
-                                        "default": "Open Data Source",
-                                        "fr": "Source de données ouvertes"
+                                        "default": "Federal Government",
+                                        "fr": "Le gouvernement fédéral"
                                     }
                                 },
                                 {
-                                    "value": "item2-1",
+                                    "value": "item2-2",
                                     "text": {
-                                        "default": "Federal government",
-                                        "fr": "Gouvernement fédéral"
+                                        "default": "Other Canadian Government (province/territorial/municipal)",
+                                        "fr": "Une autre administration publique canadienne (provinciale/territoriale/municipale)"
                                     }
                                 },
                                 {
-                                    "value": "item3-2",
+                                    "value": "item3-3",
                                     "text": {
-                                        "default": "Other Canadian Government (prov/municipal)",
-                                        "fr": "Autre gouvernement canadien (provincial/municipal)"
-                                    }
-                                },
-                                {
-                                    "value": "item4-3",
-                                    "text": {
-                                        "default": "Private Sector / NGO",
-                                        "fr": "Secteur privé / ONG"
+                                        "default": "Private sector / NGO / academia",
+                                        "fr": "Le secteur privé, une ONG ou un organisme universitaire"
                                     }
                                 }
                             ]
@@ -3521,7 +3750,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-4",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -3540,8 +3769,8 @@
                             "type": "radiogroup",
                             "name": "aboutDataSource5",
                             "title": {
-                                "default": "Will the system require input data from an Internet- or telephony-connected device? (e.g. Internet of Things, sensor)",
-                                "fr": "Le système aura-t-il besoin de données d’entrée provenant d’un appareil connecté à Internet ou à la téléphonie? (P. ex., internet des objets, un Capteur)"
+                                "default": "Will the system require input data from a network-connected device? (such as Internet of Things, sensor)",
+                                "fr": "Le système devra-t-il utiliser des données provenant d’un appareil connecté à un réseau (par exemple, l’Internet des objets et un capteur)?"
                             },
                             "choices": [
                                 {
@@ -3583,7 +3812,7 @@
                                     }
                                 }
                             ]
-                        },
+                        },                   
                         {
                             "type": "dropdown",
                             "name": "aboutDataSource7",
@@ -3664,37 +3893,27 @@
                             "type": "comment",
                             "name": "aboutDataSource13",
                             "title": {
-                                "default": "Please describe the input data collected and used by the system, its source, and method of collection.",
-                                "fr": "Veuillez décrire les données d’entrée collectées et utilisées par le système, leur source et leur méthode de collecte."
+                                "default": "Describe the input data collected and used by the system, its source, method of collection, and any quality assurance measures in place.",
+                                "fr": "Veuillez décrire les données recueillies et traitées par le système, leur source, la méthode de collecte et toute mesure d’assurance de la qualité mise en place. "
                             }
-                        }
-                    ],
-                    "title": {
-                        "default": "A. Data Source",
-                        "fr": "A. Source des données"
-                    }
-                },
-                {
-                    "type": "panel",
-                    "name": "aboutDataTypePanel-RS",
-                    "elements": [
+                        },
                         {
                             "type": "radiogroup",
                             "name": "aboutDataType1",
                             "title": {
-                                "default": "Will the system require the analysis of unstructured data to render a recommendation or a decision?",
-                                "fr": "Le système exigera-t-il l’analyse de données non structurées pour faire une recommandation ou prendre une décision?"
+                                "default": "Will the system require the analysis of unstructured data to make an assessment, recommendation or decision?",
+                                "fr": "Le système devra-t-il analyser des données non structurées aux fins de la réalisation d’évaluations, de la formulation de recommandations ou de la prise de décisions?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1",
+                                    "value": "item1-0",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": "item2",
+                                    "value": "item2-0",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
@@ -3702,7 +3921,7 @@
                                 }
                             ]
                         },
-                        {
+                         {
                             "type": "checkbox",
                             "name": "aboutDataType2",
                             "visibleIf": "{aboutDataType1} = \"item1\"",
@@ -3726,12 +3945,41 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "aboutDataType3",
+                            "title": {
+                                "default": "Has there been a decision to exclude certain data? ",
+                                "fr": "Avez-vous décidé d’exclure certaines données? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-0",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "aboutDataType3A",
+                            "visibleIf": "{aboutDataType3} = \"item1-0\"",
+                            "title": {
+                                "default": "Describe why data has been excluded ",
+                                "fr": "Veuillez expliquer la raison pour laquelle ces données ont été exclues. "
+                            }
                         }
-                    ],
-                    "title": {
-                        "default": "B. Type of Data",
-                        "fr": "B. Type de données"
-                    }
+                    ]
                 }
             ],
             "title": {
