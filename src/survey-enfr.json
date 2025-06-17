@@ -6871,15 +6871,6 @@
                                 "fr": "Indiquez pourquoi aucun processus de surveillance n’est en place. "
                             }
                         }
-
-
-
-
-
-
-
-
-
                     ],
                     "title": {
                         "default": "Procedural Fairness",
@@ -6904,12 +6895,12 @@
                             "type": "radiogroup",
                             "name": "privacyDesign1",
                             "title": {
-                                "default": "If your system uses or creates personal information, will you undertake or have you undertaken a Privacy Impact Assessment, or updated an existing one?",
-                                "fr": "Si votre système utilise ou crée des renseignements personnels, avez-vous ou allez-vous entreprendre une évaluation des facteurs relatifs à la vie privée ou réviser une évaluation existante?"
+                                "default": "If your system uses or creates personal information, will you undertake a privacy impact assessment (PIA), or update an existing one prior to system launch?",
+                                "fr": "Si votre système traite ou génère des renseignements personnels, avez-vous réalisé une évaluation des facteurs relatifs à la vie privée (EFVP) ou mis à jour une évaluation existante avant le lancement du système, ou avez-vous l’intention de le faire? "
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -6927,10 +6918,10 @@
                         {
                             "type": "comment",
                             "name": "privacyDesign5",
-                            "visibleIf": "{privacyDesign1} = \"item1-1\"",
+                            "visibleIf": "{privacyDesign1} = \"item1-2\"",
                             "title": {
-                                "default": "Please indicate the following in your answer: Title and scope of the Privacy Impact Assessment; How the automation project fits into the program; and Date of Privacy Impact Assessment completion or modification.",
-                                "fr": "Veuillez indiquer les éléments suivants dans votre réponse : titre et portée de l’évaluation des facteurs relatifs à la vie privée; la manière dont le projet d’automatisation s’intègre au programme; date d’achèvement ou de modification de l’évaluation des facteurs relatifs à la vie privée."
+                                "default": "Indicate the following in your answer: Title and scope of the PIA; How the automation project fits into the program; and Date of PIA completion or modification. ",
+                                "fr": "Si oui, veuillez indiquer les éléments suivants dans votre réponse : le titre et la portée de l’EFVP; la manière dont le projet d’automatisation s’intègre au programme; la date d’achèvement ou de modification de l’EFVP."
                             }
                         },
                         {
@@ -6938,8 +6929,8 @@
                             "name": "privacyDesign6",
                             "visibleIf": "{privacyDesign1} = \"item2-0\"",
                             "title": {
-                                "default": "Have you undertaken other types of privacy assessments for your automation project?  Please describe any relevant efforts.",
-                                "fr": "Avez-vous entrepris d’autres types d’évaluations de la protection de la vie privée pour votre projet d’automatisation? Veuillez décrire toute mesure pertinente."
+                                "default": "Have you undertaken other types of privacy assessments for your automation project?  Describe any relevant efforts.",
+                                "fr": "Si non, avez-vous réalisé d’autres types d’EFVP pour votre projet d’automatisation? Veuillez décrire toute mesure pertinente.  "
                             }
                         },
                         {
