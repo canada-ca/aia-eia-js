@@ -5873,54 +5873,6 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "fairnessDesign14",
-                            "title": {
-                                "default": "Will the system enable human override of system decisions?",
-                                "fr": "Le système permettra-t-il à une personne de passer outre aux décisions du système?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-2",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "fairnessDesign15",
-                            "title": {
-                                "default": "Will there be a process in place to log the instances when overrides were performed?",
-                                "fr": "Y aura-t-il un processus en place pour consigner les cas où des dérogations ont été effectuées?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-1",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
                             "name": "fairnessDesign16",
                             "title": {
                                 "default": "Will the audit trail include change control processes to record modifications to the system's operation or performance?",
@@ -5942,17 +5894,48 @@
                                     }
                                 }
                             ]
-                        },
+                        },  
                         {
                             "type": "radiogroup",
                             "name": "fairnessDesign17",
                             "title": {
-                                "default": "Will you be submitting a concept case to TBS and presenting the project to the Government of Canada Enterprise Architecture Review Board?",
-                                "fr": "Avez-vous l’intention de soumettre un cas conceptuel au Secrétariat du Conseil du Trésor du Canada (SCT) et présenté le projet au conseil d’examen de l’architecture intégrée du gouvernement du Canada?"
+                                "default": "Will the system base its decision or recommendation on all of the information provided by the client? ",
+                                "fr": "Le système tient-il compte de toute l’information fournie par la clientèle lors de la prise de décision ou de la formulation d’une recommandation? "
                             },
                             "choices": [
                                 {
-                                    "value": "item1-0",
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                },
+                                {
+                                    "value": "item3-0",
+                                    "text": {
+                                        "default": "Not applicable",
+                                        "fr": "Sans objet "
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessDesign18",
+                            "title": {
+                                "default": "Will you undertake mitigations in algorithm development and model testing to address bias and discrimination? ",
+                                "fr": "Des mesures d’atténuation ont-elles été prises lors de l’élaboration des algorithmes et des essais de modèles pour éliminer tout biais et élément discriminatoire, ou le seront-elles? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -5966,6 +5949,257 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "fairnessDesign18A",
+                            "visibleIf": "{fairnessDesign18} = \"item1-2\"",
+                            "title": {
+                                "default": "Describe the metrics used and any mitigations taken to address identified issues.",
+                                "fr": "Veuillez décrire les paramètres et les mesures d’atténuation utilisés pour remédier aux problèmes constatés."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessDesign19",
+                            "title": {
+                                "default": "Will the system only consider input data and information relevant to the decision? ",
+                                "fr": "Le système ne s’appuie-t-il que sur les données d’entrée et l’information se rapportant à la décision?  "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "radiogroup",
+                            "name": "fairnessDesign20",
+                            "title": {
+                                "default": "Are the system rules directly relevant to the administrative decision? ",
+                                "fr": "Les règles du système sont-elles directement liées aux décisions administratives?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "checkbox",
+                            "name": "fairnessDesign21",
+                            "title": {
+                                "default": "Indicate additional procedural fairness protections in place (check all that apply): ",
+                                "fr": "Veuillez indiquer toute autre mesure prise pour garantir l’équité procédurale (cochez toutes les réponses qui s’appliquent) : "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Clear time frame or service standards for timeliness ",
+                                        "fr": "Des délais clairs ou des normes de service en matière de rapidité d’exécution ont été établis "
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "Clients are provided with adequate information about the decision-making process and have the opportunity to meaningfully participate",
+                                        "fr": "La clientèle reçoit toute l’information dont elle a besoin sur le processus décisionnel et a la possibilité d’y participer activement"
+                                    }
+                                },
+                                 {
+                                    "value": "item3-1",
+                                    "text": {
+                                        "default": "Clients are provided with all documents and information in which the administrative decision was based ",
+                                        "fr": "La clientèle reçoit tous les documents et l’information sur lesquels reposent les décisions administratives "
+                                    }
+                                },
+                                {
+                                    "value": "item4-1",
+                                    "text": {
+                                        "default": "Mechanism for assessing and responding to client feedback ",
+                                        "fr": "Un mécanisme permettant l’analyse et la prise en compte des commentaires de la clientèle a été mis en place"
+                                    }
+                                },
+                                {
+                                    "value": "item5-1",
+                                    "text": {
+                                        "default": "Other",
+                                        "fr": "Autre"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "fairnessDesign21A",
+                            "visibleIf": "{fairnessDesign21} contains \"item5-1\"",
+                            "title": {
+                                "default": "Describe",
+                                "fr": "Précisez"
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessDesign22",
+                            "title": {
+                                "default": "Are there processes in place to ensure impartiality and ethical conduct by the decision-maker in the use of the system and its outputs? ",
+                                "fr": "Des processus visant à garantir l’impartialité et l’éthique de la personne responsable de prendre les décisions quant à l’utilisation du système et à ses résultats ont-ils été mis en place? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessDesign22A",
+                            "visibleIf": "{fairnessDesign22} = \"item1-2\"",
+                            "title": {
+                                "default": "Will you undertake training on appropriate use and awareness of risks associated with automation bias?",
+                                "fr": "Avez-vous suivi une formation sur l’utilisation appropriée et la sensibilisation aux risques associés aux biais d’automatisation ou avez-vous l’intention de le faire? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessDesign23",
+                            "title": {
+                                "default": "Will your team be regularly retraining the model or reviewing the rules? ",
+                                "fr": "Votre équipe procédera-t-elle régulièrement à la mise à jour du modèle ou à l’examen des règles? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessDesign24",
+                            "title": {
+                                "default": "Do you have monitoring processes in place to detect changes in system performance over time? ",
+                                "fr": "Disposez-vous de processus de surveillance qui vous permettront de déceler les changements liés au rendement du système au fil du temps? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessDesign24A",
+                            "visibleIf": "{fairnessDesign24} = \"item1-2\"",
+                            "title": {
+                                "default": "Do you have a process in place to update the system based on the monitoring results? ",
+                                "fr": "Disposez-vous d’un processus de mise à jour du système fondé sur les résultats du processus de surveillance? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "fairnessDesign24AA",
+                            "visibleIf": "{fairnessDesign24} = \"item1-2\" and {fairnessDesign24A} = \"item1-1\" ",
+                            "title": {
+                                "default": "Describe ",
+                                "fr": "Veuillez expliquer votre réponse. "
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "fairnessDesign24B",
+                            "visibleIf": "{fairnessDesign24} = \"item2-0\"",
+                            "title": {
+                                "default": "Indicate why monitoring processes are not in place. ",
+                                "fr": "Indiquez pourquoi aucun processus de surveillance n’est en place. "
+                            }
                         }
                     ],
                     "title": {
@@ -5987,12 +6221,40 @@
                     "type": "panel",
                     "name": "fairnessImplementationPanel-MS",
                     "elements": [
+
+
+
                         {
                             "type": "radiogroup",
                             "name": "fairnessImplementation1",
                             "title": {
-                                "default": "Does the audit trail identify the authority or delegated authority identified in legislation?",
-                                "fr": "La piste de vérification permet-elle de déterminer les pouvoirs ou les pouvoirs délégués prévus par la lois?"
+                                "default": "Does the audit trail provide information to trace the chain of legislative authority for the decision and key decision points? ",
+                                "fr": " La piste de vérification fournit-elle de l’information permettant de déterminer de quelle autorité législative relèvent les décisions et les principaux points de décision? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessImplementation1A",
+                            "visibleIf": "{fairnessImplementation1} = \"item1-1\"",
+                            "title": {
+                                "default": "Are all key decision points in the automated system's logic linked to the relevant legislation, policy or procedures? ",
+                                "fr": "Les principaux points de décision compris dans la logique du système automatisé sont-ils tous reliés aux lois, aux politiques ou aux procédures applicables, ou le seront-ils? "
                             },
                             "choices": [
                                 {
@@ -6015,8 +6277,8 @@
                             "type": "radiogroup",
                             "name": "fairnessImplementation2",
                             "title": {
-                                "default": "Does the system provide an audit trail that records all the recommendations or decisions made by the system?",
-                                "fr": "Le système fournit-il une piste de vérification qui enregistre toutes les recommandations ou décisions prises par le système?"
+                                "default": "Does the audit trail capture all the recommendations or decisions made by the system? ",
+                                "fr": "Les recommandations ou les décisions du système sont-elles toutes consignées dans la piste de vérification? "
                             },
                             "choices": [
                                 {
@@ -6039,8 +6301,8 @@
                             "type": "radiogroup",
                             "name": "fairnessImplementation3",
                             "title": {
-                                "default": "Are all key decision points identifiable in the audit trail?",
-                                "fr": "Est-ce que tous les points de décision clés peuvent être identifiés dans la piste de vérification?"
+                                "default": "Are all key decision points identifiable in the audit trail? ",
+                                "fr": "Les principaux points de décision sont-ils tous clairement indiqués dans la piste de vérification? "
                             },
                             "choices": [
                                 {
@@ -6062,13 +6324,14 @@
                         {
                             "type": "radiogroup",
                             "name": "fairnessImplementation4",
+                            "visibleIf": "{fairnessImplementation3} = \"item1-2\"",
                             "title": {
-                                "default": "Are all key decision points within the automated system's logic linked to the relevant legislation, policy or procedures?",
-                                "fr": "Est-ce que toutes les décisions clés sont liées à une législation, politique ou à une procédure pertinente?"
+                                "default": "Is there a process in place to log the instances when overrides were performed? ",
+                                "fr": "Un processus permettant la consignation des cas de dérogation a-t-il établi, ou le sera-t-il? "
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -6087,36 +6350,12 @@
                             "type": "radiogroup",
                             "name": "fairnessImplementation5",
                             "title": {
-                                "default": "Do you maintain a current and up to date log detailing all of the changes made to the model and the system?",
-                                "fr": "Avez-vous un journal détaillant toutes les modifications apportées au modèle et au système?"
+                                "default": "Is there an up-to-date log of the changes made to the model and the system? ",
+                                "fr": " Un registre actualisé des modifications apportées au modèle et au système a-t-il été mis en place?   "
                             },
                             "choices": [
                                 {
                                     "value": "item1-2",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "fairnessImplementation6",
-                            "title": {
-                                "default": "Does the system's audit trail indicate all of the decision points made by the system?",
-                                "fr": "Est-ce que la piste de vérification indique tous les points de décision pris par le système?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -6135,56 +6374,8 @@
                             "type": "radiogroup",
                             "name": "fairnessImplementation7",
                             "title": {
-                                "default": "Can the audit trail generated by the system be used to help generate a notification of the decision (including a statement of reasons or other notifications) where required?",
-                                "fr": "La piste de vérification générée par le système peut-elle être utilisée pour aider à produire une notification de la décision (y compris un énoncé des motifs ou une autre notification) au besoin?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-1",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "fairnessImplementation8",
-                            "title": {
-                                "default": "Does the audit trail identify precisely which version of the system was used for each decision it supports?",
-                                "fr": "La piste de vérification permet-elle de déterminer précisément quelle version du système a été utilisée pour chaque décision qu'elle appuie?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-2",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "fairnessImplementation9",
-                            "title": {
-                                "default": "Does the audit trail show who an authorized decision-maker is?",
-                                "fr": "La piste de vérification indique-t-elle qui est le décideur autorisé?"
+                                "default": "Does the audit trail capture information that can be used to help generate an explanation of the decision where required? ",
+                                "fr": "L’information permettant d’expliquer au besoin, une décision est-elle consignée dans la piste de vérification? "
                             },
                             "choices": [
                                 {
@@ -6207,8 +6398,8 @@
                             "type": "radiogroup",
                             "name": "fairnessImplementation10",
                             "title": {
-                                "default": "Is the system able to produce reasons for its decisions or recommendations when required?",
-                                "fr": "Le système est-il en mesure de justifier ses décisions ou ses recommandations au besoin?"
+                                "default": "Is the system able to produce reasons for its decisions or recommendations when required? ",
+                                "fr": "Le système permet-il d’obtenir, au besoin, des justifications concernant ses décisions ou ses recommandations?  "
                             },
                             "choices": [
                                 {
@@ -6229,10 +6420,34 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "fairnessImplementation11",
+                            "name": "fairnessImplementation8",
                             "title": {
-                                "default": "Is there a process in place to grant, monitor, and revoke access permission to the system?",
-                                "fr": "Avez-vous un processus en place pour accorder, surveiller et révoquer l'autorisation d'accès au système?"
+                                "default": "Does the audit trail identify precisely which version of the system was used for each decision it supports? ",
+                                "fr": "La piste de vérification permet-elle de déterminer précisément la version du système qui a été utilisée pour chaque décision? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessImplementation9",
+                            "title": {
+                                "default": "Does the audit trail show who the authorized decision-maker is? ",
+                                "fr": "La personne autorisée à prendre des décisions est-elle indiquée dans la piste de vérification? "
                             },
                             "choices": [
                                 {
@@ -6256,11 +6471,11 @@
                             "name": "fairnessImplementation12",
                             "title": {
                                 "default": "Is there a mechanism to capture feedback by users of the system?",
-                                "fr": "Avez-vous un mécanisme pour recueillir les commentaires des utilisateurs du système?"
+                                "fr": "Un mécanisme permettant de recueillir les commentaires des utilisateurs du système a-t-il été prévu? "
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -6274,13 +6489,254 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "fairnessImplementation12A",
+                            "visibleIf": "{fairnessImplementation12} = \"item1-2\"",
+                            "title": {
+                                "default": "Describe how user feedback informs updates to the system. ",
+                                "fr": "Si oui, veuillez décrire la façon dont la rétroaction sera prise en compte dans les mises à jour du système. "
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "fairnessImplementation12B",
+                            "visibleIf": "{fairnessImplementation12} = \"item2-0\"",
+                            "title": {
+                                "default": "Describe why user feedback is not captured. ",
+                                "fr": "Si non, veuillez expliquer pourquoi la rétroaction n’a pas été prise en compte. "
+                            }
                         },
                         {
                             "type": "radiogroup",
                             "name": "fairnessImplementation13",
                             "title": {
-                                "default": "Is there a recourse process established for clients that wish to challenge the decision?",
-                                "fr": "Avez-vous un processus de recours prévu ou établi pour les clients qui souhaitent contester la décision?"
+                                "default": "Is there a recourse process established for clients to challenge the decision?",
+                                "fr": "Un processus de recours a-t-il été prévu ou mis en place pour les personnes qui souhaitent contester la décision? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "fairnessImplementation13A",
+                            "visibleIf": "{fairnessImplementation13} contains \"item1-2\"",
+                            "title": {
+                                "default": "Provide information on the recourse process or link to a website where this is described.  ",
+                                "fr": "Veuillez fournir des renseignements sur la procédure de recours ou un lien vers un site web où cette procédure est décrite. "
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessImplementation16",
+                            "title": {
+                                "default": "Does the audit trail include change control processes to record modifications to the system's operation or performance? ",
+                                "fr": "Des processus permettant le suivi des modifications apportées au fonctionnement ou au rendement du système ont-ils été intégrés à la piste de vérification? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },  
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessImplementation17",
+                            "title": {
+                                "default": "Does the system base its decision or recommendation on all of the information provided by the client? ",
+                                "fr": "Le système tient-il compte de toute l’information fournie par la clientèle lors de la prise de décision ou de la formulation d’une recommandation? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                },
+                                {
+                                    "value": "item3-0",
+                                    "text": {
+                                        "default": "Not applicable",
+                                        "fr": "Sans objet "
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessImplementation18",
+                            "title": {
+                                "default": "Have you undertaken mitigations in algorithm development and model testing to address bias and discrimination? ",
+                                "fr": "Des mesures d’atténuation ont-elles été prises lors de l’élaboration des algorithmes et des essais de modèles pour éliminer tout biais et élément discriminatoire? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "fairnessImplementation18A",
+                            "visibleIf": "{fairnessImplementation18} = \"item1-2\"",
+                            "title": {
+                                "default": "Describe the metrics used and any mitigations taken to address identified issues.",
+                                "fr": "Veuillez décrire les paramètres et les mesures d’atténuation utilisés pour remédier aux problèmes constatés."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessImplementation19",
+                            "title": {
+                                "default": "Does the system only consider input data and information relevant to the decision?  ",
+                                "fr": "Le système ne s’appuie-t-il que sur les données d’entrée et l’information se rapportant à la décision?  "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "radiogroup",
+                            "name": "fairnessImplementation20",
+                            "title": {
+                                "default": "Are the system rules directly relevant to the administrative decision? ",
+                                "fr": "Les règles du système sont-elles directement liées aux décisions administratives?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "checkbox",
+                            "name": "fairnessImplementation21",
+                            "title": {
+                                "default": "Indicate additional procedural fairness protections in place (check all that apply): ",
+                                "fr": "Veuillez indiquer toute autre mesure prise pour garantir l’équité procédurale (cochez toutes les réponses qui s’appliquent) : "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Clear time frame or service standards for timeliness ",
+                                        "fr": "Des délais clairs ou des normes de service en matière de rapidité d’exécution ont été établis "
+                                    }
+                                },
+                                {
+                                    "value": "item2-1",
+                                    "text": {
+                                        "default": "Clients are provided with adequate information about the decision-making process and have the opportunity to meaningfully participate",
+                                        "fr": "La clientèle reçoit toute l’information dont elle a besoin sur le processus décisionnel et a la possibilité d’y participer activement"
+                                    }
+                                },
+                                 {
+                                    "value": "item3-1",
+                                    "text": {
+                                        "default": "Clients are provided with all documents and information in which the administrative decision was based ",
+                                        "fr": "La clientèle reçoit tous les documents et l’information sur lesquels reposent les décisions administratives "
+                                    }
+                                },
+                                {
+                                    "value": "item4-1",
+                                    "text": {
+                                        "default": "Mechanism for assessing and responding to client feedback ",
+                                        "fr": "Un mécanisme permettant l’analyse et la prise en compte des commentaires de la clientèle a été mis en place"
+                                    }
+                                },
+                                {
+                                    "value": "item5-1",
+                                    "text": {
+                                        "default": "Other",
+                                        "fr": "Autre"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "fairnessImplementation21A",
+                            "visibleIf": "{fairnessImplementation21} contains \"item5-1\"",
+                            "title": {
+                                "default": "Describe",
+                                "fr": "Précisez"
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessImplementation22",
+                            "title": {
+                                "default": "Are there processes in place to ensure impartiality and ethical conduct by the decision-maker in the use of the system and its outputs? ",
+                                "fr": "Des processus visant à garantir l’impartialité et l’éthique de la personne responsable de prendre les décisions quant à l’utilisation du système et à ses résultats ont-ils été mis en place? "
                             },
                             "choices": [
                                 {
@@ -6301,10 +6757,11 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "fairnessImplementation14",
+                            "name": "fairnessImplementation22A",
+                            "visibleIf": "{fairnessImplementation22} = \"item1-2\"",
                             "title": {
-                                "default": "Does the system enable human override of system decisions?",
-                                "fr": "Le système permet-il à une personne de passer outre aux décisions du système?"
+                                "default": "Have you undertaken training on appropriate use and awareness of risks associated with automation bias?",
+                                "fr": "Avez-vous suivi une formation sur l’utilisation appropriée et la sensibilisation aux risques associés aux biais d’automatisation?  "
                             },
                             "choices": [
                                 {
@@ -6325,10 +6782,59 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "fairnessImplementation15",
+                            "name": "fairnessImplementation23",
                             "title": {
-                                "default": "Is there a process in place to log the instances when overrides were performed?",
-                                "fr": "Avez-vous un processus en place pour consigner les cas où des dérogations ont été effectuées?"
+                                "default": "Will your team be regularly retraining the model or reviewing the rules? ",
+                                "fr": "Votre équipe procédera-t-elle régulièrement à la mise à jour du modèle ou à l’examen des règles? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessImplementation24",
+                            "title": {
+                                "default": "Do you have monitoring processes in place to detect changes in system performance over time? ",
+                                "fr": "Disposez-vous de processus de surveillance qui vous permettront de déceler les changements liés au rendement du système au fil du temps? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessImplementation24A",
+                            "visibleIf": "{fairnessImplementation24} = \"item1-2\"",
+                            "title": {
+                                "default": "Do you have a process in place to update the system based on the monitoring results? ",
+                                "fr": "Disposez-vous d’un processus de mise à jour du système fondé sur les résultats du processus de surveillance? "
                             },
                             "choices": [
                                 {
@@ -6348,53 +6854,32 @@
                             ]
                         },
                         {
-                            "type": "radiogroup",
-                            "name": "fairnessImplementation16",
+                            "type": "comment",
+                            "name": "fairnessImplementation24AA",
+                            "visibleIf": "{fairnessImplementation24} = \"item1-2\" and {fairnessImplementation24A} = \"item1-1\" ",
                             "title": {
-                                "default": "Does the system's audit trail include change control processes to record modifications to the system's operation or performance?",
-                                "fr": "Avez-vous des processus en place pour enregistrer les modifications apportées au fonctionnement ou au rendement du système?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-2",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
+                                "default": "Describe ",
+                                "fr": "Veuillez expliquer votre réponse. "
+                            }
                         },
                         {
-                            "type": "radiogroup",
-                            "name": "fairnessImplementation17",
+                            "type": "comment",
+                            "name": "fairnessImplementation24B",
+                            "visibleIf": "{fairnessImplementation24} = \"item2-0\"",
                             "title": {
-                                "default": "Have you submitted a concept case to TBS and presented the project to the Government of Canada Enterprise Architecture Review Board?",
-                                "fr": "Avez-vous soumis un cas conceptuel au Secrétariat du Conseil du Trésor du Canada (SCT) et présenté le projet au conseil d’examen de l’architecture intégrée du gouvernement du Canada?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-0",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
+                                "default": "Indicate why monitoring processes are not in place. ",
+                                "fr": "Indiquez pourquoi aucun processus de surveillance n’est en place. "
+                            }
                         }
+
+
+
+
+
+
+
+
+
                     ],
                     "title": {
                         "default": "Procedural Fairness",
