@@ -5113,7 +5113,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -5125,43 +5125,36 @@
                                         "default": "No",
                                         "fr": "Non"
                                     }
+                                },
+                                 {
+                                    "value": "item3-1",
+                                    "text": {
+                                        "default": "Not applicable",
+                                        "fr": "Sans objet"
+                                    }
                                 }
                             ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "dataQualityDesign6",
+                            "visibleIf": "{dataQualityDesign5} = \"item3-1\"",
+                            "title": {
+                                "default": "Describe",
+                                "fr": "Veuillez préciser"
+                            }
                         },
                         {
                             "type": "radiogroup",
                             "name": "dataQualityDesign6",
+                            "visibleIf": "{dataQualityDesign5} = \"item1-2\"",
                             "title": {
-                                "default": "Will you be making this information publicly available?",
-                                "fr": "Allez-vous rendre cette information disponible publiquement?"
+                                "default": "Will you be making the GBA Plus findings publicly available?",
+                                "fr": "Les résultats de l’ACS Plus sont-ils accessibles au public ou le seront-ils?"
                             },
                             "choices": [
                                 {
                                     "value": "item1-1",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "dataQualityDesign7",
-                            "title": {
-                                "default": "Have you assigned accountability in your institution for the design, development, maintenance, and improvement of the system?",
-                                "fr": "Dans votre établissement, existe-t-il des responsables de la conception, du développement, de la maintenance et de l’amélioration du système?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -5180,8 +5173,8 @@
                             "type": "radiogroup",
                             "name": "dataQualityDesign8",
                             "title": {
-                                "default": "Will you have a documented process to manage the risk that outdated or unreliable data is used to make an automated decision?",
-                                "fr": "Disposerez-vous d'un processus documenté pour gérer le risque que des données périmées ou non fiables soient utilisées pour prendre une décision automatisée?"
+                                "default": "Will you have a documented process to manage the risk that low quality, outdated or unreliable data is used to make an automated decision?",
+                                "fr": "Disposerez-vous d’un processus documenté permettant de gérer le risque que des données obsolètes ou non fiables soient utilisées dans le cadre d’une décision automatisée"
                             },
                             "choices": [
                                 {
@@ -5203,9 +5196,10 @@
                         {
                             "type": "radiogroup",
                             "name": "dataQualityDesign9",
+                            "visibleIf": "{dataQualityDesign8} = \"item1-2\"",
                             "title": {
-                                "default": "Will you be making this information publicly available?",
-                                "fr": "Allez-vous rendre cette information disponible publiquement?"
+                                "default": "Will you be making the process publicly available?",
+                                "fr": "Le processus est-il accessible au public ou le sera-t-il?"
                             },
                             "choices": [
                                 {
@@ -5225,11 +5219,20 @@
                             ]
                         },
                         {
+                            "type": "comment",
+                            "name": "dataQualityDesign9A",
+                            "visibleIf": "{dataQualityDesign8} = \"item1-2\" and {dataQualityDesign9} = \"item1-1\"",
+                            "title": {
+                                "default": "Summarize the process or provide a link if publicly available.  ",
+                                "fr": "Veuillez décrire brièvement le processus ou fournir un lien s’il est accessible au public.  "
+                            }
+                        },
+                        {
                             "type": "radiogroup",
                             "name": "dataQualityDesign10",
                             "title": {
                                 "default": "Will the data used for this system be posted on the Open Government Portal?",
-                                "fr": "Les données utilisées pour ce système seront-elles affichées sur la portail du gouvernement ouvert?"
+                                "fr": "Les données utilisées pour ce système seront-elles publiées sur le Portail du gouvernement ouvert?"
                             },
                             "choices": [
                                 {
@@ -5257,8 +5260,8 @@
             ],
             "visibleIf": "{projectDetailsPhase} = \"item1\"",
             "title": {
-                "default": "De-Risking and Mitigation Measures",
-                "fr": "Élimination des risques et mesures d'atténuation"
+                "default": "De-risking and mitigation measures – data quality",
+                "fr": "Élimination des risques et mesures d’atténuation – Qualité des données "
             }
         },
         {
@@ -5268,16 +5271,16 @@
                     "type": "panel",
                     "name": "dataQualityImplementationPanel-MS",
                     "elements": [
-                        {
+                                                {
                             "type": "radiogroup",
                             "name": "dataQualityImplementation1",
                             "title": {
-                                "fr": "Disposez-vous de processus documentés pour tester les jeux de données en fonction de biais et d’autres résultats inattendus? Par exemple, ceci pourrait inclure une expérience dans l’application de cadres, de méthodes, de lignes directrices ou d’outils d’évaluation.",
-                                "default": "Do you have documented processes in place to test datasets against biases and other unexpected outcomes? This could include experience in applying frameworks, methods, guidelines or other assessment tools."
+                                "default": "Do you have documented processes in place to test datasets against biases, discrimination, and other unexpected outcomes? This could include experience in applying frameworks, methods, guidelines, or other assessment tools. ",
+                                "fr": "Disposez-vous de processus documentés permettant de vérifier si les jeux de données présentent des biais, des éléments discriminatoires et d’autres irrégularités? Il peut notamment s’agir de tests réalisés à l’aide de cadres, de méthodes, de lignes directrices ou d’outils d’évaluation."
                             },
                             "choices": [
                                 {
-                                    "value": "item1-2",
+                                    "value": "item1-3",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -5295,9 +5298,10 @@
                         {
                             "type": "radiogroup",
                             "name": "dataQualityImplementation2",
+                            "visibleIf": "{dataQualityImplementation1} = \"item1-3\"",
                             "title": {
-                                "default": "Is this information publicly available?",
-                                "fr": "Cette information est-elle publiquement disponible?"
+                                "default": "Is the documented process publicly available? ",
+                                "fr": "Le processus documenté est-il accessible au public ou le sera-t-il? "
                             },
                             "choices": [
                                 {
@@ -5317,11 +5321,20 @@
                             ]
                         },
                         {
+                            "type": "comment",
+                            "name": "dataQualityImplementation11",
+                            "visibleIf": "{dataQualityImplementation1} = \"item1-3\" and {dataQualityImplementation2} = \"item1-1\"",
+                            "title": {
+                                "default": "Summarize the process or provide a link if publicly available.  ",
+                                "fr": "Veuillez décrire brièvement le processus ou fournir un lien s’il est accessible au public."
+                            }
+                        },
+                        {
                             "type": "radiogroup",
                             "name": "dataQualityImplementation3",
                             "title": {
-                                "default": "Have you developed a process to document how data quality issues were resolved during the design process?",
-                                "fr": "Avez-vous élaboré un processus permettant de documenter la façon dont les problèmes de qualité des données qui seront résolus pendant le processus de conception?"
+                                "default": "Have you developed a process to document how data quality issues were resolved during the design process? ",
+                                "fr": "Avez-vous établi un processus permettant de documenter la façon dont les problèmes de qualité des données sont résolus pendant le processus de conception?"
                             },
                             "choices": [
                                 {
@@ -5343,9 +5356,10 @@
                         {
                             "type": "radiogroup",
                             "name": "dataQualityImplementation4",
+                            "visibleIf": "{dataQualityImplementation3} = \"item1-1\"",
                             "title": {
-                                "default": "Is this information publicly available?",
-                                "fr": "Cette information est-elle publiquement disponible?"
+                                "default": "Is the process publicly available? ",
+                                "fr": "Le processus est-il accessible au public ou le sera-t-il?  "
                             },
                             "choices": [
                                 {
@@ -5363,65 +5377,67 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "dataQualityImplementation12",
+                            "visibleIf": "{dataQualityImplementation3} = \"item1-1\" and {dataQualityImplementation4} = \"item1-1\"",
+                            "title": {
+                                "default": "Summarize the process or provide a link if publicly available.  ",
+                                "fr": "Veuillez décrire brièvement le processus ou fournir un lien s’il est accessible au public."
+                            }
                         },
                         {
                             "type": "radiogroup",
                             "name": "dataQualityImplementation5",
                             "title": {
-                                "default": "Have you undertaken a Gender Based Analysis Plus of the data?",
-                                "fr": "Avez-vous entrepris une analyse comparative entre les sexes plus des données?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-1",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "dataQualityImplementation6",
-                            "title": {
-                                "default": "Is this information publicly available?",
-                                "fr": "Cette information est-elle publiquement disponible?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-1",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "dataQualityImplementation7",
-                            "title": {
-                                "default": "Have you assigned accountability in your institution for the design, development, maintenance, and improvement of the system?",
-                                "fr": "Dans votre établissement, existe-t-il des responsables de la conception, du développement, de la maintenance et de l’amélioration du système?"
+                                "default": "Have you undertaken a Gender-based Analysis Plus (GBA Plus) of the data? ",
+                                "fr": " Avez-vous soumis les données à une analyse comparative entre les sexes plus (ACS Plus)? "
                             },
                             "choices": [
                                 {
                                     "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                },
+                                 {
+                                    "value": "item3-1",
+                                    "text": {
+                                        "default": "Not applicable",
+                                        "fr": "Sans objet"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "dataQualityImplementation6",
+                            "visibleIf": "{dataQualityImplementation5} = \"item3-1\"",
+                            "title": {
+                                "default": "Describe",
+                                "fr": "Veuillez préciser"
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "dataQualityImplementation6",
+                            "visibleIf": "{dataQualityImplementation5} = \"item1-2\"",
+                            "title": {
+                                "default": "Are the GBA Plus findings publicly available? ",
+                                "fr": "Les résultats de l’ACS Plus sont-ils accessibles au public ou le seront-ils? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -5440,8 +5456,8 @@
                             "type": "radiogroup",
                             "name": "dataQualityImplementation8",
                             "title": {
-                                "default": "Do you have a documented process to manage the risk that outdated or unreliable data is used to make an automated decision?",
-                                "fr": "Disposez-vous d'un processus documenté pour gérer le risque que des données périmées ou non fiables soient utilisées pour prendre une décision automatisée?"
+                                "default": "Do you have a documented process to manage the risk that low quality, outdated or unreliable data is used to make an automated decision?",
+                                "fr": "Disposez-vous d’un processus documenté permettant de gérer le risque que des données obsolètes ou non fiables soient utilisées dans le cadre d’une décision automatisée? "
                             },
                             "choices": [
                                 {
@@ -5463,9 +5479,10 @@
                         {
                             "type": "radiogroup",
                             "name": "dataQualityImplementation9",
+                            "visibleIf": "{dataQualityImplementation8} = \"item1-2\"",
                             "title": {
-                                "default": "Is this information publicly available?",
-                                "fr": "Cette information est-elle publiquement disponible?"
+                                "default": "Is the process publicly available? ",
+                                "fr": "Le processus est-il accessible au public? "
                             },
                             "choices": [
                                 {
@@ -5485,11 +5502,20 @@
                             ]
                         },
                         {
+                            "type": "comment",
+                            "name": "dataQualityImplementation9A",
+                            "visibleIf": "{dataQualityImplementation8} = \"item1-2\" and {dataQualityImplementation9} = \"item1-1\"",
+                            "title": {
+                                "default": "Summarize the process or provide a link if publicly available.  ",
+                                "fr": "Veuillez décrire brièvement le processus ou fournir un lien s’il est accessible au public.  "
+                            }
+                        },
+                        {
                             "type": "radiogroup",
                             "name": "dataQualityImplementation10",
                             "title": {
-                                "default": "Is the data used for this system posted on the Open Government Portal?",
-                                "fr": "Les données utilisées pour ce système seront-elles affichées sur la portail du gouvernement ouvert?"
+                                "default": "Will the data used for this system be posted on the Open Government Portal?",
+                                "fr": "Les données utilisées pour ce système seront-elles publiées sur le Portail du gouvernement ouvert?"
                             },
                             "choices": [
                                 {
@@ -5517,8 +5543,8 @@
             ],
             "visibleIf": "{projectDetailsPhase} = \"item2\"",
             "title": {
-                "default": "De-Risking and Mitigation Measures",
-                "fr": "Élimination des risques et mesures d'atténuation"
+                "default": "De-risking and mitigation measures – data quality",
+                "fr": "Élimination des risques et mesures d’atténuation – Qualité des données"
             }
         },
         {
