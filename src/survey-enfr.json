@@ -5558,8 +5558,33 @@
                             "type": "radiogroup",
                             "name": "fairnessDesign1",
                             "title": {
-                                "default": "Will the audit trail identify the authority or delegated authority identified in legislation?",
-                                "fr": "La piste de vérification permettra-t-elle de déterminer les pouvoirs ou les pouvoirs délégués prévus par la lois?"
+                                "default": "Will the audit trail provide information to trace the chain of legislative authority for the decision and key decision points?",
+                                "fr": " La piste de vérification fournira-t-elle de l’information permettant de déterminer de quelle autorité législative relèvent les décisions et les principaux points de décision ou en fournira-t-elle?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-1",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessDesign1A",
+                            "visibleIf": "{fairnessDesign1} = \"item1-1\"",
+                            "title": {
+                                "default": "Will all key decision points in the automated system’s logic be linked to the relevant legislation, policy or procedure?",
+                                "fr": "Les principaux points de décision compris dans la logique du système automatisé sont-ils tous reliés aux lois, aux politiques ou aux procédures applicables, ou le seront-ils?"
                             },
                             "choices": [
                                 {
@@ -5582,8 +5607,8 @@
                             "type": "radiogroup",
                             "name": "fairnessDesign2",
                             "title": {
-                                "default": "Will the system provide an audit trail that records all the recommendations or decisions made by the system?",
-                                "fr": "Le système fournira-t-il une piste de vérification qui enregistre toutes les recommandations ou décisions prises par le système?"
+                                "default": "Will the audit trail capture all the recommendations or decisions made by the system?",
+                                "fr": "Les recommandations ou les décisions du système seront-elles toutes consignées dans la piste de vérification?"
                             },
                             "choices": [
                                 {
@@ -5629,13 +5654,14 @@
                         {
                             "type": "radiogroup",
                             "name": "fairnessDesign4",
+                            "visibleIf": "{airnessDesign3} = \"item1-2\"",
                             "title": {
-                                "default": "Will all key decision points within the automated system's logic be linked to the relevant legislation, policy or procedure?",
-                                "fr": "Est-ce que toutes les décisions clés seront liées à une législation, politique ou à une procédure pertinente?"
+                                "default": "Will there be a process in place to log the instances when overrides were performed?",
+                                "fr": "Un processus permettant la consignation des cas de dérogation a-t-il établi, ou le sera-t-il? "
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -5654,36 +5680,12 @@
                             "type": "radiogroup",
                             "name": "fairnessDesign5",
                             "title": {
-                                "default": "Will you maintain a log detailing all of the changes made to the model and the system?",
-                                "fr": "Tiendrez-vous un journal détaillant toutes les modifications apportées au modèle et au système?"
+                                "default": "Will there be an up-to-date log of the changes made to the model and the system?",
+                                "fr": "Un registre actualisé des modifications apportées au modèle et au système a-t-il été mis en place, ou le sera-t-il?"
                             },
                             "choices": [
                                 {
                                     "value": "item1-2",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "fairnessDesign6",
-                            "title": {
-                                "default": "Will the audit trail clearly set out all decision points made by the system?",
-                                "fr": "La piste de vérification indiquera-t-elle clairement tous les points de décision prise par le système?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-1",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -5702,56 +5704,8 @@
                             "type": "radiogroup",
                             "name": "fairnessDesign7",
                             "title": {
-                                "default": "Could the audit trail generated by the system be used to help generate a notification of the decision (including a statement of reasons or other notification) where required?",
-                                "fr": "La piste de vérification générée par le système pourrait-elle être utilisée pour aider à produire une notification de la décision (y compris un énoncé des motifs ou une autre notification) au besoin?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-1",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "fairnessDesign8",
-                            "title": {
-                                "default": "Will the audit trail identify precisely which version of the system was used for each decision it supports?",
-                                "fr": "La piste de vérification permettra-t-elle de déterminer précisément quelle version du système a été utilisée pour chaque décision qu'elle appuie?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-2",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "fairnessDesign9",
-                            "title": {
-                                "default": "Will the audit trail show who the authorized decision-maker is?",
-                                "fr": "La piste de vérification indiquera-t-elle qui est le décideur autorisé?"
+                                "default": "Will the audit trail capture information that can be used to help generate an explanation of the decision where required?",
+                                "fr": "L’information permettant d’expliquer au besoin, une décision est-elle consignée dans la piste de vérification, ou le sera-t-elle? "
                             },
                             "choices": [
                                 {
@@ -5775,7 +5729,7 @@
                             "name": "fairnessDesign10",
                             "title": {
                                 "default": "Will the system be able to produce reasons for its decisions or recommendations when required?",
-                                "fr": "Le système sera-t-il en mesure de justifier ses décisions ou ses recommandations au besoin?"
+                                "fr": "Le système permet-il d’obtenir, au besoin, des justifications concernant ses décisions ou ses recommandations ou permettra-t-il d’en obtenir? "
                             },
                             "choices": [
                                 {
@@ -5796,10 +5750,34 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "fairnessDesign11",
+                            "name": "fairnessDesign8",
                             "title": {
-                                "default": "Will there be a process in place to grant, monitor, and revoke access permission to the system?",
-                                "fr": "Y aura-t-il un processus en place pour accorder, surveiller et révoquer l'autorisation d'accès au système?"
+                                "default": "Will the audit trail identify precisely which version of the system was used for each decision it supports?",
+                                "fr": "La piste de vérification permet-elle de déterminer précisément la version du système qui a été utilisée pour chaque décision, ou permettra-t-elle de le faire? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessDesign9",
+                            "title": {
+                                "default": "Will the audit trail show who the authorized decision-maker is?",
+                                "fr": "La personne autorisée à prendre des décisions est-elle indiquée dans la piste de vérification, ou le sera-t-elle?"
                             },
                             "choices": [
                                 {
@@ -5823,31 +5801,7 @@
                             "name": "fairnessDesign12",
                             "title": {
                                 "default": "Will there be a mechanism to capture feedback by users of the system?",
-                                "fr": "Y aura-t-il un mécanisme pour recueillir les commentaires des utilisateurs du système?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-1",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "fairnessDesign13",
-                            "title": {
-                                "default": "Will there be a recourse process planned or established for clients that wish to challenge the decision?",
-                                "fr": "Y aura-t-il un processus de recours prévu ou établi pour les clients qui souhaitent contester la décision?"
+                                "fr": "Un mécanisme permettant de recueillir les commentaires des utilisateurs du système a-t-il été prévu, ou le sera-t-il?"
                             },
                             "choices": [
                                 {
@@ -5865,6 +5819,57 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "fairnessDesign12A",
+                            "visibleIf": "{fairnessDesign12} = \"item1-2\"",
+                            "title": {
+                                "default": "Describe how user feedback informs updates to the system. ",
+                                "fr": "Si oui, veuillez décrire la façon dont la rétroaction sera prise en compte dans les mises à jour du système. "
+                            }
+                        },
+                        {
+                            "type": "comment",
+                            "name": "fairnessDesign12B",
+                            "visibleIf": "{fairnessDesign12} = \"item2-0\"",
+                            "title": {
+                                "default": "Describe why user feedback is not captured. ",
+                                "fr": "Si non, veuillez expliquer pourquoi la rétroaction n’a pas été prise en compte. "
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "fairnessDesign13",
+                            "title": {
+                                "default": "Will there be a recourse process planned or established for clients to challenge the decision?",
+                                "fr": "Un processus de recours a-t-il été prévu ou mis en place pour les personnes qui souhaitent contester la décision, ou le sera-t-il?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "fairnessDesign13A",
+                            "visibleIf": "{fairnessDesign13} contains \"item1-2\"",
+                            "title": {
+                                "default": "Provide information on the recourse process or link to a website where this is described.  ",
+                                "fr": "Veuillez fournir des renseignements sur la procédure de recours ou un lien vers un site web où cette procédure est décrite. "
+                            }
                         },
                         {
                             "type": "radiogroup",
