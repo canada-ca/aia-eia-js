@@ -131,16 +131,42 @@
     "MS": "CA",
     "requirements": {
         "title": "Section 2: Exigences spécifiques au niveau d'incidence",
-        "elements": [{
+        "elements": [
+            {
+                "title": "Avis",
+                "elements": [{
+                    "text": "Fournir un avis en langage clair de tous les modes de prestation de services utilisés (Internet, en personne, par courrier, par téléphone). "
+                }, {
+                    "text": "Fournir un avis en langage clair de tous les modes de prestation de services utilisés (Internet, en personne, par courrier, par téléphone). "
+                }, {
+                    "text": "Fournir un avis en langage clair de tous les modes de prestation de services utilisés (Internet, en personne, par courrier, par téléphone).  L’avis doit contenir un lien permettant de rediriger la clientèle vers l’explication publiée, conformément au niveau d’explication 1. "
+                }, {
+                    "text": "Fournir un avis en langage clair de tous les modes de prestation de services utilisés (Internet, en personne, par courrier, par téléphone).  L’avis doit contenir un lien permettant de rediriger la clientèle vers l’explication publiée, conformément au niveau d’explication 1. "
+                }]
+            },
+ 
+            {
+                "title": "Explication",
+                "elements": [{
+                    "text": "Veiller à ce que toutes les exigences légales applicables soient respectées et à ce qu’une explication  sur le fonctionnement général du système soit publiée.  L’explication doit être rédigée dans un langage clair et comprendre des renseignements sur les points suivants :\n\nle rôle du système dans le processus de décision;\nles données d’entrée, leur source et leur méthode de collecte;\nles critères utilisés pour l’évaluation des données d’entrée et des opérations visant leur traitement;\nles résultats de tout examen ou audit;\nle résultat produit par le système décisionnel automatisé et toute information nécessaire pour l’interpréter dans le contexte de la décision administrative;\nles principaux facteurs à l’origine d’une décision.\n\n\nCette explication doit être publiée sur un site Web du ministère qui est accessible au public et un lien y menant doit être inséré dans l’évaluation de l’incidence algorithmique.\n\n\nLes explications doivent également fournir à la clientèle des renseignements sur les possibilités de recours pertinentes, le cas échéant. "
+                }, {
+                    "text": "Veiller à ce que l’explication prévue au niveau I soit publiée.\n\n\nEn plus, veiller à ce qu’une explication plus détaillée, utile et rédigée en langage clair soit fournie à la clientèle visée par une décision entraînant le refus d’une prestation ou d’un service, ou prévoyant la prise d’une mesure réglementaire.\n\n\nCette explication doit renseigner la personne concernée sur les motifs ou les justifications qui sous-tendent la décision administrative. Elle doit comprendre une description claire et axée sur la clientèle du processus qui a conduit le système décisionnel automatisé à rendre la décision, y compris :\n\nles principaux facteurs pris en compte, par exemple la description de l’arbre de décision, la notation ou la pondération de certains facteurs;\nla manière dont les résultats du système décisionnel automatisé ont été utilisés par le personnel.\n\n\nFournir à la clientèle le lien vers l’explication prévue au niveau I."
+                }, {
+                    "text": "Veiller à ce que l’explication prévue au niveau I soit publiée.\n\n\nEn plus, veiller à ce qu’une explication plus détaillée, utile et rédigée en langage clair soit fournie à la clientèle visée par une décision entraînant le refus d’une prestation ou d’un service, ou prévoyant la prise d’une mesure réglementaire.\n\n\nCette explication doit renseigner la personne concernée sur les motifs ou les justifications qui sous-tendent la décision administrative. Elle doit comprendre une description claire et axée sur la clientèle du processus qui a conduit le système décisionnel automatisé à rendre la décision, y compris :\n\nles principaux facteurs pris en compte, par exemple la description de l’arbre de décision, la notation ou la pondération de certains facteurs;\nla manière dont les résultats du système décisionnel automatisé ont été utilisés par le personnel.\n\n\nFournir à la clientèle le lien vers l’explication prévue au niveau I."
+                }, {
+                    "text": "Veiller à ce que l’explication prévue au niveau I soit publiée.\n\n\nEn plus, veiller à ce qu’une explication plus détaillée, utile et rédigée en langage clair soit fournie à la clientèle visée par une décision entraînant le refus d’une prestation ou d’un service, ou prévoyant la prise d’une mesure réglementaire.\n\n\nCette explication doit renseigner la personne concernée sur les motifs ou les justifications qui sous-tendent la décision administrative. Elle doit comprendre une description claire et axée sur la clientèle du processus qui a conduit le système décisionnel automatisé à rendre la décision, y compris :\n\nles principaux facteurs pris en compte, par exemple la description de l’arbre de décision, la notation ou la pondération de certains facteurs;\nla manière dont les résultats du système décisionnel automatisé ont été utilisés par le personnel.\n\n\nFournir à la clientèle le lien vers l’explication prévue au niveau I."
+                }]
+            },
+            {
                 "title": "Examen par les pairs",
                 "elements": [{
                     "text": "Aucune"
                 }, {
-                    "text": "Consulter au moins un des experts suivants et publier l’examen complet ou un résumé en langage clair des conclusions sur un site Web du gouvernement du Canada : \n\nexpert qualifié d’une institution gouvernementale fédérale, provinciale, territoriale ou municipale \nmembres qualifiés d’une faculté d’un établissement postsecondaire \nchercheurs qualifiés d’une organisation non gouvernementale pertinente \ntiers fournisseur contractuel avec une spécialisation pertinente \nun comité consultatif des données et d’automatisation spécifié par le Secrétariat du Conseil du Trésor du Canada \n\n\nOU \nPublier les spécifications du système décisionnel automatisé dans une revue à comité de lecture. Lorsque l’accès à la revue publiée est restreint, veiller à ce qu’un résumé des conclusions en langage clair soit librement accessible."
+                    "text": "Consulter au moins l’un ou l’une des spécialistes ci-après et publier l’examen complet, ou un résumé de ce dernier, en langage clair sur un site Web du gouvernement du Canada :\n\nspécialistes d’une institution gouvernementale fédérale, provinciale, territoriale ou municipale;\nmembres d’une faculté d’un établissement postsecondaire;\nmembres de l’équipe de recherche d’une organisation non gouvernementale pertinente;\nprestataire de services sous contrat ayant une spécialisation pertinente;\ncomité consultatif des données et d’automatisation désigné par le Secrétariat du Conseil du Trésor du Canada. "
                 }, {
-                    "text": "Consulter au moins un des experts suivants et publier l’examen complet ou un résumé en langage clair des conclusions sur un site Web du gouvernement du Canada : \n\nexpert qualifié d’une institution gouvernementale fédérale, provinciale, territoriale ou municipale \nmembres qualifiés d’une faculté d’un établissement postsecondaire \nchercheurs qualifiés d’une organisation non gouvernementale pertinente \ntiers fournisseur contractuel avec une spécialisation pertinente \nun comité consultatif des données et d’automatisation spécifié par le Secrétariat du Conseil du Trésor du Canada \n\n\nOU \nPublier les spécifications du système décisionnel automatisé dans une revue à comité de lecture. Lorsque l’accès à la revue publiée est restreint, veiller à ce qu’un résumé des conclusions en langage clair soit librement accessible."
+                    "text": "Consulter au moins l’un ou l’une des spécialistes ci-après et publier l’examen complet, ou un résumé de ce dernier, en langage clair sur un site Web du gouvernement du Canada :\n\nspécialistes d’une institution gouvernementale fédérale, provinciale, territoriale ou municipale;\nmembres d’une faculté d’un établissement postsecondaire;\nmembres de l’équipe de recherche d’une organisation non gouvernementale pertinente;\nprestataire de services sous contrat ayant une spécialisation pertinente;\ncomité consultatif des données et d’automatisation désigné par le Secrétariat du Conseil du Trésor du Canada."
                 }, {
-                    "text": "Consulter au moins deux des experts suivants et publier l’examen complet ou un résumé en langage clair des conclusions sur un site Web du gouvernement du Canada : \n\nexperts qualifiés du Conseil national de recherches du Canada, de Statistique Canada ou du Centre pour la sécurité des télécommunications \nmembres qualifiés d’une faculté d’un établissement postsecondaire \nchercheurs qualifiés d’une organisation non gouvernementale pertinente \ntiers fournisseur contractuel avec une spécialisation pertinente \nun comité consultatif des données et d’automatisation spécifié par le Secrétariat du Conseil du Trésor du Canada. \n\n\nOU \nPublier les  spécifications du système décisionnel automatisé dans une revue à comité de lecture. Lorsque l’accès à la revue publiée est restreint, veiller à ce qu’un résumé des conclusions en langage clair soit librement accessible."
+                    "text": "Consulter au moins deux des spécialistes ci-après et publier l’examen complet, ou un résumé de ce dernier, en langage clair sur un site Web du gouvernement du Canada :\n\nspécialistes du Conseil national de recherches du Canada, de Statistique Canada, du Centre de la sécurité des télécommunications Canada ou de Services partagés Canada;\nmembres d’une faculté d’un établissement postsecondaire;\nmembres de l’équipe de recherche d’une organisation non gouvernementale pertinente;\nprestataire de services sous contrat ayant une spécialisation pertinente;\ncomité consultatif des données et d’automatisation désigné par le Secrétariat du Conseil du Trésor du Canada."
                 }]
             },
             {
@@ -148,81 +174,45 @@
                 "elements": [{
                     "text": "Aucune"
                 }, {
-                    "text": "S’assurer que l’analyse comparative entre les sexes plus aborde les questions suivantes : \n\nles incidences du projet d’automatisation (y compris le système, les données et la décision) sur le genre et/ou d’autres facteurs d’identité; \nles mesures prévues ou existantes pour faire face aux risques identifiés par l’analyse comparative entre les sexes plus."
+                    "text": "Veiller à ce que les spécialistes de la diversité et de l'inclusion de votre ministère aient été consultés dans le cadre de l'analyse comparative entre les sexes plus et à ce que cette dernière comprenne ce qui suit :\n\nune évaluation de l’incidence possible du projet d’automatisation sur les différents groupes de population. L’évaluation doit notamment prendre en considération l’incidence du système décisionnel automatisé, des données utilisées dans le cadre du projet et des effets probables de la décision définitive. Les données utilisées aux fins de l’évaluation doivent être citées dans la mesure du possible. Il est recommandé de ventiler les données en fonction de genre et d’inclure d’autres facteurs identitaires tels que l’âge, le handicap et la race. Si ces données ne sont pas disponibles, précisez quelles sont les lacunes en la matière;\ndes précisions sur les mesures prévues ou existantes visant à gérer les risques recensés dans le cadre de l’analyse comparative entre les sexes plus ou d’autres évaluations."
                 }, {
-                    "text": "S’assurer que l’analyse comparative entre les sexes plus aborde les questions suivantes : \n\nles incidences du projet d’automatisation (y compris le système, les données et la décision) sur le genre et/ou d’autres facteurs d’identité; \nles mesures prévues ou existantes pour faire face aux risques identifiés par l’analyse comparative entre les sexes plus."
+                    "text": "Veiller à ce que les spécialistes de la diversité et de l'inclusion de votre ministère aient été consultés dans le cadre de l'analyse comparative entre les sexes plus et à ce que cette dernière comprenne ce qui suit :\n\nune évaluation de l’incidence possible du projet d’automatisation sur les différents groupes de population. L’évaluation doit notamment prendre en considération l’incidence du système décisionnel automatisé, des données utilisées dans le cadre du projet et des effets probables de la décision définitive. Les données utilisées aux fins de l’évaluation doivent être citées dans la mesure du possible. Il est recommandé de ventiler les données en fonction de genre et d’inclure d’autres facteurs identitaires tels que l’âge, le handicap et la race. Si ces données ne sont pas disponibles, précisez quelles sont les lacunes en la matière;\ndes précisions sur les mesures prévues ou existantes visant à gérer les risques recensés dans le cadre de l’analyse comparative entre les sexes plus ou d’autres évaluations."
                 }, {
-                    "text": "S’assurer que l’analyse comparative entre les sexes plus aborde les questions suivantes : \n\nles incidences du projet d’automatisation (y compris le système, les données et la décision) sur le genre et/ou d’autres facteurs d’identité; \nles mesures prévues ou existantes pour faire face aux risques identifiés par l’analyse comparative entre les sexes plus."
-                }]
-            },
-            {
-                "title": "Avis",
-                "elements": [{
-                    "text": "Aucune"
-                }, {
-                    "text": "Avis en langage simple fourni par l’entremise de tous les modes de prestation de services utilisés (Internet, en personne, par courrier, par téléphone)."
-                }, {
-                    "text": "Fournir un avis en langage simple par l’entremise de tous les modes de prestation de services utilisés (Internet, en personne, par courrier, par téléphone). De plus, publier de la documentation sur les sites Web pertinents au sujet du système décisionnel automatisé, en langage simple, décrivant : \n\nle fonctionnement des composants; \nla façon dont il appuie la décision administrative; \nles résultats de tout examen ou audit; \nune description des données d’apprentissage ou un lien vers les données d’apprentissage anonymisées si ces données sont accessibles au public."
-                }, {
-                    "text": "Fournir un avis en langage simple par l’entremise de tous les modes de prestation de services utilisés (Internet, en personne, par courrier, par téléphone). De plus, publier de la documentation sur les sites Web pertinents au sujet du système décisionnel automatisé, en langage simple, décrivant : \n\nle fonctionnement des composants; \nla façon dont il appuie la décision administrative; \nles résultats de tout examen ou audit; \nune description des données d’apprentissage ou un lien vers les données d’apprentissage anonymisées si ces données sont accessibles au public."
-                }]
-            },
-            {
-                "title": "Maillon humain de la prise de décisions",
-                "elements": [{
-                    "text": "Des décisions peuvent être prises sans participation humaine directe."
-                }, {
-                    "text": "Des décisions peuvent être prises sans participation humaine directe."
-                }, {
-                    "text": "Des décisions ne peuvent être prises sans qu’il y ait des points d’intervention humaine précis pendant le processus décisionnel.\nLa décision définitive doit être prise par un humain."
-                }, {
-                    "text": "Des décisions ne peuvent être prises sans qu’il y ait des points d’intervention humaine précis pendant le processus décisionnel.\nLa décision définitive doit être prise par un humain."
-                }]
-            },
-            {
-                "title": "Explication",
-                "elements": [{
-                    "text": "En plus de toute exigence juridique applicable, s’assurer qu’une explication significative des résultats communs des décisions soit publiée. L’explication doit fournir une description générale des points suivants : \n\nle rôle du système dans le processus de décision;  \nles données d’entrée, leur source et leur méthode de collecte;  \nles critères utilisés pour évaluer les données d’entrée et les opérations appliquées pour les traiter;  \nle résultat produit par le système et toute information pertinente nécessaire pour l’interpréter dans le contexte de la décision administrative; \nles principaux facteurs à l’origine d’une décision. \n\n\nLes explications doivent également fournir des renseignements aux clients sur les possibilités de recours pertinentes, le cas échéant. \nLes descriptions doivent être offertes en langage clair par l’entremise de l’évaluation de l’incidence algorithmique et être repérables sur le site Web de l’institution."
-                }, {
-                    "text": "En plus de toute exigence juridique applicable, s’assurer qu’une explication significative est fournie au client avec toute décision qui entraîne le refus de prestation ou service, ou qui implique une autre mesure réglementaire. L’explication doit fournir des renseignements au client, en langage clair, sur ce qui suit : \n\nle rôle du système dans le processus de décision; \nles données d’apprentissage et relatives aux clients, leur source et leur méthode de collecte, le cas échéant; \nles critères utilisés pour évaluer les données des clients et les opérations appliquées pour les traiter; \nle résultat produit par le système et toute information pertinente nécessaire pour l’interpréter dans le contexte de la décision administrative; \nune justification de la décision administrative, y compris les principaux facteurs qui l’ont motivée. \n\n\nLes explications doivent également fournir des renseignements aux clients sur les possibilités de recours pertinentes, le cas échéant. \nUne description générale de ces éléments doit également être mise à disposition par l’entremise de l’évaluation de l’incidence algorithmique et être repérable sur le site Web de l’institution."
-                }, {
-                    "text": "En plus de toute exigence juridique applicable, s’assurer qu’une explication significative est fournie au client avec toute décision qui entraîne le refus de prestation ou service, ou qui implique une autre mesure réglementaire. L’explication doit fournir des renseignements au client, en langage clair, sur ce qui suit : \n\nle rôle du système dans le processus de décision; \nles données d’apprentissage et relatives aux clients, leur source et leur méthode de collecte, le cas échéant; \nles critères utilisés pour évaluer les données des clients et les opérations appliquées pour les traiter; \nle résultat produit par le système et toute information pertinente nécessaire pour l’interpréter dans le contexte de la décision administrative; \nune justification de la décision administrative, y compris les principaux facteurs qui l’ont motivée. \n\n\nLes explications doivent également fournir des renseignements aux clients sur les possibilités de recours pertinentes, le cas échéant. \nUne description générale de ces éléments doit également être mise à disposition par l’entremise de l’évaluation de l’incidence algorithmique et être repérable sur le site Web de l’institution."
-                }, {
-                    "text": "En plus de toute exigence juridique applicable, s’assurer qu’une explication significative est fournie au client avec toute décision qui entraîne le refus de prestation ou service, ou qui implique une autre mesure réglementaire. L’explication doit fournir des renseignements au client, en langage clair, sur ce qui suit : \n\nle rôle du système dans le processus de décision; \nles données d’apprentissage et relatives aux clients, leur source et leur méthode de collecte, le cas échéant; \nles critères utilisés pour évaluer les données des clients et les opérations appliquées pour les traiter; \nle résultat produit par le système et toute information pertinente nécessaire pour l’interpréter dans le contexte de la décision administrative; \nune justification de la décision administrative, y compris les principaux facteurs qui l’ont motivée. \n\n\nLes explications doivent également fournir des renseignements aux clients sur les possibilités de recours pertinentes, le cas échéant. \nUne description générale de ces éléments doit également être mise à disposition par l’entremise de l’évaluation de l’incidence algorithmique et être repérable sur le site Web de l’institution."
+                    "text": "Veiller à ce que les spécialistes de la diversité et de l'inclusion de votre ministère aient été consultés dans le cadre de l'analyse comparative entre les sexes plus et à ce que cette dernière comprenne ce qui suit :\n\nune évaluation de l’incidence possible du projet d’automatisation sur les différents groupes de population. L’évaluation doit notamment prendre en considération l’incidence du système décisionnel automatisé, des données utilisées dans le cadre du projet et des effets probables de la décision définitive. Les données utilisées aux fins de l’évaluation doivent être citées dans la mesure du possible. Il est recommandé de ventiler les données en fonction de genre et d’inclure d’autres facteurs identitaires tels que l’âge, le handicap et la race. Si ces données ne sont pas disponibles, précisez quelles sont les lacunes en la matière;\ndes précisions sur les mesures prévues ou existantes visant à gérer les risques recensés dans le cadre de l’analyse comparative entre les sexes plus ou d’autres évaluations."
                 }]
             },
             {
                 "title": "Formation",
                 "elements": [{
-                    "text": "Aucune"
+                    "text": "Offrir une formation fondée sur les différents rôles visant à expliquer brièvement les fonctions du système décisionnel automatisé et leur utilisation appropriée."
                 }, {
-                    "text": "Documents sur la conception et la fonctionnalité du système."
+                    "text": "Offrir une formation fondée sur les différents rôles visant à expliquer brièvement les fonctions du système décisionnel automatisé et leur utilisation appropriée."
                 }, {
-                    "text": "Documents sur la conception et la fonctionnalité du système.\nIl faut suivre des cours de formation."
+                    "text": "Offrir une formation fondée sur les différents rôles qui porte sur la gestion, la protection et l’utilisation appropriées des fonctions du système décisionnel automatisé et la présentation de ses capacités, notamment en ce qui concerne ce qui suit\n\nles aspects techniques du système décisionnel automatisé en vue de garantir une connaissance à jour du fonctionnement du système;\nles incidences potentielles du système décisionnel automatisé sur la vie privée, l'équité et les droits de la personne, et la manière de les détecter;\nla manière d'évaluer et, au besoin, d'annuler des décisions.\n\n\nLa formation doit être récurrente."
                 }, {
                     "text": "Documents sur la conception et la fonctionnalité du système.\nCours de formation récurrents.\nUn moyen de vérifier que la formation a été suivie."
                 }]
             },
             {
-                "title": "Gestion de la TI et de la continuité des activités",
+                "title": "Participation humaine",
                 "elements": [{
-                    "text": "Aucune"
+                    "text": "Le système peut rendre des décisions et procéder à des évaluations sans aucune participation directe du personnel.\nLe personnel doit contribuer à l’assurance de la qualité du système et peut déroger aux décisions prises par le système, au besoin. "
                 }, {
-                    "text": "Aucune"
+                    "text": "Le système peut rendre des décisions et procéder à des évaluations sans aucune participation directe du personnel.\nLe personnel doit contribuer à l’assurance de la qualité du système et peut déroger aux décisions prises par le système, au besoin."
                 }, {
-                    "text": "Veiller à ce que des stratégies de récupération du système, des plans pour la continuité des activités et/ou de sauvegarde des mesures de sécurité pertinents soient établis en coordination avec les responsables désignés en cas d’indisponibilité du système décisionnel automatisé."
+                    "text": "La décision définitive doit être prise par le personnel.\n\n\nLes décisions ne peuvent être prises sans une participation clairement définie du personnel au cours du processus décisionnel.\n\n\nLe personnel examine les décisions ou les recommandations générées par le système pour vérifier qu’elles sont exactes et appropriées. Il doit prendre part à l’assurance qualité et peut intervenir dans le processus de décision et d’évaluation du système. "
                 }, {
-                    "text": "Veiller à ce que des stratégies de récupération du système, des plans pour la continuité des activités et/ou de sauvegarde des mesures de sécurité pertinents soient établis en coordination avec les responsables désignés en cas d’indisponibilité du système décisionnel automatisé."
+                    "text": "La décision définitive doit être prise par le personnel.\n\n\nLes décisions ne peuvent être prises sans une participation clairement définie du personnel au cours du processus décisionnel.\n\n\nLe personnel examine les décisions ou les recommandations générées par le système pour vérifier qu’elles sont exactes et appropriées. Il doit prendre part à l’assurance qualité et peut intervenir dans le processus de décision et d’évaluation du système."
                 }]
             },
             {
                 "title": "Approbation de l’exploitation du système",
                 "elements": [{
-                    "text": "Aucune"
+                    "text": "Sous-ministre adjoint ou sous-ministre adjointe responsable du programme "
                 }, {
-                    "text": "Aucune"
+                    "text": "Sous-ministre adjoint ou sous-ministre adjointe responsable du programme "
                 }, {
-                    "text": "Administrateur général"
+                    "text": "Administrateur général ou administratrice générale"
                 }, {
                     "text": "Conseil du Trésor"
                 }]
