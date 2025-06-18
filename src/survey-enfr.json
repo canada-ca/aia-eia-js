@@ -6937,12 +6937,12 @@
                             "type": "radiogroup",
                             "name": "privacyDesign2",
                             "title": {
-                                "default": "Will you design and build security and privacy into your systems from the concept stage of the project?",
-                                "fr": "Concevrez-vous et intégrerez-vous la sécurité et la confidentialité dans vos systèmes dès la phase de conception du projet?"
+                                "default": "Will you design and build security into your systems from the concept stage of the project?",
+                                "fr": "Avez-vous conçu des mesures de sécurité et les avez-vous intégrées dans vos systèmes dès l’étape de la conception du projet, ou avez-vous l’intention de le faire?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -6957,12 +6957,56 @@
                                 }
                             ]
                         },
+                         {
+                            "type": "comment",
+                            "name": "privacyDesign2A",
+                            "visibleIf": "{privacyDesign2} = \"item1-2\"",
+                            "title": {
+                                "default": "Describe",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+
+
+                        {
+                            "type": "radiogroup",
+                            "name": "privacyDesign9",
+                            "title": {
+                                "default": "Will you design and build privacy into your systems from the concept stage of the project?",
+                                "fr": "Avez-vous conçu des mesures de de protection des renseignements personnels et les avez-vous intégrées dans vos systèmes dès l’étape de la conception du projet, ou avez-vous l’intention de le faire?"
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                         {
+                            "type": "comment",
+                            "name": "privacyDesign9A",
+                            "visibleIf": "{privacyDesign9} = \"item1-2\"",
+                            "title": {
+                                "default": "Describe",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
                         {
                             "type": "radiogroup",
                             "name": "privacyDesign3",
                             "title": {
-                                "default": "Will information be used within a closed system (i.e. no connections to the Internet, Intranet or any other system)?",
-                                "fr": "Les informations seront-elles utilisées dans un système fermé (c'est-à-dire sans connexion à Internet, Intranet ou tout autre système)?"
+                                "default": "Will information be used within a closed system (no connections to the Internet, Intranet or any other system)?",
+                                "fr": "L’information est-elle utilisée dans un système fermé (c’est-à-dire sans connexion à Internet, à l’intranet ou à tout autre système), ou le sera-t-elle?"
                             },
                             "choices": [
                                 {
@@ -6985,8 +7029,8 @@
                             "type": "radiogroup",
                             "name": "privacyDesign4",
                             "title": {
-                                "default": "If the sharing of personal information is involved, has an agreement or arrangement with appropriate safeguards been established?",
-                                "fr": "Si le partage de renseignements personnels est impliqué, un accord ou un arrangement avec des garanties appropriées a-t-il été établi?"
+                                "default": "If the disclosing of personal information is involved, has an agreement or arrangement with appropriate safeguards been established?",
+                                "fr": "Si la transmission de renseignements personnels est prévue, un accord ou un arrangement prévoyant des mesures de sécurité appropriées a-t-il été conclu?"
                             },
                             "choices": [
                                 {
@@ -7010,7 +7054,7 @@
                             "name": "privacyDesign7",
                             "title": {
                                 "default": "Will you de-identify any personal information used or created by the system at any point in the lifecycle? ",
-                                "fr": "Allez-vous dépersonnaliser les renseignements personnels utilisés ou établis par le système à tout moment du cycle de vie? "
+                                "fr": "Les renseignements personnels traités ou créés par le système seront-ils dépersonnalisés à toutes les étapes du cycle de vie?"
                             },
                             "choices": [
                                 {
@@ -7034,8 +7078,8 @@
                             "name": "privacyDesign8",
                             "visibleIf": "{privacyDesign7} = \"item1-1\"",
                             "title": {
-                                "default": "Please describe your de-identification method(s).",
-                                "fr": "Veuillez décrire la méthode ou les méthodes de dépersonnalisation que vous allez utiliser. "
+                                "default": "Describe your de-identification method(s).",
+                                "fr": "Veuillez décrire les méthodes de dépersonnalisation que vous utiliserez.  "
                             }
                         }
                     ],
@@ -7062,12 +7106,12 @@
                             "type": "radiogroup",
                             "name": "privacyImplementation1",
                             "title": {
-                                "default": "If your system uses or creates personal information, have you undertaken a Privacy Impact Assessment, or updated an existing one?",
-                                "fr": "Si votre système utilise ou crée des renseignements personnels, avez-vous entrepris une évaluation des facteurs relatifs à la vie privée ou révisé une évaluation existante?"
+                                "default": "If your system uses or creates personal information, have you undertaken a PIA, or updated an existing one? ",
+                                "fr": "Si votre système traite ou génère des renseignements personnels, avez-vous réalisé une évaluation des facteurs relatifs à la vie privée (EFVP) ou mis à jour une évaluation existante avant le lancement du système?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -7085,10 +7129,10 @@
                         {
                             "type": "comment",
                             "name": "privacyImplementation5",
-                            "visibleIf": "{privacyImplementation1} = \"item1-1\"",
+                            "visibleIf": "{privacyImplementation1} = \"item1-2\"",
                             "title": {
-                                "default": "Please indicate the following in your answer: Title and scope of the Privacy Impact Assessment; How the automation project fits into the program; and Date of Privacy Impact Assessment completion or modification.",
-                                "fr": "Veuillez indiquer les éléments suivants dans votre réponse : titre et portée de l’évaluation des facteurs relatifs à la vie privée; la manière dont le projet d’automatisation s’intègre au programme; date d’achèvement ou de modification de l’évaluation des facteurs relatifs à la vie privée."
+                                "default": "Indicate the following in your answer: Title and scope of the PIA; How the automation project fits into the program; and Date of PIA completion or modification.",
+                                "fr": "Si oui, veuillez indiquer les éléments suivants dans votre réponse : le titre et la portée de l’EFVP; la manière dont le projet d’automatisation s’intègre au programme; la date d’achèvement ou de modification de l’EFVP."
                             }
                         },
                         {
@@ -7096,20 +7140,20 @@
                             "name": "privacyImplementation6",
                             "visibleIf": "{privacyImplementation1} = \"item2-0\"",
                             "title": {
-                                "default": "Have you undertaken other types of privacy assessments for your automation project?  Please describe any relevant efforts.",
-                                "fr": "Avez-vous entrepris d’autres types d’évaluations de la protection de la vie privée pour votre projet d’automatisation? Veuillez décrire toute mesure pertinente."
+                                "default": "Have you undertaken other types of privacy assessments for your automation project? Describe any relevant efforts. ",
+                                "fr": "Si non, avez-vous réalisé d’autres types d’EFVP pour votre projet d’automatisation? Veuillez décrire toute mesure pertinente."
                             }
                         },
                         {
                             "type": "radiogroup",
                             "name": "privacyImplementation2",
                             "title": {
-                                "default": "Have you designed and built security and privacy into your systems from the concept stage of the project?",
-                                "fr": "Avez-vous conçu et intégré la sécurité et la confidentialité dans vos systèmes dès la phase de conception du projet?"
+                                "default": "Have you designed and built security into your systems from the concept stage of the project?",
+                                "fr": "Avez-vous conçu des mesures de sécurité et les avez-vous intégrées dans vos systèmes dès l’étape de la conception du projet?"
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -7125,11 +7169,53 @@
                             ]
                         },
                         {
+                            "type": "comment",
+                            "name": "privacyImplementation2A",
+                            "visibleIf": "{privacyImplementation2} = \"item1-2\"",
+                            "title": {
+                                "default": "Describe",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+                        {
+                            "type": "radiogroup",
+                            "name": "privacyImplementation9",
+                            "title": {
+                                "default": "Have you designed and built privacy into your systems from the concept stage of the project?",
+                                "fr": "Avez-vous conçu des mesures de de protection des renseignements personnels et les avez-vous intégrées dans vos systèmes dès l’étape de la conception du projet? "
+                            },
+                            "choices": [
+                                {
+                                    "value": "item1-2",
+                                    "text": {
+                                        "default": "Yes",
+                                        "fr": "Oui"
+                                    }
+                                },
+                                {
+                                    "value": "item2-0",
+                                    "text": {
+                                        "default": "No",
+                                        "fr": "Non"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "privacyImplementation9A",
+                            "visibleIf": "{privacyImplementation9} = \"item1-2\"",
+                            "title": {
+                                "default": "Describe",
+                                "fr": "Veuillez préciser."
+                            }
+                        },
+                        {
                             "type": "radiogroup",
                             "name": "privacyImplementation3",
                             "title": {
-                                "default": "Is the information used within a closed system (i.e. no connections to the Internet, Intranet or any other system)?",
-                                "fr": "Les informations sont-elles utilisées dans un système fermé (c'est-à-dire sans connexion à Internet, Intranet ou tout autre système)?"
+                                "default": "Is the information used within a closed system (no connections to the Internet, Intranet or any other system)?",
+                                "fr": "L’information est-elle utilisée dans un système fermé (c’est-à-dire sans connexion à Internet, à l’intranet ou à tout autre système)?"
                             },
                             "choices": [
                                 {
@@ -7152,8 +7238,8 @@
                             "type": "radiogroup",
                             "name": "privacyImplementation4",
                             "title": {
-                                "default": "If the sharing of personal information is involved, has an agreement or arrangement with appropriate safeguards been established?",
-                                "fr": "Si le partage de renseignements personnels est impliqué, un accord ou un arrangement avec des garanties appropriées a-t-il été établi?"
+                                "default": "If the disclosing of personal information is involved, has an agreement or arrangement with appropriate safeguards been established?",
+                                "fr": "Si la transmission de renseignements personnels est prévue, un accord ou un arrangement prévoyant des mesures de sécurité appropriées a-t-il été conclu? "
                             },
                             "choices": [
                                 {
@@ -7177,7 +7263,7 @@
                             "name": "privacyImplementation7",
                             "title": {
                                 "default": "Will you de-identify any personal information used or created by the system at any point in the lifecycle? ",
-                                "fr": "Allez-vous dépersonnaliser les renseignements personnels utilisés ou établis par le système à tout moment du cycle de vie? "
+                                "fr": "Les renseignements personnels traités ou créés par le système seront-ils dépersonnalisés à toutes les étapes du cycle de vie? "
                             },
                             "choices": [
                                 {
@@ -7201,8 +7287,8 @@
                             "name": "privacyImplementation8",
                             "visibleIf": "{privacyImplementation7} = \"item1-1\"",
                             "title": {
-                                "default": "Please describe your de-identification method(s).",
-                                "fr": "Veuillez décrire la méthode ou les méthodes de dépersonnalisation que vous allez utiliser. "
+                                "default": "Describe your de-identification method(s).",
+                                "fr": "Veuillez décrire les méthodes de dépersonnalisation que vous utiliserez."
                             }
                         }
                     ],
