@@ -47,7 +47,8 @@
     "Tradeoffs",
     "SLGBTQI",
     "ELGBTQI",
-    "extrants"
+    "extrants",
+    "analyzed"
   ],
   "flagWords": [],
   "import": ["./node_modules/@cspell/dict-fr-fr/cspell-ext.json"],
