@@ -1429,18 +1429,17 @@
                                     }
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                             "type": "comment",
+                        },
+                        {
+                            "type": "comment",
                             "name": "projectAuthority2",
-                            "visibleIf": "{projectAuthority1} contains \"item1-2\"",
                             "title": {
                                 "default": "Indicate why you have chosen the response.",
                                 "fr": "Précisez votre réponse."
                             }
-                }  
+                        }
+                    ]
+                }
             ],
             "title": {
                 "default": "Project Authority",
