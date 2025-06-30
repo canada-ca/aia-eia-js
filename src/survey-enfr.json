@@ -4006,7 +4006,7 @@
                             "name": "consultation-intro",
                             "html": {
                                 "default": "<h4>Will you be engaging with any of the following groups?</h4>",
-                                "fr": "<h4>Allez-vous consulter l'un ou l'autre des groupes suivants ?</h4>"
+                                "fr": "<h4>Allez-vous mobiliser l’un ou l’autre des groupes suivants, ou avez-vous l’intention de le faire?</h4>"
                             }
                         },
                         {
@@ -4036,7 +4036,7 @@
                         {
                             "type": "checkbox",
                             "name": "consultationDesign2",
-                            "visibleIf": "{consultationDesign1} = \"item1-1\"",
+                            "visibleIf": "{consultationDesign1} = \"item1-2\"",
                             "title": {
                                 "default": "Which internal consultees or partners will you be engaging?",
                                 "fr": "Indiquez les partenaires ou les parties consultantes que vous mobiliserez à l’interne"
@@ -4087,7 +4087,7 @@
                                 {
                                     "value": "item8",
                                     "text": {
-                                        "default": "Client Experience / client Relationship Management",
+                                        "default": "Client Experience / Client Relationship Management",
                                         "fr": "Expérience de la clientèle et gestion de la relation avec celle-ci "
                                     }
                                 },
@@ -4192,7 +4192,7 @@
                         {
                             "type": "checkbox",
                             "name": "consultationDesign4",
-                            "visibleIf": "{consultationDesign3} = \"item1-1\"",
+                            "visibleIf": "{consultationDesign3} = \"item1-2\"",
                             "title": {
                                 "default": "Which external consultees or partners will you be engaging?",
                                 "fr": "Indiquez les partenaires ou les parties consultantes que vous mobiliserez à l’externe."
@@ -4291,7 +4291,7 @@
                             "name": "consultationDesign5",
                             "title": {
                                 "default": "Identify the consultees or partners and indicate the project lifecycle stage (Concept, Design, Data collection and processing, Building or adapting the model, Testing, Deployment, Production, Monitoring, Decommission) in which the engagement will take place.",
-                                "fr": "Indiquez les partenaires ou les parties consultantes et l’étape du cycle de vie du projet (par exemple, le plan de conception, la conception, la collecte de données et le traitement, l’élaboration ou l’adaptation du modèle, la mise à l’essai, le déploiement, la production, la surveillance et la mise hors service) au cours de laquelle les activités de consultation dérouleront."
+                                "fr": " Indiquez les partenaires ou les parties consultantes et l’étape du cycle de vie du projet (par exemple, le plan de conception, la conception, la collecte de données et le traitement, l’élaboration ou l’adaptation du modèle, la mise à l’essai, le déploiement, la production, la surveillance et la mise hors service) au cours de laquelle les activités de consultation dérouleront."
                             }
                         },
                         {
@@ -4500,7 +4500,7 @@
                             "name": "consultation-intro",
                             "html": {
                                 "default": "<h4>Have you engaged with any of the following groups?</h4>",
-                                "fr": "<h4>Avez-vous consulté l'un ou l'autre des groupes suivants ?</h4>"
+                                "fr": "<h4>Avez-vous mobilisé l’un ou l’autre des groupes suivants, ou avez-vous l’intention de le faire?</h4>"
                             }
                         },
                         {
@@ -4512,7 +4512,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -4530,7 +4530,7 @@
                         {
                             "type": "checkbox",
                             "name": "consultationImplementation2",
-                            "visibleIf": "{consultationImplementation1} = \"item1-1\"",
+                            "visibleIf": "{consultationImplementation1} = \"item1-2\"",
                             "title": {
                                 "default": "Which internal consultees or partners have you engaged?",
                                 "fr": "Indiquez les partenaires ou les parties consultantes que vous avez mobilisés à l’interne."
@@ -4561,7 +4561,7 @@
                                     "value": "item5",
                                     "text": {
                                         "default": "Legal Services",
-                                        "fr": "Services légaux"
+                                        "fr": "Services juridiques"
                                     }
                                 },
                                 {
@@ -4581,7 +4581,7 @@
                                 {
                                     "value": "item8",
                                     "text": {
-                                        "default": "Client Experience / client Relationship Management",
+                                        "default": "Client Experience / Client Relationship Management",
                                         "fr": "Expérience de la clientèle et gestion de la relation avec celle-ci "
                                     }
                                 },
@@ -4668,7 +4668,7 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-1",
+                                    "value": "item1-2",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
@@ -4686,7 +4686,7 @@
                         {
                             "type": "checkbox",
                             "name": "consultationImplementation4",
-                            "visibleIf": "{consultationImplementation3} = \"item1-1\"",
+                            "visibleIf": "{consultationImplementation3} = \"item1-2\"",
                             "title": {
                                 "default": "Which external consultees or partners have you engaged?",
                                 "fr": " Indiquez les partenaires ou les parties consultantes que vous avez mobilisés à l’externe."
