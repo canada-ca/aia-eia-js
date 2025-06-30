@@ -5177,6 +5177,15 @@
                             ]
                         },
                         {
+                            "type": "comment",
+                            "name": "dataQualityDesign7A",
+                            "visibleIf": "{dataQualityDesign5} = \"item1-2\" and {dataQualityDesign7} = \"item1-1\"",
+                            "title": {
+                                "default": "Summarize the findings or provide a link if publicly available.",
+                                "fr": "Veuillez résumer les résultats ou fournir un lien s’ils sont accessibles au public."
+                            }
+                        },
+                        {
                             "type": "radiogroup",
                             "name": "dataQualityDesign8",
                             "title": {
@@ -5458,6 +5467,15 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "dataQualityImplementation6A",
+                            "visibleIf": "{dataQualityImplementation6} = \"item1-1\" and {dataQualityImplementation5} = \"item1-2\"",
+                            "title": {
+                                "default": "Summarize the findings or provide a link if publicly available.",
+                                "fr": "Veuillez résumer les résultats ou fournir un lien s’ils sont accessibles au public."
+                            }
                         },
                         {
                             "type": "radiogroup",
