@@ -5606,7 +5606,6 @@
                         {
                             "type": "radiogroup",
                             "name": "fairnessDesign1A",
-                            "visibleIf": "{fairnessDesign1} = \"item1-1\"",
                             "title": {
                                 "default": "Will all key decision points in the automated system’s logic be linked to the relevant legislation, policy or procedure?",
                                 "fr": "Les principaux points de décision compris dans la logique du système automatisé sont-ils tous reliés aux lois, aux politiques ou aux procédures applicables, ou le seront-ils?"
@@ -5657,7 +5656,7 @@
                             "name": "fairnessDesign3",
                             "title": {
                                 "default": "Will all key decision points be identifiable in the audit trail?",
-                                "fr": "Pourra-t-on identifier tous les points de décision clés dans la piste de vérification?"
+                                "fr": "Les principaux points de décision seront-ils tous clairement indiqués dans la piste de vérification?"
                             },
                             "choices": [
                                 {
@@ -5679,7 +5678,6 @@
                         {
                             "type": "radiogroup",
                             "name": "fairnessDesign4",
-                            "visibleIf": "{fairnessDesign3} = \"item1-2\"",
                             "title": {
                                 "default": "Will there be a process in place to log the instances when overrides were performed?",
                                 "fr": "Un processus permettant la consignation des cas de dérogation a-t-il établi, ou le sera-t-il? "
@@ -5901,7 +5899,7 @@
                             "name": "fairnessDesign16",
                             "title": {
                                 "default": "Will the audit trail include change control processes to record modifications to the system's operation or performance?",
-                                "fr": "La piste de vérification comprendra-t-elle des processus pour enregistrer les modifications apportées au fonctionnement ou au rendement du système?"
+                                "fr": "Des processus permettant le suivi des modifications apportées au fonctionnement ou au rendement du système ont-ils été intégrés à la piste de vérification, ou le seront-ils?"
                             },
                             "choices": [
                                 {
@@ -6113,7 +6111,6 @@
                         {
                             "type": "radiogroup",
                             "name": "fairnessDesign22A",
-                            "visibleIf": "{fairnessDesign22} = \"item1-2\"",
                             "title": {
                                 "default": "Will you undertake training on appropriate use and awareness of risks associated with automation bias?",
                                 "fr": "Avez-vous suivi une formation sur l’utilisation appropriée et la sensibilisation aux risques associés aux biais d’automatisation ou avez-vous l’intention de le faire? "
@@ -6276,7 +6273,6 @@
                         {
                             "type": "radiogroup",
                             "name": "fairnessImplementation1A",
-                            "visibleIf": "{fairnessImplementation1} = \"item1-1\"",
                             "title": {
                                 "default": "Are all key decision points in the automated system's logic linked to the relevant legislation, policy or procedures? ",
                                 "fr": "Les principaux points de décision compris dans la logique du système automatisé sont-ils tous reliés aux lois, aux politiques ou aux procédures applicables, ou le seront-ils? "
@@ -6349,7 +6345,6 @@
                         {
                             "type": "radiogroup",
                             "name": "fairnessImplementation4",
-                            "visibleIf": "{fairnessImplementation3} = \"item1-2\"",
                             "title": {
                                 "default": "Is there a process in place to log the instances when overrides were performed? ",
                                 "fr": "Un processus permettant la consignation des cas de dérogation a-t-il établi, ou le sera-t-il? "
@@ -6783,7 +6778,6 @@
                         {
                             "type": "radiogroup",
                             "name": "fairnessImplementation22A",
-                            "visibleIf": "{fairnessImplementation22} = \"item1-2\"",
                             "title": {
                                 "default": "Have you undertaken training on appropriate use and awareness of risks associated with automation bias?",
                                 "fr": "Avez-vous suivi une formation sur l’utilisation appropriée et la sensibilisation aux risques associés aux biais d’automatisation?  "
