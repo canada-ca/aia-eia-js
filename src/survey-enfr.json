@@ -3931,7 +3931,7 @@
                          {
                             "type": "checkbox",
                             "name": "aboutDataType2",
-                            "visibleIf": "{aboutDataType1} = \"item1\"",
+                            "visibleIf": "{aboutDataType1} = \"item1-0\"",
                             "title": {
                                 "default": "What types of unstructured data? (Check all that apply)",
                                 "fr": "De quel type de données non structurées s’agit-il (Cochez toutes les réponses qui s’appliquent)?"
