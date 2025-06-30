@@ -3353,7 +3353,7 @@
                             "visibleIf": "{aboutDataSource1} = \"item1-2\"",
                             "title": {
                                 "default": "Is the personal information of individuals used in a decision-making process that affects those individuals?",
-                                "fr": "Les renseignements personnels recueillis auprès des personnes seront-ils utilisés dans le cadre d’’un processus décisionnel qui aura une incidence sur elles?"
+                                "fr": "Les renseignements personnels recueillis auprès des personnes seront-ils utilisés dans le cadre d’un processus décisionnel qui aura une incidence sur elles?"
                             },
                             "choices": [
                                 {
@@ -3412,7 +3412,7 @@
                             "visibleIf": "{aboutDataSource1} = \"item1-2\"",
                             "title": {
                                 "default": "Will the personal information be shared (check all that apply)",
-                                "fr": "L’algorithme est (cochez toutes les réponses qui s’appliquent) :"
+                                "fr": "Les renseignements personnels recueillis seront-ils communiqués? (Cochez toutes les réponses qui s’appliquent):"
                             },
                             "choices": [
                                 {
@@ -3624,7 +3624,7 @@
                                     "value": "item3-2",
                                     "text": {
                                         "default": "Confidential",
-                                        "fr": "confidentiel"
+                                        "fr": "Confidentiel"
                                     }
                                 },
                                 {
@@ -3825,7 +3825,7 @@
                             "name": "aboutDataSource7",
                             "title": {
                                 "default": "Who collected the data used for training the system?",
-                                "fr": "Qui a recueilli les données utilisées pour préparer le système? "
+                                "fr": "Qui a recueilli les données utilisées pour l’apprentissage du système?"
                             },
                             "choices": [
                                 {
@@ -3863,7 +3863,7 @@
                             "name": "aboutDataSource8",
                             "title": {
                                 "default": "Who collected the input data used by the system?",
-                                "fr": "Qui a recueilli les données d’entrée utilisées par le système?"
+                                "fr": "Qui a recueilli les données saisies dans le système?"
                             },
                             "choices": [
                                 {
