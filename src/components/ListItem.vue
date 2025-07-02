@@ -20,10 +20,14 @@
 <template>
   <div>
     <div v-for="(section, index) in sections" :key="index">
-      <p>{{ section.title }}</p>
+      <p v-html="section.title"></p>
       <div v-if="section.list.length > 1">
-        <ul v-for="(item, index) in section.list" :key="index">
-          <li>{{ item }}</li>
+        <ul>
+          <li
+            v-for="(item, index) in section.list"
+            :key="index"
+            v-html="item"
+          ></li>
         </ul>
       </div>
     </div>
