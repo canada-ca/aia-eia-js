@@ -3453,19 +3453,19 @@
                                 {
                                     "value": "item6-1",
                                     "text": {
-                                        "default": "Other (please specify)",
-                                        "fr": "Autre (précisez)"
+                                        "default": "Other",
+                                        "fr": "Autre"
                                     }
                                 }
                             ]
                         },
                         {
-                            "type": "text",
+                            "type": "comment",
                             "name": "aboutDataSource14A",
-			                "visibleIf": "{aboutDataSource1} = \"item1-2\" and {aboutDataSource14} = \"item6-1\"",
+			                "visibleIf": "{aboutDataSource1} = \"item1-2\" and {aboutDataSource14} contains \"item6-1\"",
                             "title": {
-                                "default": "Other (please specify)",
-                                "fr": "Autre (précisez)"
+                                "default": "Please specify",
+                                "fr": "Précisez"
                             }
                         },
                         {
