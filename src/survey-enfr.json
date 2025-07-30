@@ -5446,10 +5446,10 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "dataQualityImplementation6",
+                            "name": "dataQualityImplementation7",
                             "visibleIf": "{dataQualityImplementation5} = \"item1-2\"",
                             "title": {
-                                "default": "Are the GBA Plus findings publicly available? ",
+                                "default": "Are the GBA Plus findings publicly available?",
                                 "fr": "Les résultats de l'ACS Plus sont-ils accessibles au public ou le seront-ils? "
                             },
                             "choices": [
