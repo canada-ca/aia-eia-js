@@ -150,13 +150,6 @@
       <div id="en-content" lang="en">
         <h1>{{ $t("resultTitle", "en") }}</h1>
         <p>{{ $t("version", "en") }}</p>
-        <div
-          class="row"
-          v-for="(result, index) in myResults[0]"
-          :key="result.name"
-        >
-          <Result :data="result" locale="en" :num="index + 1"></Result>
-        </div>
 
         <h2>
           {{ "Section 1: " + $t("riskLevel", "en") }} {{ ": " + score[3] }}
@@ -175,9 +168,23 @@
             <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "en") }}</h2>
           </div>
 
+
+          <div class="row">
+            <h3 id="projectDetails">
+              {{ "Section 3.1: " + $t("resultSectionPD", "en") }}
+            </h3>
+          </div>
+          <div
+            class="row"
+            v-for="(result, index) in myResults[0]"
+            :key="result.name" 
+          >
+          <Result :data="result" locale="en" :num="index + 1"></Result> 
+          </div>
+
           <div class="row">
             <h3 id="riskQA">
-              {{ "Section 3.1: " + $t("resultSectionRQA", "en") }}
+              {{ "Section 3.2: " + $t("resultSectionRQA", "en") }}
             </h3>
           </div>
           <div
@@ -190,7 +197,7 @@
 
           <div class="row">
             <h3 id="mitigationQA">
-              {{ "Section 3.2: " + $t("resultSectionMQA", "en") }}
+              {{ "Section 3.3: " + $t("resultSectionMQA", "en") }}
             </h3>
           </div>
           <div
@@ -209,13 +216,6 @@
       <div id="fr-content" lang="fr">
         <h1>{{ $t("resultTitle", "fr") }}</h1>
         <p>{{ $t("version", "fr") }}</p>
-        <div
-          class="row"
-          v-for="(result, index) in myResults[0]"
-          :key="result.name"
-        >
-          <Result :data="result" locale="fr" :num="index + 1"></Result>
-        </div>
 
         <h2>
           {{ "Section 1: " + $t("riskLevel", (locale = "fr"))
@@ -238,8 +238,22 @@
           </div>
 
           <div class="row">
+            <h3 id="projectDetails">
+              {{ "Section 3.1: " + $t("resultSectionPD", "fr") }}
+            </h3>
+          </div>
+          <div
+            class="row"
+            v-for="(result, index) in myResults[0]"
+            :key="result.name"
+          >
+            <Result :data="result" locale="fr" :num="index + 1"></Result>
+          </div>
+
+
+          <div class="row">
             <h3 id="riskQA">
-              {{ "Section 3.1: " + $t("resultSectionRQA", "fr") }}
+              {{ "Section 3.2: " + $t("resultSectionRQA", "fr") }}
             </h3>
           </div>
           <div
@@ -252,7 +266,7 @@
 
           <div class="row">
             <h3 id="mitigationQA">
-              {{ "Section 3.2: " + $t("resultSectionMQA", "fr") }}
+              {{ "Section 3.3: " + $t("resultSectionMQA", "fr") }}
             </h3>
           </div>
           <div
