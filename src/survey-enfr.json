@@ -1238,47 +1238,36 @@
                             "type": "radiogroup",
                             "name": "riskProfile4",
                             "title": {
-                                "default": "Has the system been assessed to understand whether it would create or exacerbate barriers for persons with disabilities?",
-                                "fr": "Le système a-t-il été soumis à une évaluation visant à déterminer s'il est susceptible d'accentuer les difficultés auxquelles sont confrontées les personnes en situation de handicap ou d'en créer de nouvelles?"
+                                "default": "Has the system been assessed to understand whether it would create or exacerbate barriers for persons with disabilities, and are measures in place to address any identified issues?",
+                                "fr": "Le système a-t-il été soumis à une évaluation visant à déterminer s’il est susceptible d’accentuer les difficultés auxquelles sont confrontées les personnes en situation de handicap ou d’en créer de nouvelles, et des mesures sont-elles en place pour résoudre les problèmes cernés?"
                             },
                             "choices": [
                                 {
                                     "value": "item1-0",
                                     "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-4",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
-                            "name": "riskProfile4A",
-                            "visibleIf": "{riskProfile4} = \"item1-0\"",
-                            "title": {
-                                "default": "If yes, will the use of the system create or exacerbate barriers for persons with disabilities?",
-                                "fr": "Si oui, le système accentuera-t-il les difficultés auxquelles sont confrontées les personnes en situation de handicap ou en créera-t-il de nouvelles?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-4",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
+                                        "default": "Assessment has been conducted, and no barriers were identified.",
+                                        "fr": "Une évaluation a été effectuée et aucune difficulté n’a été cernée."
                                     }
                                 },
                                 {
                                     "value": "item2-0",
                                     "text": {
-                                        "default": "No",
-                                        "fr": "Non"
+                                        "default": "Assessment has been conducted, barriers were identified, and measures are in place or planned to remove or prevent them.",
+                                        "fr": "Une évaluation a été effectuée, des difficultés ont été cernées et des mesures sont en place ou prévues pour les éliminer ou les prévenir."
+                                    }
+                                },
+                                {
+                                    "value": "item3-4",
+                                    "text": {
+                                        "default": "Assessment was conducted, barriers were identified, and no measures were put in place or planned to remove or prevent them.",
+                                        "fr": "Une évaluation a été effectuée, des difficultés ont été cernées et aucune mesure n’a été mise en place ou n’est prévue pour les éliminer ou les prévenir."
+                                    }
+                                },
+                                {
+                                    "value": "item4-4",
+                                    "text": {
+                                        "default": "No assessment has been conducted.",
+                                        "fr": "Aucune évaluation n’a été effectuée."
                                     }
                                 }
                             ]
@@ -1286,10 +1275,10 @@
                        {
                             "type": "comment",
                             "name": "riskProfile4B",
-                            "visibleIf": "{riskProfile4A} contains \"item1-4\"",
+                            "visibleIf": "{riskProfile4} = \"item2-0\" or {riskProfile4} = \"item3-4\"",
                             "title": {
-                                "default": "If yes, describe the barriers and any planned or existing measures to identify, remove, and/or prevent them.",
-                                "fr": "Si oui, veuillez décrire les difficultés observées et les mesures que vous mises en place pour les cerner, les éliminer ou les prévenir ou celles que vous avez prévues mettre en place."
+                                "default": "If barriers for persons with disabilities were identified, describe the barriers and any planned or existing measures to identify, remove, and/or prevent them.",
+                                "fr": "Si des difficultés pour les personnes en situation de handicap ont été cernées, décrivez ces difficultés et les mesures prévues ou existantes pour les cerner, les éliminer ou les prévenir."
                             }
                         },  
                         {
