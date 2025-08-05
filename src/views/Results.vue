@@ -167,8 +167,6 @@
           <div class="row">
             <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "en") }}</h2>
           </div>
-
-
           <div class="row">
             <h3 id="projectDetails">
               {{ "Section 3.1: " + $t("resultSectionPD", "en") }}
