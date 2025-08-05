@@ -179,7 +179,6 @@
           >
           <Result :data="result" locale="en" :num="index + 1"></Result> 
           </div>
-
           <div class="row">
             <h3 id="riskQA">
               {{ "Section 3.2: " + $t("resultSectionRQA", "en") }}
@@ -192,7 +191,6 @@
           >
             <Result :data="result" locale="en" :num="index + 1"></Result>
           </div>
-
           <div class="row">
             <h3 id="mitigationQA">
               {{ "Section 3.3: " + $t("resultSectionMQA", "en") }}
@@ -247,8 +245,6 @@
           >
             <Result :data="result" locale="fr" :num="index + 1"></Result>
           </div>
-
-
           <div class="row">
             <h3 id="riskQA">
               {{ "Section 3.2: " + $t("resultSectionRQA", "fr") }}
