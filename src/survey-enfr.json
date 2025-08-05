@@ -1805,14 +1805,14 @@
                             },
                             "choices": [
                                 {
-                                    "value": "item1-2",
+                                    "value": "item1-0",
                                     "text": {
                                         "default": "Yes",
                                         "fr": "Oui"
                                     }
                                 },
                                 {
-                                    "value": "item2-0",
+                                    "value": "item2-2",
                                     "text": {
                                         "default": "No",
                                         "fr": "Non"
