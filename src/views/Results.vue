@@ -175,9 +175,9 @@
           <div
             class="row"
             v-for="(result, index) in myResults[0]"
-            :key="result.name" 
+            :key="result.name"
           >
-          <Result :data="result" locale="en" :num="index + 1"></Result> 
+          <Result :data="result" locale="en" :num="index + 1"></Result>
           </div>
           <div class="row">
             <h3 id="riskQA">
