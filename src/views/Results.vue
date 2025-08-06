@@ -167,8 +167,6 @@
           <div class="row">
             <h2 id="qA">{{ "Section 3: " + $t("resultSectionQA", "en") }}</h2>
           </div>
-
-
           <div class="row">
             <h3 id="projectDetails">
               {{ "Section 3.1: " + $t("resultSectionPD", "en") }}
@@ -177,11 +175,10 @@
           <div
             class="row"
             v-for="(result, index) in myResults[0]"
-            :key="result.name" 
+            :key="result.name"
           >
-          <Result :data="result" locale="en" :num="index + 1"></Result> 
+          <Result :data="result" locale="en" :num="index + 1"></Result>
           </div>
-
           <div class="row">
             <h3 id="riskQA">
               {{ "Section 3.2: " + $t("resultSectionRQA", "en") }}
@@ -194,7 +191,6 @@
           >
             <Result :data="result" locale="en" :num="index + 1"></Result>
           </div>
-
           <div class="row">
             <h3 id="mitigationQA">
               {{ "Section 3.3: " + $t("resultSectionMQA", "en") }}
@@ -249,8 +245,6 @@
           >
             <Result :data="result" locale="fr" :num="index + 1"></Result>
           </div>
-
-
           <div class="row">
             <h3 id="riskQA">
               {{ "Section 3.2: " + $t("resultSectionRQA", "fr") }}
