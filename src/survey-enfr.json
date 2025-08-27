@@ -2171,33 +2171,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "aboutAlgorithm10",
-                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
-                            "title": {
-                                "default": "Will you evaluate whether variables that the system bases its decisions or recommendations on could be proxies for protected characteristics?",
-                                "fr": "Allez-vous vérifier si les variables sur lesquelles le système fonde ses décisions ou ses recommandations pourraient être des substituts de caractéristiques protégées?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-0",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-2",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
                             "name": "aboutAlgorithm11",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
                             "title": {
                                 "default": "Have you evaluated whether variables that the system bases its decisions or recommendations on could be proxies for protected characteristics?",
                                 "fr": "Avez-vous vérifié si les variables sur lesquelles le système fonde ses décisions ou ses recommandations pourraient être des substituts de caractéristiques protégées?"
@@ -2221,30 +2195,11 @@
                         },
                         {
                             "type": "comment",
-                            "name": "aboutAlgorithm10A",
-                            "visibleIf": "{aboutAlgorithm10} = \"item1-0\"",
-                            "title": {
-                                "default": "Describe which protected characteristics, risks identified, and how they have been addressed.",
-                                "fr": "Veuillez décrire les caractéristiques protégées, les risques recensés et les mesures prises pour les gérer."
-                            }
-                        },
-                        {
-                            "type": "comment",
                             "name": "aboutAlgorithm11A",
                             "visibleIf": "{aboutAlgorithm11} = \"item1-0\"",
                             "title": {
                                 "default": "Describe which protected characteristics, risks identified, and how they have been addressed.",
                                 "fr": "Veuillez décrire les caractéristiques protégées, les risques recensés et les mesures prises pour les gérer."
-                            }
-                        },
-
-                        {
-                            "type": "comment",
-                            "name": "aboutAlgorithm10B",
-                            "visibleIf": "{aboutAlgorithm10} = \"item2-2\"",
-                            "title": {
-                                "default": "Describe why you have not evaluated whether variables could be proxies for protected characteristics.",
-                                "fr": "Veuillez préciser les raisons pour lesquelles vous n'avez pas vérifié si les variables peuvent être des substituts de caractéristiques protégées."
                             }
                         },
                         {
