@@ -2967,8 +2967,8 @@
                                 {
                                     "value": "item4-0",
                                     "text": {
-                                        "default": "76 to 99% ",
-                                        "fr": "76 % à 99 % "
+                                        "default": "76 to 99%",
+                                        "fr": "76 % à 99 %"
                                     }
                                 },
                                 {
@@ -3055,7 +3055,7 @@
                                 {
                                     "value": "item3-3",
                                     "text": {
-                                        "default": "High impact ",
+                                        "default": "High impact",
                                         "fr": "élevée "
                                     }
                                 },
@@ -3456,7 +3456,7 @@
                             "type": "radiogroup",
                             "name": "aboutDataSource17",
                             "title": {
-                                "default": "Are there measures in place to ensure the accuracy of the personal information used? ",
+                                "default": "Are there measures in place to ensure the accuracy of the personal information used?",
                                 "fr": "Des mesures ont-elles été mises en place pour garantir l'exactitude des renseignements personnels utilisés?"
                             },
                             "choices": [
@@ -3910,7 +3910,7 @@
                                     "value": "item13",
                                     "text": {
                                         "default": "TBS Office of the Chief Information Officer",
-                                        "fr": "Bureau du dirigeante principale de l'information du SCT"
+                                        "fr": "Bureau du dirigeant principal de l'information du SCT"
                                     }
                                 },
                                 {
@@ -4246,7 +4246,7 @@
                                 {
                                     "value": "item8",
                                     "text": {
-                                        "default": "Accuracy ",
+                                        "default": "Accuracy",
                                         "fr": "Exactitude "
                                     }
                                 },
@@ -4746,7 +4746,7 @@
                                 {
                                     "value": "item8",
                                     "text": {
-                                        "default": "Accuracy ",
+                                        "default": "Accuracy",
                                         "fr": "Exactitude "
                                     }
                                 },
@@ -6013,7 +6013,7 @@
                             "name": "fairnessDesign24B",
                             "visibleIf": "{fairnessDesign24} = \"item2-0\"",
                             "title": {
-                                "default": "Indicate why monitoring processes are not in place. ",
+                                "default": "Indicate why monitoring processes are not in place.",
                                 "fr": "Indiquez pourquoi aucun processus de surveillance n'est en place. "
                             }
                         }
@@ -6680,7 +6680,7 @@
                             "name": "fairnessImplementation24B",
                             "visibleIf": "{fairnessImplementation24} = \"item2-0\"",
                             "title": {
-                                "default": "Indicate why monitoring processes are not in place. ",
+                                "default": "Indicate why monitoring processes are not in place.",
                                 "fr": "Indiquez pourquoi aucun processus de surveillance n'est en place. "
                             }
                         }
