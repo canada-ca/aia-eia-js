@@ -4190,22 +4190,22 @@
                             "type": "checkbox",
                             "name": "consultationDesign8",
                             "title": {
-                                "default": "Have consultees or partners raised any significant concerns about the system in the following areas:  ",
-                                "fr": "Les partenaires ou les parties consultantes ont-elles soulevé des préoccupations importantes à l'égard des aspects du système qui suivent? "
+                                "default": "Have consultees or partners raised any significant concerns about the system in the following areas:",
+                                "fr": "Les partenaires ou les parties consultantes ont-elles soulevé des préoccupations importantes à l'égard des aspects du système qui suivent?"
                             },
                             "choices": [
                                 {
                                     "value": "item1",
                                     "text": {
-                                        "default": "Fairness of outputs ",
-                                        "fr": "Équité des résultats  "
+                                        "default": "Fairness of outputs",
+                                        "fr": "Équité des résultats"
                                     }
                                 },
                                 {
                                     "value": "item2",
                                     "text": {
-                                        "default": "Transparency of the system ",
-                                        "fr": "Transparence du système "
+                                        "default": "Transparency of the system",
+                                        "fr": "Transparence du système"
                                     }
                                 },
                                 {
@@ -4218,43 +4218,43 @@
                                 {
                                     "value": "item4",
                                     "text": {
-                                        "default": "Surveillance  ",
-                                        "fr": "Surveillance  "
+                                        "default": "Surveillance",
+                                        "fr": "Surveillance"
                                     }
                                 },
                                 {
                                     "value": "item5",
                                     "text": {
                                         "default": "Protection of personal information and/or other privacy concerns",
-                                        "fr": "Protection des renseignements personnels ou autres préoccupations en la matière "
+                                        "fr": "Protection des renseignements personnels ou autres préoccupations en la matière"
                                     }
                                 },
                                 {
                                     "value": "item6",
                                     "text": {
-                                        "default": "Human rights ",
-                                        "fr": "Droits de la personne "
+                                        "default": "Human rights",
+                                        "fr": "Droits de la personne"
                                     }
                                 },
                                 {
                                     "value": "item7",
                                     "text": {
                                         "default": "Accessibility",
-                                        "fr": "Accessibilité "
+                                        "fr": "Accessibilité"
                                     }
                                 },
                                 {
                                     "value": "item8",
                                     "text": {
                                         "default": "Accuracy",
-                                        "fr": "Exactitude "
+                                        "fr": "Exactitude"
                                     }
                                 },
                                 {
                                     "value": "item9",
                                     "text": {
                                         "default": "Other",
-                                        "fr": "Autres "
+                                        "fr": "Autres"
                                     }
                                 }
                             ]
@@ -4272,8 +4272,8 @@
                             "type": "comment",
                             "name": "consultationDesign9",
                             "title": {
-                                "default": "Explain how you documented, analyzed and addressed the feedback received.  ",
-                                "fr": "Expliquez comment vous avez documenté, analysé et traité la rétroaction reçue.  "
+                                "default": "Explain how you documented, analyzed and addressed the feedback received.",
+                                "fr": "Expliquez comment vous avez documenté, analysé et traité la rétroaction reçue."
                             }
                         }
                     ]
@@ -4404,7 +4404,7 @@
                                     "value": "item13",
                                     "text": {
                                         "default": "TBS Office of the Chief Information Officer",
-                                        "fr": "Bureau du dirigeante principale de l'information du SCT"
+                                        "fr": "Bureau du dirigeant principal de l'information du SCT"
                                     }
                                 },
                                 {
@@ -4690,22 +4690,22 @@
                             "type": "checkbox",
                             "name": "consultationImplementation8",
                             "title": {
-                                "default": "Have consultees or partners raised any significant concerns about the system in the following areas:  ",
-                                "fr": "Les partenaires ou les parties consultantes ont-elles soulevé des préoccupations importantes à l'égard des aspects du système qui suivent? "
+                                "default": "Have consultees or partners raised any significant concerns about the system in the following areas:",
+                                "fr": "Les partenaires ou les parties consultantes ont-elles soulevé des préoccupations importantes à l'égard des aspects du système qui suivent?"
                             },
                             "choices": [
                                 {
                                     "value": "item1",
                                     "text": {
-                                        "default": "Fairness of outputs ",
-                                        "fr": "Équité des résultats  "
+                                        "default": "Fairness of outputs",
+                                        "fr": "Équité des résultats"
                                     }
                                 },
                                 {
                                     "value": "item2",
                                     "text": {
-                                        "default": "Transparency of the system ",
-                                        "fr": "Transparence du système "
+                                        "default": "Transparency of the system",
+                                        "fr": "Transparence du système"
                                     }
                                 },
                                 {
@@ -4718,43 +4718,43 @@
                                 {
                                     "value": "item4",
                                     "text": {
-                                        "default": "Surveillance  ",
-                                        "fr": "Surveillance  "
+                                        "default": "Surveillance",
+                                        "fr": "Surveillance"
                                     }
                                 },
                                 {
                                     "value": "item5",
                                     "text": {
                                         "default": "Protection of personal information and/or other privacy concerns",
-                                        "fr": "Protection des renseignements personnels ou autres préoccupations en la matière "
+                                        "fr": "Protection des renseignements personnels ou autres préoccupations en la matière"
                                     }
                                 },
                                 {
                                     "value": "item6",
                                     "text": {
-                                        "default": "Human rights ",
-                                        "fr": "Droits de la personne "
+                                        "default": "Human rights",
+                                        "fr": "Droits de la personne"
                                     }
                                 },
                                 {
                                     "value": "item7",
                                     "text": {
                                         "default": "Accessibility",
-                                        "fr": "Accessibilité "
+                                        "fr": "Accessibilité"
                                     }
                                 },
                                 {
                                     "value": "item8",
                                     "text": {
                                         "default": "Accuracy",
-                                        "fr": "Exactitude "
+                                        "fr": "Exactitude"
                                     }
                                 },
                                 {
                                     "value": "item9",
                                     "text": {
                                         "default": "Other",
-                                        "fr": "Autres "
+                                        "fr": "Autres"
                                     }
                                 }
                             ]
@@ -4764,16 +4764,16 @@
                             "name": "consultationImplementation8A",
                             "visibleIf": "{consultationImplementation8} contains \"item1\" or {consultationImplementation8} contains \"item2\" or {consultationImplementation8} contains \"item3\" or {consultationImplementation8} contains \"item4\" or {consultationImplementation8} contains \"item5\" or {consultationImplementation8} contains \"item6\" or {consultationImplementation8} contains \"item7\" or {consultationImplementation8} contains \"item8\" or {consultationImplementation8} contains \"item9\"",
                             "title": {
-                                "default": "Describe how the identified concerns have been assessed and managed. ",
-                                "fr": "Si vous avez sélectionné un ou plusieurs énoncés, décrivez la manière dont les préoccupations soulevées ont été évaluées et gérées. "
+                                "default": "Describe how the identified concerns have been assessed and managed.",
+                                "fr": "Si vous avez sélectionné un ou plusieurs énoncés, décrivez la manière dont les préoccupations soulevées ont été évaluées et gérées."
                             }
                         },
                            {
                             "type": "comment",
                             "name": "consultationImplementation9",
                             "title": {
-                                "default": "Explain how you documented, analyzed and addressed the feedback received.  ",
-                                "fr": "Expliquez comment vous avez documenté, analysé et traité la rétroaction reçue.  "
+                                "default": "Explain how you documented, analyzed and addressed the feedback received.",
+                                "fr": "Expliquez comment vous avez documenté, analysé et traité la rétroaction reçue."
                             }
                         }
                     ]
