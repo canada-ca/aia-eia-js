@@ -1822,33 +1822,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "aboutSystem10",
-                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
-                            "title": {
-                                "default": "Will there be a process in place to grant, monitor, and revoke access permission to the system?",
-                                "fr": "Une procédure permettant d'octroyer, de surveiller et de révoquer une autorisation d'accès au système sera-t-elle établie?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-0",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-2",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
                             "name": "aboutSystem10A",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
                             "title": {
                                 "default": "Is there a process in place to grant, monitor, and revoke access permission to the system?",
                                 "fr": "Une procédure permettant d'octroyer, de surveiller et de révoquer une autorisation d'accès au système a-t-elle été établie?"
