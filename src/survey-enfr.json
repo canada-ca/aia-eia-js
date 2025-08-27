@@ -4852,7 +4852,7 @@
                             "name": "dataQualityDesign3",
                             "title": {
                                 "default": "Will you be developing a process to document how data quality issues were resolved during the design process?",
-                                "fr": "Allez-vous établir un processus permettant de documenter la façon dont les problèmes de qualité des données sont résolus pendant le processus de conception"
+                                "fr": "Allez-vous établir un processus permettant de documenter la façon dont les problèmes de qualité des données sont résolus pendant le processus de conception?"
                             },
                             "choices": [
                                 {
