@@ -6014,7 +6014,7 @@
                             "visibleIf": "{fairnessDesign24} = \"item2-0\"",
                             "title": {
                                 "default": "Indicate why monitoring processes are not in place.",
-                                "fr": "Indiquez pourquoi aucun processus de surveillance n'est en place. "
+                                "fr": "Indiquez pourquoi aucun processus de surveillance n'est en place."
                             }
                         }
                     ],
@@ -6681,7 +6681,7 @@
                             "visibleIf": "{fairnessImplementation24} = \"item2-0\"",
                             "title": {
                                 "default": "Indicate why monitoring processes are not in place.",
-                                "fr": "Indiquez pourquoi aucun processus de surveillance n'est en place. "
+                                "fr": "Indiquez pourquoi aucun processus de surveillance n'est en place."
                             }
                         }
                     ],
@@ -6786,7 +6786,7 @@
                             "name": "privacyDesign9",
                             "title": {
                                 "default": "Will you design and build privacy into your systems from the concept stage of the project?",
-                                "fr": "Avez-vous conçu des mesures de de protection des renseignements personnels et les avez-vous intégrées dans vos systèmes dès l'étape de la conception du projet, ou avez-vous l'intention de le faire?"
+                                "fr": "Avez-vous conçu des mesures de protection des renseignements personnels et les avez-vous intégrées dans vos systèmes dès l'étape de la conception du projet, ou avez-vous l'intention de le faire?"
                             },
                             "choices": [
                                 {
@@ -6995,7 +6995,7 @@
                             "name": "privacyImplementation9",
                             "title": {
                                 "default": "Have you designed and built privacy into your systems from the concept stage of the project?",
-                                "fr": "Avez-vous conçu des mesures de de protection des renseignements personnels et les avez-vous intégrées dans vos systèmes dès l'étape de la conception du projet? "
+                                "fr": "Avez-vous conçu des mesures de protection des renseignements personnels et les avez-vous intégrées dans vos systèmes dès l'étape de la conception du projet? "
                             },
                             "choices": [
                                 {
