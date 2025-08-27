@@ -2852,35 +2852,9 @@
                                 "fr": "Décrivez l’approche que vous avez adoptée pour évaluer le rendement du système, les différences de rendement du système observées et les mesures d’atténuation qui ont été prises à cet égard."
                             }
                         },
-                        {
-                            "type": "radiogroup",
-                            "name": "impact19",
-                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
-                            "title": {
-                                "default": "Will you test system performance for clients with a variety of different disabilities?",
-                                "fr": "Allez-vous tester le rendement du système auprès de personnes ayant divers handicaps?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-0",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-1",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
                          {
                             "type": "radiogroup",
                             "name": "impact19I",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
                             "title": {
                                 "default": "Have you tested system performance for clients with a variety of different disabilities?",
                                 "fr": "Avez-vous testé le rendement du système auprès de personnes ayant divers handicaps?"
@@ -2905,7 +2879,7 @@
                         {
                             "type": "comment",
                             "name": "impact19IY",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\" and {impact19I} = \"item1-0\"",
+                            "visibleIf": "{impact19I} = \"item1-0\"",
                             "title": {
                                 "default": "Describe any differences in system performance identified and mitigations in place to address them.",
                                 "fr": "Si oui, décrivez les écarts de rendement constatés et les mesures d'atténuation mises en place pour y remédier."
@@ -2914,18 +2888,10 @@
                         {
                             "type": "comment",
                             "name": "impact19IN",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\" and {impact19I} = \"item2-1\"",
+                            "visibleIf": "{impact19I} = \"item2-1\"",
                             "title": {
                                 "default": "Describe why system performance has not been assessed across a variety of disabilities.",
                                 "fr": "Si non, décrivez les raisons pour lesquelles le rendement du système n'a pas été évalué auprès de personnes ayant divers handicaps."                            }
-                        },
-                         {
-                            "type": "comment",
-                            "name": "impact19DN",
-                            "visibleIf": "{projectDetailsPhase} = \"item1\" and {impact19} = \"item2-1\"",
-                            "title": {
-                                "default": "Describe why system performance will not be assessed across a variety of disabilities.",
-                                "fr": "Si non, décrivez les raisons pour lesquelles le rendement du système ne sera pas évalué auprès de personnes ayant divers handicaps"                            }
                         },
                         {
                             "type": "radiogroup",
