@@ -2775,51 +2775,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "impact17",
-                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
-                            "title": {
-                                "default": "Will you assess system performance for clients with a range of personal and intersectional identity factors (for example, gender, age, race, language, ethnicity, disability) to verify that decisions and outcomes are fair for a diverse group of people?",
-                                "fr": "Allez-vous évaluer le rendement du système pour les personnes ayant plusieurs facteurs d’identité personnels et intersectionnels (par exemple, le genre, l’âge, la race, la langue, l’origine ethnique ou le handicap) afin de vous assurer que les décisions et les incidences sont équitables pour un groupe diversifié de personnes?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-3",
-                                    "text": {
-                                        "default": "No assessment will be conducted",
-                                        "fr": "Aucune évaluation ne sera effectuée."
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "Assessment will be conducted",
-                                        "fr": "Une évaluation sera effectuée."
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "comment",
-                            "name": "impact17A",
-                            "visibleIf": "{projectDetailsPhase} = \"item1\" and {impact17} = \"item1-3\"",
-                            "title": {
-                                "default": "Describe why system performance will not be assessed for clients with a range of personal and intersectional identity factors and what mitigations are in place.",
-                                "fr": "Expliquez pourquoi le rendement du système ne sera pas évalué pour les personnes ayant plusieurs facteurs d’identité personnels et intersectionnels et quelles mesures d’atténuation sont en place."
-                            }
-                        },
-                        {
-                            "type": "comment",
-                            "name": "impact17B",
-                            "visibleIf": "{projectDetailsPhase} = \"item1\" and {impact17} = \"item2-0\"",
-                            "title": {
-                                "default": "Describe your approach to assessing system performance.",
-                                "fr": "Décrivez l’approche que vous adopterez pour évaluer le rendement du système."
-                            }
-                        },
-                        {
-                            "type": "radiogroup",
                             "name": "impact18",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
                             "title": {
                                 "default": "Have you assessed system performance for clients with a range of personal and intersectional identity factors (for example, gender, age, race, language, ethnicity, disability) to verify that decisions and outcomes are fair for a diverse group of people, and have the identified disparities been addressed?",
                                 "fr": "Avez-vous évalué le rendement du système pour les personnes ayant plusieurs facteurs d’identité personnels et intersectionnels (par exemple, le genre, l’âge, la race, la langue, l’origine ethnique ou le handicap) afin de vous assurer que les décisions et les incidences sont équitables pour un groupe diversifié de personnes, et les disparités relevées ont-elles été corrigées?"
@@ -2872,7 +2828,7 @@
                         {
                             "type": "comment",
                             "name": "impact18A",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\" and {impact18} = \"item1-3\"",
+                            "visibleIf": "{impact18} = \"item1-3\"",
                             "title": {
                                 "default": "Describe why system performance has not been assessed for clients with a range of personal and intersectional identity factors and what mitigations are in place.",
                                 "fr": "Expliquez pourquoi le rendement du système n’a pas été évalué pour les personnes ayant plusieurs facteurs d’identité personnels et intersectionnels et quelles mesures d’atténuation sont en place."
@@ -2881,7 +2837,7 @@
                         {
                             "type": "comment",
                             "name": "impact18B",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\" and {impact18} = \"item2-0\"",
+                            "visibleIf": "{impact18} = \"item2-0\"",
                             "title": {
                                 "default": "Describe your approach to assessing system performance.",
                                 "fr": "Décrivez l’approche que vous avez adoptée pour évaluer le rendement du système."
@@ -2890,7 +2846,7 @@
                          {
                             "type": "comment",
                             "name": "impact18C",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\" and {impact18} = \"item3-2\" or {impact18} = \"item4-2\" or {impact18} = \"item5-1\" or {impact18} = \"item6-3\"",
+                            "visibleIf": "{impact18} = \"item3-2\" or {impact18} = \"item4-2\" or {impact18} = \"item5-1\" or {impact18} = \"item6-3\"",
                             "title": {
                                 "default": "Describe your approach to assessing system performance, the difference in system performance identified and any mitigation measures that have been taken.",
                                 "fr": "Décrivez l’approche que vous avez adoptée pour évaluer le rendement du système, les différences de rendement du système observées et les mesures d’atténuation qui ont été prises à cet égard."
