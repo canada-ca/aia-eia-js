@@ -1822,33 +1822,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "aboutSystem10",
-                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
-                            "title": {
-                                "default": "Will there be a process in place to grant, monitor, and revoke access permission to the system?",
-                                "fr": "Une procédure permettant d'octroyer, de surveiller et de révoquer une autorisation d'accès au système sera-t-elle établie?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-0",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-2",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
                             "name": "aboutSystem10A",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
                             "title": {
                                 "default": "Is there a process in place to grant, monitor, and revoke access permission to the system?",
                                 "fr": "Une procédure permettant d'octroyer, de surveiller et de révoquer une autorisation d'accès au système a-t-elle été établie?"
@@ -2171,33 +2145,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "aboutAlgorithm10",
-                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
-                            "title": {
-                                "default": "Will you evaluate whether variables that the system bases its decisions or recommendations on could be proxies for protected characteristics?",
-                                "fr": "Allez-vous vérifier si les variables sur lesquelles le système fonde ses décisions ou ses recommandations pourraient être des substituts de caractéristiques protégées?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-0",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-2",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "radiogroup",
                             "name": "aboutAlgorithm11",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
                             "title": {
                                 "default": "Have you evaluated whether variables that the system bases its decisions or recommendations on could be proxies for protected characteristics?",
                                 "fr": "Avez-vous vérifié si les variables sur lesquelles le système fonde ses décisions ou ses recommandations pourraient être des substituts de caractéristiques protégées?"
@@ -2221,30 +2169,11 @@
                         },
                         {
                             "type": "comment",
-                            "name": "aboutAlgorithm10A",
-                            "visibleIf": "{aboutAlgorithm10} = \"item1-0\"",
-                            "title": {
-                                "default": "Describe which protected characteristics, risks identified, and how they have been addressed.",
-                                "fr": "Veuillez décrire les caractéristiques protégées, les risques recensés et les mesures prises pour les gérer."
-                            }
-                        },
-                        {
-                            "type": "comment",
                             "name": "aboutAlgorithm11A",
                             "visibleIf": "{aboutAlgorithm11} = \"item1-0\"",
                             "title": {
                                 "default": "Describe which protected characteristics, risks identified, and how they have been addressed.",
                                 "fr": "Veuillez décrire les caractéristiques protégées, les risques recensés et les mesures prises pour les gérer."
-                            }
-                        },
-
-                        {
-                            "type": "comment",
-                            "name": "aboutAlgorithm10B",
-                            "visibleIf": "{aboutAlgorithm10} = \"item2-2\"",
-                            "title": {
-                                "default": "Describe why you have not evaluated whether variables could be proxies for protected characteristics.",
-                                "fr": "Veuillez préciser les raisons pour lesquelles vous n'avez pas vérifié si les variables peuvent être des substituts de caractéristiques protégées."
                             }
                         },
                         {
@@ -2846,51 +2775,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "impact17",
-                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
-                            "title": {
-                                "default": "Will you assess system performance for clients with a range of personal and intersectional identity factors (for example, gender, age, race, language, ethnicity, disability) to verify that decisions and outcomes are fair for a diverse group of people?",
-                                "fr": "Allez-vous évaluer le rendement du système pour les personnes ayant plusieurs facteurs d’identité personnels et intersectionnels (par exemple, le genre, l’âge, la race, la langue, l’origine ethnique ou le handicap) afin de vous assurer que les décisions et les incidences sont équitables pour un groupe diversifié de personnes?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-3",
-                                    "text": {
-                                        "default": "No assessment will be conducted",
-                                        "fr": "Aucune évaluation ne sera effectuée."
-                                    }
-                                },
-                                {
-                                    "value": "item2-0",
-                                    "text": {
-                                        "default": "Assessment will be conducted",
-                                        "fr": "Une évaluation sera effectuée."
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "comment",
-                            "name": "impact17A",
-                            "visibleIf": "{projectDetailsPhase} = \"item1\" and {impact17} = \"item1-3\"",
-                            "title": {
-                                "default": "Describe why system performance will not be assessed for clients with a range of personal and intersectional identity factors and what mitigations are in place.",
-                                "fr": "Expliquez pourquoi le rendement du système ne sera pas évalué pour les personnes ayant plusieurs facteurs d’identité personnels et intersectionnels et quelles mesures d’atténuation sont en place."
-                            }
-                        },
-                        {
-                            "type": "comment",
-                            "name": "impact17B",
-                            "visibleIf": "{projectDetailsPhase} = \"item1\" and {impact17} = \"item2-0\"",
-                            "title": {
-                                "default": "Describe your approach to assessing system performance.",
-                                "fr": "Décrivez l’approche que vous adopterez pour évaluer le rendement du système."
-                            }
-                        },
-                        {
-                            "type": "radiogroup",
                             "name": "impact18",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
                             "title": {
                                 "default": "Have you assessed system performance for clients with a range of personal and intersectional identity factors (for example, gender, age, race, language, ethnicity, disability) to verify that decisions and outcomes are fair for a diverse group of people, and have the identified disparities been addressed?",
                                 "fr": "Avez-vous évalué le rendement du système pour les personnes ayant plusieurs facteurs d’identité personnels et intersectionnels (par exemple, le genre, l’âge, la race, la langue, l’origine ethnique ou le handicap) afin de vous assurer que les décisions et les incidences sont équitables pour un groupe diversifié de personnes, et les disparités relevées ont-elles été corrigées?"
@@ -2943,7 +2828,7 @@
                         {
                             "type": "comment",
                             "name": "impact18A",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\" and {impact18} = \"item1-3\"",
+                            "visibleIf": "{impact18} = \"item1-3\"",
                             "title": {
                                 "default": "Describe why system performance has not been assessed for clients with a range of personal and intersectional identity factors and what mitigations are in place.",
                                 "fr": "Expliquez pourquoi le rendement du système n’a pas été évalué pour les personnes ayant plusieurs facteurs d’identité personnels et intersectionnels et quelles mesures d’atténuation sont en place."
@@ -2952,7 +2837,7 @@
                         {
                             "type": "comment",
                             "name": "impact18B",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\" and {impact18} = \"item2-0\"",
+                            "visibleIf": "{impact18} = \"item2-0\"",
                             "title": {
                                 "default": "Describe your approach to assessing system performance.",
                                 "fr": "Décrivez l’approche que vous avez adoptée pour évaluer le rendement du système."
@@ -2961,41 +2846,15 @@
                          {
                             "type": "comment",
                             "name": "impact18C",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\" and {impact18} = \"item3-2\" or {impact18} = \"item4-2\" or {impact18} = \"item5-1\" or {impact18} = \"item6-3\"",
+                            "visibleIf": "{impact18} = \"item3-2\" or {impact18} = \"item4-2\" or {impact18} = \"item5-1\" or {impact18} = \"item6-3\"",
                             "title": {
                                 "default": "Describe your approach to assessing system performance, the difference in system performance identified and any mitigation measures that have been taken.",
                                 "fr": "Décrivez l’approche que vous avez adoptée pour évaluer le rendement du système, les différences de rendement du système observées et les mesures d’atténuation qui ont été prises à cet égard."
                             }
                         },
-                        {
-                            "type": "radiogroup",
-                            "name": "impact19",
-                            "visibleIf": "{projectDetailsPhase} = \"item1\"",
-                            "title": {
-                                "default": "Will you test system performance for clients with a variety of different disabilities?",
-                                "fr": "Allez-vous tester le rendement du système auprès de personnes ayant divers handicaps?"
-                            },
-                            "choices": [
-                                {
-                                    "value": "item1-0",
-                                    "text": {
-                                        "default": "Yes",
-                                        "fr": "Oui"
-                                    }
-                                },
-                                {
-                                    "value": "item2-1",
-                                    "text": {
-                                        "default": "No",
-                                        "fr": "Non"
-                                    }
-                                }
-                            ]
-                        },
                          {
                             "type": "radiogroup",
                             "name": "impact19I",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\"",
                             "title": {
                                 "default": "Have you tested system performance for clients with a variety of different disabilities?",
                                 "fr": "Avez-vous testé le rendement du système auprès de personnes ayant divers handicaps?"
@@ -3020,7 +2879,7 @@
                         {
                             "type": "comment",
                             "name": "impact19IY",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\" and {impact19I} = \"item1-0\"",
+                            "visibleIf": "{impact19I} = \"item1-0\"",
                             "title": {
                                 "default": "Describe any differences in system performance identified and mitigations in place to address them.",
                                 "fr": "Si oui, décrivez les écarts de rendement constatés et les mesures d'atténuation mises en place pour y remédier."
@@ -3029,18 +2888,10 @@
                         {
                             "type": "comment",
                             "name": "impact19IN",
-                            "visibleIf": "{projectDetailsPhase} = \"item2\" and {impact19I} = \"item2-1\"",
+                            "visibleIf": "{impact19I} = \"item2-1\"",
                             "title": {
                                 "default": "Describe why system performance has not been assessed across a variety of disabilities.",
                                 "fr": "Si non, décrivez les raisons pour lesquelles le rendement du système n'a pas été évalué auprès de personnes ayant divers handicaps."                            }
-                        },
-                         {
-                            "type": "comment",
-                            "name": "impact19DN",
-                            "visibleIf": "{projectDetailsPhase} = \"item1\" and {impact19} = \"item2-1\"",
-                            "title": {
-                                "default": "Describe why system performance will not be assessed across a variety of disabilities.",
-                                "fr": "Si non, décrivez les raisons pour lesquelles le rendement du système ne sera pas évalué auprès de personnes ayant divers handicaps"                            }
                         },
                         {
                             "type": "radiogroup",
@@ -3116,8 +2967,8 @@
                                 {
                                     "value": "item4-0",
                                     "text": {
-                                        "default": "76 to 99% ",
-                                        "fr": "76 % à 99 % "
+                                        "default": "76 to 99%",
+                                        "fr": "76 % à 99 %"
                                     }
                                 },
                                 {
@@ -3204,7 +3055,7 @@
                                 {
                                     "value": "item3-3",
                                     "text": {
-                                        "default": "High impact ",
+                                        "default": "High impact",
                                         "fr": "élevée "
                                     }
                                 },
@@ -3605,7 +3456,7 @@
                             "type": "radiogroup",
                             "name": "aboutDataSource17",
                             "title": {
-                                "default": "Are there measures in place to ensure the accuracy of the personal information used? ",
+                                "default": "Are there measures in place to ensure the accuracy of the personal information used?",
                                 "fr": "Des mesures ont-elles été mises en place pour garantir l'exactitude des renseignements personnels utilisés?"
                             },
                             "choices": [
@@ -4059,7 +3910,7 @@
                                     "value": "item13",
                                     "text": {
                                         "default": "TBS Office of the Chief Information Officer",
-                                        "fr": "Bureau du dirigeante principale de l'information du SCT"
+                                        "fr": "Bureau du dirigeant principal de l'information du SCT"
                                     }
                                 },
                                 {
@@ -4339,22 +4190,22 @@
                             "type": "checkbox",
                             "name": "consultationDesign8",
                             "title": {
-                                "default": "Have consultees or partners raised any significant concerns about the system in the following areas:  ",
-                                "fr": "Les partenaires ou les parties consultantes ont-elles soulevé des préoccupations importantes à l'égard des aspects du système qui suivent? "
+                                "default": "Have consultees or partners raised any significant concerns about the system in the following areas:",
+                                "fr": "Les partenaires ou les parties consultantes ont-elles soulevé des préoccupations importantes à l'égard des aspects du système qui suivent?"
                             },
                             "choices": [
                                 {
                                     "value": "item1",
                                     "text": {
-                                        "default": "Fairness of outputs ",
-                                        "fr": "Équité des résultats  "
+                                        "default": "Fairness of outputs",
+                                        "fr": "Équité des résultats"
                                     }
                                 },
                                 {
                                     "value": "item2",
                                     "text": {
-                                        "default": "Transparency of the system ",
-                                        "fr": "Transparence du système "
+                                        "default": "Transparency of the system",
+                                        "fr": "Transparence du système"
                                     }
                                 },
                                 {
@@ -4367,43 +4218,43 @@
                                 {
                                     "value": "item4",
                                     "text": {
-                                        "default": "Surveillance  ",
-                                        "fr": "Surveillance  "
+                                        "default": "Surveillance",
+                                        "fr": "Surveillance"
                                     }
                                 },
                                 {
                                     "value": "item5",
                                     "text": {
                                         "default": "Protection of personal information and/or other privacy concerns",
-                                        "fr": "Protection des renseignements personnels ou autres préoccupations en la matière "
+                                        "fr": "Protection des renseignements personnels ou autres préoccupations en la matière"
                                     }
                                 },
                                 {
                                     "value": "item6",
                                     "text": {
-                                        "default": "Human rights ",
-                                        "fr": "Droits de la personne "
+                                        "default": "Human rights",
+                                        "fr": "Droits de la personne"
                                     }
                                 },
                                 {
                                     "value": "item7",
                                     "text": {
                                         "default": "Accessibility",
-                                        "fr": "Accessibilité "
+                                        "fr": "Accessibilité"
                                     }
                                 },
                                 {
                                     "value": "item8",
                                     "text": {
-                                        "default": "Accuracy ",
-                                        "fr": "Exactitude "
+                                        "default": "Accuracy",
+                                        "fr": "Exactitude"
                                     }
                                 },
                                 {
                                     "value": "item9",
                                     "text": {
                                         "default": "Other",
-                                        "fr": "Autres "
+                                        "fr": "Autres"
                                     }
                                 }
                             ]
@@ -4421,8 +4272,8 @@
                             "type": "comment",
                             "name": "consultationDesign9",
                             "title": {
-                                "default": "Explain how you documented, analyzed and addressed the feedback received.  ",
-                                "fr": "Expliquez comment vous avez documenté, analysé et traité la rétroaction reçue.  "
+                                "default": "Explain how you documented, analyzed and addressed the feedback received.",
+                                "fr": "Expliquez comment vous avez documenté, analysé et traité la rétroaction reçue."
                             }
                         }
                     ]
@@ -4553,7 +4404,7 @@
                                     "value": "item13",
                                     "text": {
                                         "default": "TBS Office of the Chief Information Officer",
-                                        "fr": "Bureau du dirigeante principale de l'information du SCT"
+                                        "fr": "Bureau du dirigeant principal de l'information du SCT"
                                     }
                                 },
                                 {
@@ -4681,7 +4532,7 @@
                                     "value": "item14",
                                     "text": {
                                         "default": "Clients or their Representatives",
-                                        "fr": "Clients ou leurs représentants"
+                                        "fr": "Clientèle ou les personnes qui la représentent"
                                     }
                                 },
                                 {
@@ -4839,22 +4690,22 @@
                             "type": "checkbox",
                             "name": "consultationImplementation8",
                             "title": {
-                                "default": "Have consultees or partners raised any significant concerns about the system in the following areas:  ",
-                                "fr": "Les partenaires ou les parties consultantes ont-elles soulevé des préoccupations importantes à l'égard des aspects du système qui suivent? "
+                                "default": "Have consultees or partners raised any significant concerns about the system in the following areas:",
+                                "fr": "Les partenaires ou les parties consultantes ont-elles soulevé des préoccupations importantes à l'égard des aspects du système qui suivent?"
                             },
                             "choices": [
                                 {
                                     "value": "item1",
                                     "text": {
-                                        "default": "Fairness of outputs ",
-                                        "fr": "Équité des résultats  "
+                                        "default": "Fairness of outputs",
+                                        "fr": "Équité des résultats"
                                     }
                                 },
                                 {
                                     "value": "item2",
                                     "text": {
-                                        "default": "Transparency of the system ",
-                                        "fr": "Transparence du système "
+                                        "default": "Transparency of the system",
+                                        "fr": "Transparence du système"
                                     }
                                 },
                                 {
@@ -4867,43 +4718,43 @@
                                 {
                                     "value": "item4",
                                     "text": {
-                                        "default": "Surveillance  ",
-                                        "fr": "Surveillance  "
+                                        "default": "Surveillance",
+                                        "fr": "Surveillance"
                                     }
                                 },
                                 {
                                     "value": "item5",
                                     "text": {
                                         "default": "Protection of personal information and/or other privacy concerns",
-                                        "fr": "Protection des renseignements personnels ou autres préoccupations en la matière "
+                                        "fr": "Protection des renseignements personnels ou autres préoccupations en la matière"
                                     }
                                 },
                                 {
                                     "value": "item6",
                                     "text": {
-                                        "default": "Human rights ",
-                                        "fr": "Droits de la personne "
+                                        "default": "Human rights",
+                                        "fr": "Droits de la personne"
                                     }
                                 },
                                 {
                                     "value": "item7",
                                     "text": {
                                         "default": "Accessibility",
-                                        "fr": "Accessibilité "
+                                        "fr": "Accessibilité"
                                     }
                                 },
                                 {
                                     "value": "item8",
                                     "text": {
-                                        "default": "Accuracy ",
-                                        "fr": "Exactitude "
+                                        "default": "Accuracy",
+                                        "fr": "Exactitude"
                                     }
                                 },
                                 {
                                     "value": "item9",
                                     "text": {
                                         "default": "Other",
-                                        "fr": "Autres "
+                                        "fr": "Autres"
                                     }
                                 }
                             ]
@@ -4913,16 +4764,16 @@
                             "name": "consultationImplementation8A",
                             "visibleIf": "{consultationImplementation8} contains \"item1\" or {consultationImplementation8} contains \"item2\" or {consultationImplementation8} contains \"item3\" or {consultationImplementation8} contains \"item4\" or {consultationImplementation8} contains \"item5\" or {consultationImplementation8} contains \"item6\" or {consultationImplementation8} contains \"item7\" or {consultationImplementation8} contains \"item8\" or {consultationImplementation8} contains \"item9\"",
                             "title": {
-                                "default": "Describe how the identified concerns have been assessed and managed. ",
-                                "fr": "Si vous avez sélectionné un ou plusieurs énoncés, décrivez la manière dont les préoccupations soulevées ont été évaluées et gérées. "
+                                "default": "Describe how the identified concerns have been assessed and managed.",
+                                "fr": "Si vous avez sélectionné un ou plusieurs énoncés, décrivez la manière dont les préoccupations soulevées ont été évaluées et gérées."
                             }
                         },
                            {
                             "type": "comment",
                             "name": "consultationImplementation9",
                             "title": {
-                                "default": "Explain how you documented, analyzed and addressed the feedback received.  ",
-                                "fr": "Expliquez comment vous avez documenté, analysé et traité la rétroaction reçue.  "
+                                "default": "Explain how you documented, analyzed and addressed the feedback received.",
+                                "fr": "Expliquez comment vous avez documenté, analysé et traité la rétroaction reçue."
                             }
                         }
                     ]
@@ -5001,7 +4852,7 @@
                             "name": "dataQualityDesign3",
                             "title": {
                                 "default": "Will you be developing a process to document how data quality issues were resolved during the design process?",
-                                "fr": "Allez-vous établir un processus permettant de documenter la façon dont les problèmes de qualité des données sont résolus pendant le processus de conception"
+                                "fr": "Allez-vous établir un processus permettant de documenter la façon dont les problèmes de qualité des données sont résolus pendant le processus de conception?"
                             },
                             "choices": [
                                 {
@@ -5122,7 +4973,7 @@
                         {
                             "type": "comment",
                             "name": "dataQualityDesign7A",
-                            "visibleIf": "{dataQualityDesign5} = \"item1-2\" and {dataQualityDesign7} = \"item1-1\"",
+                            "visibleIf": "{dataQualityDesign5} = \"item1-2\"",
                             "title": {
                                 "default": "Summarize the findings or provide a link if publicly available.",
                                 "fr": "Veuillez résumer les résultats ou fournir un lien s'ils sont accessibles au public."
@@ -5350,8 +5201,8 @@
                             "type": "radiogroup",
                             "name": "dataQualityImplementation5",
                             "title": {
-                                "default": "Have you undertaken a Gender-based Analysis Plus (GBA Plus) of the data? ",
-                                "fr": " Avez-vous soumis les données à une analyse comparative entre les sexes plus (ACS Plus)? "
+                                "default": "Have you undertaken a Gender-based Analysis Plus (GBA Plus) of the data?",
+                                "fr": " Avez-vous soumis les données à une analyse comparative entre les sexes plus (ACS Plus)?"
                             },
                             "choices": [
                                 {
@@ -5414,7 +5265,7 @@
                         {
                             "type": "comment",
                             "name": "dataQualityImplementation6A",
-                            "visibleIf": "{dataQualityImplementation6} = \"item1-1\" and {dataQualityImplementation5} = \"item1-2\"",
+                            "visibleIf": "{dataQualityImplementation5} = \"item1-2\"",
                             "title": {
                                 "default": "Summarize the findings or provide a link if publicly available.",
                                 "fr": "Veuillez résumer les résultats ou fournir un lien s'ils sont accessibles au public."
@@ -6162,8 +6013,8 @@
                             "name": "fairnessDesign24B",
                             "visibleIf": "{fairnessDesign24} = \"item2-0\"",
                             "title": {
-                                "default": "Indicate why monitoring processes are not in place. ",
-                                "fr": "Indiquez pourquoi aucun processus de surveillance n'est en place. "
+                                "default": "Indicate why monitoring processes are not in place.",
+                                "fr": "Indiquez pourquoi aucun processus de surveillance n'est en place."
                             }
                         }
                     ],
@@ -6829,8 +6680,8 @@
                             "name": "fairnessImplementation24B",
                             "visibleIf": "{fairnessImplementation24} = \"item2-0\"",
                             "title": {
-                                "default": "Indicate why monitoring processes are not in place. ",
-                                "fr": "Indiquez pourquoi aucun processus de surveillance n'est en place. "
+                                "default": "Indicate why monitoring processes are not in place.",
+                                "fr": "Indiquez pourquoi aucun processus de surveillance n'est en place."
                             }
                         }
                     ],
@@ -6935,7 +6786,7 @@
                             "name": "privacyDesign9",
                             "title": {
                                 "default": "Will you design and build privacy into your systems from the concept stage of the project?",
-                                "fr": "Avez-vous conçu des mesures de de protection des renseignements personnels et les avez-vous intégrées dans vos systèmes dès l'étape de la conception du projet, ou avez-vous l'intention de le faire?"
+                                "fr": "Avez-vous conçu des mesures de protection des renseignements personnels et les avez-vous intégrées dans vos systèmes dès l'étape de la conception du projet, ou avez-vous l'intention de le faire?"
                             },
                             "choices": [
                                 {
@@ -7144,7 +6995,7 @@
                             "name": "privacyImplementation9",
                             "title": {
                                 "default": "Have you designed and built privacy into your systems from the concept stage of the project?",
-                                "fr": "Avez-vous conçu des mesures de de protection des renseignements personnels et les avez-vous intégrées dans vos systèmes dès l'étape de la conception du projet? "
+                                "fr": "Avez-vous conçu des mesures de protection des renseignements personnels et les avez-vous intégrées dans vos systèmes dès l'étape de la conception du projet? "
                             },
                             "choices": [
                                 {
