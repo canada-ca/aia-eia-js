@@ -4984,7 +4984,7 @@
                             "name": "dataQualityDesign8",
                             "title": {
                                 "default": "Will you have a documented process to manage the risk that low quality, outdated or unreliable data is used to make an automated decision?",
-                                "fr": "Disposerez-vous d'un processus documenté permettant de gérer le risque que des données obsolètes ou non fiables soient utilisées dans le cadre d'une décision automatisée"
+                                "fr": "Disposerez-vous d'un processus documenté permettant de gérer le risque que des données obsolètes ou non fiables soient utilisées dans le cadre d'une décision automatisée?" 
                             },
                             "choices": [
                                 {
@@ -5276,7 +5276,7 @@
                             "name": "dataQualityImplementation8",
                             "title": {
                                 "default": "Do you have a documented process to manage the risk that low quality, outdated or unreliable data is used to make an automated decision?",
-                                "fr": "Disposez-vous d'un processus documenté permettant de gérer le risque que des données obsolètes ou non fiables soient utilisées dans le cadre d'une décision automatisée? "
+                                "fr": "Disposez-vous d'un processus documenté permettant de gérer le risque que des données obsolètes ou non fiables soient utilisées dans le cadre d'une décision automatisée?"
                             },
                             "choices": [
                                 {
@@ -5955,7 +5955,7 @@
                             "name": "fairnessDesign24",
                             "title": {
                                 "default": "Do you have monitoring processes in place to detect changes in system performance over time? ",
-                                "fr": "Disposez-vous de processus de surveillance qui vous permettront de déceler les changements liés au rendement du système au fil du temps? "
+                                "fr": "Disposez-vous de processus de surveillance qui vous permettront de déceler les changements liés au rendement du système au fil du temps?"
                             },
                             "choices": [
                                 {
@@ -5980,7 +5980,7 @@
                             "visibleIf": "{fairnessDesign24} = \"item1-2\"",
                             "title": {
                                 "default": "Do you have a process in place to update the system based on the monitoring results? ",
-                                "fr": "Disposez-vous d'un processus de mise à jour du système fondé sur les résultats du processus de surveillance? "
+                                "fr": "Disposez-vous d'un processus de mise à jour du système fondé sur les résultats du processus de surveillance?"
                             },
                             "choices": [
                                 {
@@ -6622,7 +6622,7 @@
                             "name": "fairnessImplementation24",
                             "title": {
                                 "default": "Do you have monitoring processes in place to detect changes in system performance over time? ",
-                                "fr": "Disposez-vous de processus de surveillance qui vous permettront de déceler les changements liés au rendement du système au fil du temps? "
+                                "fr": "Disposez-vous de processus de surveillance qui vous permettront de déceler les changements liés au rendement du système au fil du temps?"
                             },
                             "choices": [
                                 {
@@ -6647,7 +6647,7 @@
                             "visibleIf": "{fairnessImplementation24} = \"item1-2\"",
                             "title": {
                                 "default": "Do you have a process in place to update the system based on the monitoring results? ",
-                                "fr": "Disposez-vous d'un processus de mise à jour du système fondé sur les résultats du processus de surveillance? "
+                                "fr": "Disposez-vous d'un processus de mise à jour du système fondé sur les résultats du processus de surveillance?"
                             },
                             "choices": [
                                 {
