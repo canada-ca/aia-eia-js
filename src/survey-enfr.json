@@ -4219,7 +4219,7 @@
                                     "value": "item4",
                                     "text": {
                                         "default": "Surveillance",
-                                        "fr": "Surveillance"
+                                        "fr": "Surveillance."
                                     }
                                 },
                                 {
@@ -4719,7 +4719,7 @@
                                     "value": "item4",
                                     "text": {
                                         "default": "Surveillance",
-                                        "fr": "Surveillance"
+                                        "fr": "Surveillance."
                                     }
                                 },
                                 {
