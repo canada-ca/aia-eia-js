@@ -3699,7 +3699,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "aboutDataType1",
+                            "name": "aboutDataSourceType1",
                             "title": {
                                 "default": "Will the system require the analysis of unstructured data to make an assessment, recommendation or decision?",
                                 "fr": "Le système devra-t-il analyser des données non structurées aux fins de la réalisation d'évaluations, de la formulation de recommandations ou de la prise de décisions?"
@@ -3724,8 +3724,8 @@
                         
                          {
                             "type": "checkbox",
-                            "name": "aboutDataType2",
-                            "visibleIf": "{aboutDataType1} = \"item1-0\"",
+                            "name": "aboutDataSourceType2",
+                            "visibleIf": "{aboutDataSourceType1} = \"item1-0\"",
                             "title": {
                                 "default": "What types of unstructured data? (Check all that apply)",
                                 "fr": "De quel type de données non structurées s'agit-il (Cochez toutes les réponses qui s'appliquent)?"
@@ -3749,7 +3749,7 @@
                         },
                         {
                             "type": "radiogroup",
-                            "name": "aboutDataType3",
+                            "name": "aboutDataSourceType3",
                             "title": {
                                 "default": "Has there been a decision to exclude certain data? ",
                                 "fr": "Avez-vous décidé d'exclure certaines données? "
@@ -3773,8 +3773,8 @@
                         },
                         {
                             "type": "comment",
-                            "name": "aboutDataType3A",
-                            "visibleIf": "{aboutDataType3} = \"item1-0\"",
+                            "name": "aboutDataSourceType3A",
+                            "visibleIf": "{aboutDataSourceType3} = \"item1-0\"",
                             "title": {
                                 "default": "Describe why data has been excluded ",
                                 "fr": "Veuillez expliquer la raison pour laquelle ces données ont été exclues. "
