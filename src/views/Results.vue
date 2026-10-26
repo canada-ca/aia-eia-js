@@ -450,7 +450,7 @@ export default class Results extends Vue {
     // Fix all the question labels as they're using <H5> instead of <label>
     // as SurveyJS has open issue as per: https://github.com/surveyjs/surveyjs/issues/928
     this.Survey.onAfterRenderQuestion.add(function(sender, options) {
-      let title = options.htmlElement.getElementsByTagName("H5")[0];
+      let title = options.htmlElement.getElementsByTagName("H5")[0] as HTMLHeadingElement;
       if (title) {
         var questionRequiredHTML = "";
 
